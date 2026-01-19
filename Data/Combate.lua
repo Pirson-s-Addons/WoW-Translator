@@ -1,0 +1,117 @@
+local ADDON_NAME, addonTable = ...
+addonTable.CombateDict = {
+    ["add"] = { 
+        esES = "Enemigo adicional", esMX = "Enemigo adicional", enUS = "Extra mob", deDE = "Zusätzlicher Gegner", 
+        frFR = "Ennemi supplémentaire", itIT = "Nemico aggiuntivo", koKR = "추가 몹", ptBR = "Inimigo adicional", 
+        ruRU = "Адд", zhCN = "小怪", zhTW = "小怪" 
+    },
+    ["aggro"] = { 
+        esES = "Amenaza", esMX = "Amenaza", enUS = "Threat/Aggro", deDE = "Bedrohung", 
+        frFR = "Menace", itIT = "Minaccia", koKR = "위협", ptBR = "Ameaça", 
+        ruRU = "Аггро", zhCN = "仇恨", zhTW = "仇恨" 
+    },
+    ["aoe"] = { 
+        esES = "Efecto en área", esMX = "Efecto en área", enUS = "Area of Effect", deDE = "Flächenschaden", 
+        frFR = "Dégâts de zone", itIT = "Danno ad area", koKR = "광역", ptBR = "Dano em área", 
+        ruRU = "АоЕ", zhCN = "群体攻击", zhTW = "群體攻擊" 
+    },
+    ["cd"] = { 
+        esES = "Tiempo de reutilización", esMX = "Tiempo de reutilización", enUS = "Cooldown", deDE = "Abklingzeit", 
+        frFR = "Temps de recharge", itIT = "Recupero", koKR = "재사용 대기시간", ptBR = "Recarga", 
+        ruRU = "КД", zhCN = "冷却", zhTW = "冷卻" 
+    },
+    ["gcd"] = { 
+        esES = "Reutilización Global", esMX = "Reutilización Global", enUS = "Global Cooldown", deDE = "Globaler Cooldown", 
+        frFR = "Temps de recharge global", itIT = "Recupero globale", koKR = "글로벌 쿨타임", ptBR = "Recarga Global", 
+        ruRU = "ГКД", zhCN = "公共冷却", zhTW = "公共冷卻" 
+    },
+    ["dot"] = { 
+        esES = "Daño en el tiempo", esMX = "Daño en el tiempo", enUS = "Damage over Time", deDE = "Schaden über Zeit", 
+        frFR = "Dégâts sur la durée", itIT = "Danni nel tempo", koKR = "지속피해", ptBR = "Dano por tempo", 
+        ruRU = "ДоТ", zhCN = "持续伤害", zhTW = "持續傷害" 
+    },
+    ["hot"] = { 
+        esES = "Sana en el tiempo", esMX = "Sana en el tiempo", enUS = "Heal over Time", deDE = "Heilung über Zeit", 
+        frFR = "Soin sur la durée", itIT = "Cure nel tempo", koKR = "지속치유", ptBR = "Cura por tempo", 
+        ruRU = "ХоТ", zhCN = "持续治疗", zhTW = "持續治療" 
+    },
+    ["kick"] = { 
+        esES = "Interrumpir", esMX = "Interrumpir", enUS = "Interrupt", deDE = "Unterbrechen", 
+        frFR = "Interrompre", itIT = "Interrompi", koKR = "차단", ptBR = "Interromper", 
+        ruRU = "Кик/Прерывание", zhCN = "打断", zhTW = "打斷" 
+    },
+    ["stun"] = { 
+        esES = "Aturdir", esMX = "Aturdir", enUS = "Stun", deDE = "Betäubung", 
+        frFR = "Étourdissement", itIT = "Stordimento", koKR = "기절", ptBR = "Atordoar", 
+        ruRU = "Стан", zhCN = "昏迷", zhTW = "昏迷" 
+    },
+    ["kite"] = { 
+        esES = "Correr y ralentizar", esMX = "Correr y ralentizar", enUS = "Kiting", deDE = "Kiten", 
+        frFR = "Kiter", itIT = "Kiting", koKR = "카이팅", ptBR = "Kiting", 
+        ruRU = "Кайтить", zhCN = "风筝", zhTW = "風箏" 
+    },
+    ["burst"] = { 
+        esES = "Daño explosivo", esMX = "Daño explosivo", enUS = "Burst damage", deDE = "Burst", 
+        frFR = "Burst", itIT = "Burst", koKR = "폭딜", ptBR = "Dano explosivo", 
+        ruRU = "Бурст", zhCN = "爆发", zhTW = "爆發" 
+    },
+    ["focus"] = { 
+        esES = "Objetivo principal", esMX = "Objetivo principal", enUS = "Focus target", deDE = "Fokus", 
+        frFR = "Focus", itIT = "Focus", koKR = "주시 대상", ptBR = "Foco", 
+        ruRU = "Фокус", zhCN = "焦点", zhTW = "焦點" 
+    },
+    ["buff"] = { 
+        esES = "Aumento de poder", esMX = "Aumento de poder", enUS = "Buff", deDE = "Stärkungszauber", 
+        frFR = "Amélioration", itIT = "Potenziamento", koKR = "버프", ptBR = "Bônus", ruRU = "Бафф", 
+        zhCN = "增益", zhTW = "增益" 
+    },
+    ["debuff"] = { 
+        esES = "Disminución de poder", esMX = "Disminución de poder", enUS = "Debuff", 
+        deDE = "Schwächungszauber", frFR = "Affaiblissement", itIT = "Depotenziamento", 
+        koKR = "디버프", ptBR = "Penalidade", ruRU = "Дебафф", 
+        zhCN = "减益", zhTW = "減益" 
+    },
+    ["dispel"] = { 
+        esES = "Disipar / Limpiar", esMX = "Disipar", enUS = "Dispel", 
+        deDE = "Bannen", frFR = "Dissiper", itIT = "Dissipa", 
+        koKR = "해제", ptBR = "Dissipar", ruRU = "Диспел", 
+        zhCN = "驱散", zhTW = "驅散" 
+    },
+    ["cc"] = { 
+        esES = "Control de masas", esMX = "Control de masas", enUS = "Crowd Control", 
+        deDE = "Crowd Control", frFR = "Contrôle de foule", itIT = "Controllo folla", 
+        koKR = "메즈", ptBR = "Controle de multidão", ruRU = "СС (Контроль)", 
+        zhCN = "控制", zhTW = "控制" 
+    },
+    ["bg"] = { 
+        esES = "Campo de Batalla", esMX = "Campo de Batalla", enUS = "Battleground", 
+        deDE = "Schlachtfeld", frFR = "Champ de bataille", itIT = "Campo di Battaglia", 
+        koKR = "전장", ptBR = "Campo de Batalha", ruRU = "БГ", zhCN = "战场", zhTW = "戰場" 
+    },
+    ["rbg"] = { 
+        esES = "Campo de Batalla Puntuado", esMX = "Campo de Batalla Puntuado", enUS = "Rated BG", 
+        deDE = "Gewertetes Schlachtfeld", frFR = "CdB coté", itIT = "CdB classificati", 
+        koKR = "평점 전장", ptBR = "Campo de Batalha Ranqueado", ruRU = "РБГ", zhCN = "评级战场", 
+        zhTW = "評級戰場" 
+    },
+    ["los"] = { 
+        esES = "Línea de visión", esMX = "Línea de visión", enUS = "Line of Sight", deDE = "Sichtlinie", 
+        frFR = "Ligne de vue", itIT = "Linea di vista", koKR = "시야 꺾기", ptBR = "Linha de visão", 
+        ruRU = "ЛоС (из поля зрения)", zhCN = "卡视角", zhTW = "卡視角" 
+    },
+    ["ab"] = { 
+        esES = "Cuenca de Arathi", esMX = "Cuenca de Arathi", enUS = "Arathi Basin", deDE = "Arathibecken", 
+        frFR = "Bassin d'Arathi", itIT = "Bacino d'Arathi", koKR = "아라시 분지", ptBR = "Bacia Arathi", 
+        ruRU = "Низина Арати", zhCN = "阿拉希盆地", zhTW = "阿拉希盆地" 
+    },
+    ["av"] = { 
+        esES = "Valle de Alterac", esMX = "Valle de Alterac", enUS = "Alterac Valley", deDE = "Alteractal", 
+        frFR = "Vallée d'Alterac", itIT = "Valle d'Alterac", koKR = "알터랙 계곡", ptBR = "Vale Alterac", 
+        ruRU = "Альтеракская долина", zhCN = "奥特兰克山谷", zhTW = "奧特蘭克山谷" 
+    },
+    ["wsg"] = { 
+        esES = "Garganta Grito de Guerra", esMX = "Garganta Grito de Guerra", enUS = "Warsong Gulch", deDE = "Kriegshymnenschlucht", 
+        frFR = "Goulet des Chanteguerre", itIT = "Forra deifurbi", koKR = "전쟁노래 협곡", ptBR = "Ravina Brado de Guerreiro", 
+        ruRU = "Ущелье Песни Войны", zhCN = "战歌峡谷", zhTW = "戰歌峽谷" 
+    },
+}

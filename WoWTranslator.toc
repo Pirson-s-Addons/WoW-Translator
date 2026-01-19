@@ -1,0 +1,54 @@
+## Interface: 20505, 50503
+## Author: Pirson
+## Version: 1.00
+## SavedVariables: WoWTranslatorDB
+
+## Title: |TInterface/Addons/WoWTranslator/img/logo_wt:16:16|t |cffd597ffWoW Translator|r
+
+## Notes: |cFF33CCFFTranslation of terms, acronyms, and World of Warcraft slang.|r
+## Notes-deDE: |cFF33CCFFÜbersetzung von Begriffen, Akronymen und World of Warcraft-Slang.|r
+## Notes-esES: |cFF33CCFFTraducción de términos, acrónimos y jerga de World of Warcraft.|r
+## Notes-esMX: |cFF33CCFFTraducción de términos, acrónimos y jerga de World of Warcraft.|r
+## Notes-frFR: |cFF33CCFFTraduction des termes, acronymes et de l'argot de World of Warcraft.|r
+## Notes-itIT: |cFF33CCFFTraduzione di termini, acronimi e gergo di World of Warcraft.|r
+## Notes-koKR: |cFF33CCFF월드 오브 워크래프트의 용어, 약어 및 속어 번역.|r
+## Notes-ptBR: |cFF33CCFFTradução de termos, acrônimos e gírias do World of Warcraft.|r
+## Notes-ruRU: |cFF33CCFFПеревод терминов, акронимов и сленга World of Warcraft.|r
+## Notes-zhCN: |cFF33CCFF魔兽世界术语、首字母缩略词和俚语的翻译。|r
+## Notes-zhTW: |cFF33CCFF魔獸世界術語、首字母縮略詞和俚語的翻譯。|r
+
+## X-Curse-Project-ID: 1431567
+
+Libs\LibStub\LibStub.lua
+Libs\LibBabble-3.0\LibBabble-3.0.lua
+Libs\LibBabble-SubZone-3.0\LibBabble-SubZone-3.0.lua
+Libs\LibBabble-SubZone-3.0\LibBabble-SubZone-3.0_esES.lua
+Libs\LibBabble-SubZone-3.0\LibBabble-SubZone-3.0_esMX.lua
+Libs\LibBabble-SubZone-3.0\LibBabble-SubZone-3.0_deDE.lua
+Libs\LibBabble-SubZone-3.0\LibBabble-SubZone-3.0_frFR.lua
+Libs\LibBabble-SubZone-3.0\LibBabble-SubZone-3.0_itIT.lua
+Libs\LibBabble-SubZone-3.0\LibBabble-SubZone-3.0_koKR.lua
+Libs\LibBabble-SubZone-3.0\LibBabble-SubZone-3.0_ptBR.lua
+Libs\LibBabble-SubZone-3.0\LibBabble-SubZone-3.0_ruRU.lua
+Libs\LibBabble-SubZone-3.0\LibBabble-SubZone-3.0_zhCN.lua
+Libs\LibBabble-SubZone-3.0\LibBabble-SubZone-3.0_zhTW.lua
+Libs\LibBabble-Class-3.0\LibBabble-Class-3.0.lua
+Libs\LibBabble-Race-3.0\LibBabble-Race-3.0.lua
+Libs\LibBabble-ItemSet-3.0\LibBabble-ItemSet-3.0.lua
+
+Locales.lua
+
+Data\Clases.lua
+Data\Combate.lua
+Data\Comercio.lua
+Data\Estadisticas.lua
+Data\Estado.lua
+Data\Grupos.lua
+Data\Hermandad.lua
+Data\Mazz_Raid.lua
+Data\Profesiones.lua
+Data\Roles.lua
+Data\Social.lua
+
+Config.lua
+WoWTranslator.lua
