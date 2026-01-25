@@ -126,4 +126,129 @@ addonTable.SocialDict = {
         frFR = "Joueur contre Joueur", itIT = "Giocatore contro Giocatore", koKR = "PvP", ptBR = "Jogador contra Jogador", 
         ruRU = "ПвП", zhCN = "玩家对战", zhTW = "玩家對戰" 
     },
+    ["mog"] = {
+        esES = "Transfiguración", esMX = "Transfiguración", enUS = "Transmog",
+        deDE = "Transmog", frFR = "Transmogrification", itIT = "Trasmogrificazione",
+        koKR = "형상변환", ptBR = "Transmog", ruRU = "Трансмог",
+        zhCN = "幻化", zhTW = "塑形"
+    },
+    ["dc"] = {
+        esES = "Discord", esMX = "Discord", enUS = "Discord",
+        deDE = "Discord", frFR = "Discord", itIT = "Discord",
+        koKR = "디스코드", ptBR = "Discord", ruRU = "Дискорд",
+        zhCN = "Discord", zhTW = "Discord"
+    },
+    ["ofc"] = {
+        esES = "Por supuesto", esMX = "Por supuesto", enUS = "Of course",
+        deDE = "Natürlich", frFR = "Bien sûr", itIT = "Certo",
+        koKR = "물론", ptBR = "Claro", ruRU = "Конечно",
+        zhCN = "当然", zhTW = "當然"
+    },
+    ["gg"] = {
+        esES = "Bien jugado", esMX = "Bien jugado", enUS = "Good game",
+        deDE = "Gutes Spiel", frFR = "Bien joué", itIT = "Bella partita",
+        koKR = "수고했어요", ptBR = "Bom jogo", ruRU = "Хорошая игра",
+        zhCN = "打得好", zhTW = "打得好"
+    },
+    ["btw"] = {
+        esES = "Por cierto", esMX = "Por cierto", enUS = "By the way",
+        deDE = "Übrigens", frFR = "Au fait", itIT = "A proposito",
+        koKR = "그런데", ptBR = "Aliás", ruRU = "Кстати",
+        zhCN = "顺便说一下", zhTW = "順便說一下"
+    },
+    ["hf"] = {
+        esES = "Diviértete", esMX = "Diviértete", enUS = "Have fun",
+        deDE = "Viel Spaß", frFR = "Amuse-toi bien", itIT = "Divertiti",
+        koKR = "즐겜", ptBR = "Divirta-se", ruRU = "Удачи",
+        zhCN = "玩得开心", zhTW = "玩得開心"
+    },
+    ["idk"] = {
+        esES = "No sé", esMX = "No sé", enUS = "I don't know",
+        deDE = "Keine Ahnung", frFR = "Je ne sais pas", itIT = "Non lo so",
+        koKR = "몰라요", ptBR = "Não sei", ruRU = "Не знаю",
+        zhCN = "不知道", zhTW = "不知道"
+    },
+    ["glhf"] = {
+        esES = "Buena suerte y diviértete", esMX = "Buena suerte y diviértete",
+        enUS = "Good luck, have fun", deDE = "Viel Glück und Spaß",
+        frFR = "Bonne chance, amuse-toi", itIT = "Buona fortuna, divertiti",
+        koKR = "행운을 빌어요 즐겜", ptBR = "Boa sorte, divirta-se",
+        ruRU = "Удачи и приятной игры", zhCN = "祝你好运，玩得开心",
+        zhTW = "祝你好運，玩得開心"
+    },
+    ["gl"] = {
+        esES = "Buena suerte", esMX = "Buena suerte", enUS = "Good luck",
+        deDE = "Viel Glück", frFR = "Bonne chance", itIT = "Buona fortuna",
+        koKR = "행운을 빌어요", ptBR = "Boa sorte", ruRU = "Удачи",
+        zhCN = "好运", zhTW = "好運"
+    },
+    ["asap"] = {
+        esES = "Lo antes posible", esMX = "Lo antes posible", enUS = "As soon as possible",
+        deDE = "So schnell wie möglich", frFR = "Dès que possible",
+        itIT = "Il prima possibile", koKR = "최대한 빨리",
+        ptBR = "O mais rápido possível", ruRU = "Как можно скорее",
+        zhCN = "尽快", zhTW = "盡快"
+    },
+    ["nt"] = {
+        esES = "Buen intento", esMX = "Buen intento", enUS = "Nice try",
+        deDE = "Guter Versuch", frFR = "Bien tenté",
+        itIT = "Bel tentativo", koKR = "아깝다",
+        ptBR = "Boa tentativa", ruRU = "Хорошая попытка",
+        zhCN = "不错的尝试", zhTW = "不錯的嘗試"
+    },
+    ["w8"] = {
+        esES = "Espera", esMX = "Espera", enUS = "Wait",
+        deDE = "Warte", frFR = "Attends",
+        itIT = "Aspetta", koKR = "잠깐",
+        ptBR = "Espera", ruRU = "Подожди",
+        zhCN = "等等", zhTW = "等等"
+    },
+    ["mb"] = {
+        esES = "Mala mía", esMX = "Mala mía", enUS = "My bad",
+        deDE = "Mein Fehler", frFR = "Désolé",
+        itIT = "Colpa mia", koKR = "내 실수",
+        ptBR = "Foi mal", ruRU = "Моя ошибка",
+        zhCN = "我的错", zhTW = "我的錯"
+    },
+    ["u2"] = {
+        esES = "Tú también", esMX = "Tú también", enUS = "You too",
+        deDE = "Du auch", frFR = "Toi aussi",
+        itIT = "Anche a te", koKR = "너도",
+        ptBR = "Você também", ruRU = "Тебе тоже",
+        zhCN = "你也是", zhTW = "你也是"
+    },
+    ["bb"] = {
+        esES = "Adiós", esMX = "Adiós", enUS = "Bye bye",
+        deDE = "Tschüss", frFR = "Salut",
+        itIT = "Ciao", koKR = "잘 가",
+        ptBR = "Tchau", ruRU = "Пока",
+        zhCN = "拜拜", zhTW = "掰掰"
+    },
+    ["kk"] = {
+        esES = "Vale", esMX = "Vale", enUS = "Ok",
+        deDE = "Ok", frFR = "Ok",
+        itIT = "Ok", koKR = "오케이",
+        ptBR = "Ok", ruRU = "Ок",
+        zhCN = "好", zhTW = "好"
+    },
+    ["afk"] = { 
+        esES = "Ausente", esMX = "Ausente", enUS = "Away from Keyboard", deDE = "Abwesend", 
+        frFR = "Absent", itIT = "Assente", koKR = "자리비움", ptBR = "Ausente", ruRU = "АФК", 
+        zhCN = "暂离", zhTW = "暫離"
+    },
+    ["brb"] = { 
+        esES = "Vuelvo enseguida", esMX = "Vuelvo enseguida", enUS = "Be right back", 
+        deDE = "Gleich wieder da", frFR = "Reviens de suite", itIT = "Torno subito", 
+        koKR = "곧 돌아옴", ptBR = "Volto logo", ruRU = "Скоро буду", zhCN = "马上回来", zhTW = "馬上回來"
+    },
+    ["omw"] = { 
+        esES = "En camino", esMX = "En camino", enUS = "On my way", deDE = "Bin unterwegs", 
+        frFR = "En route", itIT = "Sto arrivando", koKR = "가는 중", ptBR = "A caminho", 
+        ruRU = "В пути", zhCN = "在路上", zhTW = "在路上" 
+    },
+    ["inc"] = { 
+        esES = "En camino", esMX = "En camino", enUS = "On my way", deDE = "Bin unterwegs", 
+        frFR = "En route", itIT = "Sto arrivando", koKR = "가는 중", ptBR = "A caminho", 
+        ruRU = "В пути", zhCN = "在路上", zhTW = "在路上" 
+    },
 }

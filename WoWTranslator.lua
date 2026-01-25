@@ -20,7 +20,6 @@ function addonTable.RebuildMasterDict()
         { key = "showCombate", dict = addonTable.CombateDict },
         { key = "showComercio", dict = addonTable.ComercioDict },
         { key = "showStats", dict = addonTable.EstadisticasDict },
-        { key = "showEstado", dict = addonTable.EstadoDict },
         { key = "showGrupos", dict = addonTable.GruposDict },
         { key = "showHermandad", dict = addonTable.HermandadDict },
         { key = "showProfesiones", dict = addonTable.ProfesionesDict },
@@ -107,8 +106,8 @@ f:SetScript("OnEvent", function(self, event)
             settings = {
                 showMazz = true, showSocial = true, showClases = true,
                 showCombate = true, showComercio = true, showStats = true,
-                showEstado = true, showGrupos = true, showHermandad = true,
-                showProfesiones = true, showRoles = true, showZones = true, showSets = true
+                showGrupos = true, showHermandad = true, showProfesiones = true,
+                showRoles = true, showZones = true, showSets = true
             }
         }
     end

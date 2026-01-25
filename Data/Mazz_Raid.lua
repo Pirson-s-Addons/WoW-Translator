@@ -56,6 +56,11 @@ addonTable.MazzRaidDict = {
         itIT = "Evocazione", koKR = "소환", ptBR = "Evocar", ruRU = "Summon/Суммон", zhCN = "拉人", 
         zhTW = "拉人" 
     },
+    ["123"] = { 
+        esES = "Invocación", esMX = "Invocación", enUS = "Summon", deDE = "Beschwören", frFR = "Invoquer", 
+        itIT = "Evocazione", koKR = "소환", ptBR = "Evocar", ruRU = "Summon/Суммон", zhCN = "拉人", 
+        zhTW = "拉人" 
+    },
     ["lust"] = { 
         esES = "Ansia de Sangre", esMX = "Ansia de Sangre", enUS = "Bloodlust/Heroism", deDE = "Kampfrausch", 
         frFR = "Héroïsme", itIT = "Brama di Sangue", koKR = "블러드/웅심", ptBR = "Sede de Sangue", 

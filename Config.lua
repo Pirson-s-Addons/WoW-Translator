@@ -68,7 +68,6 @@ function addonTable.CreateConfigUI()
         { text = L["CAT_PROF"], key = "showProfesiones" },
         { text = L["CAT_COMBAT"], key = "showCombate" },
         { text = L["CAT_TRADE"], key = "showComercio" },
-        { text = L["CAT_STATUS"], key = "showEstado" },
         { text = L["CAT_GROUPS"], key = "showGrupos" },
         { text = L["CAT_GUILD"], key = "showHermandad" },
         { text = L["CAT_ZONES"], key = "showZones" },
