@@ -20,6 +20,11 @@ addonTable.ProfesionesDict = {
         frFR = "Enchantement", itIT = "Incantamento", koKR = "마법부여", ptBR = "Encantamento", 
         ruRU = "Инчант", zhCN = "附魔", zhTW = "附魔" 
     },
+    ["ec"] = { 
+        esES = "Encantamiento", esMX = "Encantamiento", enUS = "Enchanting", deDE = "Verzauberkunst", 
+        frFR = "Enchantement", itIT = "Incantamento", koKR = "마법부여", ptBR = "Encantamento", 
+        ruRU = "Инчант", zhCN = "附魔", zhTW = "附魔" 
+    },
     ["herb"] = { 
         esES = "Herboristería", esMX = "Herboristería", enUS = "Herbalism", deDE = "Kräuterkunde", 
         frFR = "Herboristerie", itIT = "Erboristeria", koKR = "약초채집", ptBR = "Herborismo", 

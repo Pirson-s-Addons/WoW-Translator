@@ -114,4 +114,30 @@ addonTable.CombateDict = {
         frFR = "Goulet des Chanteguerre", itIT = "Forra deifurbi", koKR = "전쟁노래 협곡", ptBR = "Ravina Brado de Guerreiro", 
         ruRU = "Ущелье Песни Войны", zhCN = "战歌峡谷", zhTW = "戰歌峽谷" 
     },
+    ["2s"] = {
+        esES = "2c2", esMX = "2c2", enUS = "2v2",
+        deDE = "2v2", frFR = "2c2", itIT = "2v2",
+        koKR = "2대2", ptBR = "2v2", ruRU = "2x2",
+        zhCN = "2v2", zhTW = "2v2"
+    },
+
+    ["3s"] = {
+        esES = "3c3", esMX = "3c3", enUS = "3v3",
+        deDE = "3v3", frFR = "3c3", itIT = "3v3",
+        koKR = "3대3", ptBR = "3v3", ruRU = "3x3",
+        zhCN = "3v3", zhTW = "3v3"
+    },
+
+    ["5s"] = {
+        esES = "5c5", esMX = "5c5", enUS = "5v5",
+        deDE = "5v5", frFR = "5c5", itIT = "5v5",
+        koKR = "5대5", ptBR = "5v5", ruRU = "5x5",
+        zhCN = "5v5", zhTW = "5v5"
+    },
+    ["cap"] = {
+        esES="Tope", esMX="Tope", enUS="Cap",
+        deDE="Cap", frFR="Cap", itIT="Cap",
+        koKR="상한", ptBR="Cap", ruRU="Кап",
+        zhCN="上限", zhTW="上限"
+    },
 }

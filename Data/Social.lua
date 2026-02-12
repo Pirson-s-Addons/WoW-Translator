@@ -251,4 +251,116 @@ addonTable.SocialDict = {
         frFR = "En route", itIT = "Sto arrivando", koKR = "가는 중", ptBR = "A caminho", 
         ruRU = "В пути", zhCN = "在路上", zhTW = "在路上" 
     },
+    ["chill"] = {
+        esES="Tranquilo", esMX="Tranquilo", enUS="Chill",
+        deDE="Entspannt", frFR="Détendu", itIT="Tranquillo",
+        koKR="편하게", ptBR="Tranquilo", ruRU="Спокойно",
+        zhCN="轻松", zhTW="輕鬆"
+    },
+    ["ffs"] = { 
+        esES="Por el amor de Dios", esMX="Por el amor de Dios", enUS="For fuck's sake", 
+        deDE="Verdammt nochmal", frFR="Merde alors", itIT="Per l'amor del cielo", 
+        koKR="젠장", ptBR="Pelo amor de Deus", ruRU="Черт возьми", 
+        zhCN="见鬼", zhTW="見鬼"
+    },
+    ["bk"] = { 
+        esES="Vuelvo", esMX="Vuelvo", enUS="Back", deDE="Zurück", 
+        frFR="De retour", itIT="Torno", koKR="돌아옴", ptBR="De volta", 
+        ruRU="Назад", zhCN="回来", zhTW="回來"
+    },
+    ["gratz"] = {
+        esES="Felicidades", esMX="Felicidades", enUS="Gratz", deDE="Glückwunsch",
+        frFR="Félicitations", itIT="Congratulazioni", koKR="축하", ptBR="Parabéns",
+        ruRU="Поздравляю", zhCN="恭喜", zhTW="恭喜"
+    },
+    ["rng"] = {
+        esES="Suerte aleatoria", esMX="Suerte aleatoria", enUS="Random number generator", 
+        deDE="Zufallsgenerator", frFR="Générateur aléatoire", itIT="Generatore casuale", 
+        koKR="랜덤", ptBR="Gerador aleatório", ruRU="ГСЧ", zhCN="随机数", zhTW="隨機數"
+    },
+    ["ggwp"] = {
+        esES="Buen juego, bien jugado", esMX="Buen juego, bien jugado", enUS="Good game, well played",
+        deDE="Gutes Spiel, gut gespielt", frFR="Bon jeu, bien joué", itIT="Bel gioco, ben giocato",
+        koKR="잘했어요", ptBR="Bom jogo, bem jogado", ruRU="Хорошая игра", zhCN="好局", zhTW="好局"
+    },
+    ["wp"] = {
+        esES="Bien jugado", esMX="Bien jugado", enUS="Well played",
+        deDE="Gut gespielt", frFR="Bien joué", itIT="Ben giocato",
+        koKR="잘했어요", ptBR="Bem jogado", ruRU="Хорошая игра", zhCN="好局", zhTW="好局"
+    },
+    ["idd"] = {
+        esES="Cierto", esMX="Cierto", enUS="Indeed",
+        deDE="In der Tat", frFR="En effet", itIT="Infatti",
+        koKR="맞아요", ptBR="De fato", ruRU="Действительно",
+        zhCN="确实", zhTW="確實"
+    },
+    ["idc"] = {
+        esES="Me da igual", esMX="Me da igual", enUS="I don't care",
+        deDE="Ist mir egal", frFR="Je m'en fiche", itIT="Non mi importa",
+        koKR="상관없어", ptBR="Não me importo", ruRU="Мне всё равно",
+        zhCN="无所谓", zhTW="無所謂"
+    },
+    ["idm"] = {
+        esES="No me importa", esMX="No me importa", enUS="I don't mind",
+        deDE="Macht mir nichts aus", frFR="Ça ne me dérange pas",
+        itIT="Non mi dispiace", koKR="괜찮아요",
+        ptBR="Não me importo", ruRU="Я не против",
+        zhCN="我不介意", zhTW="我不介意"
+    },
+    ["ftw"] = {
+        esES="¡A por la victoria!", esMX="¡A por la victoria!", enUS="For the win",
+        deDE="Auf zum Sieg", frFR="Pour la victoire",
+        itIT="Per la vittoria", koKR="이기자",
+        ptBR="Pela vitória", ruRU="К победе",
+        zhCN="为了胜利", zhTW="為了勝利"
+    },
+    ["ftl"] = {
+        esES="Qué desastre", esMX="Qué desastre", enUS="For the loss",
+        deDE="Totaler Reinfall", frFR="La défaite",
+        itIT="Che sconfitta", koKR="망했다",
+        ptBR="Que derrota", ruRU="Вот это провал",
+        zhCN="真失败", zhTW="真失敗"
+    },
+    ["iamf"] = {
+        esES="Es todo culpa mía", esMX="Es todo culpa mía", enUS="It's all my fault",
+        deDE="Es ist alles meine Schuld", frFR="C'est entièrement ma faute",
+        itIT="È tutta colpa mia", koKR="다 내 잘못이야",
+        ptBR="É tudo culpa minha", ruRU="Это полностью моя вина",
+        zhCN="都是我的错", zhTW="都是我的錯"
+    },
+    ["atm"] = {
+        esES="Ahora mismo", esMX="Ahora mismo", enUS="At the moment",
+        deDE="Im Moment", frFR="En ce moment",
+        itIT="Al momento", koKR="지금",
+        ptBR="No momento", ruRU="В данный момент",
+        zhCN="目前", zhTW="目前"
+    },
+    ["g2g"] = {
+        esES="Me tengo que ir", esMX="Me tengo que ir", enUS="Got to go",
+        deDE="Ich muss los", frFR="Je dois y aller",
+        itIT="Devo andare", koKR="가야 해",
+        ptBR="Tenho que ir", ruRU="Мне пора",
+        zhCN="我得走了", zhTW="我得走了"
+    },
+    ["gtg"] = {
+        esES="Me tengo que ir", esMX="Me tengo que ir", enUS="Got to go",
+        deDE="Ich muss los", frFR="Je dois y aller",
+        itIT="Devo andare", koKR="가야 해",
+        ptBR="Tenho que ir", ruRU="Мне пора",
+        zhCN="我得走了", zhTW="我得走了"
+    },
+    ["nw"] = {
+        esES="No te preocupes", esMX="No te preocupes", enUS="No worries",
+        deDE="Kein Problem", frFR="Pas de souci",
+        itIT="Nessun problema", koKR="걱정 마",
+        ptBR="Sem problema", ruRU="Не переживай",
+        zhCN="别担心", zhTW="別擔心"
+    },
+    ["trap"] = {
+        esES="Trampa", esMX="Trampa", enUS="Trap",
+        deDE="Falle", frFR="Piège",
+        itIT="Trappola", koKR="함정",
+        ptBR="Armadilha", ruRU="Ловушка",
+        zhCN="陷阱", zhTW="陷阱"
+    }
 }

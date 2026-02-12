@@ -339,4 +339,30 @@ addonTable.ClasesDict = {
         koKR="부정", ptBR="Profano", ruRU="Нечестивость",
         zhCN="邪恶", zhTW="穢邪"
     },
+
+    -- Cazador de Demonios
+    ["demonhunter"] = {
+        esES="Cazador de Demonios", esMX="Cazador de Demonios", enUS="Demon Hunter",
+        deDE="Dämonenjäger", frFR="Chasseur de démons", itIT="Cacciatore di Demoni",
+        koKR="악마사냥꾼", ptBR="Caçador de Demônios", ruRU="Охотник на демонов",
+        zhCN="恶魔猎手", zhTW="惡魔獵人"
+    },
+    ["dh"] = {
+        esES="Cazador de Demonios", esMX="Cazador de Demonios", enUS="Demon Hunter",
+        deDE="Dämonenjäger", frFR="Chasseur de démons", itIT="Cacciatore di Demoni",
+        koKR="악마사냥꾼", ptBR="Caçador de Demônios", ruRU="Охотник на демонов",
+        zhCN="恶魔猎手", zhTW="惡魔獵人"
+    },
+    ["havoc"] = {
+        esES="Devastación", esMX="Devastación", enUS="Havoc",
+        deDE="Verwüstung", frFR="Dévastation", itIT="Rovina",
+        koKR="파멸", ptBR="Devastação", ruRU="Истребление",
+        zhCN="浩劫", zhTW="災虐"
+    },
+    ["vengeance"] = {
+        esES="Venganza", esMX="Venganza", enUS="Vengeance",
+        deDE="Rachsucht", frFR="Vengeance", itIT="Vendetta",
+        koKR="복수", ptBR="Vingança", ruRU="Месть",
+        zhCN="复仇", zhTW="復仇"
+    },
 }
