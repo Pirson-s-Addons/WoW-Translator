@@ -1,63 +1,250 @@
 local ADDON_NAME, addonTable = ...
 addonTable.EstadisticasDict = {
-    ["ap"] = { 
-        esES = "Poder de ataque", esMX = "Poder de ataque", enUS = "Attack Power", deDE = "Angriffskraft", 
-        frFR = "Puissance d'attaque", itIT = "Potenza d'attacco", koKR = "전투력", ptBR = "Poder de Ataque", 
-        ruRU = "Сила атаки", zhCN = "攻击强度", zhTW = "攻擊強度" 
+    ["ap"] = {
+        esES = "Poder de ataque",
+        esMX = "Poder de ataque",
+        enUS = "Attack Power",
+        deDE = "Angriffskraft",
+        frFR = "Puissance d'attaque",
+        itIT = "Potenza d'attacco",
+        koKR = "전투력",
+        ptBR = "Poder de Ataque",
+        ruRU = "Сила атаки",
+        zhCN = "攻击强度",
+        zhTW = "攻擊強度"
     },
-    ["crit"] = { 
-        esES = "Crítico", esMX = "Crítico", enUS = "Critical Strike", deDE = "Kritische Treffechance", 
-        frFR = "Coup critique", itIT = "Critico", koKR = "치명타", ptBR = "Crítico", 
-        ruRU = "Крит", zhCN = "爆击", zhTW = "爆擊" 
+    ["crit"] = {
+        esES = "Crítico",
+        esMX = "Crítico",
+        enUS = "Critical Strike",
+        deDE = "Kritische Treffechance",
+        frFR = "Coup critique",
+        itIT = "Critico",
+        koKR = "치명타",
+        ptBR = "Crítico",
+        ruRU = "Крит",
+        zhCN = "爆击",
+        zhTW = "爆擊"
     },
-    ["haste"] = { 
-        esES = "Celeridad", esMX = "Celeridad", enUS = "Haste", deDE = "Tempo", 
-        frFR = "Hâte", itIT = "Celerità", koKR = "가속", ptBR = "Aceleração", 
-        ruRU = "Хаста/Скорость", zhCN = "急速", zhTW = "急速" 
+    ["haste"] = {
+        esES = "Celeridad",
+        esMX = "Celeridad",
+        enUS = "Haste",
+        deDE = "Tempo",
+        frFR = "Hâte",
+        itIT = "Celerità",
+        koKR = "가속",
+        ptBR = "Aceleração",
+        ruRU = "Хаста/Скорость",
+        zhCN = "急速",
+        zhTW = "急速"
     },
-    ["hit"] = { 
-        esES = "Índice de golpe", esMX = "Índice de golpe", enUS = "Hit rating", deDE = "Trefferwertung", 
-        frFR = "Score de toucher", itIT = "Indice di colpo", koKR = "적중", ptBR = "Acerto", 
-        ruRU = "Меткость", zhCN = "命中", zhTW = "命中" 
+    ["hit"] = {
+        esES = "Índice de golpe",
+        esMX = "Índice de golpe",
+        enUS = "Hit rating",
+        deDE = "Trefferwertung",
+        frFR = "Score de toucher",
+        itIT = "Indice di colpo",
+        koKR = "적중",
+        ptBR = "Acerto",
+        ruRU = "Меткость",
+        zhCN = "命中",
+        zhTW = "命中"
     },
-    ["mastery"] = { 
-        esES = "Maestría", esMX = "Maestría", enUS = "Mastery", deDE = "Meisterschaft", 
-        frFR = "Maîtrise", itIT = "Maestria", koKR = "특화", ptBR = "Maestria", 
-        ruRU = "Искусность", zhCN = "精通", zhTW = "精通" 
+    ["mastery"] = {
+        esES = "Maestría",
+        esMX = "Maestría",
+        enUS = "Mastery",
+        deDE = "Meisterschaft",
+        frFR = "Maîtrise",
+        itIT = "Maestria",
+        koKR = "특화",
+        ptBR = "Maestria",
+        ruRU = "Искусность",
+        zhCN = "精通",
+        zhTW = "精通"
     },
-    ["armor"] = { 
-        esES = "Armadura", esMX = "Armadura", enUS = "Armor", deDE = "Rüstung", 
-        frFR = "Armure", itIT = "Armatura", koKR = "방어도", ptBR = "Armadura", 
-        ruRU = "Броня", zhCN = "护甲", zhTW = "護甲" 
+    ["armor"] = {
+        esES = "Armadura",
+        esMX = "Armadura",
+        enUS = "Armor",
+        deDE = "Rüstung",
+        frFR = "Armure",
+        itIT = "Armatura",
+        koKR = "방어도",
+        ptBR = "Armadura",
+        ruRU = "Броня",
+        zhCN = "护甲",
+        zhTW = "護甲"
     },
-    ["avoidance"] = { 
-        esES = "Evasión física", esMX = "Evasión física", enUS = "Avoidance", deDE = "Vermeidung", 
-        frFR = "Évitement", itIT = "Evasione", koKR = "광역 회피", ptBR = "Evasão", 
-        ruRU = "Избежание", zhCN = "回避", zhTW = "迴避" 
+    ["avoidance"] = {
+        esES = "Evasión física",
+        esMX = "Evasión física",
+        enUS = "Avoidance",
+        deDE = "Vermeidung",
+        frFR = "Évitement",
+        itIT = "Evasione",
+        koKR = "광역 회피",
+        ptBR = "Evasão",
+        ruRU = "Избежание",
+        zhCN = "回避",
+        zhTW = "迴避"
     },
-    ["resilience"] = { 
-        esES = "Temple", esMX = "Temple", enUS = "Resilience", deDE = "Abhärtung", 
-        frFR = "Résilience", itIT = "Resilienza", koKR = "탄력성", ptBR = "Resiliência", 
-        ruRU = "Устойчивость", zhCN = "韧性", zhTW = "韌性" 
+    ["resilience"] = {
+        esES = "Temple",
+        esMX = "Temple",
+        enUS = "Resilience",
+        deDE = "Abhärtung",
+        frFR = "Résilience",
+        itIT = "Resilienza",
+        koKR = "탄력성",
+        ptBR = "Resiliência",
+        ruRU = "Устойчивость",
+        zhCN = "韧性",
+        zhTW = "韌性"
     },
-    ["expertise"] = { 
-        esES = "Pericia", esMX = "Pericia", enUS = "Expertise", deDE = "Waffenkunde", 
-        frFR = "Expertise", itIT = "Perizia", koKR = "숙련", ptBR = "Aptidão", 
-        ruRU = "Мастерство", zhCN = "精准", zhTW = "精準" 
+    ["expertise"] = {
+        esES = "Pericia",
+        esMX = "Pericia",
+        enUS = "Expertise",
+        deDE = "Waffenkunde",
+        frFR = "Expertise",
+        itIT = "Perizia",
+        koKR = "숙련",
+        ptBR = "Aptidão",
+        ruRU = "Мастерство",
+        zhCN = "精准",
+        zhTW = "精準"
     },
-    ["spirit"] = { 
-        esES = "Espíritu", esMX = "Espíritu", enUS = "Spirit", deDE = "Willenskraft", 
-        frFR = "Esprit", itIT = "Spirito", koKR = "정신력", ptBR = "Espírito", 
-        ruRU = "Дух", zhCN = "精神", zhTW = "精神" 
+    ["spirit"] = {
+        esES = "Espíritu",
+        esMX = "Espíritu",
+        enUS = "Spirit",
+        deDE = "Willenskraft",
+        frFR = "Esprit",
+        itIT = "Spirito",
+        koKR = "정신력",
+        ptBR = "Espírito",
+        ruRU = "Дух",
+        zhCN = "精神",
+        zhTW = "精神"
     },
-    ["dodge"] = { 
-        esES = "Esquiva", esMX = "Esquiva", enUS = "Dodge", deDE = "Ausweichen", 
-        frFR = "Esquive", itIT = "Schivata", koKR = "회피", ptBR = "Esquiva", 
-        ruRU = "Uклонение", zhCN = "躲闪", zhTW = "躲閃" 
+    ["dodge"] = {
+        esES = "Esquiva",
+        esMX = "Esquiva",
+        enUS = "Dodge",
+        deDE = "Ausweichen",
+        frFR = "Esquive",
+        itIT = "Schivata",
+        koKR = "회피",
+        ptBR = "Esquiva",
+        ruRU = "Uклонение",
+        zhCN = "躲闪",
+        zhTW = "躲閃"
     },
-    ["parry"] = { 
-        esES = "Parada", esMX = "Parada", enUS = "Parry", deDE = "Parieren", 
-        frFR = "Parade", itIT = "Parata", koKR = "무기 막기", ptBR = "Aparo", 
-        ruRU = "Парирование", zhCN = "招架", zhTW = "招架" 
+    ["parry"] = {
+        esES = "Parada",
+        esMX = "Parada",
+        enUS = "Parry",
+        deDE = "Parieren",
+        frFR = "Parade",
+        itIT = "Parata",
+        koKR = "무기 막기",
+        ptBR = "Aparo",
+        ruRU = "Парирование",
+        zhCN = "招架",
+        zhTW = "招架"
+    },
+    ["str"] = {
+        esES = "Fuerza",
+        esMX = "Fuerza",
+        enUS = "Strength",
+        deDE = "Stärke",
+        frFR = "Force",
+        itIT = "Forza",
+        koKR = "힘",
+        ptBR = "Força",
+        ruRU = "Сила",
+        zhCN = "力量",
+        zhTW = "力量"
+    },
+    ["agi"] = {
+        esES = "Agilidad",
+        esMX = "Agilidad",
+        enUS = "Agility",
+        deDE = "Beweglichkeit",
+        frFR = "Agilité",
+        itIT = "Agilità",
+        koKR = "민첩",
+        ptBR = "Agilidade",
+        ruRU = "Ловкость",
+        zhCN = "敏捷",
+        zhTW = "敏捷"
+    },
+    ["int"] = {
+        esES = "Intelecto",
+        esMX = "Intelecto",
+        enUS = "Intelligence",
+        deDE = "Intelligenz",
+        frFR = "Intelligence",
+        itIT = "Intelletto",
+        koKR = "지능",
+        ptBR = "Intelecto",
+        ruRU = "Интеллект",
+        zhCN = "智力",
+        zhTW = "智力"
+    },
+    ["stam"] = {
+        esES = "Aguante",
+        esMX = "Aguante",
+        enUS = "Stamina",
+        deDE = "Ausdauer",
+        frFR = "Endurance",
+        itIT = "Stamina",
+        koKR = "체력",
+        ptBR = "Vigor",
+        ruRU = "Выносливость",
+        zhCN = "耐力",
+        zhTW = "耐力"
+    },
+    ["vers"] = {
+        esES = "Versatilidad",
+        esMX = "Versatilidad",
+        enUS = "Versatility",
+        deDE = "Vielseitigkeit",
+        frFR = "Polyvalence",
+        itIT = "Versatilità",
+        koKR = "유연성",
+        ptBR = "Versatilidade",
+        ruRU = "Универсальность",
+        zhCN = "全能",
+        zhTW = "全能"
+    },
+    ["leech"] = {
+        esES = "Parasitar",
+        esMX = "Parasitar",
+        enUS = "Leech",
+        deDE = "Lebensraub",
+        frFR = "Ponction",
+        itIT = "Vitalità",
+        koKR = "생기흡수",
+        ptBR = "Paraxitar",
+        ruRU = "Самоисцеление",
+        zhCN = "吸血",
+        zhTW = "吸血"
+    },
+    ["speed"] = {
+        esES = "Velocidad",
+        esMX = "Velocidad",
+        enUS = "Speed",
+        deDE = "Geschwindigkeit",
+        frFR = "Vitesse",
+        itIT = "Velocità",
+        koKR = "속도",
+        ptBR = "Velocidade",
+        ruRU = "Скорость",
+        zhCN = "速度",
+        zhTW = "速度"
     }
 }

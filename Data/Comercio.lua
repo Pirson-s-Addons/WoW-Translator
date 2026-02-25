@@ -1,23 +1,107 @@
 local ADDON_NAME, addonTable = ...
 addonTable.ComercioDict = {
-    ["wtb"] = { 
-        esES = "Compro", esMX = "Compro", enUS = "Want to buy", deDE = "Kaufe", 
-        frFR = "Achète", itIT = "Compro", koKR = "구매함", ptBR = "Compro", 
-        ruRU = "Куплю", zhCN = "求购", zhTW = "求購" 
+    ["wtb"] = {
+        esES = "Compro",
+        esMX = "Compro",
+        enUS = "Want to buy",
+        deDE = "Kaufe",
+        frFR = "Achète",
+        itIT = "Compro",
+        koKR = "구매함",
+        ptBR = "Compro",
+        ruRU = "Куплю",
+        zhCN = "求购",
+        zhTW = "求購"
     },
-    ["wts"] = { 
-        esES = "Vendo", esMX = "Vendo", enUS = "Want to sell", deDE = "Verkaufe", 
-        frFR = "Vends", itIT = "Vendo", koKR = "판매함", ptBR = "Vendo", ruRU = "Продам", 
-        zhCN = "出售", zhTW = "出售" 
+    ["wts"] = {
+        esES = "Vendo",
+        esMX = "Vendo",
+        enUS = "Want to sell",
+        deDE = "Verkaufe",
+        frFR = "Vends",
+        itIT = "Vendo",
+        koKR = "판매함",
+        ptBR = "Vendo",
+        ruRU = "Продам",
+        zhCN = "出售",
+        zhTW = "出售"
     },
-    ["wtt"] = { 
-        esES = "Cambio", esMX = "Cambio", enUS = "Want to trade", deDE = "Tausche", 
-        frFR = "Échange", itIT = "Scambio", koKR = "교환함", ptBR = "Troco", 
-        ruRU = "Обменяю", zhCN = "交易", zhTW = "交易" 
+    ["wtt"] = {
+        esES = "Cambio",
+        esMX = "Cambio",
+        enUS = "Want to trade",
+        deDE = "Tausche",
+        frFR = "Échange",
+        itIT = "Scambio",
+        koKR = "교환함",
+        ptBR = "Troco",
+        ruRU = "Обменяю",
+        zhCN = "交易",
+        zhTW = "交易"
     },
-    ["cod"] = { 
-        esES = "Pago contra reembolso", esMX = "Pago contra reembolso", enUS = "Cash on Delivery", 
-        deDE = "Nachnahme", frFR = "Contre remboursement", itIT = "Contrassegno", koKR = "대금 상환", 
-        ptBR = "Pagamento na entrega", ruRU = "Наложка", zhCN = "付款取信", zhTW = "付款取信" 
+    ["cod"] = {
+        esES = "Pago contra reembolso",
+        esMX = "Pago contra reembolso",
+        enUS = "Cash on Delivery",
+        deDE = "Nachnahme",
+        frFR = "Contre remboursement",
+        itIT = "Contrassegno",
+        koKR = "대금 상환",
+        ptBR = "Pagamento na entrega",
+        ruRU = "Наложка",
+        zhCN = "付款取信",
+        zhTW = "付款取信"
+    },
+    ["mats"] = {
+        esES = "Materiales",
+        esMX = "Materiales",
+        enUS = "Materials",
+        deDE = "Materialien",
+        frFR = "Composants",
+        itIT = "Materiali",
+        koKR = "재료",
+        ptBR = "Materiais",
+        ruRU = "Маты/Ресы",
+        zhCN = "材料",
+        zhTW = "材料"
+    },
+    ["bis"] = {
+        esES = "Lo mejor por ranura",
+        esMX = "Lo mejor por ranura",
+        enUS = "Best in Slot",
+        deDE = "Bestes Teil",
+        frFR = "Meilleur en place",
+        itIT = "Migliore per slot",
+        koKR = "비스",
+        ptBR = "Melhor por espaço",
+        ruRU = "Бис",
+        zhCN = "毕业装",
+        zhTW = "畢業裝"
+    },
+    ["crest"] = {
+        esES = "Blasón",
+        esMX = "Blasón",
+        enUS = "Crest",
+        deDE = "Wappen",
+        frFR = "Blason",
+        itIT = "Cresta",
+        koKR = "문장",
+        ptBR = "Brasão",
+        ruRU = "Герб",
+        zhCN = "纹章",
+        zhTW = "紋章"
+    },
+    ["bronze"] = {
+        esES = "Bronce",
+        esMX = "Bronce",
+        enUS = "Bronze",
+        deDE = "Bronze",
+        frFR = "Bronze",
+        itIT = "Bronzo",
+        koKR = "청동",
+        ptBR = "Bronze",
+        ruRU = "Бронза",
+        zhCN = "青铜",
+        zhTW = "青銅"
     }
 }
