@@ -27,45 +27,6 @@ addonTable.ClasesDict = {
         zhCN = "副天赋",
         zhTW = "副天賦"
     },
-    ["alt"]         = {
-        esES = "Alter",
-        esMX = "Alter",
-        enUS = "Alt character",
-        deDE = "Twink",
-        frFR = "Personnage secondaire",
-        itIT = "Personaggio secondario",
-        koKR = "부캐",
-        ptBR = "Personagem Secundário",
-        ruRU = "Альт",
-        zhCN = "小号",
-        zhTW = "小號"
-    },
-    ["main"]        = {
-        esES = "Principal",
-        esMX = "Principal",
-        enUS = "Main character",
-        deDE = "Main",
-        frFR = "Personnage principal",
-        itIT = "Personaggio principale",
-        koKR = "본캐",
-        ptBR = "Personagem Principal",
-        ruRU = "Мейн",
-        zhCN = "大号/主号",
-        zhTW = "大號/主號"
-    },
-    ["toon"]        = {
-        esES = "Personaje",
-        esMX = "Personaje",
-        enUS = "Toon/Character",
-        deDE = "Charakter",
-        frFR = "Personnage",
-        itIT = "Personaggio",
-        koKR = "캐릭터",
-        ptBR = "Personagem",
-        ruRU = "Персонаж",
-        zhCN = "角色",
-        zhTW = "角色"
-    },
 
     -- =====================
     -- CLASES
@@ -659,19 +620,6 @@ addonTable.ClasesDict = {
         zhCN = "增强",
         zhTW = "增強"
     },
-    ["rsham"]       = {
-        esES = "Restauración",
-        esMX = "Restauración",
-        enUS = "Restoration",
-        deDE = "Wiederherstellung",
-        frFR = "Restauration",
-        itIT = "Rigenerazione",
-        koKR = "복원",
-        ptBR = "Restauração",
-        ruRU = "Исцеление",
-        zhCN = "恢复",
-        zhTW = "恢復"
-    },
 
 
     -- Picaro
@@ -809,32 +757,6 @@ addonTable.ClasesDict = {
         zhCN = "邪恶",
         zhTW = "穢邪"
     },
-    ["fdk"] = {
-        esES = "Escarcha",
-        esMX = "Escarcha",
-        enUS = "Frost",
-        deDE = "Frost",
-        frFR = "Givre",
-        itIT = "Gelo",
-        koKR = "냉기",
-        ptBR = "Gelo",
-        ruRU = "Лёд",
-        zhCN = "冰霜",
-        zhTW = "冰霜"
-    },
-    ["bdk"] = {
-        esES = "Sangre",
-        esMX = "Sangre",
-        enUS = "Blood",
-        deDE = "Blut",
-        frFR = "Sang",
-        itIT = "Sangue",
-        koKR = "혈기",
-        ptBR = "Sangue",
-        ruRU = "Кровь",
-        zhCN = "鲜血",
-        zhTW = "血魄"
-    },
 
     -- Cazador de Demonios
     ["demonhunter"] = {
@@ -863,8 +785,6 @@ addonTable.ClasesDict = {
         zhCN = "恶魔猎手",
         zhTW = "惡魔獵人"
     },
-
-    -- Evocador
     ["havoc"] = {
         esES = "Devastación",
         esMX = "Devastación",

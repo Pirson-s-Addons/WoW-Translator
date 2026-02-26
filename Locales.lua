@@ -34,6 +34,7 @@ L["CAT_GROUPS"] = "Groups"
 L["CAT_GUILD"] = "Guild"
 L["CAT_ZONES"] = "Zones (World)"
 L["CAT_SETS"] = "Item Sets"
+L["CAT_STATUS"] = "Status / States"
 
 -- ==========================================
 -- ESPAÑOL (esES / esMX)
@@ -67,10 +68,11 @@ if locale == "esES" or locale == "esMX" then
     L["CAT_GUILD"] = "Hermandad"
     L["CAT_ZONES"] = "Zonas (Mundo)"
     L["CAT_SETS"] = "Sets de Objetos"
+    L["CAT_STATUS"] = "Estado / Estados"
 
--- ==========================================
--- DEUTSCH (deDE)
--- ==========================================
+    -- ==========================================
+    -- DEUTSCH (deDE)
+    -- ==========================================
 elseif locale == "deDE" then
     L["UI_TITLE"] = "WoW Translator Konfiguration"
     L["UI_ENABLE_TEXT"] = " Echtzeit-Übersetzung aktivieren"
@@ -100,10 +102,11 @@ elseif locale == "deDE" then
     L["CAT_GUILD"] = "Gilde"
     L["CAT_ZONES"] = "Zonen"
     L["CAT_SETS"] = "Gegenstandsets"
+    L["CAT_STATUS"] = "Status / Zustände"
 
--- ==========================================
--- FRANÇAIS (frFR)
--- ==========================================
+    -- ==========================================
+    -- FRANÇAIS (frFR)
+    -- ==========================================
 elseif locale == "frFR" then
     L["UI_TITLE"] = "Configuration de WoW Translator"
     L["UI_ENABLE_TEXT"] = " Activer la traduction en temps réel"
@@ -133,10 +136,11 @@ elseif locale == "frFR" then
     L["CAT_GUILD"] = "Guilde"
     L["CAT_ZONES"] = "Zones (Monde)"
     L["CAT_SETS"] = "Ensembles d'objets"
+    L["CAT_STATUS"] = "État / États"
 
--- ==========================================
--- ITALIANO (itIT)
--- ==========================================
+    -- ==========================================
+    -- ITALIANO (itIT)
+    -- ==========================================
 elseif locale == "itIT" then
     L["UI_TITLE"] = "Configurazione WoW Translator"
     L["UI_ENABLE_TEXT"] = " Abilita traduzione in tempo reale"
@@ -166,10 +170,11 @@ elseif locale == "itIT" then
     L["CAT_GUILD"] = "Gilda"
     L["CAT_ZONES"] = "Zone (Mondo)"
     L["CAT_SETS"] = "Set di Equipaggiamento"
+    L["CAT_STATUS"] = "Stato / Stati"
 
--- ==========================================
--- PORTUGUÊS (ptBR)
--- ==========================================
+    -- ==========================================
+    -- PORTUGUÊS (ptBR)
+    -- ==========================================
 elseif locale == "ptBR" then
     L["UI_TITLE"] = "Configuração do WoW Translator"
     L["UI_ENABLE_TEXT"] = " Ativar tradução em tempo real"
@@ -199,10 +204,11 @@ elseif locale == "ptBR" then
     L["CAT_GUILD"] = "Guilda"
     L["CAT_ZONES"] = "Zonas (Mundo)"
     L["CAT_SETS"] = "Conjuntos de Itens"
+    L["CAT_STATUS"] = "Estado / Estados"
 
--- ==========================================
--- RUSSIAN (ruRU)
--- ==========================================
+    -- ==========================================
+    -- RUSSIAN (ruRU)
+    -- ==========================================
 elseif locale == "ruRU" then
     L["UI_TITLE"] = "Настройка WoW Translator"
     L["UI_ENABLE_TEXT"] = " Включить перевод в реальном времени"
@@ -232,10 +238,11 @@ elseif locale == "ruRU" then
     L["CAT_GUILD"] = "Гильдия"
     L["CAT_ZONES"] = "Зоны (Мир)"
     L["CAT_SETS"] = "Комплекты вещей"
+    L["CAT_STATUS"] = "Статус / Состояния"
 
--- ==========================================
--- KOREAN (koKR)
--- ==========================================
+    -- ==========================================
+    -- KOREAN (koKR)
+    -- ==========================================
 elseif locale == "koKR" then
     L["UI_TITLE"] = "WoW Translator 설정"
     L["UI_ENABLE_TEXT"] = " 실시간 번역 활성화"
@@ -265,10 +272,11 @@ elseif locale == "koKR" then
     L["CAT_GUILD"] = "길드"
     L["CAT_ZONES"] = "지역 (월드)"
     L["CAT_SETS"] = "아이템 세트"
+    L["CAT_STATUS"] = "상태"
 
--- ==========================================
--- CHINESE (zhCN)
--- ==========================================
+    -- ==========================================
+    -- CHINESE (zhCN)
+    -- ==========================================
 elseif locale == "zhCN" then
     L["UI_TITLE"] = "WoW Translator 设置"
     L["UI_ENABLE_TEXT"] = " 开启实时翻译"
@@ -298,10 +306,11 @@ elseif locale == "zhCN" then
     L["CAT_GUILD"] = "公会"
     L["CAT_ZONES"] = "区域 (世界)"
     L["CAT_SETS"] = "套装"
+    L["CAT_STATUS"] = "状态"
 
--- ==========================================
--- CHINESE TRADITIONAL (zhTW)
--- ==========================================
+    -- ==========================================
+    -- CHINESE TRADITIONAL (zhTW)
+    -- ==========================================
 elseif locale == "zhTW" then
     L["UI_TITLE"] = "WoW Translator 設置"
     L["UI_ENABLE_TEXT"] = " 開啟即時翻譯"
@@ -331,6 +340,7 @@ elseif locale == "zhTW" then
     L["CAT_GUILD"] = "公會"
     L["CAT_ZONES"] = "區域 (世界)"
     L["CAT_SETS"] = "套裝"
+    L["CAT_STATUS"] = "狀態"
 end
 
 addonTable.L = L

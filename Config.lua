@@ -4,7 +4,7 @@ local L = addonTable.L
 function addonTable.CreateConfigUI()
     local panel = CreateFrame("Frame", "WoWTranslatorPanel", UIParent)
     panel.name = "WoW Translator"
-    
+
     local title = panel:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")
     title:SetPoint("TOPLEFT", 16, -16)
     title:SetText(L["UI_TITLE"])
@@ -29,12 +29,12 @@ function addonTable.CreateConfigUI()
     local colorPreview = colorBtn:CreateTexture(nil, "OVERLAY")
     colorPreview:SetPoint("LEFT", colorBtn, "RIGHT", 10, 0)
     colorPreview:SetSize(18, 18)
-    
+
     local function UpdateColorPreview()
         local hex = WoWTranslatorDB.chatColor or "00ff00"
-        local r = tonumber(hex:sub(1,2), 16) / 255
-        local g = tonumber(hex:sub(3,4), 16) / 255
-        local b = tonumber(hex:sub(5,6), 16) / 255
+        local r = tonumber(hex:sub(1, 2), 16) / 255
+        local g = tonumber(hex:sub(3, 4), 16) / 255
+        local b = tonumber(hex:sub(5, 6), 16) / 255
         colorPreview:SetColorTexture(r, g, b)
     end
 
@@ -43,13 +43,13 @@ function addonTable.CreateConfigUI()
         ColorPickerFrame:SetupColorPickerAndShow({
             swatchFunc = function()
                 local r, g, b = ColorPickerFrame:GetColorRGB()
-                WoWTranslatorDB.chatColor = string.format("%02x%02x%02x", r*255, g*255, b*255)
+                WoWTranslatorDB.chatColor = string.format("%02x%02x%02x", r * 255, g * 255, b * 255)
                 UpdateColorPreview()
             end,
             hasOpacity = false,
-            r = tonumber(hex:sub(1,2), 16) / 255, 
-            g = tonumber(hex:sub(3,4), 16) / 255, 
-            b = tonumber(hex:sub(5,6), 16) / 255
+            r = tonumber(hex:sub(1, 2), 16) / 255,
+            g = tonumber(hex:sub(3, 4), 16) / 255,
+            b = tonumber(hex:sub(5, 6), 16) / 255
         })
     end)
     UpdateColorPreview()
@@ -60,35 +60,36 @@ function addonTable.CreateConfigUI()
     filterHeader:SetText(L["CAT_HEADER"])
 
     local checkboxes = {
-        { text = L["CAT_MAZZ"], key = "showMazz" },
-        { text = L["CAT_SOCIAL"], key = "showSocial" },
+        { text = L["CAT_MAZZ"],    key = "showMazz" },
+        { text = L["CAT_SOCIAL"],  key = "showSocial" },
         { text = L["CAT_CLASSES"], key = "showClases" },
-        { text = L["CAT_ROLES"], key = "showRoles" },
-        { text = L["CAT_STATS"], key = "showStats" },
-        { text = L["CAT_PROF"], key = "showProfesiones" },
-        { text = L["CAT_COMBAT"], key = "showCombate" },
-        { text = L["CAT_TRADE"], key = "showComercio" },
-        { text = L["CAT_GROUPS"], key = "showGrupos" },
-        { text = L["CAT_GUILD"], key = "showHermandad" },
-        { text = L["CAT_ZONES"], key = "showZones" },
-        { text = L["CAT_SETS"], key = "showSets" },
+        { text = L["CAT_ROLES"],   key = "showRoles" },
+        { text = L["CAT_STATS"],   key = "showStats" },
+        { text = L["CAT_PROF"],    key = "showProfesiones" },
+        { text = L["CAT_COMBAT"],  key = "showCombate" },
+        { text = L["CAT_TRADE"],   key = "showComercio" },
+        { text = L["CAT_GROUPS"],  key = "showGrupos" },
+        { text = L["CAT_GUILD"],   key = "showHermandad" },
+        { text = L["CAT_STATUS"],  key = "showEstado" },
+        { text = L["CAT_ZONES"],   key = "showZones" },
+        { text = L["CAT_SETS"],    key = "showSets" },
     }
 
     for i, info in ipairs(checkboxes) do
-        local cb = CreateFrame("CheckButton", "WT_CB_"..info.key, panel, "InterfaceOptionsCheckButtonTemplate")
+        local cb = CreateFrame("CheckButton", "WT_CB_" .. info.key, panel, "InterfaceOptionsCheckButtonTemplate")
         if i == 1 then
             cb:SetPoint("TOPLEFT", filterHeader, "BOTTOMLEFT", 0, -5)
         elseif i % 2 == 1 then
-            cb:SetPoint("TOPLEFT", _G["WT_CB_"..checkboxes[i-2].key], "BOTTOMLEFT", 0, -2)
+            cb:SetPoint("TOPLEFT", _G["WT_CB_" .. checkboxes[i - 2].key], "BOTTOMLEFT", 0, -2)
         else
-            cb:SetPoint("LEFT", _G["WT_CB_"..checkboxes[i-1].key], "RIGHT", 180, 0)
+            cb:SetPoint("LEFT", _G["WT_CB_" .. checkboxes[i - 1].key], "RIGHT", 180, 0)
         end
-        
+
         _G[cb:GetName() .. "Text"]:SetText(info.text)
         cb:SetChecked(WoWTranslatorDB.settings[info.key])
-        cb:SetScript("OnClick", function(self) 
+        cb:SetScript("OnClick", function(self)
             WoWTranslatorDB.settings[info.key] = self:GetChecked()
-            addonTable.RebuildMasterDict() 
+            addonTable.RebuildMasterDict()
         end)
     end
 
@@ -99,11 +100,19 @@ function addonTable.CreateConfigUI()
 
     local dropdown = CreateFrame("Frame", "WT_LangDrop", panel, "UIDropDownMenuTemplate")
     dropdown:SetPoint("TOPLEFT", langLabel, "BOTTOMLEFT", -15, -5)
-    
+
     local langNames = {
-        esES="Español (ES)", esMX="Español (AL)", enUS="English", deDE="Deutsch",
-        frFR="Français", itIT="Italiano", ptBR="Português", ruRU="Русский",
-        koKR="한국어", zhCN="简体中文", zhTW="繁體中文"
+        esES = "Español (ES)",
+        esMX = "Español (AL)",
+        enUS = "English",
+        deDE = "Deutsch",
+        frFR = "Français",
+        itIT = "Italiano",
+        ptBR = "Português",
+        ruRU = "Русский",
+        koKR = "한국어",
+        zhCN = "简体中文",
+        zhTW = "繁體中文"
     }
 
     local function OnClick(self)
@@ -122,7 +131,7 @@ function addonTable.CreateConfigUI()
             UIDropDownMenu_AddButton(info)
         end
     end)
-    
+
     UIDropDownMenu_SetSelectedValue(dropdown, WoWTranslatorDB.targetLocale)
     UIDropDownMenu_SetText(dropdown, langNames[WoWTranslatorDB.targetLocale] or "Español (ES)")
 
