@@ -6,11 +6,16 @@ local L = addonTable.L
 -- ==========================================
 local BZ, BI
 local MasterDict = {}
+local MasterDictPatterns = {}
 local SortedDictKeys = {}
 local categoryID
 
+local ipairs, pairs, string_format, string_gsub, string_find, string_lower = ipairs, pairs, string.format, string.gsub, string.find, string.lower
+local table_insert, table_sort = table.insert, table.sort
+
 function addonTable.RebuildMasterDict()
     MasterDict = {}
+    MasterDictPatterns = {}
     SortedDictKeys = {}
 
     local map = {
@@ -30,13 +35,17 @@ function addonTable.RebuildMasterDict()
     for _, entry in ipairs(map) do
         if entry.dict and WoWTranslatorDB.settings[entry.key] then
             for k, v in pairs(entry.dict) do
-                MasterDict[k] = v
-                table.insert(SortedDictKeys, k)
+                if not MasterDict[k] then
+                    MasterDict[k] = v
+                    table_insert(SortedDictKeys, k)
+                    local casePattern = string_gsub(k, "%a", function(c) return string_format("[%s%s]", string_lower(c), c:upper()) end)
+                    MasterDictPatterns[k] = "%f[%w]" .. casePattern .. "%f[%W]"
+                end
             end
         end
     end
 
-    table.sort(SortedDictKeys, function(a, b) return #a > #b end)
+    table_sort(SortedDictKeys, function(a, b) return #a > #b end)
 end
 
 -- ==========================================
@@ -48,18 +57,19 @@ _G.TranslateChat = function(text)
     local changed = false
     local target = WoWTranslatorDB.targetLocale or "esES"
     local userColor = WoWTranslatorDB.chatColor or "00ff00"
+    local colorPrefix = "(|cff" .. userColor
 
     -- 1. TRADUCCIÓN POR DICCIONARIO DINÁMICO
     for _, eng in ipairs(SortedDictKeys) do
-        local casePattern = eng:gsub("%a", function(c) return string.format("[%s%s]", c:lower(), c:upper()) end)
-        local pattern = "%f[%w]" .. casePattern .. "%f[%W]"
-
-        text = text:gsub(pattern, function(found)
-            changed = true
-            local translations = MasterDict[eng]
-            local translated = translations[target] or translations["esES"] or eng
-            return found .. "(|cff" .. userColor .. translated .. "|r)"
-        end)
+        local pattern = MasterDictPatterns[eng]
+        if pattern then
+            text = string_gsub(text, pattern, function(found)
+                changed = true
+                local translations = MasterDict[eng]
+                local translated = translations[target] or translations["esES"] or eng
+                return found .. colorPrefix .. translated .. "|r)"
+            end)
+        end
     end
 
     -- 2. TRADUCCIÓN POR LIBRERÍAS
@@ -68,17 +78,18 @@ _G.TranslateChat = function(text)
         { data = BI, col = "a335ee", active = WoWTranslatorDB.settings.showSets }
     }
 
+    local textLower = string_lower(text)
+
     for _, b in ipairs(babbleData) do
         if b.data and b.active then
+            local colorStr = "(|cff" .. b.col
             for eng, loc in pairs(b.data) do
-                if #eng > 3 then
+                if #eng > 3 and string_find(textLower, string_lower(eng), 1, true) then
                     local pattern = "%f[%a]" .. eng .. "%f[%A]"
-                    if text:lower():find(eng:lower(), 1, true) then
-                        text = text:gsub(pattern, function(found)
-                            changed = true
-                            return found .. "(|cff" .. b.col .. loc .. "|r)"
-                        end)
-                    end
+                    text = string_gsub(text, pattern, function(found)
+                        changed = true
+                        return found .. colorStr .. loc .. "|r)"
+                    end)
                 end
             end
         end
@@ -98,7 +109,6 @@ end
 local f = CreateFrame("Frame")
 f:RegisterEvent("PLAYER_LOGIN")
 f:SetScript("OnEvent", function(self, event)
-    -- Inicializar Base de Datos si no existe
     if not WoWTranslatorDB then
         WoWTranslatorDB = {
             enabled = true,
@@ -150,7 +160,6 @@ SlashCmdList["WOWTRANSLATOR"] = function(msg)
     local command, rest = msg:match("^(%S*)%s*(.-)$")
     command = command:lower()
 
-    -- Colores definidos para legibilidad
     local prefix = "|cffffff00[|r|cffd597ffWoW Translator|r|cffffff00]|r "
     local gold = "|cffffff00"
     local white = "|cffffffff"
