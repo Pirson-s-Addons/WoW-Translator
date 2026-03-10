@@ -5,17 +5,19 @@ local L = addonTable.L
 -- VARIABLES GLOBALES Y TABLAS
 -- ==========================================
 local BZ, BI
-local MasterDict = {}
-local MasterDictPatterns = {}
-local SortedDictKeys = {}
+local MasterDict = {}        -- Single word lookup
+local MultiWordPatterns = {} -- Multi-word phrases
+local SortedDictKeys = {}    -- Still needed for multi-word sort
 local categoryID
 
-local ipairs, pairs, string_format, string_gsub, string_find, string_lower = ipairs, pairs, string.format, string.gsub, string.find, string.lower
+-- Optimization: Localize frequently used functions
+local ipairs, pairs, string_format, string_gsub, string_find, string_lower = ipairs, pairs, string.format, string.gsub,
+    string.find, string.lower
 local table_insert, table_sort = table.insert, table.sort
 
 function addonTable.RebuildMasterDict()
     MasterDict = {}
-    MasterDictPatterns = {}
+    MultiWordPatterns = {}
     SortedDictKeys = {}
 
     local map = {
@@ -32,19 +34,29 @@ function addonTable.RebuildMasterDict()
         { key = "showEstado",      dict = addonTable.EstadoDict },
     }
 
+    local target = WoWTranslatorDB and WoWTranslatorDB.targetLocale or "esES"
+
     for _, entry in ipairs(map) do
         if entry.dict and WoWTranslatorDB.settings[entry.key] then
             for k, v in pairs(entry.dict) do
-                if not MasterDict[k] then
-                    MasterDict[k] = v
-                    table_insert(SortedDictKeys, k)
-                    local casePattern = string_gsub(k, "%a", function(c) return string_format("[%s%s]", string_lower(c), c:upper()) end)
-                    MasterDictPatterns[k] = "%f[%w]" .. casePattern .. "%f[%W]"
+                local lowerK = string_lower(k)
+                local translation = v[target] or v["esES"] or k
+
+                if string_find(k, " ") then
+                    -- Multi-word phrase
+                    if not MultiWordPatterns[lowerK] then
+                        MultiWordPatterns[lowerK] = translation
+                        table_insert(SortedDictKeys, lowerK)
+                    end
+                else
+                    -- Single word
+                    MasterDict[lowerK] = translation
                 end
             end
         end
     end
 
+    -- Sort multi-word keys by length descending
     table_sort(SortedDictKeys, function(a, b) return #a > #b end)
 end
 
@@ -55,35 +67,50 @@ _G.TranslateChat = function(text)
     if not text or not WoWTranslatorDB or not WoWTranslatorDB.enabled then return text, false end
 
     local changed = false
-    local target = WoWTranslatorDB.targetLocale or "esES"
     local userColor = WoWTranslatorDB.chatColor or "00ff00"
     local colorPrefix = "(|cff" .. userColor
+    local textLower = string_lower(text)
 
-    -- 1. TRADUCCIÓN POR DICCIONARIO DINÁMICO
+    -- 1. TRADUCCIÓN DE FRASES MULTI-PALABRA (Optimized with pre-check)
     for _, eng in ipairs(SortedDictKeys) do
-        local pattern = MasterDictPatterns[eng]
-        if pattern then
+        if string_find(textLower, eng, 1, true) then
+            local casePattern = string_gsub(eng, "%a",
+                function(c) return string_format("[%s%s]", string_lower(c), c:upper()) end)
+            local pattern = "%f[%w]" .. casePattern .. "%f[%W]"
+
             text = string_gsub(text, pattern, function(found)
                 changed = true
-                local translations = MasterDict[eng]
-                local translated = translations[target] or translations["esES"] or eng
-                return found .. colorPrefix .. translated .. "|r)"
+                return found .. colorPrefix .. MultiWordPatterns[eng] .. "|r)"
             end)
+            -- Update textLower if mutated, though rarely needed here
+            if changed then textLower = string_lower(text) end
         end
     end
 
-    -- 2. TRADUCCIÓN POR LIBRERÍAS
+    -- 2. TRADUCCIÓN DE PALABRAS SUELTAS (Revolutionary performance boost!)
+    -- We tokenize the string and do direct hash lookups
+    text = string_gsub(text, "([%a%d']+)", function(word)
+        local translation = MasterDict[string_lower(word)]
+        if translation then
+            changed = true
+            return word .. colorPrefix .. translation .. "|r)"
+        end
+        return word
+    end)
+
+    -- 3. TRADUCCIÓN POR LIBRERÍAS (Optimized lookups)
     local babbleData = {
         { data = BZ, col = "ffffd1", active = WoWTranslatorDB.settings.showZones },
         { data = BI, col = "a335ee", active = WoWTranslatorDB.settings.showSets }
     }
 
-    local textLower = string_lower(text)
+    if changed then textLower = string_lower(text) end
 
     for _, b in ipairs(babbleData) do
         if b.data and b.active then
             local colorStr = "(|cff" .. b.col
             for eng, loc in pairs(b.data) do
+                -- Only process if likely exists in text
                 if #eng > 3 and string_find(textLower, string_lower(eng), 1, true) then
                     local pattern = "%f[%a]" .. eng .. "%f[%A]"
                     text = string_gsub(text, pattern, function(found)
