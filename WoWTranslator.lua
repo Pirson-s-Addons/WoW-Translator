@@ -5,12 +5,11 @@ local L = addonTable.L
 -- VARIABLES GLOBALES Y TABLAS
 -- ==========================================
 local BZ, BI
-local MasterDict = {}        -- Single word lookup
-local MultiWordPatterns = {} -- Multi-word phrases
-local SortedDictKeys = {}    -- Still needed for multi-word sort
+local MasterDict = {}
+local MultiWordPatterns = {}
+local SortedDictKeys = {}
 local categoryID
 
--- Optimization: Localize frequently used functions
 local ipairs, pairs, string_format, string_gsub, string_find, string_lower = ipairs, pairs, string.format, string.gsub,
     string.find, string.lower
 local table_insert, table_sort = table.insert, table.sort
@@ -43,20 +42,17 @@ function addonTable.RebuildMasterDict()
                 local translation = v[target] or v["esES"] or k
 
                 if string_find(k, " ") then
-                    -- Multi-word phrase
                     if not MultiWordPatterns[lowerK] then
                         MultiWordPatterns[lowerK] = translation
                         table_insert(SortedDictKeys, lowerK)
                     end
                 else
-                    -- Single word
                     MasterDict[lowerK] = translation
                 end
             end
         end
     end
 
-    -- Sort multi-word keys by length descending
     table_sort(SortedDictKeys, function(a, b) return #a > #b end)
 end
 
@@ -82,13 +78,11 @@ _G.TranslateChat = function(text)
                 changed = true
                 return found .. colorPrefix .. MultiWordPatterns[eng] .. "|r)"
             end)
-            -- Update textLower if mutated, though rarely needed here
             if changed then textLower = string_lower(text) end
         end
     end
 
     -- 2. TRADUCCIÓN DE PALABRAS SUELTAS (Revolutionary performance boost!)
-    -- We tokenize the string and do direct hash lookups
     text = string_gsub(text, "([%a%d']+)", function(word)
         local translation = MasterDict[string_lower(word)]
         if translation then
@@ -110,7 +104,6 @@ _G.TranslateChat = function(text)
         if b.data and b.active then
             local colorStr = "(|cff" .. b.col
             for eng, loc in pairs(b.data) do
-                -- Only process if likely exists in text
                 if #eng > 3 and string_find(textLower, string_lower(eng), 1, true) then
                     local pattern = "%f[%a]" .. eng .. "%f[%A]"
                     text = string_gsub(text, pattern, function(found)
