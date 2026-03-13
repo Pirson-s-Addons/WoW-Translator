@@ -13,6 +13,7 @@ local categoryID
 local ipairs, pairs, string_format, string_gsub, string_find, string_lower = ipairs, pairs, string.format, string.gsub,
     string.find, string.lower
 local table_insert, table_sort = table.insert, table.sort
+local cos, sin, atan2, deg = math.cos, math.sin, math.atan2, math.deg
 
 function addonTable.RebuildMasterDict()
     MasterDict = {}
@@ -67,7 +68,7 @@ _G.TranslateChat = function(text)
     local colorPrefix = "(|cff" .. userColor
     local textLower = string_lower(text)
 
-    -- 1. TRADUCCIÓN DE FRASES MULTI-PALABRA (Optimized with pre-check)
+    -- 1. TRADUCCIÓN DE FRASES MULTI-PALABRAS
     for _, eng in ipairs(SortedDictKeys) do
         if string_find(textLower, eng, 1, true) then
             local casePattern = string_gsub(eng, "%a",
@@ -82,7 +83,7 @@ _G.TranslateChat = function(text)
         end
     end
 
-    -- 2. TRADUCCIÓN DE PALABRAS SUELTAS (Revolutionary performance boost!)
+    -- 2. TRADUCCIÓN DE PALABRAS SUELTAS
     text = string_gsub(text, "([%a%d']+)", function(word)
         local translation = MasterDict[string_lower(word)]
         if translation then
@@ -92,7 +93,7 @@ _G.TranslateChat = function(text)
         return word
     end)
 
-    -- 3. TRADUCCIÓN POR LIBRERÍAS (Optimized lookups)
+    -- 3. TRADUCCIÓN POR LIBRERÍAS
     local babbleData = {
         { data = BZ, col = "ffffd1", active = WoWTranslatorDB.settings.showZones },
         { data = BI, col = "a335ee", active = WoWTranslatorDB.settings.showSets }
@@ -115,6 +116,13 @@ _G.TranslateChat = function(text)
         end
     end
 
+    -- 4. SKIP IF ALREADY TARGET LOCALE
+    local target = WoWTranslatorDB and WoWTranslatorDB.targetLocale or "esES"
+    if target:sub(1, 2) == "en" then
+        if WoWTranslatorDB.settings.skipSameLanguage and text:match("^[!%p%s%d%a]+$") then
+        end
+    end
+
     return text, changed
 end
 
@@ -122,6 +130,13 @@ end
 -- FILTRO DE CHAT Y REGISTRO
 -- ==========================================
 local function MyChatFilter(self, event, text, author, ...)
+    if not WoWTranslatorDB or not WoWTranslatorDB.enabled then return end
+
+    -- Channel filtering
+    if WoWTranslatorDB.settings.channels and WoWTranslatorDB.settings.channels[event] == false then
+        return
+    end
+
     local translated, wasChanged = _G.TranslateChat(text)
     if wasChanged then return false, translated, author, ... end
 end
@@ -147,9 +162,27 @@ f:SetScript("OnEvent", function(self, event)
                 showRoles = true,
                 showEstado = true,
                 showZones = true,
-                showSets = true
+                showSets = true,
+                skipSameLanguage = true,
+                channels = {}
             }
         }
+    end
+
+    if not WoWTranslatorDB.settings then WoWTranslatorDB.settings = {} end
+    if not WoWTranslatorDB.settings.channels then WoWTranslatorDB.settings.channels = {} end
+
+    local defaultEvents = {
+        "CHAT_MSG_SAY", "CHAT_MSG_YELL", "CHAT_MSG_WHISPER", "CHAT_MSG_WHISPER_INFORM",
+        "CHAT_MSG_BN_WHISPER", "CHAT_MSG_PARTY", "CHAT_MSG_PARTY_LEADER", "CHAT_MSG_RAID",
+        "CHAT_MSG_RAID_LEADER", "CHAT_MSG_RAID_WARNING", "CHAT_MSG_INSTANCE_CHAT",
+        "CHAT_MSG_INSTANCE_CHAT_LEADER", "CHAT_MSG_GUILD", "CHAT_MSG_OFFICER",
+        "CHAT_MSG_CHANNEL", "CHAT_MSG_EMOTE"
+    }
+    for _, e in ipairs(defaultEvents) do
+        if WoWTranslatorDB.settings.channels[e] == nil then
+            WoWTranslatorDB.settings.channels[e] = true
+        end
     end
 
     BZ = LibStub("LibBabble-SubZone-3.0", true) and LibStub("LibBabble-SubZone-3.0"):GetUnstrictLookupTable()
@@ -169,7 +202,62 @@ f:SetScript("OnEvent", function(self, event)
         ChatFrame_AddMessageEventFilter(e, MyChatFilter)
     end
 
-    print("|cffffff00[|r|cffd597ffWoW Translator|r|cffffff00]|r " .. (L["CHAT_WELCOME"] or "Cargado."))
+    print("|cffffff00[|r|cffd597ffWoW Translator|r|cffffff00]|r " .. (L["CHAT_LOADED"] or "Loaded."))
+
+    -- ==========================================
+    -- MINIMAP BUTTON
+    -- ==========================================
+    local minBtn = CreateFrame("Button", "WT_MinimapButton", Minimap)
+    minBtn:SetSize(32, 32)
+    minBtn:SetFrameLevel(Minimap:GetFrameLevel() + 5)
+    minBtn:SetToplevel(true)
+    minBtn:SetMovable(true)
+    minBtn:RegisterForDrag("LeftButton")
+    minBtn:RegisterForClicks("LeftButtonUp", "RightButtonUp")
+
+    local icon = minBtn:CreateTexture(nil, "BACKGROUND")
+    icon:SetTexture("Interface\\Addons\\WoWTranslator\\img\\logo_wt")
+    icon:SetSize(16, 16)
+    icon:SetPoint("CENTER")
+
+    local border = minBtn:CreateTexture(nil, "OVERLAY")
+    border:SetTexture("Interface\\Minimap\\MiniMap-TrackingBorder")
+    border:SetSize(54, 54)
+    border:SetPoint("TOPLEFT")
+
+    if not WoWTranslatorDB.minimapPos then WoWTranslatorDB.minimapPos = 45 end
+
+    local function UpdateMinimapPos()
+        local angle = WoWTranslatorDB.minimapPos
+        minBtn:SetPoint("TOPLEFT", Minimap, "TOPLEFT", 52 - (80 * cos(angle)), (80 * sin(angle)) - 52)
+    end
+
+    minBtn:SetScript("OnDragStart", function(self) self:StartMoving() end)
+    minBtn:SetScript("OnDragStop", function(self)
+        self:StopMovingOrSizing()
+        local x, y = self:GetCenter()
+        local mx, my = Minimap:GetCenter()
+        local angle = atan2(y - my, x - mx)
+        WoWTranslatorDB.minimapPos = deg(angle)
+        UpdateMinimapPos()
+    end)
+
+    minBtn:SetScript("OnEnter", function(self)
+        GameTooltip:SetOwner(self, "ANCHOR_LEFT")
+        GameTooltip:SetText(L["QT_MINIMAP_TT"])
+        GameTooltip:Show()
+    end)
+    minBtn:SetScript("OnLeave", function() GameTooltip:Hide() end)
+
+    minBtn:SetScript("OnClick", function(self, button)
+        if Settings and Settings.OpenToCategory then
+            Settings.OpenToCategory(addonTable.categoryID)
+        else
+            InterfaceOptionsFrame_OpenToCategory(addonTable.categoryID)
+        end
+    end)
+
+    UpdateMinimapPos()
 end)
 
 -- ==========================================
@@ -207,7 +295,7 @@ SlashCmdList["WOWTRANSLATOR"] = function(msg)
         if changed then
             print(prefix .. gold .. L["SLASH_TEST_RESULT"] .. white .. translated .. "|r")
         else
-            local errorStr = not WoWTranslatorDB.enabled and L["SLASH_TEST_ERROR"] or "No dictionary matches found."
+            local errorStr = not WoWTranslatorDB.enabled and L["SLASH_TEST_ERROR"] or L["TEST_NO_MATCH"]
             print(prefix .. red .. errorStr .. "|r")
         end
     else
