@@ -1,6 +1,6 @@
 ## Interface: 110007, 110100, 11506, 40401, 20505, 11302, 20503, 30401, 30200, 50503, 120001
 ## Author: Pirson
-## Version: 1.06
+## Version: 1.07
 ## SavedVariables: WoWTranslatorDB
 
 ## Title: |TInterface/Addons/WoWTranslator/img/logo_wt:16:16|t |cffd597ffWoW Translator|r
