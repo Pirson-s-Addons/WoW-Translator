@@ -44,6 +44,7 @@ function addonTable.CreateConfigUI()
     mainCB:SetScript("OnClick", function(self) WoWTranslatorDB.enabled = self:GetChecked() end)
     AddTooltip(mainCB, L["TT_ENABLE"])
 
+
     -- Color de la traducción
     local colorBtn = CreateFrame("Button", "WT_ColorBtn", panel, "UIPanelButtonTemplate")
     colorBtn:SetPoint("LEFT", mainCB, "RIGHT", 220, 0)

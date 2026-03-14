@@ -13,7 +13,7 @@ local categoryID
 local ipairs, pairs, string_format, string_gsub, string_find, string_lower = ipairs, pairs, string.format, string.gsub,
     string.find, string.lower
 local table_insert, table_sort = table.insert, table.sort
-local cos, sin, atan2, deg = math.cos, math.sin, math.atan2, math.deg
+local cos, sin, atan2, deg, rad = math.cos, math.sin, math.atan2, math.deg, math.rad
 
 function addonTable.RebuildMasterDict()
     MasterDict = {}
@@ -207,101 +207,78 @@ f:SetScript("OnEvent", function(self, event)
     -- ==========================================
     -- MINIMAP BUTTON
     -- ==========================================
-    local minBtn = CreateFrame("Button", "WT_MinimapButton", Minimap)
-    minBtn:SetSize(32, 32)
-    minBtn:SetFrameLevel(Minimap:GetFrameLevel() + 5)
-    minBtn:SetToplevel(true)
-    minBtn:SetMovable(true)
-    minBtn:RegisterForDrag("LeftButton")
-    minBtn:RegisterForClicks("LeftButtonUp", "RightButtonUp")
 
-    local icon = minBtn:CreateTexture(nil, "BACKGROUND")
-    icon:SetTexture("Interface\\Addons\\WoWTranslator\\img\\logo_wt")
-    icon:SetSize(16, 16)
-    icon:SetPoint("CENTER")
+    local LDB = LibStub("LibDataBroker-1.1", true)
+    local LDBIcon = LibStub("LibDBIcon-1.0", true)
 
-    local border = minBtn:CreateTexture(nil, "OVERLAY")
-    border:SetTexture("Interface\\Minimap\\MiniMap-TrackingBorder")
-    border:SetSize(54, 54)
-    border:SetPoint("TOPLEFT")
+    if LDB and LDBIcon then
+        local dataObject = LDB:NewDataObject("WoWTranslator", {
+            type = "launcher",
+            icon = "Interface\\Addons\\WoWTranslator\\img\\logo_wt",
 
-    if not WoWTranslatorDB.minimapPos then WoWTranslatorDB.minimapPos = 45 end
+            OnClick = function(self, button)
+                if Settings and Settings.OpenToCategory then
+                    Settings.OpenToCategory(addonTable.categoryID)
+                else
+                    InterfaceOptionsFrame_OpenToCategory(addonTable.categoryID)
+                end
+            end,
 
-    local function UpdateMinimapPos()
-        local angle = WoWTranslatorDB.minimapPos
-        minBtn:SetPoint("TOPLEFT", Minimap, "TOPLEFT", 52 - (80 * cos(angle)), (80 * sin(angle)) - 52)
+            OnTooltipShow = function(tooltip)
+                tooltip:AddLine(L["QT_MINIMAP_TT"] or "Click: Open Settings")
+            end,
+        })
+
+        WoWTranslatorDB.minimap = WoWTranslatorDB.minimap or {}
+
+        if not LDBIcon:IsRegistered("WoWTranslator") then
+            LDBIcon:Register("WoWTranslator", dataObject, WoWTranslatorDB.minimap)
+        end
     end
 
-    minBtn:SetScript("OnDragStart", function(self) self:StartMoving() end)
-    minBtn:SetScript("OnDragStop", function(self)
-        self:StopMovingOrSizing()
-        local x, y = self:GetCenter()
-        local mx, my = Minimap:GetCenter()
-        local angle = atan2(y - my, x - mx)
-        WoWTranslatorDB.minimapPos = deg(angle)
-        UpdateMinimapPos()
-    end)
+    -- ==========================================
+    -- SLASH COMMANDS
+    -- ==========================================
+    SLASH_WOWTRANSLATOR1 = "/wt"
+    SlashCmdList["WOWTRANSLATOR"] = function(msg)
+        local command, rest = msg:match("^(%S*)%s*(.-)$")
+        command = command:lower()
 
-    minBtn:SetScript("OnEnter", function(self)
-        GameTooltip:SetOwner(self, "ANCHOR_LEFT")
-        GameTooltip:SetText(L["QT_MINIMAP_TT"])
-        GameTooltip:Show()
-    end)
-    minBtn:SetScript("OnLeave", function() GameTooltip:Hide() end)
+        local prefix = "|cffffff00[|r|cffd597ffWoW Translator|r|cffffff00]|r "
+        local gold = "|cffffff00"
+        local white = "|cffffffff"
+        local red = "|cffff0000"
 
-    minBtn:SetScript("OnClick", function(self, button)
-        if Settings and Settings.OpenToCategory then
-            Settings.OpenToCategory(addonTable.categoryID)
+        if command == "config" then
+            if Settings and Settings.OpenToCategory then
+                Settings.OpenToCategory(addonTable.categoryID)
+            else
+                InterfaceOptionsFrame_OpenToCategory(addonTable.categoryID)
+            end
+        elseif command == "on" then
+            WoWTranslatorDB.enabled = true
+            print(prefix .. L["SLASH_ON"])
+            if WT_MainEnableCB then WT_MainEnableCB:SetChecked(true) end
+        elseif command == "off" then
+            WoWTranslatorDB.enabled = false
+            print(prefix .. L["SLASH_OFF"])
+            if WT_MainEnableCB then WT_MainEnableCB:SetChecked(false) end
+        elseif command == "test" then
+            local testMsg = "LFM ICC HC 25m Need Tank and Healer"
+            local translated, changed = _G.TranslateChat(testMsg)
+
+            print(prefix .. gold .. L["SLASH_TEST_ORIGINAL"] .. white .. testMsg .. "|r")
+            if changed then
+                print(prefix .. gold .. L["SLASH_TEST_RESULT"] .. white .. translated .. "|r")
+            else
+                local errorStr = not WoWTranslatorDB.enabled and L["SLASH_TEST_ERROR"] or L["TEST_NO_MATCH"]
+                print(prefix .. red .. errorStr .. "|r")
+            end
         else
-            InterfaceOptionsFrame_OpenToCategory(addonTable.categoryID)
+            print(prefix .. gold .. L["HELP_HEADER"] .. "|r")
+            print(gold .. "/wt config|r - " .. white .. L["HELP_CONFIG_MSG"] .. "|r")
+            print(gold .. "/wt on | off|r - " .. white .. L["HELP_ONOFF_MSG"] .. "|r")
+            print(gold .. "/wt test|r - " .. white .. L["HELP_TEST_MSG"] .. "|r")
         end
-    end)
-
-    UpdateMinimapPos()
+    end
 end)
-
--- ==========================================
--- SLASH COMMANDS
--- ==========================================
-SLASH_WOWTRANSLATOR1 = "/wt"
-SlashCmdList["WOWTRANSLATOR"] = function(msg)
-    local command, rest = msg:match("^(%S*)%s*(.-)$")
-    command = command:lower()
-
-    local prefix = "|cffffff00[|r|cffd597ffWoW Translator|r|cffffff00]|r "
-    local gold = "|cffffff00"
-    local white = "|cffffffff"
-    local red = "|cffff0000"
-
-    if command == "config" then
-        if Settings and Settings.OpenToCategory then
-            Settings.OpenToCategory(addonTable.categoryID)
-        else
-            InterfaceOptionsFrame_OpenToCategory(addonTable.categoryID)
-        end
-    elseif command == "on" then
-        WoWTranslatorDB.enabled = true
-        print(prefix .. L["SLASH_ON"])
-        if WT_MainEnableCB then WT_MainEnableCB:SetChecked(true) end
-    elseif command == "off" then
-        WoWTranslatorDB.enabled = false
-        print(prefix .. L["SLASH_OFF"])
-        if WT_MainEnableCB then WT_MainEnableCB:SetChecked(false) end
-    elseif command == "test" then
-        local testMsg = "LFM ICC HC 25m Need Tank and Healer"
-        local translated, changed = _G.TranslateChat(testMsg)
-
-        print(prefix .. gold .. L["SLASH_TEST_ORIGINAL"] .. white .. testMsg .. "|r")
-        if changed then
-            print(prefix .. gold .. L["SLASH_TEST_RESULT"] .. white .. translated .. "|r")
-        else
-            local errorStr = not WoWTranslatorDB.enabled and L["SLASH_TEST_ERROR"] or L["TEST_NO_MATCH"]
-            print(prefix .. red .. errorStr .. "|r")
-        end
-    else
-        print(prefix .. gold .. L["HELP_HEADER"] .. "|r")
-        print(gold .. "/wt config|r - " .. white .. L["HELP_CONFIG_MSG"] .. "|r")
-        print(gold .. "/wt on | off|r - " .. white .. L["HELP_ONOFF_MSG"] .. "|r")
-        print(gold .. "/wt test|r - " .. white .. L["HELP_TEST_MSG"] .. "|r")
-    end
-end
