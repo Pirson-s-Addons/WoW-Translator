@@ -12,7 +12,10 @@ addonTable.ClasesDict = {
         ptBR = "Especialização Principal",
         ruRU = "МС",
         zhCN = "主天赋",
-        zhTW = "主天賦"
+        zhTW = "主天賦",
+        plPL = "Główna specjalizacja",
+        svSE = "Huvudinriktning",
+        noNO = "Hovedspesialisering"
     },
     ["os"]          = {
         esES = "Rama Secundaria",
@@ -25,7 +28,10 @@ addonTable.ClasesDict = {
         ptBR = "Especialização Secundária",
         ruRU = "ОС",
         zhCN = "副天赋",
-        zhTW = "副天賦"
+        zhTW = "副天賦",
+        plPL = "Druga specjalizacja",
+        svSE = "Andrainriktning",
+        noNO = "Sidespesialisering"
     },
 
     -- =====================
@@ -42,7 +48,10 @@ addonTable.ClasesDict = {
         ptBR = "Guerreiro",
         ruRU = "Воин",
         zhCN = "战士",
-        zhTW = "戰士"
+        zhTW = "戰士",
+        plPL = "Wojownik",
+        svSE = "Krigare",
+        noNO = "Kriger"
     },
     ["warr"]        = {
         esES = "Guerrero",
@@ -55,7 +64,10 @@ addonTable.ClasesDict = {
         ptBR = "Guerreiro",
         ruRU = "Воин",
         zhCN = "战士",
-        zhTW = "戰士"
+        zhTW = "戰士",
+        plPL = "Wojownik",
+        svSE = "Krigare",
+        noNO = "Kriger"
     },
 
     ["paladin"]     = {
@@ -69,7 +81,10 @@ addonTable.ClasesDict = {
         ptBR = "Paladino",
         ruRU = "Паладин",
         zhCN = "圣骑士",
-        zhTW = "聖騎士"
+        zhTW = "聖騎士",
+        plPL = "Paladyn",
+        svSE = "Paladin",
+        noNO = "Paladin"
     },
     ["pala"]        = {
         esES = "Paladín",
@@ -82,7 +97,10 @@ addonTable.ClasesDict = {
         ptBR = "Paladino",
         ruRU = "Паладин",
         zhCN = "圣骑士",
-        zhTW = "聖騎士"
+        zhTW = "聖騎士",
+        plPL = "Paladyn",
+        svSE = "Paladin",
+        noNO = "Paladin"
     },
 
     ["hunter"]      = {
@@ -96,7 +114,10 @@ addonTable.ClasesDict = {
         ptBR = "Caçador",
         ruRU = "Охотник",
         zhCN = "猎人",
-        zhTW = "獵人"
+        zhTW = "獵人",
+        plPL = "Łowca",
+        svSE = "Jägare",
+        noNO = "Jeger"
     },
     ["hunt"]        = {
         esES = "Cazador",
@@ -109,7 +130,10 @@ addonTable.ClasesDict = {
         ptBR = "Caçador",
         ruRU = "Охотник",
         zhCN = "猎人",
-        zhTW = "獵人"
+        zhTW = "獵人",
+        plPL = "Łowca",
+        svSE = "Jägare",
+        noNO = "Jeger"
     },
 
     ["deathknight"] = {
@@ -123,7 +147,10 @@ addonTable.ClasesDict = {
         ptBR = "Cavaleiro da Morte",
         ruRU = "Рыцарь смерти",
         zhCN = "死亡骑士",
-        zhTW = "死亡騎士"
+        zhTW = "死亡騎士",
+        plPL = "Rycerz Śmierci",
+        svSE = "Dödsriddare",
+        noNO = "Dødsridder"
     },
     ["dk"]          = {
         esES = "Caballero de la Muerte",
@@ -136,7 +163,10 @@ addonTable.ClasesDict = {
         ptBR = "Cavaleiro da Morte",
         ruRU = "Рыцарь смерти",
         zhCN = "死亡骑士",
-        zhTW = "死亡騎士"
+        zhTW = "死亡騎士",
+        plPL = "Rycerz Śmierci",
+        svSE = "Dödsriddare",
+        noNO = "Dødsridder"
     },
 
     ["rogue"]       = {
@@ -150,7 +180,10 @@ addonTable.ClasesDict = {
         ptBR = "Ladino",
         ruRU = "Разбойник",
         zhCN = "盗贼",
-        zhTW = "盜賊"
+        zhTW = "盜賊",
+        plPL = "Łotr",
+        svSE = "Skurk",
+        noNO = "Skurk"
     },
 
     ["mage"]        = {
@@ -164,7 +197,10 @@ addonTable.ClasesDict = {
         ptBR = "Mago",
         ruRU = "Маг",
         zhCN = "法师",
-        zhTW = "法師"
+        zhTW = "法師",
+        plPL = "Mag",
+        svSE = "Magiker",
+        noNO = "Magiker"
     },
 
     ["priest"]      = {
@@ -178,7 +214,10 @@ addonTable.ClasesDict = {
         ptBR = "Sacerdote",
         ruRU = "Жрец",
         zhCN = "牧师",
-        zhTW = "牧師"
+        zhTW = "牧師",
+        plPL = "Kapłan",
+        svSE = "Präst",
+        noNO = "Prest"
     },
 
     ["druid"]       = {
@@ -192,7 +231,10 @@ addonTable.ClasesDict = {
         ptBR = "Druida",
         ruRU = "Друид",
         zhCN = "德鲁伊",
-        zhTW = "德魯伊"
+        zhTW = "德魯伊",
+        plPL = "Druid",
+        svSE = "Druid",
+        noNO = "Druide"
     },
     ["dudu"]        = {
         esES = "Druida",
@@ -205,7 +247,10 @@ addonTable.ClasesDict = {
         ptBR = "Druida",
         ruRU = "Друид",
         zhCN = "德鲁伊",
-        zhTW = "德魯伊"
+        zhTW = "德魯伊",
+        plPL = "Druid",
+        svSE = "Druid",
+        noNO = "Druide"
     },
 
     ["shaman"]      = {
@@ -219,7 +264,10 @@ addonTable.ClasesDict = {
         ptBR = "Xamã",
         ruRU = "Шаман",
         zhCN = "萨满祭司",
-        zhTW = "薩滿"
+        zhTW = "薩滿",
+        plPL = "Szaman",
+        svSE = "Shaman",
+        noNO = "Sjaman"
     },
 
     ["monk"]        = {
@@ -233,7 +281,10 @@ addonTable.ClasesDict = {
         ptBR = "Monge",
         ruRU = "Монах",
         zhCN = "武僧",
-        zhTW = "武僧"
+        zhTW = "武僧",
+        plPL = "Mnich",
+        svSE = "Munk",
+        noNO = "Munk"
     },
 
     ["warlock"]     = {
@@ -247,7 +298,10 @@ addonTable.ClasesDict = {
         ptBR = "Bruxo",
         ruRU = "Чернокнижник",
         zhCN = "术士",
-        zhTW = "術士"
+        zhTW = "術士",
+        plPL = "Czarnoksiężnik",
+        svSE = "Svartkonstnär",
+        noNO = "Heksemester"
     },
     ["lock"]        = {
         esES = "Brujo",
@@ -260,7 +314,10 @@ addonTable.ClasesDict = {
         ptBR = "Bruxo",
         ruRU = "Чернокнижник",
         zhCN = "术士",
-        zhTW = "術士"
+        zhTW = "術士",
+        plPL = "Czarnoksiężnik",
+        svSE = "Svartkonstnär",
+        noNO = "Heksemester"
     },
 
     -- =====================
@@ -279,7 +336,10 @@ addonTable.ClasesDict = {
         ptBR = "Armas",
         ruRU = "Оружие",
         zhCN = "武器",
-        zhTW = "武器"
+        zhTW = "武器",
+        plPL = "Broń",
+        svSE = "Vapen",
+        noNO = "Våpen"
     },
     ["fury"]        = {
         esES = "Furia",
@@ -292,7 +352,10 @@ addonTable.ClasesDict = {
         ptBR = "Fúria",
         ruRU = "Неистовство",
         zhCN = "狂怒",
-        zhTW = "狂怒"
+        zhTW = "狂怒",
+        plPL = "Furia",
+        svSE = "Bärsärk",
+        noNO = "Raseri"
     },
     ["prot"]        = {
         esES = "Protección",
@@ -305,7 +368,10 @@ addonTable.ClasesDict = {
         ptBR = "Proteção",
         ruRU = "Защита",
         zhCN = "防护",
-        zhTW = "防護"
+        zhTW = "防護",
+        plPL = "Ochrona",
+        svSE = "Skydd",
+        noNO = "Beskyttelse"
     },
 
     -- Paladín
@@ -320,7 +386,10 @@ addonTable.ClasesDict = {
         ptBR = "Sagrado",
         ruRU = "Свет",
         zhCN = "神圣",
-        zhTW = "神聖"
+        zhTW = "神聖",
+        plPL = "Światłość",
+        svSE = "Helig",
+        noNO = "Hellig"
     },
     ["ppala"]       = {
         esES = "Protección",
@@ -333,7 +402,10 @@ addonTable.ClasesDict = {
         ptBR = "Proteção",
         ruRU = "Защита",
         zhCN = "防护",
-        zhTW = "防護"
+        zhTW = "防護",
+        plPL = "Ochrona",
+        svSE = "Skydd",
+        noNO = "Beskyttelse"
     },
     ["ret"]         = {
         esES = "Reprensión",
@@ -346,7 +418,10 @@ addonTable.ClasesDict = {
         ptBR = "Retribuição",
         ruRU = "Воздаяние",
         zhCN = "惩戒",
-        zhTW = "懲戒"
+        zhTW = "懲戒",
+        plPL = "Karą",
+        svSE = "Vedergällning",
+        noNO = "Gjengjeldelse"
     },
     ["retry"]       = {
         esES = "Reprensión",
@@ -359,7 +434,10 @@ addonTable.ClasesDict = {
         ptBR = "Retribuição",
         ruRU = "Воздаяние",
         zhCN = "惩戒",
-        zhTW = "懲戒"
+        zhTW = "懲戒",
+        plPL = "Karą",
+        svSE = "Vedergällning",
+        noNO = "Gjengjeldelse"
     },
 
     -- Cazador
@@ -374,7 +452,10 @@ addonTable.ClasesDict = {
         ptBR = "Domínio das Feras",
         ruRU = "Повелитель зверей",
         zhCN = "野兽控制",
-        zhTW = "野獸控制"
+        zhTW = "野獸控制",
+        plPL = "Mistrzostwo Bestii",
+        svSE = "Odjurstämning",
+        noNO = "Dyretemming"
     },
     ["bm hunt"]     = {
         esES = "Bestias",
@@ -387,7 +468,10 @@ addonTable.ClasesDict = {
         ptBR = "Domínio das Feras",
         ruRU = "Повелитель зверей",
         zhCN = "野兽控制",
-        zhTW = "野獸控制"
+        zhTW = "野獸控制",
+        plPL = "Mistrzostwo Bestii",
+        svSE = "Odjurstämning",
+        noNO = "Dyretemming"
     },
     ["mm"]          = {
         esES = "Puntería",
@@ -400,7 +484,10 @@ addonTable.ClasesDict = {
         ptBR = "Precisão",
         ruRU = "Стрельба",
         zhCN = "射击",
-        zhTW = "射擊"
+        zhTW = "射擊",
+        plPL = "Celność",
+        svSE = "Prickskytte",
+        noNO = "Skarpskyting"
     },
     ["sv"]          = {
         esES = "Supervivencia",
@@ -413,7 +500,10 @@ addonTable.ClasesDict = {
         ptBR = "Sobrevivência",
         ruRU = "Выживание",
         zhCN = "生存",
-        zhTW = "生存"
+        zhTW = "生存",
+        plPL = "Przetrwanie",
+        svSE = "Överlevnad",
+        noNO = "Overlevelse"
     },
 
     -- Mago
@@ -428,7 +518,10 @@ addonTable.ClasesDict = {
         ptBR = "Fogo",
         ruRU = "Огонь",
         zhCN = "火焰",
-        zhTW = "火焰"
+        zhTW = "火焰",
+        plPL = "Ogień",
+        svSE = "Eld",
+        noNO = "Ild"
     },
     ["frost"]       = {
         esES = "Escarcha",
@@ -441,7 +534,10 @@ addonTable.ClasesDict = {
         ptBR = "Gelo",
         ruRU = "Лёд",
         zhCN = "冰霜",
-        zhTW = "冰霜"
+        zhTW = "冰霜",
+        plPL = "Mróz",
+        svSE = "Frost",
+        noNO = "Frost"
     },
     ["arcane"]      = {
         esES = "Arcano",
@@ -454,7 +550,10 @@ addonTable.ClasesDict = {
         ptBR = "Arcano",
         ruRU = "Тайная магия",
         zhCN = "奥术",
-        zhTW = "秘法"
+        zhTW = "秘法",
+        plPL = "Tajemna",
+        svSE = "Arkan",
+        noNO = "Arkan"
     },
 
     -- Brujo
@@ -469,7 +568,10 @@ addonTable.ClasesDict = {
         ptBR = "Suplício",
         ruRU = "Колдовство",
         zhCN = "痛苦",
-        zhTW = "痛苦"
+        zhTW = "痛苦",
+        plPL = "Utrapienie",
+        svSE = "Affliction",
+        noNO = "Affliction"
     },
     ["demo"]        = {
         esES = "Demonología",
@@ -482,7 +584,10 @@ addonTable.ClasesDict = {
         ptBR = "Demonologia",
         ruRU = "Демонология",
         zhCN = "恶魔学识",
-        zhTW = "惡魔學識"
+        zhTW = "惡魔學識",
+        plPL = "Demonologia",
+        svSE = "Demonologi",
+        noNO = "Demonologi"
     },
     ["destro"]      = {
         esES = "Destrucción",
@@ -495,7 +600,10 @@ addonTable.ClasesDict = {
         ptBR = "Destruição",
         ruRU = "Разрушение",
         zhCN = "毁灭",
-        zhTW = "毀滅"
+        zhTW = "毀滅",
+        plPL = "Zniszczenie",
+        svSE = "Förstörelse",
+        noNO = "Ødeleggelse"
     },
 
     -- Sacerdote
@@ -510,7 +618,10 @@ addonTable.ClasesDict = {
         ptBR = "Disciplina",
         ruRU = "Послушание",
         zhCN = "戒律",
-        zhTW = "戒律"
+        zhTW = "戒律",
+        plPL = "Dyscyplina",
+        svSE = "Disciplin",
+        noNO = "Disiplin"
     },
     ["holy"]        = {
         esES = "Sagrado",
@@ -523,7 +634,10 @@ addonTable.ClasesDict = {
         ptBR = "Sagrado",
         ruRU = "Свет",
         zhCN = "神圣",
-        zhTW = "神聖"
+        zhTW = "神聖",
+        plPL = "Światłość",
+        svSE = "Helig",
+        noNO = "Hellig"
     },
     ["shadow"]      = {
         esES = "Sombras",
@@ -536,7 +650,10 @@ addonTable.ClasesDict = {
         ptBR = "Sombra",
         ruRU = "Тьма",
         zhCN = "暗影",
-        zhTW = "暗影"
+        zhTW = "暗影",
+        plPL = "Cień",
+        svSE = "Skugga",
+        noNO = "Skygge"
     },
 
     -- Druida
@@ -551,7 +668,10 @@ addonTable.ClasesDict = {
         ptBR = "Equilíbrio",
         ruRU = "Баланс",
         zhCN = "平衡",
-        zhTW = "平衡"
+        zhTW = "平衡",
+        plPL = "Równowaga",
+        svSE = "Balans",
+        noNO = "Balanse"
     },
     ["feral"]       = {
         esES = "Feral",
@@ -564,7 +684,10 @@ addonTable.ClasesDict = {
         ptBR = "Feral",
         ruRU = "Сила зверя",
         zhCN = "野性",
-        zhTW = "野性"
+        zhTW = "野性",
+        plPL = "Dziki",
+        svSE = "Vildmand",
+        noNO = "Villskap"
     },
     ["resto"]       = {
         esES = "Restauración",
@@ -577,7 +700,10 @@ addonTable.ClasesDict = {
         ptBR = "Restauração",
         ruRU = "Исцеление",
         zhCN = "恢复",
-        zhTW = "恢復"
+        zhTW = "恢復",
+        plPL = "Przywrócenie",
+        svSE = "Återställning",
+        noNO = "Restaurering"
     },
     ["guardian"]    = {
         esES = "Guardián",
@@ -590,7 +716,10 @@ addonTable.ClasesDict = {
         ptBR = "Guardião",
         ruRU = "Страж",
         zhCN = "守护",
-        zhTW = "守護"
+        zhTW = "守護",
+        plPL = "Strażnik",
+        svSE = "Väktare",
+        noNO = "Vokter"
     },
 
     -- Chamán
@@ -605,7 +734,10 @@ addonTable.ClasesDict = {
         ptBR = "Elemental",
         ruRU = "Стихии",
         zhCN = "元素",
-        zhTW = "元素"
+        zhTW = "元素",
+        plPL = "Żywioły",
+        svSE = "Elementär",
+        noNO = "Elementær"
     },
     ["enh"]         = {
         esES = "Mejora",
@@ -618,7 +750,10 @@ addonTable.ClasesDict = {
         ptBR = "Aperfeiçoamento",
         ruRU = "Совершенствование",
         zhCN = "增强",
-        zhTW = "增強"
+        zhTW = "增強",
+        plPL = "Wzmocnienie",
+        svSE = "Förstärkning",
+        noNO = "Forsterkning"
     },
 
 
@@ -634,7 +769,10 @@ addonTable.ClasesDict = {
         ptBR = "Assassinato",
         ruRU = "Ликвидация",
         zhCN = "奇袭",
-        zhTW = "刺殺"
+        zhTW = "刺殺",
+        plPL = "Likwidacja",
+        svSE = "Lönnmord",
+        noNO = "Likvidering"
     },
     ["assass"] = {
         esES = "Asesinato",
@@ -647,7 +785,10 @@ addonTable.ClasesDict = {
         ptBR = "Assassinato",
         ruRU = "Ликвидация",
         zhCN = "奇袭",
-        zhTW = "刺殺"
+        zhTW = "刺殺",
+        plPL = "Likwidacja",
+        svSE = "Lönnmord",
+        noNO = "Likvidering"
     },
     ["outlaw"] = {
         esES = "Combate",
@@ -660,7 +801,10 @@ addonTable.ClasesDict = {
         ptBR = "Combate",
         ruRU = "Бой",
         zhCN = "战斗",
-        zhTW = "戰鬥"
+        zhTW = "戰鬥",
+        plPL = "Walka",
+        svSE = "Strid",
+        noNO = "Kamp"
     },
     ["sub"] = {
         esES = "Sutileza",
@@ -673,7 +817,10 @@ addonTable.ClasesDict = {
         ptBR = "Subterfúgio",
         ruRU = "Скрытность",
         zhCN = "敏锐",
-        zhTW = "敏銳"
+        zhTW = "敏銳",
+        plPL = "Przebiegłość",
+        svSE = "List",
+        noNO = "Smiidighet"
     },
 
     -- Monje
@@ -688,7 +835,10 @@ addonTable.ClasesDict = {
         ptBR = "Mestre Cervejeiro",
         ruRU = "Хмелевар",
         zhCN = "酒仙",
-        zhTW = "釀酒"
+        zhTW = "釀酒",
+        plPL = "Mistrz Piwowarstwa",
+        svSE = "Bryggmästare",
+        noNO = "Bryggemester"
     },
     ["bm monk"] = {
         esES = "Maestro Cervecero",
@@ -701,7 +851,10 @@ addonTable.ClasesDict = {
         ptBR = "Mestre Cervejeiro",
         ruRU = "Хмелевар",
         zhCN = "酒仙",
-        zhTW = "釀酒"
+        zhTW = "釀酒",
+        plPL = "Mistrz Piwowarstwa",
+        svSE = "Bryggmästare",
+        noNO = "Bryggemester"
     },
     ["ww"] = {
         esES = "Viajero del Viento",
@@ -714,7 +867,10 @@ addonTable.ClasesDict = {
         ptBR = "Andarilho do Vento",
         ruRU = "Танцующий с ветром",
         zhCN = "踏风",
-        zhTW = "御風"
+        zhTW = "御風",
+        plPL = "Kroczący w Wietrze",
+        svSE = "Vindgångare",
+        noNO = "Vindvandrer"
     },
     ["mw"] = {
         esES = "Tejedor de Niebla",
@@ -727,7 +883,10 @@ addonTable.ClasesDict = {
         ptBR = "Tecelão da Névoa",
         ruRU = "Ткач туманов",
         zhCN = "织雾",
-        zhTW = "織霧"
+        zhTW = "織霧",
+        plPL = "Tkacz Mgły",
+        svSE = "Dimvävare",
+        noNO = "Tåkevever"
     },
 
     -- Caballero de la Muerte
@@ -742,7 +901,10 @@ addonTable.ClasesDict = {
         ptBR = "Sangue",
         ruRU = "Кровь",
         zhCN = "鲜血",
-        zhTW = "血魄"
+        zhTW = "血魄",
+        plPL = "Krew",
+        svSE = "Blod",
+        noNO = "Blod"
     },
     ["unholy"] = {
         esES = "Profano",
@@ -755,7 +917,10 @@ addonTable.ClasesDict = {
         ptBR = "Profano",
         ruRU = "Нечестивость",
         zhCN = "邪恶",
-        zhTW = "穢邪"
+        zhTW = "穢邪",
+        plPL = "Nieczysty",
+        svSE = "Ohelig",
+        noNO = "Uhellig"
     },
 
     -- Cazador de Demonios
@@ -770,7 +935,10 @@ addonTable.ClasesDict = {
         ptBR = "Caçador de Demônios",
         ruRU = "Охотник на демонов",
         zhCN = "恶魔猎手",
-        zhTW = "惡魔獵人"
+        zhTW = "惡魔獵人",
+        plPL = "Łowca Demonów",
+        svSE = "Demonjägare",
+        noNO = "Demonjeger"
     },
     ["dh"] = {
         esES = "Cazador de Demonios",
@@ -783,7 +951,10 @@ addonTable.ClasesDict = {
         ptBR = "Caçador de Demônios",
         ruRU = "Охотник на демонов",
         zhCN = "恶魔猎手",
-        zhTW = "惡魔獵人"
+        zhTW = "惡魔獵人",
+        plPL = "Łowca Demonów",
+        svSE = "Demonjägare",
+        noNO = "Demonjeger"
     },
     ["havoc"] = {
         esES = "Devastación",
@@ -796,7 +967,10 @@ addonTable.ClasesDict = {
         ptBR = "Devastação",
         ruRU = "Истребление",
         zhCN = "浩劫",
-        zhTW = "災虐"
+        zhTW = "災虐",
+        plPL = "Spustoszenie",
+        svSE = "Förödelse",
+        noNO = "Ødeleggelse"
     },
     ["vengeance"] = {
         esES = "Venganza",
@@ -809,6 +983,9 @@ addonTable.ClasesDict = {
         ptBR = "Vingança",
         ruRU = "Месть",
         zhCN = "复仇",
-        zhTW = "復仇"
+        zhTW = "復仇",
+        plPL = "Zemsta",
+        svSE = "Hämnd",
+        noNO = "Hevn"
     },
 }

@@ -207,7 +207,10 @@ function addonTable.CreateConfigUI()
         ruRU = "Русский",
         koKR = "한국어",
         zhCN = "简体中文",
-        zhTW = "繁體中文"
+        zhTW = "繁體中文",
+        plPL = "Polski",
+        svSE = "Svenska",
+        noNO = "Norsk"
     }
 
     UIDropDownMenu_Initialize(dropdown, function(self, level)
@@ -219,6 +222,7 @@ function addonTable.CreateConfigUI()
                 WoWTranslatorDB.targetLocale = s.value
                 UIDropDownMenu_SetSelectedValue(dropdown, s.value)
                 UIDropDownMenu_SetText(dropdown, langNames[s.value])
+                addonTable.RebuildMasterDict()
             end
             info.checked = (WoWTranslatorDB.targetLocale == val)
             UIDropDownMenu_AddButton(info)
@@ -227,6 +231,16 @@ function addonTable.CreateConfigUI()
 
     UIDropDownMenu_SetSelectedValue(dropdown, WoWTranslatorDB.targetLocale)
     UIDropDownMenu_SetText(dropdown, langNames[WoWTranslatorDB.targetLocale] or "Español (ES)")
+
+    -- 5. BOTÓN DE PRUEBA
+    local testBtn = CreateFrame("Button", "WT_TestBtn", panel, "UIPanelButtonTemplate")
+    testBtn:SetPoint("LEFT", dropdown, "RIGHT", 140, 2)
+    testBtn:SetSize(150, 22)
+    testBtn:SetText(L["UI_TEST_BTN"])
+    testBtn:SetScript("OnClick", function()
+        addonTable.RunTest()
+    end)
+    AddTooltip(testBtn, L["TT_TEST_BTN"])
 
     -- Registro Final
     local config_category = Settings.RegisterCanvasLayoutCategory(panel, panel.name)

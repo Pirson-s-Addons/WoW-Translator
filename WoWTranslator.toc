@@ -1,6 +1,6 @@
 ## Interface: 110007, 110100, 11506, 40401, 20505, 11302, 20503, 30401, 30200, 50503, 120001
 ## Author: Pirson
-## Version: 1.07
+## Version: 1.09
 ## SavedVariables: WoWTranslatorDB
 ## OptionalDeps: LibStub, CallbackHandler, LibDataBroker-1.1, LibDBIcon-1.0
 
@@ -17,6 +17,9 @@
 ## Notes-ruRU: |cFF33CCFFПеревод терминов, акронимов и сленга World of Warcraft.|r
 ## Notes-zhCN: |cFF33CCFF魔兽世界术语、首字母缩略词和俚语的翻译。|r
 ## Notes-zhTW: |cFF33CCFF魔獸世界術語、首字母縮略詞和俚語的翻譯。|r
+## Notes-plPL: |cFF33CCFFTłumaczenie terminów, akronimów i slangu World of Warcraft.|r
+## Notes-svSE: |cFF33CCFFÖversättning av termer, akronimer och World of Warcraft-slang.|r
+## Notes-noNO: |cFF33CCFFOversettelse av termer, akronymer og World of Warcraft-slang.|r
 
 ## X-Curse-Project-ID: 1431567
 

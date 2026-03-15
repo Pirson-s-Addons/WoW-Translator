@@ -237,6 +237,28 @@ f:SetScript("OnEvent", function(self, event)
     end
 
     -- ==========================================
+    -- ==========================================
+    -- SHARED FUNCTIONS
+    -- ==========================================
+    function addonTable.RunTest()
+        local prefix = "|cffffff00[|r|cffd597ffWoW Translator|r|cffffff00]|r "
+        local gold = "|cffffff00"
+        local white = "|cffffffff"
+        local red = "|cffff0000"
+
+        local testMsg = "LFM ICC HC 25m Need Tank and Healer"
+        local translated, changed = _G.TranslateChat(testMsg)
+
+        print(prefix .. gold .. L["SLASH_TEST_ORIGINAL"] .. white .. testMsg .. "|r")
+        if changed then
+            print(prefix .. gold .. L["SLASH_TEST_RESULT"] .. white .. translated .. "|r")
+        else
+            local errorStr = not WoWTranslatorDB.enabled and L["SLASH_TEST_ERROR"] or L["TEST_NO_MATCH"]
+            print(prefix .. red .. errorStr .. "|r")
+        end
+    end
+
+    -- ==========================================
     -- SLASH COMMANDS
     -- ==========================================
     SLASH_WOWTRANSLATOR1 = "/wt"
@@ -264,16 +286,7 @@ f:SetScript("OnEvent", function(self, event)
             print(prefix .. L["SLASH_OFF"])
             if WT_MainEnableCB then WT_MainEnableCB:SetChecked(false) end
         elseif command == "test" then
-            local testMsg = "LFM ICC HC 25m Need Tank and Healer"
-            local translated, changed = _G.TranslateChat(testMsg)
-
-            print(prefix .. gold .. L["SLASH_TEST_ORIGINAL"] .. white .. testMsg .. "|r")
-            if changed then
-                print(prefix .. gold .. L["SLASH_TEST_RESULT"] .. white .. translated .. "|r")
-            else
-                local errorStr = not WoWTranslatorDB.enabled and L["SLASH_TEST_ERROR"] or L["TEST_NO_MATCH"]
-                print(prefix .. red .. errorStr .. "|r")
-            end
+            addonTable.RunTest()
         else
             print(prefix .. gold .. L["HELP_HEADER"] .. "|r")
             print(gold .. "/wt config|r - " .. white .. L["HELP_CONFIG_MSG"] .. "|r")
