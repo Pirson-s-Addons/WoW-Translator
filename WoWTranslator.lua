@@ -116,7 +116,7 @@ _G.TranslateChat = function(text)
         end
     end
 
-    -- 4. SKIP IF ALREADY TARGET LOCALE
+    -- 4. SALTAR SI YA ES EL IDIOMA DE DESTINO
     local target = WoWTranslatorDB and WoWTranslatorDB.targetLocale or "esES"
     if target:sub(1, 2) == "en" then
         if WoWTranslatorDB.settings.skipSameLanguage and text:match("^[!%p%s%d%a]+$") then
@@ -132,7 +132,7 @@ end
 local function MyChatFilter(self, event, text, author, ...)
     if not WoWTranslatorDB or not WoWTranslatorDB.enabled then return end
 
-    -- Channel filtering
+    -- Filtrado de canales
     if WoWTranslatorDB.settings.channels and WoWTranslatorDB.settings.channels[event] == false then
         return
     end
@@ -174,10 +174,11 @@ f:SetScript("OnEvent", function(self, event)
 
     local defaultEvents = {
         "CHAT_MSG_SAY", "CHAT_MSG_YELL", "CHAT_MSG_WHISPER", "CHAT_MSG_WHISPER_INFORM",
-        "CHAT_MSG_BN_WHISPER", "CHAT_MSG_PARTY", "CHAT_MSG_PARTY_LEADER", "CHAT_MSG_RAID",
-        "CHAT_MSG_RAID_LEADER", "CHAT_MSG_RAID_WARNING", "CHAT_MSG_INSTANCE_CHAT",
-        "CHAT_MSG_INSTANCE_CHAT_LEADER", "CHAT_MSG_GUILD", "CHAT_MSG_OFFICER",
-        "CHAT_MSG_CHANNEL", "CHAT_MSG_EMOTE"
+        "CHAT_MSG_BN_WHISPER", "CHAT_MSG_BN_WHISPER_INFORM", "CHAT_MSG_BN_INLINE_WHISPER",
+        "CHAT_MSG_BN_INLINE_WHISPER_INFORM", "CHAT_MSG_PARTY", "CHAT_MSG_PARTY_LEADER",
+        "CHAT_MSG_RAID", "CHAT_MSG_RAID_LEADER", "CHAT_MSG_RAID_WARNING",
+        "CHAT_MSG_INSTANCE_CHAT", "CHAT_MSG_INSTANCE_CHAT_LEADER", "CHAT_MSG_GUILD",
+        "CHAT_MSG_OFFICER", "CHAT_MSG_CHANNEL", "CHAT_MSG_EMOTE"
     }
     for _, e in ipairs(defaultEvents) do
         if WoWTranslatorDB.settings.channels[e] == nil then
@@ -193,10 +194,12 @@ f:SetScript("OnEvent", function(self, event)
 
     local events = {
         "CHAT_MSG_SAY", "CHAT_MSG_YELL", "CHAT_MSG_WHISPER", "CHAT_MSG_WHISPER_INFORM",
-        "CHAT_MSG_BN_WHISPER", "CHAT_MSG_PARTY", "CHAT_MSG_PARTY_LEADER", "CHAT_MSG_RAID",
-        "CHAT_MSG_RAID_LEADER", "CHAT_MSG_RAID_WARNING", "CHAT_MSG_INSTANCE_CHAT",
-        "CHAT_MSG_INSTANCE_CHAT_LEADER", "CHAT_MSG_GUILD", "CHAT_MSG_OFFICER",
-        "CHAT_MSG_CHANNEL", "CHAT_MSG_EMOTE", "CHAT_MSG_BATTLEGROUND", "CHAT_MSG_BATTLEGROUND_LEADER"
+        "CHAT_MSG_BN_WHISPER", "CHAT_MSG_BN_WHISPER_INFORM", "CHAT_MSG_BN_INLINE_WHISPER",
+        "CHAT_MSG_BN_INLINE_WHISPER_INFORM", "CHAT_MSG_PARTY", "CHAT_MSG_PARTY_LEADER",
+        "CHAT_MSG_RAID", "CHAT_MSG_RAID_LEADER", "CHAT_MSG_RAID_WARNING",
+        "CHAT_MSG_INSTANCE_CHAT", "CHAT_MSG_INSTANCE_CHAT_LEADER", "CHAT_MSG_GUILD",
+        "CHAT_MSG_OFFICER", "CHAT_MSG_CHANNEL", "CHAT_MSG_EMOTE", "CHAT_MSG_BATTLEGROUND",
+        "CHAT_MSG_BATTLEGROUND_LEADER"
     }
     for _, e in ipairs(events) do
         ChatFrame_AddMessageEventFilter(e, MyChatFilter)
@@ -205,7 +208,7 @@ f:SetScript("OnEvent", function(self, event)
     print("|cffffff00[|r|cffd597ffWoW Translator|r|cffffff00]|r " .. (L["CHAT_LOADED"] or "Loaded."))
 
     -- ==========================================
-    -- MINIMAP BUTTON
+    -- BOTÓN DEL MINIMAPA
     -- ==========================================
 
     local LDB = LibStub("LibDataBroker-1.1", true)
@@ -238,7 +241,7 @@ f:SetScript("OnEvent", function(self, event)
 
     -- ==========================================
     -- ==========================================
-    -- SHARED FUNCTIONS
+    -- FUNCIONES COMPARTIDAS
     -- ==========================================
     function addonTable.RunTest()
         local prefix = "|cffffff00[|r|cffd597ffWoW Translator|r|cffffff00]|r "
@@ -259,7 +262,7 @@ f:SetScript("OnEvent", function(self, event)
     end
 
     -- ==========================================
-    -- SLASH COMMANDS
+    -- COMANDOS DE BARRA (SLASH)
     -- ==========================================
     SLASH_WOWTRANSLATOR1 = "/wt"
     SlashCmdList["WOWTRANSLATOR"] = function(msg)

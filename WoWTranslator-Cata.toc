@@ -1,7 +1,6 @@
-## Interface: 50503
+## Interface: 40402
 ## Author: Pirson
-## Version: 1.09
-## IconTexture: Interface\AddOns\WoWTranslator\img\logo_wt
+## Version: 1.10
 ## Title: |TInterface\AddOns\WoWTranslator\img\logo_wt:16:16|t |cffd597ffWoW Translator|r
 
 # https://warcraft.wiki.gg/wiki/Addon_Categories
@@ -23,7 +22,7 @@
 ## Notes: |cFF33CCFFTranslation of terms, acronyms, and World of Warcraft slang.|r
 ## Notes-deDE: |cFF33CCFFÜbersetzung von Begriffen, Akronymen und World of Warcraft-Slang.|r
 ## Notes-esES: |cFF33CCFFTraducción de términos, acrónimos y jerga de World of Warcraft.|r
-## Notes-esMX: |cFF33CCFFTraducción de términos, acrónimos y jerga de World of Warcraft.|r
+## Notes-esMX: |cFF33CCFFTraducción de términos, acronyms y jerga de World of Warcraft.|r
 ## Notes-frFR: |cFF33CCFFTraduction des termes, acronymes et de l'argot de World of Warcraft.|r
 ## Notes-itIT: |cFF33CCFFTraduzione di termini, acronimi e gergo di World of Warcraft.|r
 ## Notes-koKR: |cFF33CCFF월드 오브 워크래프트의 용어, 약어 및 속어 번역.|r

@@ -4,7 +4,7 @@ local L = {}
 local locale = GetLocale()
 
 -- ==========================================
--- DEFAULT ENGLISH (enUS / enGB)
+-- INGLÉS PREDETERMINADO (enUS / enGB)
 -- ==========================================
 L["UI_TITLE"] = "WoW Translator Configuration"
 L["UI_ENABLE_TEXT"] = " Enable Real-time Translation"
@@ -41,19 +41,38 @@ L["CAT_SETS"] = "Item Sets"
 L["CAT_STATUS"] = "Status / States"
 L["GEN_HEADER"] = "General Configuration"
 
--- Channels
+-- Canales
+L["CH_HEADER"] = "Channels to translate:"
+L["CH_CAT_GENERAL"] = "General"
+L["CH_CAT_WHISPERS"] = "Whispers & Bnet"
+L["CH_CAT_GUILD"] = "Guild"
+L["CH_CAT_GROUP"] = "Group"
+L["CH_CAT_RAID"] = "Raid"
+L["CH_CAT_PVP"] = "PvP"
+
 L["CH_SAY"] = "Say"
 L["CH_YELL"] = "Yell"
-L["CH_PARTY"] = "Party"
-L["CH_RAID"] = "Raid"
+L["CH_EMOTE"] = "Emote"
+L["CH_WHISPER"] = "Whisper (In)"
+L["CH_WHISPER_INFORM"] = "Whisper (Out)"
+L["CH_BN_WHISPER"] = "BNet (In)"
+L["CH_BN_WHISPER_INFORM"] = "BNet (Out)"
+L["CH_BN_INLINE_WHISPER"] = "BNet Inline (In)"
+L["CH_BN_INLINE_WHISPER_INFORM"] = "BNet Inline (Out)"
 L["CH_GUILD"] = "Guild"
 L["CH_OFFICER"] = "Officer"
-L["CH_WHISPER"] = "Whisper"
 L["CH_CHANNEL"] = "Global Channels"
-L["CH_EMOTE"] = "Emote"
-L["CH_HEADER"] = "Channels to translate:"
+L["CH_PARTY"] = "Party"
+L["CH_PARTY_LEADER"] = "Party Leader"
+L["CH_INSTANCE"] = "Instance"
+L["CH_INSTANCE_LEADER"] = "Instance Leader"
+L["CH_RAID"] = "Raid"
+L["CH_RAID_LEADER"] = "Raid Leader"
+L["CH_RAID_WARNING"] = "Raid Warning"
+L["CH_BATTLEGROUND"] = "Battleground"
+L["CH_BATTLEGROUND_LEADER"] = "BG Leader"
 
--- Tooltips
+-- Descripciones emergentes (Tooltips)
 L["TT_ENABLE"] = "Enable or disable all translations globally."
 L["TT_COLOR"] = "Choose the color for the translated text in chat."
 L["TT_LANG"] = "Select which language you want to translate TO."
@@ -71,15 +90,9 @@ L["TT_CAT_ZONES"] = "Translate zone and location names."
 L["TT_CAT_SETS"] = "Translate item set names."
 L["TT_CAT_STATUS"] = "Translate statuses and states (AFK, OOM, etc)."
 
-L["TT_CH_SAY"] = "Translate messages from /say and /yell."
-L["TT_CH_PARTY"] = "Translate messages from Party and Instance chat."
-L["TT_CH_RAID"] = "Translate messages from Raid and Raid Warning."
-L["TT_CH_GUILD"] = "Translate messages from Guild and Officer chat."
-L["TT_CH_WHISPER"] = "Translate incoming and outgoing Whispers."
-L["TT_CH_CHANNEL"] = "Translate messages from numbered channels (e.g. Trade, General)."
-L["TT_CH_EMOTE"] = "Translate emotes."
+L["TT_CH_GENERIC"] = "Enable translation for this specific chat channel."
 
--- Minimap
+-- Minimapa
 L["QT_MINIMAP_TT"] =
 "|cffd597ffWoW Translator|r\n|cffffffffClick:|r Open Settings"
 
@@ -122,19 +135,38 @@ if locale == "esES" or locale == "esMX" then
     L["CAT_STATUS"] = "Estado / Estados"
     L["GEN_HEADER"] = "Configuración General"
 
-    -- Channels
+    -- Canales
+    L["CH_HEADER"] = "Canales a traducir:"
+    L["CH_CAT_GENERAL"] = "General"
+    L["CH_CAT_WHISPERS"] = "Susurros / BNet"
+    L["CH_CAT_GUILD"] = "Hermandad"
+    L["CH_CAT_GROUP"] = "Grupo"
+    L["CH_CAT_RAID"] = "Banda"
+    L["CH_CAT_PVP"] = "JcJ"
+
     L["CH_SAY"] = "Decir"
     L["CH_YELL"] = "Grito"
-    L["CH_PARTY"] = "Grupo"
-    L["CH_RAID"] = "Banda"
+    L["CH_EMOTE"] = "Emoción"
+    L["CH_WHISPER"] = "Susurro (Ent)"
+    L["CH_WHISPER_INFORM"] = "Susurro (Sal)"
+    L["CH_BN_WHISPER"] = "BNet (Ent)"
+    L["CH_BN_WHISPER_INFORM"] = "BNet (Sal)"
+    L["CH_BN_INLINE_WHISPER"] = "BNet Inline (Ent)"
+    L["CH_BN_INLINE_WHISPER_INFORM"] = "BNet Inline (Sal)"
     L["CH_GUILD"] = "Hermandad"
     L["CH_OFFICER"] = "Oficiales"
-    L["CH_WHISPER"] = "Susurros"
-    L["CH_CHANNEL"] = "Canales Globales"
-    L["CH_HEADER"] = "Canales a traducir:"
-    L["CH_EMOTE"] = "Emoción"
+    L["CH_CHANNEL"] = "Globales"
+    L["CH_PARTY"] = "Grupo"
+    L["CH_PARTY_LEADER"] = "Líder de Grupo"
+    L["CH_INSTANCE"] = "Instancia"
+    L["CH_INSTANCE_LEADER"] = "Líder de Instancia"
+    L["CH_RAID"] = "Banda"
+    L["CH_RAID_LEADER"] = "Líder de Banda"
+    L["CH_RAID_WARNING"] = "Alerta de Banda"
+    L["CH_BATTLEGROUND"] = "Campo de Batalla"
+    L["CH_BATTLEGROUND_LEADER"] = "Líder de CB"
 
-    -- Tooltips
+    -- Descripciones emergentes (Tooltips)
     L["TT_ENABLE"] = "Activa o desactiva todas las traducciones de forma global."
     L["TT_COLOR"] = "Elige el color del texto traducido en el chat."
     L["TT_LANG"] = "Selecciona a qué idioma quieres traducir los mensajes."
@@ -152,15 +184,9 @@ if locale == "esES" or locale == "esMX" then
     L["TT_CAT_SETS"] = "Traducir nombres de sets de objetos."
     L["TT_CAT_STATUS"] = "Traducir estados y situaciones (AFK, OOM, etc)."
 
-    L["TT_CH_SAY"] = "Traducir mensajes de /decir y /gritar."
-    L["TT_CH_PARTY"] = "Traducir mensajes de Grupo e Instancia."
-    L["TT_CH_RAID"] = "Traducir mensajes de Banda y Alerta de Banda."
-    L["TT_CH_GUILD"] = "Traducir mensajes de Hermandad y Oficiales."
-    L["TT_CH_WHISPER"] = "Traducir susurros entrantes y salientes."
-    L["TT_CH_CHANNEL"] = "Traducir mensajes de canales numerados (ej. Comercio, General)."
-    L["TT_CH_EMOTE"] = "Traducir emociones (emotes)."
+    L["TT_CH_GENERIC"] = "Activa la traducción para este canal específico."
 
-    -- Minimap
+    -- Minimapa
     L["QT_MINIMAP_TT"] =
     "|cffd597ffWoW Translator|r\n|cffffffffClick:|r Abrir Configuración"
 
@@ -203,19 +229,38 @@ elseif locale == "deDE" then
     L["CAT_STATUS"] = "Status / Zustände"
     L["GEN_HEADER"] = "Allgemeine Konfiguration"
 
-    -- Channels
+    -- Canales
+    L["CH_HEADER"] = "Kanäle zum Übersetzen:"
+    L["CH_CAT_GENERAL"] = "Allgemein"
+    L["CH_CAT_WHISPERS"] = "Flüstern / BNet"
+    L["CH_CAT_GUILD"] = "Gilde"
+    L["CH_CAT_GROUP"] = "Gruppe"
+    L["CH_CAT_RAID"] = "Schlachtzug"
+    L["CH_CAT_PVP"] = "PvP"
+
     L["CH_SAY"] = "Sagen"
     L["CH_YELL"] = "Schreien"
-    L["CH_PARTY"] = "Gruppe"
-    L["CH_RAID"] = "Schlachtzug"
+    L["CH_EMOTE"] = "Emote"
+    L["CH_WHISPER"] = "Flüstern (Eing)"
+    L["CH_WHISPER_INFORM"] = "Flüstern (Ausg)"
+    L["CH_BN_WHISPER"] = "BNet (Eing)"
+    L["CH_BN_WHISPER_INFORM"] = "BNet (Ausg)"
+    L["CH_BN_INLINE_WHISPER"] = "BNet Inline (Eing)"
+    L["CH_BN_INLINE_WHISPER_INFORM"] = "BNet Inline (Ausg)"
     L["CH_GUILD"] = "Gilde"
     L["CH_OFFICER"] = "Offizier"
-    L["CH_WHISPER"] = "Flüstern"
     L["CH_CHANNEL"] = "Globale Kanäle"
-    L["CH_HEADER"] = "Kanäle zum Übersetzen:"
-    L["CH_EMOTE"] = "Emote"
+    L["CH_PARTY"] = "Gruppe"
+    L["CH_PARTY_LEADER"] = "Gruppenleiter"
+    L["CH_INSTANCE"] = "Instanz"
+    L["CH_INSTANCE_LEADER"] = "Instanzleiter"
+    L["CH_RAID"] = "Schlachtzug"
+    L["CH_RAID_LEADER"] = "Schlachtzugsleiter"
+    L["CH_RAID_WARNING"] = "Schlachtzugswarnung"
+    L["CH_BATTLEGROUND"] = "Schlachtfeld"
+    L["CH_BATTLEGROUND_LEADER"] = "Schlachtfeldleiter"
 
-    -- Tooltips
+    -- Descripciones emergentes (Tooltips)
     L["TT_ENABLE"] = "Aktiviert oder deaktiviert alle Übersetzungen global."
     L["TT_COLOR"] = "Wählen Sie die Farbe für den übersetzten Text im Chat."
     L["TT_LANG"] = "Wählen Sie die Sprache aus, IN die Sie übersetzen möchten."
@@ -241,7 +286,7 @@ elseif locale == "deDE" then
     L["TT_CH_CHANNEL"] = "Übersetzt Nachrichten aus nummerierten Kanälen (z. B. Handel, Allgemein)."
     L["TT_CH_EMOTE"] = "Übersetzt Emotes."
 
-    -- Minimap
+    -- Minimapa
     L["QT_MINIMAP_TT"] =
     "|cffd597ffWoW Translator|r\n|cffffffffKlick:|r Einstellungen öffnen"
 
@@ -284,19 +329,38 @@ elseif locale == "frFR" then
     L["CAT_STATUS"] = "État / États"
     L["GEN_HEADER"] = "Configuration générale"
 
-    -- Channels
+    -- Canales
+    L["CH_HEADER"] = "Canaux à traduire :"
+    L["CH_CAT_GENERAL"] = "Général"
+    L["CH_CAT_WHISPERS"] = "Chuchotements / BNet"
+    L["CH_CAT_GUILD"] = "Guilde"
+    L["CH_CAT_GROUP"] = "Groupe"
+    L["CH_CAT_RAID"] = "Raid"
+    L["CH_CAT_PVP"] = "JcJ"
+
     L["CH_SAY"] = "Dire"
     L["CH_YELL"] = "Crier"
-    L["CH_PARTY"] = "Groupe"
-    L["CH_RAID"] = "Raid"
+    L["CH_EMOTE"] = "Emote"
+    L["CH_WHISPER"] = "Chuchotement (Ent)"
+    L["CH_WHISPER_INFORM"] = "Chuchotement (Sort)"
+    L["CH_BN_WHISPER"] = "BNet (Ent)"
+    L["CH_BN_WHISPER_INFORM"] = "BNet (Sort)"
+    L["CH_BN_INLINE_WHISPER"] = "BNet Inline (Ent)"
+    L["CH_BN_INLINE_WHISPER_INFORM"] = "BNet Inline (Sort)"
     L["CH_GUILD"] = "Guilde"
     L["CH_OFFICER"] = "Officier"
-    L["CH_WHISPER"] = "Chuchoter"
     L["CH_CHANNEL"] = "Canaux globaux"
-    L["CH_HEADER"] = "Canaux à traduire :"
-    L["CH_EMOTE"] = "Emote"
+    L["CH_PARTY"] = "Groupe"
+    L["CH_PARTY_LEADER"] = "Chef de groupe"
+    L["CH_INSTANCE"] = "Instance"
+    L["CH_INSTANCE_LEADER"] = "Chef d'instance"
+    L["CH_RAID"] = "Raid"
+    L["CH_RAID_LEADER"] = "Chef de raid"
+    L["CH_RAID_WARNING"] = "Alerte de raid"
+    L["CH_BATTLEGROUND"] = "Champ de bataille"
+    L["CH_BATTLEGROUND_LEADER"] = "Chef de CB"
 
-    -- Tooltips
+    -- Descripciones emergentes (Tooltips)
     L["TT_ENABLE"] = "Active ou désactive toutes les traductions globalement."
     L["TT_COLOR"] = "Choisissez la couleur du texte traduit dans le chat."
     L["TT_LANG"] = "Sélectionnez la langue VERS laquelle vous souhaitez traduire."
@@ -323,7 +387,7 @@ elseif locale == "frFR" then
     L["TT_CH_EMOTE"] = "Traduire les emotes."
 
     -- Quick Translate UI
-    -- Minimap
+    -- Minimapa
     L["QT_MINIMAP_TT"] =
     "|cffd597ffWoW Translator|r\n|cffffffffClic :|r Ouvrir les paramètres"
 
@@ -366,19 +430,38 @@ elseif locale == "itIT" then
     L["CAT_STATUS"] = "Stato / Stati"
     L["GEN_HEADER"] = "Configurazione generale"
 
-    -- Channels
+    -- Canales
+    L["CH_HEADER"] = "Canali da tradurre:"
+    L["CH_CAT_GENERAL"] = "Generale"
+    L["CH_CAT_WHISPERS"] = "Sussurri / BNet"
+    L["CH_CAT_GUILD"] = "Gilda"
+    L["CH_CAT_GROUP"] = "Gruppo"
+    L["CH_CAT_RAID"] = "Incursione"
+    L["CH_CAT_PVP"] = "JcJ"
+
     L["CH_SAY"] = "Dire"
     L["CH_YELL"] = "Urlare"
-    L["CH_PARTY"] = "Gruppo"
-    L["CH_RAID"] = "Incursione"
+    L["CH_EMOTE"] = "Emote"
+    L["CH_WHISPER"] = "Sussurro (Ent)"
+    L["CH_WHISPER_INFORM"] = "Sussurro (Usc)"
+    L["CH_BN_WHISPER"] = "BNet (Ent)"
+    L["CH_BN_WHISPER_INFORM"] = "BNet (Usc)"
+    L["CH_BN_INLINE_WHISPER"] = "BNet Inline (Ent)"
+    L["CH_BN_INLINE_WHISPER_INFORM"] = "BNet Inline (Usc)"
     L["CH_GUILD"] = "Gilda"
     L["CH_OFFICER"] = "Ufficiale"
-    L["CH_WHISPER"] = "Sussurro"
     L["CH_CHANNEL"] = "Canali globali"
-    L["CH_HEADER"] = "Canali da tradurre:"
-    L["CH_EMOTE"] = "Emote"
+    L["CH_PARTY"] = "Gruppo"
+    L["CH_PARTY_LEADER"] = "Capogruppo"
+    L["CH_INSTANCE"] = "Istanza"
+    L["CH_INSTANCE_LEADER"] = "Capo istanza"
+    L["CH_RAID"] = "Incursione"
+    L["CH_RAID_LEADER"] = "Capoincursione"
+    L["CH_RAID_WARNING"] = "Avviso incursione"
+    L["CH_BATTLEGROUND"] = "Campo di battaglia"
+    L["CH_BATTLEGROUND_LEADER"] = "Capo CB"
 
-    -- Tooltips
+    -- Descripciones emergentes (Tooltips)
     L["TT_ENABLE"] = "Abilita o disabilita tutte le traduzioni globalmente."
     L["TT_COLOR"] = "Scegli il colore per il testo tradotto nella chat."
     L["TT_LANG"] = "Seleziona la lingua VERSO la quale vuoi tradurre."
@@ -405,7 +488,7 @@ elseif locale == "itIT" then
     L["TT_CH_EMOTE"] = "Traduci le emote."
 
     -- Quick Translate UI
-    -- Minimap
+    -- Minimapa
     L["QT_MINIMAP_TT"] =
     "|cffd597ffWoW Translator|r\n|cffffffffClick:|r Apri Impostazioni"
 
@@ -448,19 +531,38 @@ elseif locale == "ptBR" then
     L["CAT_STATUS"] = "Estado / Estados"
     L["GEN_HEADER"] = "Configuração Geral"
 
-    -- Channels
+    -- Canales
+    L["CH_HEADER"] = "Canais a traduzir:"
+    L["CH_CAT_GENERAL"] = "Geral"
+    L["CH_CAT_WHISPERS"] = "Sussurros / BNet"
+    L["CH_CAT_GUILD"] = "Guilda"
+    L["CH_CAT_GROUP"] = "Grupo"
+    L["CH_CAT_RAID"] = "Reide"
+    L["CH_CAT_PVP"] = "JcJ"
+
     L["CH_SAY"] = "Dizer"
     L["CH_YELL"] = "Gritar"
-    L["CH_PARTY"] = "Grupo"
-    L["CH_RAID"] = "Reide"
+    L["CH_EMOTE"] = "Gesto"
+    L["CH_WHISPER"] = "Sussurro (Ent)"
+    L["CH_WHISPER_INFORM"] = "Sussurro (Saída)"
+    L["CH_BN_WHISPER"] = "BNet (Ent)"
+    L["CH_BN_WHISPER_INFORM"] = "BNet (Saída)"
+    L["CH_BN_INLINE_WHISPER"] = "BNet Inline (Ent)"
+    L["CH_BN_INLINE_WHISPER_INFORM"] = "BNet Inline (Saída)"
     L["CH_GUILD"] = "Guilda"
     L["CH_OFFICER"] = "Oficial"
-    L["CH_WHISPER"] = "Sussurrar"
-    L["CH_CHANNEL"] = "Canais Globais"
-    L["CH_HEADER"] = "Canais a traduzir:"
-    L["CH_EMOTE"] = "Gesto"
+    L["CH_CHANNEL"] = "Canais globais"
+    L["CH_PARTY"] = "Grupo"
+    L["CH_PARTY_LEADER"] = "Líder do Grupo"
+    L["CH_INSTANCE"] = "Instância"
+    L["CH_INSTANCE_LEADER"] = "Líder da Instância"
+    L["CH_RAID"] = "Reide"
+    L["CH_RAID_LEADER"] = "Líder da Reide"
+    L["CH_RAID_WARNING"] = "Alerta de Reide"
+    L["CH_BATTLEGROUND"] = "Campo de Batalha"
+    L["CH_BATTLEGROUND_LEADER"] = "Líder de CB"
 
-    -- Tooltips
+    -- Descripciones emergentes (Tooltips)
     L["TT_ENABLE"] = "Ativa ou desativa todas as traduções globalmente."
     L["TT_COLOR"] = "Escolha a cor para o texto traduzido no chat."
     L["TT_LANG"] = "Selecione o idioma PARA o qual você deseja traduzir."
@@ -486,7 +588,7 @@ elseif locale == "ptBR" then
     L["TT_CH_CHANNEL"] = "Traduz mensagens de canais numerados (ex: Comércio, Geral)."
     L["TT_CH_EMOTE"] = "Traduz gestos."
 
-    -- Minimap
+    -- Minimapa
     L["QT_MINIMAP_TT"] = "|cffd597ffWoW Translator|r\n|cffffffffClique:|r Abrir Configuração"
 
     -- ==========================================
@@ -528,19 +630,38 @@ elseif locale == "ruRU" then
     L["CAT_STATUS"] = "Статус / Состояния"
     L["GEN_HEADER"] = "Общая конфигурация"
 
-    -- Channels
+    -- Canales
+    L["CH_HEADER"] = "Каналы для перевода:"
+    L["CH_CAT_GENERAL"] = "Общий"
+    L["CH_CAT_WHISPERS"] = "Шепот / BNet"
+    L["CH_CAT_GUILD"] = "Гильдия"
+    L["CH_CAT_GROUP"] = "Группа"
+    L["CH_CAT_RAID"] = "Рейд"
+    L["CH_CAT_PVP"] = "PvP"
+
     L["CH_SAY"] = "Сказать"
     L["CH_YELL"] = "Крикнуть"
-    L["CH_PARTY"] = "Группа"
-    L["CH_RAID"] = "Рейд"
+    L["CH_EMOTE"] = "Эмоция"
+    L["CH_WHISPER"] = "Шепот (Вход)"
+    L["CH_WHISPER_INFORM"] = "Шепот (Исх)"
+    L["CH_BN_WHISPER"] = "BNet (Вход)"
+    L["CH_BN_WHISPER_INFORM"] = "BNet (Исх)"
+    L["CH_BN_INLINE_WHISPER"] = "BNet Inline (Вход)"
+    L["CH_BN_INLINE_WHISPER_INFORM"] = "BNet Inline (Исх)"
     L["CH_GUILD"] = "Гильдия"
     L["CH_OFFICER"] = "Офицер"
-    L["CH_WHISPER"] = "Шепот"
     L["CH_CHANNEL"] = "Общие каналы"
-    L["CH_HEADER"] = "Каналы для перевода:"
-    L["CH_EMOTE"] = "Эмоция"
+    L["CH_PARTY"] = "Группа"
+    L["CH_PARTY_LEADER"] = "Лидер группы"
+    L["CH_INSTANCE"] = "Подземелье"
+    L["CH_INSTANCE_LEADER"] = "Лидер подземелья"
+    L["CH_RAID"] = "Рейд"
+    L["CH_RAID_LEADER"] = "Лидер рейда"
+    L["CH_RAID_WARNING"] = "Предупреждение рейда"
+    L["CH_BATTLEGROUND"] = "Поле боя"
+    L["CH_BATTLEGROUND_LEADER"] = "Лидер ПБ"
 
-    -- Tooltips
+    -- Descripciones emergentes (Tooltips)
     L["TT_ENABLE"] = "Включить или выключить все переводы глобально."
     L["TT_COLOR"] = "Выберите цвет для переведенного текста в чате."
     L["TT_LANG"] = "Выберите язык, НА который вы хотите переводить."
@@ -566,7 +687,7 @@ elseif locale == "ruRU" then
     L["TT_CH_CHANNEL"] = "Переводить сообщения из нумерованных каналов (напр., Торговля, Общий)."
     L["TT_CH_EMOTE"] = "Переводить эмоции."
 
-    -- Minimap
+    -- Minimapa
     L["QT_MINIMAP_TT"] = "|cffd597ffWoW Translator|r\n|cffffffffЛКМ:|r Открыть настройки"
 
     -- ==========================================
@@ -608,19 +729,38 @@ elseif locale == "koKR" then
     L["CAT_STATUS"] = "상태"
     L["GEN_HEADER"] = "일반 설정"
 
-    -- Channels
+    -- Canales
+    L["CH_HEADER"] = "번역할 채널:"
+    L["CH_CAT_GENERAL"] = "일반"
+    L["CH_CAT_WHISPERS"] = "귓속말 / BNet"
+    L["CH_CAT_GUILD"] = "길드"
+    L["CH_CAT_GROUP"] = "파티"
+    L["CH_CAT_RAID"] = "공격대"
+    L["CH_CAT_PVP"] = "PvP"
+
     L["CH_SAY"] = "일반"
     L["CH_YELL"] = "외치기"
-    L["CH_PARTY"] = "파티"
-    L["CH_RAID"] = "공격대"
+    L["CH_EMOTE"] = "감정 표현"
+    L["CH_WHISPER"] = "귓속말 (수신)"
+    L["CH_WHISPER_INFORM"] = "귓속말 (발신)"
+    L["CH_BN_WHISPER"] = "BNet (수신)"
+    L["CH_BN_WHISPER_INFORM"] = "BNet (발신)"
+    L["CH_BN_INLINE_WHISPER"] = "BNet 인라인 (수신)"
+    L["CH_BN_INLINE_WHISPER_INFORM"] = "BNet 인라인 (발신)"
     L["CH_GUILD"] = "길드"
     L["CH_OFFICER"] = "관리자"
-    L["CH_WHISPER"] = "귓속말"
     L["CH_CHANNEL"] = "공개 채널"
-    L["CH_HEADER"] = "번역할 채널:"
-    L["CH_EMOTE"] = "감정 표현"
+    L["CH_PARTY"] = "파티"
+    L["CH_PARTY_LEADER"] = "파티장"
+    L["CH_INSTANCE"] = "인스턴스"
+    L["CH_INSTANCE_LEADER"] = "인스턴스장"
+    L["CH_RAID"] = "공격대"
+    L["CH_RAID_LEADER"] = "공격대장"
+    L["CH_RAID_WARNING"] = "공격대 경보"
+    L["CH_BATTLEGROUND"] = "전장"
+    L["CH_BATTLEGROUND_LEADER"] = "전장장"
 
-    -- Tooltips
+    -- Descripciones emergentes (Tooltips)
     L["TT_ENABLE"] = "모든 번역을 전역적으로 활성화하거나 비활성화합니다."
     L["TT_COLOR"] = "채팅에서 번역된 텍스트의 색상을 선택합니다."
     L["TT_LANG"] = "번역할 언어를 선택합니다."
@@ -646,7 +786,7 @@ elseif locale == "koKR" then
     L["TT_CH_CHANNEL"] = "번호가 매겨진 채널(예: 거래, 공개) 메시지를 번역합니다."
     L["TT_CH_EMOTE"] = "감정 표현을 번역합니다."
 
-    -- Minimap
+    -- Minimapa
     L["QT_MINIMAP_TT"] = "|cffd597ffWoW Translator|r\n|cffffffff좌클릭:|r 설정 열기"
 
     -- ==========================================
@@ -688,19 +828,38 @@ elseif locale == "zhCN" then
     L["CAT_STATUS"] = "状态"
     L["GEN_HEADER"] = "常规配置"
 
-    -- Channels
+    -- Canales
+    L["CH_HEADER"] = "要翻译的频道:"
+    L["CH_CAT_GENERAL"] = "常规"
+    L["CH_CAT_WHISPERS"] = "密语 / BNet"
+    L["CH_CAT_GUILD"] = "公会"
+    L["CH_CAT_GROUP"] = "队伍"
+    L["CH_CAT_RAID"] = "团队"
+    L["CH_CAT_PVP"] = "PvP"
+
     L["CH_SAY"] = "说"
     L["CH_YELL"] = "喊"
-    L["CH_PARTY"] = "队伍"
-    L["CH_RAID"] = "团队"
+    L["CH_EMOTE"] = "表情"
+    L["CH_WHISPER"] = "密语 (收)"
+    L["CH_WHISPER_INFORM"] = "密语 (发)"
+    L["CH_BN_WHISPER"] = "BNet (收)"
+    L["CH_BN_WHISPER_INFORM"] = "BNet (发)"
+    L["CH_BN_INLINE_WHISPER"] = "BNet 内通 (收)"
+    L["CH_BN_INLINE_WHISPER_INFORM"] = "BNet 内通 (发)"
     L["CH_GUILD"] = "公会"
     L["CH_OFFICER"] = "官员"
-    L["CH_WHISPER"] = "密语"
     L["CH_CHANNEL"] = "公共频道"
-    L["CH_HEADER"] = "要翻译的频道:"
-    L["CH_EMOTE"] = "表情"
+    L["CH_PARTY"] = "队伍"
+    L["CH_PARTY_LEADER"] = "队长"
+    L["CH_INSTANCE"] = "副本"
+    L["CH_INSTANCE_LEADER"] = "副本负责人"
+    L["CH_RAID"] = "团队"
+    L["CH_RAID_LEADER"] = "团长"
+    L["CH_RAID_WARNING"] = "团队警报"
+    L["CH_BATTLEGROUND"] = "战场"
+    L["CH_BATTLEGROUND_LEADER"] = "战场负责人"
 
-    -- Tooltips
+    -- Descripciones emergentes (Tooltips)
     L["TT_ENABLE"] = "全局启用或禁用所有翻译。"
     L["TT_COLOR"] = "在聊天中为翻译后的文本选择颜色。"
     L["TT_LANG"] = "选择您想要翻译成的语言。"
@@ -726,11 +885,11 @@ elseif locale == "zhCN" then
     L["TT_CH_CHANNEL"] = "翻译来自编号频道（如交易、本地防务）的消息。"
     L["TT_CH_EMOTE"] = "翻译表情。"
 
-    -- Minimap
+    -- Minimapa
     L["QT_MINIMAP_TT"] = "|cffd597ffWoW Translator|r\n|cffffffff点击:|r 打开设置"
 
     -- ==========================================
-    -- CHINESE TRADITIONAL (zhTW)
+    -- CHINO TRADICIONAL (zhTW)
     -- ==========================================
 elseif locale == "zhTW" then
     L["UI_TITLE"] = "WoW Translator 設置"
@@ -768,19 +927,38 @@ elseif locale == "zhTW" then
     L["CAT_STATUS"] = "狀態"
     L["GEN_HEADER"] = "常规配置"
 
-    -- Channels
+    -- Canales
+    L["CH_HEADER"] = "要翻譯的頻道:"
+    L["CH_CAT_GENERAL"] = "一般"
+    L["CH_CAT_WHISPERS"] = "密語 / BNet"
+    L["CH_CAT_GUILD"] = "公會"
+    L["CH_CAT_GROUP"] = "隊伍"
+    L["CH_CAT_RAID"] = "團隊"
+    L["CH_CAT_PVP"] = "PvP"
+
     L["CH_SAY"] = "說"
     L["CH_YELL"] = "喊"
-    L["CH_PARTY"] = "隊伍"
-    L["CH_RAID"] = "團隊"
+    L["CH_EMOTE"] = "表情"
+    L["CH_WHISPER"] = "密語 (收)"
+    L["CH_WHISPER_INFORM"] = "密語 (發)"
+    L["CH_BN_WHISPER"] = "BNet (收)"
+    L["CH_BN_WHISPER_INFORM"] = "BNet (發)"
+    L["CH_BN_INLINE_WHISPER"] = "BNet 內通 (收)"
+    L["CH_BN_INLINE_WHISPER_INFORM"] = "BNet 內通 (發)"
     L["CH_GUILD"] = "公會"
     L["CH_OFFICER"] = "官員"
-    L["CH_WHISPER"] = "密語"
     L["CH_CHANNEL"] = "公共頻道"
-    L["CH_HEADER"] = "要翻譯的頻道:"
-    L["CH_EMOTE"] = "表情"
+    L["CH_PARTY"] = "隊伍"
+    L["CH_PARTY_LEADER"] = "隊長"
+    L["CH_INSTANCE"] = "副本"
+    L["CH_INSTANCE_LEADER"] = "副本負責人"
+    L["CH_RAID"] = "團隊"
+    L["CH_RAID_LEADER"] = "團長"
+    L["CH_RAID_WARNING"] = "團隊警報"
+    L["CH_BATTLEGROUND"] = "戰場"
+    L["CH_BATTLEGROUND_LEADER"] = "戰場負責人"
 
-    -- Tooltips
+    -- Descripciones emergentes (Tooltips)
     L["TT_ENABLE"] = "全局啟用或禁用所有翻譯。"
     L["TT_COLOR"] = "在聊天中為翻譯後的文本選擇顏色。"
     L["TT_LANG"] = "選擇您想要翻譯成的語言。"
@@ -806,7 +984,7 @@ elseif locale == "zhTW" then
     L["TT_CH_CHANNEL"] = "翻譯來自編號頻道（如交易、本地防務）的消息。"
     L["TT_CH_EMOTE"] = "翻譯表情。"
 
-    -- Minimap
+    -- Minimapa
     L["QT_MINIMAP_TT"] = "|cffd597ffWoW Translator|r\n|cffffffff點擊:|r 打開設置"
 
     -- ==========================================
@@ -848,19 +1026,38 @@ elseif locale == "plPL" then
     L["CAT_STATUS"] = "Statusy"
     L["GEN_HEADER"] = "Konfiguracja ogólna"
 
-    -- Channels
+    -- Canales
+    L["CH_HEADER"] = "Kanały do tłumaczenia:"
+    L["CH_CAT_GENERAL"] = "Ogólne"
+    L["CH_CAT_WHISPERS"] = "Szepty / BNet"
+    L["CH_CAT_GUILD"] = "Gildia"
+    L["CH_CAT_GROUP"] = "Grupa"
+    L["CH_CAT_RAID"] = "Rajd"
+    L["CH_CAT_PVP"] = "PvP"
+
     L["CH_SAY"] = "Powiedz"
     L["CH_YELL"] = "Krzyknij"
-    L["CH_PARTY"] = "Drużyna"
-    L["CH_RAID"] = "Rajd"
+    L["CH_EMOTE"] = "Emotka"
+    L["CH_WHISPER"] = "Szept (Wej)"
+    L["CH_WHISPER_INFORM"] = "Szept (Wyj)"
+    L["CH_BN_WHISPER"] = "BNet (Wej)"
+    L["CH_BN_WHISPER_INFORM"] = "BNet (Wyj)"
+    L["CH_BN_INLINE_WHISPER"] = "BNet Inline (Wej)"
+    L["CH_BN_INLINE_WHISPER_INFORM"] = "BNet Inline (Wyj)"
     L["CH_GUILD"] = "Gildia"
     L["CH_OFFICER"] = "Oficerski"
-    L["CH_WHISPER"] = "Szept"
     L["CH_CHANNEL"] = "Kanały globalne"
-    L["CH_HEADER"] = "Kanały do tłumaczenia:"
-    L["CH_EMOTE"] = "Emotka"
+    L["CH_PARTY"] = "Drużyna"
+    L["CH_PARTY_LEADER"] = "Lider drużyny"
+    L["CH_INSTANCE"] = "Instancja"
+    L["CH_INSTANCE_LEADER"] = "Lider instancji"
+    L["CH_RAID"] = "Rajd"
+    L["CH_RAID_LEADER"] = "Lider rajdu"
+    L["CH_RAID_WARNING"] = "Ostrzeżenie rajdu"
+    L["CH_BATTLEGROUND"] = "Pole bitwy"
+    L["CH_BATTLEGROUND_LEADER"] = "Lider PB"
 
-    -- Tooltips
+    -- Descripciones emergentes (Tooltips)
     L["TT_ENABLE"] = "Włącza lub wyłącza wszystkie tłumaczenia globalnie."
     L["TT_COLOR"] = "Wybierz kolor dla tłumaczonego tekstu na czacie."
     L["TT_LANG"] = "Wybierz język, NA który chcesz tłumaczyć."
@@ -886,7 +1083,7 @@ elseif locale == "plPL" then
     L["TT_CH_CHANNEL"] = "Tłumacz wiadomości z kanałów numerowanych (np. Handel, Ogólny)."
     L["TT_CH_EMOTE"] = "Tłumacz emotki."
 
-    -- Minimap
+    -- Minimapa
     L["QT_MINIMAP_TT"] = "|cffd597ffWoW Translator|r\n|cffffffffKliknij:|r Otwórz ustawienia"
 
     -- ==========================================
@@ -926,19 +1123,38 @@ elseif locale == "svSE" then
     L["CAT_STATUS"] = "Statusar"
     L["GEN_HEADER"] = "Allmän konfiguration"
 
-    -- Channels
+    -- Canales
+    L["CH_HEADER"] = "Kanaler att översätta:"
+    L["CH_CAT_GENERAL"] = "Allmänt"
+    L["CH_CAT_WHISPERS"] = "Viskningar / BNet"
+    L["CH_CAT_GUILD"] = "Gille"
+    L["CH_CAT_GROUP"] = "Grupp"
+    L["CH_CAT_RAID"] = "Raid"
+    L["CH_CAT_PVP"] = "PvP"
+
     L["CH_SAY"] = "Säg"
     L["CH_YELL"] = "Skrik"
-    L["CH_PARTY"] = "Grupp"
-    L["CH_RAID"] = "Raid"
+    L["CH_EMOTE"] = "Emote"
+    L["CH_WHISPER"] = "Viska (In)"
+    L["CH_WHISPER_INFORM"] = "Viska (Ut)"
+    L["CH_BN_WHISPER"] = "BNet (In)"
+    L["CH_BN_WHISPER_INFORM"] = "BNet (Ut)"
+    L["CH_BN_INLINE_WHISPER"] = "BNet Inline (In)"
+    L["CH_BN_INLINE_WHISPER_INFORM"] = "BNet Inline (Ut)"
     L["CH_GUILD"] = "Gille"
     L["CH_OFFICER"] = "Officer"
-    L["CH_WHISPER"] = "Viska"
     L["CH_CHANNEL"] = "Globala kanaler"
-    L["CH_HEADER"] = "Kanaler att översätta:"
-    L["CH_EMOTE"] = "Emote"
+    L["CH_PARTY"] = "Grupp"
+    L["CH_PARTY_LEADER"] = "Gruppledare"
+    L["CH_INSTANCE"] = "Instans"
+    L["CH_INSTANCE_LEADER"] = "Instansledare"
+    L["CH_RAID"] = "Raid"
+    L["CH_RAID_LEADER"] = "Raidledare"
+    L["CH_RAID_WARNING"] = "Raidvarning"
+    L["CH_BATTLEGROUND"] = "Slagfält"
+    L["CH_BATTLEGROUND_LEADER"] = "Slagfältsledare"
 
-    -- Tooltips
+    -- Descripciones emergentes (Tooltips)
     L["TT_ENABLE"] = "Aktivera eller inaktivera alla översättningar globalt."
     L["TT_COLOR"] = "Välj färg för den översatta texten i chatten."
     L["TT_LANG"] = "Välj vilket språk du vill översätta TILL."
@@ -964,7 +1180,7 @@ elseif locale == "svSE" then
     L["TT_CH_CHANNEL"] = "Översätt meddelanden från numrerade kanaler (t.ex. Handel, Allmän)."
     L["TT_CH_EMOTE"] = "Översätt emotes."
 
-    -- Minimap
+    -- Minimapa
     L["QT_MINIMAP_TT"] = "|cffd597ffWoW Translator|r\n|cffffffffKlicka:|r Öppna inställningar"
 
     -- ==========================================
@@ -1004,19 +1220,38 @@ elseif locale == "noNO" then
     L["CAT_STATUS"] = "Statuser"
     L["GEN_HEADER"] = "Generell konfigurasjon"
 
-    -- Channels
+    -- Canales
+    L["CH_HEADER"] = "Kanaler som skal oversettes:"
+    L["CH_CAT_GENERAL"] = "Generelt"
+    L["CH_CAT_WHISPERS"] = "Visking / BNet"
+    L["CH_CAT_GUILD"] = "Gilde"
+    L["CH_CAT_GROUP"] = "Gruppe"
+    L["CH_CAT_RAID"] = "Raid"
+    L["CH_CAT_PVP"] = "PvP"
+
     L["CH_SAY"] = "Si"
     L["CH_YELL"] = "Rop"
-    L["CH_PARTY"] = "Gruppe"
-    L["CH_RAID"] = "Raid"
+    L["CH_EMOTE"] = "Emote"
+    L["CH_WHISPER"] = "Visk (Inn)"
+    L["CH_WHISPER_INFORM"] = "Visk (Ut)"
+    L["CH_BN_WHISPER"] = "BNet (Inn)"
+    L["CH_BN_WHISPER_INFORM"] = "BNet (Ut)"
+    L["CH_BN_INLINE_WHISPER"] = "BNet Inline (Inn)"
+    L["CH_BN_INLINE_WHISPER_INFORM"] = "BNet Inline (Ut)"
     L["CH_GUILD"] = "Gilde"
     L["CH_OFFICER"] = "Offiser"
-    L["CH_WHISPER"] = "Visk"
     L["CH_CHANNEL"] = "Globale kanaler"
-    L["CH_HEADER"] = "Kanaler som skal oversettes:"
-    L["CH_EMOTE"] = "Emote"
+    L["CH_PARTY"] = "Gruppe"
+    L["CH_PARTY_LEADER"] = "Gruppeleder"
+    L["CH_INSTANCE"] = "Instans"
+    L["CH_INSTANCE_LEADER"] = "Instansleder"
+    L["CH_RAID"] = "Raid"
+    L["CH_RAID_LEADER"] = "Raidleder"
+    L["CH_RAID_WARNING"] = "Raidvarsel"
+    L["CH_BATTLEGROUND"] = "Slagmark"
+    L["CH_BATTLEGROUND_LEADER"] = "Slagmarkleder"
 
-    -- Tooltips
+    -- Descripciones emergentes (Tooltips)
     L["TT_ENABLE"] = "Aktiver eller deaktiver alle oversettelser globalt."
     L["TT_COLOR"] = "Velg fargen for den oversatte teksten i chatten."
     L["TT_LANG"] = "Velg hvilket språk du vil oversette TIL."
@@ -1042,7 +1277,7 @@ elseif locale == "noNO" then
     L["TT_CH_CHANNEL"] = "Oversett meldinger fra nummererte kanaler (f.eks. Handel, Generelt)."
     L["TT_CH_EMOTE"] = "Oversett emotes."
 
-    -- Minimap
+    -- Minimapa
     L["QT_MINIMAP_TT"] = "|cffd597ffWoW Translator|r\n|cffffffffKlikk:|r Åpne innstillinger"
 end
 

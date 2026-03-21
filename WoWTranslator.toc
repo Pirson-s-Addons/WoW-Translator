@@ -1,8 +1,8 @@
 ## Interface: 120001, 120005
 ## Author: Pirson
-## Version: 1.09
+## Version: 1.10
 ## IconTexture: Interface\AddOns\WoWTranslator\img\logo_wt
-## Title: |TInterface\AddOns\WoWTranslator\img\logo_wt:16:16|t |cffd597ffWoW Translator|r
+## Title: |cffd597ffWoW Translator|r
 
 # https://warcraft.wiki.gg/wiki/Addon_Categories
 ## Category: Chat
