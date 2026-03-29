@@ -270,7 +270,13 @@ function addonTable.CreateConfigUI()
         zhTW = "繁體中文",
         plPL = "Polski",
         svSE = "Svenska",
-        noNO = "Norsk"
+        noNO = "Norsk",
+        trTR = "Türkçe",
+        jaJP = "日本語",
+        arSA = "العربية",
+        hiIN = "हिन्दी",
+        thTH = "ไทย",
+        viVN = "Tiếng Việt"
     }
 
     UIDropDownMenu_Initialize(dropdown, function(self, level)

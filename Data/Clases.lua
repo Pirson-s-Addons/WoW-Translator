@@ -15,7 +15,13 @@ addonTable.ClasesDict = {
         zhTW = "主天賦",
         plPL = "Główna specjalizacja",
         svSE = "Huvudinriktning",
-        noNO = "Hovedspesialisering"
+        noNO = "Hovedspesialisering",
+        trTR = "Ana Uzmanlık",
+        jaJP = "メインスペック",
+        arSA = "التخصص الرئيسي",
+        hiIN = "मुख्य विशेषज्ञता",
+        thTH = "สายหลัก",
+        viVN = "Chuyên môn chính"
     },
     ["os"]          = {
         esES = "Rama Secundaria",
@@ -31,7 +37,13 @@ addonTable.ClasesDict = {
         zhTW = "副天賦",
         plPL = "Druga specjalizacja",
         svSE = "Andrainriktning",
-        noNO = "Sidespesialisering"
+        noNO = "Sidespesialisering",
+        trTR = "Yan Uzmanlık",
+        jaJP = "オフスペック",
+        arSA = "التخصص الثانوي",
+        hiIN = "वैकल्पिक विशेषज्ञता",
+        thTH = "สายรอง",
+        viVN = "Chuyên môn phụ"
     },
 
     -- =====================
@@ -51,7 +63,13 @@ addonTable.ClasesDict = {
         zhTW = "戰士",
         plPL = "Wojownik",
         svSE = "Krigare",
-        noNO = "Kriger"
+        noNO = "Kriger",
+        trTR = "Savaşçı",
+        jaJP = "ウォリアー",
+        arSA = "محارب",
+        hiIN = "योद्धा",
+        thTH = "นักรบ",
+        viVN = "Chiến binh"
     },
     ["warr"]        = {
         esES = "Guerrero",
@@ -67,7 +85,13 @@ addonTable.ClasesDict = {
         zhTW = "戰士",
         plPL = "Wojownik",
         svSE = "Krigare",
-        noNO = "Kriger"
+        noNO = "Kriger",
+        trTR = "Savaşçı",
+        jaJP = "ウォリアー",
+        arSA = "محارب",
+        hiIN = "योद्धा",
+        thTH = "นักรบ",
+        viVN = "Chiến binh"
     },
 
     ["paladin"]     = {
@@ -84,7 +108,13 @@ addonTable.ClasesDict = {
         zhTW = "聖騎士",
         plPL = "Paladyn",
         svSE = "Paladin",
-        noNO = "Paladin"
+        noNO = "Paladin",
+        trTR = "Paladin",
+        jaJP = "パラディン",
+        arSA = "فارس مقدس",
+        hiIN = "पलाडिन",
+        thTH = "พาลาดิน",
+        viVN = "Hiệp sĩ"
     },
     ["pala"]        = {
         esES = "Paladín",
@@ -100,7 +130,13 @@ addonTable.ClasesDict = {
         zhTW = "聖騎士",
         plPL = "Paladyn",
         svSE = "Paladin",
-        noNO = "Paladin"
+        noNO = "Paladin",
+        trTR = "Paladin",
+        jaJP = "パラディン",
+        arSA = "فارس مقدس",
+        hiIN = "पलाडिन",
+        thTH = "พาลาดิน",
+        viVN = "Hiệp sĩ"
     },
 
     ["hunter"]      = {
@@ -117,7 +153,13 @@ addonTable.ClasesDict = {
         zhTW = "獵人",
         plPL = "Łowca",
         svSE = "Jägare",
-        noNO = "Jeger"
+        noNO = "Jeger",
+        trTR = "Avcı",
+        jaJP = "ハンター",
+        arSA = "صياد",
+        hiIN = "शिकारी",
+        thTH = "นักล่า",
+        viVN = "Thợ săn"
     },
     ["hunt"]        = {
         esES = "Cazador",
@@ -133,7 +175,13 @@ addonTable.ClasesDict = {
         zhTW = "獵人",
         plPL = "Łowca",
         svSE = "Jägare",
-        noNO = "Jeger"
+        noNO = "Jeger",
+        trTR = "Avcı",
+        jaJP = "ハンター",
+        arSA = "صياد",
+        hiIN = "शिकारी",
+        thTH = "นักล่า",
+        viVN = "Thợ săn"
     },
 
     ["deathknight"] = {
@@ -150,7 +198,13 @@ addonTable.ClasesDict = {
         zhTW = "死亡騎士",
         plPL = "Rycerz Śmierci",
         svSE = "Dödsriddare",
-        noNO = "Dødsridder"
+        noNO = "Dødsridder",
+        trTR = "Ölüm Şövalyesi",
+        jaJP = "デスナイト",
+        arSA = "فارس الموت",
+        hiIN = "डेथ नाइट",
+        thTH = "เดธไนท์",
+        viVN = "Kỵ sĩ cái chết"
     },
     ["dk"]          = {
         esES = "Caballero de la Muerte",
@@ -166,7 +220,13 @@ addonTable.ClasesDict = {
         zhTW = "死亡騎士",
         plPL = "Rycerz Śmierci",
         svSE = "Dödsriddare",
-        noNO = "Dødsridder"
+        noNO = "Dødsridder",
+        trTR = "Ölüm Şövalyesi",
+        jaJP = "デスナイト",
+        arSA = "فارس الموت",
+        hiIN = "डेथ नाइट",
+        thTH = "เดธไนท์",
+        viVN = "Kỵ sĩ cái chết"
     },
 
     ["rogue"]       = {
@@ -183,7 +243,13 @@ addonTable.ClasesDict = {
         zhTW = "盜賊",
         plPL = "Łotr",
         svSE = "Skurk",
-        noNO = "Skurk"
+        noNO = "Skurk",
+        trTR = "Haydut",
+        jaJP = "ローグ",
+        arSA = "لصوص",
+        hiIN = "दुष्ट",
+        thTH = "โร้ค",
+        viVN = "Đạo tặc"
     },
 
     ["mage"]        = {
@@ -200,7 +266,13 @@ addonTable.ClasesDict = {
         zhTW = "法師",
         plPL = "Mag",
         svSE = "Magiker",
-        noNO = "Magiker"
+        noNO = "Magiker",
+        trTR = "Büyücü",
+        jaJP = "メイジ",
+        arSA = "ساحر",
+        hiIN = "दाना",
+        thTH = "เมจ",
+        viVN = "Pháp sư"
     },
 
     ["priest"]      = {
@@ -217,7 +289,13 @@ addonTable.ClasesDict = {
         zhTW = "牧師",
         plPL = "Kapłan",
         svSE = "Präst",
-        noNO = "Prest"
+        noNO = "Prest",
+        trTR = "Rahip",
+        jaJP = "プリースト",
+        arSA = "كاهن",
+        hiIN = "पुजारी",
+        thTH = "พระ",
+        viVN = "Linh mục"
     },
 
     ["druid"]       = {
@@ -234,7 +312,13 @@ addonTable.ClasesDict = {
         zhTW = "德魯伊",
         plPL = "Druid",
         svSE = "Druid",
-        noNO = "Druide"
+        noNO = "Druide",
+        trTR = "Druid",
+        jaJP = "ドルイド",
+        arSA = "درويد",
+        hiIN = "ड्र्यूड",
+        thTH = "ดรูอิด",
+        viVN = "Tu sĩ"
     },
     ["dudu"]        = {
         esES = "Druida",
@@ -250,7 +334,13 @@ addonTable.ClasesDict = {
         zhTW = "德魯伊",
         plPL = "Druid",
         svSE = "Druid",
-        noNO = "Druide"
+        noNO = "Druide",
+        trTR = "Druid",
+        jaJP = "ドルイド",
+        arSA = "درويد",
+        hiIN = "ड्र्यूड",
+        thTH = "ดรูอิด",
+        viVN = "Tu sĩ"
     },
 
     ["shaman"]      = {
@@ -267,7 +357,13 @@ addonTable.ClasesDict = {
         zhTW = "薩滿",
         plPL = "Szaman",
         svSE = "Shaman",
-        noNO = "Sjaman"
+        noNO = "Sjaman",
+        trTR = "Şaman",
+        jaJP = "シャーマン",
+        arSA = "شامان",
+        hiIN = "ओझा",
+        thTH = "ชาแมน",
+        viVN = "Pháp sư (Shaman)"
     },
 
     ["monk"]        = {
@@ -284,7 +380,13 @@ addonTable.ClasesDict = {
         zhTW = "武僧",
         plPL = "Mnich",
         svSE = "Munk",
-        noNO = "Munk"
+        noNO = "Munk",
+        trTR = "Keşiş",
+        jaJP = "モンク",
+        arSA = "راهب",
+        hiIN = "भिक्षु",
+        thTH = "มั้งค์",
+        viVN = "Tu sĩ (Monk)"
     },
 
     ["warlock"]     = {
@@ -301,7 +403,13 @@ addonTable.ClasesDict = {
         zhTW = "術士",
         plPL = "Czarnoksiężnik",
         svSE = "Svartkonstnär",
-        noNO = "Heksemester"
+        noNO = "Heksemester",
+        trTR = "Kara Büyücü",
+        jaJP = "ウォーロック",
+        arSA = "مشعوذ",
+        hiIN = "तांत्रिक",
+        thTH = "วอร์ล็อค",
+        viVN = "Phù thủy"
     },
     ["lock"]        = {
         esES = "Brujo",
@@ -317,7 +425,13 @@ addonTable.ClasesDict = {
         zhTW = "術士",
         plPL = "Czarnoksiężnik",
         svSE = "Svartkonstnär",
-        noNO = "Heksemester"
+        noNO = "Heksemester",
+        trTR = "Kara Büyücü",
+        jaJP = "ウォーロック",
+        arSA = "مشعوذ",
+        hiIN = "तांत्रिक",
+        thTH = "วอร์ล็อค",
+        viVN = "Phù thủy"
     },
 
     -- =====================
@@ -339,7 +453,13 @@ addonTable.ClasesDict = {
         zhTW = "武器",
         plPL = "Broń",
         svSE = "Vapen",
-        noNO = "Våpen"
+        noNO = "Våpen",
+        trTR = "Silah",
+        jaJP = "アームズ",
+        arSA = "أسلحة",
+        hiIN = "शस्त्र",
+        thTH = "อาวุธ",
+        viVN = "Vũ khí"
     },
     ["fury"]        = {
         esES = "Furia",
@@ -355,7 +475,13 @@ addonTable.ClasesDict = {
         zhTW = "狂怒",
         plPL = "Furia",
         svSE = "Bärsärk",
-        noNO = "Raseri"
+        noNO = "Raseri",
+        trTR = "Öfke",
+        jaJP = "フューリー",
+        arSA = "غضب",
+        hiIN = "रोष",
+        thTH = "บ้าคลั่ง",
+        viVN = "Cuồng nộ"
     },
     ["prot"]        = {
         esES = "Protección",
@@ -371,7 +497,13 @@ addonTable.ClasesDict = {
         zhTW = "防護",
         plPL = "Ochrona",
         svSE = "Skydd",
-        noNO = "Beskyttelse"
+        noNO = "Beskyttelse",
+        trTR = "Koruma",
+        jaJP = "プロテクション",
+        arSA = "حماية",
+        hiIN = "बचाव",
+        thTH = "ป้องกัน",
+        viVN = "Bảo vệ"
     },
 
     -- Paladín
@@ -389,7 +521,13 @@ addonTable.ClasesDict = {
         zhTW = "神聖",
         plPL = "Światłość",
         svSE = "Helig",
-        noNO = "Hellig"
+        noNO = "Hellig",
+        trTR = "Kutsal",
+        jaJP = "ホーリー",
+        arSA = "مقدس",
+        hiIN = "पवित्र",
+        thTH = "ศักดิ์สิทธิ์",
+        viVN = "Thánh thiện"
     },
     ["ppala"]       = {
         esES = "Protección",
@@ -405,7 +543,13 @@ addonTable.ClasesDict = {
         zhTW = "防護",
         plPL = "Ochrona",
         svSE = "Skydd",
-        noNO = "Beskyttelse"
+        noNO = "Beskyttelse",
+        trTR = "Koruma",
+        jaJP = "プロテクション",
+        arSA = "حماية",
+        hiIN = "बचाव",
+        thTH = "ป้องกัน",
+        viVN = "Bảo vệ"
     },
     ["ret"]         = {
         esES = "Reprensión",
@@ -421,7 +565,13 @@ addonTable.ClasesDict = {
         zhTW = "懲戒",
         plPL = "Karą",
         svSE = "Vedergällning",
-        noNO = "Gjengjeldelse"
+        noNO = "Gjengjeldelse",
+        trTR = "Ceza",
+        jaJP = "レトリビューション",
+        arSA = "قصاص",
+        hiIN = "प्रतिशोध",
+        thTH = "การลงทัณฑ์",
+        viVN = "Trừng phạt"
     },
     ["retry"]       = {
         esES = "Reprensión",
@@ -437,7 +587,13 @@ addonTable.ClasesDict = {
         zhTW = "懲戒",
         plPL = "Karą",
         svSE = "Vedergällning",
-        noNO = "Gjengjeldelse"
+        noNO = "Gjengjeldelse",
+        trTR = "Ceza",
+        jaJP = "レトリビューション",
+        arSA = "قصاص",
+        hiIN = "प्रतिशोध",
+        thTH = "การลงทัณฑ์",
+        viVN = "Trừng phạt"
     },
 
     -- Cazador
@@ -455,7 +611,13 @@ addonTable.ClasesDict = {
         zhTW = "野獸控制",
         plPL = "Mistrzostwo Bestii",
         svSE = "Odjurstämning",
-        noNO = "Dyretemming"
+        noNO = "Dyretemming",
+        trTR = "Canavar Terbiyesi",
+        jaJP = "ビーストマスタリー",
+        arSA = "سيادة الوحوش",
+        hiIN = "जानवरों की महारत",
+        thTH = "ฝึกสัตว์",
+        viVN = "Chủ thú"
     },
     ["bm hunt"]     = {
         esES = "Bestias",
@@ -471,7 +633,13 @@ addonTable.ClasesDict = {
         zhTW = "野獸控制",
         plPL = "Mistrzostwo Bestii",
         svSE = "Odjurstämning",
-        noNO = "Dyretemming"
+        noNO = "Dyretemming",
+        trTR = "Canavar Terbiyesi",
+        jaJP = "ビーストマスタリー",
+        arSA = "سيادة الوحوش",
+        hiIN = "जानवरों की महारत",
+        thTH = "ฝึกสัตว์",
+        viVN = "Chủ thú"
     },
     ["mm"]          = {
         esES = "Puntería",
@@ -487,7 +655,13 @@ addonTable.ClasesDict = {
         zhTW = "射擊",
         plPL = "Celność",
         svSE = "Prickskytte",
-        noNO = "Skarpskyting"
+        noNO = "Skarpskyting",
+        trTR = "Nişancılık",
+        jaJP = "マークスマンシップ",
+        arSA = "رماية",
+        hiIN = "निशानेबाजी",
+        thTH = "แม่นยำ",
+        viVN = "Xạ thủ"
     },
     ["sv"]          = {
         esES = "Supervivencia",
@@ -503,7 +677,13 @@ addonTable.ClasesDict = {
         zhTW = "生存",
         plPL = "Przetrwanie",
         svSE = "Överlevnad",
-        noNO = "Overlevelse"
+        noNO = "Overlevelse",
+        trTR = "Hayatta Kalma",
+        jaJP = "サバイバル",
+        arSA = "نجاة",
+        hiIN = "उत्तरजीविता",
+        thTH = "เอาตัวรอด",
+        viVN = "Sinh tồn"
     },
 
     -- Mago
@@ -521,7 +701,13 @@ addonTable.ClasesDict = {
         zhTW = "火焰",
         plPL = "Ogień",
         svSE = "Eld",
-        noNO = "Ild"
+        noNO = "Ild",
+        trTR = "Ateş",
+        jaJP = "ファイア",
+        arSA = "نار",
+        hiIN = "आग",
+        thTH = "ไฟ",
+        viVN = "Lửa"
     },
     ["frost"]       = {
         esES = "Escarcha",
@@ -537,7 +723,13 @@ addonTable.ClasesDict = {
         zhTW = "冰霜",
         plPL = "Mróz",
         svSE = "Frost",
-        noNO = "Frost"
+        noNO = "Frost",
+        trTR = "Ayaz",
+        jaJP = "フロスト",
+        arSA = "صقيع",
+        hiIN = "पाला",
+        thTH = "น้ำแข็ง",
+        viVN = "Băng"
     },
     ["arcane"]      = {
         esES = "Arcano",
@@ -553,7 +745,13 @@ addonTable.ClasesDict = {
         zhTW = "秘法",
         plPL = "Tajemna",
         svSE = "Arkan",
-        noNO = "Arkan"
+        noNO = "Arkan",
+        trTR = "Gizemli",
+        jaJP = "アルケイン",
+        arSA = "باطني",
+        hiIN = "रहस्यमय",
+        thTH = "อาร์เคน",
+        viVN = "Bí thuật"
     },
 
     -- Brujo
@@ -571,7 +769,13 @@ addonTable.ClasesDict = {
         zhTW = "痛苦",
         plPL = "Utrapienie",
         svSE = "Affliction",
-        noNO = "Affliction"
+        noNO = "Affliction",
+        trTR = "Istırap",
+        jaJP = "アフリクション",
+        arSA = "ابتلاء",
+        hiIN = "कष्ट",
+        thTH = "ความทุกข์ระทม",
+        viVN = "Khổ đau"
     },
     ["demo"]        = {
         esES = "Demonología",
@@ -587,7 +791,13 @@ addonTable.ClasesDict = {
         zhTW = "惡魔學識",
         plPL = "Demonologia",
         svSE = "Demonologi",
-        noNO = "Demonologi"
+        noNO = "Demonologi",
+        trTR = "Demonoloji",
+        jaJP = "デモノロジー",
+        arSA = "علم الشياطين",
+        hiIN = "दानव विज्ञान",
+        thTH = "ศาสตร์ปีศาจ",
+        viVN = "Quỷ học"
     },
     ["destro"]      = {
         esES = "Destrucción",
@@ -603,7 +813,13 @@ addonTable.ClasesDict = {
         zhTW = "毀滅",
         plPL = "Zniszczenie",
         svSE = "Förstörelse",
-        noNO = "Ødeleggelse"
+        noNO = "Ødeleggelse",
+        trTR = "Yıkım",
+        jaJP = "デストラクション",
+        arSA = "تدمير",
+        hiIN = "विनाश",
+        thTH = "การทำลายล้าง",
+        viVN = "Hủy diệt"
     },
 
     -- Sacerdote
@@ -621,7 +837,13 @@ addonTable.ClasesDict = {
         zhTW = "戒律",
         plPL = "Dyscyplina",
         svSE = "Disciplin",
-        noNO = "Disiplin"
+        noNO = "Disiplin",
+        trTR = "Disiplin",
+        jaJP = "ディシプリン",
+        arSA = "انضباط",
+        hiIN = "अनुशासन",
+        thTH = "วินัย",
+        viVN = "Kỷ luật"
     },
     ["holy"]        = {
         esES = "Sagrado",
@@ -637,7 +859,13 @@ addonTable.ClasesDict = {
         zhTW = "神聖",
         plPL = "Światłość",
         svSE = "Helig",
-        noNO = "Hellig"
+        noNO = "Hellig",
+        trTR = "Kutsal",
+        jaJP = "ホーリー",
+        arSA = "مقدس",
+        hiIN = "पवित्र",
+        thTH = "ศักดิ์สิทธิ์",
+        viVN = "Thánh thiện"
     },
     ["shadow"]      = {
         esES = "Sombras",
@@ -653,7 +881,13 @@ addonTable.ClasesDict = {
         zhTW = "暗影",
         plPL = "Cień",
         svSE = "Skugga",
-        noNO = "Skygge"
+        noNO = "Skygge",
+        trTR = "Gölge",
+        jaJP = "シャドウ",
+        arSA = "ظل",
+        hiIN = "छाया",
+        thTH = "เงา",
+        viVN = "Bóng tối"
     },
 
     -- Druida
@@ -671,7 +905,13 @@ addonTable.ClasesDict = {
         zhTW = "平衡",
         plPL = "Równowaga",
         svSE = "Balans",
-        noNO = "Balanse"
+        noNO = "Balanse",
+        trTR = "Denge",
+        jaJP = "バランス",
+        arSA = "توازن",
+        hiIN = "संतुलन",
+        thTH = "สมดุล",
+        viVN = "Cân bằng"
     },
     ["feral"]       = {
         esES = "Feral",
@@ -687,7 +927,13 @@ addonTable.ClasesDict = {
         zhTW = "野性",
         plPL = "Dziki",
         svSE = "Vildmand",
-        noNO = "Villskap"
+        noNO = "Villskap",
+        trTR = "Vahşi",
+        jaJP = "フェラル",
+        arSA = "وحشي",
+        hiIN = "जंगली",
+        thTH = "ดุร้าย",
+        viVN = "Hoang dã"
     },
     ["resto"]       = {
         esES = "Restauración",
@@ -703,7 +949,13 @@ addonTable.ClasesDict = {
         zhTW = "恢復",
         plPL = "Przywrócenie",
         svSE = "Återställning",
-        noNO = "Restaurering"
+        noNO = "Restaurering",
+        trTR = "Yenileme",
+        jaJP = "レストア",
+        arSA = "ترميم",
+        hiIN = "बहाली",
+        thTH = "ฟื้นฟู",
+        viVN = "Phục hồi"
     },
     ["guardian"]    = {
         esES = "Guardián",
@@ -719,7 +971,13 @@ addonTable.ClasesDict = {
         zhTW = "守護",
         plPL = "Strażnik",
         svSE = "Väktare",
-        noNO = "Vokter"
+        noNO = "Vokter",
+        trTR = "Muhafız",
+        jaJP = "ガーディアン",
+        arSA = "حارس",
+        hiIN = "अभिभावक",
+        thTH = "ผู้พิทักษ์",
+        viVN = "Hộ vệ"
     },
 
     -- Chamán
@@ -737,7 +995,13 @@ addonTable.ClasesDict = {
         zhTW = "元素",
         plPL = "Żywioły",
         svSE = "Elementär",
-        noNO = "Elementær"
+        noNO = "Elementær",
+        trTR = "Elemental",
+        jaJP = "エレメンタル",
+        arSA = "عنصري",
+        hiIN = "तात्विक",
+        thTH = "ธาตุ",
+        viVN = "Nguyên tố"
     },
     ["enh"]         = {
         esES = "Mejora",
@@ -753,7 +1017,13 @@ addonTable.ClasesDict = {
         zhTW = "增強",
         plPL = "Wzmocnienie",
         svSE = "Förstärkning",
-        noNO = "Forsterkning"
+        noNO = "Forsterkning",
+        trTR = "Güçlendirme",
+        jaJP = "エンハンスメント",
+        arSA = "تعزيز",
+        hiIN = "संवर्धन",
+        thTH = "เสริมพลัง",
+        viVN = "Tăng cường"
     },
 
 
@@ -772,7 +1042,13 @@ addonTable.ClasesDict = {
         zhTW = "刺殺",
         plPL = "Likwidacja",
         svSE = "Lönnmord",
-        noNO = "Likvidering"
+        noNO = "Likvidering",
+        trTR = "Suikast",
+        jaJP = "アサシネーション",
+        arSA = "اغتيال",
+        hiIN = "हत्या",
+        thTH = "สังหาร",
+        viVN = "Ám sát"
     },
     ["assass"] = {
         esES = "Asesinato",
@@ -788,7 +1064,13 @@ addonTable.ClasesDict = {
         zhTW = "刺殺",
         plPL = "Likwidacja",
         svSE = "Lönnmord",
-        noNO = "Likvidering"
+        noNO = "Likvidering",
+        trTR = "Suikast",
+        jaJP = "アサシネーション",
+        arSA = "اغتيال",
+        hiIN = "हत्या",
+        thTH = "สังหาร",
+        viVN = "Ám sát"
     },
     ["outlaw"] = {
         esES = "Combate",
@@ -804,7 +1086,13 @@ addonTable.ClasesDict = {
         zhTW = "戰鬥",
         plPL = "Walka",
         svSE = "Strid",
-        noNO = "Kamp"
+        noNO = "Kamp",
+        trTR = "Savaş / Kanunsuz",
+        jaJP = "コンバット / アウトロー",
+        arSA = "قتال / خارج عن القانون",
+        hiIN = "मुकाबला",
+        thTH = "ต่อสู้",
+        viVN = "Chiến đấu"
     },
     ["sub"] = {
         esES = "Sutileza",
@@ -820,7 +1108,13 @@ addonTable.ClasesDict = {
         zhTW = "敏銳",
         plPL = "Przebiegłość",
         svSE = "List",
-        noNO = "Smiidighet"
+        noNO = "Smiidighet",
+        trTR = "Kurnazlık",
+        jaJP = "サブテリティ",
+        arSA = "دقة",
+        hiIN = "सूक्ष्मता",
+        thTH = "แยบยล",
+        viVN = "Tinh tế"
     },
 
     -- Monje
@@ -838,7 +1132,13 @@ addonTable.ClasesDict = {
         zhTW = "釀酒",
         plPL = "Mistrz Piwowarstwa",
         svSE = "Bryggmästare",
-        noNO = "Bryggemester"
+        noNO = "Bryggemester",
+        trTR = "İçki Ustası",
+        jaJP = "酒造師",
+        arSA = "معلم التخمير",
+        hiIN = "शराब बनाने वाला",
+        thTH = "บริวมาสเตอร์",
+        viVN = "Sư phụ nấu rượu"
     },
     ["bm monk"] = {
         esES = "Maestro Cervecero",
@@ -854,7 +1154,13 @@ addonTable.ClasesDict = {
         zhTW = "釀酒",
         plPL = "Mistrz Piwowarstwa",
         svSE = "Bryggmästare",
-        noNO = "Bryggemester"
+        noNO = "Bryggemester",
+        trTR = "İçki Ustası",
+        jaJP = "酒造師",
+        arSA = "معلم التخمير",
+        hiIN = "शराब बनाने वाला",
+        thTH = "บริวมาสเตอร์",
+        viVN = "Sư phụ nấu rượu"
     },
     ["ww"] = {
         esES = "Viajero del Viento",
@@ -870,7 +1176,13 @@ addonTable.ClasesDict = {
         zhTW = "御風",
         plPL = "Kroczący w Wietrze",
         svSE = "Vindgångare",
-        noNO = "Vindvandrer"
+        noNO = "Vindvandrer",
+        trTR = "Rüzgar Yürüyen",
+        jaJP = "風歩き",
+        arSA = "ممارس الرياح",
+        hiIN = "पवनचक्की",
+        thTH = "วินด์วอล์กเกอร์",
+        viVN = "Phong sĩ"
     },
     ["mw"] = {
         esES = "Tejedor de Niebla",
@@ -886,7 +1198,13 @@ addonTable.ClasesDict = {
         zhTW = "織霧",
         plPL = "Tkacz Mgły",
         svSE = "Dimvävare",
-        noNO = "Tåkevever"
+        noNO = "Tåkevever",
+        trTR = "Sis Ören",
+        jaJP = "霧編み",
+        arSA = "نساج الضباب",
+        hiIN = "मिस्टवीवर",
+        thTH = "มิสต์วีฟเวอร์",
+        viVN = "Sương sĩ"
     },
 
     -- Caballero de la Muerte
@@ -904,7 +1222,13 @@ addonTable.ClasesDict = {
         zhTW = "血魄",
         plPL = "Krew",
         svSE = "Blod",
-        noNO = "Blod"
+        noNO = "Blod",
+        trTR = "Kan",
+        jaJP = "ブラッド",
+        arSA = "دم",
+        hiIN = "रक्त",
+        thTH = "เลือด",
+        viVN = "Máu"
     },
     ["unholy"] = {
         esES = "Profano",
@@ -920,7 +1244,13 @@ addonTable.ClasesDict = {
         zhTW = "穢邪",
         plPL = "Nieczysty",
         svSE = "Ohelig",
-        noNO = "Uhellig"
+        noNO = "Uhellig",
+        trTR = "Kafir",
+        jaJP = "アンホーリー",
+        arSA = "دنس",
+        hiIN = "अधर्मी",
+        thTH = "อัปมงคล",
+        viVN = "Bất tịnh"
     },
 
     -- Cazador de Demonios
@@ -938,7 +1268,13 @@ addonTable.ClasesDict = {
         zhTW = "惡魔獵人",
         plPL = "Łowca Demonów",
         svSE = "Demonjägare",
-        noNO = "Demonjeger"
+        noNO = "Demonjeger",
+        trTR = "İblis Avcısı",
+        jaJP = "デーモンハンター",
+        arSA = "صائد الشيطان",
+        hiIN = "डेमन हंटर",
+        thTH = "ดีมอนฮันเตอร์",
+        viVN = "Thợ săn quỷ"
     },
     ["dh"] = {
         esES = "Cazador de Demonios",
@@ -954,7 +1290,13 @@ addonTable.ClasesDict = {
         zhTW = "惡魔獵人",
         plPL = "Łowca Demonów",
         svSE = "Demonjägare",
-        noNO = "Demonjeger"
+        noNO = "Demonjeger",
+        trTR = "İblis Avcısı",
+        jaJP = "デーモンハンター",
+        arSA = "صائد الشيطان",
+        hiIN = "डेमन हंटर",
+        thTH = "ดีมอนฮันเตอร์",
+        viVN = "Thợ săn quỷ"
     },
     ["havoc"] = {
         esES = "Devastación",
@@ -970,7 +1312,13 @@ addonTable.ClasesDict = {
         zhTW = "災虐",
         plPL = "Spustoszenie",
         svSE = "Förödelse",
-        noNO = "Ødeleggelse"
+        noNO = "Ødeleggelse",
+        trTR = "Tahribat",
+        jaJP = "ハヴォック",
+        arSA = "خراب",
+        hiIN = "तबाही",
+        thTH = "ความหายนะ",
+        viVN = "Tàn phá"
     },
     ["vengeance"] = {
         esES = "Venganza",
@@ -986,6 +1334,12 @@ addonTable.ClasesDict = {
         zhTW = "復仇",
         plPL = "Zemsta",
         svSE = "Hämnd",
-        noNO = "Hevn"
+        noNO = "Hevn",
+        trTR = "İntikam",
+        jaJP = "ヴェンジェンス",
+        arSA = "انتقام",
+        hiIN = "प्रतिशोध",
+        thTH = "การแก้แค้น",
+        viVN = "Báo thù"
     },
 }
