@@ -40,6 +40,7 @@ L["CAT_ZONES"] = "Zones (World)"
 L["CAT_SETS"] = "Item Sets"
 L["CAT_STATUS"] = "Status / States"
 L["GEN_HEADER"] = "General Configuration"
+L["EXP_HEADER"] = "Dungeons & Raids by Expansion:"
 
 -- Canales
 L["CH_HEADER"] = "Channels to translate:"
@@ -134,6 +135,7 @@ if locale == "esES" or locale == "esMX" then
     L["CAT_SETS"] = "Sets de Objetos"
     L["CAT_STATUS"] = "Estado / Estados"
     L["GEN_HEADER"] = "Configuración General"
+    L["EXP_HEADER"] = "Instancias por Expansión:"
 
     -- Canales
     L["CH_HEADER"] = "Canales a traducir:"

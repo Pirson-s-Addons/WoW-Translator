@@ -1,0 +1,5 @@
+local ADDON_NAME, addonTable = ...
+addonTable.TheWarWithinDict = {
+    ["tww"] = { esES = "The War Within", esMX = "The War Within", enUS = "The War Within", deDE = "The War Within", frFR = "The War Within", itIT = "The War Within", koKR = "내부 전쟁", ptBR = "The War Within", ruRU = "The War Within", zhCN = "地心之战", zhTW = "地心之戰", plPL = "The War Within", svSE = "The War Within", noNO = "The War Within", trTR = "The War Within", jaJP = "ザ・ウォー・ウィズイン", arSA = "الحرب في الداخل", hiIN = "द वॉर विदिन", thTH = "เดอะวอร์วิดอิน", viVN = "The War Within" },
+    ["np"] = { esES = "Palacio Nerub'ar", esMX = "Palacio Nerub'ar", enUS = "Nerub-ar Palace", deDE = "Palast von Nerub-ar", frFR = "Palais d'Arraz-al", itIT = "Palazzo Nerub'ar", koKR = "네룹아르 궁전", ptBR = "Palácio Nerub-ar", ruRU = "Неруб'арский дворец", zhCN = "尼鲁巴尔王宫", zhTW = "尼魯巴爾王宮", plPL = "Pałac Nerub-ar", svSE = "Nerub-ar Palace", noNO = "Nerub-ar Palace", trTR = "Nerub-ar Sarayı", jaJP = "ネルバー宮殿", arSA = "قصر نيروبار", hiIN = "नेरुบ-आर पैलेस", thTH = "พระราชวังเนรูบาร์", viVN = "Cung điện Nerub-ar" },
+}

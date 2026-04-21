@@ -1,4 +1,3 @@
--- Ayudante de Tooltip para la interfaz de configuración
 function addonTable.AddTooltip(frame, text)
     if not text then return end
     frame:SetScript("OnEnter", function(self)

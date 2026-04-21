@@ -1,6 +1,6 @@
-## Interface: 38000
+## Interface: 38000, 38001
 ## Author: Pirson
-## Version: 1.11
+## Version: 1.12
 ## Title: |TInterface\AddOns\WoWTranslator\img\logo_wt:16:16|t |cffd597ffWoW Translator|r
 
 # https://warcraft.wiki.gg/wiki/Addon_Categories
@@ -68,7 +68,19 @@ Data\Estadisticas.lua
 Data\Estado.lua
 Data\Grupos.lua
 Data\Hermandad.lua
-Data\Mazz_Raid.lua
+Data\Instancias\Core.lua
+Data\Instancias\Classic.lua
+Data\Instancias\TBC.lua
+Data\Instancias\WotLK.lua
+Data\Instancias\Cata.lua
+Data\Instancias\MoP.lua
+Data\Instancias\WoD.lua
+Data\Instancias\Legion.lua
+Data\Instancias\BfA.lua
+Data\Instancias\Shadowlands.lua
+Data\Instancias\Dragonflight.lua
+Data\Instancias\TheWarWithin.lua
+Data\Instancias\Midnight.lua
 Data\Profesiones.lua
 Data\Roles.lua
 Data\Social.lua

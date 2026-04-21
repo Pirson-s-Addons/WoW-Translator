@@ -142,6 +142,43 @@ function addonTable.CreateConfigUI()
         AddTooltip(cb, info.tt)
     end
     currentY = currentY - (math.ceil(#checkboxes / 3) * 26) - 15
+    
+    -- 2.1 SECCIÓN: EXPANSIONES
+    local expHeader = scrollChild:CreateFontString(nil, "ARTWORK", "GameFontNormal")
+    expHeader:SetPoint("TOPLEFT", marginX, currentY)
+    expHeader:SetText("|cffC47FF3" .. L["EXP_HEADER"] .. "|r")
+    currentY = currentY - 30
+
+    local expansions = {
+        { text = "Classic",           key = "showInstClassic" },
+        { text = "Burning Crusade",   key = "showInstTBC" },
+        { text = "Wrath of the Lich King", key = "showInstWotLK" },
+        { text = "Cataclysm",         key = "showInstCata" },
+        { text = "Mists of Pandaria", key = "showInstMoP" },
+        { text = "Warlords of Draenor", key = "showInstWoD" },
+        { text = "Legion",            key = "showInstLegion" },
+        { text = "Battle for Azeroth", key = "showInstBfA" },
+        { text = "Shadowlands",       key = "showInstShadowlands" },
+        { text = "Dragonflight",      key = "showInstDragonflight" },
+        { text = "The War Within",    key = "showInstTheWarWithin" },
+        { text = "Midnight",          key = "showInstMidnight" },
+    }
+
+    for i, exp in ipairs(expansions) do
+        local cb = CreateFrame("CheckButton", "WT_EXP_CB_" .. exp.key, scrollChild, "InterfaceOptionsCheckButtonTemplate")
+        local col = (i - 1) % 3
+        local row = math.floor((i - 1) / 3)
+        cb:SetPoint("TOPLEFT", marginX + (col * 180), currentY - (row * 26))
+
+        _G[cb:GetName() .. "Text"]:SetText(exp.text)
+        _G[cb:GetName() .. "Text"]:SetFontObject("GameFontHighlightSmall")
+        cb:SetChecked(WoWTranslatorDB.settings[exp.key])
+        cb:SetScript("OnClick", function(self)
+            WoWTranslatorDB.settings[exp.key] = self:GetChecked()
+            addonTable.RebuildMasterDict()
+        end)
+    end
+    currentY = currentY - (math.ceil(#expansions / 3) * 26) - 15
 
     -- Separador sutil
     local line2 = scrollChild:CreateTexture(nil, "ARTWORK")
