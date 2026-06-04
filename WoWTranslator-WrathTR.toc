@@ -1,6 +1,6 @@
 ## Interface: 38000, 38001
 ## Author: Pirson
-## Version: 1.12
+## Version: 1.13
 ## Title: |TInterface\AddOns\WoWTranslator\img\logo_wt:16:16|t |cffd597ffWoW Translator|r
 
 # https://warcraft.wiki.gg/wiki/Addon_Categories

@@ -1,6 +1,6 @@
 ## Interface: 30400, 30401, 30402, 30403, 30404, 30405
 ## Author: Pirson
-## Version: 1.12
+## Version: 1.13
 ## Title: |TInterface\AddOns\WoWTranslator\img\logo_wt:16:16|t |cffd597ffWoW Translator|r
 
 # https://warcraft.wiki.gg/wiki/Addon_Categories
