@@ -1932,6 +1932,9 @@ elseif locale == "csCZ" then
     -- Minimapa
     L["QT_MINIMAP_TT"] = "|cffd597ffWoW Translator|r\n|cffffffffKliknutí:|r Otevřít nastavení"
 
+elseif locale == "nlNL" or locale == "roRO" or locale == "huHU" or locale == "elGR" or locale == "ukUA" or locale == "daDK" or locale == "fiFI" or locale == "skSK" or locale == "bgBG" or locale == "hrHR" or locale == "srRS" or locale == "slSI" or locale == "ltLT" or locale == "lvLV" or locale == "etEE" or locale == "idID" or locale == "msMY" or locale == "faIR" or locale == "heIL" or locale == "bnBD" or locale == "urPK" or locale == "taIN" or locale == "teIN" then
+    -- These languages are supported for translation targets.
+	-- UI strings fall back to English defaults defined at the top of the file.
 end
 
 addonTable.L = L

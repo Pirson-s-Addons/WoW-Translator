@@ -21,7 +21,7 @@ addonTable.ProfesionesDict = {
         hiIN = "आभूषण निर्माण",
         thTH = "การเจียระไนอัญมณี",
         viVN = "Chế tác trang sức",
-        csCZ = "Jewelcrafting",
+        csCZ = "Jewelcrafting", nlNL = "Jewelcrafting", roRO = "Jewelcrafting", huHU = "Jewelcrafting", elGR = "Jewelcrafting", ukUA = "Jewelcrafting", daDK = "Jewelcrafting", fiFI = "Jewelcrafting", skSK = "Jewelcrafting", bgBG = "Jewelcrafting", hrHR = "Jewelcrafting", srRS = "Jewelcrafting", slSI = "Jewelcrafting", ltLT = "Jewelcrafting", lvLV = "Jewelcrafting", etEE = "Jewelcrafting", idID = "Jewelcrafting", msMY = "Jewelcrafting", faIR = "Jewelcrafting", heIL = "Jewelcrafting", bnBD = "Jewelcrafting", urPK = "Jewelcrafting", taIN = "Jewelcrafting", teIN = "Jewelcrafting"
     },
     ["jw"] = {
         esES = "Joyería",
@@ -44,7 +44,7 @@ addonTable.ProfesionesDict = {
         hiIN = "आभूषण निर्माण",
         thTH = "การเจียระไนอัญมณี",
         viVN = "Chế tác trang sức",
-        csCZ = "Jen tak",
+        csCZ = "Jen tak", nlNL = "Jewelcrafting", roRO = "Jewelcrafting", huHU = "Jewelcrafting", elGR = "Jewelcrafting", ukUA = "Jewelcrafting", daDK = "Jewelcrafting", fiFI = "Jewelcrafting", skSK = "Jewelcrafting", bgBG = "Jewelcrafting", hrHR = "Jewelcrafting", srRS = "Jewelcrafting", slSI = "Jewelcrafting", ltLT = "Jewelcrafting", lvLV = "Jewelcrafting", etEE = "Jewelcrafting", idID = "Jewelcrafting", msMY = "Jewelcrafting", faIR = "Jewelcrafting", heIL = "Jewelcrafting", bnBD = "Jewelcrafting", urPK = "Jewelcrafting", taIN = "Jewelcrafting", teIN = "Jewelcrafting"
     },
     ["bs"] = {
         esES = "Herrería",
@@ -67,7 +67,7 @@ addonTable.ProfesionesDict = {
         hiIN = "लोहारगिरी",
         thTH = "การตีเหล็ก",
         viVN = "Rèn",
-        csCZ = "Blacksmithing",
+        csCZ = "Blacksmithing", nlNL = "Blacksmithing", roRO = "Blacksmithing", huHU = "Blacksmithing", elGR = "Blacksmithing", ukUA = "Blacksmithing", daDK = "Blacksmithing", fiFI = "Blacksmithing", skSK = "Blacksmithing", bgBG = "Blacksmithing", hrHR = "Blacksmithing", srRS = "Blacksmithing", slSI = "Blacksmithing", ltLT = "Blacksmithing", lvLV = "Blacksmithing", etEE = "Blacksmithing", idID = "Blacksmithing", msMY = "Blacksmithing", faIR = "Blacksmithing", heIL = "Blacksmithing", bnBD = "Blacksmithing", urPK = "Blacksmithing", taIN = "Blacksmithing", teIN = "Blacksmithing"
     },
     ["enchant"] = {
         esES = "Encantamiento",
@@ -90,7 +90,7 @@ addonTable.ProfesionesDict = {
         hiIN = "जादुई",
         thTH = "การร่ายมนต์",
         viVN = "Phù phép",
-        csCZ = "Očarování",
+        csCZ = "Očarování", nlNL = "Enchanting", roRO = "Enchanting", huHU = "Enchanting", elGR = "Enchanting", ukUA = "Enchanting", daDK = "Enchanting", fiFI = "Enchanting", skSK = "Enchanting", bgBG = "Enchanting", hrHR = "Enchanting", srRS = "Enchanting", slSI = "Enchanting", ltLT = "Enchanting", lvLV = "Enchanting", etEE = "Enchanting", idID = "Enchanting", msMY = "Enchanting", faIR = "Enchanting", heIL = "Enchanting", bnBD = "Enchanting", urPK = "Enchanting", taIN = "Enchanting", teIN = "Enchanting"
     },
     ["ec"] = {
         esES = "Encantamiento",
@@ -113,7 +113,7 @@ addonTable.ProfesionesDict = {
         hiIN = "जादुई",
         thTH = "การร่ายมนต์",
         viVN = "Phù phép",
-        csCZ = "Eternal Palace",
+        csCZ = "Eternal Palace", nlNL = "Enchanting", roRO = "Enchanting", huHU = "Enchanting", elGR = "Enchanting", ukUA = "Enchanting", daDK = "Enchanting", fiFI = "Enchanting", skSK = "Enchanting", bgBG = "Enchanting", hrHR = "Enchanting", srRS = "Enchanting", slSI = "Enchanting", ltLT = "Enchanting", lvLV = "Enchanting", etEE = "Enchanting", idID = "Enchanting", msMY = "Enchanting", faIR = "Enchanting", heIL = "Enchanting", bnBD = "Enchanting", urPK = "Enchanting", taIN = "Enchanting", teIN = "Enchanting"
     },
     ["herb"] = {
         esES = "Herboristería",
@@ -136,7 +136,7 @@ addonTable.ProfesionesDict = {
         hiIN = "जड़ी-बूटीवाद",
         thTH = "สมุนไพร",
         viVN = "Thảo dược",
-        csCZ = "Bylinkářství",
+        csCZ = "Bylinkářství", nlNL = "Herbalism", roRO = "Herbalism", huHU = "Herbalism", elGR = "Herbalism", ukUA = "Herbalism", daDK = "Herbalism", fiFI = "Herbalism", skSK = "Herbalism", bgBG = "Herbalism", hrHR = "Herbalism", srRS = "Herbalism", slSI = "Herbalism", ltLT = "Herbalism", lvLV = "Herbalism", etEE = "Herbalism", idID = "Herbalism", msMY = "Herbalism", faIR = "Herbalism", heIL = "Herbalism", bnBD = "Herbalism", urPK = "Herbalism", taIN = "Herbalism", teIN = "Herbalism"
     },
     ["alch"] = {
         esES = "Alquimia",
@@ -159,7 +159,7 @@ addonTable.ProfesionesDict = {
         hiIN = "कीमिया",
         thTH = "เล่นแร่แปรธาตุ",
         viVN = "Luyện kim",
-        csCZ = "Alchymie",
+        csCZ = "Alchymie", nlNL = "Alchemy", roRO = "Alchemy", huHU = "Alchemy", elGR = "Alchemy", ukUA = "Alchemy", daDK = "Alchemy", fiFI = "Alchemy", skSK = "Alchemy", bgBG = "Alchemy", hrHR = "Alchemy", srRS = "Alchemy", slSI = "Alchemy", ltLT = "Alchemy", lvLV = "Alchemy", etEE = "Alchemy", idID = "Alchemy", msMY = "Alchemy", faIR = "Alchemy", heIL = "Alchemy", bnBD = "Alchemy", urPK = "Alchemy", taIN = "Alchemy", teIN = "Alchemy"
     },
     ["lw"] = {
         esES = "Peletería",
@@ -182,7 +182,7 @@ addonTable.ProfesionesDict = {
         hiIN = "चर्मकार",
         thTH = "การทำเครื่องหนัง",
         viVN = "Chế tác da",
-        csCZ = "Leatherworking",
+        csCZ = "Leatherworking", nlNL = "Leatherworking", roRO = "Leatherworking", huHU = "Leatherworking", elGR = "Leatherworking", ukUA = "Leatherworking", daDK = "Leatherworking", fiFI = "Leatherworking", skSK = "Leatherworking", bgBG = "Leatherworking", hrHR = "Leatherworking", srRS = "Leatherworking", slSI = "Leatherworking", ltLT = "Leatherworking", lvLV = "Leatherworking", etEE = "Leatherworking", idID = "Leatherworking", msMY = "Leatherworking", faIR = "Leatherworking", heIL = "Leatherworking", bnBD = "Leatherworking", urPK = "Leatherworking", taIN = "Leatherworking", teIN = "Leatherworking"
     },
     ["tailor"] = {
         esES = "Sastrería",
@@ -205,7 +205,7 @@ addonTable.ProfesionesDict = {
         hiIN = "सिलाई",
         thTH = "การเย็บผ้า",
         viVN = "May mặc",
-        csCZ = "Krejčovství",
+        csCZ = "Krejčovství", nlNL = "Tailoring", roRO = "Tailoring", huHU = "Tailoring", elGR = "Tailoring", ukUA = "Tailoring", daDK = "Tailoring", fiFI = "Tailoring", skSK = "Tailoring", bgBG = "Tailoring", hrHR = "Tailoring", srRS = "Tailoring", slSI = "Tailoring", ltLT = "Tailoring", lvLV = "Tailoring", etEE = "Tailoring", idID = "Tailoring", msMY = "Tailoring", faIR = "Tailoring", heIL = "Tailoring", bnBD = "Tailoring", urPK = "Tailoring", taIN = "Tailoring", teIN = "Tailoring"
     },
     ["mining"] = {
         esES = "Minería",
@@ -228,7 +228,7 @@ addonTable.ProfesionesDict = {
         hiIN = "खनन",
         thTH = "การขุดเหมือง",
         viVN = "Khai thác mỏ",
-        csCZ = "Těžba",
+        csCZ = "Těžba", nlNL = "Mining", roRO = "Mining", huHU = "Mining", elGR = "Mining", ukUA = "Mining", daDK = "Mining", fiFI = "Mining", skSK = "Mining", bgBG = "Mining", hrHR = "Mining", srRS = "Mining", slSI = "Mining", ltLT = "Mining", lvLV = "Mining", etEE = "Mining", idID = "Mining", msMY = "Mining", faIR = "Mining", heIL = "Mining", bnBD = "Mining", urPK = "Mining", taIN = "Mining", teIN = "Mining"
     },
     ["skinning"] = {
         esES = "Desuello",
@@ -251,7 +251,7 @@ addonTable.ProfesionesDict = {
         hiIN = "खाल उतारना",
         thTH = "การถลกหนัง",
         viVN = "Lột da",
-        csCZ = "Stahování kůže",
+        csCZ = "Stahování kůže", nlNL = "Skinning", roRO = "Skinning", huHU = "Skinning", elGR = "Skinning", ukUA = "Skinning", daDK = "Skinning", fiFI = "Skinning", skSK = "Skinning", bgBG = "Skinning", hrHR = "Skinning", srRS = "Skinning", slSI = "Skinning", ltLT = "Skinning", lvLV = "Skinning", etEE = "Skinning", idID = "Skinning", msMY = "Skinning", faIR = "Skinning", heIL = "Skinning", bnBD = "Skinning", urPK = "Skinning", taIN = "Skinning", teIN = "Skinning"
     },
     ["cooking"] = {
         esES = "Cocina",
@@ -274,7 +274,7 @@ addonTable.ProfesionesDict = {
         hiIN = "खाना बनाना",
         thTH = "การทำอาหาร",
         viVN = "Nấu ăn",
-        csCZ = "Vaření",
+        csCZ = "Vaření", nlNL = "Cooking", roRO = "Cooking", huHU = "Cooking", elGR = "Cooking", ukUA = "Cooking", daDK = "Cooking", fiFI = "Cooking", skSK = "Cooking", bgBG = "Cooking", hrHR = "Cooking", srRS = "Cooking", slSI = "Cooking", ltLT = "Cooking", lvLV = "Cooking", etEE = "Cooking", idID = "Cooking", msMY = "Cooking", faIR = "Cooking", heIL = "Cooking", bnBD = "Cooking", urPK = "Cooking", taIN = "Cooking", teIN = "Cooking"
     },
     ["fishing"] = {
         esES = "Pesca",
@@ -297,7 +297,7 @@ addonTable.ProfesionesDict = {
         hiIN = "मछली पकड़ना",
         thTH = "การตกปลา",
         viVN = "Câu cá",
-        csCZ = "Rybaření",
+        csCZ = "Rybaření", nlNL = "Fishing", roRO = "Fishing", huHU = "Fishing", elGR = "Fishing", ukUA = "Fishing", daDK = "Fishing", fiFI = "Fishing", skSK = "Fishing", bgBG = "Fishing", hrHR = "Fishing", srRS = "Fishing", slSI = "Fishing", ltLT = "Fishing", lvLV = "Fishing", etEE = "Fishing", idID = "Fishing", msMY = "Fishing", faIR = "Fishing", heIL = "Fishing", bnBD = "Fishing", urPK = "Fishing", taIN = "Fishing", teIN = "Fishing"
     },
     ["insc"] = {
         esES = "Inscripción",
@@ -320,7 +320,7 @@ addonTable.ProfesionesDict = {
         hiIN = "शिलालेख",
         thTH = "การจารึก",
         viVN = "Khắc chữ",
-        csCZ = "Nápisy",
+        csCZ = "Nápisy", nlNL = "Inscription", roRO = "Inscription", huHU = "Inscription", elGR = "Inscription", ukUA = "Inscription", daDK = "Inscription", fiFI = "Inscription", skSK = "Inscription", bgBG = "Inscription", hrHR = "Inscription", srRS = "Inscription", slSI = "Inscription", ltLT = "Inscription", lvLV = "Inscription", etEE = "Inscription", idID = "Inscription", msMY = "Inscription", faIR = "Inscription", heIL = "Inscription", bnBD = "Inscription", urPK = "Inscription", taIN = "Inscription", teIN = "Inscription"
     },
     ["arch"] = {
         esES = "Arqueología",
@@ -343,7 +343,7 @@ addonTable.ProfesionesDict = {
         hiIN = "पुरातत्व",
         thTH = "โบราณคดี",
         viVN = "Khảo cổ học",
-        csCZ = "Archeologie",
+        csCZ = "Archeologie", nlNL = "Archaeology", roRO = "Archaeology", huHU = "Archaeology", elGR = "Archaeology", ukUA = "Archaeology", daDK = "Archaeology", fiFI = "Archaeology", skSK = "Archaeology", bgBG = "Archaeology", hrHR = "Archaeology", srRS = "Archaeology", slSI = "Archaeology", ltLT = "Archaeology", lvLV = "Archaeology", etEE = "Archaeology", idID = "Archaeology", msMY = "Archaeology", faIR = "Archaeology", heIL = "Archaeology", bnBD = "Archaeology", urPK = "Archaeology", taIN = "Archaeology", teIN = "Archaeology"
     },
     ["recraft"] = {
         esES = "Refabricar",
@@ -366,7 +366,7 @@ addonTable.ProfesionesDict = {
         hiIN = "पुन: निर्माण",
         thTH = "การสร้างใหม่",
         viVN = "Chế tác lại",
-        csCZ = "Předělání",
+        csCZ = "Předělání", nlNL = "Recraft", roRO = "Recraft", huHU = "Recraft", elGR = "Recraft", ukUA = "Recraft", daDK = "Recraft", fiFI = "Recraft", skSK = "Recraft", bgBG = "Recraft", hrHR = "Recraft", srRS = "Recraft", slSI = "Recraft", ltLT = "Recraft", lvLV = "Recraft", etEE = "Recraft", idID = "Recraft", msMY = "Recraft", faIR = "Recraft", heIL = "Recraft", bnBD = "Recraft", urPK = "Recraft", taIN = "Recraft", teIN = "Recraft"
     },
     ["order"] = {
         esES = "Pedido de fabricación",
@@ -389,7 +389,7 @@ addonTable.ProfesionesDict = {
         hiIN = "क्राफ्टिंग ऑर्डर",
         thTH = "คำสั่งคราฟต์",
         viVN = "Đơn đặt hàng chế tác",
-        csCZ = "Objednávka",
+        csCZ = "Objednávka", nlNL = "Crafting order", roRO = "Crafting order", huHU = "Crafting order", elGR = "Crafting order", ukUA = "Crafting order", daDK = "Crafting order", fiFI = "Crafting order", skSK = "Crafting order", bgBG = "Crafting order", hrHR = "Crafting order", srRS = "Crafting order", slSI = "Crafting order", ltLT = "Crafting order", lvLV = "Crafting order", etEE = "Crafting order", idID = "Crafting order", msMY = "Crafting order", faIR = "Crafting order", heIL = "Crafting order", bnBD = "Crafting order", urPK = "Crafting order", taIN = "Crafting order", teIN = "Crafting order"
     },
     ["eng"] = {
         esES = "Ingeniería",
@@ -412,7 +412,7 @@ addonTable.ProfesionesDict = {
         hiIN = "इंजीनियरिंग",
         thTH = "วิศวกรรม",
         viVN = "Kỹ thuật",
-        csCZ = "Inženýrství",
+        csCZ = "Inženýrství", nlNL = "Engineering", roRO = "Engineering", huHU = "Engineering", elGR = "Engineering", ukUA = "Engineering", daDK = "Engineering", fiFI = "Engineering", skSK = "Engineering", bgBG = "Engineering", hrHR = "Engineering", srRS = "Engineering", slSI = "Engineering", ltLT = "Engineering", lvLV = "Engineering", etEE = "Engineering", idID = "Engineering", msMY = "Engineering", faIR = "Engineering", heIL = "Engineering", bnBD = "Engineering", urPK = "Engineering", taIN = "Engineering", teIN = "Engineering"
     },
     ["engineering"] = {
         esES = "Ingeniería",
@@ -435,7 +435,7 @@ addonTable.ProfesionesDict = {
         hiIN = "इंजीनियरिंग",
         thTH = "วิศวกรรม",
         viVN = "Kỹ thuật",
-        csCZ = "Inženýrství",
+        csCZ = "Inženýrství", nlNL = "Engineering", roRO = "Engineering", huHU = "Engineering", elGR = "Engineering", ukUA = "Engineering", daDK = "Engineering", fiFI = "Engineering", skSK = "Engineering", bgBG = "Engineering", hrHR = "Engineering", srRS = "Engineering", slSI = "Engineering", ltLT = "Engineering", lvLV = "Engineering", etEE = "Engineering", idID = "Engineering", msMY = "Engineering", faIR = "Engineering", heIL = "Engineering", bnBD = "Engineering", urPK = "Engineering", taIN = "Engineering", teIN = "Engineering"
     },
     ["fa"] = {
         esES = "Primeros auxilios",
@@ -458,6 +458,6 @@ addonTable.ProfesionesDict = {
         hiIN = "प्राथमिक चिकित्सा",
         thTH = "การปฐมพยาบาล",
         viVN = "Sơ cứu",
-        csCZ = "První pomoc",
+        csCZ = "První pomoc", nlNL = "First Aid", roRO = "First Aid", huHU = "First Aid", elGR = "First Aid", ukUA = "First Aid", daDK = "First Aid", fiFI = "First Aid", skSK = "First Aid", bgBG = "First Aid", hrHR = "First Aid", srRS = "First Aid", slSI = "First Aid", ltLT = "First Aid", lvLV = "First Aid", etEE = "First Aid", idID = "First Aid", msMY = "First Aid", faIR = "First Aid", heIL = "First Aid", bnBD = "First Aid", urPK = "First Aid", taIN = "First Aid", teIN = "First Aid"
     }
 }

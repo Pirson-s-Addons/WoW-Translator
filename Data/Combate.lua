@@ -21,7 +21,7 @@ addonTable.CombateDict = {
         hiIN = "अतिरिक्त भीड़",
         thTH = "มอนสเตอร์เพิ่ม",
         viVN = "Quái phụ",
-        csCZ = "Přídavný nepřítel",
+        csCZ = "Přídavný nepřítel", nlNL = "Extra mob", roRO = "Extra mob", huHU = "Extra mob", elGR = "Extra mob", ukUA = "Extra mob", daDK = "Extra mob", fiFI = "Extra mob", skSK = "Extra mob", bgBG = "Extra mob", hrHR = "Extra mob", srRS = "Extra mob", slSI = "Extra mob", ltLT = "Extra mob", lvLV = "Extra mob", etEE = "Extra mob", idID = "Extra mob", msMY = "Extra mob", faIR = "Extra mob", heIL = "Extra mob", bnBD = "Extra mob", urPK = "Extra mob", taIN = "Extra mob", teIN = "Extra mob"
     },
     ["aggro"] = {
         esES = "Amenaza",
@@ -44,7 +44,7 @@ addonTable.CombateDict = {
         hiIN = "खतरा",
         thTH = "ค่าความโกรธ",
         viVN = "Hiệm họa",
-        csCZ = "Agrese",
+        csCZ = "Agrese", nlNL = "Threat/Aggro", roRO = "Threat/Aggro", huHU = "Threat/Aggro", elGR = "Threat/Aggro", ukUA = "Threat/Aggro", daDK = "Threat/Aggro", fiFI = "Threat/Aggro", skSK = "Threat/Aggro", bgBG = "Threat/Aggro", hrHR = "Threat/Aggro", srRS = "Threat/Aggro", slSI = "Threat/Aggro", ltLT = "Threat/Aggro", lvLV = "Threat/Aggro", etEE = "Threat/Aggro", idID = "Threat/Aggro", msMY = "Threat/Aggro", faIR = "Threat/Aggro", heIL = "Threat/Aggro", bnBD = "Threat/Aggro", urPK = "Threat/Aggro", taIN = "Threat/Aggro", teIN = "Threat/Aggro"
     },
     ["aoe"] = {
         esES = "Efecto en área",
@@ -67,7 +67,7 @@ addonTable.CombateDict = {
         hiIN = "क्षेत्र प्रभाव",
         thTH = "เอฟเฟกต์พื้นที่",
         viVN = "Hiệu ứng diện rộng",
-        csCZ = "Plošný efekt",
+        csCZ = "Plošný efekt", nlNL = "Area of Effect", roRO = "Area of Effect", huHU = "Area of Effect", elGR = "Area of Effect", ukUA = "Area of Effect", daDK = "Area of Effect", fiFI = "Area of Effect", skSK = "Area of Effect", bgBG = "Area of Effect", hrHR = "Area of Effect", srRS = "Area of Effect", slSI = "Area of Effect", ltLT = "Area of Effect", lvLV = "Area of Effect", etEE = "Area of Effect", idID = "Area of Effect", msMY = "Area of Effect", faIR = "Area of Effect", heIL = "Area of Effect", bnBD = "Area of Effect", urPK = "Area of Effect", taIN = "Area of Effect", teIN = "Area of Effect"
     },
     ["cd"] = {
         esES = "Tiempo de reutilización",
@@ -90,7 +90,7 @@ addonTable.CombateDict = {
         hiIN = "कूलडाउन",
         thTH = "คูลดาวน์",
         viVN = "Thời gian hồi",
-        csCZ = "Cooldown",
+        csCZ = "Cooldown", nlNL = "Cooldown", roRO = "Cooldown", huHU = "Cooldown", elGR = "Cooldown", ukUA = "Cooldown", daDK = "Cooldown", fiFI = "Cooldown", skSK = "Cooldown", bgBG = "Cooldown", hrHR = "Cooldown", srRS = "Cooldown", slSI = "Cooldown", ltLT = "Cooldown", lvLV = "Cooldown", etEE = "Cooldown", idID = "Cooldown", msMY = "Cooldown", faIR = "Cooldown", heIL = "Cooldown", bnBD = "Cooldown", urPK = "Cooldown", taIN = "Cooldown", teIN = "Cooldown"
     },
     ["gcd"] = {
         esES = "Reutilización Global",
@@ -113,7 +113,7 @@ addonTable.CombateDict = {
         hiIN = "वैश्विक कूलडाउन",
         thTH = "จีซีดี",
         viVN = "Hồi chiêu chung",
-        csCZ = "Globální cooldown",
+        csCZ = "Globální cooldown", nlNL = "Global Cooldown", roRO = "Global Cooldown", huHU = "Global Cooldown", elGR = "Global Cooldown", ukUA = "Global Cooldown", daDK = "Global Cooldown", fiFI = "Global Cooldown", skSK = "Global Cooldown", bgBG = "Global Cooldown", hrHR = "Global Cooldown", srRS = "Global Cooldown", slSI = "Global Cooldown", ltLT = "Global Cooldown", lvLV = "Global Cooldown", etEE = "Global Cooldown", idID = "Global Cooldown", msMY = "Global Cooldown", faIR = "Global Cooldown", heIL = "Global Cooldown", bnBD = "Global Cooldown", urPK = "Global Cooldown", taIN = "Global Cooldown", teIN = "Global Cooldown"
     },
     ["dot"] = {
         esES = "Daño en el tiempo",
@@ -136,7 +136,7 @@ addonTable.CombateDict = {
         hiIN = "समय के साथ क्षति",
         thTH = "ดาเมจต่อเนื่อง",
         viVN = "Sát thương theo thời gian",
-        csCZ = "Poškození v čase",
+        csCZ = "Poškození v čase", nlNL = "Damage over Time", roRO = "Damage over Time", huHU = "Damage over Time", elGR = "Damage over Time", ukUA = "Damage over Time", daDK = "Damage over Time", fiFI = "Damage over Time", skSK = "Damage over Time", bgBG = "Damage over Time", hrHR = "Damage over Time", srRS = "Damage over Time", slSI = "Damage over Time", ltLT = "Damage over Time", lvLV = "Damage over Time", etEE = "Damage over Time", idID = "Damage over Time", msMY = "Damage over Time", faIR = "Damage over Time", heIL = "Damage over Time", bnBD = "Damage over Time", urPK = "Damage over Time", taIN = "Damage over Time", teIN = "Damage over Time"
     },
     ["hot"] = {
         esES = "Sana en el tiempo",
@@ -159,7 +159,7 @@ addonTable.CombateDict = {
         hiIN = "समय के साथ उपचार",
         thTH = "ฮีลต่อเนื่อง",
         viVN = "Hồi máu theo thời gian",
-        csCZ = "Léčení v čase",
+        csCZ = "Léčení v čase", nlNL = "Heal over Time", roRO = "Heal over Time", huHU = "Heal over Time", elGR = "Heal over Time", ukUA = "Heal over Time", daDK = "Heal over Time", fiFI = "Heal over Time", skSK = "Heal over Time", bgBG = "Heal over Time", hrHR = "Heal over Time", srRS = "Heal over Time", slSI = "Heal over Time", ltLT = "Heal over Time", lvLV = "Heal over Time", etEE = "Heal over Time", idID = "Heal over Time", msMY = "Heal over Time", faIR = "Heal over Time", heIL = "Heal over Time", bnBD = "Heal over Time", urPK = "Heal over Time", taIN = "Heal over Time", teIN = "Heal over Time"
     },
     ["kick"] = {
         esES = "Interrumpir",
@@ -182,7 +182,7 @@ addonTable.CombateDict = {
         hiIN = "बाधा डालें",
         thTH = "ขัดจังหวะ",
         viVN = "Ngắt quãng",
-        csCZ = "Přerušení",
+        csCZ = "Přerušení", nlNL = "Interrupt", roRO = "Interrupt", huHU = "Interrupt", elGR = "Interrupt", ukUA = "Interrupt", daDK = "Interrupt", fiFI = "Interrupt", skSK = "Interrupt", bgBG = "Interrupt", hrHR = "Interrupt", srRS = "Interrupt", slSI = "Interrupt", ltLT = "Interrupt", lvLV = "Interrupt", etEE = "Interrupt", idID = "Interrupt", msMY = "Interrupt", faIR = "Interrupt", heIL = "Interrupt", bnBD = "Interrupt", urPK = "Interrupt", taIN = "Interrupt", teIN = "Interrupt"
     },
     ["stun"] = {
         esES = "Aturdir",
@@ -205,7 +205,7 @@ addonTable.CombateDict = {
         hiIN = "दंग करना",
         thTH = "มึนงง",
         viVN = "Làm choáng",
-        csCZ = "Omráčení",
+        csCZ = "Omráčení", nlNL = "Stun", roRO = "Stun", huHU = "Stun", elGR = "Stun", ukUA = "Stun", daDK = "Stun", fiFI = "Stun", skSK = "Stun", bgBG = "Stun", hrHR = "Stun", srRS = "Stun", slSI = "Stun", ltLT = "Stun", lvLV = "Stun", etEE = "Stun", idID = "Stun", msMY = "Stun", faIR = "Stun", heIL = "Stun", bnBD = "Stun", urPK = "Stun", taIN = "Stun", teIN = "Stun"
     },
     ["kite"] = {
         esES = "Correr y ralentizar",
@@ -228,7 +228,7 @@ addonTable.CombateDict = {
         hiIN = "काइटिंग",
         thTH = "ลากจูง",
         viVN = "Thả diều",
-        csCZ = "Kajting",
+        csCZ = "Kajting", nlNL = "Kiting", roRO = "Kiting", huHU = "Kiting", elGR = "Kiting", ukUA = "Kiting", daDK = "Kiting", fiFI = "Kiting", skSK = "Kiting", bgBG = "Kiting", hrHR = "Kiting", srRS = "Kiting", slSI = "Kiting", ltLT = "Kiting", lvLV = "Kiting", etEE = "Kiting", idID = "Kiting", msMY = "Kiting", faIR = "Kiting", heIL = "Kiting", bnBD = "Kiting", urPK = "Kiting", taIN = "Kiting", teIN = "Kiting"
     },
     ["burst"] = {
         esES = "Daño explosivo",
@@ -251,7 +251,7 @@ addonTable.CombateDict = {
         hiIN = "बर्स्ट क्षति",
         thTH = "เบิร์สดาเมจ",
         viVN = "Sát thương bùng nổ",
-        csCZ = "Nárazové poškození",
+        csCZ = "Nárazové poškození", nlNL = "Burst damage", roRO = "Burst damage", huHU = "Burst damage", elGR = "Burst damage", ukUA = "Burst damage", daDK = "Burst damage", fiFI = "Burst damage", skSK = "Burst damage", bgBG = "Burst damage", hrHR = "Burst damage", srRS = "Burst damage", slSI = "Burst damage", ltLT = "Burst damage", lvLV = "Burst damage", etEE = "Burst damage", idID = "Burst damage", msMY = "Burst damage", faIR = "Burst damage", heIL = "Burst damage", bnBD = "Burst damage", urPK = "Burst damage", taIN = "Burst damage", teIN = "Burst damage"
     },
     ["focus"] = {
         esES = "Objetivo principal",
@@ -274,7 +274,7 @@ addonTable.CombateDict = {
         hiIN = "फोकस लक्ष्य",
         thTH = "เป้าหมายโฟกัส",
         viVN = "Mục tiêu tập trung",
-        csCZ = "Soustředění",
+        csCZ = "Soustředění", nlNL = "Focus target", roRO = "Focus target", huHU = "Focus target", elGR = "Focus target", ukUA = "Focus target", daDK = "Focus target", fiFI = "Focus target", skSK = "Focus target", bgBG = "Focus target", hrHR = "Focus target", srRS = "Focus target", slSI = "Focus target", ltLT = "Focus target", lvLV = "Focus target", etEE = "Focus target", idID = "Focus target", msMY = "Focus target", faIR = "Focus target", heIL = "Focus target", bnBD = "Focus target", urPK = "Focus target", taIN = "Focus target", teIN = "Focus target"
     },
     ["buff"] = {
         esES = "Aumento de poder",
@@ -297,7 +297,7 @@ addonTable.CombateDict = {
         hiIN = "बफ़",
         thTH = "บัฟ",
         viVN = "Buff",
-        csCZ = "Posílení",
+        csCZ = "Posílení", nlNL = "Buff", roRO = "Buff", huHU = "Buff", elGR = "Buff", ukUA = "Buff", daDK = "Buff", fiFI = "Buff", skSK = "Buff", bgBG = "Buff", hrHR = "Buff", srRS = "Buff", slSI = "Buff", ltLT = "Buff", lvLV = "Buff", etEE = "Buff", idID = "Buff", msMY = "Buff", faIR = "Buff", heIL = "Buff", bnBD = "Buff", urPK = "Buff", taIN = "Buff", teIN = "Buff"
     },
     ["debuff"] = {
         esES = "Disminución de poder",
@@ -320,7 +320,7 @@ addonTable.CombateDict = {
         hiIN = "डीबफ",
         thTH = "ดีบัฟ",
         viVN = "Hiệu ứng bất lợi",
-        csCZ = "Oslabení",
+        csCZ = "Oslabení", nlNL = "Debuff", roRO = "Debuff", huHU = "Debuff", elGR = "Debuff", ukUA = "Debuff", daDK = "Debuff", fiFI = "Debuff", skSK = "Debuff", bgBG = "Debuff", hrHR = "Debuff", srRS = "Debuff", slSI = "Debuff", ltLT = "Debuff", lvLV = "Debuff", etEE = "Debuff", idID = "Debuff", msMY = "Debuff", faIR = "Debuff", heIL = "Debuff", bnBD = "Debuff", urPK = "Debuff", taIN = "Debuff", teIN = "Debuff"
     },
     ["dispel"] = {
         esES = "Disipar / Limpiar",
@@ -343,7 +343,7 @@ addonTable.CombateDict = {
         hiIN = "हटाना",
         thTH = "ล้างสถานะ",
         viVN = "Giải thuật",
-        csCZ = "Rozptýlení",
+        csCZ = "Rozptýlení", nlNL = "Dispel", roRO = "Dispel", huHU = "Dispel", elGR = "Dispel", ukUA = "Dispel", daDK = "Dispel", fiFI = "Dispel", skSK = "Dispel", bgBG = "Dispel", hrHR = "Dispel", srRS = "Dispel", slSI = "Dispel", ltLT = "Dispel", lvLV = "Dispel", etEE = "Dispel", idID = "Dispel", msMY = "Dispel", faIR = "Dispel", heIL = "Dispel", bnBD = "Dispel", urPK = "Dispel", taIN = "Dispel", teIN = "Dispel"
     },
     ["cc"] = {
         esES = "Control de masas",
@@ -366,7 +366,7 @@ addonTable.CombateDict = {
         hiIN = "क्राउड कंट्रोल",
         thTH = "ซีซี",
         viVN = "Kiểm soát đám đông",
-        csCZ = "Kontrola davu",
+        csCZ = "Kontrola davu", nlNL = "Crowd Control", roRO = "Crowd Control", huHU = "Crowd Control", elGR = "Crowd Control", ukUA = "Crowd Control", daDK = "Crowd Control", fiFI = "Crowd Control", skSK = "Crowd Control", bgBG = "Crowd Control", hrHR = "Crowd Control", srRS = "Crowd Control", slSI = "Crowd Control", ltLT = "Crowd Control", lvLV = "Crowd Control", etEE = "Crowd Control", idID = "Crowd Control", msMY = "Crowd Control", faIR = "Crowd Control", heIL = "Crowd Control", bnBD = "Crowd Control", urPK = "Crowd Control", taIN = "Crowd Control", teIN = "Crowd Control"
     },
     ["bg"] = {
         esES = "Campo de Batalla",
@@ -389,7 +389,7 @@ addonTable.CombateDict = {
         hiIN = "युद्धक्षेत्र",
         thTH = "สนามรบ",
         viVN = "Chiến trường",
-        csCZ = "Bojiště",
+        csCZ = "Bojiště", nlNL = "Battleground", roRO = "Battleground", huHU = "Battleground", elGR = "Battleground", ukUA = "Battleground", daDK = "Battleground", fiFI = "Battleground", skSK = "Battleground", bgBG = "Battleground", hrHR = "Battleground", srRS = "Battleground", slSI = "Battleground", ltLT = "Battleground", lvLV = "Battleground", etEE = "Battleground", idID = "Battleground", msMY = "Battleground", faIR = "Battleground", heIL = "Battleground", bnBD = "Battleground", urPK = "Battleground", taIN = "Battleground", teIN = "Battleground"
     },
     ["rbg"] = {
         esES = "Campo de Batalla Puntuado",
@@ -412,7 +412,7 @@ addonTable.CombateDict = {
         hiIN = "रेटेड युद्धक्षेत्र",
         thTH = "อาบีจี",
         viVN = "Chiến trường xếp hạng",
-        csCZ = "Hodnocené BG",
+        csCZ = "Hodnocené BG", nlNL = "Rated BG", roRO = "Rated BG", huHU = "Rated BG", elGR = "Rated BG", ukUA = "Rated BG", daDK = "Rated BG", fiFI = "Rated BG", skSK = "Rated BG", bgBG = "Rated BG", hrHR = "Rated BG", srRS = "Rated BG", slSI = "Rated BG", ltLT = "Rated BG", lvLV = "Rated BG", etEE = "Rated BG", idID = "Rated BG", msMY = "Rated BG", faIR = "Rated BG", heIL = "Rated BG", bnBD = "Rated BG", urPK = "Rated BG", taIN = "Rated BG", teIN = "Rated BG"
     },
     ["los"] = {
         esES = "Línea de visión",
@@ -435,7 +435,7 @@ addonTable.CombateDict = {
         hiIN = "दृष्टि रेखा",
         thTH = "หน้าต่างการมองเห็น",
         viVN = "Tầm nhìn",
-        csCZ = "Linie pohledu",
+        csCZ = "Linie pohledu", nlNL = "Line of Sight", roRO = "Line of Sight", huHU = "Line of Sight", elGR = "Line of Sight", ukUA = "Line of Sight", daDK = "Line of Sight", fiFI = "Line of Sight", skSK = "Line of Sight", bgBG = "Line of Sight", hrHR = "Line of Sight", srRS = "Line of Sight", slSI = "Line of Sight", ltLT = "Line of Sight", lvLV = "Line of Sight", etEE = "Line of Sight", idID = "Line of Sight", msMY = "Line of Sight", faIR = "Line of Sight", heIL = "Line of Sight", bnBD = "Line of Sight", urPK = "Line of Sight", taIN = "Line of Sight", teIN = "Line of Sight"
     },
     ["ab"] = {
         esES = "Cuenca de Arathi",
@@ -458,7 +458,7 @@ addonTable.CombateDict = {
         hiIN = "अराथी बेसिन",
         thTH = "อาราธิตอนล่าง",
         viVN = "Lưu vực Arathi",
-        csCZ = "Arathi Basin",
+        csCZ = "Arathi Basin", nlNL = "Arathi Basin", roRO = "Arathi Basin", huHU = "Arathi Basin", elGR = "Arathi Basin", ukUA = "Arathi Basin", daDK = "Arathi Basin", fiFI = "Arathi Basin", skSK = "Arathi Basin", bgBG = "Arathi Basin", hrHR = "Arathi Basin", srRS = "Arathi Basin", slSI = "Arathi Basin", ltLT = "Arathi Basin", lvLV = "Arathi Basin", etEE = "Arathi Basin", idID = "Arathi Basin", msMY = "Arathi Basin", faIR = "Arathi Basin", heIL = "Arathi Basin", bnBD = "Arathi Basin", urPK = "Arathi Basin", taIN = "Arathi Basin", teIN = "Arathi Basin"
     },
     ["av"] = {
         esES = "Valle de Alterac",
@@ -481,7 +481,7 @@ addonTable.CombateDict = {
         hiIN = "अल्टेराक वैली",
         thTH = "อัลเทอแรควาลเลย์",
         viVN = "Thung lũng Alterac",
-        csCZ = "Alterac Valley",
+        csCZ = "Alterac Valley", nlNL = "Alterac Valley", roRO = "Alterac Valley", huHU = "Alterac Valley", elGR = "Alterac Valley", ukUA = "Alterac Valley", daDK = "Alterac Valley", fiFI = "Alterac Valley", skSK = "Alterac Valley", bgBG = "Alterac Valley", hrHR = "Alterac Valley", srRS = "Alterac Valley", slSI = "Alterac Valley", ltLT = "Alterac Valley", lvLV = "Alterac Valley", etEE = "Alterac Valley", idID = "Alterac Valley", msMY = "Alterac Valley", faIR = "Alterac Valley", heIL = "Alterac Valley", bnBD = "Alterac Valley", urPK = "Alterac Valley", taIN = "Alterac Valley", teIN = "Alterac Valley"
     },
     ["wsg"] = {
         esES = "Garganta Grito de Guerra",
@@ -504,7 +504,7 @@ addonTable.CombateDict = {
         hiIN = "वारसॉन्ग गल्च",
         thTH = "วอร์ซองกัลช์",
         viVN = "Hẻm núi Warsong",
-        csCZ = "Warsong Gulch",
+        csCZ = "Warsong Gulch", nlNL = "Warsong Gulch", roRO = "Warsong Gulch", huHU = "Warsong Gulch", elGR = "Warsong Gulch", ukUA = "Warsong Gulch", daDK = "Warsong Gulch", fiFI = "Warsong Gulch", skSK = "Warsong Gulch", bgBG = "Warsong Gulch", hrHR = "Warsong Gulch", srRS = "Warsong Gulch", slSI = "Warsong Gulch", ltLT = "Warsong Gulch", lvLV = "Warsong Gulch", etEE = "Warsong Gulch", idID = "Warsong Gulch", msMY = "Warsong Gulch", faIR = "Warsong Gulch", heIL = "Warsong Gulch", bnBD = "Warsong Gulch", urPK = "Warsong Gulch", taIN = "Warsong Gulch", teIN = "Warsong Gulch"
     },
     ["2s"] = {
         esES = "2c2",
@@ -527,7 +527,7 @@ addonTable.CombateDict = {
         hiIN = "2v2",
         thTH = "2v2",
         viVN = "2v2",
-        csCZ = "2v2",
+        csCZ = "2v2", nlNL = "2v2", roRO = "2v2", huHU = "2v2", elGR = "2v2", ukUA = "2v2", daDK = "2v2", fiFI = "2v2", skSK = "2v2", bgBG = "2v2", hrHR = "2v2", srRS = "2v2", slSI = "2v2", ltLT = "2v2", lvLV = "2v2", etEE = "2v2", idID = "2v2", msMY = "2v2", faIR = "2v2", heIL = "2v2", bnBD = "2v2", urPK = "2v2", taIN = "2v2", teIN = "2v2"
     },
 
     ["3s"] = {
@@ -551,7 +551,7 @@ addonTable.CombateDict = {
         hiIN = "3v3",
         thTH = "3v3",
         viVN = "3v3",
-        csCZ = "3v3",
+        csCZ = "3v3", nlNL = "3v3", roRO = "3v3", huHU = "3v3", elGR = "3v3", ukUA = "3v3", daDK = "3v3", fiFI = "3v3", skSK = "3v3", bgBG = "3v3", hrHR = "3v3", srRS = "3v3", slSI = "3v3", ltLT = "3v3", lvLV = "3v3", etEE = "3v3", idID = "3v3", msMY = "3v3", faIR = "3v3", heIL = "3v3", bnBD = "3v3", urPK = "3v3", taIN = "3v3", teIN = "3v3"
     },
 
     ["5s"] = {
@@ -575,7 +575,7 @@ addonTable.CombateDict = {
         hiIN = "5v5",
         thTH = "5v5",
         viVN = "5v5",
-        csCZ = "5v5",
+        csCZ = "5v5", nlNL = "5v5", roRO = "5v5", huHU = "5v5", elGR = "5v5", ukUA = "5v5", daDK = "5v5", fiFI = "5v5", skSK = "5v5", bgBG = "5v5", hrHR = "5v5", srRS = "5v5", slSI = "5v5", ltLT = "5v5", lvLV = "5v5", etEE = "5v5", idID = "5v5", msMY = "5v5", faIR = "5v5", heIL = "5v5", bnBD = "5v5", urPK = "5v5", taIN = "5v5", teIN = "5v5"
     },
     ["cap"] = {
         esES = "Tope",
@@ -598,7 +598,7 @@ addonTable.CombateDict = {
         hiIN = "कैप",
         thTH = "แคป",
         viVN = "Giới hạn",
-        csCZ = "Limit",
+        csCZ = "Limit", nlNL = "Cap", roRO = "Cap", huHU = "Cap", elGR = "Cap", ukUA = "Cap", daDK = "Cap", fiFI = "Cap", skSK = "Cap", bgBG = "Cap", hrHR = "Cap", srRS = "Cap", slSI = "Cap", ltLT = "Cap", lvLV = "Cap", etEE = "Cap", idID = "Cap", msMY = "Cap", faIR = "Cap", heIL = "Cap", bnBD = "Cap", urPK = "Cap", taIN = "Cap", teIN = "Cap"
     },
     ["soak"] = {
         esES = "Absorber",
@@ -621,7 +621,7 @@ addonTable.CombateDict = {
         hiIN = "सोखना",
         thTH = "โซคดาเมจ",
         viVN = "Chịu đòn",
-        csCZ = "Absorpce",
+        csCZ = "Absorpce", nlNL = "Soak", roRO = "Soak", huHU = "Soak", elGR = "Soak", ukUA = "Soak", daDK = "Soak", fiFI = "Soak", skSK = "Soak", bgBG = "Soak", hrHR = "Soak", srRS = "Soak", slSI = "Soak", ltLT = "Soak", lvLV = "Soak", etEE = "Soak", idID = "Soak", msMY = "Soak", faIR = "Soak", heIL = "Soak", bnBD = "Soak", urPK = "Soak", taIN = "Soak", teIN = "Soak"
     },
     ["stack"] = {
         esES = "Apilarse",
@@ -644,7 +644,7 @@ addonTable.CombateDict = {
         hiIN = "ढेर",
         thTH = "ซ้อนกัน",
         viVN = "Cộng dồn",
-        csCZ = "Shromáždění",
+        csCZ = "Shromáždění", nlNL = "Stack", roRO = "Stack", huHU = "Stack", elGR = "Stack", ukUA = "Stack", daDK = "Stack", fiFI = "Stack", skSK = "Stack", bgBG = "Stack", hrHR = "Stack", srRS = "Stack", slSI = "Stack", ltLT = "Stack", lvLV = "Stack", etEE = "Stack", idID = "Stack", msMY = "Stack", faIR = "Stack", heIL = "Stack", bnBD = "Stack", urPK = "Stack", taIN = "Stack", teIN = "Stack"
     },
     ["spread"] = {
         esES = "Separarse",
@@ -667,7 +667,7 @@ addonTable.CombateDict = {
         hiIN = "प्रसार",
         thTH = "กระจาย",
         viVN = "Phân tán",
-        csCZ = "Rozestup",
+        csCZ = "Rozestup", nlNL = "Spread", roRO = "Spread", huHU = "Spread", elGR = "Spread", ukUA = "Spread", daDK = "Spread", fiFI = "Spread", skSK = "Spread", bgBG = "Spread", hrHR = "Spread", srRS = "Spread", slSI = "Spread", ltLT = "Spread", lvLV = "Spread", etEE = "Spread", idID = "Spread", msMY = "Spread", faIR = "Spread", heIL = "Spread", bnBD = "Spread", urPK = "Spread", taIN = "Spread", teIN = "Spread"
     },
     ["cr"] = {
         esES = "Resurrección en combate",
@@ -690,7 +690,7 @@ addonTable.CombateDict = {
         hiIN = "युद्ध पुनर्जीवन",
         thTH = "ชุบสังหาร",
         viVN = "Hồi sinh trong chiến đấu",
-        csCZ = "Bojové oživení",
+        csCZ = "Bojové oživení", nlNL = "Combat Res", roRO = "Combat Res", huHU = "Combat Res", elGR = "Combat Res", ukUA = "Combat Res", daDK = "Combat Res", fiFI = "Combat Res", skSK = "Combat Res", bgBG = "Combat Res", hrHR = "Combat Res", srRS = "Combat Res", slSI = "Combat Res", ltLT = "Combat Res", lvLV = "Combat Res", etEE = "Combat Res", idID = "Combat Res", msMY = "Combat Res", faIR = "Combat Res", heIL = "Combat Res", bnBD = "Combat Res", urPK = "Combat Res", taIN = "Combat Res", teIN = "Combat Res"
     },
     ["diff"] = {
         esES = "Diferencia",
@@ -713,7 +713,7 @@ addonTable.CombateDict = {
         hiIN = "अंतर",
         thTH = "ข้อแตกต่าง",
         viVN = "Sự khác biệt",
-        csCZ = "Rozdíl",
+        csCZ = "Rozdíl", nlNL = "Difference", roRO = "Difference", huHU = "Difference", elGR = "Difference", ukUA = "Difference", daDK = "Difference", fiFI = "Difference", skSK = "Difference", bgBG = "Difference", hrHR = "Difference", srRS = "Difference", slSI = "Difference", ltLT = "Difference", lvLV = "Difference", etEE = "Difference", idID = "Difference", msMY = "Difference", faIR = "Difference", heIL = "Difference", bnBD = "Difference", urPK = "Difference", taIN = "Difference", teIN = "Difference"
     },
     ["throw"] = {
         esES = "Perder a propósito",
@@ -736,7 +736,7 @@ addonTable.CombateDict = {
         hiIN = "फेंकना",
         thTH = "ยอมแพ้",
         viVN = "Cố ý thua",
-        csCZ = "Zahození hry",
+        csCZ = "Zahození hry", nlNL = "Throwing", roRO = "Throwing", huHU = "Throwing", elGR = "Throwing", ukUA = "Throwing", daDK = "Throwing", fiFI = "Throwing", skSK = "Throwing", bgBG = "Throwing", hrHR = "Throwing", srRS = "Throwing", slSI = "Throwing", ltLT = "Throwing", lvLV = "Throwing", etEE = "Throwing", idID = "Throwing", msMY = "Throwing", faIR = "Throwing", heIL = "Throwing", bnBD = "Throwing", urPK = "Throwing", taIN = "Throwing", teIN = "Throwing"
     },
     ["enrage"] = {
         esES = "Enfurecer",
@@ -759,7 +759,7 @@ addonTable.CombateDict = {
         hiIN = "क्रोधावेश",
         thTH = "คลั่ง",
         viVN = "Nổi giận",
-        csCZ = "Rozzuření",
+        csCZ = "Rozzuření", nlNL = "Enrage", roRO = "Enrage", huHU = "Enrage", elGR = "Enrage", ukUA = "Enrage", daDK = "Enrage", fiFI = "Enrage", skSK = "Enrage", bgBG = "Enrage", hrHR = "Enrage", srRS = "Enrage", slSI = "Enrage", ltLT = "Enrage", lvLV = "Enrage", etEE = "Enrage", idID = "Enrage", msMY = "Enrage", faIR = "Enrage", heIL = "Enrage", bnBD = "Enrage", urPK = "Enrage", taIN = "Enrage", teIN = "Enrage"
     },
     ["dps"] = {
         esES = "Daño por segundo",
@@ -782,7 +782,7 @@ addonTable.CombateDict = {
         hiIN = "अंक में क्षति",
         thTH = "ดาเมจต่อวิ",
         viVN = "Sát thương mỗi giây",
-        csCZ = "Poškození za sekundu",
+        csCZ = "Poškození za sekundu", nlNL = "Damage per second", roRO = "Damage per second", huHU = "Damage per second", elGR = "Damage per second", ukUA = "Damage per second", daDK = "Damage per second", fiFI = "Damage per second", skSK = "Damage per second", bgBG = "Damage per second", hrHR = "Damage per second", srRS = "Damage per second", slSI = "Damage per second", ltLT = "Damage per second", lvLV = "Damage per second", etEE = "Damage per second", idID = "Damage per second", msMY = "Damage per second", faIR = "Damage per second", heIL = "Damage per second", bnBD = "Damage per second", urPK = "Damage per second", taIN = "Damage per second", teIN = "Damage per second"
     },
     ["hps"] = {
         esES = "Sanación por segundo",
@@ -805,7 +805,7 @@ addonTable.CombateDict = {
         hiIN = "अंक में उपचार",
         thTH = "ฮีลต่อวิ",
         viVN = "Hồi máu mỗi giây",
-        csCZ = "Léčení za sekundu",
+        csCZ = "Léčení za sekundu", nlNL = "Heal per second", roRO = "Heal per second", huHU = "Heal per second", elGR = "Heal per second", ukUA = "Heal per second", daDK = "Heal per second", fiFI = "Heal per second", skSK = "Heal per second", bgBG = "Heal per second", hrHR = "Heal per second", srRS = "Heal per second", slSI = "Heal per second", ltLT = "Heal per second", lvLV = "Heal per second", etEE = "Heal per second", idID = "Heal per second", msMY = "Heal per second", faIR = "Heal per second", heIL = "Heal per second", bnBD = "Heal per second", urPK = "Heal per second", taIN = "Heal per second", teIN = "Heal per second"
     },
     ["lust"] = {
         esES = "Ansia de sangre",
@@ -828,7 +828,7 @@ addonTable.CombateDict = {
         hiIN = "रक्तपिपासा",
         thTH = "บัฟเลือด",
         viVN = "Khát máu",
-        csCZ = "Bloodlust",
+        csCZ = "Bloodlust", nlNL = "Bloodlust / Heroism", roRO = "Bloodlust / Heroism", huHU = "Bloodlust / Heroism", elGR = "Bloodlust / Heroism", ukUA = "Bloodlust / Heroism", daDK = "Bloodlust / Heroism", fiFI = "Bloodlust / Heroism", skSK = "Bloodlust / Heroism", bgBG = "Bloodlust / Heroism", hrHR = "Bloodlust / Heroism", srRS = "Bloodlust / Heroism", slSI = "Bloodlust / Heroism", ltLT = "Bloodlust / Heroism", lvLV = "Bloodlust / Heroism", etEE = "Bloodlust / Heroism", idID = "Bloodlust / Heroism", msMY = "Bloodlust / Heroism", faIR = "Bloodlust / Heroism", heIL = "Bloodlust / Heroism", bnBD = "Bloodlust / Heroism", urPK = "Bloodlust / Heroism", taIN = "Bloodlust / Heroism", teIN = "Bloodlust / Heroism"
     },
     ["stf"] = {
         esES = "Céntrate",
@@ -851,6 +851,6 @@ addonTable.CombateDict = {
         hiIN = "ध्यान केंद्रित रखे",
         thTH = "โฟกัสหน่อย",
         viVN = "Hãy tập trung",
-        csCZ = "Soustřeď se",
+        csCZ = "Soustřeď se", nlNL = "Stay focused", roRO = "Stay focused", huHU = "Stay focused", elGR = "Stay focused", ukUA = "Stay focused", daDK = "Stay focused", fiFI = "Stay focused", skSK = "Stay focused", bgBG = "Stay focused", hrHR = "Stay focused", srRS = "Stay focused", slSI = "Stay focused", ltLT = "Stay focused", lvLV = "Stay focused", etEE = "Stay focused", idID = "Stay focused", msMY = "Stay focused", faIR = "Stay focused", heIL = "Stay focused", bnBD = "Stay focused", urPK = "Stay focused", taIN = "Stay focused", teIN = "Stay focused"
     },
 }

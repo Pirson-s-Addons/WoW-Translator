@@ -2,11 +2,39 @@
 ## Author: Pirson
 ## Version: 1.14
 ## Title: |TInterface\AddOns\WoWTranslator\img\logo_wt:16:16|t |cffd597ffWoW Translator|r
-## Category: Interface Enhancements
-## Notes: Translates WoW terms, abbreviations, and slang into the player's selected language, including Czech.
 
 # https://warcraft.wiki.gg/wiki/Addon_Categories
+## Category: Chat
+## Category-deDE: Chat
+## Category-esES: Chat
+## Category-esMX: Chat
+## Category-frFR: Chat
+## Category-itIT: Chat
+## Category-koKR: 채팅
+## Category-ptBR: Chat
+## Category-ruRU: Чат
+## Category-zhCN: 聊天
+## Category-zhTW: 聊天
+## Category-plPL: Czat
+## Category-svSE: Chatt
+## Category-noNO: Chat
+## Category-csCZ: Chat
 
+## Notes: |cFF33CCFFTranslation of terms, acronyms, and World of Warcraft slang.|r
+## Notes-deDE: |cFF33CCFFÜbersetzung von Begriffen, Akronymen und World of Warcraft-Slang.|r
+## Notes-esES: |cFF33CCFFTraducción de términos, acrónimos y jerga de World of Warcraft.|r
+## Notes-esMX: |cFF33CCFFTraducción de términos, acronyms y jerga de World of Warcraft.|r
+## Notes-frFR: |cFF33CCFFTraduction des termes, acronymes et de l'argot de World of Warcraft.|r
+## Notes-itIT: |cFF33CCFFTraduzione di termini, acronimi e gergo di World of Warcraft.|r
+## Notes-koKR: |cFF33CCFF월드 오브 워크래프트의 용어, 약어 및 속어 번역.|r
+## Notes-ptBR: |cFF33CCFFTradução de termos, acrônimos e gírias do World of Warcraft.|r
+## Notes-ruRU: |cFF33CCFFПеревод терминов, акронимов и сленга World of Warcraft.|r
+## Notes-zhCN: |cFF33CCFF魔兽世界术语、首字母缩略词和俚语的翻译。|r
+## Notes-zhTW: |cFF33CCFF魔獸世界術語、首字母縮略詞和俚語的翻譯。|r
+## Notes-plPL: |cFF33CCFFTłumaczenie terminów, akronimów i slangu World of Warcraft.|r
+## Notes-svSE: |cFF33CCFFÖversättning av termer, akronimer och World of Warcraft-slang.|r
+## Notes-noNO: |cFF33CCFFOversettelse av termer, akronymer og World of Warcraft-slang.|r
+## Notes-csCZ: |cFF33CCFFPřeklad termínů, zkratek a slangu ze hry World of Warcraft.|r
 
 ## X-Curse-Project-ID: 1431567
 

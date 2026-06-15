@@ -21,7 +21,7 @@ addonTable.EstadoDict = {
         hiIN = "मृत",
         thTH = "ตาย",
         viVN = "Đã chết",
-        csCZ = "Mrtvý",
+        csCZ = "Mrtvý", nlNL = "Dead", roRO = "Dead", huHU = "Dead", elGR = "Dead", ukUA = "Dead", daDK = "Dead", fiFI = "Dead", skSK = "Dead", bgBG = "Dead", hrHR = "Dead", srRS = "Dead", slSI = "Dead", ltLT = "Dead", lvLV = "Dead", etEE = "Dead", idID = "Dead", msMY = "Dead", faIR = "Dead", heIL = "Dead", bnBD = "Dead", urPK = "Dead", taIN = "Dead", teIN = "Dead"
     },
     ["low hp"] = {
         esES = "Vida baja",
@@ -44,7 +44,7 @@ addonTable.EstadoDict = {
         hiIN = "कम स्वास्थ्य",
         thTH = "พลังชีวิตต่ำ",
         viVN = "Máu thấp",
-        csCZ = "Málo životů",
+        csCZ = "Málo životů", nlNL = "Low health", roRO = "Low health", huHU = "Low health", elGR = "Low health", ukUA = "Low health", daDK = "Low health", fiFI = "Low health", skSK = "Low health", bgBG = "Low health", hrHR = "Low health", srRS = "Low health", slSI = "Low health", ltLT = "Low health", lvLV = "Low health", etEE = "Low health", idID = "Low health", msMY = "Low health", faIR = "Low health", heIL = "Low health", bnBD = "Low health", urPK = "Low health", taIN = "Low health", teIN = "Low health"
     },
     ["low mp"] = {
         esES = "Maná bajo",
@@ -67,7 +67,7 @@ addonTable.EstadoDict = {
         hiIN = "कम मैना",
         thTH = "มานาต่ำ",
         viVN = "Mana thấp",
-        csCZ = "Málo many",
+        csCZ = "Málo many", nlNL = "Low mana", roRO = "Low mana", huHU = "Low mana", elGR = "Low mana", ukUA = "Low mana", daDK = "Low mana", fiFI = "Low mana", skSK = "Low mana", bgBG = "Low mana", hrHR = "Low mana", srRS = "Low mana", slSI = "Low mana", ltLT = "Low mana", lvLV = "Low mana", etEE = "Low mana", idID = "Low mana", msMY = "Low mana", faIR = "Low mana", heIL = "Low mana", bnBD = "Low mana", urPK = "Low mana", taIN = "Low mana", teIN = "Low mana"
     },
     ["res"] = {
         esES = "Resurrección",
@@ -90,7 +90,7 @@ addonTable.EstadoDict = {
         hiIN = "पुनरुत्थान",
         thTH = "การคืนชีพ",
         viVN = "Hồi sinh",
-        csCZ = "Oživení",
+        csCZ = "Oživení", nlNL = "Resurrection", roRO = "Resurrection", huHU = "Resurrection", elGR = "Resurrection", ukUA = "Resurrection", daDK = "Resurrection", fiFI = "Resurrection", skSK = "Resurrection", bgBG = "Resurrection", hrHR = "Resurrection", srRS = "Resurrection", slSI = "Resurrection", ltLT = "Resurrection", lvLV = "Resurrection", etEE = "Resurrection", idID = "Resurrection", msMY = "Resurrection", faIR = "Resurrection", heIL = "Resurrection", bnBD = "Resurrection", urPK = "Resurrection", taIN = "Resurrection", teIN = "Resurrection"
     },
     ["ress"] = {
         esES = "Resurrección",
@@ -113,7 +113,7 @@ addonTable.EstadoDict = {
         hiIN = "पुनरुत्थान",
         thTH = "การคืนชีพ",
         viVN = "Hồi sinh",
-        csCZ = "Oživení",
+        csCZ = "Oživení", nlNL = "Resurrection", roRO = "Resurrection", huHU = "Resurrection", elGR = "Resurrection", ukUA = "Resurrection", daDK = "Resurrection", fiFI = "Resurrection", skSK = "Resurrection", bgBG = "Resurrection", hrHR = "Resurrection", srRS = "Resurrection", slSI = "Resurrection", ltLT = "Resurrection", lvLV = "Resurrection", etEE = "Resurrection", idID = "Resurrection", msMY = "Resurrection", faIR = "Resurrection", heIL = "Resurrection", bnBD = "Resurrection", urPK = "Resurrection", taIN = "Resurrection", teIN = "Resurrection"
     },
     ["rez"] = {
         esES = "Resurrección",
@@ -136,7 +136,7 @@ addonTable.EstadoDict = {
         hiIN = "पुनरुत्थान",
         thTH = "การคืนชีพ",
         viVN = "Hồi sinh",
-        csCZ = "Oživení",
+        csCZ = "Oživení", nlNL = "Resurrection", roRO = "Resurrection", huHU = "Resurrection", elGR = "Resurrection", ukUA = "Resurrection", daDK = "Resurrection", fiFI = "Resurrection", skSK = "Resurrection", bgBG = "Resurrection", hrHR = "Resurrection", srRS = "Resurrection", slSI = "Resurrection", ltLT = "Resurrection", lvLV = "Resurrection", etEE = "Resurrection", idID = "Resurrection", msMY = "Resurrection", faIR = "Resurrection", heIL = "Resurrection", bnBD = "Resurrection", urPK = "Resurrection", taIN = "Resurrection", teIN = "Resurrection"
     },
     ["rezz"] = {
         esES = "Resurrección",
@@ -159,7 +159,7 @@ addonTable.EstadoDict = {
         hiIN = "पुनरुत्थान",
         thTH = "การคืนชีพ",
         viVN = "Hồi sinh",
-        csCZ = "Oživení",
+        csCZ = "Oživení", nlNL = "Resurrection", roRO = "Resurrection", huHU = "Resurrection", elGR = "Resurrection", ukUA = "Resurrection", daDK = "Resurrection", fiFI = "Resurrection", skSK = "Resurrection", bgBG = "Resurrection", hrHR = "Resurrection", srRS = "Resurrection", slSI = "Resurrection", ltLT = "Resurrection", lvLV = "Resurrection", etEE = "Resurrection", idID = "Resurrection", msMY = "Resurrection", faIR = "Resurrection", heIL = "Resurrection", bnBD = "Resurrection", urPK = "Resurrection", taIN = "Resurrection", teIN = "Resurrection"
     },
     ["dur"] = {
         esES = "Durabilidad",
@@ -182,7 +182,7 @@ addonTable.EstadoDict = {
         hiIN = "स्थायित्व",
         thTH = "ความทนทาน",
         viVN = "Độ bền",
-        csCZ = "Odolnost",
+        csCZ = "Odolnost", nlNL = "Durability", roRO = "Durability", huHU = "Durability", elGR = "Durability", ukUA = "Durability", daDK = "Durability", fiFI = "Durability", skSK = "Durability", bgBG = "Durability", hrHR = "Durability", srRS = "Durability", slSI = "Durability", ltLT = "Durability", lvLV = "Durability", etEE = "Durability", idID = "Durability", msMY = "Durability", faIR = "Durability", heIL = "Durability", bnBD = "Durability", urPK = "Durability", taIN = "Durability", teIN = "Durability"
     },
     ["broken"] = {
         esES = "Roto",
@@ -205,7 +205,7 @@ addonTable.EstadoDict = {
         hiIN = "टूटा हुआ",
         thTH = "พัง",
         viVN = "Đã hỏng",
-        csCZ = "Rozbité",
+        csCZ = "Rozbité", nlNL = "Broken", roRO = "Broken", huHU = "Broken", elGR = "Broken", ukUA = "Broken", daDK = "Broken", fiFI = "Broken", skSK = "Broken", bgBG = "Broken", hrHR = "Broken", srRS = "Broken", slSI = "Broken", ltLT = "Broken", lvLV = "Broken", etEE = "Broken", idID = "Broken", msMY = "Broken", faIR = "Broken", heIL = "Broken", bnBD = "Broken", urPK = "Broken", taIN = "Broken", teIN = "Broken"
     },
     ["ghost"] = {
         esES = "Fantasma",
@@ -228,7 +228,7 @@ addonTable.EstadoDict = {
         hiIN = "भूत",
         thTH = "ผี",
         viVN = "Linh hồn",
-        csCZ = "Duch",
+        csCZ = "Duch", nlNL = "Ghost", roRO = "Ghost", huHU = "Ghost", elGR = "Ghost", ukUA = "Ghost", daDK = "Ghost", fiFI = "Ghost", skSK = "Ghost", bgBG = "Ghost", hrHR = "Ghost", srRS = "Ghost", slSI = "Ghost", ltLT = "Ghost", lvLV = "Ghost", etEE = "Ghost", idID = "Ghost", msMY = "Ghost", faIR = "Ghost", heIL = "Ghost", bnBD = "Ghost", urPK = "Ghost", taIN = "Ghost", teIN = "Ghost"
     },
     ["repop"] = {
         esES = "Liberar espíritu",
@@ -251,6 +251,6 @@ addonTable.EstadoDict = {
         hiIN = "आत्मा मुक्त करें",
         thTH = "ปล่อยวิญญาณ",
         viVN = "Giải phóng linh hồn",
-        csCZ = "Oživení",
+        csCZ = "Oživení", nlNL = "Release spirit", roRO = "Release spirit", huHU = "Release spirit", elGR = "Release spirit", ukUA = "Release spirit", daDK = "Release spirit", fiFI = "Release spirit", skSK = "Release spirit", bgBG = "Release spirit", hrHR = "Release spirit", srRS = "Release spirit", slSI = "Release spirit", ltLT = "Release spirit", lvLV = "Release spirit", etEE = "Release spirit", idID = "Release spirit", msMY = "Release spirit", faIR = "Release spirit", heIL = "Release spirit", bnBD = "Release spirit", urPK = "Release spirit", taIN = "Release spirit", teIN = "Release spirit"
     }
 }

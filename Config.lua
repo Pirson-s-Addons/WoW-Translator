@@ -314,7 +314,30 @@ function addonTable.CreateConfigUI()
         hiIN = "हिन्दी",
         thTH = "ไทย",
         viVN = "Tiếng Việt",
-        csCZ = "Čeština"
+        csCZ = "Čeština",
+        nlNL = "Nederlands",
+        roRO = "Română",
+        huHU = "Magyar",
+        elGR = "Ελληνικά",
+        ukUA = "Українська",
+        daDK = "Dansk",
+        fiFI = "Suomi",
+        skSK = "Slovenčina",
+        bgBG = "Български",
+        hrHR = "Hrvatski",
+        srRS = "Српски",
+        slSI = "Slovenščina",
+        ltLT = "Lietuvių",
+        lvLV = "Latviešu",
+        etEE = "Eesti",
+        idID = "Bahasa Indonesia",
+        msMY = "Bahasa Melayu",
+        faIR = "فارسی",
+        heIL = "עברית",
+        bnBD = "বাংলা",
+        urPK = "اردו",
+        taIN = "தமிழ்",
+        teIN = "తెలుగు"
     }
 
     UIDropDownMenu_Initialize(dropdown, function(self, level)

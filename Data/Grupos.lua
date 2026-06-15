@@ -21,7 +21,7 @@ addonTable.GruposDict = {
         hiIN = "और अधिक की तलाश है",
         thTH = "รับเพิ่ม",
         viVN = "Tìm thêm thành viên",
-        csCZ = "Hledám členy",
+        csCZ = "Hledám členy", nlNL = "Looking for more", roRO = "Looking for more", huHU = "Looking for more", elGR = "Looking for more", ukUA = "Looking for more", daDK = "Looking for more", fiFI = "Looking for more", skSK = "Looking for more", bgBG = "Looking for more", hrHR = "Looking for more", srRS = "Looking for more", slSI = "Looking for more", ltLT = "Looking for more", lvLV = "Looking for more", etEE = "Looking for more", idID = "Looking for more", msMY = "Looking for more", faIR = "Looking for more", heIL = "Looking for more", bnBD = "Looking for more", urPK = "Looking for more", taIN = "Looking for more", teIN = "Looking for more"
     },
     ["lf1m"] = {
         esES = "Busco 1 más para",
@@ -44,7 +44,7 @@ addonTable.GruposDict = {
         hiIN = "1 और की तलाश है",
         thTH = "อีก 1 คน",
         viVN = "Cần thêm 1 người",
-        csCZ = "Hledám 1 hráče",
+        csCZ = "Hledám 1 hráče", nlNL = "Looking for 1 more", roRO = "Looking for 1 more", huHU = "Looking for 1 more", elGR = "Looking for 1 more", ukUA = "Looking for 1 more", daDK = "Looking for 1 more", fiFI = "Looking for 1 more", skSK = "Looking for 1 more", bgBG = "Looking for 1 more", hrHR = "Looking for 1 more", srRS = "Looking for 1 more", slSI = "Looking for 1 more", ltLT = "Looking for 1 more", lvLV = "Looking for 1 more", etEE = "Looking for 1 more", idID = "Looking for 1 more", msMY = "Looking for 1 more", faIR = "Looking for 1 more", heIL = "Looking for 1 more", bnBD = "Looking for 1 more", urPK = "Looking for 1 more", taIN = "Looking for 1 more", teIN = "Looking for 1 more"
     },
     ["lf2m"] = {
         esES = "Busco 2 más para",
@@ -67,7 +67,7 @@ addonTable.GruposDict = {
         hiIN = "2 और की तलाश है",
         thTH = "อีก 2 คน",
         viVN = "Cần thêm 2 người",
-        csCZ = "Hledám 2 hráče",
+        csCZ = "Hledám 2 hráče", nlNL = "Looking for 2 more", roRO = "Looking for 2 more", huHU = "Looking for 2 more", elGR = "Looking for 2 more", ukUA = "Looking for 2 more", daDK = "Looking for 2 more", fiFI = "Looking for 2 more", skSK = "Looking for 2 more", bgBG = "Looking for 2 more", hrHR = "Looking for 2 more", srRS = "Looking for 2 more", slSI = "Looking for 2 more", ltLT = "Looking for 2 more", lvLV = "Looking for 2 more", etEE = "Looking for 2 more", idID = "Looking for 2 more", msMY = "Looking for 2 more", faIR = "Looking for 2 more", heIL = "Looking for 2 more", bnBD = "Looking for 2 more", urPK = "Looking for 2 more", taIN = "Looking for 2 more", teIN = "Looking for 2 more"
     },
     ["lf3m"] = {
         esES = "Busco 3 más para",
@@ -90,7 +90,7 @@ addonTable.GruposDict = {
         hiIN = "3 और की तलाश है",
         thTH = "อีก 3 คน",
         viVN = "Cần thêm 3 người",
-        csCZ = "Hledám 3 hráče",
+        csCZ = "Hledám 3 hráče", nlNL = "Looking for 3 more", roRO = "Looking for 3 more", huHU = "Looking for 3 more", elGR = "Looking for 3 more", ukUA = "Looking for 3 more", daDK = "Looking for 3 more", fiFI = "Looking for 3 more", skSK = "Looking for 3 more", bgBG = "Looking for 3 more", hrHR = "Looking for 3 more", srRS = "Looking for 3 more", slSI = "Looking for 3 more", ltLT = "Looking for 3 more", lvLV = "Looking for 3 more", etEE = "Looking for 3 more", idID = "Looking for 3 more", msMY = "Looking for 3 more", faIR = "Looking for 3 more", heIL = "Looking for 3 more", bnBD = "Looking for 3 more", urPK = "Looking for 3 more", taIN = "Looking for 3 more", teIN = "Looking for 3 more"
     },
     ["lfg"] = {
         esES = "Busco grupo para",
@@ -113,7 +113,7 @@ addonTable.GruposDict = {
         hiIN = "समूह की तलाश है",
         thTH = "หาตี้",
         viVN = "Tìm nhóm",
-        csCZ = "Hledám skupinu",
+        csCZ = "Hledám skupinu", nlNL = "Looking for group", roRO = "Looking for group", huHU = "Looking for group", elGR = "Looking for group", ukUA = "Looking for group", daDK = "Looking for group", fiFI = "Looking for group", skSK = "Looking for group", bgBG = "Looking for group", hrHR = "Looking for group", srRS = "Looking for group", slSI = "Looking for group", ltLT = "Looking for group", lvLV = "Looking for group", etEE = "Looking for group", idID = "Looking for group", msMY = "Looking for group", faIR = "Looking for group", heIL = "Looking for group", bnBD = "Looking for group", urPK = "Looking for group", taIN = "Looking for group", teIN = "Looking for group"
     },
     ["lf"] = {
         esES = "Busco para",
@@ -136,7 +136,7 @@ addonTable.GruposDict = {
         hiIN = "के लिए देख रहे",
         thTH = "หาอาชีพ",
         viVN = "Tìm kiếm",
-        csCZ = "Hledám",
+        csCZ = "Hledám", nlNL = "Looking for", roRO = "Looking for", huHU = "Looking for", elGR = "Looking for", ukUA = "Looking for", daDK = "Looking for", fiFI = "Looking for", skSK = "Looking for", bgBG = "Looking for", hrHR = "Looking for", srRS = "Looking for", slSI = "Looking for", ltLT = "Looking for", lvLV = "Looking for", etEE = "Looking for", idID = "Looking for", msMY = "Looking for", faIR = "Looking for", heIL = "Looking for", bnBD = "Looking for", urPK = "Looking for", taIN = "Looking for", teIN = "Looking for"
     },
     ["fresh"] = {
         esES = "Desde el inicio",
@@ -159,7 +159,7 @@ addonTable.GruposDict = {
         hiIN = "नई शुरुआत",
         thTH = "เริ่มต้นใหม่",
         viVN = "Chạy mới",
-        csCZ = "Čerstvé",
+        csCZ = "Čerstvé", nlNL = "New run", roRO = "New run", huHU = "New run", elGR = "New run", ukUA = "New run", daDK = "New run", fiFI = "New run", skSK = "New run", bgBG = "New run", hrHR = "New run", srRS = "New run", slSI = "New run", ltLT = "New run", lvLV = "New run", etEE = "New run", idID = "New run", msMY = "New run", faIR = "New run", heIL = "New run", bnBD = "New run", urPK = "New run", taIN = "New run", teIN = "New run"
     },
     ["last spot"] = {
         esES = "Último cupo",
@@ -182,7 +182,7 @@ addonTable.GruposDict = {
         hiIN = "आखिरी स्थान",
         thTH = "ที่สุดท้าย",
         viVN = "Chỗ cuối",
-        csCZ = "Poslední místo",
+        csCZ = "Poslední místo", nlNL = "Last spot", roRO = "Last spot", huHU = "Last spot", elGR = "Last spot", ukUA = "Last spot", daDK = "Last spot", fiFI = "Last spot", skSK = "Last spot", bgBG = "Last spot", hrHR = "Last spot", srRS = "Last spot", slSI = "Last spot", ltLT = "Last spot", lvLV = "Last spot", etEE = "Last spot", idID = "Last spot", msMY = "Last spot", faIR = "Last spot", heIL = "Last spot", bnBD = "Last spot", urPK = "Last spot", taIN = "Last spot", teIN = "Last spot"
     },
     ["hc"] = {
         esES = "Heroico",
@@ -205,7 +205,7 @@ addonTable.GruposDict = {
         hiIN = "वीर",
         thTH = "ฮีโรอิก",
         viVN = "Anh hùng",
-        csCZ = "Heroic",
+        csCZ = "Heroic", nlNL = "Heroic", roRO = "Heroic", huHU = "Heroic", elGR = "Heroic", ukUA = "Heroic", daDK = "Heroic", fiFI = "Heroic", skSK = "Heroic", bgBG = "Heroic", hrHR = "Heroic", srRS = "Heroic", slSI = "Heroic", ltLT = "Heroic", lvLV = "Heroic", etEE = "Heroic", idID = "Heroic", msMY = "Heroic", faIR = "Heroic", heIL = "Heroic", bnBD = "Heroic", urPK = "Heroic", taIN = "Heroic", teIN = "Heroic"
     },
     ["10hc"] = {
         esES = "10 Heroico",
@@ -228,7 +228,7 @@ addonTable.GruposDict = {
         hiIN = "10-व्यक्ति वीर",
         thTH = "10 คน ฮีโรอิก",
         viVN = "Anh hùng 10 người",
-        csCZ = "10hr HC",
+        csCZ = "10hr HC", nlNL = "10-man Heroic", roRO = "10-man Heroic", huHU = "10-man Heroic", elGR = "10-man Heroic", ukUA = "10-man Heroic", daDK = "10-man Heroic", fiFI = "10-man Heroic", skSK = "10-man Heroic", bgBG = "10-man Heroic", hrHR = "10-man Heroic", srRS = "10-man Heroic", slSI = "10-man Heroic", ltLT = "10-man Heroic", lvLV = "10-man Heroic", etEE = "10-man Heroic", idID = "10-man Heroic", msMY = "10-man Heroic", faIR = "10-man Heroic", heIL = "10-man Heroic", bnBD = "10-man Heroic", urPK = "10-man Heroic", taIN = "10-man Heroic", teIN = "10-man Heroic"
     },
     ["25hc"] = {
         esES = "25 Heroico",
@@ -251,7 +251,7 @@ addonTable.GruposDict = {
         hiIN = "25-व्यक्ति वीर",
         thTH = "25 คน ฮีโรอิก",
         viVN = "Anh hùng 25 người",
-        csCZ = "25hr HC",
+        csCZ = "25hr HC", nlNL = "25-man Heroic", roRO = "25-man Heroic", huHU = "25-man Heroic", elGR = "25-man Heroic", ukUA = "25-man Heroic", daDK = "25-man Heroic", fiFI = "25-man Heroic", skSK = "25-man Heroic", bgBG = "25-man Heroic", hrHR = "25-man Heroic", srRS = "25-man Heroic", slSI = "25-man Heroic", ltLT = "25-man Heroic", lvLV = "25-man Heroic", etEE = "25-man Heroic", idID = "25-man Heroic", msMY = "25-man Heroic", faIR = "25-man Heroic", heIL = "25-man Heroic", bnBD = "25-man Heroic", urPK = "25-man Heroic", taIN = "25-man Heroic", teIN = "25-man Heroic"
     },
     ["nm"] = {
         esES = "Normal",
@@ -274,7 +274,7 @@ addonTable.GruposDict = {
         hiIN = "सामान्य",
         thTH = "ปกติ",
         viVN = "Thường",
-        csCZ = "Normal",
+        csCZ = "Normal", nlNL = "Normal", roRO = "Normal", huHU = "Normal", elGR = "Normal", ukUA = "Normal", daDK = "Normal", fiFI = "Normal", skSK = "Normal", bgBG = "Normal", hrHR = "Normal", srRS = "Normal", slSI = "Normal", ltLT = "Normal", lvLV = "Normal", etEE = "Normal", idID = "Normal", msMY = "Normal", faIR = "Normal", heIL = "Normal", bnBD = "Normal", urPK = "Normal", taIN = "Normal", teIN = "Normal"
     },
     ["10nm"] = {
         esES = "10 Normal",
@@ -297,7 +297,7 @@ addonTable.GruposDict = {
         hiIN = "10-व्यक्ति सामान्य",
         thTH = "10 คน ปกติ",
         viVN = "Thường 10 người",
-        csCZ = "10hr NM",
+        csCZ = "10hr NM", nlNL = "10-man Normal", roRO = "10-man Normal", huHU = "10-man Normal", elGR = "10-man Normal", ukUA = "10-man Normal", daDK = "10-man Normal", fiFI = "10-man Normal", skSK = "10-man Normal", bgBG = "10-man Normal", hrHR = "10-man Normal", srRS = "10-man Normal", slSI = "10-man Normal", ltLT = "10-man Normal", lvLV = "10-man Normal", etEE = "10-man Normal", idID = "10-man Normal", msMY = "10-man Normal", faIR = "10-man Normal", heIL = "10-man Normal", bnBD = "10-man Normal", urPK = "10-man Normal", taIN = "10-man Normal", teIN = "10-man Normal"
     },
     ["25nm"] = {
         esES = "25 Normal",
@@ -320,7 +320,7 @@ addonTable.GruposDict = {
         hiIN = "25-व्यक्ति सामान्य",
         thTH = "25 คน ปกติ",
         viVN = "Thường 25 người",
-        csCZ = "25hr NM",
+        csCZ = "25hr NM", nlNL = "25-man Normal", roRO = "25-man Normal", huHU = "25-man Normal", elGR = "25-man Normal", ukUA = "25-man Normal", daDK = "25-man Normal", fiFI = "25-man Normal", skSK = "25-man Normal", bgBG = "25-man Normal", hrHR = "25-man Normal", srRS = "25-man Normal", slSI = "25-man Normal", ltLT = "25-man Normal", lvLV = "25-man Normal", etEE = "25-man Normal", idID = "25-man Normal", msMY = "25-man Normal", faIR = "25-man Normal", heIL = "25-man Normal", bnBD = "25-man Normal", urPK = "25-man Normal", taIN = "25-man Normal", teIN = "25-man Normal"
     },
     ["10m"] = {
         esES = "10 jugadores",
@@ -343,7 +343,7 @@ addonTable.GruposDict = {
         hiIN = "10-व्यक्ति",
         thTH = "10 คน",
         viVN = "10 người",
-        csCZ = "10hr",
+        csCZ = "10hr", nlNL = "10-man", roRO = "10-man", huHU = "10-man", elGR = "10-man", ukUA = "10-man", daDK = "10-man", fiFI = "10-man", skSK = "10-man", bgBG = "10-man", hrHR = "10-man", srRS = "10-man", slSI = "10-man", ltLT = "10-man", lvLV = "10-man", etEE = "10-man", idID = "10-man", msMY = "10-man", faIR = "10-man", heIL = "10-man", bnBD = "10-man", urPK = "10-man", taIN = "10-man", teIN = "10-man"
     },
     ["25m"] = {
         esES = "25 jugadores",
@@ -366,7 +366,7 @@ addonTable.GruposDict = {
         hiIN = "25-व्यक्ति",
         thTH = "25 คน",
         viVN = "25 người",
-        csCZ = "25hr",
+        csCZ = "25hr", nlNL = "25-man", roRO = "25-man", huHU = "25-man", elGR = "25-man", ukUA = "25-man", daDK = "25-man", fiFI = "25-man", skSK = "25-man", bgBG = "25-man", hrHR = "25-man", srRS = "25-man", slSI = "25-man", ltLT = "25-man", lvLV = "25-man", etEE = "25-man", idID = "25-man", msMY = "25-man", faIR = "25-man", heIL = "25-man", bnBD = "25-man", urPK = "25-man", taIN = "25-man", teIN = "25-man"
     },
     ["need"] = {
         esES = "Necesito",
@@ -389,7 +389,7 @@ addonTable.GruposDict = {
         hiIN = "जरूरत",
         thTH = "ต้องการ",
         viVN = "Cần",
-        csCZ = "Potřebuji",
+        csCZ = "Potřebuji", nlNL = "Need", roRO = "Need", huHU = "Need", elGR = "Need", ukUA = "Need", daDK = "Need", fiFI = "Need", skSK = "Need", bgBG = "Need", hrHR = "Need", srRS = "Need", slSI = "Need", ltLT = "Need", lvLV = "Need", etEE = "Need", idID = "Need", msMY = "Need", faIR = "Need", heIL = "Need", bnBD = "Need", urPK = "Need", taIN = "Need", teIN = "Need"
     },
     ["rf"] = {
         esES = "Buscador de Bandas",
@@ -412,7 +412,7 @@ addonTable.GruposDict = {
         hiIN = "रेड फाइंडर",
         thTH = "ระบบหาเรด",
         viVN = "Tìm Raid",
-        csCZ = "Ragefire",
+        csCZ = "Ragefire", nlNL = "LFR/Raid Finder", roRO = "LFR/Raid Finder", huHU = "LFR/Raid Finder", elGR = "LFR/Raid Finder", ukUA = "LFR/Raid Finder", daDK = "LFR/Raid Finder", fiFI = "LFR/Raid Finder", skSK = "LFR/Raid Finder", bgBG = "LFR/Raid Finder", hrHR = "LFR/Raid Finder", srRS = "LFR/Raid Finder", slSI = "LFR/Raid Finder", ltLT = "LFR/Raid Finder", lvLV = "LFR/Raid Finder", etEE = "LFR/Raid Finder", idID = "LFR/Raid Finder", msMY = "LFR/Raid Finder", faIR = "LFR/Raid Finder", heIL = "LFR/Raid Finder", bnBD = "LFR/Raid Finder", urPK = "LFR/Raid Finder", taIN = "LFR/Raid Finder", teIN = "LFR/Raid Finder"
     },
     ["lfr"] = {
         esES = "Buscador de Bandas",
@@ -435,7 +435,7 @@ addonTable.GruposDict = {
         hiIN = "रेड फाइंडर",
         thTH = "ระบบหาเรด",
         viVN = "Tìm Raid",
-        csCZ = "Vyhledávač raidů",
+        csCZ = "Vyhledávač raidů", nlNL = "LFR/Raid Finder", roRO = "LFR/Raid Finder", huHU = "LFR/Raid Finder", elGR = "LFR/Raid Finder", ukUA = "LFR/Raid Finder", daDK = "LFR/Raid Finder", fiFI = "LFR/Raid Finder", skSK = "LFR/Raid Finder", bgBG = "LFR/Raid Finder", hrHR = "LFR/Raid Finder", srRS = "LFR/Raid Finder", slSI = "LFR/Raid Finder", ltLT = "LFR/Raid Finder", lvLV = "LFR/Raid Finder", etEE = "LFR/Raid Finder", idID = "LFR/Raid Finder", msMY = "LFR/Raid Finder", faIR = "LFR/Raid Finder", heIL = "LFR/Raid Finder", bnBD = "LFR/Raid Finder", urPK = "LFR/Raid Finder", taIN = "LFR/Raid Finder", teIN = "LFR/Raid Finder"
     },
     ["ilvl"] = {
         esES = "Nivel de objeto",
@@ -458,7 +458,7 @@ addonTable.GruposDict = {
         hiIN = "आइटम स्तर",
         thTH = "เวลไอเทม",
         viVN = "Cấp độ trang bị",
-        csCZ = "Úroveň předmětů",
+        csCZ = "Úroveň předmětů", nlNL = "Item Level", roRO = "Item Level", huHU = "Item Level", elGR = "Item Level", ukUA = "Item Level", daDK = "Item Level", fiFI = "Item Level", skSK = "Item Level", bgBG = "Item Level", hrHR = "Item Level", srRS = "Item Level", slSI = "Item Level", ltLT = "Item Level", lvLV = "Item Level", etEE = "Item Level", idID = "Item Level", msMY = "Item Level", faIR = "Item Level", heIL = "Item Level", bnBD = "Item Level", urPK = "Item Level", taIN = "Item Level", teIN = "Item Level"
     },
     ["lvl"] = {
         esES = "Nivel",
@@ -481,7 +481,7 @@ addonTable.GruposDict = {
         hiIN = "स्तर",
         thTH = "เลเวล",
         viVN = "Cấp độ",
-        csCZ = "Úroveň",
+        csCZ = "Úroveň", nlNL = "Level", roRO = "Level", huHU = "Level", elGR = "Level", ukUA = "Level", daDK = "Level", fiFI = "Level", skSK = "Level", bgBG = "Level", hrHR = "Level", srRS = "Level", slSI = "Level", ltLT = "Level", lvLV = "Level", etEE = "Level", idID = "Level", msMY = "Level", faIR = "Level", heIL = "Level", bnBD = "Level", urPK = "Level", taIN = "Level", teIN = "Level"
     },
     ["achiev"] = {
         esES = "Logro",
@@ -504,7 +504,7 @@ addonTable.GruposDict = {
         hiIN = "उपलब्धि",
         thTH = "ความสำเร็จ",
         viVN = "Thành tựu",
-        csCZ = "Úspěch",
+        csCZ = "Úspěch", nlNL = "Achievement", roRO = "Achievement", huHU = "Achievement", elGR = "Achievement", ukUA = "Achievement", daDK = "Achievement", fiFI = "Achievement", skSK = "Achievement", bgBG = "Achievement", hrHR = "Achievement", srRS = "Achievement", slSI = "Achievement", ltLT = "Achievement", lvLV = "Achievement", etEE = "Achievement", idID = "Achievement", msMY = "Achievement", faIR = "Achievement", heIL = "Achievement", bnBD = "Achievement", urPK = "Achievement", taIN = "Achievement", teIN = "Achievement"
     },
     ["achieve"] = {
         esES = "Logro",
@@ -527,7 +527,7 @@ addonTable.GruposDict = {
         hiIN = "उपलब्धि",
         thTH = "ความสำเร็จ",
         viVN = "Thành tựu",
-        csCZ = "Úspěch",
+        csCZ = "Úspěch", nlNL = "Achievement", roRO = "Achievement", huHU = "Achievement", elGR = "Achievement", ukUA = "Achievement", daDK = "Achievement", fiFI = "Achievement", skSK = "Achievement", bgBG = "Achievement", hrHR = "Achievement", srRS = "Achievement", slSI = "Achievement", ltLT = "Achievement", lvLV = "Achievement", etEE = "Achievement", idID = "Achievement", msMY = "Achievement", faIR = "Achievement", heIL = "Achievement", bnBD = "Achievement", urPK = "Achievement", taIN = "Achievement", teIN = "Achievement"
     },
     ["achv"] = {
         esES = "Logro",
@@ -550,7 +550,7 @@ addonTable.GruposDict = {
         hiIN = "उपलब्धि",
         thTH = "ความสำเร็จ",
         viVN = "Thành tựu",
-        csCZ = "Úspěch",
+        csCZ = "Úspěch", nlNL = "Achievement", roRO = "Achievement", huHU = "Achievement", elGR = "Achievement", ukUA = "Achievement", daDK = "Achievement", fiFI = "Achievement", skSK = "Achievement", bgBG = "Achievement", hrHR = "Achievement", srRS = "Achievement", slSI = "Achievement", ltLT = "Achievement", lvLV = "Achievement", etEE = "Achievement", idID = "Achievement", msMY = "Achievement", faIR = "Achievement", heIL = "Achievement", bnBD = "Achievement", urPK = "Achievement", taIN = "Achievement", teIN = "Achievement"
     },
     ["exp"] = {
         esES = "Experiencia",
@@ -573,7 +573,7 @@ addonTable.GruposDict = {
         hiIN = "अनुभव",
         thTH = "ค่าประสบการณ์",
         viVN = "Kinh nghiệm",
-        csCZ = "Expansia",
+        csCZ = "Expansia", nlNL = "Experience", roRO = "Experience", huHU = "Experience", elGR = "Experience", ukUA = "Experience", daDK = "Experience", fiFI = "Experience", skSK = "Experience", bgBG = "Experience", hrHR = "Experience", srRS = "Experience", slSI = "Experience", ltLT = "Experience", lvLV = "Experience", etEE = "Experience", idID = "Experience", msMY = "Experience", faIR = "Experience", heIL = "Experience", bnBD = "Experience", urPK = "Experience", taIN = "Experience", teIN = "Experience"
     },
     ["xp"] = {
         esES = "Experiencia",
@@ -596,7 +596,7 @@ addonTable.GruposDict = {
         hiIN = "अनुभव",
         thTH = "ค่าประสบการณ์",
         viVN = "Kinh nghiệm",
-        csCZ = "Zkušenosti",
+        csCZ = "Zkušenosti", nlNL = "Experience", roRO = "Experience", huHU = "Experience", elGR = "Experience", ukUA = "Experience", daDK = "Experience", fiFI = "Experience", skSK = "Experience", bgBG = "Experience", hrHR = "Experience", srRS = "Experience", slSI = "Experience", ltLT = "Experience", lvLV = "Experience", etEE = "Experience", idID = "Experience", msMY = "Experience", faIR = "Experience", heIL = "Experience", bnBD = "Experience", urPK = "Experience", taIN = "Experience", teIN = "Experience"
     },
     ["link"] = {
         esES = "Vincular/Mostrar",
@@ -619,7 +619,7 @@ addonTable.GruposDict = {
         hiIN = "लिंक",
         thTH = "ลิงก์",
         viVN = "Liên kết",
-        csCZ = "Odkaz",
+        csCZ = "Odkaz", nlNL = "Link item/achievement", roRO = "Link item/achievement", huHU = "Link item/achievement", elGR = "Link item/achievement", ukUA = "Link item/achievement", daDK = "Link item/achievement", fiFI = "Link item/achievement", skSK = "Link item/achievement", bgBG = "Link item/achievement", hrHR = "Link item/achievement", srRS = "Link item/achievement", slSI = "Link item/achievement", ltLT = "Link item/achievement", lvLV = "Link item/achievement", etEE = "Link item/achievement", idID = "Link item/achievement", msMY = "Link item/achievement", faIR = "Link item/achievement", heIL = "Link item/achievement", bnBD = "Link item/achievement", urPK = "Link item/achievement", taIN = "Link item/achievement", teIN = "Link item/achievement"
     },
     ["gear"] = {
         esES = "Equipo",
@@ -642,7 +642,7 @@ addonTable.GruposDict = {
         hiIN = "गियर",
         thTH = "เกราะ",
         viVN = "Trang bị",
-        csCZ = "Výbava",
+        csCZ = "Výbava", nlNL = "Gear/Equipment", roRO = "Gear/Equipment", huHU = "Gear/Equipment", elGR = "Gear/Equipment", ukUA = "Gear/Equipment", daDK = "Gear/Equipment", fiFI = "Gear/Equipment", skSK = "Gear/Equipment", bgBG = "Gear/Equipment", hrHR = "Gear/Equipment", srRS = "Gear/Equipment", slSI = "Gear/Equipment", ltLT = "Gear/Equipment", lvLV = "Gear/Equipment", etEE = "Gear/Equipment", idID = "Gear/Equipment", msMY = "Gear/Equipment", faIR = "Gear/Equipment", heIL = "Gear/Equipment", bnBD = "Gear/Equipment", urPK = "Gear/Equipment", taIN = "Gear/Equipment", teIN = "Gear/Equipment"
     },
     ["req"] = {
         esES = "Requisito",
@@ -665,7 +665,7 @@ addonTable.GruposDict = {
         hiIN = "आवश्यकता",
         thTH = "เงื่อนไข",
         viVN = "Yêu cầu",
-        csCZ = "Požadavek",
+        csCZ = "Požadavek", nlNL = "Requirement", roRO = "Requirement", huHU = "Requirement", elGR = "Requirement", ukUA = "Requirement", daDK = "Requirement", fiFI = "Requirement", skSK = "Requirement", bgBG = "Requirement", hrHR = "Requirement", srRS = "Requirement", slSI = "Requirement", ltLT = "Requirement", lvLV = "Requirement", etEE = "Requirement", idID = "Requirement", msMY = "Requirement", faIR = "Requirement", heIL = "Requirement", bnBD = "Requirement", urPK = "Requirement", taIN = "Requirement", teIN = "Requirement"
     },
     ["sum"] = {
         esES = "Invocar",
@@ -688,7 +688,7 @@ addonTable.GruposDict = {
         hiIN = "समन",
         thTH = "ซัมม่อน",
         viVN = "Triệu hồi",
-        csCZ = "Přivolání",
+        csCZ = "Přivolání", nlNL = "Summon", roRO = "Summon", huHU = "Summon", elGR = "Summon", ukUA = "Summon", daDK = "Summon", fiFI = "Summon", skSK = "Summon", bgBG = "Summon", hrHR = "Summon", srRS = "Summon", slSI = "Summon", ltLT = "Summon", lvLV = "Summon", etEE = "Summon", idID = "Summon", msMY = "Summon", faIR = "Summon", heIL = "Summon", bnBD = "Summon", urPK = "Summon", taIN = "Summon", teIN = "Summon"
     },
     ["kick"] = {
         esES = "Echar",
@@ -711,7 +711,7 @@ addonTable.GruposDict = {
         hiIN = "किक",
         thTH = "เตะ",
         viVN = "Đuổi",
-        csCZ = "Přerušení",
+        csCZ = "Přerušení", nlNL = "Kick", roRO = "Kick", huHU = "Kick", elGR = "Kick", ukUA = "Kick", daDK = "Kick", fiFI = "Kick", skSK = "Kick", bgBG = "Kick", hrHR = "Kick", srRS = "Kick", slSI = "Kick", ltLT = "Kick", lvLV = "Kick", etEE = "Kick", idID = "Kick", msMY = "Kick", faIR = "Kick", heIL = "Kick", bnBD = "Kick", urPK = "Kick", taIN = "Kick", teIN = "Kick"
     },
     ["leader"] = {
         esES = "Líder",
@@ -734,7 +734,7 @@ addonTable.GruposDict = {
         hiIN = "नेता",
         thTH = "หัวหน้า",
         viVN = "Trưởng nhóm",
-        csCZ = "Vůdce",
+        csCZ = "Vůdce", nlNL = "Leader", roRO = "Leader", huHU = "Leader", elGR = "Leader", ukUA = "Leader", daDK = "Leader", fiFI = "Leader", skSK = "Leader", bgBG = "Leader", hrHR = "Leader", srRS = "Leader", slSI = "Leader", ltLT = "Leader", lvLV = "Leader", etEE = "Leader", idID = "Leader", msMY = "Leader", faIR = "Leader", heIL = "Leader", bnBD = "Leader", urPK = "Leader", taIN = "Leader", teIN = "Leader"
     },
     ["inv"] = {
         esES = "Invitar",
@@ -757,7 +757,7 @@ addonTable.GruposDict = {
         hiIN = "आमंत्रित करें",
         thTH = "ดึงเข้าตี้",
         viVN = "Mời",
-        csCZ = "Pozvání",
+        csCZ = "Pozvání", nlNL = "Invite", roRO = "Invite", huHU = "Invite", elGR = "Invite", ukUA = "Invite", daDK = "Invite", fiFI = "Invite", skSK = "Invite", bgBG = "Invite", hrHR = "Invite", srRS = "Invite", slSI = "Invite", ltLT = "Invite", lvLV = "Invite", etEE = "Invite", idID = "Invite", msMY = "Invite", faIR = "Invite", heIL = "Invite", bnBD = "Invite", urPK = "Invite", taIN = "Invite", teIN = "Invite"
     },
     ["res"] = {
         esES = "Resucitar",
@@ -780,7 +780,7 @@ addonTable.GruposDict = {
         hiIN = "पुनर्जीवित",
         thTH = "ชุบที",
         viVN = "Hồi sinh",
-        csCZ = "Oživení",
+        csCZ = "Oživení", nlNL = "Resurrect", roRO = "Resurrect", huHU = "Resurrect", elGR = "Resurrect", ukUA = "Resurrect", daDK = "Resurrect", fiFI = "Resurrect", skSK = "Resurrect", bgBG = "Resurrect", hrHR = "Resurrect", srRS = "Resurrect", slSI = "Resurrect", ltLT = "Resurrect", lvLV = "Resurrect", etEE = "Resurrect", idID = "Resurrect", msMY = "Resurrect", faIR = "Resurrect", heIL = "Resurrect", bnBD = "Resurrect", urPK = "Resurrect", taIN = "Resurrect", teIN = "Resurrect"
     },
     ["wipe"] = {
         esES = "Muerte total",
@@ -803,6 +803,6 @@ addonTable.GruposDict = {
         hiIN = "वाइप",
         thTH = "ตี้แตก",
         viVN = "Quét sạch",
-        csCZ = "Wipe",
+        csCZ = "Wipe", nlNL = "Wipe", roRO = "Wipe", huHU = "Wipe", elGR = "Wipe", ukUA = "Wipe", daDK = "Wipe", fiFI = "Wipe", skSK = "Wipe", bgBG = "Wipe", hrHR = "Wipe", srRS = "Wipe", slSI = "Wipe", ltLT = "Wipe", lvLV = "Wipe", etEE = "Wipe", idID = "Wipe", msMY = "Wipe", faIR = "Wipe", heIL = "Wipe", bnBD = "Wipe", urPK = "Wipe", taIN = "Wipe", teIN = "Wipe"
     },
 }

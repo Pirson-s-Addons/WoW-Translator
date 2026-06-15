@@ -21,7 +21,7 @@ addonTable.SocialDict = {
         hiIN = "धन्यवाद",
         thTH = "ขอบคุณ",
         viVN = "Cảm ơn",
-        csCZ = "Díky",
+        csCZ = "Díky", nlNL = "Thank you", roRO = "Thank you", huHU = "Thank you", elGR = "Thank you", ukUA = "Thank you", daDK = "Thank you", fiFI = "Thank you", skSK = "Thank you", bgBG = "Thank you", hrHR = "Thank you", srRS = "Thank you", slSI = "Thank you", ltLT = "Thank you", lvLV = "Thank you", etEE = "Thank you", idID = "Thank you", msMY = "Thank you", faIR = "Thank you", heIL = "Thank you", bnBD = "Thank you", urPK = "Thank you", taIN = "Thank you", teIN = "Thank you"
     },
     ["thx"] = {
         esES = "Gracias",
@@ -44,7 +44,7 @@ addonTable.SocialDict = {
         hiIN = "धन्यवाद",
         thTH = "ขอบคุณ",
         viVN = "Cảm ơn",
-        csCZ = "Díky",
+        csCZ = "Díky", nlNL = "Thanks", roRO = "Thanks", huHU = "Thanks", elGR = "Thanks", ukUA = "Thanks", daDK = "Thanks", fiFI = "Thanks", skSK = "Thanks", bgBG = "Thanks", hrHR = "Thanks", srRS = "Thanks", slSI = "Thanks", ltLT = "Thanks", lvLV = "Thanks", etEE = "Thanks", idID = "Thanks", msMY = "Thanks", faIR = "Thanks", heIL = "Thanks", bnBD = "Thanks", urPK = "Thanks", taIN = "Thanks", teIN = "Thanks"
     },
     ["np"] = {
         esES = "Sin problema",
@@ -67,7 +67,7 @@ addonTable.SocialDict = {
         hiIN = "कोई बात नहीं",
         thTH = "ไม่มีปัญหา",
         viVN = "Không có gì",
-        csCZ = "V pohodě",
+        csCZ = "V pohodě", nlNL = "No problem", roRO = "No problem", huHU = "No problem", elGR = "No problem", ukUA = "No problem", daDK = "No problem", fiFI = "No problem", skSK = "No problem", bgBG = "No problem", hrHR = "No problem", srRS = "No problem", slSI = "No problem", ltLT = "No problem", lvLV = "No problem", etEE = "No problem", idID = "No problem", msMY = "No problem", faIR = "No problem", heIL = "No problem", bnBD = "No problem", urPK = "No problem", taIN = "No problem", teIN = "No problem"
     },
     ["uw"] = {
         esES = "De nada",
@@ -90,7 +90,7 @@ addonTable.SocialDict = {
         hiIN = "आपका स्वागत है",
         thTH = "ไม่เป็นไร",
         viVN = "Không có gì",
-        csCZ = "Nemáš zač",
+        csCZ = "Nemáš zač", nlNL = "You're welcome", roRO = "You're welcome", huHU = "You're welcome", elGR = "You're welcome", ukUA = "You're welcome", daDK = "You're welcome", fiFI = "You're welcome", skSK = "You're welcome", bgBG = "You're welcome", hrHR = "You're welcome", srRS = "You're welcome", slSI = "You're welcome", ltLT = "You're welcome", lvLV = "You're welcome", etEE = "You're welcome", idID = "You're welcome", msMY = "You're welcome", faIR = "You're welcome", heIL = "You're welcome", bnBD = "You're welcome", urPK = "You're welcome", taIN = "You're welcome", teIN = "You're welcome"
     },
     ["gj"] = {
         esES = "Buen trabajo",
@@ -113,7 +113,7 @@ addonTable.SocialDict = {
         hiIN = "अच्छा काम",
         thTH = "ทำได้ดีมาก",
         viVN = "Làm tốt lắm",
-        csCZ = "Dobrá práce",
+        csCZ = "Dobrá práce", nlNL = "Good job", roRO = "Good job", huHU = "Good job", elGR = "Good job", ukUA = "Good job", daDK = "Good job", fiFI = "Good job", skSK = "Good job", bgBG = "Good job", hrHR = "Good job", srRS = "Good job", slSI = "Good job", ltLT = "Good job", lvLV = "Good job", etEE = "Good job", idID = "Good job", msMY = "Good job", faIR = "Good job", heIL = "Good job", bnBD = "Good job", urPK = "Good job", taIN = "Good job", teIN = "Good job"
     },
     ["nvm"] = {
         esES = "No importa",
@@ -136,7 +136,7 @@ addonTable.SocialDict = {
         hiIN = "कोई बात नहीं",
         thTH = "ช่างมันเถอะ",
         viVN = "Đừng bận tâm",
-        csCZ = "To je fuk",
+        csCZ = "To je fuk", nlNL = "Never mind", roRO = "Never mind", huHU = "Never mind", elGR = "Never mind", ukUA = "Never mind", daDK = "Never mind", fiFI = "Never mind", skSK = "Never mind", bgBG = "Never mind", hrHR = "Never mind", srRS = "Never mind", slSI = "Never mind", ltLT = "Never mind", lvLV = "Never mind", etEE = "Never mind", idID = "Never mind", msMY = "Never mind", faIR = "Never mind", heIL = "Never mind", bnBD = "Never mind", urPK = "Never mind", taIN = "Never mind", teIN = "Never mind"
     },
     ["gz"] = {
         esES = "Felicidades",
@@ -159,7 +159,7 @@ addonTable.SocialDict = {
         hiIN = "बधाई हो",
         thTH = "ยินดีด้วย",
         viVN = "Chúc mừng",
-        csCZ = "Gratulace",
+        csCZ = "Gratulace", nlNL = "Congratulations", roRO = "Congratulations", huHU = "Congratulations", elGR = "Congratulations", ukUA = "Congratulations", daDK = "Congratulations", fiFI = "Congratulations", skSK = "Congratulations", bgBG = "Congratulations", hrHR = "Congratulations", srRS = "Congratulations", slSI = "Congratulations", ltLT = "Congratulations", lvLV = "Congratulations", etEE = "Congratulations", idID = "Congratulations", msMY = "Congratulations", faIR = "Congratulations", heIL = "Congratulations", bnBD = "Congratulations", urPK = "Congratulations", taIN = "Congratulations", teIN = "Congratulations"
     },
     ["omg"] = {
         esES = "Oh Dios mío",
@@ -182,7 +182,7 @@ addonTable.SocialDict = {
         hiIN = "हे भगवान",
         thTH = "โอ้มายก๊อด",
         viVN = "Ôi chúa ơi",
-        csCZ = "Ó můj bože",
+        csCZ = "Ó můj bože", nlNL = "Oh my God", roRO = "Oh my God", huHU = "Oh my God", elGR = "Oh my God", ukUA = "Oh my God", daDK = "Oh my God", fiFI = "Oh my God", skSK = "Oh my God", bgBG = "Oh my God", hrHR = "Oh my God", srRS = "Oh my God", slSI = "Oh my God", ltLT = "Oh my God", lvLV = "Oh my God", etEE = "Oh my God", idID = "Oh my God", msMY = "Oh my God", faIR = "Oh my God", heIL = "Oh my God", bnBD = "Oh my God", urPK = "Oh my God", taIN = "Oh my God", teIN = "Oh my God"
     },
     ["lol"] = {
         esES = "Risa",
@@ -205,7 +205,7 @@ addonTable.SocialDict = {
         hiIN = "हाहा",
         thTH = "ฮ่าๆ",
         viVN = "Cười lớn",
-        csCZ = "Lol",
+        csCZ = "Lol", nlNL = "Laughing out loud", roRO = "Laughing out loud", huHU = "Laughing out loud", elGR = "Laughing out loud", ukUA = "Laughing out loud", daDK = "Laughing out loud", fiFI = "Laughing out loud", skSK = "Laughing out loud", bgBG = "Laughing out loud", hrHR = "Laughing out loud", srRS = "Laughing out loud", slSI = "Laughing out loud", ltLT = "Laughing out loud", lvLV = "Laughing out loud", etEE = "Laughing out loud", idID = "Laughing out loud", msMY = "Laughing out loud", faIR = "Laughing out loud", heIL = "Laughing out loud", bnBD = "Laughing out loud", urPK = "Laughing out loud", taIN = "Laughing out loud", teIN = "Laughing out loud"
     },
     ["ac"] = {
         esES = "Clase de Armadura",
@@ -228,7 +228,7 @@ addonTable.SocialDict = {
         hiIN = "कवच श्रेणी",
         thTH = "คลาสเกราะ",
         viVN = "Chỉ số giáp",
-        csCZ = "Alchemist's Canyon",
+        csCZ = "Alchemist's Canyon", nlNL = "Armor Class", roRO = "Armor Class", huHU = "Armor Class", elGR = "Armor Class", ukUA = "Armor Class", daDK = "Armor Class", fiFI = "Armor Class", skSK = "Armor Class", bgBG = "Armor Class", hrHR = "Armor Class", srRS = "Armor Class", slSI = "Armor Class", ltLT = "Armor Class", lvLV = "Armor Class", etEE = "Armor Class", idID = "Armor Class", msMY = "Armor Class", faIR = "Armor Class", heIL = "Armor Class", bnBD = "Armor Class", urPK = "Armor Class", taIN = "Armor Class", teIN = "Armor Class"
     },
     ["ae"] = {
         esES = "Efecto de Área",
@@ -251,7 +251,7 @@ addonTable.SocialDict = {
         hiIN = "क्षेत्र प्रभाव",
         thTH = "เอฟเฟกต์พื้นที่",
         viVN = "Hiệu ứng diện rộng",
-        csCZ = "Plošný efekt",
+        csCZ = "Plošný efekt", nlNL = "Area Effect", roRO = "Area Effect", huHU = "Area Effect", elGR = "Area Effect", ukUA = "Area Effect", daDK = "Area Effect", fiFI = "Area Effect", skSK = "Area Effect", bgBG = "Area Effect", hrHR = "Area Effect", srRS = "Area Effect", slSI = "Area Effect", ltLT = "Area Effect", lvLV = "Area Effect", etEE = "Area Effect", idID = "Area Effect", msMY = "Area Effect", faIR = "Area Effect", heIL = "Area Effect", bnBD = "Area Effect", urPK = "Area Effect", taIN = "Area Effect", teIN = "Area Effect"
     },
     ["dd"] = {
         esES = "Daño Directo",
@@ -274,7 +274,7 @@ addonTable.SocialDict = {
         hiIN = "प्रत्यक्ष क्षति",
         thTH = "ดาเมจตรง",
         viVN = "Sát thương trực tiếp",
-        csCZ = "Damage Dealer",
+        csCZ = "Damage Dealer", nlNL = "Direct Damage", roRO = "Direct Damage", huHU = "Direct Damage", elGR = "Direct Damage", ukUA = "Direct Damage", daDK = "Direct Damage", fiFI = "Direct Damage", skSK = "Direct Damage", bgBG = "Direct Damage", hrHR = "Direct Damage", srRS = "Direct Damage", slSI = "Direct Damage", ltLT = "Direct Damage", lvLV = "Direct Damage", etEE = "Direct Damage", idID = "Direct Damage", msMY = "Direct Damage", faIR = "Direct Damage", heIL = "Direct Damage", bnBD = "Direct Damage", urPK = "Direct Damage", taIN = "Direct Damage", teIN = "Direct Damage"
     },
     ["fh"] = {
         esES = "Vida Completa",
@@ -297,7 +297,7 @@ addonTable.SocialDict = {
         hiIN = "पूर्ण स्वास्थ्य",
         thTH = "เลือดเต็ม",
         viVN = "Đầy máu",
-        csCZ = "Freehold",
+        csCZ = "Freehold", nlNL = "Full Health", roRO = "Full Health", huHU = "Full Health", elGR = "Full Health", ukUA = "Full Health", daDK = "Full Health", fiFI = "Full Health", skSK = "Full Health", bgBG = "Full Health", hrHR = "Full Health", srRS = "Full Health", slSI = "Full Health", ltLT = "Full Health", lvLV = "Full Health", etEE = "Full Health", idID = "Full Health", msMY = "Full Health", faIR = "Full Health", heIL = "Full Health", bnBD = "Full Health", urPK = "Full Health", taIN = "Full Health", teIN = "Full Health"
     },
     ["fm"] = {
         esES = "Maná Completo",
@@ -320,7 +320,7 @@ addonTable.SocialDict = {
         hiIN = "पूर्ण मैना",
         thTH = "มานาเต็ม",
         viVN = "Đầy mana",
-        csCZ = "Focus Magic",
+        csCZ = "Focus Magic", nlNL = "Full Mana", roRO = "Full Mana", huHU = "Full Mana", elGR = "Full Mana", ukUA = "Full Mana", daDK = "Full Mana", fiFI = "Full Mana", skSK = "Full Mana", bgBG = "Full Mana", hrHR = "Full Mana", srRS = "Full Mana", slSI = "Full Mana", ltLT = "Full Mana", lvLV = "Full Mana", etEE = "Full Mana", idID = "Full Mana", msMY = "Full Mana", faIR = "Full Mana", heIL = "Full Mana", bnBD = "Full Mana", urPK = "Full Mana", taIN = "Full Mana", teIN = "Full Mana"
     },
     ["fvf"] = {
         esES = "Facción contra Facción",
@@ -343,7 +343,7 @@ addonTable.SocialDict = {
         hiIN = "गुट बनाम गुट",
         thTH = "แฟกชันปะทะแฟกชัน",
         viVN = "Phe đối phe",
-        csCZ = "Free for All",
+        csCZ = "Free for All", nlNL = "Faction vs Faction", roRO = "Faction vs Faction", huHU = "Faction vs Faction", elGR = "Faction vs Faction", ukUA = "Faction vs Faction", daDK = "Faction vs Faction", fiFI = "Faction vs Faction", skSK = "Faction vs Faction", bgBG = "Faction vs Faction", hrHR = "Faction vs Faction", srRS = "Faction vs Faction", slSI = "Faction vs Faction", ltLT = "Faction vs Faction", lvLV = "Faction vs Faction", etEE = "Faction vs Faction", idID = "Faction vs Faction", msMY = "Faction vs Faction", faIR = "Faction vs Faction", heIL = "Faction vs Faction", bnBD = "Faction vs Faction", urPK = "Faction vs Faction", taIN = "Faction vs Faction", teIN = "Faction vs Faction"
     },
     ["hp"] = {
         esES = "Puntos de Vida",
@@ -366,7 +366,7 @@ addonTable.SocialDict = {
         hiIN = "हिट अंक",
         thTH = "พลังชีวิต",
         viVN = "Điểm sinh lực",
-        csCZ = "Životy",
+        csCZ = "Životy", nlNL = "Hit Points", roRO = "Hit Points", huHU = "Hit Points", elGR = "Hit Points", ukUA = "Hit Points", daDK = "Hit Points", fiFI = "Hit Points", skSK = "Hit Points", bgBG = "Hit Points", hrHR = "Hit Points", srRS = "Hit Points", slSI = "Hit Points", ltLT = "Hit Points", lvLV = "Hit Points", etEE = "Hit Points", idID = "Hit Points", msMY = "Hit Points", faIR = "Hit Points", heIL = "Hit Points", bnBD = "Hit Points", urPK = "Hit Points", taIN = "Hit Points", teIN = "Hit Points"
     },
     ["ks"] = {
         esES = "Robo de Muerte",
@@ -389,7 +389,7 @@ addonTable.SocialDict = {
         hiIN = "किल चुराना",
         thTH = "แย่งคิล",
         viVN = "Cướp mạng",
-        csCZ = "Zabití",
+        csCZ = "Zabití", nlNL = "Kill Steal", roRO = "Kill Steal", huHU = "Kill Steal", elGR = "Kill Steal", ukUA = "Kill Steal", daDK = "Kill Steal", fiFI = "Kill Steal", skSK = "Kill Steal", bgBG = "Kill Steal", hrHR = "Kill Steal", srRS = "Kill Steal", slSI = "Kill Steal", ltLT = "Kill Steal", lvLV = "Kill Steal", etEE = "Kill Steal", idID = "Kill Steal", msMY = "Kill Steal", faIR = "Kill Steal", heIL = "Kill Steal", bnBD = "Kill Steal", urPK = "Kill Steal", taIN = "Kill Steal", teIN = "Kill Steal"
     },
     ["lom"] = {
         esES = "Poco Maná",
@@ -412,7 +412,7 @@ addonTable.SocialDict = {
         hiIN = "मैना कम है",
         thTH = "มาน่าน้อย",
         viVN = "Sắp hết mana",
-        csCZ = "Málo many",
+        csCZ = "Málo many", nlNL = "Low on Mana", roRO = "Low on Mana", huHU = "Low on Mana", elGR = "Low on Mana", ukUA = "Low on Mana", daDK = "Low on Mana", fiFI = "Low on Mana", skSK = "Low on Mana", bgBG = "Low on Mana", hrHR = "Low on Mana", srRS = "Low on Mana", slSI = "Low on Mana", ltLT = "Low on Mana", lvLV = "Low on Mana", etEE = "Low on Mana", idID = "Low on Mana", msMY = "Low on Mana", faIR = "Low on Mana", heIL = "Low on Mana", bnBD = "Low on Mana", urPK = "Low on Mana", taIN = "Low on Mana", teIN = "Low on Mana"
     },
     ["oom"] = {
         esES = "Sin Maná",
@@ -435,7 +435,7 @@ addonTable.SocialDict = {
         hiIN = "मैना खत्म",
         thTH = "มาน่าหมด",
         viVN = "Hết mana",
-        csCZ = "Bez many",
+        csCZ = "Bez many", nlNL = "Out of Mana", roRO = "Out of Mana", huHU = "Out of Mana", elGR = "Out of Mana", ukUA = "Out of Mana", daDK = "Out of Mana", fiFI = "Out of Mana", skSK = "Out of Mana", bgBG = "Out of Mana", hrHR = "Out of Mana", srRS = "Out of Mana", slSI = "Out of Mana", ltLT = "Out of Mana", lvLV = "Out of Mana", etEE = "Out of Mana", idID = "Out of Mana", msMY = "Out of Mana", faIR = "Out of Mana", heIL = "Out of Mana", bnBD = "Out of Mana", urPK = "Out of Mana", taIN = "Out of Mana", teIN = "Out of Mana"
     },
     ["npc"] = {
         esES = "Personaje No Jugador",
@@ -458,7 +458,7 @@ addonTable.SocialDict = {
         hiIN = "एनपीसी",
         thTH = "เอ็นพีซี",
         viVN = "Nhân vật không phải người chơi",
-        csCZ = "NPC",
+        csCZ = "NPC", nlNL = "Non-Player Character", roRO = "Non-Player Character", huHU = "Non-Player Character", elGR = "Non-Player Character", ukUA = "Non-Player Character", daDK = "Non-Player Character", fiFI = "Non-Player Character", skSK = "Non-Player Character", bgBG = "Non-Player Character", hrHR = "Non-Player Character", srRS = "Non-Player Character", slSI = "Non-Player Character", ltLT = "Non-Player Character", lvLV = "Non-Player Character", etEE = "Non-Player Character", idID = "Non-Player Character", msMY = "Non-Player Character", faIR = "Non-Player Character", heIL = "Non-Player Character", bnBD = "Non-Player Character", urPK = "Non-Player Character", taIN = "Non-Player Character", teIN = "Non-Player Character"
     },
     ["pc"] = {
         esES = "Personaje Jugador",
@@ -481,7 +481,7 @@ addonTable.SocialDict = {
         hiIN = "पीसी",
         thTH = "ตัวละครผู้เล่น",
         viVN = "Nhân vật người chơi",
-        csCZ = "Cena",
+        csCZ = "Cena", nlNL = "Player Character", roRO = "Player Character", huHU = "Player Character", elGR = "Player Character", ukUA = "Player Character", daDK = "Player Character", fiFI = "Player Character", skSK = "Player Character", bgBG = "Player Character", hrHR = "Player Character", srRS = "Player Character", slSI = "Player Character", ltLT = "Player Character", lvLV = "Player Character", etEE = "Player Character", idID = "Player Character", msMY = "Player Character", faIR = "Player Character", heIL = "Player Character", bnBD = "Player Character", urPK = "Player Character", taIN = "Player Character", teIN = "Player Character"
     },
     ["pst"] = {
         esES = "Susurra por favor",
@@ -504,7 +504,7 @@ addonTable.SocialDict = {
         hiIN = "कृपया फुसफुसाएं",
         thTH = "ซิบมาหน่อย",
         viVN = "Làm ơn hãy nhắn riêng",
-        csCZ = "Šeptni",
+        csCZ = "Šeptni", nlNL = "Please send tell", roRO = "Please send tell", huHU = "Please send tell", elGR = "Please send tell", ukUA = "Please send tell", daDK = "Please send tell", fiFI = "Please send tell", skSK = "Please send tell", bgBG = "Please send tell", hrHR = "Please send tell", srRS = "Please send tell", slSI = "Please send tell", ltLT = "Please send tell", lvLV = "Please send tell", etEE = "Please send tell", idID = "Please send tell", msMY = "Please send tell", faIR = "Please send tell", heIL = "Please send tell", bnBD = "Please send tell", urPK = "Please send tell", taIN = "Please send tell", teIN = "Please send tell"
     },
     ["pve"] = {
         esES = "Jugador contra Entorno",
@@ -527,7 +527,7 @@ addonTable.SocialDict = {
         hiIN = "पीवीई",
         thTH = "พีวีอี",
         viVN = "PvE",
-        csCZ = "PvE",
+        csCZ = "PvE", nlNL = "Player vs Environment", roRO = "Player vs Environment", huHU = "Player vs Environment", elGR = "Player vs Environment", ukUA = "Player vs Environment", daDK = "Player vs Environment", fiFI = "Player vs Environment", skSK = "Player vs Environment", bgBG = "Player vs Environment", hrHR = "Player vs Environment", srRS = "Player vs Environment", slSI = "Player vs Environment", ltLT = "Player vs Environment", lvLV = "Player vs Environment", etEE = "Player vs Environment", idID = "Player vs Environment", msMY = "Player vs Environment", faIR = "Player vs Environment", heIL = "Player vs Environment", bnBD = "Player vs Environment", urPK = "Player vs Environment", taIN = "Player vs Environment", teIN = "Player vs Environment"
     },
     ["pvp"] = {
         esES = "Jugador contra Jugador",
@@ -550,7 +550,7 @@ addonTable.SocialDict = {
         hiIN = "पीवीपी",
         thTH = "พีวีพี",
         viVN = "PvP",
-        csCZ = "PvP",
+        csCZ = "PvP", nlNL = "Player vs Player", roRO = "Player vs Player", huHU = "Player vs Player", elGR = "Player vs Player", ukUA = "Player vs Player", daDK = "Player vs Player", fiFI = "Player vs Player", skSK = "Player vs Player", bgBG = "Player vs Player", hrHR = "Player vs Player", srRS = "Player vs Player", slSI = "Player vs Player", ltLT = "Player vs Player", lvLV = "Player vs Player", etEE = "Player vs Player", idID = "Player vs Player", msMY = "Player vs Player", faIR = "Player vs Player", heIL = "Player vs Player", bnBD = "Player vs Player", urPK = "Player vs Player", taIN = "Player vs Player", teIN = "Player vs Player"
     },
     ["mog"] = {
         esES = "Transfiguración",
@@ -573,7 +573,7 @@ addonTable.SocialDict = {
         hiIN = "ट्रांसमॉग",
         thTH = "ทรานสม็อก",
         viVN = "Chuyển hình",
-        csCZ = "Transmog",
+        csCZ = "Transmog", nlNL = "Transmog", roRO = "Transmog", huHU = "Transmog", elGR = "Transmog", ukUA = "Transmog", daDK = "Transmog", fiFI = "Transmog", skSK = "Transmog", bgBG = "Transmog", hrHR = "Transmog", srRS = "Transmog", slSI = "Transmog", ltLT = "Transmog", lvLV = "Transmog", etEE = "Transmog", idID = "Transmog", msMY = "Transmog", faIR = "Transmog", heIL = "Transmog", bnBD = "Transmog", urPK = "Transmog", taIN = "Transmog", teIN = "Transmog"
     },
     ["dc"] = {
         esES = "Discord",
@@ -596,7 +596,7 @@ addonTable.SocialDict = {
         hiIN = "डिस्कॉर्ड",
         thTH = "ดิสคอร์ด",
         viVN = "Discord",
-        csCZ = "Odpojen",
+        csCZ = "Odpojen", nlNL = "Discord", roRO = "Discord", huHU = "Discord", elGR = "Discord", ukUA = "Discord", daDK = "Discord", fiFI = "Discord", skSK = "Discord", bgBG = "Discord", hrHR = "Discord", srRS = "Discord", slSI = "Discord", ltLT = "Discord", lvLV = "Discord", etEE = "Discord", idID = "Discord", msMY = "Discord", faIR = "Discord", heIL = "Discord", bnBD = "Discord", urPK = "Discord", taIN = "Discord", teIN = "Discord"
     },
     ["ofc"] = {
         esES = "Por supuesto",
@@ -619,7 +619,7 @@ addonTable.SocialDict = {
         hiIN = "बिल्कुल",
         thTH = "แน่นอน",
         viVN = "Dĩ nhiên",
-        csCZ = "Samozřejmě",
+        csCZ = "Samozřejmě", nlNL = "Of course", roRO = "Of course", huHU = "Of course", elGR = "Of course", ukUA = "Of course", daDK = "Of course", fiFI = "Of course", skSK = "Of course", bgBG = "Of course", hrHR = "Of course", srRS = "Of course", slSI = "Of course", ltLT = "Of course", lvLV = "Of course", etEE = "Of course", idID = "Of course", msMY = "Of course", faIR = "Of course", heIL = "Of course", bnBD = "Of course", urPK = "Of course", taIN = "Of course", teIN = "Of course"
     },
     ["gg"] = {
         esES = "Bien jugado",
@@ -642,7 +642,7 @@ addonTable.SocialDict = {
         hiIN = "अच्छा खेल",
         thTH = "จีจี",
         viVN = "Trận đấu hay",
-        csCZ = "Dobrá hra",
+        csCZ = "Dobrá hra", nlNL = "Good game", roRO = "Good game", huHU = "Good game", elGR = "Good game", ukUA = "Good game", daDK = "Good game", fiFI = "Good game", skSK = "Good game", bgBG = "Good game", hrHR = "Good game", srRS = "Good game", slSI = "Good game", ltLT = "Good game", lvLV = "Good game", etEE = "Good game", idID = "Good game", msMY = "Good game", faIR = "Good game", heIL = "Good game", bnBD = "Good game", urPK = "Good game", taIN = "Good game", teIN = "Good game"
     },
     ["btw"] = {
         esES = "Por cierto",
@@ -665,7 +665,7 @@ addonTable.SocialDict = {
         hiIN = "वैसे",
         thTH = "อีกอย่าง",
         viVN = "Nhân tiện",
-        csCZ = "Mimochodem",
+        csCZ = "Mimochodem", nlNL = "By the way", roRO = "By the way", huHU = "By the way", elGR = "By the way", ukUA = "By the way", daDK = "By the way", fiFI = "By the way", skSK = "By the way", bgBG = "By the way", hrHR = "By the way", srRS = "By the way", slSI = "By the way", ltLT = "By the way", lvLV = "By the way", etEE = "By the way", idID = "By the way", msMY = "By the way", faIR = "By the way", heIL = "By the way", bnBD = "By the way", urPK = "By the way", taIN = "By the way", teIN = "By the way"
     },
     ["hf"] = {
         esES = "Diviértete",
@@ -688,7 +688,7 @@ addonTable.SocialDict = {
         hiIN = "मजे करो",
         thTH = "ขอให้สนุก",
         viVN = "Chúc vui vẻ",
-        csCZ = "Bav se",
+        csCZ = "Bav se", nlNL = "Have fun", roRO = "Have fun", huHU = "Have fun", elGR = "Have fun", ukUA = "Have fun", daDK = "Have fun", fiFI = "Have fun", skSK = "Have fun", bgBG = "Have fun", hrHR = "Have fun", srRS = "Have fun", slSI = "Have fun", ltLT = "Have fun", lvLV = "Have fun", etEE = "Have fun", idID = "Have fun", msMY = "Have fun", faIR = "Have fun", heIL = "Have fun", bnBD = "Have fun", urPK = "Have fun", taIN = "Have fun", teIN = "Have fun"
     },
     ["idk"] = {
         esES = "No sé",
@@ -711,7 +711,7 @@ addonTable.SocialDict = {
         hiIN = "मुझे नहीं पता",
         thTH = "ไม่รู้ดิ",
         viVN = "Tôi không biết",
-        csCZ = "Nevím",
+        csCZ = "Nevím", nlNL = "I don't know", roRO = "I don't know", huHU = "I don't know", elGR = "I don't know", ukUA = "I don't know", daDK = "I don't know", fiFI = "I don't know", skSK = "I don't know", bgBG = "I don't know", hrHR = "I don't know", srRS = "I don't know", slSI = "I don't know", ltLT = "I don't know", lvLV = "I don't know", etEE = "I don't know", idID = "I don't know", msMY = "I don't know", faIR = "I don't know", heIL = "I don't know", bnBD = "I don't know", urPK = "I don't know", taIN = "I don't know", teIN = "I don't know"
     },
     ["glhf"] = {
         esES = "Buena suerte y diviértete",
@@ -734,7 +734,7 @@ addonTable.SocialDict = {
         hiIN = "शुभकामनाएं और मजे करो",
         thTH = "โชคดีนะขอให้สนุก",
         viVN = "Chúc may mắn, chơi vui",
-        csCZ = "Hodně štěstí, bavte se",
+        csCZ = "Hodně štěstí, bavte se", nlNL = "Good luck, have fun", roRO = "Good luck, have fun", huHU = "Good luck, have fun", elGR = "Good luck, have fun", ukUA = "Good luck, have fun", daDK = "Good luck, have fun", fiFI = "Good luck, have fun", skSK = "Good luck, have fun", bgBG = "Good luck, have fun", hrHR = "Good luck, have fun", srRS = "Good luck, have fun", slSI = "Good luck, have fun", ltLT = "Good luck, have fun", lvLV = "Good luck, have fun", etEE = "Good luck, have fun", idID = "Good luck, have fun", msMY = "Good luck, have fun", faIR = "Good luck, have fun", heIL = "Good luck, have fun", bnBD = "Good luck, have fun", urPK = "Good luck, have fun", taIN = "Good luck, have fun", teIN = "Good luck, have fun"
     },
     ["gl"] = {
         esES = "Buena suerte",
@@ -757,7 +757,7 @@ addonTable.SocialDict = {
         hiIN = "सौभाग्य",
         thTH = "โชคดีนะ",
         viVN = "Chúc may mắn",
-        csCZ = "Hodně štěstí",
+        csCZ = "Hodně štěstí", nlNL = "Good luck", roRO = "Good luck", huHU = "Good luck", elGR = "Good luck", ukUA = "Good luck", daDK = "Good luck", fiFI = "Good luck", skSK = "Good luck", bgBG = "Good luck", hrHR = "Good luck", srRS = "Good luck", slSI = "Good luck", ltLT = "Good luck", lvLV = "Good luck", etEE = "Good luck", idID = "Good luck", msMY = "Good luck", faIR = "Good luck", heIL = "Good luck", bnBD = "Good luck", urPK = "Good luck", taIN = "Good luck", teIN = "Good luck"
     },
     ["asap"] = {
         esES = "Lo antes posible",
@@ -780,7 +780,7 @@ addonTable.SocialDict = {
         hiIN = "जितनी जल्दी हो सके",
         thTH = "โดยเร็วที่สุด",
         viVN = "Càng sớm càng tốt",
-        csCZ = "Co nejdříve",
+        csCZ = "Co nejdříve", nlNL = "As soon as possible", roRO = "As soon as possible", huHU = "As soon as possible", elGR = "As soon as possible", ukUA = "As soon as possible", daDK = "As soon as possible", fiFI = "As soon as possible", skSK = "As soon as possible", bgBG = "As soon as possible", hrHR = "As soon as possible", srRS = "As soon as possible", slSI = "As soon as possible", ltLT = "As soon as possible", lvLV = "As soon as possible", etEE = "As soon as possible", idID = "As soon as possible", msMY = "As soon as possible", faIR = "As soon as possible", heIL = "As soon as possible", bnBD = "As soon as possible", urPK = "As soon as possible", taIN = "As soon as possible", teIN = "As soon as possible"
     },
     ["nt"] = {
         esES = "Buen intento",
@@ -803,7 +803,7 @@ addonTable.SocialDict = {
         hiIN = "अच्छा प्रयास",
         thTH = "เกือบได้ละ",
         viVN = "Thử thách tốt",
-        csCZ = "Příště lépe",
+        csCZ = "Příště lépe", nlNL = "Nice try", roRO = "Nice try", huHU = "Nice try", elGR = "Nice try", ukUA = "Nice try", daDK = "Nice try", fiFI = "Nice try", skSK = "Nice try", bgBG = "Nice try", hrHR = "Nice try", srRS = "Nice try", slSI = "Nice try", ltLT = "Nice try", lvLV = "Nice try", etEE = "Nice try", idID = "Nice try", msMY = "Nice try", faIR = "Nice try", heIL = "Nice try", bnBD = "Nice try", urPK = "Nice try", taIN = "Nice try", teIN = "Nice try"
     },
     ["w8"] = {
         esES = "Espera",
@@ -826,7 +826,7 @@ addonTable.SocialDict = {
         hiIN = "रुको",
         thTH = "เดี๋ยว",
         viVN = "Chờ đã",
-        csCZ = "Čekej",
+        csCZ = "Čekej", nlNL = "Wait", roRO = "Wait", huHU = "Wait", elGR = "Wait", ukUA = "Wait", daDK = "Wait", fiFI = "Wait", skSK = "Wait", bgBG = "Wait", hrHR = "Wait", srRS = "Wait", slSI = "Wait", ltLT = "Wait", lvLV = "Wait", etEE = "Wait", idID = "Wait", msMY = "Wait", faIR = "Wait", heIL = "Wait", bnBD = "Wait", urPK = "Wait", taIN = "Wait", teIN = "Wait"
     },
     ["mb"] = {
         esES = "Mala mía",
@@ -849,7 +849,7 @@ addonTable.SocialDict = {
         hiIN = "मेरी गलती",
         thTH = "ความผิดของฉันเอง",
         viVN = "Lỗi của tôi",
-        csCZ = "Moje chyba",
+        csCZ = "Moje chyba", nlNL = "My bad", roRO = "My bad", huHU = "My bad", elGR = "My bad", ukUA = "My bad", daDK = "My bad", fiFI = "My bad", skSK = "My bad", bgBG = "My bad", hrHR = "My bad", srRS = "My bad", slSI = "My bad", ltLT = "My bad", lvLV = "My bad", etEE = "My bad", idID = "My bad", msMY = "My bad", faIR = "My bad", heIL = "My bad", bnBD = "My bad", urPK = "My bad", taIN = "My bad", teIN = "My bad"
     },
     ["omw"] = {
         esES = "En camino",
@@ -872,7 +872,7 @@ addonTable.SocialDict = {
         hiIN = "रास्ते में हूँ",
         thTH = "กำลังไป",
         viVN = "Đang trên đường",
-        csCZ = "Už jdu",
+        csCZ = "Už jdu", nlNL = "On my way", roRO = "On my way", huHU = "On my way", elGR = "On my way", ukUA = "On my way", daDK = "On my way", fiFI = "On my way", skSK = "On my way", bgBG = "On my way", hrHR = "On my way", srRS = "On my way", slSI = "On my way", ltLT = "On my way", lvLV = "On my way", etEE = "On my way", idID = "On my way", msMY = "On my way", faIR = "On my way", heIL = "On my way", bnBD = "On my way", urPK = "On my way", taIN = "On my way", teIN = "On my way"
     },
     ["inc"] = {
         esES = "En camino",
@@ -895,7 +895,7 @@ addonTable.SocialDict = {
         hiIN = "आ रहा है",
         thTH = "กำลังมา",
         viVN = "Đang đến",
-        csCZ = "Příchozí",
+        csCZ = "Příchozí", nlNL = "Incoming", roRO = "Incoming", huHU = "Incoming", elGR = "Incoming", ukUA = "Incoming", daDK = "Incoming", fiFI = "Incoming", skSK = "Incoming", bgBG = "Incoming", hrHR = "Incoming", srRS = "Incoming", slSI = "Incoming", ltLT = "Incoming", lvLV = "Incoming", etEE = "Incoming", idID = "Incoming", msMY = "Incoming", faIR = "Incoming", heIL = "Incoming", bnBD = "Incoming", urPK = "Incoming", taIN = "Incoming", teIN = "Incoming"
     },
     ["u2"] = {
         esES = "Tú también",
@@ -918,7 +918,7 @@ addonTable.SocialDict = {
         hiIN = "आप भी",
         thTH = "นายก็ด้วย",
         viVN = "Bạn cũng vậy",
-        csCZ = "Tobě taky",
+        csCZ = "Tobě taky", nlNL = "You too", roRO = "You too", huHU = "You too", elGR = "You too", ukUA = "You too", daDK = "You too", fiFI = "You too", skSK = "You too", bgBG = "You too", hrHR = "You too", srRS = "You too", slSI = "You too", ltLT = "You too", lvLV = "You too", etEE = "You too", idID = "You too", msMY = "You too", faIR = "You too", heIL = "You too", bnBD = "You too", urPK = "You too", taIN = "You too", teIN = "You too"
     },
     ["bb"] = {
         esES = "Adiós",
@@ -941,7 +941,7 @@ addonTable.SocialDict = {
         hiIN = "अलविदा",
         thTH = "ไปละนะ",
         viVN = "Tạm biệt",
-        csCZ = "Booty Bay",
+        csCZ = "Booty Bay", nlNL = "Bye bye", roRO = "Bye bye", huHU = "Bye bye", elGR = "Bye bye", ukUA = "Bye bye", daDK = "Bye bye", fiFI = "Bye bye", skSK = "Bye bye", bgBG = "Bye bye", hrHR = "Bye bye", srRS = "Bye bye", slSI = "Bye bye", ltLT = "Bye bye", lvLV = "Bye bye", etEE = "Bye bye", idID = "Bye bye", msMY = "Bye bye", faIR = "Bye bye", heIL = "Bye bye", bnBD = "Bye bye", urPK = "Bye bye", taIN = "Bye bye", teIN = "Bye bye"
     },
     ["kk"] = {
         esES = "Vale",
@@ -964,7 +964,7 @@ addonTable.SocialDict = {
         hiIN = "ठीक है",
         thTH = "เคๆ",
         viVN = "Đồng ý",
-        csCZ = "Dobře",
+        csCZ = "Dobře", nlNL = "Ok", roRO = "Ok", huHU = "Ok", elGR = "Ok", ukUA = "Ok", daDK = "Ok", fiFI = "Ok", skSK = "Ok", bgBG = "Ok", hrHR = "Ok", srRS = "Ok", slSI = "Ok", ltLT = "Ok", lvLV = "Ok", etEE = "Ok", idID = "Ok", msMY = "Ok", faIR = "Ok", heIL = "Ok", bnBD = "Ok", urPK = "Ok", taIN = "Ok", teIN = "Ok"
     },
     ["afk"] = {
         esES = "Ausente",
@@ -987,7 +987,7 @@ addonTable.SocialDict = {
         hiIN = "एएफके",
         thTH = "เอเอฟเค",
         viVN = "Tạm rời máy",
-        csCZ = "AFK",
+        csCZ = "AFK", nlNL = "Away from Keyboard", roRO = "Away from Keyboard", huHU = "Away from Keyboard", elGR = "Away from Keyboard", ukUA = "Away from Keyboard", daDK = "Away from Keyboard", fiFI = "Away from Keyboard", skSK = "Away from Keyboard", bgBG = "Away from Keyboard", hrHR = "Away from Keyboard", srRS = "Away from Keyboard", slSI = "Away from Keyboard", ltLT = "Away from Keyboard", lvLV = "Away from Keyboard", etEE = "Away from Keyboard", idID = "Away from Keyboard", msMY = "Away from Keyboard", faIR = "Away from Keyboard", heIL = "Away from Keyboard", bnBD = "Away from Keyboard", urPK = "Away from Keyboard", taIN = "Away from Keyboard", teIN = "Away from Keyboard"
     },
     ["brb"] = {
         esES = "Vuelvo enseguida",
@@ -1010,7 +1010,7 @@ addonTable.SocialDict = {
         hiIN = "अभी आता हूँ",
         thTH = "เดี๋ยวมา",
         viVN = "Sẽ quay lại ngay",
-        csCZ = "Hned jsem zpět",
+        csCZ = "Hned jsem zpět", nlNL = "Be right back", roRO = "Be right back", huHU = "Be right back", elGR = "Be right back", ukUA = "Be right back", daDK = "Be right back", fiFI = "Be right back", skSK = "Be right back", bgBG = "Be right back", hrHR = "Be right back", srRS = "Be right back", slSI = "Be right back", ltLT = "Be right back", lvLV = "Be right back", etEE = "Be right back", idID = "Be right back", msMY = "Be right back", faIR = "Be right back", heIL = "Be right back", bnBD = "Be right back", urPK = "Be right back", taIN = "Be right back", teIN = "Be right back"
     },
     ["chill"] = {
         esES = "Tranquilo",
@@ -1033,7 +1033,7 @@ addonTable.SocialDict = {
         hiIN = "शांत रहो",
         thTH = "ใจเย็น",
         viVN = "Thư giãn đi",
-        csCZ = "Klídek",
+        csCZ = "Klídek", nlNL = "Chill", roRO = "Chill", huHU = "Chill", elGR = "Chill", ukUA = "Chill", daDK = "Chill", fiFI = "Chill", skSK = "Chill", bgBG = "Chill", hrHR = "Chill", srRS = "Chill", slSI = "Chill", ltLT = "Chill", lvLV = "Chill", etEE = "Chill", idID = "Chill", msMY = "Chill", faIR = "Chill", heIL = "Chill", bnBD = "Chill", urPK = "Chill", taIN = "Chill", teIN = "Chill"
     },
     ["ffs"] = {
         esES = "Por el amor de Dios",
@@ -1056,7 +1056,7 @@ addonTable.SocialDict = {
         hiIN = "भगवान के लिए",
         thTH = "เพื่ออะไรเนี่ย",
         viVN = "Vì chúa",
-        csCZ = "Proboha",
+        csCZ = "Proboha", nlNL = "For fuck's sake", roRO = "For fuck's sake", huHU = "For fuck's sake", elGR = "For fuck's sake", ukUA = "For fuck's sake", daDK = "For fuck's sake", fiFI = "For fuck's sake", skSK = "For fuck's sake", bgBG = "For fuck's sake", hrHR = "For fuck's sake", srRS = "For fuck's sake", slSI = "For fuck's sake", ltLT = "For fuck's sake", lvLV = "For fuck's sake", etEE = "For fuck's sake", idID = "For fuck's sake", msMY = "For fuck's sake", faIR = "For fuck's sake", heIL = "For fuck's sake", bnBD = "For fuck's sake", urPK = "For fuck's sake", taIN = "For fuck's sake", teIN = "For fuck's sake"
     },
     ["bk"] = {
         esES = "Vuelvo",
@@ -1079,7 +1079,7 @@ addonTable.SocialDict = {
         hiIN = "वापस",
         thTH = "กลับมาละ",
         viVN = "Đã về",
-        csCZ = "Black Temple",
+        csCZ = "Black Temple", nlNL = "Back", roRO = "Back", huHU = "Back", elGR = "Back", ukUA = "Back", daDK = "Back", fiFI = "Back", skSK = "Back", bgBG = "Back", hrHR = "Back", srRS = "Back", slSI = "Back", ltLT = "Back", lvLV = "Back", etEE = "Back", idID = "Back", msMY = "Back", faIR = "Back", heIL = "Back", bnBD = "Back", urPK = "Back", taIN = "Back", teIN = "Back"
     },
     ["gratz"] = {
         esES = "Felicidades",
@@ -1102,7 +1102,7 @@ addonTable.SocialDict = {
         hiIN = "बधाई हो",
         thTH = "ยินดีด้วย",
         viVN = "Chúc mừng",
-        csCZ = "Gratuluji",
+        csCZ = "Gratuluji", nlNL = "Gratz", roRO = "Gratz", huHU = "Gratz", elGR = "Gratz", ukUA = "Gratz", daDK = "Gratz", fiFI = "Gratz", skSK = "Gratz", bgBG = "Gratz", hrHR = "Gratz", srRS = "Gratz", slSI = "Gratz", ltLT = "Gratz", lvLV = "Gratz", etEE = "Gratz", idID = "Gratz", msMY = "Gratz", faIR = "Gratz", heIL = "Gratz", bnBD = "Gratz", urPK = "Gratz", taIN = "Gratz", teIN = "Gratz"
     },
     ["rng"] = {
         esES = "Suerte aleatoria",
@@ -1125,7 +1125,7 @@ addonTable.SocialDict = {
         hiIN = "आरएनजी",
         thTH = "อาร์เอ็นจี",
         viVN = "Bộ tạo số ngẫu nhiên",
-        csCZ = "Náhoda (RNG)",
+        csCZ = "Náhoda (RNG)", nlNL = "Random number generator", roRO = "Random number generator", huHU = "Random number generator", elGR = "Random number generator", ukUA = "Random number generator", daDK = "Random number generator", fiFI = "Random number generator", skSK = "Random number generator", bgBG = "Random number generator", hrHR = "Random number generator", srRS = "Random number generator", slSI = "Random number generator", ltLT = "Random number generator", lvLV = "Random number generator", etEE = "Random number generator", idID = "Random number generator", msMY = "Random number generator", faIR = "Random number generator", heIL = "Random number generator", bnBD = "Random number generator", urPK = "Random number generator", taIN = "Random number generator", teIN = "Random number generator"
     },
     ["ggwp"] = {
         esES = "Buen juego, bien jugado",
@@ -1148,7 +1148,7 @@ addonTable.SocialDict = {
         hiIN = "अच्छा खेल, अच्छी तरह से खेला गया",
         thTH = "จีจีดับเบิลยูพี",
         viVN = "Trận đấu hay, chơi tốt",
-        csCZ = "Dobrá hra, dobře zahráno",
+        csCZ = "Dobrá hra, dobře zahráno", nlNL = "Good game, well played", roRO = "Good game, well played", huHU = "Good game, well played", elGR = "Good game, well played", ukUA = "Good game, well played", daDK = "Good game, well played", fiFI = "Good game, well played", skSK = "Good game, well played", bgBG = "Good game, well played", hrHR = "Good game, well played", srRS = "Good game, well played", slSI = "Good game, well played", ltLT = "Good game, well played", lvLV = "Good game, well played", etEE = "Good game, well played", idID = "Good game, well played", msMY = "Good game, well played", faIR = "Good game, well played", heIL = "Good game, well played", bnBD = "Good game, well played", urPK = "Good game, well played", taIN = "Good game, well played", teIN = "Good game, well played"
     },
     ["wp"] = {
         esES = "Bien jugado",
@@ -1171,7 +1171,7 @@ addonTable.SocialDict = {
         hiIN = "अच्छी तरह से खेला गया",
         thTH = "เล่นดีมาก",
         viVN = "Chơi tốt",
-        csCZ = "Dobře zahráno",
+        csCZ = "Dobře zahráno", nlNL = "Well played", roRO = "Well played", huHU = "Well played", elGR = "Well played", ukUA = "Well played", daDK = "Well played", fiFI = "Well played", skSK = "Well played", bgBG = "Well played", hrHR = "Well played", srRS = "Well played", slSI = "Well played", ltLT = "Well played", lvLV = "Well played", etEE = "Well played", idID = "Well played", msMY = "Well played", faIR = "Well played", heIL = "Well played", bnBD = "Well played", urPK = "Well played", taIN = "Well played", teIN = "Well played"
     },
     ["idd"] = {
         esES = "Cierto",
@@ -1194,7 +1194,7 @@ addonTable.SocialDict = {
         hiIN = "वास्तव में",
         thTH = "จริงๆ ด้วย",
         viVN = "Quả thực",
-        csCZ = "Opravdu",
+        csCZ = "Opravdu", nlNL = "Indeed", roRO = "Indeed", huHU = "Indeed", elGR = "Indeed", ukUA = "Indeed", daDK = "Indeed", fiFI = "Indeed", skSK = "Indeed", bgBG = "Indeed", hrHR = "Indeed", srRS = "Indeed", slSI = "Indeed", ltLT = "Indeed", lvLV = "Indeed", etEE = "Indeed", idID = "Indeed", msMY = "Indeed", faIR = "Indeed", heIL = "Indeed", bnBD = "Indeed", urPK = "Indeed", taIN = "Indeed", teIN = "Indeed"
     },
     ["idc"] = {
         esES = "Me da igual",
@@ -1217,7 +1217,7 @@ addonTable.SocialDict = {
         hiIN = "मुझे परवाह नहीं है",
         thTH = "ไม่สนอะ",
         viVN = "Tôi không quan tâm",
-        csCZ = "Je mi to jedno",
+        csCZ = "Je mi to jedno", nlNL = "I don't care", roRO = "I don't care", huHU = "I don't care", elGR = "I don't care", ukUA = "I don't care", daDK = "I don't care", fiFI = "I don't care", skSK = "I don't care", bgBG = "I don't care", hrHR = "I don't care", srRS = "I don't care", slSI = "I don't care", ltLT = "I don't care", lvLV = "I don't care", etEE = "I don't care", idID = "I don't care", msMY = "I don't care", faIR = "I don't care", heIL = "I don't care", bnBD = "I don't care", urPK = "I don't care", taIN = "I don't care", teIN = "I don't care"
     },
     ["idm"] = {
         esES = "No me importa",
@@ -1240,7 +1240,7 @@ addonTable.SocialDict = {
         hiIN = "मुझे कोई आपत्ति नहीं है",
         thTH = "ไม่เป็นไร",
         viVN = "Tôi không phiền",
-        csCZ = "Nevadí mi to",
+        csCZ = "Nevadí mi to", nlNL = "I don't mind", roRO = "I don't mind", huHU = "I don't mind", elGR = "I don't mind", ukUA = "I don't mind", daDK = "I don't mind", fiFI = "I don't mind", skSK = "I don't mind", bgBG = "I don't mind", hrHR = "I don't mind", srRS = "I don't mind", slSI = "I don't mind", ltLT = "I don't mind", lvLV = "I don't mind", etEE = "I don't mind", idID = "I don't mind", msMY = "I don't mind", faIR = "I don't mind", heIL = "I don't mind", bnBD = "I don't mind", urPK = "I don't mind", taIN = "I don't mind", teIN = "I don't mind"
     },
     ["ftw"] = {
         esES = "¡A por la victoria!",
@@ -1263,7 +1263,7 @@ addonTable.SocialDict = {
         hiIN = "जीत के लिए",
         thTH = "เพื่อชัยชนะ",
         viVN = "Vì chiến thắng",
-        csCZ = "Pro výhru",
+        csCZ = "Pro výhru", nlNL = "For the win", roRO = "For the win", huHU = "For the win", elGR = "For the win", ukUA = "For the win", daDK = "For the win", fiFI = "For the win", skSK = "For the win", bgBG = "For the win", hrHR = "For the win", srRS = "For the win", slSI = "For the win", ltLT = "For the win", lvLV = "For the win", etEE = "For the win", idID = "For the win", msMY = "For the win", faIR = "For the win", heIL = "For the win", bnBD = "For the win", urPK = "For the win", taIN = "For the win", teIN = "For the win"
     },
     ["ftl"] = {
         esES = "Qué desastre",
@@ -1286,7 +1286,7 @@ addonTable.SocialDict = {
         hiIN = "हार के लिए",
         thTH = "เพื่อความพ่ายแพ้",
         viVN = "Vì thất bại",
-        csCZ = "Prohru",
+        csCZ = "Prohru", nlNL = "For the loss", roRO = "For the loss", huHU = "For the loss", elGR = "For the loss", ukUA = "For the loss", daDK = "For the loss", fiFI = "For the loss", skSK = "For the loss", bgBG = "For the loss", hrHR = "For the loss", srRS = "For the loss", slSI = "For the loss", ltLT = "For the loss", lvLV = "For the loss", etEE = "For the loss", idID = "For the loss", msMY = "For the loss", faIR = "For the loss", heIL = "For the loss", bnBD = "For the loss", urPK = "For the loss", taIN = "For the loss", teIN = "For the loss"
     },
     ["iamf"] = {
         esES = "Es todo culpa mía",
@@ -1309,7 +1309,7 @@ addonTable.SocialDict = {
         hiIN = "यह सब मेरी गलती है",
         thTH = "ทั้งหมดเป็นความผิดฉันเอง",
         viVN = "Tất cả là lỗi của tôi",
-        csCZ = "Jsem AFK",
+        csCZ = "Jsem AFK", nlNL = "It's all my fault", roRO = "It's all my fault", huHU = "It's all my fault", elGR = "It's all my fault", ukUA = "It's all my fault", daDK = "It's all my fault", fiFI = "It's all my fault", skSK = "It's all my fault", bgBG = "It's all my fault", hrHR = "It's all my fault", srRS = "It's all my fault", slSI = "It's all my fault", ltLT = "It's all my fault", lvLV = "It's all my fault", etEE = "It's all my fault", idID = "It's all my fault", msMY = "It's all my fault", faIR = "It's all my fault", heIL = "It's all my fault", bnBD = "It's all my fault", urPK = "It's all my fault", taIN = "It's all my fault", teIN = "It's all my fault"
     },
     ["atm"] = {
         esES = "Ahora mismo",
@@ -1332,7 +1332,7 @@ addonTable.SocialDict = {
         hiIN = "इस समय",
         thTH = "ณ ตอนนี้",
         viVN = "Tại thời điểm này",
-        csCZ = "Momentálně",
+        csCZ = "Momentálně", nlNL = "At the moment", roRO = "At the moment", huHU = "At the moment", elGR = "At the moment", ukUA = "At the moment", daDK = "At the moment", fiFI = "At the moment", skSK = "At the moment", bgBG = "At the moment", hrHR = "At the moment", srRS = "At the moment", slSI = "At the moment", ltLT = "At the moment", lvLV = "At the moment", etEE = "At the moment", idID = "At the moment", msMY = "At the moment", faIR = "At the moment", heIL = "At the moment", bnBD = "At the moment", urPK = "At the moment", taIN = "At the moment", teIN = "At the moment"
     },
     ["g2g"] = {
         esES = "Me tengo que ir",
@@ -1355,7 +1355,7 @@ addonTable.SocialDict = {
         hiIN = "जाना है",
         thTH = "ต้องไปละ",
         viVN = "Phải đi rồi",
-        csCZ = "Musím jít",
+        csCZ = "Musím jít", nlNL = "Got to go", roRO = "Got to go", huHU = "Got to go", elGR = "Got to go", ukUA = "Got to go", daDK = "Got to go", fiFI = "Got to go", skSK = "Got to go", bgBG = "Got to go", hrHR = "Got to go", srRS = "Got to go", slSI = "Got to go", ltLT = "Got to go", lvLV = "Got to go", etEE = "Got to go", idID = "Got to go", msMY = "Got to go", faIR = "Got to go", heIL = "Got to go", bnBD = "Got to go", urPK = "Got to go", taIN = "Got to go", teIN = "Got to go"
     },
     ["gtg"] = {
         esES = "Me tengo que ir",
@@ -1378,7 +1378,7 @@ addonTable.SocialDict = {
         hiIN = "जाना है",
         thTH = "ต้องไปละ",
         viVN = "Phải đi rồi",
-        csCZ = "Musím jít",
+        csCZ = "Musím jít", nlNL = "Got to go", roRO = "Got to go", huHU = "Got to go", elGR = "Got to go", ukUA = "Got to go", daDK = "Got to go", fiFI = "Got to go", skSK = "Got to go", bgBG = "Got to go", hrHR = "Got to go", srRS = "Got to go", slSI = "Got to go", ltLT = "Got to go", lvLV = "Got to go", etEE = "Got to go", idID = "Got to go", msMY = "Got to go", faIR = "Got to go", heIL = "Got to go", bnBD = "Got to go", urPK = "Got to go", taIN = "Got to go", teIN = "Got to go"
     },
     ["nw"] = {
         esES = "No te preocupes",
@@ -1401,7 +1401,7 @@ addonTable.SocialDict = {
         hiIN = "कोई बात नहीं",
         thTH = "ไม่ต้องห่วง",
         viVN = "Không sao đâu",
-        csCZ = "Necrotic Wake",
+        csCZ = "Necrotic Wake", nlNL = "No worries", roRO = "No worries", huHU = "No worries", elGR = "No worries", ukUA = "No worries", daDK = "No worries", fiFI = "No worries", skSK = "No worries", bgBG = "No worries", hrHR = "No worries", srRS = "No worries", slSI = "No worries", ltLT = "No worries", lvLV = "No worries", etEE = "No worries", idID = "No worries", msMY = "No worries", faIR = "No worries", heIL = "No worries", bnBD = "No worries", urPK = "No worries", taIN = "No worries", teIN = "No worries"
     },
     ["trap"] = {
         esES = "Trampa",
@@ -1424,7 +1424,7 @@ addonTable.SocialDict = {
         hiIN = "जाल",
         thTH = "กับดัก",
         viVN = "Bẫy",
-        csCZ = "Past",
+        csCZ = "Past", nlNL = "Trap", roRO = "Trap", huHU = "Trap", elGR = "Trap", ukUA = "Trap", daDK = "Trap", fiFI = "Trap", skSK = "Trap", bgBG = "Trap", hrHR = "Trap", srRS = "Trap", slSI = "Trap", ltLT = "Trap", lvLV = "Trap", etEE = "Trap", idID = "Trap", msMY = "Trap", faIR = "Trap", heIL = "Trap", bnBD = "Trap", urPK = "Trap", taIN = "Trap", teIN = "Trap"
     },
     ["kek"] = {
         esES = "Risa",
@@ -1447,7 +1447,7 @@ addonTable.SocialDict = {
         hiIN = "हाहा",
         thTH = "ฮ่าๆ",
         viVN = "Cười lớn",
-        csCZ = "Kek",
+        csCZ = "Kek", nlNL = "LOL", roRO = "LOL", huHU = "LOL", elGR = "LOL", ukUA = "LOL", daDK = "LOL", fiFI = "LOL", skSK = "LOL", bgBG = "LOL", hrHR = "LOL", srRS = "LOL", slSI = "LOL", ltLT = "LOL", lvLV = "LOL", etEE = "LOL", idID = "LOL", msMY = "LOL", faIR = "LOL", heIL = "LOL", bnBD = "LOL", urPK = "LOL", taIN = "LOL", teIN = "LOL"
     },
     ["pog"] = {
         esES = "Increíble",
@@ -1470,7 +1470,7 @@ addonTable.SocialDict = {
         hiIN = "अद्भुत",
         thTH = "สุดยอด",
         viVN = "Tuyệt vời",
-        csCZ = "Pog",
+        csCZ = "Pog", nlNL = "Amazing", roRO = "Amazing", huHU = "Amazing", elGR = "Amazing", ukUA = "Amazing", daDK = "Amazing", fiFI = "Amazing", skSK = "Amazing", bgBG = "Amazing", hrHR = "Amazing", srRS = "Amazing", slSI = "Amazing", ltLT = "Amazing", lvLV = "Amazing", etEE = "Amazing", idID = "Amazing", msMY = "Amazing", faIR = "Amazing", heIL = "Amazing", bnBD = "Amazing", urPK = "Amazing", taIN = "Amazing", teIN = "Amazing"
     },
     ["sus"] = {
         esES = "Sospechoso",
@@ -1493,7 +1493,7 @@ addonTable.SocialDict = {
         hiIN = "संदिग्ध",
         thTH = "น่าสงสัย",
         viVN = "Đáng nghi",
-        csCZ = "Podezřelé",
+        csCZ = "Podezřelé", nlNL = "Suspicious", roRO = "Suspicious", huHU = "Suspicious", elGR = "Suspicious", ukUA = "Suspicious", daDK = "Suspicious", fiFI = "Suspicious", skSK = "Suspicious", bgBG = "Suspicious", hrHR = "Suspicious", srRS = "Suspicious", slSI = "Suspicious", ltLT = "Suspicious", lvLV = "Suspicious", etEE = "Suspicious", idID = "Suspicious", msMY = "Suspicious", faIR = "Suspicious", heIL = "Suspicious", bnBD = "Suspicious", urPK = "Suspicious", taIN = "Suspicious", teIN = "Suspicious"
     },
     ["meta"] = {
         esES = "Lo más efectivo",
@@ -1516,7 +1516,7 @@ addonTable.SocialDict = {
         hiIN = "मेटा",
         thTH = "เมต้า",
         viVN = "Meta",
-        csCZ = "Meta",
+        csCZ = "Meta", nlNL = "Most Effective Tactic", roRO = "Most Effective Tactic", huHU = "Most Effective Tactic", elGR = "Most Effective Tactic", ukUA = "Most Effective Tactic", daDK = "Most Effective Tactic", fiFI = "Most Effective Tactic", skSK = "Most Effective Tactic", bgBG = "Most Effective Tactic", hrHR = "Most Effective Tactic", srRS = "Most Effective Tactic", slSI = "Most Effective Tactic", ltLT = "Most Effective Tactic", lvLV = "Most Effective Tactic", etEE = "Most Effective Tactic", idID = "Most Effective Tactic", msMY = "Most Effective Tactic", faIR = "Most Effective Tactic", heIL = "Most Effective Tactic", bnBD = "Most Effective Tactic", urPK = "Most Effective Tactic", taIN = "Most Effective Tactic", teIN = "Most Effective Tactic"
     },
     ["toxic"] = {
         esES = "Tóxico",
@@ -1539,7 +1539,7 @@ addonTable.SocialDict = {
         hiIN = "विषैला",
         thTH = "ท็อกซิก",
         viVN = "Độc hại",
-        csCZ = "Toxický",
+        csCZ = "Toxický", nlNL = "Toxic", roRO = "Toxic", huHU = "Toxic", elGR = "Toxic", ukUA = "Toxic", daDK = "Toxic", fiFI = "Toxic", skSK = "Toxic", bgBG = "Toxic", hrHR = "Toxic", srRS = "Toxic", slSI = "Toxic", ltLT = "Toxic", lvLV = "Toxic", etEE = "Toxic", idID = "Toxic", msMY = "Toxic", faIR = "Toxic", heIL = "Toxic", bnBD = "Toxic", urPK = "Toxic", taIN = "Toxic", teIN = "Toxic"
     },
     ["cope"] = {
         esES = "Resignación",
@@ -1562,7 +1562,7 @@ addonTable.SocialDict = {
         hiIN = "सामना करना",
         thTH = "ทำใจซะ",
         viVN = "Chấp nhận đi",
-        csCZ = "Vypořádat se",
+        csCZ = "Vypořádat se", nlNL = "Cope", roRO = "Cope", huHU = "Cope", elGR = "Cope", ukUA = "Cope", daDK = "Cope", fiFI = "Cope", skSK = "Cope", bgBG = "Cope", hrHR = "Cope", srRS = "Cope", slSI = "Cope", ltLT = "Cope", lvLV = "Cope", etEE = "Cope", idID = "Cope", msMY = "Cope", faIR = "Cope", heIL = "Cope", bnBD = "Cope", urPK = "Cope", taIN = "Cope", teIN = "Cope"
     },
     ["noob"] = {
         esES = "Novato",
@@ -1585,7 +1585,7 @@ addonTable.SocialDict = {
         hiIN = "नौसिखिया",
         thTH = "นูบ",
         viVN = "Người mới",
-        csCZ = "Noob",
+        csCZ = "Noob", nlNL = "Newbie", roRO = "Newbie", huHU = "Newbie", elGR = "Newbie", ukUA = "Newbie", daDK = "Newbie", fiFI = "Newbie", skSK = "Newbie", bgBG = "Newbie", hrHR = "Newbie", srRS = "Newbie", slSI = "Newbie", ltLT = "Newbie", lvLV = "Newbie", etEE = "Newbie", idID = "Newbie", msMY = "Newbie", faIR = "Newbie", heIL = "Newbie", bnBD = "Newbie", urPK = "Newbie", taIN = "Newbie", teIN = "Newbie"
     },
     ["grind"] = {
         esES = "Repetir acciones",
@@ -1608,7 +1608,7 @@ addonTable.SocialDict = {
         hiIN = "पीसना",
         thTH = "ฟาร์มของ",
         viVN = "Cày cuốc",
-        csCZ = "Grindování",
+        csCZ = "Grindování", nlNL = "Grinding", roRO = "Grinding", huHU = "Grinding", elGR = "Grinding", ukUA = "Grinding", daDK = "Grinding", fiFI = "Grinding", skSK = "Grinding", bgBG = "Grinding", hrHR = "Grinding", srRS = "Grinding", slSI = "Grinding", ltLT = "Grinding", lvLV = "Grinding", etEE = "Grinding", idID = "Grinding", msMY = "Grinding", faIR = "Grinding", heIL = "Grinding", bnBD = "Grinding", urPK = "Grinding", taIN = "Grinding", teIN = "Grinding"
     },
     ["farm"] = {
         esES = "Recolectar",
@@ -1631,7 +1631,7 @@ addonTable.SocialDict = {
         hiIN = "खेती",
         thTH = "ฟาร์ม",
         viVN = "Farming",
-        csCZ = "Farma",
+        csCZ = "Farma", nlNL = "Farming", roRO = "Farming", huHU = "Farming", elGR = "Farming", ukUA = "Farming", daDK = "Farming", fiFI = "Farming", skSK = "Farming", bgBG = "Farming", hrHR = "Farming", srRS = "Farming", slSI = "Farming", ltLT = "Farming", lvLV = "Farming", etEE = "Farming", idID = "Farming", msMY = "Farming", faIR = "Farming", heIL = "Farming", bnBD = "Farming", urPK = "Farming", taIN = "Farming", teIN = "Farming"
     },
     ["tyvm"] = {
         esES = "Muchas gracias",
@@ -1654,7 +1654,7 @@ addonTable.SocialDict = {
         hiIN = "आपका बहुत-बहुत धन्यवाद",
         thTH = "ขอบคุณมาก",
         viVN = "Cảm ơn rất nhiều",
-        csCZ = "Díky moc",
+        csCZ = "Díky moc", nlNL = "Thank you very much", roRO = "Thank you very much", huHU = "Thank you very much", elGR = "Thank you very much", ukUA = "Thank you very much", daDK = "Thank you very much", fiFI = "Thank you very much", skSK = "Thank you very much", bgBG = "Thank you very much", hrHR = "Thank you very much", srRS = "Thank you very much", slSI = "Thank you very much", ltLT = "Thank you very much", lvLV = "Thank you very much", etEE = "Thank you very much", idID = "Thank you very much", msMY = "Thank you very much", faIR = "Thank you very much", heIL = "Thank you very much", bnBD = "Thank you very much", urPK = "Thank you very much", taIN = "Thank you very much", teIN = "Thank you very much"
     },
     ["yw"] = {
         esES = "De nada",
@@ -1677,7 +1677,7 @@ addonTable.SocialDict = {
         hiIN = "आपका स्वागत है",
         thTH = "ไม่เป็นไร",
         viVN = "Không có gì",
-        csCZ = "Nemáš zač",
+        csCZ = "Nemáš zač", nlNL = "You're welcome", roRO = "You're welcome", huHU = "You're welcome", elGR = "You're welcome", ukUA = "You're welcome", daDK = "You're welcome", fiFI = "You're welcome", skSK = "You're welcome", bgBG = "You're welcome", hrHR = "You're welcome", srRS = "You're welcome", slSI = "You're welcome", ltLT = "You're welcome", lvLV = "You're welcome", etEE = "You're welcome", idID = "You're welcome", msMY = "You're welcome", faIR = "You're welcome", heIL = "You're welcome", bnBD = "You're welcome", urPK = "You're welcome", taIN = "You're welcome", teIN = "You're welcome"
     },
     ["rdy"] = {
         esES = "Listo",
@@ -1700,7 +1700,7 @@ addonTable.SocialDict = {
         hiIN = "तैयार",
         thTH = "พร้อม",
         viVN = "Sẵn sàng",
-        csCZ = "Připraven",
+        csCZ = "Připraven", nlNL = "Ready", roRO = "Ready", huHU = "Ready", elGR = "Ready", ukUA = "Ready", daDK = "Ready", fiFI = "Ready", skSK = "Ready", bgBG = "Ready", hrHR = "Ready", srRS = "Ready", slSI = "Ready", ltLT = "Ready", lvLV = "Ready", etEE = "Ready", idID = "Ready", msMY = "Ready", faIR = "Ready", heIL = "Ready", bnBD = "Ready", urPK = "Ready", taIN = "Ready", teIN = "Ready"
     },
     ["sec"] = {
         esES = "Un segundo",
@@ -1723,7 +1723,7 @@ addonTable.SocialDict = {
         hiIN = "एक सेकंड",
         thTH = "แป๊บนึง",
         viVN = "Chờ một chút",
-        csCZ = "Vteřina",
+        csCZ = "Vteřina", nlNL = "One second", roRO = "One second", huHU = "One second", elGR = "One second", ukUA = "One second", daDK = "One second", fiFI = "One second", skSK = "One second", bgBG = "One second", hrHR = "One second", srRS = "One second", slSI = "One second", ltLT = "One second", lvLV = "One second", etEE = "One second", idID = "One second", msMY = "One second", faIR = "One second", heIL = "One second", bnBD = "One second", urPK = "One second", taIN = "One second", teIN = "One second"
     },
     ["pls"] = {
         esES = "Por favor",
@@ -1746,7 +1746,7 @@ addonTable.SocialDict = {
         hiIN = "कृपया",
         thTH = "ได้โปรด",
         viVN = "Làm ơn",
-        csCZ = "Prosím",
+        csCZ = "Prosím", nlNL = "Please", roRO = "Please", huHU = "Please", elGR = "Please", ukUA = "Please", daDK = "Please", fiFI = "Please", skSK = "Please", bgBG = "Please", hrHR = "Please", srRS = "Please", slSI = "Please", ltLT = "Please", lvLV = "Please", etEE = "Please", idID = "Please", msMY = "Please", faIR = "Please", heIL = "Please", bnBD = "Please", urPK = "Please", taIN = "Please", teIN = "Please"
     },
     ["plz"] = {
         esES = "Por favor",
@@ -1769,7 +1769,7 @@ addonTable.SocialDict = {
         hiIN = "कृपया",
         thTH = "ได้โปรด",
         viVN = "Làm ơn",
-        csCZ = "Prosím",
+        csCZ = "Prosím", nlNL = "Please", roRO = "Please", huHU = "Please", elGR = "Please", ukUA = "Please", daDK = "Please", fiFI = "Please", skSK = "Please", bgBG = "Please", hrHR = "Please", srRS = "Please", slSI = "Please", ltLT = "Please", lvLV = "Please", etEE = "Please", idID = "Please", msMY = "Please", faIR = "Please", heIL = "Please", bnBD = "Please", urPK = "Please", taIN = "Please", teIN = "Please"
     },
     ["cya"] = {
         esES = "Nos vemos",
@@ -1792,7 +1792,7 @@ addonTable.SocialDict = {
         hiIN = "फिर मिलते हैं",
         thTH = "แล้วเจอกัน",
         viVN = "Hẹn gặp lại",
-        csCZ = "Zatím",
+        csCZ = "Zatím", nlNL = "See ya", roRO = "See ya", huHU = "See ya", elGR = "See ya", ukUA = "See ya", daDK = "See ya", fiFI = "See ya", skSK = "See ya", bgBG = "See ya", hrHR = "See ya", srRS = "See ya", slSI = "See ya", ltLT = "See ya", lvLV = "See ya", etEE = "See ya", idID = "See ya", msMY = "See ya", faIR = "See ya", heIL = "See ya", bnBD = "See ya", urPK = "See ya", taIN = "See ya", teIN = "See ya"
     },
     ["gn"] = {
         esES = "Buenas noches",
@@ -1815,7 +1815,7 @@ addonTable.SocialDict = {
         hiIN = "शुभ रात्रि",
         thTH = "ฝันดี",
         viVN = "Chúc ngủ ngon",
-        csCZ = "Dobrou noc",
+        csCZ = "Dobrou noc", nlNL = "Good night", roRO = "Good night", huHU = "Good night", elGR = "Good night", ukUA = "Good night", daDK = "Good night", fiFI = "Good night", skSK = "Good night", bgBG = "Good night", hrHR = "Good night", srRS = "Good night", slSI = "Good night", ltLT = "Good night", lvLV = "Good night", etEE = "Good night", idID = "Good night", msMY = "Good night", faIR = "Good night", heIL = "Good night", bnBD = "Good night", urPK = "Good night", taIN = "Good night", teIN = "Good night"
     },
     ["gm"] = {
         esES = "Buenos días",
@@ -1838,6 +1838,6 @@ addonTable.SocialDict = {
         hiIN = "सुप्रभात",
         thTH = "อรุณสวัสดิ์",
         viVN = "Chào buổi sáng",
-        csCZ = "Mistr gildy",
+        csCZ = "Mistr gildy", nlNL = "Good morning", roRO = "Good morning", huHU = "Good morning", elGR = "Good morning", ukUA = "Good morning", daDK = "Good morning", fiFI = "Good morning", skSK = "Good morning", bgBG = "Good morning", hrHR = "Good morning", srRS = "Good morning", slSI = "Good morning", ltLT = "Good morning", lvLV = "Good morning", etEE = "Good morning", idID = "Good morning", msMY = "Good morning", faIR = "Good morning", heIL = "Good morning", bnBD = "Good morning", urPK = "Good morning", taIN = "Good morning", teIN = "Good morning"
     }
 }

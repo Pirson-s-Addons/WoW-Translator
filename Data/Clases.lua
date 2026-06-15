@@ -22,7 +22,7 @@ addonTable.ClasesDict = {
         hiIN = "मुख्य विशेषज्ञता",
         thTH = "สายหลัก",
         viVN = "Chuyên môn chính",
-        csCZ = "Hlavní specializace",
+        csCZ = "Hlavní specializace", nlNL = "Main Spec", roRO = "Main Spec", huHU = "Main Spec", elGR = "Main Spec", ukUA = "Main Spec", daDK = "Main Spec", fiFI = "Main Spec", skSK = "Main Spec", bgBG = "Main Spec", hrHR = "Main Spec", srRS = "Main Spec", slSI = "Main Spec", ltLT = "Main Spec", lvLV = "Main Spec", etEE = "Main Spec", idID = "Main Spec", msMY = "Main Spec", faIR = "Main Spec", heIL = "Main Spec", bnBD = "Main Spec", urPK = "Main Spec", taIN = "Main Spec", teIN = "Main Spec"
     },
     ["os"]          = {
         esES = "Rama Secundaria",
@@ -45,7 +45,7 @@ addonTable.ClasesDict = {
         hiIN = "वैकल्पिक विशेषज्ञता",
         thTH = "สายรอง",
         viVN = "Chuyên môn phụ",
-        csCZ = "Vedlejší specializace",
+        csCZ = "Vedlejší specializace", nlNL = "Off Spec", roRO = "Off Spec", huHU = "Off Spec", elGR = "Off Spec", ukUA = "Off Spec", daDK = "Off Spec", fiFI = "Off Spec", skSK = "Off Spec", bgBG = "Off Spec", hrHR = "Off Spec", srRS = "Off Spec", slSI = "Off Spec", ltLT = "Off Spec", lvLV = "Off Spec", etEE = "Off Spec", idID = "Off Spec", msMY = "Off Spec", faIR = "Off Spec", heIL = "Off Spec", bnBD = "Off Spec", urPK = "Off Spec", taIN = "Off Spec", teIN = "Off Spec"
     },
 
     -- =====================
@@ -72,7 +72,7 @@ addonTable.ClasesDict = {
         hiIN = "योद्धा",
         thTH = "นักรบ",
         viVN = "Chiến binh",
-        csCZ = "Válečník",
+        csCZ = "Válečník", nlNL = "Warrior", roRO = "Warrior", huHU = "Warrior", elGR = "Warrior", ukUA = "Warrior", daDK = "Warrior", fiFI = "Warrior", skSK = "Warrior", bgBG = "Warrior", hrHR = "Warrior", srRS = "Warrior", slSI = "Warrior", ltLT = "Warrior", lvLV = "Warrior", etEE = "Warrior", idID = "Warrior", msMY = "Warrior", faIR = "Warrior", heIL = "Warrior", bnBD = "Warrior", urPK = "Warrior", taIN = "Warrior", teIN = "Warrior"
     },
     ["warr"]        = {
         esES = "Guerrero",
@@ -95,7 +95,7 @@ addonTable.ClasesDict = {
         hiIN = "योद्धा",
         thTH = "นักรบ",
         viVN = "Chiến binh",
-        csCZ = "Válečník",
+        csCZ = "Válečník", nlNL = "Warrior", roRO = "Warrior", huHU = "Warrior", elGR = "Warrior", ukUA = "Warrior", daDK = "Warrior", fiFI = "Warrior", skSK = "Warrior", bgBG = "Warrior", hrHR = "Warrior", srRS = "Warrior", slSI = "Warrior", ltLT = "Warrior", lvLV = "Warrior", etEE = "Warrior", idID = "Warrior", msMY = "Warrior", faIR = "Warrior", heIL = "Warrior", bnBD = "Warrior", urPK = "Warrior", taIN = "Warrior", teIN = "Warrior"
     },
 
     ["paladin"]     = {
@@ -119,7 +119,7 @@ addonTable.ClasesDict = {
         hiIN = "पलाडिन",
         thTH = "พาลาดิน",
         viVN = "Hiệp sĩ",
-        csCZ = "Paladin",
+        csCZ = "Paladin", nlNL = "Paladin", roRO = "Paladin", huHU = "Paladin", elGR = "Paladin", ukUA = "Paladin", daDK = "Paladin", fiFI = "Paladin", skSK = "Paladin", bgBG = "Paladin", hrHR = "Paladin", srRS = "Paladin", slSI = "Paladin", ltLT = "Paladin", lvLV = "Paladin", etEE = "Paladin", idID = "Paladin", msMY = "Paladin", faIR = "Paladin", heIL = "Paladin", bnBD = "Paladin", urPK = "Paladin", taIN = "Paladin", teIN = "Paladin"
     },
     ["pala"]        = {
         esES = "Paladín",
@@ -142,7 +142,7 @@ addonTable.ClasesDict = {
         hiIN = "पलाडिन",
         thTH = "พาลาดิน",
         viVN = "Hiệp sĩ",
-        csCZ = "Paladin",
+        csCZ = "Paladin", nlNL = "Paladin", roRO = "Paladin", huHU = "Paladin", elGR = "Paladin", ukUA = "Paladin", daDK = "Paladin", fiFI = "Paladin", skSK = "Paladin", bgBG = "Paladin", hrHR = "Paladin", srRS = "Paladin", slSI = "Paladin", ltLT = "Paladin", lvLV = "Paladin", etEE = "Paladin", idID = "Paladin", msMY = "Paladin", faIR = "Paladin", heIL = "Paladin", bnBD = "Paladin", urPK = "Paladin", taIN = "Paladin", teIN = "Paladin"
     },
 
     ["hunter"]      = {
@@ -166,7 +166,7 @@ addonTable.ClasesDict = {
         hiIN = "शिकारी",
         thTH = "นักล่า",
         viVN = "Thợ săn",
-        csCZ = "Lovec",
+        csCZ = "Lovec", nlNL = "Hunter", roRO = "Hunter", huHU = "Hunter", elGR = "Hunter", ukUA = "Hunter", daDK = "Hunter", fiFI = "Hunter", skSK = "Hunter", bgBG = "Hunter", hrHR = "Hunter", srRS = "Hunter", slSI = "Hunter", ltLT = "Hunter", lvLV = "Hunter", etEE = "Hunter", idID = "Hunter", msMY = "Hunter", faIR = "Hunter", heIL = "Hunter", bnBD = "Hunter", urPK = "Hunter", taIN = "Hunter", teIN = "Hunter"
     },
     ["hunt"]        = {
         esES = "Cazador",
@@ -189,7 +189,7 @@ addonTable.ClasesDict = {
         hiIN = "शिकारी",
         thTH = "นักล่า",
         viVN = "Thợ săn",
-        csCZ = "Lovec",
+        csCZ = "Lovec", nlNL = "Hunter", roRO = "Hunter", huHU = "Hunter", elGR = "Hunter", ukUA = "Hunter", daDK = "Hunter", fiFI = "Hunter", skSK = "Hunter", bgBG = "Hunter", hrHR = "Hunter", srRS = "Hunter", slSI = "Hunter", ltLT = "Hunter", lvLV = "Hunter", etEE = "Hunter", idID = "Hunter", msMY = "Hunter", faIR = "Hunter", heIL = "Hunter", bnBD = "Hunter", urPK = "Hunter", taIN = "Hunter", teIN = "Hunter"
     },
 
     ["deathknight"] = {
@@ -213,7 +213,7 @@ addonTable.ClasesDict = {
         hiIN = "डेथ नाइट",
         thTH = "เดธไนท์",
         viVN = "Kỵ sĩ cái chết",
-        csCZ = "Rytíř smrti",
+        csCZ = "Rytíř smrti", nlNL = "Death Knight", roRO = "Death Knight", huHU = "Death Knight", elGR = "Death Knight", ukUA = "Death Knight", daDK = "Death Knight", fiFI = "Death Knight", skSK = "Death Knight", bgBG = "Death Knight", hrHR = "Death Knight", srRS = "Death Knight", slSI = "Death Knight", ltLT = "Death Knight", lvLV = "Death Knight", etEE = "Death Knight", idID = "Death Knight", msMY = "Death Knight", faIR = "Death Knight", heIL = "Death Knight", bnBD = "Death Knight", urPK = "Death Knight", taIN = "Death Knight", teIN = "Death Knight"
     },
     ["dk"]          = {
         esES = "Caballero de la Muerte",
@@ -236,7 +236,7 @@ addonTable.ClasesDict = {
         hiIN = "डेथ नाइट",
         thTH = "เดธไนท์",
         viVN = "Kỵ sĩ cái chết",
-        csCZ = "Rytíř smrti",
+        csCZ = "Rytíř smrti", nlNL = "Death Knight", roRO = "Death Knight", huHU = "Death Knight", elGR = "Death Knight", ukUA = "Death Knight", daDK = "Death Knight", fiFI = "Death Knight", skSK = "Death Knight", bgBG = "Death Knight", hrHR = "Death Knight", srRS = "Death Knight", slSI = "Death Knight", ltLT = "Death Knight", lvLV = "Death Knight", etEE = "Death Knight", idID = "Death Knight", msMY = "Death Knight", faIR = "Death Knight", heIL = "Death Knight", bnBD = "Death Knight", urPK = "Death Knight", taIN = "Death Knight", teIN = "Death Knight"
     },
 
     ["rogue"]       = {
@@ -260,7 +260,7 @@ addonTable.ClasesDict = {
         hiIN = "दुष्ट",
         thTH = "โร้ค",
         viVN = "Đạo tặc",
-        csCZ = "Rogue",
+        csCZ = "Rogue", nlNL = "Rogue", roRO = "Rogue", huHU = "Rogue", elGR = "Rogue", ukUA = "Rogue", daDK = "Rogue", fiFI = "Rogue", skSK = "Rogue", bgBG = "Rogue", hrHR = "Rogue", srRS = "Rogue", slSI = "Rogue", ltLT = "Rogue", lvLV = "Rogue", etEE = "Rogue", idID = "Rogue", msMY = "Rogue", faIR = "Rogue", heIL = "Rogue", bnBD = "Rogue", urPK = "Rogue", taIN = "Rogue", teIN = "Rogue"
     },
 
     ["mage"]        = {
@@ -284,7 +284,7 @@ addonTable.ClasesDict = {
         hiIN = "दाना",
         thTH = "เมจ",
         viVN = "Pháp sư",
-        csCZ = "Mág",
+        csCZ = "Mág", nlNL = "Mage", roRO = "Mage", huHU = "Mage", elGR = "Mage", ukUA = "Mage", daDK = "Mage", fiFI = "Mage", skSK = "Mage", bgBG = "Mage", hrHR = "Mage", srRS = "Mage", slSI = "Mage", ltLT = "Mage", lvLV = "Mage", etEE = "Mage", idID = "Mage", msMY = "Mage", faIR = "Mage", heIL = "Mage", bnBD = "Mage", urPK = "Mage", taIN = "Mage", teIN = "Mage"
     },
 
     ["priest"]      = {
@@ -308,7 +308,7 @@ addonTable.ClasesDict = {
         hiIN = "पुजारी",
         thTH = "พระ",
         viVN = "Linh mục",
-        csCZ = "Kněz",
+        csCZ = "Kněz", nlNL = "Priest", roRO = "Priest", huHU = "Priest", elGR = "Priest", ukUA = "Priest", daDK = "Priest", fiFI = "Priest", skSK = "Priest", bgBG = "Priest", hrHR = "Priest", srRS = "Priest", slSI = "Priest", ltLT = "Priest", lvLV = "Priest", etEE = "Priest", idID = "Priest", msMY = "Priest", faIR = "Priest", heIL = "Priest", bnBD = "Priest", urPK = "Priest", taIN = "Priest", teIN = "Priest"
     },
 
     ["druid"]       = {
@@ -332,7 +332,7 @@ addonTable.ClasesDict = {
         hiIN = "ड्र्यूड",
         thTH = "ดรูอิด",
         viVN = "Tu sĩ",
-        csCZ = "Druid",
+        csCZ = "Druid", nlNL = "Druid", roRO = "Druid", huHU = "Druid", elGR = "Druid", ukUA = "Druid", daDK = "Druid", fiFI = "Druid", skSK = "Druid", bgBG = "Druid", hrHR = "Druid", srRS = "Druid", slSI = "Druid", ltLT = "Druid", lvLV = "Druid", etEE = "Druid", idID = "Druid", msMY = "Druid", faIR = "Druid", heIL = "Druid", bnBD = "Druid", urPK = "Druid", taIN = "Druid", teIN = "Druid"
     },
     ["dudu"]        = {
         esES = "Druida",
@@ -355,7 +355,7 @@ addonTable.ClasesDict = {
         hiIN = "ड्र्यूड",
         thTH = "ดรูอิด",
         viVN = "Tu sĩ",
-        csCZ = "Druid",
+        csCZ = "Druid", nlNL = "Druid", roRO = "Druid", huHU = "Druid", elGR = "Druid", ukUA = "Druid", daDK = "Druid", fiFI = "Druid", skSK = "Druid", bgBG = "Druid", hrHR = "Druid", srRS = "Druid", slSI = "Druid", ltLT = "Druid", lvLV = "Druid", etEE = "Druid", idID = "Druid", msMY = "Druid", faIR = "Druid", heIL = "Druid", bnBD = "Druid", urPK = "Druid", taIN = "Druid", teIN = "Druid"
     },
 
     ["shaman"]      = {
@@ -379,7 +379,7 @@ addonTable.ClasesDict = {
         hiIN = "ओझा",
         thTH = "ชาแมน",
         viVN = "Pháp sư (Shaman)",
-        csCZ = "Šaman",
+        csCZ = "Šaman", nlNL = "Shaman", roRO = "Shaman", huHU = "Shaman", elGR = "Shaman", ukUA = "Shaman", daDK = "Shaman", fiFI = "Shaman", skSK = "Shaman", bgBG = "Shaman", hrHR = "Shaman", srRS = "Shaman", slSI = "Shaman", ltLT = "Shaman", lvLV = "Shaman", etEE = "Shaman", idID = "Shaman", msMY = "Shaman", faIR = "Shaman", heIL = "Shaman", bnBD = "Shaman", urPK = "Shaman", taIN = "Shaman", teIN = "Shaman"
     },
 
     ["monk"]        = {
@@ -403,7 +403,7 @@ addonTable.ClasesDict = {
         hiIN = "भिक्षु",
         thTH = "มั้งค์",
         viVN = "Tu sĩ (Monk)",
-        csCZ = "Mnich",
+        csCZ = "Mnich", nlNL = "Monk", roRO = "Monk", huHU = "Monk", elGR = "Monk", ukUA = "Monk", daDK = "Monk", fiFI = "Monk", skSK = "Monk", bgBG = "Monk", hrHR = "Monk", srRS = "Monk", slSI = "Monk", ltLT = "Monk", lvLV = "Monk", etEE = "Monk", idID = "Monk", msMY = "Monk", faIR = "Monk", heIL = "Monk", bnBD = "Monk", urPK = "Monk", taIN = "Monk", teIN = "Monk"
     },
 
     ["warlock"]     = {
@@ -427,7 +427,7 @@ addonTable.ClasesDict = {
         hiIN = "तांत्रिक",
         thTH = "วอร์ล็อค",
         viVN = "Phù thủy",
-        csCZ = "Černokněžník",
+        csCZ = "Černokněžník", nlNL = "Warlock", roRO = "Warlock", huHU = "Warlock", elGR = "Warlock", ukUA = "Warlock", daDK = "Warlock", fiFI = "Warlock", skSK = "Warlock", bgBG = "Warlock", hrHR = "Warlock", srRS = "Warlock", slSI = "Warlock", ltLT = "Warlock", lvLV = "Warlock", etEE = "Warlock", idID = "Warlock", msMY = "Warlock", faIR = "Warlock", heIL = "Warlock", bnBD = "Warlock", urPK = "Warlock", taIN = "Warlock", teIN = "Warlock"
     },
     ["lock"]        = {
         esES = "Brujo",
@@ -450,7 +450,7 @@ addonTable.ClasesDict = {
         hiIN = "तांत्रिक",
         thTH = "วอร์ล็อค",
         viVN = "Phù thủy",
-        csCZ = "Černokněžník",
+        csCZ = "Černokněžník", nlNL = "Warlock", roRO = "Warlock", huHU = "Warlock", elGR = "Warlock", ukUA = "Warlock", daDK = "Warlock", fiFI = "Warlock", skSK = "Warlock", bgBG = "Warlock", hrHR = "Warlock", srRS = "Warlock", slSI = "Warlock", ltLT = "Warlock", lvLV = "Warlock", etEE = "Warlock", idID = "Warlock", msMY = "Warlock", faIR = "Warlock", heIL = "Warlock", bnBD = "Warlock", urPK = "Warlock", taIN = "Warlock", teIN = "Warlock"
     },
 
     -- =====================
@@ -479,7 +479,7 @@ addonTable.ClasesDict = {
         hiIN = "शस्त्र",
         thTH = "อาวุธ",
         viVN = "Vũ khí",
-        csCZ = "Zbraně",
+        csCZ = "Zbraně", nlNL = "Arms", roRO = "Arms", huHU = "Arms", elGR = "Arms", ukUA = "Arms", daDK = "Arms", fiFI = "Arms", skSK = "Arms", bgBG = "Arms", hrHR = "Arms", srRS = "Arms", slSI = "Arms", ltLT = "Arms", lvLV = "Arms", etEE = "Arms", idID = "Arms", msMY = "Arms", faIR = "Arms", heIL = "Arms", bnBD = "Arms", urPK = "Arms", taIN = "Arms", teIN = "Arms"
     },
     ["fury"]        = {
         esES = "Furia",
@@ -502,7 +502,7 @@ addonTable.ClasesDict = {
         hiIN = "रोष",
         thTH = "บ้าคลั่ง",
         viVN = "Cuồng nộ",
-        csCZ = "Fúrie",
+        csCZ = "Fúrie", nlNL = "Fury", roRO = "Fury", huHU = "Fury", elGR = "Fury", ukUA = "Fury", daDK = "Fury", fiFI = "Fury", skSK = "Fury", bgBG = "Fury", hrHR = "Fury", srRS = "Fury", slSI = "Fury", ltLT = "Fury", lvLV = "Fury", etEE = "Fury", idID = "Fury", msMY = "Fury", faIR = "Fury", heIL = "Fury", bnBD = "Fury", urPK = "Fury", taIN = "Fury", teIN = "Fury"
     },
     ["prot"]        = {
         esES = "Protección",
@@ -525,7 +525,7 @@ addonTable.ClasesDict = {
         hiIN = "बचाव",
         thTH = "ป้องกัน",
         viVN = "Bảo vệ",
-        csCZ = "Ochrana",
+        csCZ = "Ochrana", nlNL = "Protection", roRO = "Protection", huHU = "Protection", elGR = "Protection", ukUA = "Protection", daDK = "Protection", fiFI = "Protection", skSK = "Protection", bgBG = "Protection", hrHR = "Protection", srRS = "Protection", slSI = "Protection", ltLT = "Protection", lvLV = "Protection", etEE = "Protection", idID = "Protection", msMY = "Protection", faIR = "Protection", heIL = "Protection", bnBD = "Protection", urPK = "Protection", taIN = "Protection", teIN = "Protection"
     },
 
     -- Paladín
@@ -550,7 +550,7 @@ addonTable.ClasesDict = {
         hiIN = "पवित्र",
         thTH = "ศักดิ์สิทธิ์",
         viVN = "Thánh thiện",
-        csCZ = "Holy Paladin",
+        csCZ = "Holy Paladin", nlNL = "Holy", roRO = "Holy", huHU = "Holy", elGR = "Holy", ukUA = "Holy", daDK = "Holy", fiFI = "Holy", skSK = "Holy", bgBG = "Holy", hrHR = "Holy", srRS = "Holy", slSI = "Holy", ltLT = "Holy", lvLV = "Holy", etEE = "Holy", idID = "Holy", msMY = "Holy", faIR = "Holy", heIL = "Holy", bnBD = "Holy", urPK = "Holy", taIN = "Holy", teIN = "Holy"
     },
     ["ppala"]       = {
         esES = "Protección",
@@ -573,7 +573,7 @@ addonTable.ClasesDict = {
         hiIN = "बचाव",
         thTH = "ป้องกัน",
         viVN = "Bảo vệ",
-        csCZ = "Prot Paladin",
+        csCZ = "Prot Paladin", nlNL = "Protection", roRO = "Protection", huHU = "Protection", elGR = "Protection", ukUA = "Protection", daDK = "Protection", fiFI = "Protection", skSK = "Protection", bgBG = "Protection", hrHR = "Protection", srRS = "Protection", slSI = "Protection", ltLT = "Protection", lvLV = "Protection", etEE = "Protection", idID = "Protection", msMY = "Protection", faIR = "Protection", heIL = "Protection", bnBD = "Protection", urPK = "Protection", taIN = "Protection", teIN = "Protection"
     },
     ["ret"]         = {
         esES = "Reprensión",
@@ -596,7 +596,7 @@ addonTable.ClasesDict = {
         hiIN = "प्रतिशोध",
         thTH = "การลงทัณฑ์",
         viVN = "Trừng phạt",
-        csCZ = "Retribution",
+        csCZ = "Retribution", nlNL = "Retribution", roRO = "Retribution", huHU = "Retribution", elGR = "Retribution", ukUA = "Retribution", daDK = "Retribution", fiFI = "Retribution", skSK = "Retribution", bgBG = "Retribution", hrHR = "Retribution", srRS = "Retribution", slSI = "Retribution", ltLT = "Retribution", lvLV = "Retribution", etEE = "Retribution", idID = "Retribution", msMY = "Retribution", faIR = "Retribution", heIL = "Retribution", bnBD = "Retribution", urPK = "Retribution", taIN = "Retribution", teIN = "Retribution"
     },
     ["retry"]       = {
         esES = "Reprensión",
@@ -619,7 +619,7 @@ addonTable.ClasesDict = {
         hiIN = "प्रतिशोध",
         thTH = "การลงทัณฑ์",
         viVN = "Trừng phạt",
-        csCZ = "Retribution",
+        csCZ = "Retribution", nlNL = "Retribution", roRO = "Retribution", huHU = "Retribution", elGR = "Retribution", ukUA = "Retribution", daDK = "Retribution", fiFI = "Retribution", skSK = "Retribution", bgBG = "Retribution", hrHR = "Retribution", srRS = "Retribution", slSI = "Retribution", ltLT = "Retribution", lvLV = "Retribution", etEE = "Retribution", idID = "Retribution", msMY = "Retribution", faIR = "Retribution", heIL = "Retribution", bnBD = "Retribution", urPK = "Retribution", taIN = "Retribution", teIN = "Retribution"
     },
 
     -- Cazador
@@ -644,7 +644,7 @@ addonTable.ClasesDict = {
         hiIN = "जानवरों की महारत",
         thTH = "ฝึกสัตว์",
         viVN = "Chủ thú",
-        csCZ = "Pán šelem",
+        csCZ = "Pán šelem", nlNL = "Beast Mastery", roRO = "Beast Mastery", huHU = "Beast Mastery", elGR = "Beast Mastery", ukUA = "Beast Mastery", daDK = "Beast Mastery", fiFI = "Beast Mastery", skSK = "Beast Mastery", bgBG = "Beast Mastery", hrHR = "Beast Mastery", srRS = "Beast Mastery", slSI = "Beast Mastery", ltLT = "Beast Mastery", lvLV = "Beast Mastery", etEE = "Beast Mastery", idID = "Beast Mastery", msMY = "Beast Mastery", faIR = "Beast Mastery", heIL = "Beast Mastery", bnBD = "Beast Mastery", urPK = "Beast Mastery", taIN = "Beast Mastery", teIN = "Beast Mastery"
     },
     ["bm hunt"]     = {
         esES = "Bestias",
@@ -667,7 +667,7 @@ addonTable.ClasesDict = {
         hiIN = "जानवरों की महारत",
         thTH = "ฝึกสัตว์",
         viVN = "Chủ thú",
-        csCZ = "Pán šelem (BM)",
+        csCZ = "Pán šelem (BM)", nlNL = "Beast Mastery", roRO = "Beast Mastery", huHU = "Beast Mastery", elGR = "Beast Mastery", ukUA = "Beast Mastery", daDK = "Beast Mastery", fiFI = "Beast Mastery", skSK = "Beast Mastery", bgBG = "Beast Mastery", hrHR = "Beast Mastery", srRS = "Beast Mastery", slSI = "Beast Mastery", ltLT = "Beast Mastery", lvLV = "Beast Mastery", etEE = "Beast Mastery", idID = "Beast Mastery", msMY = "Beast Mastery", faIR = "Beast Mastery", heIL = "Beast Mastery", bnBD = "Beast Mastery", urPK = "Beast Mastery", taIN = "Beast Mastery", teIN = "Beast Mastery"
     },
     ["mm"]          = {
         esES = "Puntería",
@@ -690,7 +690,7 @@ addonTable.ClasesDict = {
         hiIN = "निशानेबाजी",
         thTH = "แม่นยำ",
         viVN = "Xạ thủ",
-        csCZ = "Střelba (MM)",
+        csCZ = "Střelba (MM)", nlNL = "Marksmanship", roRO = "Marksmanship", huHU = "Marksmanship", elGR = "Marksmanship", ukUA = "Marksmanship", daDK = "Marksmanship", fiFI = "Marksmanship", skSK = "Marksmanship", bgBG = "Marksmanship", hrHR = "Marksmanship", srRS = "Marksmanship", slSI = "Marksmanship", ltLT = "Marksmanship", lvLV = "Marksmanship", etEE = "Marksmanship", idID = "Marksmanship", msMY = "Marksmanship", faIR = "Marksmanship", heIL = "Marksmanship", bnBD = "Marksmanship", urPK = "Marksmanship", taIN = "Marksmanship", teIN = "Marksmanship"
     },
     ["sv"]          = {
         esES = "Supervivencia",
@@ -713,7 +713,7 @@ addonTable.ClasesDict = {
         hiIN = "उत्तरजीविता",
         thTH = "เอาตัวรอด",
         viVN = "Sinh tồn",
-        csCZ = "Přežití (SV)",
+        csCZ = "Přežití (SV)", nlNL = "Survival", roRO = "Survival", huHU = "Survival", elGR = "Survival", ukUA = "Survival", daDK = "Survival", fiFI = "Survival", skSK = "Survival", bgBG = "Survival", hrHR = "Survival", srRS = "Survival", slSI = "Survival", ltLT = "Survival", lvLV = "Survival", etEE = "Survival", idID = "Survival", msMY = "Survival", faIR = "Survival", heIL = "Survival", bnBD = "Survival", urPK = "Survival", taIN = "Survival", teIN = "Survival"
     },
 
     -- Mago
@@ -738,7 +738,7 @@ addonTable.ClasesDict = {
         hiIN = "आग",
         thTH = "ไฟ",
         viVN = "Lửa",
-        csCZ = "Oheň",
+        csCZ = "Oheň", nlNL = "Fire", roRO = "Fire", huHU = "Fire", elGR = "Fire", ukUA = "Fire", daDK = "Fire", fiFI = "Fire", skSK = "Fire", bgBG = "Fire", hrHR = "Fire", srRS = "Fire", slSI = "Fire", ltLT = "Fire", lvLV = "Fire", etEE = "Fire", idID = "Fire", msMY = "Fire", faIR = "Fire", heIL = "Fire", bnBD = "Fire", urPK = "Fire", taIN = "Fire", teIN = "Fire"
     },
     ["frost"]       = {
         esES = "Escarcha",
@@ -761,7 +761,7 @@ addonTable.ClasesDict = {
         hiIN = "पाला",
         thTH = "น้ำแข็ง",
         viVN = "Băng",
-        csCZ = "Mráz",
+        csCZ = "Mráz", nlNL = "Frost", roRO = "Frost", huHU = "Frost", elGR = "Frost", ukUA = "Frost", daDK = "Frost", fiFI = "Frost", skSK = "Frost", bgBG = "Frost", hrHR = "Frost", srRS = "Frost", slSI = "Frost", ltLT = "Frost", lvLV = "Frost", etEE = "Frost", idID = "Frost", msMY = "Frost", faIR = "Frost", heIL = "Frost", bnBD = "Frost", urPK = "Frost", taIN = "Frost", teIN = "Frost"
     },
     ["arcane"]      = {
         esES = "Arcano",
@@ -784,7 +784,7 @@ addonTable.ClasesDict = {
         hiIN = "रहस्यमय",
         thTH = "อาร์เคน",
         viVN = "Bí thuật",
-        csCZ = "Arkán",
+        csCZ = "Arkán", nlNL = "Arcane", roRO = "Arcane", huHU = "Arcane", elGR = "Arcane", ukUA = "Arcane", daDK = "Arcane", fiFI = "Arcane", skSK = "Arcane", bgBG = "Arcane", hrHR = "Arcane", srRS = "Arcane", slSI = "Arcane", ltLT = "Arcane", lvLV = "Arcane", etEE = "Arcane", idID = "Arcane", msMY = "Arcane", faIR = "Arcane", heIL = "Arcane", bnBD = "Arcane", urPK = "Arcane", taIN = "Arcane", teIN = "Arcane"
     },
 
     -- Brujo
@@ -809,7 +809,7 @@ addonTable.ClasesDict = {
         hiIN = "कष्ट",
         thTH = "ความทุกข์ระทม",
         viVN = "Khổ đau",
-        csCZ = "Afli",
+        csCZ = "Afli", nlNL = "Affliction", roRO = "Affliction", huHU = "Affliction", elGR = "Affliction", ukUA = "Affliction", daDK = "Affliction", fiFI = "Affliction", skSK = "Affliction", bgBG = "Affliction", hrHR = "Affliction", srRS = "Affliction", slSI = "Affliction", ltLT = "Affliction", lvLV = "Affliction", etEE = "Affliction", idID = "Affliction", msMY = "Affliction", faIR = "Affliction", heIL = "Affliction", bnBD = "Affliction", urPK = "Affliction", taIN = "Affliction", teIN = "Affliction"
     },
     ["demo"]        = {
         esES = "Demonología",
@@ -832,7 +832,7 @@ addonTable.ClasesDict = {
         hiIN = "दानव विज्ञान",
         thTH = "ศาสตร์ปีศาจ",
         viVN = "Quỷ học",
-        csCZ = "Demo",
+        csCZ = "Demo", nlNL = "Demonology", roRO = "Demonology", huHU = "Demonology", elGR = "Demonology", ukUA = "Demonology", daDK = "Demonology", fiFI = "Demonology", skSK = "Demonology", bgBG = "Demonology", hrHR = "Demonology", srRS = "Demonology", slSI = "Demonology", ltLT = "Demonology", lvLV = "Demonology", etEE = "Demonology", idID = "Demonology", msMY = "Demonology", faIR = "Demonology", heIL = "Demonology", bnBD = "Demonology", urPK = "Demonology", taIN = "Demonology", teIN = "Demonology"
     },
     ["destro"]      = {
         esES = "Destrucción",
@@ -855,7 +855,7 @@ addonTable.ClasesDict = {
         hiIN = "विनाश",
         thTH = "การทำลายล้าง",
         viVN = "Hủy diệt",
-        csCZ = "Destro",
+        csCZ = "Destro", nlNL = "Destruction", roRO = "Destruction", huHU = "Destruction", elGR = "Destruction", ukUA = "Destruction", daDK = "Destruction", fiFI = "Destruction", skSK = "Destruction", bgBG = "Destruction", hrHR = "Destruction", srRS = "Destruction", slSI = "Destruction", ltLT = "Destruction", lvLV = "Destruction", etEE = "Destruction", idID = "Destruction", msMY = "Destruction", faIR = "Destruction", heIL = "Destruction", bnBD = "Destruction", urPK = "Destruction", taIN = "Destruction", teIN = "Destruction"
     },
 
     -- Sacerdote
@@ -880,7 +880,7 @@ addonTable.ClasesDict = {
         hiIN = "अनुशासन",
         thTH = "วินัย",
         viVN = "Kỷ luật",
-        csCZ = "Disc",
+        csCZ = "Disc", nlNL = "Discipline", roRO = "Discipline", huHU = "Discipline", elGR = "Discipline", ukUA = "Discipline", daDK = "Discipline", fiFI = "Discipline", skSK = "Discipline", bgBG = "Discipline", hrHR = "Discipline", srRS = "Discipline", slSI = "Discipline", ltLT = "Discipline", lvLV = "Discipline", etEE = "Discipline", idID = "Discipline", msMY = "Discipline", faIR = "Discipline", heIL = "Discipline", bnBD = "Discipline", urPK = "Discipline", taIN = "Discipline", teIN = "Discipline"
     },
     ["holy"]        = {
         esES = "Sagrado",
@@ -903,7 +903,7 @@ addonTable.ClasesDict = {
         hiIN = "पवित्र",
         thTH = "ศักดิ์สิทธิ์",
         viVN = "Thánh thiện",
-        csCZ = "Svatý",
+        csCZ = "Svatý", nlNL = "Holy", roRO = "Holy", huHU = "Holy", elGR = "Holy", ukUA = "Holy", daDK = "Holy", fiFI = "Holy", skSK = "Holy", bgBG = "Holy", hrHR = "Holy", srRS = "Holy", slSI = "Holy", ltLT = "Holy", lvLV = "Holy", etEE = "Holy", idID = "Holy", msMY = "Holy", faIR = "Holy", heIL = "Holy", bnBD = "Holy", urPK = "Holy", taIN = "Holy", teIN = "Holy"
     },
     ["shadow"]      = {
         esES = "Sombras",
@@ -926,7 +926,7 @@ addonTable.ClasesDict = {
         hiIN = "छाया",
         thTH = "เงา",
         viVN = "Bóng tối",
-        csCZ = "Stín",
+        csCZ = "Stín", nlNL = "Shadow", roRO = "Shadow", huHU = "Shadow", elGR = "Shadow", ukUA = "Shadow", daDK = "Shadow", fiFI = "Shadow", skSK = "Shadow", bgBG = "Shadow", hrHR = "Shadow", srRS = "Shadow", slSI = "Shadow", ltLT = "Shadow", lvLV = "Shadow", etEE = "Shadow", idID = "Shadow", msMY = "Shadow", faIR = "Shadow", heIL = "Shadow", bnBD = "Shadow", urPK = "Shadow", taIN = "Shadow", teIN = "Shadow"
     },
 
     -- Druida
@@ -951,7 +951,7 @@ addonTable.ClasesDict = {
         hiIN = "संतुलन",
         thTH = "สมดุล",
         viVN = "Cân bằng",
-        csCZ = "Rovnováha",
+        csCZ = "Rovnováha", nlNL = "Balance", roRO = "Balance", huHU = "Balance", elGR = "Balance", ukUA = "Balance", daDK = "Balance", fiFI = "Balance", skSK = "Balance", bgBG = "Balance", hrHR = "Balance", srRS = "Balance", slSI = "Balance", ltLT = "Balance", lvLV = "Balance", etEE = "Balance", idID = "Balance", msMY = "Balance", faIR = "Balance", heIL = "Balance", bnBD = "Balance", urPK = "Balance", taIN = "Balance", teIN = "Balance"
     },
     ["feral"]       = {
         esES = "Feral",
@@ -974,7 +974,7 @@ addonTable.ClasesDict = {
         hiIN = "जंगली",
         thTH = "ดุร้าย",
         viVN = "Hoang dã",
-        csCZ = "Feral",
+        csCZ = "Feral", nlNL = "Feral", roRO = "Feral", huHU = "Feral", elGR = "Feral", ukUA = "Feral", daDK = "Feral", fiFI = "Feral", skSK = "Feral", bgBG = "Feral", hrHR = "Feral", srRS = "Feral", slSI = "Feral", ltLT = "Feral", lvLV = "Feral", etEE = "Feral", idID = "Feral", msMY = "Feral", faIR = "Feral", heIL = "Feral", bnBD = "Feral", urPK = "Feral", taIN = "Feral", teIN = "Feral"
     },
     ["resto"]       = {
         esES = "Restauración",
@@ -997,7 +997,7 @@ addonTable.ClasesDict = {
         hiIN = "बहाली",
         thTH = "ฟื้นฟู",
         viVN = "Phục hồi",
-        csCZ = "Resto",
+        csCZ = "Resto", nlNL = "Restoration", roRO = "Restoration", huHU = "Restoration", elGR = "Restoration", ukUA = "Restoration", daDK = "Restoration", fiFI = "Restoration", skSK = "Restoration", bgBG = "Restoration", hrHR = "Restoration", srRS = "Restoration", slSI = "Restoration", ltLT = "Restoration", lvLV = "Restoration", etEE = "Restoration", idID = "Restoration", msMY = "Restoration", faIR = "Restoration", heIL = "Restoration", bnBD = "Restoration", urPK = "Restoration", taIN = "Restoration", teIN = "Restoration"
     },
     ["guardian"]    = {
         esES = "Guardián",
@@ -1020,7 +1020,7 @@ addonTable.ClasesDict = {
         hiIN = "अभिभावक",
         thTH = "ผู้พิทักษ์",
         viVN = "Hộ vệ",
-        csCZ = "Strážce",
+        csCZ = "Strážce", nlNL = "Guardian", roRO = "Guardian", huHU = "Guardian", elGR = "Guardian", ukUA = "Guardian", daDK = "Guardian", fiFI = "Guardian", skSK = "Guardian", bgBG = "Guardian", hrHR = "Guardian", srRS = "Guardian", slSI = "Guardian", ltLT = "Guardian", lvLV = "Guardian", etEE = "Guardian", idID = "Guardian", msMY = "Guardian", faIR = "Guardian", heIL = "Guardian", bnBD = "Guardian", urPK = "Guardian", taIN = "Guardian", teIN = "Guardian"
     },
 
     -- Chamán
@@ -1045,7 +1045,7 @@ addonTable.ClasesDict = {
         hiIN = "तात्विक",
         thTH = "ธาตุ",
         viVN = "Nguyên tố",
-        csCZ = "Elementál",
+        csCZ = "Elementál", nlNL = "Elemental", roRO = "Elemental", huHU = "Elemental", elGR = "Elemental", ukUA = "Elemental", daDK = "Elemental", fiFI = "Elemental", skSK = "Elemental", bgBG = "Elemental", hrHR = "Elemental", srRS = "Elemental", slSI = "Elemental", ltLT = "Elemental", lvLV = "Elemental", etEE = "Elemental", idID = "Elemental", msMY = "Elemental", faIR = "Elemental", heIL = "Elemental", bnBD = "Elemental", urPK = "Elemental", taIN = "Elemental", teIN = "Elemental"
     },
     ["enh"]         = {
         esES = "Mejora",
@@ -1068,7 +1068,7 @@ addonTable.ClasesDict = {
         hiIN = "संवर्धन",
         thTH = "เสริมพลัง",
         viVN = "Tăng cường",
-        csCZ = "Enhance",
+        csCZ = "Enhance", nlNL = "Enhancement", roRO = "Enhancement", huHU = "Enhancement", elGR = "Enhancement", ukUA = "Enhancement", daDK = "Enhancement", fiFI = "Enhancement", skSK = "Enhancement", bgBG = "Enhancement", hrHR = "Enhancement", srRS = "Enhancement", slSI = "Enhancement", ltLT = "Enhancement", lvLV = "Enhancement", etEE = "Enhancement", idID = "Enhancement", msMY = "Enhancement", faIR = "Enhancement", heIL = "Enhancement", bnBD = "Enhancement", urPK = "Enhancement", taIN = "Enhancement", teIN = "Enhancement"
     },
 
 
@@ -1094,7 +1094,7 @@ addonTable.ClasesDict = {
         hiIN = "हत्या",
         thTH = "สังหาร",
         viVN = "Ám sát",
-        csCZ = "Assa",
+        csCZ = "Assa", nlNL = "Assassination", roRO = "Assassination", huHU = "Assassination", elGR = "Assassination", ukUA = "Assassination", daDK = "Assassination", fiFI = "Assassination", skSK = "Assassination", bgBG = "Assassination", hrHR = "Assassination", srRS = "Assassination", slSI = "Assassination", ltLT = "Assassination", lvLV = "Assassination", etEE = "Assassination", idID = "Assassination", msMY = "Assassination", faIR = "Assassination", heIL = "Assassination", bnBD = "Assassination", urPK = "Assassination", taIN = "Assassination", teIN = "Assassination"
     },
     ["assass"] = {
         esES = "Asesinato",
@@ -1117,7 +1117,7 @@ addonTable.ClasesDict = {
         hiIN = "हत्या",
         thTH = "สังหาร",
         viVN = "Ám sát",
-        csCZ = "Atentát",
+        csCZ = "Atentát", nlNL = "Assassination", roRO = "Assassination", huHU = "Assassination", elGR = "Assassination", ukUA = "Assassination", daDK = "Assassination", fiFI = "Assassination", skSK = "Assassination", bgBG = "Assassination", hrHR = "Assassination", srRS = "Assassination", slSI = "Assassination", ltLT = "Assassination", lvLV = "Assassination", etEE = "Assassination", idID = "Assassination", msMY = "Assassination", faIR = "Assassination", heIL = "Assassination", bnBD = "Assassination", urPK = "Assassination", taIN = "Assassination", teIN = "Assassination"
     },
     ["outlaw"] = {
         esES = "Combate",
@@ -1140,7 +1140,7 @@ addonTable.ClasesDict = {
         hiIN = "मुकाबला",
         thTH = "ต่อสู้",
         viVN = "Chiến đấu",
-        csCZ = "Psanec",
+        csCZ = "Psanec", nlNL = "Combat", roRO = "Combat", huHU = "Combat", elGR = "Combat", ukUA = "Combat", daDK = "Combat", fiFI = "Combat", skSK = "Combat", bgBG = "Combat", hrHR = "Combat", srRS = "Combat", slSI = "Combat", ltLT = "Combat", lvLV = "Combat", etEE = "Combat", idID = "Combat", msMY = "Combat", faIR = "Combat", heIL = "Combat", bnBD = "Combat", urPK = "Combat", taIN = "Combat", teIN = "Combat"
     },
     ["sub"] = {
         esES = "Sutileza",
@@ -1163,7 +1163,7 @@ addonTable.ClasesDict = {
         hiIN = "सूक्ष्मता",
         thTH = "แยบยล",
         viVN = "Tinh tế",
-        csCZ = "Sub",
+        csCZ = "Sub", nlNL = "Subtlety", roRO = "Subtlety", huHU = "Subtlety", elGR = "Subtlety", ukUA = "Subtlety", daDK = "Subtlety", fiFI = "Subtlety", skSK = "Subtlety", bgBG = "Subtlety", hrHR = "Subtlety", srRS = "Subtlety", slSI = "Subtlety", ltLT = "Subtlety", lvLV = "Subtlety", etEE = "Subtlety", idID = "Subtlety", msMY = "Subtlety", faIR = "Subtlety", heIL = "Subtlety", bnBD = "Subtlety", urPK = "Subtlety", taIN = "Subtlety", teIN = "Subtlety"
     },
 
     -- Monje
@@ -1188,7 +1188,7 @@ addonTable.ClasesDict = {
         hiIN = "शराब बनाने वाला",
         thTH = "บริวมาสเตอร์",
         viVN = "Sư phụ nấu rượu",
-        csCZ = "Brewmaster",
+        csCZ = "Brewmaster", nlNL = "Brewmaster", roRO = "Brewmaster", huHU = "Brewmaster", elGR = "Brewmaster", ukUA = "Brewmaster", daDK = "Brewmaster", fiFI = "Brewmaster", skSK = "Brewmaster", bgBG = "Brewmaster", hrHR = "Brewmaster", srRS = "Brewmaster", slSI = "Brewmaster", ltLT = "Brewmaster", lvLV = "Brewmaster", etEE = "Brewmaster", idID = "Brewmaster", msMY = "Brewmaster", faIR = "Brewmaster", heIL = "Brewmaster", bnBD = "Brewmaster", urPK = "Brewmaster", taIN = "Brewmaster", teIN = "Brewmaster"
     },
     ["bm monk"] = {
         esES = "Maestro Cervecero",
@@ -1211,7 +1211,7 @@ addonTable.ClasesDict = {
         hiIN = "शराब बनाने वाला",
         thTH = "บริวมาสเตอร์",
         viVN = "Sư phụ nấu rượu",
-        csCZ = "Brewmaster",
+        csCZ = "Brewmaster", nlNL = "Brewmaster", roRO = "Brewmaster", huHU = "Brewmaster", elGR = "Brewmaster", ukUA = "Brewmaster", daDK = "Brewmaster", fiFI = "Brewmaster", skSK = "Brewmaster", bgBG = "Brewmaster", hrHR = "Brewmaster", srRS = "Brewmaster", slSI = "Brewmaster", ltLT = "Brewmaster", lvLV = "Brewmaster", etEE = "Brewmaster", idID = "Brewmaster", msMY = "Brewmaster", faIR = "Brewmaster", heIL = "Brewmaster", bnBD = "Brewmaster", urPK = "Brewmaster", taIN = "Brewmaster", teIN = "Brewmaster"
     },
     ["ww"] = {
         esES = "Viajero del Viento",
@@ -1234,7 +1234,7 @@ addonTable.ClasesDict = {
         hiIN = "पवनचक्की",
         thTH = "วินด์วอล์กเกอร์",
         viVN = "Phong sĩ",
-        csCZ = "Větrný chodec (WW)",
+        csCZ = "Větrný chodec (WW)", nlNL = "Windwalker", roRO = "Windwalker", huHU = "Windwalker", elGR = "Windwalker", ukUA = "Windwalker", daDK = "Windwalker", fiFI = "Windwalker", skSK = "Windwalker", bgBG = "Windwalker", hrHR = "Windwalker", srRS = "Windwalker", slSI = "Windwalker", ltLT = "Windwalker", lvLV = "Windwalker", etEE = "Windwalker", idID = "Windwalker", msMY = "Windwalker", faIR = "Windwalker", heIL = "Windwalker", bnBD = "Windwalker", urPK = "Windwalker", taIN = "Windwalker", teIN = "Windwalker"
     },
     ["mw"] = {
         esES = "Tejedor de Niebla",
@@ -1257,7 +1257,7 @@ addonTable.ClasesDict = {
         hiIN = "मिस्टवीवर",
         thTH = "มิสต์วีฟเวอร์",
         viVN = "Sương sĩ",
-        csCZ = "Mistweaver",
+        csCZ = "Mistweaver", nlNL = "Mistweaver", roRO = "Mistweaver", huHU = "Mistweaver", elGR = "Mistweaver", ukUA = "Mistweaver", daDK = "Mistweaver", fiFI = "Mistweaver", skSK = "Mistweaver", bgBG = "Mistweaver", hrHR = "Mistweaver", srRS = "Mistweaver", slSI = "Mistweaver", ltLT = "Mistweaver", lvLV = "Mistweaver", etEE = "Mistweaver", idID = "Mistweaver", msMY = "Mistweaver", faIR = "Mistweaver", heIL = "Mistweaver", bnBD = "Mistweaver", urPK = "Mistweaver", taIN = "Mistweaver", teIN = "Mistweaver"
     },
 
     -- Caballero de la Muerte
@@ -1282,7 +1282,7 @@ addonTable.ClasesDict = {
         hiIN = "रक्त",
         thTH = "เลือด",
         viVN = "Máu",
-        csCZ = "Krev",
+        csCZ = "Krev", nlNL = "Blood", roRO = "Blood", huHU = "Blood", elGR = "Blood", ukUA = "Blood", daDK = "Blood", fiFI = "Blood", skSK = "Blood", bgBG = "Blood", hrHR = "Blood", srRS = "Blood", slSI = "Blood", ltLT = "Blood", lvLV = "Blood", etEE = "Blood", idID = "Blood", msMY = "Blood", faIR = "Blood", heIL = "Blood", bnBD = "Blood", urPK = "Blood", taIN = "Blood", teIN = "Blood"
     },
     ["unholy"] = {
         esES = "Profano",
@@ -1305,7 +1305,7 @@ addonTable.ClasesDict = {
         hiIN = "अधर्मी",
         thTH = "อัปมงคล",
         viVN = "Bất tịnh",
-        csCZ = "Unholy",
+        csCZ = "Unholy", nlNL = "Unholy", roRO = "Unholy", huHU = "Unholy", elGR = "Unholy", ukUA = "Unholy", daDK = "Unholy", fiFI = "Unholy", skSK = "Unholy", bgBG = "Unholy", hrHR = "Unholy", srRS = "Unholy", slSI = "Unholy", ltLT = "Unholy", lvLV = "Unholy", etEE = "Unholy", idID = "Unholy", msMY = "Unholy", faIR = "Unholy", heIL = "Unholy", bnBD = "Unholy", urPK = "Unholy", taIN = "Unholy", teIN = "Unholy"
     },
 
     -- Cazador de Demonios
@@ -1330,7 +1330,7 @@ addonTable.ClasesDict = {
         hiIN = "डेमन हंटर",
         thTH = "ดีมอนฮันเตอร์",
         viVN = "Thợ săn quỷ",
-        csCZ = "Lovec démonů",
+        csCZ = "Lovec démonů", nlNL = "Demon Hunter", roRO = "Demon Hunter", huHU = "Demon Hunter", elGR = "Demon Hunter", ukUA = "Demon Hunter", daDK = "Demon Hunter", fiFI = "Demon Hunter", skSK = "Demon Hunter", bgBG = "Demon Hunter", hrHR = "Demon Hunter", srRS = "Demon Hunter", slSI = "Demon Hunter", ltLT = "Demon Hunter", lvLV = "Demon Hunter", etEE = "Demon Hunter", idID = "Demon Hunter", msMY = "Demon Hunter", faIR = "Demon Hunter", heIL = "Demon Hunter", bnBD = "Demon Hunter", urPK = "Demon Hunter", taIN = "Demon Hunter", teIN = "Demon Hunter"
     },
     ["dh"] = {
         esES = "Cazador de Demonios",
@@ -1353,7 +1353,7 @@ addonTable.ClasesDict = {
         hiIN = "डेमन हंटर",
         thTH = "ดีมอนฮันเตอร์",
         viVN = "Thợ săn quỷ",
-        csCZ = "Lovec démonů",
+        csCZ = "Lovec démonů", nlNL = "Demon Hunter", roRO = "Demon Hunter", huHU = "Demon Hunter", elGR = "Demon Hunter", ukUA = "Demon Hunter", daDK = "Demon Hunter", fiFI = "Demon Hunter", skSK = "Demon Hunter", bgBG = "Demon Hunter", hrHR = "Demon Hunter", srRS = "Demon Hunter", slSI = "Demon Hunter", ltLT = "Demon Hunter", lvLV = "Demon Hunter", etEE = "Demon Hunter", idID = "Demon Hunter", msMY = "Demon Hunter", faIR = "Demon Hunter", heIL = "Demon Hunter", bnBD = "Demon Hunter", urPK = "Demon Hunter", taIN = "Demon Hunter", teIN = "Demon Hunter"
     },
     ["havoc"] = {
         esES = "Devastación",
@@ -1376,7 +1376,7 @@ addonTable.ClasesDict = {
         hiIN = "तबाही",
         thTH = "ความหายนะ",
         viVN = "Tàn phá",
-        csCZ = "Havoc",
+        csCZ = "Havoc", nlNL = "Havoc", roRO = "Havoc", huHU = "Havoc", elGR = "Havoc", ukUA = "Havoc", daDK = "Havoc", fiFI = "Havoc", skSK = "Havoc", bgBG = "Havoc", hrHR = "Havoc", srRS = "Havoc", slSI = "Havoc", ltLT = "Havoc", lvLV = "Havoc", etEE = "Havoc", idID = "Havoc", msMY = "Havoc", faIR = "Havoc", heIL = "Havoc", bnBD = "Havoc", urPK = "Havoc", taIN = "Havoc", teIN = "Havoc"
     },
     ["vengeance"] = {
         esES = "Venganza",
@@ -1399,7 +1399,7 @@ addonTable.ClasesDict = {
         hiIN = "प्रतिशोध",
         thTH = "การแก้แค้น",
         viVN = "Báo thù",
-        csCZ = "Pomsta",
+        csCZ = "Pomsta", nlNL = "Vengeance", roRO = "Vengeance", huHU = "Vengeance", elGR = "Vengeance", ukUA = "Vengeance", daDK = "Vengeance", fiFI = "Vengeance", skSK = "Vengeance", bgBG = "Vengeance", hrHR = "Vengeance", srRS = "Vengeance", slSI = "Vengeance", ltLT = "Vengeance", lvLV = "Vengeance", etEE = "Vengeance", idID = "Vengeance", msMY = "Vengeance", faIR = "Vengeance", heIL = "Vengeance", bnBD = "Vengeance", urPK = "Vengeance", taIN = "Vengeance", teIN = "Vengeance"
     },
 
     -- Evocador
@@ -1424,7 +1424,7 @@ addonTable.ClasesDict = {
         hiIN = "इवोकर",
         thTH = "อีโวคเกอร์",
         viVN = "Người hiệu triệu",
-        csCZ = "Vyvolávač",
+        csCZ = "Vyvolávač", nlNL = "Evoker", roRO = "Evoker", huHU = "Evoker", elGR = "Evoker", ukUA = "Evoker", daDK = "Evoker", fiFI = "Evoker", skSK = "Evoker", bgBG = "Evoker", hrHR = "Evoker", srRS = "Evoker", slSI = "Evoker", ltLT = "Evoker", lvLV = "Evoker", etEE = "Evoker", idID = "Evoker", msMY = "Evoker", faIR = "Evoker", heIL = "Evoker", bnBD = "Evoker", urPK = "Evoker", taIN = "Evoker", teIN = "Evoker"
     },
     ["evo"] = {
         esES = "Evocador",
@@ -1447,7 +1447,7 @@ addonTable.ClasesDict = {
         hiIN = "इवोकर",
         thTH = "อีโวคเกอร์",
         viVN = "Người hiệu triệu",
-        csCZ = "Evoker",
+        csCZ = "Evoker", nlNL = "Evoker", roRO = "Evoker", huHU = "Evoker", elGR = "Evoker", ukUA = "Evoker", daDK = "Evoker", fiFI = "Evoker", skSK = "Evoker", bgBG = "Evoker", hrHR = "Evoker", srRS = "Evoker", slSI = "Evoker", ltLT = "Evoker", lvLV = "Evoker", etEE = "Evoker", idID = "Evoker", msMY = "Evoker", faIR = "Evoker", heIL = "Evoker", bnBD = "Evoker", urPK = "Evoker", taIN = "Evoker", teIN = "Evoker"
     },
     ["devastation"] = {
         esES = "Devastación",
@@ -1470,7 +1470,7 @@ addonTable.ClasesDict = {
         hiIN = "तबाही",
         thTH = "ความหายนะ",
         viVN = "Tàn phá",
-        csCZ = "Devastace",
+        csCZ = "Devastace", nlNL = "Devastation", roRO = "Devastation", huHU = "Devastation", elGR = "Devastation", ukUA = "Devastation", daDK = "Devastation", fiFI = "Devastation", skSK = "Devastation", bgBG = "Devastation", hrHR = "Devastation", srRS = "Devastation", slSI = "Devastation", ltLT = "Devastation", lvLV = "Devastation", etEE = "Devastation", idID = "Devastation", msMY = "Devastation", faIR = "Devastation", heIL = "Devastation", bnBD = "Devastation", urPK = "Devastation", taIN = "Devastation", teIN = "Devastation"
     },
     ["preservation"] = {
         esES = "Preservación",
@@ -1493,7 +1493,7 @@ addonTable.ClasesDict = {
         hiIN = "संरक्षण",
         thTH = "การอนุรักษ์",
         viVN = "Bảo tồn",
-        csCZ = "Uchování",
+        csCZ = "Uchování", nlNL = "Preservation", roRO = "Preservation", huHU = "Preservation", elGR = "Preservation", ukUA = "Preservation", daDK = "Preservation", fiFI = "Preservation", skSK = "Preservation", bgBG = "Preservation", hrHR = "Preservation", srRS = "Preservation", slSI = "Preservation", ltLT = "Preservation", lvLV = "Preservation", etEE = "Preservation", idID = "Preservation", msMY = "Preservation", faIR = "Preservation", heIL = "Preservation", bnBD = "Preservation", urPK = "Preservation", taIN = "Preservation", teIN = "Preservation"
     },
     ["augmentation"] = {
         esES = "Aumento",
@@ -1516,6 +1516,6 @@ addonTable.ClasesDict = {
         hiIN = "संवर्धन",
         thTH = "การส่งเสริม",
         viVN = "Tăng cường",
-        csCZ = "Augmentace",
+        csCZ = "Augmentace", nlNL = "Augmentation", roRO = "Augmentation", huHU = "Augmentation", elGR = "Augmentation", ukUA = "Augmentation", daDK = "Augmentation", fiFI = "Augmentation", skSK = "Augmentation", bgBG = "Augmentation", hrHR = "Augmentation", srRS = "Augmentation", slSI = "Augmentation", ltLT = "Augmentation", lvLV = "Augmentation", etEE = "Augmentation", idID = "Augmentation", msMY = "Augmentation", faIR = "Augmentation", heIL = "Augmentation", bnBD = "Augmentation", urPK = "Augmentation", taIN = "Augmentation", teIN = "Augmentation"
     },
 }

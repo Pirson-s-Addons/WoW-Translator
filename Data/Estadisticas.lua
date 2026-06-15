@@ -21,7 +21,7 @@ addonTable.EstadisticasDict = {
         hiIN = "आक्रमण शक्ति",
         thTH = "พลังโจมตี",
         viVN = "Sức mạnh tấn công",
-        csCZ = "Útočná síla",
+        csCZ = "Útočná síla", nlNL = "Attack Power", roRO = "Attack Power", huHU = "Attack Power", elGR = "Attack Power", ukUA = "Attack Power", daDK = "Attack Power", fiFI = "Attack Power", skSK = "Attack Power", bgBG = "Attack Power", hrHR = "Attack Power", srRS = "Attack Power", slSI = "Attack Power", ltLT = "Attack Power", lvLV = "Attack Power", etEE = "Attack Power", idID = "Attack Power", msMY = "Attack Power", faIR = "Attack Power", heIL = "Attack Power", bnBD = "Attack Power", urPK = "Attack Power", taIN = "Attack Power", teIN = "Attack Power"
     },
     ["crit"] = {
         esES = "Crítico",
@@ -44,7 +44,7 @@ addonTable.EstadisticasDict = {
         hiIN = "महत्वपूर्ण स्ट्राइक",
         thTH = "คริติคอล",
         viVN = "Chí mạng",
-        csCZ = "Kritický zásah",
+        csCZ = "Kritický zásah", nlNL = "Critical Strike", roRO = "Critical Strike", huHU = "Critical Strike", elGR = "Critical Strike", ukUA = "Critical Strike", daDK = "Critical Strike", fiFI = "Critical Strike", skSK = "Critical Strike", bgBG = "Critical Strike", hrHR = "Critical Strike", srRS = "Critical Strike", slSI = "Critical Strike", ltLT = "Critical Strike", lvLV = "Critical Strike", etEE = "Critical Strike", idID = "Critical Strike", msMY = "Critical Strike", faIR = "Critical Strike", heIL = "Critical Strike", bnBD = "Critical Strike", urPK = "Critical Strike", taIN = "Critical Strike", teIN = "Critical Strike"
     },
     ["haste"] = {
         esES = "Celeridad",
@@ -67,7 +67,7 @@ addonTable.EstadisticasDict = {
         hiIN = "जल्दबाजी",
         thTH = "ความเร็ว",
         viVN = "Tốc độ",
-        csCZ = "Rychlost",
+        csCZ = "Rychlost", nlNL = "Haste", roRO = "Haste", huHU = "Haste", elGR = "Haste", ukUA = "Haste", daDK = "Haste", fiFI = "Haste", skSK = "Haste", bgBG = "Haste", hrHR = "Haste", srRS = "Haste", slSI = "Haste", ltLT = "Haste", lvLV = "Haste", etEE = "Haste", idID = "Haste", msMY = "Haste", faIR = "Haste", heIL = "Haste", bnBD = "Haste", urPK = "Haste", taIN = "Haste", teIN = "Haste"
     },
     ["hit"] = {
         esES = "Índice de golpe",
@@ -90,7 +90,7 @@ addonTable.EstadisticasDict = {
         hiIN = "हिट रेटिंग",
         thTH = "อัตราการโจมตี",
         viVN = "Chỉ số đánh trúng",
-        csCZ = "Zásah",
+        csCZ = "Zásah", nlNL = "Hit Rating", roRO = "Hit Rating", huHU = "Hit Rating", elGR = "Hit Rating", ukUA = "Hit Rating", daDK = "Hit Rating", fiFI = "Hit Rating", skSK = "Hit Rating", bgBG = "Hit Rating", hrHR = "Hit Rating", srRS = "Hit Rating", slSI = "Hit Rating", ltLT = "Hit Rating", lvLV = "Hit Rating", etEE = "Hit Rating", idID = "Hit Rating", msMY = "Hit Rating", faIR = "Hit Rating", heIL = "Hit Rating", bnBD = "Hit Rating", urPK = "Hit Rating", taIN = "Hit Rating", teIN = "Hit Rating"
     },
     ["mastery"] = {
         esES = "Maestría",
@@ -113,7 +113,7 @@ addonTable.EstadisticasDict = {
         hiIN = "महारत",
         thTH = "ความชำนาญ",
         viVN = "Tinh thông",
-        csCZ = "Mistrovství",
+        csCZ = "Mistrovství", nlNL = "Mastery", roRO = "Mastery", huHU = "Mastery", elGR = "Mastery", ukUA = "Mastery", daDK = "Mastery", fiFI = "Mastery", skSK = "Mastery", bgBG = "Mastery", hrHR = "Mastery", srRS = "Mastery", slSI = "Mastery", ltLT = "Mastery", lvLV = "Mastery", etEE = "Mastery", idID = "Mastery", msMY = "Mastery", faIR = "Mastery", heIL = "Mastery", bnBD = "Mastery", urPK = "Mastery", taIN = "Mastery", teIN = "Mastery"
     },
     ["armor"] = {
         esES = "Armadura",
@@ -136,7 +136,7 @@ addonTable.EstadisticasDict = {
         hiIN = "कवच",
         thTH = "ชุดเกราะ",
         viVN = "Giáp",
-        csCZ = "Zbroj",
+        csCZ = "Zbroj", nlNL = "Armor", roRO = "Armor", huHU = "Armor", elGR = "Armor", ukUA = "Armor", daDK = "Armor", fiFI = "Armor", skSK = "Armor", bgBG = "Armor", hrHR = "Armor", srRS = "Armor", slSI = "Armor", ltLT = "Armor", lvLV = "Armor", etEE = "Armor", idID = "Armor", msMY = "Armor", faIR = "Armor", heIL = "Armor", bnBD = "Armor", urPK = "Armor", taIN = "Armor", teIN = "Armor"
     },
     ["avoidance"] = {
         esES = "Evasión física",
@@ -159,7 +159,7 @@ addonTable.EstadisticasDict = {
         hiIN = "बचाव",
         thTH = "การหลีกเลี่ยง",
         viVN = "Tránh né",
-        csCZ = "Vyhýbání",
+        csCZ = "Vyhýbání", nlNL = "Avoidance", roRO = "Avoidance", huHU = "Avoidance", elGR = "Avoidance", ukUA = "Avoidance", daDK = "Avoidance", fiFI = "Avoidance", skSK = "Avoidance", bgBG = "Avoidance", hrHR = "Avoidance", srRS = "Avoidance", slSI = "Avoidance", ltLT = "Avoidance", lvLV = "Avoidance", etEE = "Avoidance", idID = "Avoidance", msMY = "Avoidance", faIR = "Avoidance", heIL = "Avoidance", bnBD = "Avoidance", urPK = "Avoidance", taIN = "Avoidance", teIN = "Avoidance"
     },
     ["resilience"] = {
         esES = "Temple",
@@ -182,7 +182,7 @@ addonTable.EstadisticasDict = {
         hiIN = "लचीलापन",
         thTH = "ความยืดหยุ่น",
         viVN = "Kiên cường",
-        csCZ = "Houževnatost",
+        csCZ = "Houževnatost", nlNL = "Resilience", roRO = "Resilience", huHU = "Resilience", elGR = "Resilience", ukUA = "Resilience", daDK = "Resilience", fiFI = "Resilience", skSK = "Resilience", bgBG = "Resilience", hrHR = "Resilience", srRS = "Resilience", slSI = "Resilience", ltLT = "Resilience", lvLV = "Resilience", etEE = "Resilience", idID = "Resilience", msMY = "Resilience", faIR = "Resilience", heIL = "Resilience", bnBD = "Resilience", urPK = "Resilience", taIN = "Resilience", teIN = "Resilience"
     },
     ["expertise"] = {
         esES = "Pericia",
@@ -205,7 +205,7 @@ addonTable.EstadisticasDict = {
         hiIN = "विशेषज्ञता",
         thTH = "ความเชี่ยวชาญ",
         viVN = "Kỹ năng",
-        csCZ = "Zručnost",
+        csCZ = "Zručnost", nlNL = "Expertise", roRO = "Expertise", huHU = "Expertise", elGR = "Expertise", ukUA = "Expertise", daDK = "Expertise", fiFI = "Expertise", skSK = "Expertise", bgBG = "Expertise", hrHR = "Expertise", srRS = "Expertise", slSI = "Expertise", ltLT = "Expertise", lvLV = "Expertise", etEE = "Expertise", idID = "Expertise", msMY = "Expertise", faIR = "Expertise", heIL = "Expertise", bnBD = "Expertise", urPK = "Expertise", taIN = "Expertise", teIN = "Expertise"
     },
     ["spirit"] = {
         esES = "Espíritu",
@@ -228,7 +228,7 @@ addonTable.EstadisticasDict = {
         hiIN = "आत्मा",
         thTH = "สปิริต",
         viVN = "Tinh thần",
-        csCZ = "Duch",
+        csCZ = "Duch", nlNL = "Spirit", roRO = "Spirit", huHU = "Spirit", elGR = "Spirit", ukUA = "Spirit", daDK = "Spirit", fiFI = "Spirit", skSK = "Spirit", bgBG = "Spirit", hrHR = "Spirit", srRS = "Spirit", slSI = "Spirit", ltLT = "Spirit", lvLV = "Spirit", etEE = "Spirit", idID = "Spirit", msMY = "Spirit", faIR = "Spirit", heIL = "Spirit", bnBD = "Spirit", urPK = "Spirit", taIN = "Spirit", teIN = "Spirit"
     },
     ["dodge"] = {
         esES = "Esquiva",
@@ -251,7 +251,7 @@ addonTable.EstadisticasDict = {
         hiIN = "चकमा",
         thTH = "การหลบหลีก",
         viVN = "Né tránh",
-        csCZ = "Uskočení",
+        csCZ = "Uskočení", nlNL = "Dodge", roRO = "Dodge", huHU = "Dodge", elGR = "Dodge", ukUA = "Dodge", daDK = "Dodge", fiFI = "Dodge", skSK = "Dodge", bgBG = "Dodge", hrHR = "Dodge", srRS = "Dodge", slSI = "Dodge", ltLT = "Dodge", lvLV = "Dodge", etEE = "Dodge", idID = "Dodge", msMY = "Dodge", faIR = "Dodge", heIL = "Dodge", bnBD = "Dodge", urPK = "Dodge", taIN = "Dodge", teIN = "Dodge"
     },
     ["parry"] = {
         esES = "Parada",
@@ -274,7 +274,7 @@ addonTable.EstadisticasDict = {
         hiIN = "प्रहार रोकना",
         thTH = "การปัดป้อง",
         viVN = "Đỡ đòn",
-        csCZ = "Vykrytí",
+        csCZ = "Vykrytí", nlNL = "Parry", roRO = "Parry", huHU = "Parry", elGR = "Parry", ukUA = "Parry", daDK = "Parry", fiFI = "Parry", skSK = "Parry", bgBG = "Parry", hrHR = "Parry", srRS = "Parry", slSI = "Parry", ltLT = "Parry", lvLV = "Parry", etEE = "Parry", idID = "Parry", msMY = "Parry", faIR = "Parry", heIL = "Parry", bnBD = "Parry", urPK = "Parry", taIN = "Parry", teIN = "Parry"
     },
     ["str"] = {
         esES = "Fuerza",
@@ -297,7 +297,7 @@ addonTable.EstadisticasDict = {
         hiIN = "शक्ति",
         thTH = "พละกำลัง",
         viVN = "Sức mạnh",
-        csCZ = "Síla",
+        csCZ = "Síla", nlNL = "Strength", roRO = "Strength", huHU = "Strength", elGR = "Strength", ukUA = "Strength", daDK = "Strength", fiFI = "Strength", skSK = "Strength", bgBG = "Strength", hrHR = "Strength", srRS = "Strength", slSI = "Strength", ltLT = "Strength", lvLV = "Strength", etEE = "Strength", idID = "Strength", msMY = "Strength", faIR = "Strength", heIL = "Strength", bnBD = "Strength", urPK = "Strength", taIN = "Strength", teIN = "Strength"
     },
     ["agi"] = {
         esES = "Agilidad",
@@ -320,7 +320,7 @@ addonTable.EstadisticasDict = {
         hiIN = "चपलता",
         thTH = "ความคล่องตัว",
         viVN = "Linh hoạt",
-        csCZ = "Obratnost",
+        csCZ = "Obratnost", nlNL = "Agility", roRO = "Agility", huHU = "Agility", elGR = "Agility", ukUA = "Agility", daDK = "Agility", fiFI = "Agility", skSK = "Agility", bgBG = "Agility", hrHR = "Agility", srRS = "Agility", slSI = "Agility", ltLT = "Agility", lvLV = "Agility", etEE = "Agility", idID = "Agility", msMY = "Agility", faIR = "Agility", heIL = "Agility", bnBD = "Agility", urPK = "Agility", taIN = "Agility", teIN = "Agility"
     },
     ["int"] = {
         esES = "Intelecto",
@@ -343,7 +343,7 @@ addonTable.EstadisticasDict = {
         hiIN = "बुद्धि",
         thTH = "สติปัญญา",
         viVN = "Trí tuệ",
-        csCZ = "Intelekt",
+        csCZ = "Intelekt", nlNL = "Intellect", roRO = "Intellect", huHU = "Intellect", elGR = "Intellect", ukUA = "Intellect", daDK = "Intellect", fiFI = "Intellect", skSK = "Intellect", bgBG = "Intellect", hrHR = "Intellect", srRS = "Intellect", slSI = "Intellect", ltLT = "Intellect", lvLV = "Intellect", etEE = "Intellect", idID = "Intellect", msMY = "Intellect", faIR = "Intellect", heIL = "Intellect", bnBD = "Intellect", urPK = "Intellect", taIN = "Intellect", teIN = "Intellect"
     },
     ["stam"] = {
         esES = "Aguante",
@@ -366,7 +366,7 @@ addonTable.EstadisticasDict = {
         hiIN = "सहनशक्ति",
         thTH = "ความทนทาน",
         viVN = "Thể lực",
-        csCZ = "Výdrž",
+        csCZ = "Výdrž", nlNL = "Stamina", roRO = "Stamina", huHU = "Stamina", elGR = "Stamina", ukUA = "Stamina", daDK = "Stamina", fiFI = "Stamina", skSK = "Stamina", bgBG = "Stamina", hrHR = "Stamina", srRS = "Stamina", slSI = "Stamina", ltLT = "Stamina", lvLV = "Stamina", etEE = "Stamina", idID = "Stamina", msMY = "Stamina", faIR = "Stamina", heIL = "Stamina", bnBD = "Stamina", urPK = "Stamina", taIN = "Stamina", teIN = "Stamina"
     },
     ["vers"] = {
         esES = "Versatilidad",
@@ -389,7 +389,7 @@ addonTable.EstadisticasDict = {
         hiIN = "बहुमुखी प्रतिभा",
         thTH = "ความสามารถรอบตัว",
         viVN = "Linh hoạt",
-        csCZ = "Všestrannost",
+        csCZ = "Všestrannost", nlNL = "Versatility", roRO = "Versatility", huHU = "Versatility", elGR = "Versatility", ukUA = "Versatility", daDK = "Versatility", fiFI = "Versatility", skSK = "Versatility", bgBG = "Versatility", hrHR = "Versatility", srRS = "Versatility", slSI = "Versatility", ltLT = "Versatility", lvLV = "Versatility", etEE = "Versatility", idID = "Versatility", msMY = "Versatility", faIR = "Versatility", heIL = "Versatility", bnBD = "Versatility", urPK = "Versatility", taIN = "Versatility", teIN = "Versatility"
     },
     ["leech"] = {
         esES = "Parasitar",
@@ -412,7 +412,7 @@ addonTable.EstadisticasDict = {
         hiIN = "जोक",
         thTH = "การดูดเลือด",
         viVN = "Hút máu",
-        csCZ = "Vysávání",
+        csCZ = "Vysávání", nlNL = "Leech", roRO = "Leech", huHU = "Leech", elGR = "Leech", ukUA = "Leech", daDK = "Leech", fiFI = "Leech", skSK = "Leech", bgBG = "Leech", hrHR = "Leech", srRS = "Leech", slSI = "Leech", ltLT = "Leech", lvLV = "Leech", etEE = "Leech", idID = "Leech", msMY = "Leech", faIR = "Leech", heIL = "Leech", bnBD = "Leech", urPK = "Leech", taIN = "Leech", teIN = "Leech"
     },
     ["speed"] = {
         esES = "Velocidad",
@@ -435,6 +435,6 @@ addonTable.EstadisticasDict = {
         hiIN = "गति",
         thTH = "ความเร็ว",
         viVN = "Tốc độ",
-        csCZ = "Rychlost",
+        csCZ = "Rychlost", nlNL = "Speed", roRO = "Speed", huHU = "Speed", elGR = "Speed", ukUA = "Speed", daDK = "Speed", fiFI = "Speed", skSK = "Speed", bgBG = "Speed", hrHR = "Speed", srRS = "Speed", slSI = "Speed", ltLT = "Speed", lvLV = "Speed", etEE = "Speed", idID = "Speed", msMY = "Speed", faIR = "Speed", heIL = "Speed", bnBD = "Speed", urPK = "Speed", taIN = "Speed", teIN = "Speed"
     },
 }
