@@ -20,7 +20,8 @@ addonTable.SocialDict = {
         arSA = "شكراً",
         hiIN = "धन्यवाद",
         thTH = "ขอบคุณ",
-        viVN = "Cảm ơn"
+        viVN = "Cảm ơn",
+        csCZ = "Díky",
     },
     ["thx"] = {
         esES = "Gracias",
@@ -42,7 +43,8 @@ addonTable.SocialDict = {
         arSA = "شكراً",
         hiIN = "धन्यवाद",
         thTH = "ขอบคุณ",
-        viVN = "Cảm ơn"
+        viVN = "Cảm ơn",
+        csCZ = "Díky",
     },
     ["np"] = {
         esES = "Sin problema",
@@ -64,7 +66,8 @@ addonTable.SocialDict = {
         arSA = "لا مشكلة",
         hiIN = "कोई बात नहीं",
         thTH = "ไม่มีปัญหา",
-        viVN = "Không có gì"
+        viVN = "Không có gì",
+        csCZ = "V pohodě",
     },
     ["uw"] = {
         esES = "De nada",
@@ -86,7 +89,8 @@ addonTable.SocialDict = {
         arSA = "على الرحب والسعة",
         hiIN = "आपका स्वागत है",
         thTH = "ไม่เป็นไร",
-        viVN = "Không có gì"
+        viVN = "Không có gì",
+        csCZ = "Nemáš zač",
     },
     ["gj"] = {
         esES = "Buen trabajo",
@@ -108,7 +112,8 @@ addonTable.SocialDict = {
         arSA = "عمل جيد",
         hiIN = "अच्छा काम",
         thTH = "ทำได้ดีมาก",
-        viVN = "Làm tốt lắm"
+        viVN = "Làm tốt lắm",
+        csCZ = "Dobrá práce",
     },
     ["nvm"] = {
         esES = "No importa",
@@ -130,7 +135,8 @@ addonTable.SocialDict = {
         arSA = "لا بأس",
         hiIN = "कोई बात नहीं",
         thTH = "ช่างมันเถอะ",
-        viVN = "Đừng bận tâm"
+        viVN = "Đừng bận tâm",
+        csCZ = "To je fuk",
     },
     ["gz"] = {
         esES = "Felicidades",
@@ -152,7 +158,8 @@ addonTable.SocialDict = {
         arSA = "تهانينا",
         hiIN = "बधाई हो",
         thTH = "ยินดีด้วย",
-        viVN = "Chúc mừng"
+        viVN = "Chúc mừng",
+        csCZ = "Gratulace",
     },
     ["omg"] = {
         esES = "Oh Dios mío",
@@ -174,7 +181,8 @@ addonTable.SocialDict = {
         arSA = "يا إلهي",
         hiIN = "हे भगवान",
         thTH = "โอ้มายก๊อด",
-        viVN = "Ôi chúa ơi"
+        viVN = "Ôi chúa ơi",
+        csCZ = "Ó můj bože",
     },
     ["lol"] = {
         esES = "Risa",
@@ -196,7 +204,8 @@ addonTable.SocialDict = {
         arSA = "ضحك",
         hiIN = "हाहा",
         thTH = "ฮ่าๆ",
-        viVN = "Cười lớn"
+        viVN = "Cười lớn",
+        csCZ = "Lol",
     },
     ["ac"] = {
         esES = "Clase de Armadura",
@@ -218,7 +227,8 @@ addonTable.SocialDict = {
         arSA = "فئة الدروع",
         hiIN = "कवच श्रेणी",
         thTH = "คลาสเกราะ",
-        viVN = "Chỉ số giáp"
+        viVN = "Chỉ số giáp",
+        csCZ = "Alchemist's Canyon",
     },
     ["ae"] = {
         esES = "Efecto de Área",
@@ -240,7 +250,8 @@ addonTable.SocialDict = {
         arSA = "تأثير المنطقة",
         hiIN = "क्षेत्र प्रभाव",
         thTH = "เอฟเฟกต์พื้นที่",
-        viVN = "Hiệu ứng diện rộng"
+        viVN = "Hiệu ứng diện rộng",
+        csCZ = "Plošný efekt",
     },
     ["dd"] = {
         esES = "Daño Directo",
@@ -262,7 +273,8 @@ addonTable.SocialDict = {
         arSA = "ضرر مباشر",
         hiIN = "प्रत्यक्ष क्षति",
         thTH = "ดาเมจตรง",
-        viVN = "Sát thương trực tiếp"
+        viVN = "Sát thương trực tiếp",
+        csCZ = "Damage Dealer",
     },
     ["fh"] = {
         esES = "Vida Completa",
@@ -284,7 +296,8 @@ addonTable.SocialDict = {
         arSA = "حياة كاملة",
         hiIN = "पूर्ण स्वास्थ्य",
         thTH = "เลือดเต็ม",
-        viVN = "Đầy máu"
+        viVN = "Đầy máu",
+        csCZ = "Freehold",
     },
     ["fm"] = {
         esES = "Maná Completo",
@@ -306,7 +319,8 @@ addonTable.SocialDict = {
         arSA = "مانا كاملة",
         hiIN = "पूर्ण मैना",
         thTH = "มานาเต็ม",
-        viVN = "Đầy mana"
+        viVN = "Đầy mana",
+        csCZ = "Focus Magic",
     },
     ["fvf"] = {
         esES = "Facción contra Facción",
@@ -328,7 +342,8 @@ addonTable.SocialDict = {
         arSA = "فصيل ضد فصيل",
         hiIN = "गुट बनाम गुट",
         thTH = "แฟกชันปะทะแฟกชัน",
-        viVN = "Phe đối phe"
+        viVN = "Phe đối phe",
+        csCZ = "Free for All",
     },
     ["hp"] = {
         esES = "Puntos de Vida",
@@ -350,7 +365,8 @@ addonTable.SocialDict = {
         arSA = "نقاط الحياة",
         hiIN = "हिट अंक",
         thTH = "พลังชีวิต",
-        viVN = "Điểm sinh lực"
+        viVN = "Điểm sinh lực",
+        csCZ = "Životy",
     },
     ["ks"] = {
         esES = "Robo de Muerte",
@@ -372,7 +388,8 @@ addonTable.SocialDict = {
         arSA = "سرقة القتل",
         hiIN = "किल चुराना",
         thTH = "แย่งคิล",
-        viVN = "Cướp mạng"
+        viVN = "Cướp mạng",
+        csCZ = "Zabití",
     },
     ["lom"] = {
         esES = "Poco Maná",
@@ -394,7 +411,8 @@ addonTable.SocialDict = {
         arSA = "نقص المانا",
         hiIN = "मैना कम है",
         thTH = "มาน่าน้อย",
-        viVN = "Sắp hết mana"
+        viVN = "Sắp hết mana",
+        csCZ = "Málo many",
     },
     ["oom"] = {
         esES = "Sin Maná",
@@ -416,7 +434,8 @@ addonTable.SocialDict = {
         arSA = "نفاد المانا",
         hiIN = "मैना खत्म",
         thTH = "มาน่าหมด",
-        viVN = "Hết mana"
+        viVN = "Hết mana",
+        csCZ = "Bez many",
     },
     ["npc"] = {
         esES = "Personaje No Jugador",
@@ -438,7 +457,8 @@ addonTable.SocialDict = {
         arSA = "شخصية غير لاعبة",
         hiIN = "एनपीसी",
         thTH = "เอ็นพีซี",
-        viVN = "Nhân vật không phải người chơi"
+        viVN = "Nhân vật không phải người chơi",
+        csCZ = "NPC",
     },
     ["pc"] = {
         esES = "Personaje Jugador",
@@ -460,7 +480,8 @@ addonTable.SocialDict = {
         arSA = "شخصية لاعب",
         hiIN = "पीसी",
         thTH = "ตัวละครผู้เล่น",
-        viVN = "Nhân vật người chơi"
+        viVN = "Nhân vật người chơi",
+        csCZ = "Cena",
     },
     ["pst"] = {
         esES = "Susurra por favor",
@@ -482,7 +503,8 @@ addonTable.SocialDict = {
         arSA = "يرجى إرسال رسالة خاصة",
         hiIN = "कृपया फुसफुसाएं",
         thTH = "ซิบมาหน่อย",
-        viVN = "Làm ơn hãy nhắn riêng"
+        viVN = "Làm ơn hãy nhắn riêng",
+        csCZ = "Šeptni",
     },
     ["pve"] = {
         esES = "Jugador contra Entorno",
@@ -504,7 +526,8 @@ addonTable.SocialDict = {
         arSA = "لاعب ضد بيئة",
         hiIN = "पीवीई",
         thTH = "พีวีอี",
-        viVN = "PvE"
+        viVN = "PvE",
+        csCZ = "PvE",
     },
     ["pvp"] = {
         esES = "Jugador contra Jugador",
@@ -526,7 +549,8 @@ addonTable.SocialDict = {
         arSA = "لاعب ضد لاعب",
         hiIN = "पीवीपी",
         thTH = "พีวีพี",
-        viVN = "PvP"
+        viVN = "PvP",
+        csCZ = "PvP",
     },
     ["mog"] = {
         esES = "Transfiguración",
@@ -548,7 +572,8 @@ addonTable.SocialDict = {
         arSA = "تحويل المظهر",
         hiIN = "ट्रांसमॉग",
         thTH = "ทรานสม็อก",
-        viVN = "Chuyển hình"
+        viVN = "Chuyển hình",
+        csCZ = "Transmog",
     },
     ["dc"] = {
         esES = "Discord",
@@ -570,7 +595,8 @@ addonTable.SocialDict = {
         arSA = "ديسكورد",
         hiIN = "डिस्कॉर्ड",
         thTH = "ดิสคอร์ด",
-        viVN = "Discord"
+        viVN = "Discord",
+        csCZ = "Odpojen",
     },
     ["ofc"] = {
         esES = "Por supuesto",
@@ -592,7 +618,8 @@ addonTable.SocialDict = {
         arSA = "بالطبع",
         hiIN = "बिल्कुल",
         thTH = "แน่นอน",
-        viVN = "Dĩ nhiên"
+        viVN = "Dĩ nhiên",
+        csCZ = "Samozřejmě",
     },
     ["gg"] = {
         esES = "Bien jugado",
@@ -614,7 +641,8 @@ addonTable.SocialDict = {
         arSA = "لعبة جيدة",
         hiIN = "अच्छा खेल",
         thTH = "จีจี",
-        viVN = "Trận đấu hay"
+        viVN = "Trận đấu hay",
+        csCZ = "Dobrá hra",
     },
     ["btw"] = {
         esES = "Por cierto",
@@ -636,7 +664,8 @@ addonTable.SocialDict = {
         arSA = "بالمناسبة",
         hiIN = "वैसे",
         thTH = "อีกอย่าง",
-        viVN = "Nhân tiện"
+        viVN = "Nhân tiện",
+        csCZ = "Mimochodem",
     },
     ["hf"] = {
         esES = "Diviértete",
@@ -658,7 +687,8 @@ addonTable.SocialDict = {
         arSA = "استمتع",
         hiIN = "मजे करो",
         thTH = "ขอให้สนุก",
-        viVN = "Chúc vui vẻ"
+        viVN = "Chúc vui vẻ",
+        csCZ = "Bav se",
     },
     ["idk"] = {
         esES = "No sé",
@@ -680,7 +710,8 @@ addonTable.SocialDict = {
         arSA = "لا أعرف",
         hiIN = "मुझे नहीं पता",
         thTH = "ไม่รู้ดิ",
-        viVN = "Tôi không biết"
+        viVN = "Tôi không biết",
+        csCZ = "Nevím",
     },
     ["glhf"] = {
         esES = "Buena suerte y diviértete",
@@ -702,7 +733,8 @@ addonTable.SocialDict = {
         arSA = "بالتوفيق، استمتع",
         hiIN = "शुभकामनाएं और मजे करो",
         thTH = "โชคดีนะขอให้สนุก",
-        viVN = "Chúc may mắn, chơi vui"
+        viVN = "Chúc may mắn, chơi vui",
+        csCZ = "Hodně štěstí, bavte se",
     },
     ["gl"] = {
         esES = "Buena suerte",
@@ -724,7 +756,8 @@ addonTable.SocialDict = {
         arSA = "بالتوفيق",
         hiIN = "सौभाग्य",
         thTH = "โชคดีนะ",
-        viVN = "Chúc may mắn"
+        viVN = "Chúc may mắn",
+        csCZ = "Hodně štěstí",
     },
     ["asap"] = {
         esES = "Lo antes posible",
@@ -746,7 +779,8 @@ addonTable.SocialDict = {
         arSA = "في أقرب وقت ممكن",
         hiIN = "जितनी जल्दी हो सके",
         thTH = "โดยเร็วที่สุด",
-        viVN = "Càng sớm càng tốt"
+        viVN = "Càng sớm càng tốt",
+        csCZ = "Co nejdříve",
     },
     ["nt"] = {
         esES = "Buen intento",
@@ -768,7 +802,8 @@ addonTable.SocialDict = {
         arSA = "محاولة جيدة",
         hiIN = "अच्छा प्रयास",
         thTH = "เกือบได้ละ",
-        viVN = "Thử thách tốt"
+        viVN = "Thử thách tốt",
+        csCZ = "Příště lépe",
     },
     ["w8"] = {
         esES = "Espera",
@@ -790,7 +825,8 @@ addonTable.SocialDict = {
         arSA = "انتظر",
         hiIN = "रुको",
         thTH = "เดี๋ยว",
-        viVN = "Chờ đã"
+        viVN = "Chờ đã",
+        csCZ = "Čekej",
     },
     ["mb"] = {
         esES = "Mala mía",
@@ -812,7 +848,8 @@ addonTable.SocialDict = {
         arSA = "خطأي",
         hiIN = "मेरी गलती",
         thTH = "ความผิดของฉันเอง",
-        viVN = "Lỗi của tôi"
+        viVN = "Lỗi của tôi",
+        csCZ = "Moje chyba",
     },
     ["omw"] = {
         esES = "En camino",
@@ -834,7 +871,8 @@ addonTable.SocialDict = {
         arSA = "في الطريق",
         hiIN = "रास्ते में हूँ",
         thTH = "กำลังไป",
-        viVN = "Đang trên đường"
+        viVN = "Đang trên đường",
+        csCZ = "Už jdu",
     },
     ["inc"] = {
         esES = "En camino",
@@ -856,7 +894,8 @@ addonTable.SocialDict = {
         arSA = "قادم",
         hiIN = "आ रहा है",
         thTH = "กำลังมา",
-        viVN = "Đang đến"
+        viVN = "Đang đến",
+        csCZ = "Příchozí",
     },
     ["u2"] = {
         esES = "Tú también",
@@ -878,7 +917,8 @@ addonTable.SocialDict = {
         arSA = "وأنت أيضاً",
         hiIN = "आप भी",
         thTH = "นายก็ด้วย",
-        viVN = "Bạn cũng vậy"
+        viVN = "Bạn cũng vậy",
+        csCZ = "Tobě taky",
     },
     ["bb"] = {
         esES = "Adiós",
@@ -900,7 +940,8 @@ addonTable.SocialDict = {
         arSA = "مع السلامة",
         hiIN = "अलविदा",
         thTH = "ไปละนะ",
-        viVN = "Tạm biệt"
+        viVN = "Tạm biệt",
+        csCZ = "Booty Bay",
     },
     ["kk"] = {
         esES = "Vale",
@@ -922,7 +963,8 @@ addonTable.SocialDict = {
         arSA = "حسناً",
         hiIN = "ठीक है",
         thTH = "เคๆ",
-        viVN = "Đồng ý"
+        viVN = "Đồng ý",
+        csCZ = "Dobře",
     },
     ["afk"] = {
         esES = "Ausente",
@@ -944,7 +986,8 @@ addonTable.SocialDict = {
         arSA = "بعيد عن لوحة المفاتيح",
         hiIN = "एएफके",
         thTH = "เอเอฟเค",
-        viVN = "Tạm rời máy"
+        viVN = "Tạm rời máy",
+        csCZ = "AFK",
     },
     ["brb"] = {
         esES = "Vuelvo enseguida",
@@ -966,7 +1009,8 @@ addonTable.SocialDict = {
         arSA = "سأعود فوراً",
         hiIN = "अभी आता हूँ",
         thTH = "เดี๋ยวมา",
-        viVN = "Sẽ quay lại ngay"
+        viVN = "Sẽ quay lại ngay",
+        csCZ = "Hned jsem zpět",
     },
     ["chill"] = {
         esES = "Tranquilo",
@@ -988,7 +1032,8 @@ addonTable.SocialDict = {
         arSA = "اهدأ",
         hiIN = "शांत रहो",
         thTH = "ใจเย็น",
-        viVN = "Thư giãn đi"
+        viVN = "Thư giãn đi",
+        csCZ = "Klídek",
     },
     ["ffs"] = {
         esES = "Por el amor de Dios",
@@ -1010,7 +1055,8 @@ addonTable.SocialDict = {
         arSA = "بحق السماء",
         hiIN = "भगवान के लिए",
         thTH = "เพื่ออะไรเนี่ย",
-        viVN = "Vì chúa"
+        viVN = "Vì chúa",
+        csCZ = "Proboha",
     },
     ["bk"] = {
         esES = "Vuelvo",
@@ -1032,7 +1078,8 @@ addonTable.SocialDict = {
         arSA = "عدت",
         hiIN = "वापस",
         thTH = "กลับมาละ",
-        viVN = "Đã về"
+        viVN = "Đã về",
+        csCZ = "Black Temple",
     },
     ["gratz"] = {
         esES = "Felicidades",
@@ -1054,7 +1101,8 @@ addonTable.SocialDict = {
         arSA = "تهانينا",
         hiIN = "बधाई हो",
         thTH = "ยินดีด้วย",
-        viVN = "Chúc mừng"
+        viVN = "Chúc mừng",
+        csCZ = "Gratuluji",
     },
     ["rng"] = {
         esES = "Suerte aleatoria",
@@ -1076,7 +1124,8 @@ addonTable.SocialDict = {
         arSA = "مولد أرقام عشوائية",
         hiIN = "आरएनजी",
         thTH = "อาร์เอ็นจี",
-        viVN = "Bộ tạo số ngẫu nhiên"
+        viVN = "Bộ tạo số ngẫu nhiên",
+        csCZ = "Náhoda (RNG)",
     },
     ["ggwp"] = {
         esES = "Buen juego, bien jugado",
@@ -1098,7 +1147,8 @@ addonTable.SocialDict = {
         arSA = "لعبة جيدة، لعبت جيدا",
         hiIN = "अच्छा खेल, अच्छी तरह से खेला गया",
         thTH = "จีจีดับเบิลยูพี",
-        viVN = "Trận đấu hay, chơi tốt"
+        viVN = "Trận đấu hay, chơi tốt",
+        csCZ = "Dobrá hra, dobře zahráno",
     },
     ["wp"] = {
         esES = "Bien jugado",
@@ -1120,7 +1170,8 @@ addonTable.SocialDict = {
         arSA = "لعب جيد",
         hiIN = "अच्छी तरह से खेला गया",
         thTH = "เล่นดีมาก",
-        viVN = "Chơi tốt"
+        viVN = "Chơi tốt",
+        csCZ = "Dobře zahráno",
     },
     ["idd"] = {
         esES = "Cierto",
@@ -1142,7 +1193,8 @@ addonTable.SocialDict = {
         arSA = "بالفعل",
         hiIN = "वास्तव में",
         thTH = "จริงๆ ด้วย",
-        viVN = "Quả thực"
+        viVN = "Quả thực",
+        csCZ = "Opravdu",
     },
     ["idc"] = {
         esES = "Me da igual",
@@ -1164,7 +1216,8 @@ addonTable.SocialDict = {
         arSA = "لا أعتم",
         hiIN = "मुझे परवाह नहीं है",
         thTH = "ไม่สนอะ",
-        viVN = "Tôi không quan tâm"
+        viVN = "Tôi không quan tâm",
+        csCZ = "Je mi to jedno",
     },
     ["idm"] = {
         esES = "No me importa",
@@ -1186,7 +1239,8 @@ addonTable.SocialDict = {
         arSA = "لا أمانع",
         hiIN = "मुझे कोई आपत्ति नहीं है",
         thTH = "ไม่เป็นไร",
-        viVN = "Tôi không phiền"
+        viVN = "Tôi không phiền",
+        csCZ = "Nevadí mi to",
     },
     ["ftw"] = {
         esES = "¡A por la victoria!",
@@ -1208,7 +1262,8 @@ addonTable.SocialDict = {
         arSA = "من أجل الفوز",
         hiIN = "जीत के लिए",
         thTH = "เพื่อชัยชนะ",
-        viVN = "Vì chiến thắng"
+        viVN = "Vì chiến thắng",
+        csCZ = "Pro výhru",
     },
     ["ftl"] = {
         esES = "Qué desastre",
@@ -1230,7 +1285,8 @@ addonTable.SocialDict = {
         arSA = "من أجل الخسارة",
         hiIN = "हार के लिए",
         thTH = "เพื่อความพ่ายแพ้",
-        viVN = "Vì thất bại"
+        viVN = "Vì thất bại",
+        csCZ = "Prohru",
     },
     ["iamf"] = {
         esES = "Es todo culpa mía",
@@ -1252,7 +1308,8 @@ addonTable.SocialDict = {
         arSA = "كل هذا خطأي",
         hiIN = "यह सब मेरी गलती है",
         thTH = "ทั้งหมดเป็นความผิดฉันเอง",
-        viVN = "Tất cả là lỗi của tôi"
+        viVN = "Tất cả là lỗi của tôi",
+        csCZ = "Jsem AFK",
     },
     ["atm"] = {
         esES = "Ahora mismo",
@@ -1274,7 +1331,8 @@ addonTable.SocialDict = {
         arSA = "في هذه اللحظة",
         hiIN = "इस समय",
         thTH = "ณ ตอนนี้",
-        viVN = "Tại thời điểm này"
+        viVN = "Tại thời điểm này",
+        csCZ = "Momentálně",
     },
     ["g2g"] = {
         esES = "Me tengo que ir",
@@ -1296,7 +1354,8 @@ addonTable.SocialDict = {
         arSA = "يجب أن أذهب",
         hiIN = "जाना है",
         thTH = "ต้องไปละ",
-        viVN = "Phải đi rồi"
+        viVN = "Phải đi rồi",
+        csCZ = "Musím jít",
     },
     ["gtg"] = {
         esES = "Me tengo que ir",
@@ -1318,7 +1377,8 @@ addonTable.SocialDict = {
         arSA = "يجب أن أذهب",
         hiIN = "जाना है",
         thTH = "ต้องไปละ",
-        viVN = "Phải đi rồi"
+        viVN = "Phải đi rồi",
+        csCZ = "Musím jít",
     },
     ["nw"] = {
         esES = "No te preocupes",
@@ -1340,7 +1400,8 @@ addonTable.SocialDict = {
         arSA = "لا تقلق",
         hiIN = "कोई बात नहीं",
         thTH = "ไม่ต้องห่วง",
-        viVN = "Không sao đâu"
+        viVN = "Không sao đâu",
+        csCZ = "Necrotic Wake",
     },
     ["trap"] = {
         esES = "Trampa",
@@ -1362,7 +1423,8 @@ addonTable.SocialDict = {
         arSA = "فخ",
         hiIN = "जाल",
         thTH = "กับดัก",
-        viVN = "Bẫy"
+        viVN = "Bẫy",
+        csCZ = "Past",
     },
     ["kek"] = {
         esES = "Risa",
@@ -1384,7 +1446,8 @@ addonTable.SocialDict = {
         arSA = "ضحك",
         hiIN = "हाहा",
         thTH = "ฮ่าๆ",
-        viVN = "Cười lớn"
+        viVN = "Cười lớn",
+        csCZ = "Kek",
     },
     ["pog"] = {
         esES = "Increíble",
@@ -1406,7 +1469,8 @@ addonTable.SocialDict = {
         arSA = "مذهل",
         hiIN = "अद्भुत",
         thTH = "สุดยอด",
-        viVN = "Tuyệt vời"
+        viVN = "Tuyệt vời",
+        csCZ = "Pog",
     },
     ["sus"] = {
         esES = "Sospechoso",
@@ -1428,7 +1492,8 @@ addonTable.SocialDict = {
         arSA = "مشبوه",
         hiIN = "संदिग्ध",
         thTH = "น่าสงสัย",
-        viVN = "Đáng nghi"
+        viVN = "Đáng nghi",
+        csCZ = "Podezřelé",
     },
     ["meta"] = {
         esES = "Lo más efectivo",
@@ -1450,7 +1515,8 @@ addonTable.SocialDict = {
         arSA = "ميتا",
         hiIN = "मेटा",
         thTH = "เมต้า",
-        viVN = "Meta"
+        viVN = "Meta",
+        csCZ = "Meta",
     },
     ["toxic"] = {
         esES = "Tóxico",
@@ -1472,7 +1538,8 @@ addonTable.SocialDict = {
         arSA = "سام",
         hiIN = "विषैला",
         thTH = "ท็อกซิก",
-        viVN = "Độc hại"
+        viVN = "Độc hại",
+        csCZ = "Toxický",
     },
     ["cope"] = {
         esES = "Resignación",
@@ -1494,7 +1561,8 @@ addonTable.SocialDict = {
         arSA = "تأقلم",
         hiIN = "सामना करना",
         thTH = "ทำใจซะ",
-        viVN = "Chấp nhận đi"
+        viVN = "Chấp nhận đi",
+        csCZ = "Vypořádat se",
     },
     ["noob"] = {
         esES = "Novato",
@@ -1516,7 +1584,8 @@ addonTable.SocialDict = {
         arSA = "مبتدئ",
         hiIN = "नौसिखिया",
         thTH = "นูบ",
-        viVN = "Người mới"
+        viVN = "Người mới",
+        csCZ = "Noob",
     },
     ["grind"] = {
         esES = "Repetir acciones",
@@ -1538,7 +1607,8 @@ addonTable.SocialDict = {
         arSA = "طحن",
         hiIN = "पीसना",
         thTH = "ฟาร์มของ",
-        viVN = "Cày cuốc"
+        viVN = "Cày cuốc",
+        csCZ = "Grindování",
     },
     ["farm"] = {
         esES = "Recolectar",
@@ -1560,7 +1630,8 @@ addonTable.SocialDict = {
         arSA = "زراعة",
         hiIN = "खेती",
         thTH = "ฟาร์ม",
-        viVN = "Farming"
+        viVN = "Farming",
+        csCZ = "Farma",
     },
     ["tyvm"] = {
         esES = "Muchas gracias",
@@ -1582,7 +1653,8 @@ addonTable.SocialDict = {
         arSA = "شكرا جزيلا",
         hiIN = "आपका बहुत-बहुत धन्यवाद",
         thTH = "ขอบคุณมาก",
-        viVN = "Cảm ơn rất nhiều"
+        viVN = "Cảm ơn rất nhiều",
+        csCZ = "Díky moc",
     },
     ["yw"] = {
         esES = "De nada",
@@ -1604,7 +1676,8 @@ addonTable.SocialDict = {
         arSA = "على الرحب والسعة",
         hiIN = "आपका स्वागत है",
         thTH = "ไม่เป็นไร",
-        viVN = "Không có gì"
+        viVN = "Không có gì",
+        csCZ = "Nemáš zač",
     },
     ["rdy"] = {
         esES = "Listo",
@@ -1626,7 +1699,8 @@ addonTable.SocialDict = {
         arSA = "جاهز",
         hiIN = "तैयार",
         thTH = "พร้อม",
-        viVN = "Sẵn sàng"
+        viVN = "Sẵn sàng",
+        csCZ = "Připraven",
     },
     ["sec"] = {
         esES = "Un segundo",
@@ -1648,7 +1722,8 @@ addonTable.SocialDict = {
         arSA = "ثانية واحدة",
         hiIN = "एक सेकंड",
         thTH = "แป๊บนึง",
-        viVN = "Chờ một chút"
+        viVN = "Chờ một chút",
+        csCZ = "Vteřina",
     },
     ["pls"] = {
         esES = "Por favor",
@@ -1670,7 +1745,8 @@ addonTable.SocialDict = {
         arSA = "من فضلك",
         hiIN = "कृपया",
         thTH = "ได้โปรด",
-        viVN = "Làm ơn"
+        viVN = "Làm ơn",
+        csCZ = "Prosím",
     },
     ["plz"] = {
         esES = "Por favor",
@@ -1692,7 +1768,8 @@ addonTable.SocialDict = {
         arSA = "من فضلك",
         hiIN = "कृपया",
         thTH = "ได้โปรด",
-        viVN = "Làm ơn"
+        viVN = "Làm ơn",
+        csCZ = "Prosím",
     },
     ["cya"] = {
         esES = "Nos vemos",
@@ -1714,7 +1791,8 @@ addonTable.SocialDict = {
         arSA = "أراك لاحقاً",
         hiIN = "फिर मिलते हैं",
         thTH = "แล้วเจอกัน",
-        viVN = "Hẹn gặp lại"
+        viVN = "Hẹn gặp lại",
+        csCZ = "Zatím",
     },
     ["gn"] = {
         esES = "Buenas noches",
@@ -1736,7 +1814,8 @@ addonTable.SocialDict = {
         arSA = "تصليح على خير",
         hiIN = "शुभ रात्रि",
         thTH = "ฝันดี",
-        viVN = "Chúc ngủ ngon"
+        viVN = "Chúc ngủ ngon",
+        csCZ = "Dobrou noc",
     },
     ["gm"] = {
         esES = "Buenos días",
@@ -1758,6 +1837,7 @@ addonTable.SocialDict = {
         arSA = "صباح الخير",
         hiIN = "सुप्रभात",
         thTH = "อรุณสวัสดิ์",
-        viVN = "Chào buổi sáng"
+        viVN = "Chào buổi sáng",
+        csCZ = "Mistr gildy",
     }
 }

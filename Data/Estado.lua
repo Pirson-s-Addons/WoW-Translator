@@ -20,7 +20,8 @@ addonTable.EstadoDict = {
         arSA = "ميت",
         hiIN = "मृत",
         thTH = "ตาย",
-        viVN = "Đã chết"
+        viVN = "Đã chết",
+        csCZ = "Mrtvý",
     },
     ["low hp"] = {
         esES = "Vida baja",
@@ -42,7 +43,8 @@ addonTable.EstadoDict = {
         arSA = "حياة منخفضة",
         hiIN = "कम स्वास्थ्य",
         thTH = "พลังชีวิตต่ำ",
-        viVN = "Máu thấp"
+        viVN = "Máu thấp",
+        csCZ = "Málo životů",
     },
     ["low mp"] = {
         esES = "Maná bajo",
@@ -64,7 +66,8 @@ addonTable.EstadoDict = {
         arSA = "مانا منخفضة",
         hiIN = "कम मैना",
         thTH = "มานาต่ำ",
-        viVN = "Mana thấp"
+        viVN = "Mana thấp",
+        csCZ = "Málo many",
     },
     ["res"] = {
         esES = "Resurrección",
@@ -86,7 +89,8 @@ addonTable.EstadoDict = {
         arSA = "بعث",
         hiIN = "पुनरुत्थान",
         thTH = "การคืนชีพ",
-        viVN = "Hồi sinh"
+        viVN = "Hồi sinh",
+        csCZ = "Oživení",
     },
     ["ress"] = {
         esES = "Resurrección",
@@ -108,7 +112,8 @@ addonTable.EstadoDict = {
         arSA = "بعث",
         hiIN = "पुनरुत्थान",
         thTH = "การคืนชีพ",
-        viVN = "Hồi sinh"
+        viVN = "Hồi sinh",
+        csCZ = "Oživení",
     },
     ["rez"] = {
         esES = "Resurrección",
@@ -130,7 +135,8 @@ addonTable.EstadoDict = {
         arSA = "بعث",
         hiIN = "पुनरुत्थान",
         thTH = "การคืนชีพ",
-        viVN = "Hồi sinh"
+        viVN = "Hồi sinh",
+        csCZ = "Oživení",
     },
     ["rezz"] = {
         esES = "Resurrección",
@@ -152,7 +158,8 @@ addonTable.EstadoDict = {
         arSA = "بعث",
         hiIN = "पुनरुत्थान",
         thTH = "การคืนชีพ",
-        viVN = "Hồi sinh"
+        viVN = "Hồi sinh",
+        csCZ = "Oživení",
     },
     ["dur"] = {
         esES = "Durabilidad",
@@ -174,7 +181,8 @@ addonTable.EstadoDict = {
         arSA = "المتانة",
         hiIN = "स्थायित्व",
         thTH = "ความทนทาน",
-        viVN = "Độ bền"
+        viVN = "Độ bền",
+        csCZ = "Odolnost",
     },
     ["broken"] = {
         esES = "Roto",
@@ -196,7 +204,8 @@ addonTable.EstadoDict = {
         arSA = "مكسور",
         hiIN = "टूटा हुआ",
         thTH = "พัง",
-        viVN = "Đã hỏng"
+        viVN = "Đã hỏng",
+        csCZ = "Rozbité",
     },
     ["ghost"] = {
         esES = "Fantasma",
@@ -218,7 +227,8 @@ addonTable.EstadoDict = {
         arSA = "شبح",
         hiIN = "भूत",
         thTH = "ผี",
-        viVN = "Linh hồn"
+        viVN = "Linh hồn",
+        csCZ = "Duch",
     },
     ["repop"] = {
         esES = "Liberar espíritu",
@@ -240,6 +250,7 @@ addonTable.EstadoDict = {
         arSA = "إطلاق الروح",
         hiIN = "आत्मा मुक्त करें",
         thTH = "ปล่อยวิญญาณ",
-        viVN = "Giải phóng linh hồn"
+        viVN = "Giải phóng linh hồn",
+        csCZ = "Oživení",
     }
 }

@@ -20,7 +20,8 @@ addonTable.RolesDict = {
         arSA = "دبابة",
         hiIN = "टैंक",
         thTH = "แทงค์",
-        viVN = "Tank"
+        viVN = "Tank",
+        csCZ = "Tank",
     },
     ["tanks"] = {
         esES = "Tanque",
@@ -42,7 +43,8 @@ addonTable.RolesDict = {
         arSA = "دبابات",
         hiIN = "टैंक",
         thTH = "แทงค์",
-        viVN = "Tank"
+        viVN = "Tank",
+        csCZ = "Tankové",
     },
     ["heals"] = {
         esES = "Sanador",
@@ -64,7 +66,8 @@ addonTable.RolesDict = {
         arSA = "معالجون",
         hiIN = "हीलर",
         thTH = "ฮีล",
-        viVN = "Hồi máu"
+        viVN = "Hồi máu",
+        csCZ = "Léčení",
     },
     ["healers"] = {
         esES = "Sanador",
@@ -86,7 +89,8 @@ addonTable.RolesDict = {
         arSA = "معالجون",
         hiIN = "हीलर",
         thTH = "ฮีล",
-        viVN = "Người hồi máu"
+        viVN = "Người hồi máu",
+        csCZ = "Léčitelé",
     },
     ["healer"] = {
         esES = "Sanador",
@@ -108,7 +112,8 @@ addonTable.RolesDict = {
         arSA = "معالج",
         hiIN = "हीलर",
         thTH = "ฮีล",
-        viVN = "Người hồi máu"
+        viVN = "Người hồi máu",
+        csCZ = "Léčitel",
     },
     ["heal"] = {
         esES = "Sanador",
@@ -130,7 +135,8 @@ addonTable.RolesDict = {
         arSA = "شفاء",
         hiIN = "हीलर",
         thTH = "ฮีล",
-        viVN = "Hồi máu"
+        viVN = "Hồi máu",
+        csCZ = "Léčení",
     },
     ["dps"] = {
         esES = "Daño",
@@ -152,6 +158,7 @@ addonTable.RolesDict = {
         arSA = "ضرر",
         hiIN = "डीपीएस",
         thTH = "ดีพีเอส",
-        viVN = "DPS"
+        viVN = "DPS",
+        csCZ = "Poškození za sekundu",
     }
 }

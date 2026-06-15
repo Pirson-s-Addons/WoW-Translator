@@ -20,7 +20,8 @@ addonTable.ComercioDict = {
         arSA = "أريد الشراء",
         hiIN = "खरीदना चाहता हूँ",
         thTH = "ต้องการซื้อ",
-        viVN = "Muốn mua"
+        viVN = "Muốn mua",
+        csCZ = "Koupím",
     },
     ["wts"] = {
         esES = "Vendo",
@@ -42,7 +43,8 @@ addonTable.ComercioDict = {
         arSA = "أريد البيع",
         hiIN = "बेचना चाहता हूँ",
         thTH = "ต้องการขาย",
-        viVN = "Muốn bán"
+        viVN = "Muốn bán",
+        csCZ = "Prodám",
     },
     ["wtt"] = {
         esES = "Cambio",
@@ -64,7 +66,8 @@ addonTable.ComercioDict = {
         arSA = "أريد التجارة",
         hiIN = "व्यापार करना चाहता हूँ",
         thTH = "ต้องการแลกเปลี่ยน",
-        viVN = "Muốn trao đổi"
+        viVN = "Muốn trao đổi",
+        csCZ = "Vyměním",
     },
     ["cod"] = {
         esES = "Pago contra reembolso",
@@ -86,7 +89,8 @@ addonTable.ComercioDict = {
         arSA = "الدفع عند الاستلام",
         hiIN = "डिलीवरी पर नकद",
         thTH = "พัสดุเก็บเงินปลายทาง",
-        viVN = "Giao hàng thu tiền"
+        viVN = "Giao hàng thu tiền",
+        csCZ = "Dobírka",
     },
     ["mats"] = {
         esES = "Materiales",
@@ -108,7 +112,8 @@ addonTable.ComercioDict = {
         arSA = "مواد",
         hiIN = "सामग्री",
         thTH = "วัตถุดิบ",
-        viVN = "Nguyên liệu"
+        viVN = "Nguyên liệu",
+        csCZ = "Materiály",
     },
     ["bis"] = {
         esES = "Lo mejor por ranura",
@@ -130,7 +135,8 @@ addonTable.ComercioDict = {
         arSA = "الأفضل في الفتحة",
         hiIN = "सर्वश्रेष्ठ आइटम",
         thTH = "ไอเทมที่ดีที่สุด",
-        viVN = "Đồ cuối"
+        viVN = "Đồ cuối",
+        csCZ = "Nejlepší v slotu",
     },
     ["crest"] = {
         esES = "Blasón",
@@ -152,7 +158,8 @@ addonTable.ComercioDict = {
         arSA = "شعار",
         hiIN = "शिखा",
         thTH = "ตราสัญลักษณ์",
-        viVN = "Huy hiệu"
+        viVN = "Huy hiệu",
+        csCZ = "Znak",
     },
     ["bronze"] = {
         esES = "Bronce",
@@ -174,7 +181,8 @@ addonTable.ComercioDict = {
         arSA = "برونز",
         hiIN = "कांस्य",
         thTH = "บรอนซ์",
-        viVN = "Đồng"
+        viVN = "Đồng",
+        csCZ = "Bronz",
     },
     ["ah"] = {
         esES = "Casa de Subastas",
@@ -196,7 +204,8 @@ addonTable.ComercioDict = {
         arSA = "دار المزاد",
         hiIN = "नीलामी घर",
         thTH = "โรงประมูล",
-        viVN = "Nhà đấu giá"
+        viVN = "Nhà đấu giá",
+        csCZ = "Aukční dům",
     },
     ["price"] = {
         esES = "Precio",
@@ -218,7 +227,8 @@ addonTable.ComercioDict = {
         arSA = "سعر",
         hiIN = "कीमत",
         thTH = "ราคา",
-        viVN = "Giá"
+        viVN = "Giá",
+        csCZ = "Cena",
     },
     ["offer"] = {
         esES = "Ofrecer",
@@ -240,6 +250,7 @@ addonTable.ComercioDict = {
         arSA = "عرض",
         hiIN = "प्रस्ताव",
         thTH = "เสนอราคา",
-        viVN = "Đề nghị"
+        viVN = "Đề nghị",
+        csCZ = "Nabídka",
     },
 }

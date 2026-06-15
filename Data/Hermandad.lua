@@ -20,7 +20,8 @@ addonTable.HermandadDict = {
         arSA = "نقابة",
         hiIN = "गिल्ड",
         thTH = "กิลด์",
-        viVN = "Bang hội"
+        viVN = "Bang hội",
+        csCZ = "Gilda",
     },
     ["gm"] = {
         esES = "Maestro de Hermandad",
@@ -42,7 +43,8 @@ addonTable.HermandadDict = {
         arSA = "سيد النقابة",
         hiIN = "गिल्ड मास्टर",
         thTH = "หัวหน้ากิลด์",
-        viVN = "Chủ bang"
+        viVN = "Chủ bang",
+        csCZ = "Mistr gildy",
     },
     ["officer"] = {
         esES = "Oficial",
@@ -64,7 +66,8 @@ addonTable.HermandadDict = {
         arSA = "ضابط",
         hiIN = "अधिकारी",
         thTH = "เจ้าหน้าที่",
-        viVN = "Sĩ quan"
+        viVN = "Sĩ quan",
+        csCZ = "Důstojník",
     },
     ["recruit"] = {
         esES = "Recluta",
@@ -86,7 +89,8 @@ addonTable.HermandadDict = {
         arSA = "توظيف",
         hiIN = "भर्ती",
         thTH = "รับคน",
-        viVN = "Tuyển quân"
+        viVN = "Tuyển quân",
+        csCZ = "Nábor",
     },
     ["gbank"] = {
         esES = "Banco de hermandad",
@@ -108,6 +112,7 @@ addonTable.HermandadDict = {
         arSA = "بنك النقابة",
         hiIN = "गिल्ड बैंक",
         thTH = "คลังกิลด์",
-        viVN = "Kho bang"
+        viVN = "Kho bang",
+        csCZ = "Gildovní banka",
     }
 }

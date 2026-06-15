@@ -20,7 +20,8 @@ addonTable.EstadisticasDict = {
         arSA = "قوة الهجوم",
         hiIN = "आक्रमण शक्ति",
         thTH = "พลังโจมตี",
-        viVN = "Sức mạnh tấn công"
+        viVN = "Sức mạnh tấn công",
+        csCZ = "Útočná síla",
     },
     ["crit"] = {
         esES = "Crítico",
@@ -42,7 +43,8 @@ addonTable.EstadisticasDict = {
         arSA = "ضربة حاسمة",
         hiIN = "महत्वपूर्ण स्ट्राइक",
         thTH = "คริติคอล",
-        viVN = "Chí mạng"
+        viVN = "Chí mạng",
+        csCZ = "Kritický zásah",
     },
     ["haste"] = {
         esES = "Celeridad",
@@ -64,7 +66,8 @@ addonTable.EstadisticasDict = {
         arSA = "تسرع",
         hiIN = "जल्दबाजी",
         thTH = "ความเร็ว",
-        viVN = "Tốc độ"
+        viVN = "Tốc độ",
+        csCZ = "Rychlost",
     },
     ["hit"] = {
         esES = "Índice de golpe",
@@ -86,7 +89,8 @@ addonTable.EstadisticasDict = {
         arSA = "نسبة الإصابة",
         hiIN = "हिट रेटिंग",
         thTH = "อัตราการโจมตี",
-        viVN = "Chỉ số đánh trúng"
+        viVN = "Chỉ số đánh trúng",
+        csCZ = "Zásah",
     },
     ["mastery"] = {
         esES = "Maestría",
@@ -108,7 +112,8 @@ addonTable.EstadisticasDict = {
         arSA = "براعة",
         hiIN = "महारत",
         thTH = "ความชำนาญ",
-        viVN = "Tinh thông"
+        viVN = "Tinh thông",
+        csCZ = "Mistrovství",
     },
     ["armor"] = {
         esES = "Armadura",
@@ -130,7 +135,8 @@ addonTable.EstadisticasDict = {
         arSA = "درع",
         hiIN = "कवच",
         thTH = "ชุดเกราะ",
-        viVN = "Giáp"
+        viVN = "Giáp",
+        csCZ = "Zbroj",
     },
     ["avoidance"] = {
         esES = "Evasión física",
@@ -152,7 +158,8 @@ addonTable.EstadisticasDict = {
         arSA = "تجنب",
         hiIN = "बचाव",
         thTH = "การหลีกเลี่ยง",
-        viVN = "Tránh né"
+        viVN = "Tránh né",
+        csCZ = "Vyhýbání",
     },
     ["resilience"] = {
         esES = "Temple",
@@ -174,7 +181,8 @@ addonTable.EstadisticasDict = {
         arSA = "مرونة",
         hiIN = "लचीलापन",
         thTH = "ความยืดหยุ่น",
-        viVN = "Kiên cường"
+        viVN = "Kiên cường",
+        csCZ = "Houževnatost",
     },
     ["expertise"] = {
         esES = "Pericia",
@@ -196,7 +204,8 @@ addonTable.EstadisticasDict = {
         arSA = "خبرة",
         hiIN = "विशेषज्ञता",
         thTH = "ความเชี่ยวชาญ",
-        viVN = "Kỹ năng"
+        viVN = "Kỹ năng",
+        csCZ = "Zručnost",
     },
     ["spirit"] = {
         esES = "Espíritu",
@@ -218,7 +227,8 @@ addonTable.EstadisticasDict = {
         arSA = "روح",
         hiIN = "आत्मा",
         thTH = "สปิริต",
-        viVN = "Tinh thần"
+        viVN = "Tinh thần",
+        csCZ = "Duch",
     },
     ["dodge"] = {
         esES = "Esquiva",
@@ -240,7 +250,8 @@ addonTable.EstadisticasDict = {
         arSA = "تفادي",
         hiIN = "चकमा",
         thTH = "การหลบหลีก",
-        viVN = "Né tránh"
+        viVN = "Né tránh",
+        csCZ = "Uskočení",
     },
     ["parry"] = {
         esES = "Parada",
@@ -262,7 +273,8 @@ addonTable.EstadisticasDict = {
         arSA = "صد",
         hiIN = "प्रहार रोकना",
         thTH = "การปัดป้อง",
-        viVN = "Đỡ đòn"
+        viVN = "Đỡ đòn",
+        csCZ = "Vykrytí",
     },
     ["str"] = {
         esES = "Fuerza",
@@ -284,7 +296,8 @@ addonTable.EstadisticasDict = {
         arSA = "قوة",
         hiIN = "शक्ति",
         thTH = "พละกำลัง",
-        viVN = "Sức mạnh"
+        viVN = "Sức mạnh",
+        csCZ = "Síla",
     },
     ["agi"] = {
         esES = "Agilidad",
@@ -306,7 +319,8 @@ addonTable.EstadisticasDict = {
         arSA = "رشاقة",
         hiIN = "चपलता",
         thTH = "ความคล่องตัว",
-        viVN = "Linh hoạt"
+        viVN = "Linh hoạt",
+        csCZ = "Obratnost",
     },
     ["int"] = {
         esES = "Intelecto",
@@ -328,7 +342,8 @@ addonTable.EstadisticasDict = {
         arSA = "ذكاء",
         hiIN = "बुद्धि",
         thTH = "สติปัญญา",
-        viVN = "Trí tuệ"
+        viVN = "Trí tuệ",
+        csCZ = "Intelekt",
     },
     ["stam"] = {
         esES = "Aguante",
@@ -350,7 +365,8 @@ addonTable.EstadisticasDict = {
         arSA = "قدرة التحمل",
         hiIN = "सहनशक्ति",
         thTH = "ความทนทาน",
-        viVN = "Thể lực"
+        viVN = "Thể lực",
+        csCZ = "Výdrž",
     },
     ["vers"] = {
         esES = "Versatilidad",
@@ -372,7 +388,8 @@ addonTable.EstadisticasDict = {
         arSA = "تعدد الاستخدامات",
         hiIN = "बहुमुखी प्रतिभा",
         thTH = "ความสามารถรอบตัว",
-        viVN = "Linh hoạt"
+        viVN = "Linh hoạt",
+        csCZ = "Všestrannost",
     },
     ["leech"] = {
         esES = "Parasitar",
@@ -394,7 +411,8 @@ addonTable.EstadisticasDict = {
         arSA = "امتصاص",
         hiIN = "जोक",
         thTH = "การดูดเลือด",
-        viVN = "Hút máu"
+        viVN = "Hút máu",
+        csCZ = "Vysávání",
     },
     ["speed"] = {
         esES = "Velocidad",
@@ -416,6 +434,7 @@ addonTable.EstadisticasDict = {
         arSA = "سرعة",
         hiIN = "गति",
         thTH = "ความเร็ว",
-        viVN = "Tốc độ"
+        viVN = "Tốc độ",
+        csCZ = "Rychlost",
     },
 }

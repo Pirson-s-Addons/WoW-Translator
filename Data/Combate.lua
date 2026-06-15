@@ -20,7 +20,8 @@ addonTable.CombateDict = {
         arSA = "وحش إضافي",
         hiIN = "अतिरिक्त भीड़",
         thTH = "มอนสเตอร์เพิ่ม",
-        viVN = "Quái phụ"
+        viVN = "Quái phụ",
+        csCZ = "Přídavný nepřítel",
     },
     ["aggro"] = {
         esES = "Amenaza",
@@ -42,7 +43,8 @@ addonTable.CombateDict = {
         arSA = "تهديد",
         hiIN = "खतरा",
         thTH = "ค่าความโกรธ",
-        viVN = "Hiệm họa"
+        viVN = "Hiệm họa",
+        csCZ = "Agrese",
     },
     ["aoe"] = {
         esES = "Efecto en área",
@@ -64,7 +66,8 @@ addonTable.CombateDict = {
         arSA = "تأثير المنطقة",
         hiIN = "क्षेत्र प्रभाव",
         thTH = "เอฟเฟกต์พื้นที่",
-        viVN = "Hiệu ứng diện rộng"
+        viVN = "Hiệu ứng diện rộng",
+        csCZ = "Plošný efekt",
     },
     ["cd"] = {
         esES = "Tiempo de reutilización",
@@ -86,7 +89,8 @@ addonTable.CombateDict = {
         arSA = "فترة التبريد",
         hiIN = "कूलडाउन",
         thTH = "คูลดาวน์",
-        viVN = "Thời gian hồi"
+        viVN = "Thời gian hồi",
+        csCZ = "Cooldown",
     },
     ["gcd"] = {
         esES = "Reutilización Global",
@@ -108,7 +112,8 @@ addonTable.CombateDict = {
         arSA = "فترة تبريد عالمية",
         hiIN = "वैश्विक कूलडाउन",
         thTH = "จีซีดี",
-        viVN = "Hồi chiêu chung"
+        viVN = "Hồi chiêu chung",
+        csCZ = "Globální cooldown",
     },
     ["dot"] = {
         esES = "Daño en el tiempo",
@@ -130,7 +135,8 @@ addonTable.CombateDict = {
         arSA = "ضرر مع الوقت",
         hiIN = "समय के साथ क्षति",
         thTH = "ดาเมจต่อเนื่อง",
-        viVN = "Sát thương theo thời gian"
+        viVN = "Sát thương theo thời gian",
+        csCZ = "Poškození v čase",
     },
     ["hot"] = {
         esES = "Sana en el tiempo",
@@ -152,7 +158,8 @@ addonTable.CombateDict = {
         arSA = "شفاء مع الوقت",
         hiIN = "समय के साथ उपचार",
         thTH = "ฮีลต่อเนื่อง",
-        viVN = "Hồi máu theo thời gian"
+        viVN = "Hồi máu theo thời gian",
+        csCZ = "Léčení v čase",
     },
     ["kick"] = {
         esES = "Interrumpir",
@@ -174,7 +181,8 @@ addonTable.CombateDict = {
         arSA = "مقاطعة",
         hiIN = "बाधा डालें",
         thTH = "ขัดจังหวะ",
-        viVN = "Ngắt quãng"
+        viVN = "Ngắt quãng",
+        csCZ = "Přerušení",
     },
     ["stun"] = {
         esES = "Aturdir",
@@ -196,7 +204,8 @@ addonTable.CombateDict = {
         arSA = "صدمة",
         hiIN = "दंग करना",
         thTH = "มึนงง",
-        viVN = "Làm choáng"
+        viVN = "Làm choáng",
+        csCZ = "Omráčení",
     },
     ["kite"] = {
         esES = "Correr y ralentizar",
@@ -218,7 +227,8 @@ addonTable.CombateDict = {
         arSA = "استدراج",
         hiIN = "काइटिंग",
         thTH = "ลากจูง",
-        viVN = "Thả diều"
+        viVN = "Thả diều",
+        csCZ = "Kajting",
     },
     ["burst"] = {
         esES = "Daño explosivo",
@@ -240,7 +250,8 @@ addonTable.CombateDict = {
         arSA = "ضرر متفجر",
         hiIN = "बर्स्ट क्षति",
         thTH = "เบิร์สดาเมจ",
-        viVN = "Sát thương bùng nổ"
+        viVN = "Sát thương bùng nổ",
+        csCZ = "Nárazové poškození",
     },
     ["focus"] = {
         esES = "Objetivo principal",
@@ -262,7 +273,8 @@ addonTable.CombateDict = {
         arSA = "هدف التركيز",
         hiIN = "फोकस लक्ष्य",
         thTH = "เป้าหมายโฟกัส",
-        viVN = "Mục tiêu tập trung"
+        viVN = "Mục tiêu tập trung",
+        csCZ = "Soustředění",
     },
     ["buff"] = {
         esES = "Aumento de poder",
@@ -284,7 +296,8 @@ addonTable.CombateDict = {
         arSA = "تعزيز",
         hiIN = "बफ़",
         thTH = "บัฟ",
-        viVN = "Buff"
+        viVN = "Buff",
+        csCZ = "Posílení",
     },
     ["debuff"] = {
         esES = "Disminución de poder",
@@ -306,7 +319,8 @@ addonTable.CombateDict = {
         arSA = "تقليل القدرة",
         hiIN = "डीबफ",
         thTH = "ดีบัฟ",
-        viVN = "Hiệu ứng bất lợi"
+        viVN = "Hiệu ứng bất lợi",
+        csCZ = "Oslabení",
     },
     ["dispel"] = {
         esES = "Disipar / Limpiar",
@@ -328,7 +342,8 @@ addonTable.CombateDict = {
         arSA = "تبديد",
         hiIN = "हटाना",
         thTH = "ล้างสถานะ",
-        viVN = "Giải thuật"
+        viVN = "Giải thuật",
+        csCZ = "Rozptýlení",
     },
     ["cc"] = {
         esES = "Control de masas",
@@ -350,7 +365,8 @@ addonTable.CombateDict = {
         arSA = "التحكم في الحشود",
         hiIN = "क्राउड कंट्रोल",
         thTH = "ซีซี",
-        viVN = "Kiểm soát đám đông"
+        viVN = "Kiểm soát đám đông",
+        csCZ = "Kontrola davu",
     },
     ["bg"] = {
         esES = "Campo de Batalla",
@@ -372,7 +388,8 @@ addonTable.CombateDict = {
         arSA = "ميدان القتال",
         hiIN = "युद्धक्षेत्र",
         thTH = "สนามรบ",
-        viVN = "Chiến trường"
+        viVN = "Chiến trường",
+        csCZ = "Bojiště",
     },
     ["rbg"] = {
         esES = "Campo de Batalla Puntuado",
@@ -394,7 +411,8 @@ addonTable.CombateDict = {
         arSA = "ميدان قتال مصنف",
         hiIN = "रेटेड युद्धक्षेत्र",
         thTH = "อาบีจี",
-        viVN = "Chiến trường xếp hạng"
+        viVN = "Chiến trường xếp hạng",
+        csCZ = "Hodnocené BG",
     },
     ["los"] = {
         esES = "Línea de visión",
@@ -416,7 +434,8 @@ addonTable.CombateDict = {
         arSA = "خط الرؤية",
         hiIN = "दृष्टि रेखा",
         thTH = "หน้าต่างการมองเห็น",
-        viVN = "Tầm nhìn"
+        viVN = "Tầm nhìn",
+        csCZ = "Linie pohledu",
     },
     ["ab"] = {
         esES = "Cuenca de Arathi",
@@ -438,7 +457,8 @@ addonTable.CombateDict = {
         arSA = "حوض أرثي",
         hiIN = "अराथी बेसिन",
         thTH = "อาราธิตอนล่าง",
-        viVN = "Lưu vực Arathi"
+        viVN = "Lưu vực Arathi",
+        csCZ = "Arathi Basin",
     },
     ["av"] = {
         esES = "Valle de Alterac",
@@ -460,7 +480,8 @@ addonTable.CombateDict = {
         arSA = "وادي ألتراك",
         hiIN = "अल्टेराक वैली",
         thTH = "อัลเทอแรควาลเลย์",
-        viVN = "Thung lũng Alterac"
+        viVN = "Thung lũng Alterac",
+        csCZ = "Alterac Valley",
     },
     ["wsg"] = {
         esES = "Garganta Grito de Guerra",
@@ -482,7 +503,8 @@ addonTable.CombateDict = {
         arSA = "وهدة صرخة الحرب",
         hiIN = "वारसॉन्ग गल्च",
         thTH = "วอร์ซองกัลช์",
-        viVN = "Hẻm núi Warsong"
+        viVN = "Hẻm núi Warsong",
+        csCZ = "Warsong Gulch",
     },
     ["2s"] = {
         esES = "2c2",
@@ -504,7 +526,8 @@ addonTable.CombateDict = {
         arSA = "2 ضد 2",
         hiIN = "2v2",
         thTH = "2v2",
-        viVN = "2v2"
+        viVN = "2v2",
+        csCZ = "2v2",
     },
 
     ["3s"] = {
@@ -527,7 +550,8 @@ addonTable.CombateDict = {
         arSA = "3 ضد 3",
         hiIN = "3v3",
         thTH = "3v3",
-        viVN = "3v3"
+        viVN = "3v3",
+        csCZ = "3v3",
     },
 
     ["5s"] = {
@@ -550,7 +574,8 @@ addonTable.CombateDict = {
         arSA = "5 ضد 5",
         hiIN = "5v5",
         thTH = "5v5",
-        viVN = "5v5"
+        viVN = "5v5",
+        csCZ = "5v5",
     },
     ["cap"] = {
         esES = "Tope",
@@ -572,7 +597,8 @@ addonTable.CombateDict = {
         arSA = "حد",
         hiIN = "कैप",
         thTH = "แคป",
-        viVN = "Giới hạn"
+        viVN = "Giới hạn",
+        csCZ = "Limit",
     },
     ["soak"] = {
         esES = "Absorber",
@@ -594,7 +620,8 @@ addonTable.CombateDict = {
         arSA = "امتصاص",
         hiIN = "सोखना",
         thTH = "โซคดาเมจ",
-        viVN = "Chịu đòn"
+        viVN = "Chịu đòn",
+        csCZ = "Absorpce",
     },
     ["stack"] = {
         esES = "Apilarse",
@@ -616,7 +643,8 @@ addonTable.CombateDict = {
         arSA = "تراكم",
         hiIN = "ढेर",
         thTH = "ซ้อนกัน",
-        viVN = "Cộng dồn"
+        viVN = "Cộng dồn",
+        csCZ = "Shromáždění",
     },
     ["spread"] = {
         esES = "Separarse",
@@ -638,7 +666,8 @@ addonTable.CombateDict = {
         arSA = "انتشار",
         hiIN = "प्रसार",
         thTH = "กระจาย",
-        viVN = "Phân tán"
+        viVN = "Phân tán",
+        csCZ = "Rozestup",
     },
     ["cr"] = {
         esES = "Resurrección en combate",
@@ -660,7 +689,8 @@ addonTable.CombateDict = {
         arSA = "إحياء في القتال",
         hiIN = "युद्ध पुनर्जीवन",
         thTH = "ชุบสังหาร",
-        viVN = "Hồi sinh trong chiến đấu"
+        viVN = "Hồi sinh trong chiến đấu",
+        csCZ = "Bojové oživení",
     },
     ["diff"] = {
         esES = "Diferencia",
@@ -682,7 +712,8 @@ addonTable.CombateDict = {
         arSA = "فرق",
         hiIN = "अंतर",
         thTH = "ข้อแตกต่าง",
-        viVN = "Sự khác biệt"
+        viVN = "Sự khác biệt",
+        csCZ = "Rozdíl",
     },
     ["throw"] = {
         esES = "Perder a propósito",
@@ -704,7 +735,8 @@ addonTable.CombateDict = {
         arSA = "رمي",
         hiIN = "फेंकना",
         thTH = "ยอมแพ้",
-        viVN = "Cố ý thua"
+        viVN = "Cố ý thua",
+        csCZ = "Zahození hry",
     },
     ["enrage"] = {
         esES = "Enfurecer",
@@ -726,7 +758,8 @@ addonTable.CombateDict = {
         arSA = "غضب",
         hiIN = "क्रोधावेश",
         thTH = "คลั่ง",
-        viVN = "Nổi giận"
+        viVN = "Nổi giận",
+        csCZ = "Rozzuření",
     },
     ["dps"] = {
         esES = "Daño por segundo",
@@ -748,7 +781,8 @@ addonTable.CombateDict = {
         arSA = "ضرر في الثانية",
         hiIN = "अंक में क्षति",
         thTH = "ดาเมจต่อวิ",
-        viVN = "Sát thương mỗi giây"
+        viVN = "Sát thương mỗi giây",
+        csCZ = "Poškození za sekundu",
     },
     ["hps"] = {
         esES = "Sanación por segundo",
@@ -770,7 +804,8 @@ addonTable.CombateDict = {
         arSA = "شفاء في الثانية",
         hiIN = "अंक में उपचार",
         thTH = "ฮีลต่อวิ",
-        viVN = "Hồi máu mỗi giây"
+        viVN = "Hồi máu mỗi giây",
+        csCZ = "Léčení za sekundu",
     },
     ["lust"] = {
         esES = "Ansia de sangre",
@@ -792,7 +827,8 @@ addonTable.CombateDict = {
         arSA = "شهوة القتال",
         hiIN = "रक्तपिपासा",
         thTH = "บัฟเลือด",
-        viVN = "Khát máu"
+        viVN = "Khát máu",
+        csCZ = "Bloodlust",
     },
     ["stf"] = {
         esES = "Céntrate",
@@ -814,6 +850,7 @@ addonTable.CombateDict = {
         arSA = "ابق مركزا",
         hiIN = "ध्यान केंद्रित रखे",
         thTH = "โฟกัสหน่อย",
-        viVN = "Hãy tập trung"
+        viVN = "Hãy tập trung",
+        csCZ = "Soustřeď se",
     },
 }

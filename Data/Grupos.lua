@@ -20,7 +20,8 @@ addonTable.GruposDict = {
         arSA = "يبحث عن المزيد",
         hiIN = "और अधिक की तलाश है",
         thTH = "รับเพิ่ม",
-        viVN = "Tìm thêm thành viên"
+        viVN = "Tìm thêm thành viên",
+        csCZ = "Hledám členy",
     },
     ["lf1m"] = {
         esES = "Busco 1 más para",
@@ -42,7 +43,8 @@ addonTable.GruposDict = {
         arSA = "يبحث عن شخص واحد إضافي",
         hiIN = "1 और की तलाश है",
         thTH = "อีก 1 คน",
-        viVN = "Cần thêm 1 người"
+        viVN = "Cần thêm 1 người",
+        csCZ = "Hledám 1 hráče",
     },
     ["lf2m"] = {
         esES = "Busco 2 más para",
@@ -64,7 +66,8 @@ addonTable.GruposDict = {
         arSA = "يبحث عن شخصين إضافيين",
         hiIN = "2 और की तलाश है",
         thTH = "อีก 2 คน",
-        viVN = "Cần thêm 2 người"
+        viVN = "Cần thêm 2 người",
+        csCZ = "Hledám 2 hráče",
     },
     ["lf3m"] = {
         esES = "Busco 3 más para",
@@ -86,7 +89,8 @@ addonTable.GruposDict = {
         arSA = "يبحث عن 3 أشخاص إضافيين",
         hiIN = "3 और की तलाश है",
         thTH = "อีก 3 คน",
-        viVN = "Cần thêm 3 người"
+        viVN = "Cần thêm 3 người",
+        csCZ = "Hledám 3 hráče",
     },
     ["lfg"] = {
         esES = "Busco grupo para",
@@ -108,7 +112,8 @@ addonTable.GruposDict = {
         arSA = "يبحث عن مجموعة",
         hiIN = "समूह की तलाश है",
         thTH = "หาตี้",
-        viVN = "Tìm nhóm"
+        viVN = "Tìm nhóm",
+        csCZ = "Hledám skupinu",
     },
     ["lf"] = {
         esES = "Busco para",
@@ -130,7 +135,8 @@ addonTable.GruposDict = {
         arSA = "يبحث عن",
         hiIN = "के लिए देख रहे",
         thTH = "หาอาชีพ",
-        viVN = "Tìm kiếm"
+        viVN = "Tìm kiếm",
+        csCZ = "Hledám",
     },
     ["fresh"] = {
         esES = "Desde el inicio",
@@ -152,7 +158,8 @@ addonTable.GruposDict = {
         arSA = "جولة جديدة",
         hiIN = "नई शुरुआत",
         thTH = "เริ่มต้นใหม่",
-        viVN = "Chạy mới"
+        viVN = "Chạy mới",
+        csCZ = "Čerstvé",
     },
     ["last spot"] = {
         esES = "Último cupo",
@@ -174,7 +181,8 @@ addonTable.GruposDict = {
         arSA = "المكان الأخير",
         hiIN = "आखिरी स्थान",
         thTH = "ที่สุดท้าย",
-        viVN = "Chỗ cuối"
+        viVN = "Chỗ cuối",
+        csCZ = "Poslední místo",
     },
     ["hc"] = {
         esES = "Heroico",
@@ -196,7 +204,8 @@ addonTable.GruposDict = {
         arSA = "بطولي",
         hiIN = "वीर",
         thTH = "ฮีโรอิก",
-        viVN = "Anh hùng"
+        viVN = "Anh hùng",
+        csCZ = "Heroic",
     },
     ["10hc"] = {
         esES = "10 Heroico",
@@ -218,7 +227,8 @@ addonTable.GruposDict = {
         arSA = "بطولي لـ 10 أشخاص",
         hiIN = "10-व्यक्ति वीर",
         thTH = "10 คน ฮีโรอิก",
-        viVN = "Anh hùng 10 người"
+        viVN = "Anh hùng 10 người",
+        csCZ = "10hr HC",
     },
     ["25hc"] = {
         esES = "25 Heroico",
@@ -240,7 +250,8 @@ addonTable.GruposDict = {
         arSA = "بطولي لـ 25 شخصاً",
         hiIN = "25-व्यक्ति वीर",
         thTH = "25 คน ฮีโรอิก",
-        viVN = "Anh hùng 25 người"
+        viVN = "Anh hùng 25 người",
+        csCZ = "25hr HC",
     },
     ["nm"] = {
         esES = "Normal",
@@ -262,7 +273,8 @@ addonTable.GruposDict = {
         arSA = "عادي",
         hiIN = "सामान्य",
         thTH = "ปกติ",
-        viVN = "Thường"
+        viVN = "Thường",
+        csCZ = "Normal",
     },
     ["10nm"] = {
         esES = "10 Normal",
@@ -284,7 +296,8 @@ addonTable.GruposDict = {
         arSA = "عادي لـ 10 أشخاص",
         hiIN = "10-व्यक्ति सामान्य",
         thTH = "10 คน ปกติ",
-        viVN = "Thường 10 người"
+        viVN = "Thường 10 người",
+        csCZ = "10hr NM",
     },
     ["25nm"] = {
         esES = "25 Normal",
@@ -306,7 +319,8 @@ addonTable.GruposDict = {
         arSA = "عادي لـ 25 شخصاً",
         hiIN = "25-व्यक्ति सामान्य",
         thTH = "25 คน ปกติ",
-        viVN = "Thường 25 người"
+        viVN = "Thường 25 người",
+        csCZ = "25hr NM",
     },
     ["10m"] = {
         esES = "10 jugadores",
@@ -328,7 +342,8 @@ addonTable.GruposDict = {
         arSA = "10 أشخاص",
         hiIN = "10-व्यक्ति",
         thTH = "10 คน",
-        viVN = "10 người"
+        viVN = "10 người",
+        csCZ = "10hr",
     },
     ["25m"] = {
         esES = "25 jugadores",
@@ -350,7 +365,8 @@ addonTable.GruposDict = {
         arSA = "25 شخصاً",
         hiIN = "25-व्यक्ति",
         thTH = "25 คน",
-        viVN = "25 người"
+        viVN = "25 người",
+        csCZ = "25hr",
     },
     ["need"] = {
         esES = "Necesito",
@@ -372,7 +388,8 @@ addonTable.GruposDict = {
         arSA = "أحتاج",
         hiIN = "जरूरत",
         thTH = "ต้องการ",
-        viVN = "Cần"
+        viVN = "Cần",
+        csCZ = "Potřebuji",
     },
     ["rf"] = {
         esES = "Buscador de Bandas",
@@ -394,7 +411,8 @@ addonTable.GruposDict = {
         arSA = "مكتشف الغارات",
         hiIN = "रेड फाइंडर",
         thTH = "ระบบหาเรด",
-        viVN = "Tìm Raid"
+        viVN = "Tìm Raid",
+        csCZ = "Ragefire",
     },
     ["lfr"] = {
         esES = "Buscador de Bandas",
@@ -416,7 +434,8 @@ addonTable.GruposDict = {
         arSA = "مكتشف الغارات",
         hiIN = "रेड फाइंडर",
         thTH = "ระบบหาเรด",
-        viVN = "Tìm Raid"
+        viVN = "Tìm Raid",
+        csCZ = "Vyhledávač raidů",
     },
     ["ilvl"] = {
         esES = "Nivel de objeto",
@@ -438,7 +457,8 @@ addonTable.GruposDict = {
         arSA = "مستوى العنصر",
         hiIN = "आइटम स्तर",
         thTH = "เวลไอเทม",
-        viVN = "Cấp độ trang bị"
+        viVN = "Cấp độ trang bị",
+        csCZ = "Úroveň předmětů",
     },
     ["lvl"] = {
         esES = "Nivel",
@@ -460,7 +480,8 @@ addonTable.GruposDict = {
         arSA = "مستوى",
         hiIN = "स्तर",
         thTH = "เลเวล",
-        viVN = "Cấp độ"
+        viVN = "Cấp độ",
+        csCZ = "Úroveň",
     },
     ["achiev"] = {
         esES = "Logro",
@@ -482,7 +503,8 @@ addonTable.GruposDict = {
         arSA = "إنجاز",
         hiIN = "उपलब्धि",
         thTH = "ความสำเร็จ",
-        viVN = "Thành tựu"
+        viVN = "Thành tựu",
+        csCZ = "Úspěch",
     },
     ["achieve"] = {
         esES = "Logro",
@@ -504,7 +526,8 @@ addonTable.GruposDict = {
         arSA = "إنجاز",
         hiIN = "उपलब्धि",
         thTH = "ความสำเร็จ",
-        viVN = "Thành tựu"
+        viVN = "Thành tựu",
+        csCZ = "Úspěch",
     },
     ["achv"] = {
         esES = "Logro",
@@ -526,7 +549,8 @@ addonTable.GruposDict = {
         arSA = "إنجاز",
         hiIN = "उपलब्धि",
         thTH = "ความสำเร็จ",
-        viVN = "Thành tựu"
+        viVN = "Thành tựu",
+        csCZ = "Úspěch",
     },
     ["exp"] = {
         esES = "Experiencia",
@@ -548,7 +572,8 @@ addonTable.GruposDict = {
         arSA = "خبرة",
         hiIN = "अनुभव",
         thTH = "ค่าประสบการณ์",
-        viVN = "Kinh nghiệm"
+        viVN = "Kinh nghiệm",
+        csCZ = "Expansia",
     },
     ["xp"] = {
         esES = "Experiencia",
@@ -570,7 +595,8 @@ addonTable.GruposDict = {
         arSA = "خبرة",
         hiIN = "अनुभव",
         thTH = "ค่าประสบการณ์",
-        viVN = "Kinh nghiệm"
+        viVN = "Kinh nghiệm",
+        csCZ = "Zkušenosti",
     },
     ["link"] = {
         esES = "Vincular/Mostrar",
@@ -592,7 +618,8 @@ addonTable.GruposDict = {
         arSA = "رابط",
         hiIN = "लिंक",
         thTH = "ลิงก์",
-        viVN = "Liên kết"
+        viVN = "Liên kết",
+        csCZ = "Odkaz",
     },
     ["gear"] = {
         esES = "Equipo",
@@ -614,7 +641,8 @@ addonTable.GruposDict = {
         arSA = "معدات",
         hiIN = "गियर",
         thTH = "เกราะ",
-        viVN = "Trang bị"
+        viVN = "Trang bị",
+        csCZ = "Výbava",
     },
     ["req"] = {
         esES = "Requisito",
@@ -636,7 +664,8 @@ addonTable.GruposDict = {
         arSA = "متطلب",
         hiIN = "आवश्यकता",
         thTH = "เงื่อนไข",
-        viVN = "Yêu cầu"
+        viVN = "Yêu cầu",
+        csCZ = "Požadavek",
     },
     ["sum"] = {
         esES = "Invocar",
@@ -658,7 +687,8 @@ addonTable.GruposDict = {
         arSA = "استدعاء",
         hiIN = "समन",
         thTH = "ซัมม่อน",
-        viVN = "Triệu hồi"
+        viVN = "Triệu hồi",
+        csCZ = "Přivolání",
     },
     ["kick"] = {
         esES = "Echar",
@@ -680,7 +710,8 @@ addonTable.GruposDict = {
         arSA = "طرد",
         hiIN = "किक",
         thTH = "เตะ",
-        viVN = "Đuổi"
+        viVN = "Đuổi",
+        csCZ = "Přerušení",
     },
     ["leader"] = {
         esES = "Líder",
@@ -702,7 +733,8 @@ addonTable.GruposDict = {
         arSA = "قائد",
         hiIN = "नेता",
         thTH = "หัวหน้า",
-        viVN = "Trưởng nhóm"
+        viVN = "Trưởng nhóm",
+        csCZ = "Vůdce",
     },
     ["inv"] = {
         esES = "Invitar",
@@ -724,7 +756,8 @@ addonTable.GruposDict = {
         arSA = "دعوة",
         hiIN = "आमंत्रित करें",
         thTH = "ดึงเข้าตี้",
-        viVN = "Mời"
+        viVN = "Mời",
+        csCZ = "Pozvání",
     },
     ["res"] = {
         esES = "Resucitar",
@@ -746,7 +779,8 @@ addonTable.GruposDict = {
         arSA = "إحياء",
         hiIN = "पुनर्जीवित",
         thTH = "ชุบที",
-        viVN = "Hồi sinh"
+        viVN = "Hồi sinh",
+        csCZ = "Oživení",
     },
     ["wipe"] = {
         esES = "Muerte total",
@@ -768,6 +802,7 @@ addonTable.GruposDict = {
         arSA = "مسح",
         hiIN = "वाइप",
         thTH = "ตี้แตก",
-        viVN = "Quét sạch"
+        viVN = "Quét sạch",
+        csCZ = "Wipe",
     },
 }

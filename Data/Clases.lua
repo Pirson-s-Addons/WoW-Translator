@@ -21,7 +21,8 @@ addonTable.ClasesDict = {
         arSA = "التخصص الرئيسي",
         hiIN = "मुख्य विशेषज्ञता",
         thTH = "สายหลัก",
-        viVN = "Chuyên môn chính"
+        viVN = "Chuyên môn chính",
+        csCZ = "Hlavní specializace",
     },
     ["os"]          = {
         esES = "Rama Secundaria",
@@ -43,7 +44,8 @@ addonTable.ClasesDict = {
         arSA = "التخصص الثانوي",
         hiIN = "वैकल्पिक विशेषज्ञता",
         thTH = "สายรอง",
-        viVN = "Chuyên môn phụ"
+        viVN = "Chuyên môn phụ",
+        csCZ = "Vedlejší specializace",
     },
 
     -- =====================
@@ -69,7 +71,8 @@ addonTable.ClasesDict = {
         arSA = "محارب",
         hiIN = "योद्धा",
         thTH = "นักรบ",
-        viVN = "Chiến binh"
+        viVN = "Chiến binh",
+        csCZ = "Válečník",
     },
     ["warr"]        = {
         esES = "Guerrero",
@@ -91,7 +94,8 @@ addonTable.ClasesDict = {
         arSA = "محارب",
         hiIN = "योद्धा",
         thTH = "นักรบ",
-        viVN = "Chiến binh"
+        viVN = "Chiến binh",
+        csCZ = "Válečník",
     },
 
     ["paladin"]     = {
@@ -114,7 +118,8 @@ addonTable.ClasesDict = {
         arSA = "فارس مقدس",
         hiIN = "पलाडिन",
         thTH = "พาลาดิน",
-        viVN = "Hiệp sĩ"
+        viVN = "Hiệp sĩ",
+        csCZ = "Paladin",
     },
     ["pala"]        = {
         esES = "Paladín",
@@ -136,7 +141,8 @@ addonTable.ClasesDict = {
         arSA = "فارس مقدس",
         hiIN = "पलाडिन",
         thTH = "พาลาดิน",
-        viVN = "Hiệp sĩ"
+        viVN = "Hiệp sĩ",
+        csCZ = "Paladin",
     },
 
     ["hunter"]      = {
@@ -159,7 +165,8 @@ addonTable.ClasesDict = {
         arSA = "صياد",
         hiIN = "शिकारी",
         thTH = "นักล่า",
-        viVN = "Thợ săn"
+        viVN = "Thợ săn",
+        csCZ = "Lovec",
     },
     ["hunt"]        = {
         esES = "Cazador",
@@ -181,7 +188,8 @@ addonTable.ClasesDict = {
         arSA = "صياد",
         hiIN = "शिकारी",
         thTH = "นักล่า",
-        viVN = "Thợ săn"
+        viVN = "Thợ săn",
+        csCZ = "Lovec",
     },
 
     ["deathknight"] = {
@@ -204,7 +212,8 @@ addonTable.ClasesDict = {
         arSA = "فارس الموت",
         hiIN = "डेथ नाइट",
         thTH = "เดธไนท์",
-        viVN = "Kỵ sĩ cái chết"
+        viVN = "Kỵ sĩ cái chết",
+        csCZ = "Rytíř smrti",
     },
     ["dk"]          = {
         esES = "Caballero de la Muerte",
@@ -226,7 +235,8 @@ addonTable.ClasesDict = {
         arSA = "فارس الموت",
         hiIN = "डेथ नाइट",
         thTH = "เดธไนท์",
-        viVN = "Kỵ sĩ cái chết"
+        viVN = "Kỵ sĩ cái chết",
+        csCZ = "Rytíř smrti",
     },
 
     ["rogue"]       = {
@@ -249,7 +259,8 @@ addonTable.ClasesDict = {
         arSA = "لصوص",
         hiIN = "दुष्ट",
         thTH = "โร้ค",
-        viVN = "Đạo tặc"
+        viVN = "Đạo tặc",
+        csCZ = "Rogue",
     },
 
     ["mage"]        = {
@@ -272,7 +283,8 @@ addonTable.ClasesDict = {
         arSA = "ساحر",
         hiIN = "दाना",
         thTH = "เมจ",
-        viVN = "Pháp sư"
+        viVN = "Pháp sư",
+        csCZ = "Mág",
     },
 
     ["priest"]      = {
@@ -295,7 +307,8 @@ addonTable.ClasesDict = {
         arSA = "كاهن",
         hiIN = "पुजारी",
         thTH = "พระ",
-        viVN = "Linh mục"
+        viVN = "Linh mục",
+        csCZ = "Kněz",
     },
 
     ["druid"]       = {
@@ -318,7 +331,8 @@ addonTable.ClasesDict = {
         arSA = "درويد",
         hiIN = "ड्र्यूड",
         thTH = "ดรูอิด",
-        viVN = "Tu sĩ"
+        viVN = "Tu sĩ",
+        csCZ = "Druid",
     },
     ["dudu"]        = {
         esES = "Druida",
@@ -340,7 +354,8 @@ addonTable.ClasesDict = {
         arSA = "درويد",
         hiIN = "ड्र्यूड",
         thTH = "ดรูอิด",
-        viVN = "Tu sĩ"
+        viVN = "Tu sĩ",
+        csCZ = "Druid",
     },
 
     ["shaman"]      = {
@@ -363,7 +378,8 @@ addonTable.ClasesDict = {
         arSA = "شامان",
         hiIN = "ओझा",
         thTH = "ชาแมน",
-        viVN = "Pháp sư (Shaman)"
+        viVN = "Pháp sư (Shaman)",
+        csCZ = "Šaman",
     },
 
     ["monk"]        = {
@@ -386,7 +402,8 @@ addonTable.ClasesDict = {
         arSA = "راهب",
         hiIN = "भिक्षु",
         thTH = "มั้งค์",
-        viVN = "Tu sĩ (Monk)"
+        viVN = "Tu sĩ (Monk)",
+        csCZ = "Mnich",
     },
 
     ["warlock"]     = {
@@ -409,7 +426,8 @@ addonTable.ClasesDict = {
         arSA = "مشعوذ",
         hiIN = "तांत्रिक",
         thTH = "วอร์ล็อค",
-        viVN = "Phù thủy"
+        viVN = "Phù thủy",
+        csCZ = "Černokněžník",
     },
     ["lock"]        = {
         esES = "Brujo",
@@ -431,7 +449,8 @@ addonTable.ClasesDict = {
         arSA = "مشعوذ",
         hiIN = "तांत्रिक",
         thTH = "วอร์ล็อค",
-        viVN = "Phù thủy"
+        viVN = "Phù thủy",
+        csCZ = "Černokněžník",
     },
 
     -- =====================
@@ -459,7 +478,8 @@ addonTable.ClasesDict = {
         arSA = "أسلحة",
         hiIN = "शस्त्र",
         thTH = "อาวุธ",
-        viVN = "Vũ khí"
+        viVN = "Vũ khí",
+        csCZ = "Zbraně",
     },
     ["fury"]        = {
         esES = "Furia",
@@ -481,7 +501,8 @@ addonTable.ClasesDict = {
         arSA = "غضب",
         hiIN = "रोष",
         thTH = "บ้าคลั่ง",
-        viVN = "Cuồng nộ"
+        viVN = "Cuồng nộ",
+        csCZ = "Fúrie",
     },
     ["prot"]        = {
         esES = "Protección",
@@ -503,7 +524,8 @@ addonTable.ClasesDict = {
         arSA = "حماية",
         hiIN = "बचाव",
         thTH = "ป้องกัน",
-        viVN = "Bảo vệ"
+        viVN = "Bảo vệ",
+        csCZ = "Ochrana",
     },
 
     -- Paladín
@@ -527,7 +549,8 @@ addonTable.ClasesDict = {
         arSA = "مقدس",
         hiIN = "पवित्र",
         thTH = "ศักดิ์สิทธิ์",
-        viVN = "Thánh thiện"
+        viVN = "Thánh thiện",
+        csCZ = "Holy Paladin",
     },
     ["ppala"]       = {
         esES = "Protección",
@@ -549,7 +572,8 @@ addonTable.ClasesDict = {
         arSA = "حماية",
         hiIN = "बचाव",
         thTH = "ป้องกัน",
-        viVN = "Bảo vệ"
+        viVN = "Bảo vệ",
+        csCZ = "Prot Paladin",
     },
     ["ret"]         = {
         esES = "Reprensión",
@@ -571,7 +595,8 @@ addonTable.ClasesDict = {
         arSA = "قصاص",
         hiIN = "प्रतिशोध",
         thTH = "การลงทัณฑ์",
-        viVN = "Trừng phạt"
+        viVN = "Trừng phạt",
+        csCZ = "Retribution",
     },
     ["retry"]       = {
         esES = "Reprensión",
@@ -593,7 +618,8 @@ addonTable.ClasesDict = {
         arSA = "قصاص",
         hiIN = "प्रतिशोध",
         thTH = "การลงทัณฑ์",
-        viVN = "Trừng phạt"
+        viVN = "Trừng phạt",
+        csCZ = "Retribution",
     },
 
     -- Cazador
@@ -617,7 +643,8 @@ addonTable.ClasesDict = {
         arSA = "سيادة الوحوش",
         hiIN = "जानवरों की महारत",
         thTH = "ฝึกสัตว์",
-        viVN = "Chủ thú"
+        viVN = "Chủ thú",
+        csCZ = "Pán šelem",
     },
     ["bm hunt"]     = {
         esES = "Bestias",
@@ -639,7 +666,8 @@ addonTable.ClasesDict = {
         arSA = "سيادة الوحوش",
         hiIN = "जानवरों की महारत",
         thTH = "ฝึกสัตว์",
-        viVN = "Chủ thú"
+        viVN = "Chủ thú",
+        csCZ = "Pán šelem (BM)",
     },
     ["mm"]          = {
         esES = "Puntería",
@@ -661,7 +689,8 @@ addonTable.ClasesDict = {
         arSA = "رماية",
         hiIN = "निशानेबाजी",
         thTH = "แม่นยำ",
-        viVN = "Xạ thủ"
+        viVN = "Xạ thủ",
+        csCZ = "Střelba (MM)",
     },
     ["sv"]          = {
         esES = "Supervivencia",
@@ -683,7 +712,8 @@ addonTable.ClasesDict = {
         arSA = "نجاة",
         hiIN = "उत्तरजीविता",
         thTH = "เอาตัวรอด",
-        viVN = "Sinh tồn"
+        viVN = "Sinh tồn",
+        csCZ = "Přežití (SV)",
     },
 
     -- Mago
@@ -707,7 +737,8 @@ addonTable.ClasesDict = {
         arSA = "نار",
         hiIN = "आग",
         thTH = "ไฟ",
-        viVN = "Lửa"
+        viVN = "Lửa",
+        csCZ = "Oheň",
     },
     ["frost"]       = {
         esES = "Escarcha",
@@ -729,7 +760,8 @@ addonTable.ClasesDict = {
         arSA = "صقيع",
         hiIN = "पाला",
         thTH = "น้ำแข็ง",
-        viVN = "Băng"
+        viVN = "Băng",
+        csCZ = "Mráz",
     },
     ["arcane"]      = {
         esES = "Arcano",
@@ -751,7 +783,8 @@ addonTable.ClasesDict = {
         arSA = "باطني",
         hiIN = "रहस्यमय",
         thTH = "อาร์เคน",
-        viVN = "Bí thuật"
+        viVN = "Bí thuật",
+        csCZ = "Arkán",
     },
 
     -- Brujo
@@ -775,7 +808,8 @@ addonTable.ClasesDict = {
         arSA = "ابتلاء",
         hiIN = "कष्ट",
         thTH = "ความทุกข์ระทม",
-        viVN = "Khổ đau"
+        viVN = "Khổ đau",
+        csCZ = "Afli",
     },
     ["demo"]        = {
         esES = "Demonología",
@@ -797,7 +831,8 @@ addonTable.ClasesDict = {
         arSA = "علم الشياطين",
         hiIN = "दानव विज्ञान",
         thTH = "ศาสตร์ปีศาจ",
-        viVN = "Quỷ học"
+        viVN = "Quỷ học",
+        csCZ = "Demo",
     },
     ["destro"]      = {
         esES = "Destrucción",
@@ -819,7 +854,8 @@ addonTable.ClasesDict = {
         arSA = "تدمير",
         hiIN = "विनाश",
         thTH = "การทำลายล้าง",
-        viVN = "Hủy diệt"
+        viVN = "Hủy diệt",
+        csCZ = "Destro",
     },
 
     -- Sacerdote
@@ -843,7 +879,8 @@ addonTable.ClasesDict = {
         arSA = "انضباط",
         hiIN = "अनुशासन",
         thTH = "วินัย",
-        viVN = "Kỷ luật"
+        viVN = "Kỷ luật",
+        csCZ = "Disc",
     },
     ["holy"]        = {
         esES = "Sagrado",
@@ -865,7 +902,8 @@ addonTable.ClasesDict = {
         arSA = "مقدس",
         hiIN = "पवित्र",
         thTH = "ศักดิ์สิทธิ์",
-        viVN = "Thánh thiện"
+        viVN = "Thánh thiện",
+        csCZ = "Svatý",
     },
     ["shadow"]      = {
         esES = "Sombras",
@@ -887,7 +925,8 @@ addonTable.ClasesDict = {
         arSA = "ظل",
         hiIN = "छाया",
         thTH = "เงา",
-        viVN = "Bóng tối"
+        viVN = "Bóng tối",
+        csCZ = "Stín",
     },
 
     -- Druida
@@ -911,7 +950,8 @@ addonTable.ClasesDict = {
         arSA = "توازن",
         hiIN = "संतुलन",
         thTH = "สมดุล",
-        viVN = "Cân bằng"
+        viVN = "Cân bằng",
+        csCZ = "Rovnováha",
     },
     ["feral"]       = {
         esES = "Feral",
@@ -933,7 +973,8 @@ addonTable.ClasesDict = {
         arSA = "وحشي",
         hiIN = "जंगली",
         thTH = "ดุร้าย",
-        viVN = "Hoang dã"
+        viVN = "Hoang dã",
+        csCZ = "Feral",
     },
     ["resto"]       = {
         esES = "Restauración",
@@ -955,7 +996,8 @@ addonTable.ClasesDict = {
         arSA = "ترميم",
         hiIN = "बहाली",
         thTH = "ฟื้นฟู",
-        viVN = "Phục hồi"
+        viVN = "Phục hồi",
+        csCZ = "Resto",
     },
     ["guardian"]    = {
         esES = "Guardián",
@@ -977,7 +1019,8 @@ addonTable.ClasesDict = {
         arSA = "حارس",
         hiIN = "अभिभावक",
         thTH = "ผู้พิทักษ์",
-        viVN = "Hộ vệ"
+        viVN = "Hộ vệ",
+        csCZ = "Strážce",
     },
 
     -- Chamán
@@ -1001,7 +1044,8 @@ addonTable.ClasesDict = {
         arSA = "عنصري",
         hiIN = "तात्विक",
         thTH = "ธาตุ",
-        viVN = "Nguyên tố"
+        viVN = "Nguyên tố",
+        csCZ = "Elementál",
     },
     ["enh"]         = {
         esES = "Mejora",
@@ -1023,7 +1067,8 @@ addonTable.ClasesDict = {
         arSA = "تعزيز",
         hiIN = "संवर्धन",
         thTH = "เสริมพลัง",
-        viVN = "Tăng cường"
+        viVN = "Tăng cường",
+        csCZ = "Enhance",
     },
 
 
@@ -1048,7 +1093,8 @@ addonTable.ClasesDict = {
         arSA = "اغتيال",
         hiIN = "हत्या",
         thTH = "สังหาร",
-        viVN = "Ám sát"
+        viVN = "Ám sát",
+        csCZ = "Assa",
     },
     ["assass"] = {
         esES = "Asesinato",
@@ -1070,7 +1116,8 @@ addonTable.ClasesDict = {
         arSA = "اغتيال",
         hiIN = "हत्या",
         thTH = "สังหาร",
-        viVN = "Ám sát"
+        viVN = "Ám sát",
+        csCZ = "Atentát",
     },
     ["outlaw"] = {
         esES = "Combate",
@@ -1092,7 +1139,8 @@ addonTable.ClasesDict = {
         arSA = "قتال / خارج عن القانون",
         hiIN = "मुकाबला",
         thTH = "ต่อสู้",
-        viVN = "Chiến đấu"
+        viVN = "Chiến đấu",
+        csCZ = "Psanec",
     },
     ["sub"] = {
         esES = "Sutileza",
@@ -1114,7 +1162,8 @@ addonTable.ClasesDict = {
         arSA = "دقة",
         hiIN = "सूक्ष्मता",
         thTH = "แยบยล",
-        viVN = "Tinh tế"
+        viVN = "Tinh tế",
+        csCZ = "Sub",
     },
 
     -- Monje
@@ -1138,7 +1187,8 @@ addonTable.ClasesDict = {
         arSA = "معلم التخمير",
         hiIN = "शराब बनाने वाला",
         thTH = "บริวมาสเตอร์",
-        viVN = "Sư phụ nấu rượu"
+        viVN = "Sư phụ nấu rượu",
+        csCZ = "Brewmaster",
     },
     ["bm monk"] = {
         esES = "Maestro Cervecero",
@@ -1160,7 +1210,8 @@ addonTable.ClasesDict = {
         arSA = "معلم التخمير",
         hiIN = "शराब बनाने वाला",
         thTH = "บริวมาสเตอร์",
-        viVN = "Sư phụ nấu rượu"
+        viVN = "Sư phụ nấu rượu",
+        csCZ = "Brewmaster",
     },
     ["ww"] = {
         esES = "Viajero del Viento",
@@ -1182,7 +1233,8 @@ addonTable.ClasesDict = {
         arSA = "ممارس الرياح",
         hiIN = "पवनचक्की",
         thTH = "วินด์วอล์กเกอร์",
-        viVN = "Phong sĩ"
+        viVN = "Phong sĩ",
+        csCZ = "Větrný chodec (WW)",
     },
     ["mw"] = {
         esES = "Tejedor de Niebla",
@@ -1204,7 +1256,8 @@ addonTable.ClasesDict = {
         arSA = "نساج الضباب",
         hiIN = "मिस्टवीवर",
         thTH = "มิสต์วีฟเวอร์",
-        viVN = "Sương sĩ"
+        viVN = "Sương sĩ",
+        csCZ = "Mistweaver",
     },
 
     -- Caballero de la Muerte
@@ -1228,7 +1281,8 @@ addonTable.ClasesDict = {
         arSA = "دم",
         hiIN = "रक्त",
         thTH = "เลือด",
-        viVN = "Máu"
+        viVN = "Máu",
+        csCZ = "Krev",
     },
     ["unholy"] = {
         esES = "Profano",
@@ -1250,7 +1304,8 @@ addonTable.ClasesDict = {
         arSA = "دنس",
         hiIN = "अधर्मी",
         thTH = "อัปมงคล",
-        viVN = "Bất tịnh"
+        viVN = "Bất tịnh",
+        csCZ = "Unholy",
     },
 
     -- Cazador de Demonios
@@ -1274,7 +1329,8 @@ addonTable.ClasesDict = {
         arSA = "صائد الشيطان",
         hiIN = "डेमन हंटर",
         thTH = "ดีมอนฮันเตอร์",
-        viVN = "Thợ săn quỷ"
+        viVN = "Thợ săn quỷ",
+        csCZ = "Lovec démonů",
     },
     ["dh"] = {
         esES = "Cazador de Demonios",
@@ -1296,7 +1352,8 @@ addonTable.ClasesDict = {
         arSA = "صائد الشيطان",
         hiIN = "डेमन हंटर",
         thTH = "ดีมอนฮันเตอร์",
-        viVN = "Thợ săn quỷ"
+        viVN = "Thợ săn quỷ",
+        csCZ = "Lovec démonů",
     },
     ["havoc"] = {
         esES = "Devastación",
@@ -1318,7 +1375,8 @@ addonTable.ClasesDict = {
         arSA = "خراب",
         hiIN = "तबाही",
         thTH = "ความหายนะ",
-        viVN = "Tàn phá"
+        viVN = "Tàn phá",
+        csCZ = "Havoc",
     },
     ["vengeance"] = {
         esES = "Venganza",
@@ -1340,7 +1398,8 @@ addonTable.ClasesDict = {
         arSA = "انتقام",
         hiIN = "प्रतिशोध",
         thTH = "การแก้แค้น",
-        viVN = "Báo thù"
+        viVN = "Báo thù",
+        csCZ = "Pomsta",
     },
 
     -- Evocador
@@ -1364,7 +1423,8 @@ addonTable.ClasesDict = {
         arSA = "مستحضر",
         hiIN = "इवोकर",
         thTH = "อีโวคเกอร์",
-        viVN = "Người hiệu triệu"
+        viVN = "Người hiệu triệu",
+        csCZ = "Vyvolávač",
     },
     ["evo"] = {
         esES = "Evocador",
@@ -1386,7 +1446,8 @@ addonTable.ClasesDict = {
         arSA = "مستحضر",
         hiIN = "इवोकर",
         thTH = "อีโวคเกอร์",
-        viVN = "Người hiệu triệu"
+        viVN = "Người hiệu triệu",
+        csCZ = "Evoker",
     },
     ["devastation"] = {
         esES = "Devastación",
@@ -1408,7 +1469,8 @@ addonTable.ClasesDict = {
         arSA = "دمار",
         hiIN = "तबाही",
         thTH = "ความหายนะ",
-        viVN = "Tàn phá"
+        viVN = "Tàn phá",
+        csCZ = "Devastace",
     },
     ["preservation"] = {
         esES = "Preservación",
@@ -1430,7 +1492,8 @@ addonTable.ClasesDict = {
         arSA = "حفظ",
         hiIN = "संरक्षण",
         thTH = "การอนุรักษ์",
-        viVN = "Bảo tồn"
+        viVN = "Bảo tồn",
+        csCZ = "Uchování",
     },
     ["augmentation"] = {
         esES = "Aumento",
@@ -1452,6 +1515,7 @@ addonTable.ClasesDict = {
         arSA = "تعزيز",
         hiIN = "संवर्धन",
         thTH = "การส่งเสริม",
-        viVN = "Tăng cường"
+        viVN = "Tăng cường",
+        csCZ = "Augmentace",
     },
 }

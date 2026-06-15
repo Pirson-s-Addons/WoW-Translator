@@ -20,7 +20,8 @@ addonTable.ProfesionesDict = {
         arSA = "صياغة المجوهرات",
         hiIN = "आभूषण निर्माण",
         thTH = "การเจียระไนอัญมณี",
-        viVN = "Chế tác trang sức"
+        viVN = "Chế tác trang sức",
+        csCZ = "Jewelcrafting",
     },
     ["jw"] = {
         esES = "Joyería",
@@ -42,7 +43,8 @@ addonTable.ProfesionesDict = {
         arSA = "صياغة المجوهرات",
         hiIN = "आभूषण निर्माण",
         thTH = "การเจียระไนอัญมณี",
-        viVN = "Chế tác trang sức"
+        viVN = "Chế tác trang sức",
+        csCZ = "Jen tak",
     },
     ["bs"] = {
         esES = "Herrería",
@@ -64,7 +66,8 @@ addonTable.ProfesionesDict = {
         arSA = "حدادة",
         hiIN = "लोहारगिरी",
         thTH = "การตีเหล็ก",
-        viVN = "Rèn"
+        viVN = "Rèn",
+        csCZ = "Blacksmithing",
     },
     ["enchant"] = {
         esES = "Encantamiento",
@@ -86,7 +89,8 @@ addonTable.ProfesionesDict = {
         arSA = "سحر",
         hiIN = "जादुई",
         thTH = "การร่ายมนต์",
-        viVN = "Phù phép"
+        viVN = "Phù phép",
+        csCZ = "Očarování",
     },
     ["ec"] = {
         esES = "Encantamiento",
@@ -108,7 +112,8 @@ addonTable.ProfesionesDict = {
         arSA = "سحر",
         hiIN = "जादुई",
         thTH = "การร่ายมนต์",
-        viVN = "Phù phép"
+        viVN = "Phù phép",
+        csCZ = "Eternal Palace",
     },
     ["herb"] = {
         esES = "Herboristería",
@@ -130,7 +135,8 @@ addonTable.ProfesionesDict = {
         arSA = "طب الأعشاب",
         hiIN = "जड़ी-बूटीवाद",
         thTH = "สมุนไพร",
-        viVN = "Thảo dược"
+        viVN = "Thảo dược",
+        csCZ = "Bylinkářství",
     },
     ["alch"] = {
         esES = "Alquimia",
@@ -152,7 +158,8 @@ addonTable.ProfesionesDict = {
         arSA = "الخيمياء",
         hiIN = "कीमिया",
         thTH = "เล่นแร่แปรธาตุ",
-        viVN = "Luyện kim"
+        viVN = "Luyện kim",
+        csCZ = "Alchymie",
     },
     ["lw"] = {
         esES = "Peletería",
@@ -174,7 +181,8 @@ addonTable.ProfesionesDict = {
         arSA = "دباغة الجلود",
         hiIN = "चर्मकार",
         thTH = "การทำเครื่องหนัง",
-        viVN = "Chế tác da"
+        viVN = "Chế tác da",
+        csCZ = "Leatherworking",
     },
     ["tailor"] = {
         esES = "Sastrería",
@@ -196,7 +204,8 @@ addonTable.ProfesionesDict = {
         arSA = "خياطة",
         hiIN = "सिलाई",
         thTH = "การเย็บผ้า",
-        viVN = "May mặc"
+        viVN = "May mặc",
+        csCZ = "Krejčovství",
     },
     ["mining"] = {
         esES = "Minería",
@@ -218,7 +227,8 @@ addonTable.ProfesionesDict = {
         arSA = "تعدين",
         hiIN = "खनन",
         thTH = "การขุดเหมือง",
-        viVN = "Khai thác mỏ"
+        viVN = "Khai thác mỏ",
+        csCZ = "Těžba",
     },
     ["skinning"] = {
         esES = "Desuello",
@@ -240,7 +250,8 @@ addonTable.ProfesionesDict = {
         arSA = "سلخ الجلود",
         hiIN = "खाल उतारना",
         thTH = "การถลกหนัง",
-        viVN = "Lột da"
+        viVN = "Lột da",
+        csCZ = "Stahování kůže",
     },
     ["cooking"] = {
         esES = "Cocina",
@@ -262,7 +273,8 @@ addonTable.ProfesionesDict = {
         arSA = "طبخ",
         hiIN = "खाना बनाना",
         thTH = "การทำอาหาร",
-        viVN = "Nấu ăn"
+        viVN = "Nấu ăn",
+        csCZ = "Vaření",
     },
     ["fishing"] = {
         esES = "Pesca",
@@ -284,7 +296,8 @@ addonTable.ProfesionesDict = {
         arSA = "صيد السمك",
         hiIN = "मछली पकड़ना",
         thTH = "การตกปลา",
-        viVN = "Câu cá"
+        viVN = "Câu cá",
+        csCZ = "Rybaření",
     },
     ["insc"] = {
         esES = "Inscripción",
@@ -306,7 +319,8 @@ addonTable.ProfesionesDict = {
         arSA = "نقش",
         hiIN = "शिलालेख",
         thTH = "การจารึก",
-        viVN = "Khắc chữ"
+        viVN = "Khắc chữ",
+        csCZ = "Nápisy",
     },
     ["arch"] = {
         esES = "Arqueología",
@@ -328,7 +342,8 @@ addonTable.ProfesionesDict = {
         arSA = "علم الآثار",
         hiIN = "पुरातत्व",
         thTH = "โบราณคดี",
-        viVN = "Khảo cổ học"
+        viVN = "Khảo cổ học",
+        csCZ = "Archeologie",
     },
     ["recraft"] = {
         esES = "Refabricar",
@@ -350,7 +365,8 @@ addonTable.ProfesionesDict = {
         arSA = "إعادة التصنيع",
         hiIN = "पुन: निर्माण",
         thTH = "การสร้างใหม่",
-        viVN = "Chế tác lại"
+        viVN = "Chế tác lại",
+        csCZ = "Předělání",
     },
     ["order"] = {
         esES = "Pedido de fabricación",
@@ -372,7 +388,8 @@ addonTable.ProfesionesDict = {
         arSA = "طلب تصنيع",
         hiIN = "क्राफ्टिंग ऑर्डर",
         thTH = "คำสั่งคราฟต์",
-        viVN = "Đơn đặt hàng chế tác"
+        viVN = "Đơn đặt hàng chế tác",
+        csCZ = "Objednávka",
     },
     ["eng"] = {
         esES = "Ingeniería",
@@ -394,7 +411,8 @@ addonTable.ProfesionesDict = {
         arSA = "هندسة",
         hiIN = "इंजीनियरिंग",
         thTH = "วิศวกรรม",
-        viVN = "Kỹ thuật"
+        viVN = "Kỹ thuật",
+        csCZ = "Inženýrství",
     },
     ["engineering"] = {
         esES = "Ingeniería",
@@ -416,7 +434,8 @@ addonTable.ProfesionesDict = {
         arSA = "هندسة",
         hiIN = "इंजीनियरिंग",
         thTH = "วิศวกรรม",
-        viVN = "Kỹ thuật"
+        viVN = "Kỹ thuật",
+        csCZ = "Inženýrství",
     },
     ["fa"] = {
         esES = "Primeros auxilios",
@@ -438,6 +457,7 @@ addonTable.ProfesionesDict = {
         arSA = "الإسعافات الأولية",
         hiIN = "प्राथमिक चिकित्सा",
         thTH = "การปฐมพยาบาล",
-        viVN = "Sơ cứu"
+        viVN = "Sơ cứu",
+        csCZ = "První pomoc",
     }
 }

@@ -142,7 +142,7 @@ function addonTable.CreateConfigUI()
         AddTooltip(cb, info.tt)
     end
     currentY = currentY - (math.ceil(#checkboxes / 3) * 26) - 15
-    
+
     -- 2.1 SECCIÓN: EXPANSIONES
     local expHeader = scrollChild:CreateFontString(nil, "ARTWORK", "GameFontNormal")
     expHeader:SetPoint("TOPLEFT", marginX, currentY)
@@ -150,18 +150,18 @@ function addonTable.CreateConfigUI()
     currentY = currentY - 30
 
     local expansions = {
-        { text = "Classic",           key = "showInstClassic" },
-        { text = "Burning Crusade",   key = "showInstTBC" },
+        { text = "Classic",                key = "showInstClassic" },
+        { text = "Burning Crusade",        key = "showInstTBC" },
         { text = "Wrath of the Lich King", key = "showInstWotLK" },
-        { text = "Cataclysm",         key = "showInstCata" },
-        { text = "Mists of Pandaria", key = "showInstMoP" },
-        { text = "Warlords of Draenor", key = "showInstWoD" },
-        { text = "Legion",            key = "showInstLegion" },
-        { text = "Battle for Azeroth", key = "showInstBfA" },
-        { text = "Shadowlands",       key = "showInstShadowlands" },
-        { text = "Dragonflight",      key = "showInstDragonflight" },
-        { text = "The War Within",    key = "showInstTheWarWithin" },
-        { text = "Midnight",          key = "showInstMidnight" },
+        { text = "Cataclysm",              key = "showInstCata" },
+        { text = "Mists of Pandaria",      key = "showInstMoP" },
+        { text = "Warlords of Draenor",    key = "showInstWoD" },
+        { text = "Legion",                 key = "showInstLegion" },
+        { text = "Battle for Azeroth",     key = "showInstBfA" },
+        { text = "Shadowlands",            key = "showInstShadowlands" },
+        { text = "Dragonflight",           key = "showInstDragonflight" },
+        { text = "The War Within",         key = "showInstTheWarWithin" },
+        { text = "Midnight",               key = "showInstMidnight" },
     }
 
     for i, exp in ipairs(expansions) do
@@ -313,7 +313,8 @@ function addonTable.CreateConfigUI()
         arSA = "العربية",
         hiIN = "हिन्दी",
         thTH = "ไทย",
-        viVN = "Tiếng Việt"
+        viVN = "Tiếng Việt",
+        csCZ = "Čeština"
     }
 
     UIDropDownMenu_Initialize(dropdown, function(self, level)
