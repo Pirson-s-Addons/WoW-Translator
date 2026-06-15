@@ -294,61 +294,52 @@ function addonTable.CreateConfigUI()
     AddTooltip(dropdown, L["TT_LANG"])
 
     local langNames = {
-        esES = "Español (ES)",
-        esMX = "Español (AL)",
-        enUS = "English",
-        deDE = "Deutsch",
-        frFR = "Français",
-        itIT = "Italiano",
-        ptBR = "Português",
-        ruRU = "Русский",
-        koKR = "한국어",
-        zhCN = "简体中文",
-        zhTW = "繁體中文",
-        plPL = "Polski",
-        svSE = "Svenska",
-        noNO = "Norsk",
-        trTR = "Türkçe",
-        jaJP = "日本語",
-        arSA = "العربية",
-        hiIN = "हिन्दी",
-        thTH = "ไทย",
-        viVN = "Tiếng Việt",
-        csCZ = "Čeština",
-        nlNL = "Nederlands",
-        roRO = "Română",
-        huHU = "Magyar",
-        elGR = "Ελληνικά",
-        ukUA = "Українська",
-        daDK = "Dansk",
-        fiFI = "Suomi",
-        skSK = "Slovenčina",
-        bgBG = "Български",
-        hrHR = "Hrvatski",
-        srRS = "Српски",
-        slSI = "Slovenščina",
-        ltLT = "Lietuvių",
-        lvLV = "Latviešu",
-        etEE = "Eesti",
-        idID = "Bahasa Indonesia",
-        msMY = "Bahasa Melayu",
-        faIR = "فارسی",
-        heIL = "עברית",
-        bnBD = "বাংলা",
-        urPK = "اردו",
-        taIN = "தமிழ்",
-        teIN = "తెలుగు"
+        esES = "Spanish (ES)", esMX = "Spanish (AL)", enUS = "English", deDE = "German",
+        frFR = "French", itIT = "Italian", ptBR = "Portuguese", ruRU = "Russian",
+        koKR = "Korean", zhCN = "Chinese (S)", zhTW = "Chinese (T)", plPL = "Polish",
+        svSE = "Swedish", noNO = "Norwegian", trTR = "Turkish", jaJP = "Japanese",
+        arSA = "Arabic", hiIN = "Hindi", thTH = "Thai", viVN = "Vietnamese",
+        csCZ = "Czech", nlNL = "Dutch", roRO = "Romanian", huHU = "Hungarian",
+        elGR = "Greek", ukUA = "Ukrainian", daDK = "Danish", fiFI = "Finnish",
+        skSK = "Slovak", bgBG = "Bulgarian", hrHR = "Croatian", srRS = "Serbian",
+        slSI = "Slovenian", ltLT = "Lithuanian", lvLV = "Latvian", etEE = "Estonian",
+        idID = "Indonesian", msMY = "Malay", faIR = "Persian", heIL = "Hebrew",
+        bnBD = "Bengali", urPK = "Urdu", taIN = "Tamil", teIN = "Telugu"
     }
 
+    local langNamesNative = {
+        esES = "Español (ES)", esMX = "Español (AL)", enUS = "English", deDE = "Deutsch",
+        frFR = "Français", itIT = "Italiano", ptBR = "Português", ruRU = "Русский",
+        koKR = "한국어", zhCN = "简体中文", zhTW = "繁體中文", plPL = "Polski",
+        svSE = "Svenska", noNO = "Norsk", trTR = "Türkçe", jaJP = "日本語",
+        arSA = "العربية", hiIN = "हिन्दी", thTH = "ไทย", viVN = "Tiếng Việt",
+        csCZ = "Čeština", nlNL = "Nederlands", roRO = "Română", huHU = "Magyar",
+        elGR = "Ελληνικά", ukUA = "Українська", daDK = "Dansk", fiFI = "Suomi",
+        skSK = "Slovenčina", bgBG = "Български", hrHR = "Hrvatski", srRS = "Српски",
+        slSI = "Slovenščina", ltLT = "Lietuvių", lvLV = "Latviešu", etEE = "Eesti",
+        idID = "Bahasa Indonesia", msMY = "Bahasa Melayu", faIR = "فارسی", heIL = "עברית",
+        bnBD = "বাংলা", urPK = "اردو", taIN = "தமிழ்", teIN = "తెలుగు"
+    }
+
+    local function getLangName(loc)
+        if not loc then return "" end
+        local clientLoc = GetLocale()
+        -- Safe Rendering Check: Show native if it matches client OR if config flag allows
+        if loc == clientLoc or (WoWTranslatorDB and WoWTranslatorDB.useNativeNames) then
+            return langNamesNative[loc] or langNames[loc]
+        end
+        return langNames[loc]
+    end
+
     UIDropDownMenu_Initialize(dropdown, function(self, level)
-        for val, name in pairs(langNames) do
+        for val, _ in pairs(langNames) do
             local info = UIDropDownMenu_CreateInfo()
-            info.text = name
+            info.text = getLangName(val)
             info.value = val
             info.func = function(s)
                 WoWTranslatorDB.targetLocale = s.value
                 UIDropDownMenu_SetSelectedValue(dropdown, s.value)
-                UIDropDownMenu_SetText(dropdown, langNames[s.value])
+                UIDropDownMenu_SetText(dropdown, getLangName(s.value))
                 addonTable.RebuildMasterDict()
             end
             info.checked = (WoWTranslatorDB.targetLocale == val)
@@ -357,7 +348,7 @@ function addonTable.CreateConfigUI()
     end)
 
     UIDropDownMenu_SetSelectedValue(dropdown, WoWTranslatorDB.targetLocale)
-    UIDropDownMenu_SetText(dropdown, langNames[WoWTranslatorDB.targetLocale] or "Español (ES)")
+    UIDropDownMenu_SetText(dropdown, getLangName(WoWTranslatorDB.targetLocale) or "Spanish (ES)")
 
     -- 5. BOTÓN DE PRUEBA
     local testBtn = CreateFrame("Button", "WT_TestBtn", scrollChild, "UIPanelButtonTemplate")
