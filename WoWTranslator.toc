@@ -20,6 +20,29 @@
 ## Category-svSE: Chatt
 ## Category-noNO: Chat
 ## Category-csCZ: Chat
+## Category-nlNL: Chat
+## Category-roRO: Chat
+## Category-huHU: Chat
+## Category-elGR: Chat
+## Category-ukUA: Чат
+## Category-daDK: Chat
+## Category-fiFI: Chat
+## Category-skSK: Chat
+## Category-bgBG: Чат
+## Category-hrHR: Chat
+## Category-srRS: Чет
+## Category-slSI: Klepet
+## Category-ltLT: Pokalbiai
+## Category-lvLV: Tērzēšana
+## Category-etEE: Vestlus
+## Category-idID: Obrolan
+## Category-msMY: Sembang
+## Category-faIR: چت
+## Category-heIL: צ'אט
+## Category-bnBD: চ্যাট
+## Category-urPK: چیٹ
+## Category-taIN: அரட்டை
+## Category-teIN: చాట్
 
 ## Notes: |cFF33CCFFTranslation of terms, acronyms, and World of Warcraft slang.|r
 ## Notes-deDE: |cFF33CCFFÜbersetzung von Begriffen, Akronymen und World of Warcraft-Slang.|r
@@ -36,6 +59,29 @@
 ## Notes-svSE: |cFF33CCFFÖversättning av termer, akronimer och World of Warcraft-slang.|r
 ## Notes-noNO: |cFF33CCFFOversettelse av termer, akronymer og World of Warcraft-slang.|r
 ## Notes-csCZ: |cFF33CCFFPřeklad termínů, zkratek a slangu ze hry World of Warcraft.|r
+## Notes-nlNL: |cFF33CCFFVertaling van termen, acroniemen en World of Warcraft-jargon.|r
+## Notes-roRO: |cFF33CCFFTraducerea termenilor, acronimelor și jargonului din World of Warcraft.|r
+## Notes-huHU: |cFF33CCFFA World of Warcraft kifejezéseinek, rövidítéseinek és szlengjének fordítása.|r
+## Notes-elGR: |cFF33CCFFΜετάφραση όρων, ακρωνυμίων και αργκό του World of Warcraft.|r
+## Notes-ukUA: |cFF33CCFFПереклад термінів, абревіатур і сленгу World of Warcraft.|r
+## Notes-daDK: |cFF33CCFFOversættelse af termer, akronymer og World of Warcraft-slang.|r
+## Notes-fiFI: |cFF33CCFFWorld of Warcraft -termien, lyhenteiden ja slangin käännös.|r
+## Notes-skSK: |cFF33CCFFPreklad pojmov, skratiek a slangu hry World of Warcraft.|r
+## Notes-bgBG: |cFF33CCFFПревод на термини, съкращения и жаргон от World of Warcraft.|r
+## Notes-hrHR: |cFF33CCFFPrijevod pojmova, kratica i slenga iz igre World of Warcraft.|r
+## Notes-srRS: |cFF33CCFFПревод термина, скраћеница и сленга из игре World of Warcraft.|r
+## Notes-slSI: |cFF33CCFFPrevod izrazov, kratic in slenga iz igre World of Warcraft.|r
+## Notes-ltLT: |cFF33CCFFWorld of Warcraft terminų, santrumpų ir žargono vertimas.|r
+## Notes-lvLV: |cFF33CCFFWorld of Warcraft terminu, saīsinājumu un slenga tulkojums.|r
+## Notes-etEE: |cFF33CCFFWorld of Warcrafti terminite, lühendite ja slängi tõlge.|r
+## Notes-idID: |cFF33CCFFTerjemahan istilah, akronim, dan slang World of Warcraft.|r
+## Notes-msMY: |cFF33CCFFTerjemahan istilah, akronim dan slanga World of Warcraft.|r
+## Notes-faIR: |cFF33CCFFترجمه اصطلاحات، مخفف‌ها و اسلنگ World of Warcraft.|r
+## Notes-heIL: |cFF33CCFFתרגום מונחים, ראשי תיבות וסלנג של World of Warcraft.|r
+## Notes-bnBD: |cFF33CCFFWorld of Warcraft-এর পরিভাষা, সংক্ষিপ্ত রূপ এবং স্ল্যাং-এর অনুবাদ।|r
+## Notes-urPK: |cFF33CCFFورلڈ آف وارکرافٹ کی اصطلاحات، مخففات اور سلانگ کا ترجمہ۔|r
+## Notes-taIN: |cFF33CCFFWorld of Warcraft சொற்கள், சுருக்கங்கள் மற்றும் விளையாட்டு வழக்குச் சொற்களின் மொழிபெயர்ப்பு.|r
+## Notes-teIN: |cFF33CCFFWorld of Warcraft పదాలు, సంక్షిప్త పదాలు మరియు స్లాంగ్ అనువాదం.|r
 
 ## X-Curse-Project-ID: 1431567
 
