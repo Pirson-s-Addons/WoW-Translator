@@ -1,6 +1,6 @@
 ## Interface: 50500, 50501, 50502, 50503, 50504
 ## Author: Pirson
-## Version: 1.14
+## Version: 1.15
 ## Title: |TInterface\AddOns\WoWTranslator\img\logo_wt:16:16|t |cffd597ffWoW Translator|r
 
 # https://warcraft.wiki.gg/wiki/Addon_Categories

@@ -1,6 +1,6 @@
-## Interface: 20501, 20502, 20503, 20504, 20505
+## Interface: 20501, 20502, 20503, 20504, 20505, 20506
 ## Author: Pirson
-## Version: 1.14
+## Version: 1.15
 ## Title: |TInterface\AddOns\WoWTranslator\img\logo_wt:16:16|t |cffd597ffWoW Translator|r
 
 # https://warcraft.wiki.gg/wiki/Addon_Categories

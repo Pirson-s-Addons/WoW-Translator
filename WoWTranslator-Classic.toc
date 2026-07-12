@@ -1,6 +1,6 @@
-## Interface: 11500, 11501, 11502, 11503, 11504, 11505, 11506, 11507, 11508
+## Interface: 11500, 11501, 11502, 11503, 11504, 11505, 11506, 11507, 11508, 11509
 ## Author: Pirson
-## Version: 1.14
+## Version: 1.15
 ## Title: |TInterface\AddOns\WoWTranslator\img\logo_wt:16:16|t |cffd597ffWoW Translator|r
 
 # https://warcraft.wiki.gg/wiki/Addon_Categories
