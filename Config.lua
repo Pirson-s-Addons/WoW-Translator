@@ -124,6 +124,7 @@ function addonTable.CreateConfigUI()
         { text = L["CAT_STATUS"],  key = "showEstado",      tt = L["TT_CAT_STATUS"] },
         { text = L["CAT_ZONES"],   key = "showZones",       tt = L["TT_CAT_ZONES"] },
         { text = L["CAT_SETS"],    key = "showSets",        tt = L["TT_CAT_SETS"] },
+        { text = L["CAT_RACES"],   key = "showRaces",       tt = L["TT_CAT_RACES"] },
     }
 
     for i, info in ipairs(checkboxes) do

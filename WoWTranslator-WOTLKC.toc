@@ -1,6 +1,6 @@
 ## Interface: 30400, 30401, 30402, 30403, 30404, 30405
 ## Author: Pirson
-## Version: 1.15
+## Version: 1.16
 ## Title: |TInterface\AddOns\WoWTranslator\img\logo_wt:16:16|t |cffd597ffWoW Translator|r
 
 # https://warcraft.wiki.gg/wiki/Addon_Categories
@@ -100,7 +100,6 @@ Libs\LibBabble-SubZone-3.0\LibBabble-SubZone-3.0_ptBR.lua
 Libs\LibBabble-SubZone-3.0\LibBabble-SubZone-3.0_ruRU.lua
 Libs\LibBabble-SubZone-3.0\LibBabble-SubZone-3.0_zhCN.lua
 Libs\LibBabble-SubZone-3.0\LibBabble-SubZone-3.0_zhTW.lua
-Libs\LibBabble-Class-3.0\LibBabble-Class-3.0.lua
 Libs\LibBabble-Race-3.0\LibBabble-Race-3.0.lua
 Libs\LibBabble-ItemSet-3.0\LibBabble-ItemSet-3.0.lua
 Libs\CallbackHandler-1.0\CallbackHandler-1.0.lua

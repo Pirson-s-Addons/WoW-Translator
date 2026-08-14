@@ -4,7 +4,7 @@ local L = addonTable.L
 -- ==========================================
 -- VARIABLES GLOBALES Y TABLAS
 -- ==========================================
-local BZ, BI
+local BZ, BI, BR
 local MasterDict = {}
 local MultiWordPatterns = {}
 local SortedDictKeys = {}
@@ -13,12 +13,15 @@ local categoryID
 local ipairs, pairs, string_format, string_gsub, string_find, string_lower = ipairs, pairs, string.format, string.gsub,
     string.find, string.lower
 local table_insert, table_sort = table.insert, table.sort
-local cos, sin, atan2, deg, rad = math.cos, math.sin, math.atan2, math.deg, math.rad
+
+-- Color por defecto de cada fuente Babble cuando no hay coincidencia en un diccionario propio
+local EntryColor = {}
 
 function addonTable.RebuildMasterDict()
     MasterDict = {}
     MultiWordPatterns = {}
     SortedDictKeys = {}
+    EntryColor = {}
 
     local map = {
         { key = "showMazz",        dict = addonTable.InstanciasCoreDict },
@@ -66,6 +69,36 @@ function addonTable.RebuildMasterDict()
         end
     end
 
+    -- Fuentes Babble (nombres propios de Blizzard ya traducidos al idioma del cliente).
+    -- Se fusionan en las mismas tablas que los diccionarios propios en vez de recorrerse
+    -- aparte en cada mensaje de chat: evita miles de pairs()+string_lower() por mensaje.
+    -- Los diccionarios propios tienen prioridad si una clave coincide en ambos lados.
+    local babbleSources = {
+        { data = BZ, color = "ffffd1", active = WoWTranslatorDB.settings.showZones },
+        { data = BI, color = "a335ee", active = WoWTranslatorDB.settings.showSets },
+        { data = BR, color = "69ccf0", active = WoWTranslatorDB.settings.showRaces },
+    }
+
+    for _, src in ipairs(babbleSources) do
+        if src.data and src.active then
+            for eng, loc in pairs(src.data) do
+                if #eng > 3 then
+                    local lowerK = string_lower(eng)
+                    if string_find(eng, " ", 1, true) then
+                        if not MultiWordPatterns[lowerK] then
+                            MultiWordPatterns[lowerK] = loc
+                            EntryColor[lowerK] = src.color
+                            table_insert(SortedDictKeys, lowerK)
+                        end
+                    elseif not MasterDict[lowerK] then
+                        MasterDict[lowerK] = loc
+                        EntryColor[lowerK] = src.color
+                    end
+                end
+            end
+        end
+    end
+
     table_sort(SortedDictKeys, function(a, b) return #a > #b end)
 end
 
@@ -77,63 +110,35 @@ _G.TranslateChat = function(text)
 
     local changed = false
     local userColor = WoWTranslatorDB.chatColor or "00ff00"
-    local colorPrefix = "(|cff" .. userColor
     local textLower = string_lower(text)
 
-    -- 1. TRADUCCIÓN DE FRASES MULTI-PALABRAS
+    -- 1. TRADUCCIÓN DE FRASES MULTI-PALABRAS (diccionarios propios + Babble)
     for _, eng in ipairs(SortedDictKeys) do
         if string_find(textLower, eng, 1, true) then
             local casePattern = string_gsub(eng, "%a",
                 function(c) return string_format("[%s%s]", string_lower(c), c:upper()) end)
             local pattern = "%f[%w]" .. casePattern .. "%f[%W]"
+            local prefix = "(|cff" .. (EntryColor[eng] or userColor)
 
             text = string_gsub(text, pattern, function(found)
                 changed = true
-                return found .. colorPrefix .. MultiWordPatterns[eng] .. "|r)"
+                return found .. prefix .. MultiWordPatterns[eng] .. "|r)"
             end)
             if changed then textLower = string_lower(text) end
         end
     end
 
-    -- 2. TRADUCCIÓN DE PALABRAS SUELTAS
+    -- 2. TRADUCCIÓN DE PALABRAS SUELTAS (diccionarios propios + Babble)
     text = string_gsub(text, "([%a%d']+)", function(word)
-        local translation = MasterDict[string_lower(word)]
+        local lowerWord = string_lower(word)
+        local translation = MasterDict[lowerWord]
         if translation then
             changed = true
-            return word .. colorPrefix .. translation .. "|r)"
+            local prefix = "(|cff" .. (EntryColor[lowerWord] or userColor)
+            return word .. prefix .. translation .. "|r)"
         end
         return word
     end)
-
-    -- 3. TRADUCCIÓN POR LIBRERÍAS
-    local babbleData = {
-        { data = BZ, col = "ffffd1", active = WoWTranslatorDB.settings.showZones },
-        { data = BI, col = "a335ee", active = WoWTranslatorDB.settings.showSets }
-    }
-
-    if changed then textLower = string_lower(text) end
-
-    for _, b in ipairs(babbleData) do
-        if b.data and b.active then
-            local colorStr = "(|cff" .. b.col
-            for eng, loc in pairs(b.data) do
-                if #eng > 3 and string_find(textLower, string_lower(eng), 1, true) then
-                    local pattern = "%f[%a]" .. eng .. "%f[%A]"
-                    text = string_gsub(text, pattern, function(found)
-                        changed = true
-                        return found .. colorStr .. loc .. "|r)"
-                    end)
-                end
-            end
-        end
-    end
-
-    -- 4. SALTAR SI YA ES EL IDIOMA DE DESTINO
-    local target = WoWTranslatorDB and WoWTranslatorDB.targetLocale or "esES"
-    if target:sub(1, 2) == "en" then
-        if WoWTranslatorDB.settings.skipSameLanguage and text:match("^[!%p%s%d%a]+$") then
-        end
-    end
 
     return text, changed
 end
@@ -187,7 +192,7 @@ f:SetScript("OnEvent", function(self, event)
                 showEstado = true,
                 showZones = true,
                 showSets = true,
-                skipSameLanguage = true,
+                showRaces = true,
                 channels = {}
             }
         }
@@ -195,6 +200,7 @@ f:SetScript("OnEvent", function(self, event)
 
     if not WoWTranslatorDB.settings then WoWTranslatorDB.settings = {} end
     if not WoWTranslatorDB.settings.channels then WoWTranslatorDB.settings.channels = {} end
+    if WoWTranslatorDB.settings.showRaces == nil then WoWTranslatorDB.settings.showRaces = true end
 
     local defaultEvents = {
         "CHAT_MSG_SAY", "CHAT_MSG_YELL", "CHAT_MSG_WHISPER", "CHAT_MSG_WHISPER_INFORM",
@@ -212,6 +218,7 @@ f:SetScript("OnEvent", function(self, event)
 
     BZ = LibStub("LibBabble-SubZone-3.0", true) and LibStub("LibBabble-SubZone-3.0"):GetUnstrictLookupTable()
     BI = LibStub("LibBabble-ItemSet-3.0", true) and LibStub("LibBabble-ItemSet-3.0"):GetUnstrictLookupTable()
+    BR = LibStub("LibBabble-Race-3.0", true) and LibStub("LibBabble-Race-3.0"):GetUnstrictLookupTable()
 
     addonTable.RebuildMasterDict()
     addonTable.CreateConfigUI()
@@ -314,11 +321,26 @@ f:SetScript("OnEvent", function(self, event)
             if WT_MainEnableCB then WT_MainEnableCB:SetChecked(false) end
         elseif command == "test" then
             addonTable.RunTest()
+        elseif command == "search" then
+            if rest == "" then
+                print(prefix .. red .. (L["SEARCH_USAGE"] or "Usage: /wt search <word or phrase>") .. "|r")
+            else
+                local key = rest:lower()
+                local result = MasterDict[key] or MultiWordPatterns[key]
+                if result then
+                    print(prefix .. white .. rest .. "|r " .. gold .. "->|r " .. white .. result .. "|r")
+                else
+                    print(prefix .. red ..
+                        (L["SEARCH_NOT_FOUND"] or "No translation found for: ") .. white .. rest .. "|r")
+                end
+            end
         else
             print(prefix .. gold .. L["HELP_HEADER"] .. "|r")
             print(gold .. "/wt config|r - " .. white .. L["HELP_CONFIG_MSG"] .. "|r")
             print(gold .. "/wt on | off|r - " .. white .. L["HELP_ONOFF_MSG"] .. "|r")
             print(gold .. "/wt test|r - " .. white .. L["HELP_TEST_MSG"] .. "|r")
+            print(gold .. "/wt search <word>|r - " ..
+                white .. (L["HELP_SEARCH_MSG"] or "Look up a translation directly.") .. "|r")
         end
     end
 end)
