@@ -1,4 +1,4 @@
-## Interface: 38000, 38001
+## Interface: 38000, 38001, 38002
 ## Author: Pirson
 ## Version: 2.00
 ## Title: |TInterface\AddOns\WoWTranslator\img\logo_wt:16:16|t |cffd597ffWoW Translator|r
