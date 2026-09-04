@@ -1,0 +1,153 @@
+local ADDON_NAME, addonTable = ...
+
+-- ==========================================
+-- TURKCE (trTR)
+-- ==========================================
+if GetLocale() ~= "trTR" then return end
+local L = addonTable.L
+
+L["UI_TITLE"] = "WoW Translator Yapılandırması"
+L["UI_ENABLE_TEXT"] = " Gerçek Zamanlı Çeviriyi Etkinleştir"
+L["UI_COLOR_BTN"] = "Renk Seç"
+L["UI_LANG_LABEL"] = "Çevrilecek dil:"
+L["UI_TEST_BTN"] = "Çeviriyi Test Et"
+L["TT_TEST_BTN"] = "Sohbet penceresinde bir çeviri testi yapın."
+L["CHAT_LOADED"] = "Addon Yüklendi."
+L["SLASH_ON"] = "Çeviriler: |cff00ff00ETKİN|r"
+L["SLASH_OFF"] = "Çeviriler: |cffff0000DEVRE DIŞI|r"
+L["SLASH_TEST_ORIGINAL"] = "Orijinal: "
+L["SLASH_TEST_RESULT"] = "Sonuç: "
+L["SLASH_TEST_ERROR"] = "Çeviriler devre dışı"
+L["TEST_NO_MATCH"] = "Sözlük eşleşmesi bulunamadı."
+L["HELP_HEADER"] = "--- WoW Translator Yardımı ---"
+L["HELP_CONFIG_MSG"] = "Seçenekler panelini açar."
+L["HELP_ONOFF_MSG"] = "Çevirileri etkinleştirir veya devre dışı bırakır."
+L["HELP_TEST_MSG"] = "Bir çeviri testi yapar."
+L["CAT_HEADER"] = "Çevrilecek kategoriler:"
+L["CAT_MAZZ"] = "Zindanlar ve Baskınlar"
+L["CAT_SOCIAL"] = "Sosyal ve Argo"
+L["CAT_CLASSES"] = "Sınıflar"
+L["CAT_ROLES"] = "Roller"
+L["CAT_STATS"] = "İstatistikler"
+L["CAT_PROF"] = "Meslekler"
+L["CAT_COMBAT"] = "Savaş"
+L["CAT_TRADE"] = "Ticaret"
+L["CAT_GROUPS"] = "Gruplar"
+L["CAT_GUILD"] = "Lonca"
+L["CAT_ZONES"] = "Bölgeler (Dünya)"
+L["CAT_SETS"] = "Eşya Setleri"
+L["CAT_STATUS"] = "Durum / Haller"
+L["GEN_HEADER"] = "Genel Yapılandırma"
+
+-- Canales
+L["CH_HEADER"] = "Çevrilecek kanallar:"
+L["CH_CAT_GENERAL"] = "Genel"
+L["CH_CAT_WHISPERS"] = "Fısıltılar ve Bnet"
+L["CH_CAT_GUILD"] = "Lonca"
+L["CH_CAT_GROUP"] = "Grup"
+L["CH_CAT_RAID"] = "Baskın"
+L["CH_CAT_PVP"] = "PvP"
+
+L["CH_SAY"] = "Say"
+L["CH_YELL"] = "Yell"
+L["CH_EMOTE"] = "Emote"
+L["CH_WHISPER"] = "Fısıltı (Gelen)"
+L["CH_WHISPER_INFORM"] = "Fısıltı (Giden)"
+L["CH_BN_WHISPER"] = "BNet (Gelen)"
+L["CH_BN_WHISPER_INFORM"] = "BNet (Giden)"
+L["CH_BN_INLINE_WHISPER"] = "BNet Satır İçi (Gelen)"
+L["CH_BN_INLINE_WHISPER_INFORM"] = "BNet Satır İçi (Giden)"
+L["CH_GUILD"] = "Lonca"
+L["CH_OFFICER"] = "Subay"
+L["CH_CHANNEL"] = "Küresel Kanallar"
+L["CH_PARTY"] = "Grup"
+L["CH_PARTY_LEADER"] = "Grup Lideri"
+L["CH_INSTANCE"] = "Zindan"
+L["CH_INSTANCE_LEADER"] = "Zindan Lideri"
+L["CH_RAID"] = "Baskın"
+L["CH_RAID_LEADER"] = "Baskın Lideri"
+L["CH_RAID_WARNING"] = "Baskın Uyarısı"
+L["CH_BATTLEGROUND"] = "Savaş Alanı"
+L["CH_BATTLEGROUND_LEADER"] = "SA Lideri"
+
+-- Descripciones emergentes (Tooltips)
+L["TT_ENABLE"] = "Tüm çevirileri küresel olarak etkinleştirin veya devre dışı bırakın."
+L["TT_COLOR"] = "Sohbet penceresindeki çevrilmiş metin rengini seçin."
+L["TT_LANG"] = "Hangi dile çevirmek istediğinizi seçin."
+L["TT_CAT_MAZZ"] = "Zindan ve baskın terminolojisi için çeviriyi etkinleştirin."
+L["TT_CAT_SOCIAL"] = "Yaygın internet argosunu ve sosyal ifadeleri çevirin."
+L["TT_CAT_CLASSES"] = "Sınıf isimlerini ve uzmanlıklarını çevirin."
+L["TT_CAT_ROLES"] = "Zindan rollerini (Tank, Şifacı, DPS) çevirin."
+L["TT_CAT_STATS"] = "Eşya ve karakter istatistiklerini çevirin."
+L["TT_CAT_PROF"] = "Meslek isimlerini çevirin."
+L["TT_CAT_COMBAT"] = "Savaşla ilgili terimleri çevirin."
+L["TT_CAT_TRADE"] = "Ticaret ve ekonomi terimlerini çevirin."
+L["TT_CAT_GROUPS"] = "Grup bulma terminolojisini çevirin."
+L["TT_CAT_GUILD"] = "Lonca ile ilgili terimleri çevirin."
+L["TT_CAT_ZONES"] = "Bölge ve konum isimlerini çevirin."
+L["TT_CAT_SETS"] = "Eşya seti isimlerini çevirin."
+L["TT_CAT_STATUS"] = "Durumları ve halleri (AFK, OOM vb.) çevirin."
+
+L["TT_CH_GENERIC"] = "Bu özel sohbet kanalı için çeviriyi etkinleştirin."
+
+-- Minimapa
+L["QT_MINIMAP_TT"] = "|cffd597ffWoW Translator|r\n|cffffffffTıkla:|r Ayarları Aç"
+
+
+-- Buscador de grupos / Palabras ignoradas
+L["CAT_LFG"] = "Grup Bulucu"
+L["TT_CAT_LFG"] = "Grup Bulucu'daki ipucu kutusuna grubun başlığının ve yorumunun çevirisini ekler."
+L["LFG_TT_HEADER"] = "Çeviri:"
+L["HELP_OUT_MSG"] = "İngilizce bir mesaj yaz."
+L["OUT_USAGE"] = "Kullanım: /wt en <metin>"
+L["IGN_TITLE"] = "Yok Sayılan Kelimeler"
+L["IGN_DESC"] = "Bu listedeki kelimeler asla çevrilmez. Sıradan kelimelerle çakışan kısa kısaltmalar için kullanışlıdır."
+L["IGN_ADD"] = "Ekle"
+L["IGN_INPUT_TT"] = "Bir kelime veya ifade yazıp Enter'a bas."
+L["IGN_EMPTY"] = "Henüz yok sayılan kelime yok."
+L["IGN_REMOVE_TT"] = "Listeden kaldır."
+-- JAPANESE (jaJP)
+
+L["CAT_RACES"] = "Irklar"
+L["EXP_HEADER"] = "Genişleme paketine göre zindanlar ve baskınlar:"
+L["HELP_SEARCH_MSG"] = "Bir çeviriyi doğrudan ara."
+L["SEARCH_NOT_FOUND"] = "Şunun için çeviri bulunamadı: "
+L["SEARCH_USAGE"] = "Kullanım: /wt search <kelime veya ifade>"
+L["TT_CAT_RACES"] = "Oynanabilir ırkların adlarını çevirir."
+
+-- Panel de opciones
+L["OPT_GENERAL"] = "Genel"
+L["OPT_CATEGORIES"] = "Kategoriler"
+L["OPT_EXPANSIONS"] = "Genişleme Paketleri"
+L["OPT_CHANNELS"] = "Sohbet Kanalları"
+L["OPT_LINKS"] = "Bağlantılar"
+L["OPT_COMMANDS"] = "Komutlar"
+L["OPT_AUTHOR"] = "Yazar:"
+L["OPT_VERSION"] = "Sürüm:"
+L["OPT_ABOUT_DESC"] = "World of Warcraft terimlerini, kısaltmalarını ve argosunu sohbette ve Grup Bulucu'da anında çevirir. Aşağıdaki bölümlerden neyin çevrileceğini seç."
+L["OUT_HELP"] = "Cümleyi kendi dilinde yaz; eklenti onu İngilizce olarak sohbet kutusuna bırakır, göndermeye hazır. Senin yerine asla göndermez. Yalnızca WoW argosunu kapsar, dilin tamamını değil."
+
+-- Vista de ayuda
+L["OPT_HELP"] = "Yardım"
+L["HELP_INTRO"] = "WoW Translator sohbeti okur ve tanıdığı her World of Warcraft terimi, kısaltması ya da argo sözü için anlamını hemen yanına, seçtiğin renkte ekler. Mesajı asla yeniden yazmaz: özgün metin her zaman kalır. Grup Bulucu'da da çalışır ve grubun başlığı ile yorumunun çevirisini ipucu kutusuna ekler."
+L["HELP_FAQ"] = "Sık sorulan sorular"
+L["HELP_Q_SCOPE"] = "Sohbetin tamamını çevirir mi?"
+L["HELP_A_SCOPE"] = "Hayır. Yalnızca oyun terimlerini, kısaltmaları ve argoyu bilir, dilin tamamını değil. Fransızca bir mesaj Fransızca kalır; açıklanan şey 'LFM', 'ICC', 'wipe' ve benzerleridir."
+L["HELP_Q_TARGET"] = "Hedef dil ne demek?"
+L["HELP_A_TARGET"] = "Çevirinin YAPILDIĞI dildir. Kaynak her zaman İngilizcedir, çünkü bu terimler İngilizce yazılmıştır. Genel bölümünden kendi diline ayarla."
+L["HELP_Q_COMPOSE"] = "/wt en ne işe yarar?"
+L["HELP_Q_IGNORE"] = "Bir kelime çevriliyor ve bunu istemiyorum"
+L["HELP_A_IGNORE"] = "Yok Sayılan Kelimeler bölümüne ekle. Tipik durum, sıradan kelimelerle çakışan kısa kısaltmalardır. Arayüzü yeniden yüklemeden anında çevrilmeyi bırakır."
+L["HELP_Q_NOTHING"] = "Hiçbir şey çevirmiyor, neye bakayım?"
+L["HELP_A_NOTHING"] = "Genel bölümünde çevirinin açık olduğuna, Sohbet Kanalları bölümünde kanalın işaretli olduğuna ve Kategoriler bölümünde terimin kategorisinin işaretli olduğuna bak."
+L["HELP_CONTACT"] = "Hata bildir"
+L["HELP_CONTACT_TEXT"] = "Hatalar ve öneriler CurseForge'daki eklenti sayfasına gider: oraya yorum bırak ya da yazara özel mesaj gönder. Aşağıdaki adresi kopyala, WoW bağlantı açamaz."
+
+-- Boton de seleccionar enlaces
+L["UI_SELECT"] = "Seç"
+L["TT_SELECT"] = "Bağlantının tamamını seçer, böylece Ctrl+C ile kopyalayabilirsin. WoW eklentilerin panoya yazmasına izin vermez, son adım sana kalıyor."
+
+-- Valores por defecto
+L["UI_RESET"] = "Varsayılan değerler"
+L["TT_RESET"] = "Bütün ayarları geldiği hâle döndürür: kategoriler, genişleme paketleri, sohbet kanalları, renk, hedef dil ve yok sayılan kelimeler listesi."
+L["RESET_CONFIRM"] = "WoW Translator'ın bütün ayarları varsayılan değerlerine döndürülsün mü?\n\nBu ayrıca yok sayılan kelimeler listesini de boşaltır. Arayüz yeniden yüklenecek."

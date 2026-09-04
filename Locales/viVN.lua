@@ -1,0 +1,153 @@
+local ADDON_NAME, addonTable = ...
+
+-- ==========================================
+-- VIETNAMITA (viVN)
+-- ==========================================
+if GetLocale() ~= "viVN" then return end
+local L = addonTable.L
+
+L["UI_TITLE"] = "Cấu hình WoW Translator"
+L["UI_ENABLE_TEXT"] = " Bật dịch thời gian thực"
+L["UI_COLOR_BTN"] = "Chọn màu"
+L["UI_LANG_LABEL"] = "Ngôn ngữ cần dịch sang:"
+L["UI_TEST_BTN"] = "Kiểm tra bản dịch"
+L["TT_TEST_BTN"] = "Chạy thử bản dịch trong cửa sổ chat."
+L["CHAT_LOADED"] = "Đã tải Addon."
+L["SLASH_ON"] = "Bản dịch: |cff00ff00ĐÃ BẬT|r"
+L["SLASH_OFF"] = "Bản dịch: |cffff0000ĐÃ TẮT|r"
+L["SLASH_TEST_ORIGINAL"] = "Gốc: "
+L["SLASH_TEST_RESULT"] = "Kết quả: "
+L["SLASH_TEST_ERROR"] = "Bản dịch đã bị tắt"
+L["TEST_NO_MATCH"] = "Không tìm thấy kết quả phù hợp trong từ điển."
+L["HELP_HEADER"] = "--- Trợ giúp WoW Translator ---"
+L["HELP_CONFIG_MSG"] = "Mở bảng tùy chọn."
+L["HELP_ONOFF_MSG"] = "Bật hoặc tắt bản dịch."
+L["HELP_TEST_MSG"] = "Thực hiện kiểm tra bản dịch."
+L["CAT_HEADER"] = "Các danh mục cần dịch:"
+L["CAT_MAZZ"] = "Phó bản & Raid"
+L["CAT_SOCIAL"] = "Xã hội & Tiếng lóng"
+L["CAT_CLASSES"] = "Lớp nhân vật"
+L["CAT_ROLES"] = "Vai trò"
+L["CAT_STATS"] = "Chỉ số"
+L["CAT_PROF"] = "Nghề nghiệp"
+L["CAT_COMBAT"] = "Chiến đấu"
+L["CAT_TRADE"] = "Giao dịch"
+L["CAT_GROUPS"] = "Nhóm"
+L["CAT_GUILD"] = "Bang hội"
+L["CAT_ZONES"] = "Khu vực (Thế giới)"
+L["CAT_SETS"] = "Bộ trang bị"
+L["CAT_STATUS"] = "Trạng thái"
+L["GEN_HEADER"] = "Cấu hình chung"
+
+-- Canales
+L["CH_HEADER"] = "Các kênh cần dịch:"
+L["CH_CAT_GENERAL"] = "Chung"
+L["CH_CAT_WHISPERS"] = "Thì thầm & Bnet"
+L["CH_CAT_GUILD"] = "Bang hội"
+L["CH_CAT_GROUP"] = "Nhóm"
+L["CH_CAT_RAID"] = "Raid"
+L["CH_CAT_PVP"] = "PvP"
+
+L["CH_SAY"] = "Nói"
+L["CH_YELL"] = "Hét"
+L["CH_EMOTE"] = "Cảm xúc"
+L["CH_WHISPER"] = "Thì thầm (Vào)"
+L["CH_WHISPER_INFORM"] = "Thì thầm (Ra)"
+L["CH_BN_WHISPER"] = "BNet (Vào)"
+L["CH_BN_WHISPER_INFORM"] = "BNet (Ra)"
+L["CH_BN_INLINE_WHISPER"] = "BNet Trực tiếp (Vào)"
+L["CH_BN_INLINE_WHISPER_INFORM"] = "BNet Trực tiếp (Ra)"
+L["CH_GUILD"] = "Bang hội"
+L["CH_OFFICER"] = "Sĩ quan"
+L["CH_CHANNEL"] = "Kênh thế giới"
+L["CH_PARTY"] = "Tổ đội"
+L["CH_PARTY_LEADER"] = "Trưởng nhóm"
+L["CH_INSTANCE"] = "Phó bản"
+L["CH_INSTANCE_LEADER"] = "Trưởng phó bản"
+L["CH_RAID"] = "Raid"
+L["CH_RAID_LEADER"] = "Trưởng Raid"
+L["CH_RAID_WARNING"] = "Cảnh báo Raid"
+L["CH_BATTLEGROUND"] = "Chiến trường"
+L["CH_BATTLEGROUND_LEADER"] = "Trưởng CT"
+
+-- Descripciones emergentes (Tooltips)
+L["TT_ENABLE"] = "Bật hoặc tắt tất cả các bản dịch trên toàn cầu."
+L["TT_COLOR"] = "Chọn màu cho văn bản đã dịch trong chat."
+L["TT_LANG"] = "Chọn ngôn ngữ bạn muốn dịch SANG."
+L["TT_CAT_MAZZ"] = "Bật dịch thuật cho các thuật ngữ phó bản và raid."
+L["TT_CAT_SOCIAL"] = "Dịch các tiếng lóng internet phổ biến và các biểu thức xã hội."
+L["TT_CAT_CLASSES"] = "Dịch tên lớp nhân vật và chuyên môn."
+L["TT_CAT_ROLES"] = "Dịch các vai trò phó bản (Tank, Healer, DPS)."
+L["TT_CAT_STATS"] = "Dịch các chỉ số trang bị và nhân vật."
+L["TT_CAT_PROF"] = "Dịch tên các nghề nghiệp."
+L["TT_CAT_COMBAT"] = "Dịch các thuật ngữ liên quan đến chiến đấu."
+L["TT_CAT_TRADE"] = "Dịch các thuật ngữ giao dịch và kinh tế."
+L["TT_CAT_GROUPS"] = "Dịch các thuật ngữ tìm nhóm."
+L["TT_CAT_GUILD"] = "Dịch các thuật ngữ liên quan đến bang hội."
+L["TT_CAT_ZONES"] = "Dịch tên các khu vực và địa điểm."
+L["TT_CAT_SETS"] = "Dịch tên các bộ trang bị."
+L["TT_CAT_STATUS"] = "Dịch các trạng thái (AFK, OOM, v.v.)."
+
+L["TT_CH_GENERIC"] = "Bật dịch thuật cho kênh chat cụ thể này."
+
+-- Minimapa
+L["QT_MINIMAP_TT"] = "|cffd597ffWoW Translator|r\n|cffffffffClick:|r Mở Cài đặt"
+
+
+-- Buscador de grupos / Palabras ignoradas
+L["CAT_LFG"] = "Tìm nhóm"
+L["TT_CAT_LFG"] = "Thêm bản dịch tiêu đề và ghi chú của nhóm vào chú giải trong phần Tìm nhóm."
+L["LFG_TT_HEADER"] = "Bản dịch:"
+L["HELP_OUT_MSG"] = "Soạn tin nhắn bằng tiếng Anh."
+L["OUT_USAGE"] = "Cách dùng: /wt en <văn bản>"
+L["IGN_TITLE"] = "Từ bị bỏ qua"
+L["IGN_DESC"] = "Các từ trong danh sách này không bao giờ được dịch. Hữu ích cho các từ viết tắt ngắn trùng với từ thông thường."
+L["IGN_ADD"] = "Thêm"
+L["IGN_INPUT_TT"] = "Nhập một từ hoặc cụm từ rồi nhấn Enter."
+L["IGN_EMPTY"] = "Chưa có từ nào bị bỏ qua."
+L["IGN_REMOVE_TT"] = "Xóa khỏi danh sách."
+-- CZECH (csCZ)
+
+L["CAT_RACES"] = "Chủng tộc"
+L["EXP_HEADER"] = "Hầm ngục và raid theo bản mở rộng:"
+L["HELP_SEARCH_MSG"] = "Tra cứu bản dịch trực tiếp."
+L["SEARCH_NOT_FOUND"] = "Không tìm thấy bản dịch cho: "
+L["SEARCH_USAGE"] = "Cách dùng: /wt search <từ hoặc cụm từ>"
+L["TT_CAT_RACES"] = "Dịch tên các chủng tộc chơi được."
+
+-- Panel de opciones
+L["OPT_GENERAL"] = "Chung"
+L["OPT_CATEGORIES"] = "Danh mục"
+L["OPT_EXPANSIONS"] = "Bản mở rộng"
+L["OPT_CHANNELS"] = "Kênh trò chuyện"
+L["OPT_LINKS"] = "Liên kết"
+L["OPT_COMMANDS"] = "Lệnh"
+L["OPT_AUTHOR"] = "Tác giả:"
+L["OPT_VERSION"] = "Phiên bản:"
+L["OPT_ABOUT_DESC"] = "Dịch tức thì các thuật ngữ, từ viết tắt và tiếng lóng của World of Warcraft trong khung chat và trong phần Tìm nhóm. Chọn nội dung cần dịch ở các mục bên dưới."
+L["OUT_HELP"] = "Viết câu bằng ngôn ngữ của bạn và addon sẽ để nó bằng tiếng Anh trong khung chat, sẵn sàng để gửi. Nó không bao giờ gửi thay bạn. Nó chỉ bao gồm tiếng lóng của WoW, không phải toàn bộ ngôn ngữ."
+
+-- Vista de ayuda
+L["OPT_HELP"] = "Trợ giúp"
+L["HELP_INTRO"] = "WoW Translator đọc khung chat và mỗi khi nhận ra một thuật ngữ, từ viết tắt hay tiếng lóng của World of Warcraft, nó thêm nghĩa ngay bên cạnh bằng màu bạn chọn. Nó không bao giờ viết lại tin nhắn: văn bản gốc luôn còn nguyên. Nó cũng hoạt động trong phần Tìm nhóm, thêm bản dịch tiêu đề và ghi chú vào chú giải."
+L["HELP_FAQ"] = "Câu hỏi thường gặp"
+L["HELP_Q_SCOPE"] = "Nó có dịch toàn bộ khung chat không?"
+L["HELP_A_SCOPE"] = "Không. Nó chỉ biết thuật ngữ, từ viết tắt và tiếng lóng của game, không phải cả ngôn ngữ. Một tin nhắn tiếng Pháp vẫn là tiếng Pháp; thứ được giải thích là 'LFM', 'ICC', 'wipe' và tương tự."
+L["HELP_Q_TARGET"] = "Ngôn ngữ đích nghĩa là gì?"
+L["HELP_A_TARGET"] = "Là ngôn ngữ được dịch SANG. Nguồn luôn là tiếng Anh, vì các thuật ngữ này được viết bằng tiếng Anh. Hãy đặt nó thành ngôn ngữ của bạn trong mục Chung."
+L["HELP_Q_COMPOSE"] = "/wt en dùng để làm gì?"
+L["HELP_Q_IGNORE"] = "Một từ bị dịch mà tôi không muốn"
+L["HELP_A_IGNORE"] = "Thêm nó vào mục Từ bị bỏ qua. Trường hợp thường gặp là các từ viết tắt ngắn trùng với từ thông thường. Nó ngừng được dịch ngay lập tức, không cần tải lại."
+L["HELP_Q_NOTHING"] = "Nó không dịch gì cả, tôi nên kiểm tra gì?"
+L["HELP_A_NOTHING"] = "Kiểm tra bản dịch đã bật trong mục Chung, kênh đã được tick trong mục Kênh trò chuyện, và danh mục của thuật ngữ đã được tick trong mục Danh mục."
+L["HELP_CONTACT"] = "Báo lỗi"
+L["HELP_CONTACT_TEXT"] = "Lỗi và góp ý xin gửi tới trang addon trên CurseForge: để lại bình luận ở đó, hoặc gửi tin nhắn riêng cho tác giả. Hãy sao chép địa chỉ bên dưới, WoW không mở được liên kết."
+
+-- Boton de seleccionar enlaces
+L["UI_SELECT"] = "Chọn"
+L["TT_SELECT"] = "Chọn toàn bộ liên kết để bạn sao chép bằng Ctrl+C. WoW không cho phép addon ghi vào bộ nhớ tạm, nên bước cuối là của bạn."
+
+-- Valores por defecto
+L["UI_RESET"] = "Giá trị mặc định"
+L["TT_RESET"] = "Đưa toàn bộ thiết lập về như ban đầu: danh mục, bản mở rộng, kênh trò chuyện, màu, ngôn ngữ đích và danh sách từ bị bỏ qua."
+L["RESET_CONFIRM"] = "Đưa toàn bộ thiết lập của WoW Translator về giá trị mặc định?\n\nViệc này cũng xóa danh sách từ bị bỏ qua của bạn. Giao diện sẽ được tải lại."

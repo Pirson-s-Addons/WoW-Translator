@@ -1,6 +1,6 @@
 ## Interface: 11500, 11501, 11502, 11503, 11504, 11505, 11506, 11507, 11508, 11509
 ## Author: Pirson
-## Version: 1.16
+## Version: 2.00
 ## Title: |TInterface\AddOns\WoWTranslator\img\logo_wt:16:16|t |cffd597ffWoW Translator|r
 
 # https://warcraft.wiki.gg/wiki/Addon_Categories
@@ -106,8 +106,32 @@ Libs\CallbackHandler-1.0\CallbackHandler-1.0.lua
 Libs\LibDataBroker-1.1\LibDataBroker-1.1.lua
 Libs\LibDBIcon-1.0\LibDBIcon-1.0.lua
 
-Locales.lua
+# Utilidades comunes
+Core\Util.lua
 
+# Idiomas (enUS define todas las claves; el resto sobrescribe)
+Locales\enUS.lua
+Locales\esES.lua
+Locales\deDE.lua
+Locales\frFR.lua
+Locales\itIT.lua
+Locales\ptBR.lua
+Locales\ruRU.lua
+Locales\koKR.lua
+Locales\zhCN.lua
+Locales\zhTW.lua
+Locales\plPL.lua
+Locales\svSE.lua
+Locales\noNO.lua
+Locales\trTR.lua
+Locales\jaJP.lua
+Locales\arSA.lua
+Locales\hiIN.lua
+Locales\thTH.lua
+Locales\viVN.lua
+Locales\csCZ.lua
+
+# Diccionarios
 Data\Clases.lua
 Data\Combate.lua
 Data\Comercio.lua
@@ -132,5 +156,26 @@ Data\Profesiones.lua
 Data\Roles.lua
 Data\Social.lua
 
-Config.lua
-WoWTranslator.lua
+# Motor
+Core\Dictionary.lua
+Core\Translator.lua
+Core\Outgoing.lua
+
+# Modulos
+Modules\ChatFilter.lua
+Modules\GroupFinder.lua
+Modules\MinimapButton.lua
+Modules\SlashCommands.lua
+
+# Interfaz
+UI\Widgets.lua
+UI\About.lua
+UI\General.lua
+UI\Categories.lua
+UI\Channels.lua
+UI\IgnoreList.lua
+UI\Help.lua
+UI\Config.lua
+
+# Arranque (debe ir el ultimo)
+Core\Init.lua

@@ -1,0 +1,153 @@
+local ADDON_NAME, addonTable = ...
+
+-- ==========================================
+-- DEUTSCH (deDE)
+-- ==========================================
+if GetLocale() ~= "deDE" then return end
+local L = addonTable.L
+
+L["UI_TITLE"] = "WoW Translator Konfiguration"
+L["UI_ENABLE_TEXT"] = " Echtzeit-Übersetzung aktivieren"
+L["UI_COLOR_BTN"] = "Farbe wählen"
+L["UI_LANG_LABEL"] = "Zu übersetzende Sprache:"
+L["UI_TEST_BTN"] = "Übersetzung testen"
+L["TT_TEST_BTN"] = "Führen Sie einen Übersetzungstest im Chatfenster durch."
+L["CHAT_LOADED"] = "Addon geladen."
+L["SLASH_ON"] = "Übersetzungen: |cff00ff00AKTIVIERT|r"
+L["SLASH_OFF"] = "Übersetzungen: |cffff0000DEAKTIVIERT|r"
+L["SLASH_TEST_ORIGINAL"] = "Original: "
+L["SLASH_TEST_RESULT"] = "Ergebnis: "
+L["SLASH_TEST_ERROR"] = "Übersetzungen deaktiviert"
+L["TEST_NO_MATCH"] = "Keine Übereinstimmungen gefunden."
+L["HELP_HEADER"] = "--- WoW Translator Hilfe ---"
+L["HELP_CONFIG_MSG"] = "Öffnet das Optionsmenü."
+L["HELP_ONOFF_MSG"] = "Übersetzungen ein-/ausschalten."
+L["HELP_TEST_MSG"] = "Führt einen Übersetzungstest durch."
+L["CAT_HEADER"] = "Zu übersetzende Kategorien:"
+L["CAT_MAZZ"] = "Dungeons & Schlachtzüge"
+L["CAT_SOCIAL"] = "Soziales & Slang"
+L["CAT_CLASSES"] = "Klassen"
+L["CAT_ROLES"] = "Rollen"
+L["CAT_STATS"] = "Statistiken"
+L["CAT_PROF"] = "Berufe"
+L["CAT_COMBAT"] = "Kampf"
+L["CAT_TRADE"] = "Handel"
+L["CAT_GROUPS"] = "Gruppen"
+L["CAT_GUILD"] = "Gilde"
+L["CAT_ZONES"] = "Zonen"
+L["CAT_SETS"] = "Gegenstandsets"
+L["CAT_STATUS"] = "Status / Zustände"
+L["GEN_HEADER"] = "Allgemeine Konfiguration"
+
+-- Canales
+L["CH_HEADER"] = "Kanäle zum Übersetzen:"
+L["CH_CAT_GENERAL"] = "Allgemein"
+L["CH_CAT_WHISPERS"] = "Flüstern / BNet"
+L["CH_CAT_GUILD"] = "Gilde"
+L["CH_CAT_GROUP"] = "Gruppe"
+L["CH_CAT_RAID"] = "Schlachtzug"
+L["CH_CAT_PVP"] = "PvP"
+
+L["CH_SAY"] = "Sagen"
+L["CH_YELL"] = "Schreien"
+L["CH_EMOTE"] = "Emote"
+L["CH_WHISPER"] = "Flüstern (Eing)"
+L["CH_WHISPER_INFORM"] = "Flüstern (Ausg)"
+L["CH_BN_WHISPER"] = "BNet (Eing)"
+L["CH_BN_WHISPER_INFORM"] = "BNet (Ausg)"
+L["CH_BN_INLINE_WHISPER"] = "BNet Inline (Eing)"
+L["CH_BN_INLINE_WHISPER_INFORM"] = "BNet Inline (Ausg)"
+L["CH_GUILD"] = "Gilde"
+L["CH_OFFICER"] = "Offizier"
+L["CH_CHANNEL"] = "Globale Kanäle"
+L["CH_PARTY"] = "Gruppe"
+L["CH_PARTY_LEADER"] = "Gruppenleiter"
+L["CH_INSTANCE"] = "Instanz"
+L["CH_INSTANCE_LEADER"] = "Instanzleiter"
+L["CH_RAID"] = "Schlachtzug"
+L["CH_RAID_LEADER"] = "Schlachtzugsleiter"
+L["CH_RAID_WARNING"] = "Schlachtzugswarnung"
+L["CH_BATTLEGROUND"] = "Schlachtfeld"
+L["CH_BATTLEGROUND_LEADER"] = "Schlachtfeldleiter"
+
+-- Descripciones emergentes (Tooltips)
+L["TT_ENABLE"] = "Aktiviert oder deaktiviert alle Übersetzungen global."
+L["TT_COLOR"] = "Wählen Sie die Farbe für den übersetzten Text im Chat."
+L["TT_LANG"] = "Wählen Sie die Sprache aus, IN die Sie übersetzen möchten."
+L["TT_CAT_MAZZ"] = "Übersetzung für Dungeon- und Schlachtzugs-Terminologie aktivieren."
+L["TT_CAT_SOCIAL"] = "Übersetzt gängigen Internet-Slang und soziale Ausdrücke."
+L["TT_CAT_CLASSES"] = "Übersetzt Klassennamen und Spezialisierungen."
+L["TT_CAT_ROLES"] = "Übersetzt Dungeon-Rollen (Tank, Heiler, DPS)."
+L["TT_CAT_STATS"] = "Übersetzt Gegenstands- und Charakterstatistiken."
+L["TT_CAT_PROF"] = "Übersetzt Berufsnamen."
+L["TT_CAT_COMBAT"] = "Übersetzt kampfbezogene Begriffe."
+L["TT_CAT_TRADE"] = "Übersetzt Handels- und Wirtschaftsbegriffe."
+L["TT_CAT_GROUPS"] = "Übersetzt Terminologie zur Gruppensuche."
+L["TT_CAT_GUILD"] = "Übersetzt gildenbezogene Begriffe."
+L["TT_CAT_ZONES"] = "Übersetzt Zonen- und Ortsnamen."
+L["TT_CAT_SETS"] = "Übersetzt Namen von Gegenstandssets."
+L["TT_CAT_STATUS"] = "Übersetzt Stati und Zustände (AFK, OOM, etc)."
+
+
+-- Minimapa
+L["QT_MINIMAP_TT"] =
+"|cffd597ffWoW Translator|r\n|cffffffffKlick:|r Einstellungen öffnen"
+
+-- Buscador de grupos / Palabras ignoradas
+L["CAT_LFG"] = "Gruppensuche"
+L["TT_CAT_LFG"] = "Fügt dem Tooltip in der Gruppensuche die Übersetzung von Titel und Kommentar der Gruppe hinzu."
+L["LFG_TT_HEADER"] = "Übersetzung:"
+L["HELP_OUT_MSG"] = "Eine Nachricht auf Englisch verfassen."
+L["OUT_USAGE"] = "Verwendung: /wt en <Text>"
+L["IGN_TITLE"] = "Ignorierte Wörter"
+L["IGN_DESC"] = "Wörter auf dieser Liste werden nie übersetzt. Nützlich für kurze Abkürzungen, die mit gewöhnlichen Wörtern kollidieren."
+L["IGN_ADD"] = "Hinzufügen"
+L["IGN_INPUT_TT"] = "Gib ein Wort oder einen Satz ein und drücke die Eingabetaste."
+L["IGN_EMPTY"] = "Noch keine ignorierten Wörter."
+L["IGN_REMOVE_TT"] = "Aus der Liste entfernen."
+
+
+L["CAT_RACES"] = "Völker"
+L["EXP_HEADER"] = "Instanzen nach Erweiterung:"
+L["HELP_SEARCH_MSG"] = "Eine Übersetzung direkt nachschlagen."
+L["SEARCH_NOT_FOUND"] = "Keine Übersetzung gefunden für: "
+L["SEARCH_USAGE"] = "Verwendung: /wt search <Wort oder Satz>"
+L["TT_CAT_RACES"] = "Übersetzt die Namen der spielbaren Völker."
+L["TT_CH_GENERIC"] = "Übersetzung für diesen Chatkanal aktivieren."
+
+-- Panel de opciones
+L["OPT_GENERAL"] = "Allgemein"
+L["OPT_CATEGORIES"] = "Kategorien"
+L["OPT_EXPANSIONS"] = "Erweiterungen"
+L["OPT_CHANNELS"] = "Chatkanäle"
+L["OPT_LINKS"] = "Links"
+L["OPT_COMMANDS"] = "Befehle"
+L["OPT_AUTHOR"] = "Autor:"
+L["OPT_VERSION"] = "Version:"
+L["OPT_ABOUT_DESC"] = "Übersetzt Begriffe, Akronyme und Slang aus World of Warcraft direkt im Chat und in der Gruppensuche. Wähle unten aus, was übersetzt werden soll."
+L["OUT_HELP"] = "Schreib den Satz in deiner Sprache und das AddOn legt ihn auf Englisch ins Chatfeld, bereit zum Senden. Es sendet ihn nie für dich. Es deckt nur WoW-Jargon ab, nicht die ganze Sprache."
+
+-- Vista de ayuda
+L["OPT_HELP"] = "Hilfe"
+L["HELP_INTRO"] = "WoW Translator liest den Chat und ergänzt bei jedem erkannten Begriff, Akronym oder Slangwort aus World of Warcraft dessen Bedeutung direkt daneben, in der Farbe deiner Wahl. Die Nachricht wird nie umgeschrieben: der Originaltext bleibt immer stehen. Es funktioniert auch in der Gruppensuche, wo die Übersetzung von Titel und Kommentar im Tooltip erscheint."
+L["HELP_FAQ"] = "Häufige Fragen"
+L["HELP_Q_SCOPE"] = "Übersetzt es den ganzen Chat?"
+L["HELP_A_SCOPE"] = "Nein. Es kennt nur Spielbegriffe, Akronyme und Slang, nicht die ganze Sprache. Eine Nachricht auf Französisch bleibt französisch; erklärt werden 'LFM', 'ICC', 'wipe' und Ähnliches."
+L["HELP_Q_TARGET"] = "Was bedeutet die Zielsprache?"
+L["HELP_A_TARGET"] = "Das ist die Sprache, IN die übersetzt wird. Die Ausgangssprache ist immer Englisch, denn in dieser Sprache stehen diese Begriffe. Stell sie im Bereich Allgemein auf deine eigene Sprache."
+L["HELP_Q_COMPOSE"] = "Wozu dient /wt en?"
+L["HELP_Q_IGNORE"] = "Ein Wort wird übersetzt und das will ich nicht"
+L["HELP_A_IGNORE"] = "Trag es im Bereich Ignorierte Wörter ein. Der typische Fall sind kurze Abkürzungen, die mit gewöhnlichen Wörtern kollidieren. Es wird sofort nicht mehr übersetzt, ohne Neuladen."
+L["HELP_Q_NOTHING"] = "Es übersetzt gar nichts, was prüfe ich?"
+L["HELP_A_NOTHING"] = "Ob die Übersetzung im Bereich Allgemein aktiviert ist, ob der Chatkanal unter Chatkanäle angehakt ist, und ob die Kategorie des Begriffs unter Kategorien angehakt ist."
+L["HELP_CONTACT"] = "Fehler melden"
+L["HELP_CONTACT_TEXT"] = "Fehler und Vorschläge gehören auf die Addon-Seite bei CurseForge: hinterlass dort einen Kommentar oder schick dem Autor eine private Nachricht. Kopier die Adresse unten, WoW kann keine Links öffnen."
+
+-- Boton de seleccionar enlaces
+L["UI_SELECT"] = "Auswählen"
+L["TT_SELECT"] = "Markiert den ganzen Link, damit du ihn mit Strg+C kopieren kannst. WoW lässt AddOns nicht in die Zwischenablage schreiben, den letzten Schritt machst du selbst."
+
+-- Valores por defecto
+L["UI_RESET"] = "Standardwerte"
+L["TT_RESET"] = "Setzt alle Einstellungen auf den Ausgangszustand zurück: Kategorien, Erweiterungen, Chatkanäle, Farbe, Zielsprache und die Liste ignorierter Wörter."
+L["RESET_CONFIRM"] = "Alle Einstellungen von WoW Translator auf die Standardwerte zurücksetzen?\n\nDas leert auch deine Liste ignorierter Wörter. Die Benutzeroberfläche wird neu geladen."

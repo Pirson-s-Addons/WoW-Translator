@@ -1,0 +1,153 @@
+local ADDON_NAME, addonTable = ...
+
+-- ==========================================
+-- HANGUGEO (koKR)
+-- ==========================================
+if GetLocale() ~= "koKR" then return end
+local L = addonTable.L
+
+L["UI_TITLE"] = "WoW Translator 설정"
+L["UI_ENABLE_TEXT"] = " 실시간 번역 활성화"
+L["UI_COLOR_BTN"] = "색상 선택"
+L["UI_LANG_LABEL"] = "번역할 언어:"
+L["UI_TEST_BTN"] = "번역 테스트"
+L["TT_TEST_BTN"] = "채팅창에서 번역 테스트를 실행합니다."
+L["CHAT_LOADED"] = "애드온이 로드되었습니다."
+L["SLASH_ON"] = "번역: |cff00ff00활성화|r"
+L["SLASH_OFF"] = "번역: |cffff0000비활성화|r"
+L["SLASH_TEST_ORIGINAL"] = "원본: "
+L["SLASH_TEST_RESULT"] = "결과: "
+L["SLASH_TEST_ERROR"] = "번역 비활성화됨"
+L["TEST_NO_MATCH"] = "일치하는 항목을 찾을 수 없습니다."
+L["HELP_HEADER"] = "--- WoW Translator 도움말 ---"
+L["HELP_CONFIG_MSG"] = "옵션 패널을 엽니다."
+L["HELP_ONOFF_MSG"] = "번역을 켜거나 끕니다."
+L["HELP_TEST_MSG"] = "번역 테스트를 수행합니다."
+L["CAT_HEADER"] = "번역 카테고리:"
+L["CAT_MAZZ"] = "던전 및 레이드"
+L["CAT_SOCIAL"] = "소셜 및 약어"
+L["CAT_CLASSES"] = "직업"
+L["CAT_ROLES"] = "역할"
+L["CAT_STATS"] = "능력치"
+L["CAT_PROF"] = "전문 기술"
+L["CAT_COMBAT"] = "전투"
+L["CAT_TRADE"] = "거래"
+L["CAT_GROUPS"] = "파티"
+L["CAT_GUILD"] = "길드"
+L["CAT_ZONES"] = "지역 (월드)"
+L["CAT_SETS"] = "아이템 세트"
+L["CAT_STATUS"] = "상태"
+L["GEN_HEADER"] = "일반 설정"
+
+-- Canales
+L["CH_HEADER"] = "번역할 채널:"
+L["CH_CAT_GENERAL"] = "일반"
+L["CH_CAT_WHISPERS"] = "귓속말 / BNet"
+L["CH_CAT_GUILD"] = "길드"
+L["CH_CAT_GROUP"] = "파티"
+L["CH_CAT_RAID"] = "공격대"
+L["CH_CAT_PVP"] = "PvP"
+
+L["CH_SAY"] = "일반"
+L["CH_YELL"] = "외치기"
+L["CH_EMOTE"] = "감정 표현"
+L["CH_WHISPER"] = "귓속말 (수신)"
+L["CH_WHISPER_INFORM"] = "귓속말 (발신)"
+L["CH_BN_WHISPER"] = "BNet (수신)"
+L["CH_BN_WHISPER_INFORM"] = "BNet (발신)"
+L["CH_BN_INLINE_WHISPER"] = "BNet 인라인 (수신)"
+L["CH_BN_INLINE_WHISPER_INFORM"] = "BNet 인라인 (발신)"
+L["CH_GUILD"] = "길드"
+L["CH_OFFICER"] = "관리자"
+L["CH_CHANNEL"] = "공개 채널"
+L["CH_PARTY"] = "파티"
+L["CH_PARTY_LEADER"] = "파티장"
+L["CH_INSTANCE"] = "인스턴스"
+L["CH_INSTANCE_LEADER"] = "인스턴스장"
+L["CH_RAID"] = "공격대"
+L["CH_RAID_LEADER"] = "공격대장"
+L["CH_RAID_WARNING"] = "공격대 경보"
+L["CH_BATTLEGROUND"] = "전장"
+L["CH_BATTLEGROUND_LEADER"] = "전장장"
+
+-- Descripciones emergentes (Tooltips)
+L["TT_ENABLE"] = "모든 번역을 전역적으로 활성화하거나 비활성화합니다."
+L["TT_COLOR"] = "채팅에서 번역된 텍스트의 색상을 선택합니다."
+L["TT_LANG"] = "번역할 언어를 선택합니다."
+L["TT_CAT_MAZZ"] = "던전 및 레이드 용어 번역을 활성화합니다."
+L["TT_CAT_SOCIAL"] = "일반적인 인터넷 속어와 소셜 표현을 번역합니다."
+L["TT_CAT_CLASSES"] = "직업 이름과 전문화를 번역합니다."
+L["TT_CAT_ROLES"] = "던전 역할(탱커, 힐러, DPS)을 번역합니다."
+L["TT_CAT_STATS"] = "아이템 및 캐릭터 능력치를 번역합니다."
+L["TT_CAT_PROF"] = "전문 기술 이름을 번역합니다."
+L["TT_CAT_COMBAT"] = "전투 관련 용어를 번역합니다."
+L["TT_CAT_TRADE"] = "거래 및 경제 용어를 번역합니다."
+L["TT_CAT_GROUPS"] = "파티 찾기 용어를 번역합니다."
+L["TT_CAT_GUILD"] = "길드 관련 용어를 번역합니다."
+L["TT_CAT_ZONES"] = "지역 및 장소 이름을 번역합니다."
+L["TT_CAT_SETS"] = "아이템 세트 이름을 번역합니다."
+L["TT_CAT_STATUS"] = "상태(AFK, OOM 등)를 번역합니다."
+
+
+-- Minimapa
+L["QT_MINIMAP_TT"] = "|cffd597ffWoW Translator|r\n|cffffffff좌클릭:|r 설정 열기"
+
+
+-- Buscador de grupos / Palabras ignoradas
+L["CAT_LFG"] = "파티 찾기"
+L["TT_CAT_LFG"] = "파티 찾기 툴팁에 파티 제목과 설명의 번역을 추가합니다."
+L["LFG_TT_HEADER"] = "번역:"
+L["HELP_OUT_MSG"] = "영어로 메시지를 작성합니다."
+L["OUT_USAGE"] = "사용법: /wt en <문장>"
+L["IGN_TITLE"] = "무시할 단어"
+L["IGN_DESC"] = "이 목록의 단어는 절대 번역되지 않습니다. 일반 단어와 겹치는 짧은 약어에 유용합니다."
+L["IGN_ADD"] = "추가"
+L["IGN_INPUT_TT"] = "단어나 문구를 입력하고 Enter 키를 누르세요."
+L["IGN_EMPTY"] = "아직 무시할 단어가 없습니다."
+L["IGN_REMOVE_TT"] = "목록에서 제거합니다."
+-- CHINESE (zhCN)
+
+L["CAT_RACES"] = "종족"
+L["EXP_HEADER"] = "확장팩별 던전 및 공격대:"
+L["HELP_SEARCH_MSG"] = "번역을 바로 찾아봅니다."
+L["SEARCH_NOT_FOUND"] = "번역을 찾을 수 없습니다: "
+L["SEARCH_USAGE"] = "사용법: /wt search <단어 또는 문구>"
+L["TT_CAT_RACES"] = "플레이 가능한 종족 이름을 번역합니다."
+L["TT_CH_GENERIC"] = "이 대화 채널의 번역을 활성화합니다."
+
+-- Panel de opciones
+L["OPT_GENERAL"] = "일반"
+L["OPT_CATEGORIES"] = "분류"
+L["OPT_EXPANSIONS"] = "확장팩"
+L["OPT_CHANNELS"] = "대화 채널"
+L["OPT_LINKS"] = "링크"
+L["OPT_COMMANDS"] = "명령어"
+L["OPT_AUTHOR"] = "제작자:"
+L["OPT_VERSION"] = "버전:"
+L["OPT_ABOUT_DESC"] = "대화와 파티 찾기에서 월드 오브 워크래프트의 용어, 약어, 속어를 실시간으로 번역합니다. 아래 항목에서 번역할 내용을 고르세요."
+L["OUT_HELP"] = "원하는 문장을 사용 중인 언어로 쓰면 애드온이 영어로 바꿔 대화 입력창에 넣어 둡니다. 대신 보내지는 않습니다. 월드 오브 워크래프트 용어만 다루며, 언어 전체를 번역하지는 않습니다."
+
+-- Vista de ayuda
+L["OPT_HELP"] = "도움말"
+L["HELP_INTRO"] = "WoW Translator는 대화를 읽다가 월드 오브 워크래프트의 용어, 약어, 속어를 발견하면 그 뜻을 바로 옆에 원하는 색으로 덧붙입니다. 메시지를 다시 쓰지는 않으며 원문은 항상 그대로 남습니다. 파티 찾기에서도 동작해 파티 제목과 설명의 번역을 툴팁에 추가합니다."
+L["HELP_FAQ"] = "자주 묻는 질문"
+L["HELP_Q_SCOPE"] = "대화 전체를 번역하나요?"
+L["HELP_A_SCOPE"] = "아니요. 게임 용어와 약어, 속어만 알고 있으며 언어 전체를 번역하지는 않습니다. 프랑스어 메시지는 프랑스어로 남고, 설명되는 것은 'LFM', 'ICC', 'wipe' 같은 표현입니다."
+L["HELP_Q_TARGET"] = "번역할 언어란 무엇인가요?"
+L["HELP_A_TARGET"] = "번역해서 보여줄 언어입니다. 원본은 항상 영어이며, 이 용어들이 영어로 쓰여 있기 때문입니다. 일반 항목에서 사용하는 언어로 설정하세요."
+L["HELP_Q_COMPOSE"] = "/wt en 은 무엇에 쓰나요?"
+L["HELP_Q_IGNORE"] = "번역되지 않았으면 하는 단어가 있어요"
+L["HELP_A_IGNORE"] = "무시할 단어 항목에 추가하세요. 흔한 경우는 일반 단어와 겹치는 짧은 약어입니다. 다시 불러오지 않아도 즉시 번역이 멈춥니다."
+L["HELP_Q_NOTHING"] = "아무것도 번역되지 않아요. 무엇을 확인하나요?"
+L["HELP_A_NOTHING"] = "일반 항목에서 번역이 켜져 있는지, 대화 채널 항목에서 해당 채널이 선택돼 있는지, 그리고 분류 항목에서 그 용어의 분류가 선택돼 있는지 확인하세요."
+L["HELP_CONTACT"] = "오류 신고"
+L["HELP_CONTACT_TEXT"] = "오류와 제안은 CurseForge의 애드온 페이지로 보내주세요. 댓글을 남기거나 제작자에게 비공개 메시지를 보내면 됩니다. 아래 주소를 복사하세요. WoW는 링크를 열 수 없습니다."
+
+-- Boton de seleccionar enlaces
+L["UI_SELECT"] = "선택"
+L["TT_SELECT"] = "링크 전체를 선택해 Ctrl+C로 복사할 수 있게 합니다. 월드 오브 워크래프트는 애드온이 클립보드에 쓰는 것을 허용하지 않으므로 마지막 단계는 직접 해야 합니다."
+
+-- Valores por defecto
+L["UI_RESET"] = "기본값으로 되돌리기"
+L["TT_RESET"] = "모든 설정을 처음 상태로 되돌립니다: 분류, 확장팩, 대화 채널, 색상, 번역할 언어, 무시할 단어 목록까지."
+L["RESET_CONFIRM"] = "WoW Translator의 모든 설정을 기본값으로 되돌릴까요?\n\n무시할 단어 목록도 함께 비워집니다. 인터페이스가 다시 불러와집니다."

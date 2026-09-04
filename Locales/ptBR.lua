@@ -1,0 +1,153 @@
+local ADDON_NAME, addonTable = ...
+
+-- ==========================================
+-- PORTUGUES (ptBR)
+-- ==========================================
+if GetLocale() ~= "ptBR" then return end
+local L = addonTable.L
+
+L["UI_TITLE"] = "Configuração do WoW Translator"
+L["UI_ENABLE_TEXT"] = " Ativar tradução em tempo real"
+L["UI_COLOR_BTN"] = "Escolher cor"
+L["UI_LANG_LABEL"] = "Idioma a traduzir:"
+L["UI_TEST_BTN"] = "Testar tradução"
+L["TT_TEST_BTN"] = "Executa um teste de tradução na janela de chat."
+L["CHAT_LOADED"] = "Addon Carregado."
+L["SLASH_ON"] = "Traduções: |cff00ff00ATIVADAS|r"
+L["SLASH_OFF"] = "Traduções: |cffff0000DESATIVADAS|r"
+L["SLASH_TEST_ORIGINAL"] = "Original: "
+L["SLASH_TEST_RESULT"] = "Resultado: "
+L["SLASH_TEST_ERROR"] = "Traduções desativadas"
+L["TEST_NO_MATCH"] = "Nenhuma correspondência encontrada."
+L["HELP_HEADER"] = "--- Ajuda do WoW Translator ---"
+L["HELP_CONFIG_MSG"] = "Abre o painel de opções."
+L["HELP_ONOFF_MSG"] = "Ativa ou desativa as traduções."
+L["HELP_TEST_MSG"] = "Realiza um teste de tradução."
+L["CAT_HEADER"] = "Categorias para traduzir:"
+L["CAT_MAZZ"] = "Masmorras e Raides"
+L["CAT_SOCIAL"] = "Social e Gírias"
+L["CAT_CLASSES"] = "Classes"
+L["CAT_ROLES"] = "Funções"
+L["CAT_STATS"] = "Estatísticas"
+L["CAT_PROF"] = "Profissões"
+L["CAT_COMBAT"] = "Combate"
+L["CAT_TRADE"] = "Comércio"
+L["CAT_GROUPS"] = "Grupos"
+L["CAT_GUILD"] = "Guilda"
+L["CAT_ZONES"] = "Zonas (Mundo)"
+L["CAT_SETS"] = "Conjuntos de Itens"
+L["CAT_STATUS"] = "Estado / Estados"
+L["GEN_HEADER"] = "Configuração Geral"
+
+-- Canales
+L["CH_HEADER"] = "Canais a traduzir:"
+L["CH_CAT_GENERAL"] = "Geral"
+L["CH_CAT_WHISPERS"] = "Sussurros / BNet"
+L["CH_CAT_GUILD"] = "Guilda"
+L["CH_CAT_GROUP"] = "Grupo"
+L["CH_CAT_RAID"] = "Reide"
+L["CH_CAT_PVP"] = "JcJ"
+
+L["CH_SAY"] = "Dizer"
+L["CH_YELL"] = "Gritar"
+L["CH_EMOTE"] = "Gesto"
+L["CH_WHISPER"] = "Sussurro (Ent)"
+L["CH_WHISPER_INFORM"] = "Sussurro (Saída)"
+L["CH_BN_WHISPER"] = "BNet (Ent)"
+L["CH_BN_WHISPER_INFORM"] = "BNet (Saída)"
+L["CH_BN_INLINE_WHISPER"] = "BNet Inline (Ent)"
+L["CH_BN_INLINE_WHISPER_INFORM"] = "BNet Inline (Saída)"
+L["CH_GUILD"] = "Guilda"
+L["CH_OFFICER"] = "Oficial"
+L["CH_CHANNEL"] = "Canais globais"
+L["CH_PARTY"] = "Grupo"
+L["CH_PARTY_LEADER"] = "Líder do Grupo"
+L["CH_INSTANCE"] = "Instância"
+L["CH_INSTANCE_LEADER"] = "Líder da Instância"
+L["CH_RAID"] = "Reide"
+L["CH_RAID_LEADER"] = "Líder da Reide"
+L["CH_RAID_WARNING"] = "Alerta de Reide"
+L["CH_BATTLEGROUND"] = "Campo de Batalha"
+L["CH_BATTLEGROUND_LEADER"] = "Líder de CB"
+
+-- Descripciones emergentes (Tooltips)
+L["TT_ENABLE"] = "Ativa ou desativa todas as traduções globalmente."
+L["TT_COLOR"] = "Escolha a cor para o texto traduzido no chat."
+L["TT_LANG"] = "Selecione o idioma PARA o qual você deseja traduzir."
+L["TT_CAT_MAZZ"] = "Ativar tradução para terminologia de masmorras e raides."
+L["TT_CAT_SOCIAL"] = "Traduz gírias comuns da internet e expressões sociais."
+L["TT_CAT_CLASSES"] = "Traduz nomes de classes e especializações."
+L["TT_CAT_ROLES"] = "Traduz funções de masmorra (Tanque, Curador, DPS)."
+L["TT_CAT_STATS"] = "Traduz estatísticas de itens e personagens."
+L["TT_CAT_PROF"] = "Traduz nomes de profissões."
+L["TT_CAT_COMBAT"] = "Traduz termos relacionados a combate."
+L["TT_CAT_TRADE"] = "Traduz termos de comércio e economia."
+L["TT_CAT_GROUPS"] = "Traduz terminologia de busca de grupo."
+L["TT_CAT_GUILD"] = "Traduz termos relacionados à guilda."
+L["TT_CAT_ZONES"] = "Traduz nomes de zonas e locais."
+L["TT_CAT_SETS"] = "Traduz nomes de conjuntos de itens."
+L["TT_CAT_STATUS"] = "Traduz status e estados (AFK, OOM, etc)."
+
+
+-- Minimapa
+L["QT_MINIMAP_TT"] = "|cffd597ffWoW Translator|r\n|cffffffffClique:|r Abrir Configuração"
+
+
+-- Buscador de grupos / Palabras ignoradas
+L["CAT_LFG"] = "Busca de grupo"
+L["TT_CAT_LFG"] = "Adiciona ao tooltip da busca de grupo a tradução do título e do comentário do grupo."
+L["LFG_TT_HEADER"] = "Tradução:"
+L["HELP_OUT_MSG"] = "Escreva uma mensagem em inglês."
+L["OUT_USAGE"] = "Uso: /wt en <texto>"
+L["IGN_TITLE"] = "Palavras ignoradas"
+L["IGN_DESC"] = "As palavras desta lista nunca são traduzidas. Útil para siglas curtas que colidem com palavras comuns."
+L["IGN_ADD"] = "Adicionar"
+L["IGN_INPUT_TT"] = "Digite uma palavra ou frase e pressione Enter."
+L["IGN_EMPTY"] = "Ainda não há palavras ignoradas."
+L["IGN_REMOVE_TT"] = "Remover da lista."
+-- RUSSIAN (ruRU)
+
+L["CAT_RACES"] = "Raças"
+L["EXP_HEADER"] = "Masmorras e raides por expansão:"
+L["HELP_SEARCH_MSG"] = "Busca uma tradução diretamente."
+L["SEARCH_NOT_FOUND"] = "Nenhuma tradução encontrada para: "
+L["SEARCH_USAGE"] = "Uso: /wt search <palavra ou frase>"
+L["TT_CAT_RACES"] = "Traduz os nomes das raças jogáveis."
+L["TT_CH_GENERIC"] = "Ativa a tradução para este canal de bate-papo."
+
+-- Panel de opciones
+L["OPT_GENERAL"] = "Geral"
+L["OPT_CATEGORIES"] = "Categorias"
+L["OPT_EXPANSIONS"] = "Expansões"
+L["OPT_CHANNELS"] = "Canais de bate-papo"
+L["OPT_LINKS"] = "Links"
+L["OPT_COMMANDS"] = "Comandos"
+L["OPT_AUTHOR"] = "Autor:"
+L["OPT_VERSION"] = "Versão:"
+L["OPT_ABOUT_DESC"] = "Traduz na hora termos, acrônimos e gírias do World of Warcraft no bate-papo e na busca de grupo. Escolha o que traduzir nas seções abaixo."
+L["OUT_HELP"] = "Escreva a frase no seu idioma e o addon a deixa em inglês na caixa de bate-papo, pronta para enviar. Ele nunca envia por você. Cobre apenas as gírias do WoW, não o idioma inteiro."
+
+-- Vista de ayuda
+L["OPT_HELP"] = "Ajuda"
+L["HELP_INTRO"] = "O WoW Translator lê o bate-papo e, sempre que reconhece um termo, sigla ou gíria do World of Warcraft, acrescenta o significado ao lado, na cor que você escolher. Nunca reescreve a mensagem: o texto original sempre permanece. Também funciona na busca de grupo, onde adiciona ao tooltip a tradução do título e do comentário."
+L["HELP_FAQ"] = "Perguntas frequentes"
+L["HELP_Q_SCOPE"] = "Ele traduz o bate-papo inteiro?"
+L["HELP_A_SCOPE"] = "Não. Ele só conhece termos, siglas e gírias do jogo, não o idioma inteiro. Uma mensagem em francês continua em francês; o que é explicado é 'LFM', 'ICC', 'wipe' e afins."
+L["HELP_Q_TARGET"] = "O que é o idioma de destino?"
+L["HELP_A_TARGET"] = "É o idioma PARA o qual se traduz. A origem é sempre o inglês, que é o idioma em que esses termos estão escritos. Defina-o no seu próprio idioma na seção Geral."
+L["HELP_Q_COMPOSE"] = "Para que serve o /wt en?"
+L["HELP_Q_IGNORE"] = "Uma palavra é traduzida e eu não quero"
+L["HELP_A_IGNORE"] = "Adicione-a na seção Palavras ignoradas. O caso típico são siglas curtas que colidem com palavras comuns. Ela deixa de ser traduzida na hora, sem recarregar."
+L["HELP_Q_NOTHING"] = "Não traduz nada, o que eu verifico?"
+L["HELP_A_NOTHING"] = "Se a tradução está ativada na seção Geral, se o canal está marcado em Canais de bate-papo, e se a categoria do termo está marcada em Categorias."
+L["HELP_CONTACT"] = "Relatar um erro"
+L["HELP_CONTACT_TEXT"] = "Erros e sugestões vão para a página do addon no CurseForge: deixe um comentário lá, ou mande uma mensagem privada ao autor. Copie o endereço abaixo, o WoW não abre links."
+
+-- Boton de seleccionar enlaces
+L["UI_SELECT"] = "Selecionar"
+L["TT_SELECT"] = "Seleciona o link inteiro para você copiar com Ctrl+C. O WoW não deixa addons escreverem na área de transferência, então o último passo é seu."
+
+-- Valores por defecto
+L["UI_RESET"] = "Valores padrão"
+L["TT_RESET"] = "Devolve todas as configurações ao estado original: categorias, expansões, canais de bate-papo, cor, idioma de destino e a lista de palavras ignoradas."
+L["RESET_CONFIRM"] = "Devolver todas as configurações do WoW Translator aos valores padrão?\n\nIsso também limpa sua lista de palavras ignoradas. A interface será recarregada."
