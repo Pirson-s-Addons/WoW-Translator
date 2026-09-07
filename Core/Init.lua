@@ -36,6 +36,16 @@ local DEFAULT_SETTINGS = {
     showLFG = true,
 }
 
+-- Idioma al que se traduce en una instalación limpia. Antes era siempre esES, lo
+-- que dejaba a un alemán con la interfaz en alemán y el chat traducido al
+-- español hasta que abriera el panel. Data/ tiene columna para los 12 valores
+-- que devuelve GetLocale(); la única excepción es enGB, que comparte la de enUS.
+local function DefaultTargetLocale()
+    local locale = GetLocale()
+    if locale == "enGB" then return "enUS" end
+    return locale
+end
+
 -- Rellena lo que falte sin pisar lo que el jugador ya tenga elegido. Sirve tanto
 -- para una instalación limpia como para actualizar desde una versión anterior:
 -- un ajuste nuevo aparece activado y los viejos se respetan.
@@ -44,7 +54,7 @@ local function PrepareDatabase()
     local db = WoWTranslatorDB
 
     if db.enabled == nil then db.enabled = true end
-    db.targetLocale = db.targetLocale or "esES"
+    db.targetLocale = db.targetLocale or DefaultTargetLocale()
     db.chatColor = db.chatColor or "00ff00"
     db.ignored = db.ignored or {}
     db.settings = db.settings or {}

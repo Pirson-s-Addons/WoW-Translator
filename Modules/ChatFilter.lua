@@ -15,6 +15,9 @@ addonTable.ChatEvents = {
     "CHAT_MSG_INSTANCE_CHAT", "CHAT_MSG_INSTANCE_CHAT_LEADER", "CHAT_MSG_GUILD",
     "CHAT_MSG_OFFICER", "CHAT_MSG_CHANNEL", "CHAT_MSG_EMOTE", "CHAT_MSG_BATTLEGROUND",
     "CHAT_MSG_BATTLEGROUND_LEADER",
+    -- Solo existe en retail: ahí vive buena parte de la jerga de LFG. En
+    -- Classic el evento no se dispara nunca y el filtro sobra sin molestar.
+    "CHAT_MSG_COMMUNITIES_CHANNEL",
 }
 
 local function Filter(self, event, text, author, ...)
