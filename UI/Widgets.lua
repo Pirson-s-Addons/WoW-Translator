@@ -1,4 +1,5 @@
 local ADDON_NAME, addonTable = ...
+addonTable = addonTable or WoWTranslatorNS -- clientes < 3.0 no pasan argumentos
 local L = addonTable.L
 
 -- ==========================================
@@ -31,7 +32,8 @@ end
 function addonTable.CreateOptionsPanel(name, title)
     local panel = CreateFrame("Frame", name, UIParent)
     panel.name = title
-    panel:SetSize(615, 580) -- tamaño estándar: evita que un ScrollFrame quede 0x0
+    panel:SetWidth(615) -- tamaño estándar: evita que un ScrollFrame quede 0x0
+    panel:SetHeight(580)
     panel:Hide()
     return panel
 end
@@ -43,9 +45,10 @@ function addonTable.PanelHeading(panel, text)
     heading:SetText(addonTable.COLOR.brand .. text .. "|r")
 
     local line = panel:CreateTexture(nil, "ARTWORK")
-    line:SetSize(565, 1)
+    line:SetWidth(565)
+    line:SetHeight(1)
     line:SetPoint("TOPLEFT", MARGIN_X, -42)
-    line:SetColorTexture(1, 1, 1, 0.15)
+    addonTable.SetSolidColor(line, 1, 1, 1, 0.15)
 
     return -62
 end
@@ -67,7 +70,7 @@ function addonTable.SettingsCheckboxGrid(parent, items, y, namePrefix)
 
         local label = _G[cb:GetName() .. "Text"]
         label:SetText(info.text)
-        label:SetFontObject("GameFontHighlightSmall")
+        label:SetFontObject(GameFontHighlightSmall)
 
         cb:SetChecked(WoWTranslatorDB.settings[info.key])
         cb:SetScript("OnClick", function(self)
@@ -90,7 +93,8 @@ function addonTable.UrlBox(parent, y, label, url)
     caption:SetText(label)
 
     local box = CreateFrame("EditBox", nil, parent, "InputBoxTemplate")
-    box:SetSize(326, 20)
+    box:SetWidth(326)
+    box:SetHeight(20)
     box:SetPoint("TOPLEFT", MARGIN_X + 120, y + 4)
     box:SetAutoFocus(false)
     box:SetTextColor(1, 1, 1)
@@ -105,7 +109,8 @@ function addonTable.UrlBox(parent, y, label, url)
     box:SetScript("OnEnterPressed", function(self) self:ClearFocus() end)
 
     local copy = CreateFrame("Button", nil, parent, "UIPanelButtonTemplate")
-    copy:SetSize(84, 20)
+    copy:SetWidth(84)
+    copy:SetHeight(20)
     copy:SetPoint("LEFT", box, "RIGHT", 10, 0)
     copy:SetText(L["UI_SELECT"])
     copy:SetScript("OnClick", function()

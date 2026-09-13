@@ -1,4 +1,5 @@
 local ADDON_NAME, addonTable = ...
+addonTable = addonTable or WoWTranslatorNS -- clientes < 3.0 no pasan argumentos
 local L = addonTable.L
 
 -- ==========================================
@@ -12,7 +13,10 @@ local GITHUB_URL = "https://github.com/SrPirson/WoW-Translator"
 local CURSEFORGE_URL = "https://www.curseforge.com/wow/addons/wow-translator"
 
 local function Meta(field, fallback)
-    return (C_AddOns and C_AddOns.GetAddOnMetadata and C_AddOns.GetAddOnMetadata(ADDON_NAME, field))
+    -- GetAddOnMetadata se muda a C_AddOns en 11.0; antes de eso es global.
+    local name = addonTable.NAME
+    return (C_AddOns and C_AddOns.GetAddOnMetadata and C_AddOns.GetAddOnMetadata(name, field))
+        or (GetAddOnMetadata and GetAddOnMetadata(name, field))
         or fallback
 end
 
@@ -20,7 +24,8 @@ function addonTable.CreateAboutUI(panelTitle)
     local panel = addonTable.CreateOptionsPanel("WoWTranslatorPanel", panelTitle)
 
     local logo = panel:CreateTexture(nil, "ARTWORK")
-    logo:SetSize(128, 128)
+    logo:SetWidth(128)
+    logo:SetHeight(128)
     logo:SetPoint("TOPLEFT", MARGIN_X + 8, -16)
     logo:SetTexture("Interface\\Addons\\WoWTranslator\\img\\logo_wt")
 

@@ -1,4 +1,5 @@
 local ADDON_NAME, addonTable = ...
+addonTable = addonTable or WoWTranslatorNS -- clientes < 3.0 no pasan argumentos
 local L = addonTable.L
 
 -- ==========================================
@@ -21,7 +22,7 @@ local function Install()
         if not tooltip or not WoWTranslatorDB or not WoWTranslatorDB.enabled then return end
         if WoWTranslatorDB.settings.showLFG == false then return end
 
-        local info = C_LFGList and C_LFGList.GetSearchResultInfo and C_LFGList.GetSearchResultInfo(resultID)
+        local info = addonTable.GetSearchResultInfo(resultID)
         if not info then return end
 
         local added = false

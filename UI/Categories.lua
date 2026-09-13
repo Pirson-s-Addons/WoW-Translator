@@ -1,4 +1,5 @@
 local ADDON_NAME, addonTable = ...
+addonTable = addonTable or WoWTranslatorNS -- clientes < 3.0 no pasan argumentos
 local L = addonTable.L
 
 -- ==========================================
@@ -30,7 +31,7 @@ function addonTable.CreateCategoriesUI(parentCategory)
         { text = L["CAT_LFG"],     key = "showLFG",         tt = L["TT_CAT_LFG"] },
     }, y, "WT_CB_")
 
-    Settings.RegisterCanvasLayoutSubcategory(parentCategory, panel, panel.name)
+    addonTable.RegisterSubcategory(parentCategory, panel)
 end
 
 function addonTable.CreateExpansionsUI(parentCategory)
@@ -54,5 +55,5 @@ function addonTable.CreateExpansionsUI(parentCategory)
         { text = "Midnight",               key = "showInstMidnight" },
     }, y, "WT_EXP_CB_")
 
-    Settings.RegisterCanvasLayoutSubcategory(parentCategory, panel, panel.name)
+    addonTable.RegisterSubcategory(parentCategory, panel)
 end

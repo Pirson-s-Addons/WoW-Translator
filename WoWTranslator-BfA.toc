@@ -1,4 +1,4 @@
-## Interface: 11500, 11501, 11502, 11503, 11504, 11505, 11506, 11507, 11508, 11509
+## Interface: 80300
 ## Author: Pirson
 ## Version: 2.01
 ## Title: |TInterface\AddOns\WoWTranslator\img\logo_wt:16:16|t |cffd597ffWoW Translator|r
@@ -86,6 +86,10 @@
 
 ## SavedVariables: WoWTranslatorDB
 ## OptionalDeps: LibStub, CallbackHandler, LibDataBroker-1.1, LibDBIcon-1.0
+
+# Compatibilidad con clientes antiguos (va antes que Libs: CallbackHandler-1.0
+# se guarda securecallfunction al cargarse)
+Core\Compat.lua
 
 Libs\LibStub\LibStub.lua
 Libs\LibBabble-3.0\LibBabble-3.0.lua

@@ -1,4 +1,5 @@
 local ADDON_NAME, addonTable = ...
+addonTable = addonTable or WoWTranslatorNS -- clientes < 3.0 no pasan argumentos
 
 -- ==========================================
 -- REGISTRO DEL PANEL DE OPCIONES
@@ -12,9 +13,7 @@ function addonTable.CreateConfigUI()
 
     local panel = addonTable.CreateAboutUI(title)
 
-    local category = Settings.RegisterCanvasLayoutCategory(panel, title)
-    Settings.RegisterAddOnCategory(category)
-    addonTable.categoryID = category:GetID()
+    local category = addonTable.RegisterCategory(panel, title)
 
     addonTable.CreateGeneralUI(category)
     addonTable.CreateCategoriesUI(category)

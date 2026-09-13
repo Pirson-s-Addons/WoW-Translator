@@ -1,4 +1,5 @@
 local ADDON_NAME, addonTable = ...
+addonTable = addonTable or WoWTranslatorNS -- clientes < 3.0 no pasan argumentos
 local L = addonTable.L
 local AddTooltip = addonTable.AddTooltip
 local MARGIN_X = addonTable.MARGIN_X
@@ -114,13 +115,15 @@ end
 local function BuildColorSection(panel, y)
     local button = CreateFrame("Button", "WT_ColorBtn", panel, "UIPanelButtonTemplate")
     button:SetPoint("TOPLEFT", MARGIN_X + 4, y)
-    button:SetSize(140, 22)
+    button:SetWidth(140)
+    button:SetHeight(22)
     button:SetText(L["UI_COLOR_BTN"])
     AddTooltip(button, L["TT_COLOR"])
 
     local preview = panel:CreateTexture(nil, "OVERLAY")
     preview:SetPoint("LEFT", button, "RIGHT", 12, 0)
-    preview:SetSize(20, 20)
+    preview:SetWidth(20)
+    preview:SetHeight(20)
 
     local function CurrentRGB()
         local hex = WoWTranslatorDB.chatColor or "00ff00"
@@ -129,19 +132,14 @@ local function BuildColorSection(panel, y)
             tonumber(hex:sub(5, 6), 16) / 255
     end
 
-    local function UpdatePreview() preview:SetColorTexture(CurrentRGB()) end
+    local function UpdatePreview() addonTable.SetSolidColor(preview, CurrentRGB()) end
 
     button:SetScript("OnClick", function()
         local r, g, b = CurrentRGB()
-        ColorPickerFrame:SetupColorPickerAndShow({
-            swatchFunc = function()
-                local nr, ng, nb = ColorPickerFrame:GetColorRGB()
-                WoWTranslatorDB.chatColor = string.format("%02x%02x%02x", nr * 255, ng * 255, nb * 255)
-                UpdatePreview()
-            end,
-            hasOpacity = false,
-            r = r, g = g, b = b,
-        })
+        addonTable.ShowColorPicker(r, g, b, function(nr, ng, nb)
+            WoWTranslatorDB.chatColor = string.format("%02x%02x%02x", nr * 255, ng * 255, nb * 255)
+            UpdatePreview()
+        end)
     end)
     UpdatePreview()
 
@@ -151,38 +149,41 @@ end
 local function BuildLanguageSection(panel, y)
     local dropdown = CreateFrame("Frame", "WT_LangDrop", panel, "UIDropDownMenuTemplate")
     dropdown:SetPoint("TOPLEFT", MARGIN_X - 12, y)
-    UIDropDownMenu_SetWidth(dropdown, 200)
+    addonTable.DropDown(UIDropDownMenu_SetWidth, dropdown, 200)
     AddTooltip(dropdown, L["TT_LANG"])
 
     -- pairs() daría un orden distinto cada vez que se abre el menú.
     local preferred, rest = SplitLanguages()
 
-    UIDropDownMenu_Initialize(dropdown, function(self, level)
+    -- El menu tiene un solo nivel, asi que el nivel va fijo y el idioma sale del
+    -- cierre de cada entrada: 2.4.3 llama a init(level) y a func(arg1, arg2) sin
+    -- el marco delante, y desde 3.0 es init(frame, level) y func(button, ...).
+    UIDropDownMenu_Initialize(dropdown, function()
         local function AddEntry(code)
             local info = UIDropDownMenu_CreateInfo()
             info.text = LanguageName(code)
             info.value = code
-            info.func = function(entry)
-                WoWTranslatorDB.targetLocale = entry.value
-                UIDropDownMenu_SetSelectedValue(dropdown, entry.value)
-                UIDropDownMenu_SetText(dropdown, LanguageName(entry.value))
+            info.func = function()
+                WoWTranslatorDB.targetLocale = code
+                UIDropDownMenu_SetSelectedValue(dropdown, code)
+                addonTable.DropDown(UIDropDownMenu_SetText, dropdown, LanguageName(code))
                 addonTable.RebuildMasterDict()
             end
             info.checked = (WoWTranslatorDB.targetLocale == code)
-            UIDropDownMenu_AddButton(info, level)
+            UIDropDownMenu_AddButton(info, 1)
         end
 
         for _, code in ipairs(preferred) do AddEntry(code) end
 
-        if #preferred > 0 and UIDropDownMenu_AddSeparator then
-            UIDropDownMenu_AddSeparator(level)
+        if #preferred > 0 then
+            addonTable.AddDropDownSeparator(1)
         end
 
         for _, code in ipairs(rest) do AddEntry(code) end
     end)
 
     UIDropDownMenu_SetSelectedValue(dropdown, WoWTranslatorDB.targetLocale)
-    UIDropDownMenu_SetText(dropdown, LanguageName(WoWTranslatorDB.targetLocale) or "Spanish (ES)")
+    addonTable.DropDown(UIDropDownMenu_SetText, dropdown, LanguageName(WoWTranslatorDB.targetLocale) or "Spanish (ES)")
 
     return y - 44
 end
@@ -213,7 +214,8 @@ StaticPopupDialogs["WOWTRANSLATOR_RESET"] = {
 local function BuildResetSection(panel, y)
     local reset = CreateFrame("Button", "WT_ResetBtn", panel, "UIPanelButtonTemplate")
     reset:SetPoint("TOPLEFT", MARGIN_X + 4, y)
-    reset:SetSize(180, 24)
+    reset:SetWidth(180)
+    reset:SetHeight(24)
     reset:SetText(L["UI_RESET"])
     reset:SetScript("OnClick", function()
         StaticPopup_Show("WOWTRANSLATOR_RESET")
@@ -238,7 +240,8 @@ function addonTable.CreateGeneralUI(parentCategory)
 
     local test = CreateFrame("Button", "WT_TestBtn", panel, "UIPanelButtonTemplate")
     test:SetPoint("TOPLEFT", MARGIN_X + 4, y - 10)
-    test:SetSize(180, 24)
+    test:SetWidth(180)
+    test:SetHeight(24)
     test:SetText(L["UI_TEST_BTN"])
     test:SetScript("OnClick", function() addonTable.RunTest() end)
     AddTooltip(test, L["TT_TEST_BTN"])
@@ -246,5 +249,5 @@ function addonTable.CreateGeneralUI(parentCategory)
 
     BuildResetSection(panel, y)
 
-    Settings.RegisterCanvasLayoutSubcategory(parentCategory, panel, panel.name)
+    addonTable.RegisterSubcategory(parentCategory, panel)
 end

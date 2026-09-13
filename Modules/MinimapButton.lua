@@ -1,4 +1,5 @@
 local ADDON_NAME, addonTable = ...
+addonTable = addonTable or WoWTranslatorNS -- clientes < 3.0 no pasan argumentos
 local L = addonTable.L
 
 -- ==========================================
@@ -17,7 +18,7 @@ function addonTable.CreateMinimapButton()
         icon = "Interface\\Addons\\WoWTranslator\\img\\logo_wt",
 
         OnClick = function()
-            Settings.OpenToCategory(addonTable.categoryID)
+            addonTable.OpenConfig()
         end,
 
         OnTooltipShow = function(tooltip)

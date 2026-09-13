@@ -1,4 +1,5 @@
 local ADDON_NAME, addonTable = ...
+addonTable = addonTable or WoWTranslatorNS -- clientes < 3.0 no pasan argumentos
 local L = addonTable.L
 local AddTooltip = addonTable.AddTooltip
 
@@ -23,13 +24,15 @@ function addonTable.CreateIgnoreListUI(parentCategory)
 
     -- Alta
     local input = CreateFrame("EditBox", "WT_IgnoreInput", panel, "InputBoxTemplate")
-    input:SetSize(300, 22)
+    input:SetWidth(300)
+    input:SetHeight(22)
     input:SetPoint("TOPLEFT", 22, y - 40)
     input:SetAutoFocus(false)
     AddTooltip(input, L["IGN_INPUT_TT"])
 
     local addBtn = CreateFrame("Button", "WT_IgnoreAddBtn", panel, "UIPanelButtonTemplate")
-    addBtn:SetSize(100, 22)
+    addBtn:SetWidth(100)
+    addBtn:SetHeight(22)
     addBtn:SetPoint("LEFT", input, "RIGHT", 10, 0)
     addBtn:SetText(L["IGN_ADD"])
 
@@ -39,8 +42,9 @@ function addonTable.CreateIgnoreListUI(parentCategory)
     scrollFrame:SetPoint("BOTTOMRIGHT", -40, 16)
 
     local scrollChild = CreateFrame("Frame", "WT_IgnoreScrollChild", scrollFrame)
-    scrollChild:SetSize(540, 1)
-    scrollFrame:SetScrollChild(scrollChild)
+    scrollChild:SetWidth(540)
+    scrollChild:SetHeight(1)
+    addonTable.SetScrollChild(scrollFrame, scrollChild)
 
     local empty = scrollChild:CreateFontString(nil, "ARTWORK", "GameFontDisableSmall")
     empty:SetPoint("TOPLEFT", 6, -6)
@@ -51,7 +55,8 @@ function addonTable.CreateIgnoreListUI(parentCategory)
 
     local function CreateRow(index)
         local row = CreateFrame("Frame", nil, scrollChild)
-        row:SetSize(500, 24)
+        row:SetWidth(500)
+        row:SetHeight(24)
         row:SetPoint("TOPLEFT", 6, -((index - 1) * ROW_HEIGHT))
 
         -- Campo bloqueado: sin ratón ni teclado no hay forma de escribir en él.
@@ -59,7 +64,8 @@ function addonTable.CreateIgnoreListUI(parentCategory)
         -- color atenuado y no repinta tras SetText, así que sobre el fondo
         -- oscuro del panel la palabra se volvía invisible.
         row.label = CreateFrame("EditBox", nil, row, "InputBoxTemplate")
-        row.label:SetSize(420, 22)
+        row.label:SetWidth(420)
+        row.label:SetHeight(22)
         row.label:SetPoint("LEFT", 8, 0)
         row.label:SetAutoFocus(false)
         row.label:EnableMouse(false)
@@ -67,7 +73,8 @@ function addonTable.CreateIgnoreListUI(parentCategory)
         row.label:SetTextColor(1, 1, 1)
 
         row.del = CreateFrame("Button", nil, row, "UIPanelButtonTemplate")
-        row.del:SetSize(24, 22)
+        row.del:SetWidth(24)
+        row.del:SetHeight(22)
         row.del:SetPoint("LEFT", row.label, "RIGHT", 10, 0)
         row.del:SetText(addonTable.COLOR.red .. "X|r")
         AddTooltip(row.del, L["IGN_REMOVE_TT"])
@@ -93,7 +100,7 @@ function addonTable.CreateIgnoreListUI(parentCategory)
         local words = {}
         for word in pairs(WoWTranslatorDB.ignored) do words[#words + 1] = word end
         table.sort(words)
-        empty:SetShown(#words == 0)
+        addonTable.SetShown(empty, #words == 0)
 
         for i, word in ipairs(words) do
             local row = rows[i]
@@ -126,5 +133,5 @@ function addonTable.CreateIgnoreListUI(parentCategory)
     panel:SetScript("OnShow", Refresh)
     Refresh()
 
-    Settings.RegisterCanvasLayoutSubcategory(parentCategory, panel, panel.name)
+    addonTable.RegisterSubcategory(parentCategory, panel)
 end

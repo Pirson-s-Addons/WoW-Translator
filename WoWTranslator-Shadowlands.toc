@@ -1,4 +1,4 @@
-## Interface: 40400, 40401, 40402
+## Interface: 90205
 ## Author: Pirson
 ## Version: 2.01
 ## Title: |TInterface\AddOns\WoWTranslator\img\logo_wt:16:16|t |cffd597ffWoW Translator|r
@@ -46,7 +46,7 @@
 ## Notes: |cFF33CCFFTranslation of terms, acronyms, and World of Warcraft slang.|r
 ## Notes-deDE: |cFF33CCFFÜbersetzung von Begriffen, Akronymen und World of Warcraft-Slang.|r
 ## Notes-esES: |cFF33CCFFTraducción de términos, acrónimos y jerga de World of Warcraft.|r
-## Notes-esMX: |cFF33CCFFTraducción de términos, acronyms y jerga de World of Warcraft.|r
+## Notes-esMX: |cFF33CCFFTraducción de términos, acrónimos y jerga de World of Warcraft.|r
 ## Notes-frFR: |cFF33CCFFTraduction des termes, acronymes et de l'argot de World of Warcraft.|r
 ## Notes-itIT: |cFF33CCFFTraduzione di termini, acronimi e gergo di World of Warcraft.|r
 ## Notes-koKR: |cFF33CCFF월드 오브 워크래프트의 용어, 약어 및 속어 번역.|r
@@ -86,6 +86,10 @@
 
 ## SavedVariables: WoWTranslatorDB
 ## OptionalDeps: LibStub, CallbackHandler, LibDataBroker-1.1, LibDBIcon-1.0
+
+# Compatibilidad con clientes antiguos (va antes que Libs: CallbackHandler-1.0
+# se guarda securecallfunction al cargarse)
+Core\Compat.lua
 
 Libs\LibStub\LibStub.lua
 Libs\LibBabble-3.0\LibBabble-3.0.lua

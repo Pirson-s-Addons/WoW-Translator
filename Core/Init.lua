@@ -1,4 +1,5 @@
 local ADDON_NAME, addonTable = ...
+addonTable = addonTable or WoWTranslatorNS -- clientes < 3.0 no pasan argumentos
 local L = addonTable.L
 
 -- ==========================================
@@ -88,11 +89,13 @@ loader:SetScript("OnEvent", function()
     addonTable.LoadBabbleSources()
     addonTable.RebuildMasterDict()
 
-    addonTable.CreateConfigUI()
+    -- Lo esencial primero: si un cliente antiguo de servidor privado rechaza
+    -- algo de la interfaz, el chat se sigue traduciendo y /wt sigue funcionando.
     addonTable.InstallChatFilter()
     addonTable.InstallGroupFinderHook()
-    addonTable.CreateMinimapButton()
     addonTable.RegisterSlashCommands()
+    addonTable.CreateMinimapButton()
+    addonTable.CreateConfigUI()
 
     addonTable.Print(L["CHAT_LOADED"] or "Loaded.")
 end)

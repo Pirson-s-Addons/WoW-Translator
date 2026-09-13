@@ -1,4 +1,5 @@
 local ADDON_NAME, addonTable = ...
+addonTable = addonTable or WoWTranslatorNS -- clientes < 3.0 no pasan argumentos
 local L = addonTable.L
 local MARGIN_X = addonTable.MARGIN_X
 
@@ -86,7 +87,7 @@ function addonTable.CreateChannelsUI(parentCategory)
 
             local label = _G[cb:GetName() .. "Text"]
             label:SetText(info.name)
-            label:SetFontObject("GameFontHighlightSmall")
+            label:SetFontObject(GameFontHighlightSmall)
 
             -- nil cuenta como activo: un canal nuevo se traduce por defecto.
             cb:SetChecked(WoWTranslatorDB.settings.channels[info.ev] ~= false)
@@ -98,5 +99,5 @@ function addonTable.CreateChannelsUI(parentCategory)
         y = y - (lastRow * 24) - 32
     end
 
-    Settings.RegisterCanvasLayoutSubcategory(parentCategory, panel, panel.name)
+    addonTable.RegisterSubcategory(parentCategory, panel)
 end

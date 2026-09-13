@@ -1,4 +1,5 @@
 local ADDON_NAME, addonTable = ...
+addonTable = addonTable or WoWTranslatorNS -- clientes < 3.0 no pasan argumentos
 local L = addonTable.L
 local MARGIN_X = addonTable.MARGIN_X
 
@@ -28,9 +29,12 @@ local function Paragraph(parent, y, text, font, indent)
     fs:SetPoint("TOPLEFT", MARGIN_X + (indent or 0), y)
     fs:SetWidth(TEXT_WIDTH - (indent or 0))
     fs:SetJustifyH("LEFT")
-    fs:SetSpacing(2)
+    if fs.SetSpacing then fs:SetSpacing(2) end -- no existe en 2.4.3
     fs:SetText(text)
-    return y - fs:GetStringHeight() - 10
+    -- GetStringHeight llega en 6.x. Antes, el alto de una FontString con ancho
+    -- fijo ya es el del texto envuelto.
+    local height = fs.GetStringHeight and fs:GetStringHeight() or fs:GetHeight()
+    return y - height - 10
 end
 
 function addonTable.CreateHelpUI(parentCategory)
@@ -42,8 +46,9 @@ function addonTable.CreateHelpUI(parentCategory)
     scrollFrame:SetPoint("BOTTOMRIGHT", -34, 12)
 
     local content = CreateFrame("Frame", "WT_HelpScrollChild", scrollFrame)
-    content:SetSize(TEXT_WIDTH + 40, 1)
-    scrollFrame:SetScrollChild(content)
+    content:SetWidth(TEXT_WIDTH + 40)
+    content:SetHeight(1)
+    addonTable.SetScrollChild(scrollFrame, content)
 
     local y = -4
     y = Paragraph(content, y, L["HELP_INTRO"], "GameFontHighlightSmall")
@@ -62,7 +67,7 @@ function addonTable.CreateHelpUI(parentCategory)
             exampleText:SetPoint("TOPLEFT", MARGIN_X + 12, y + 4)
             exampleText:SetWidth(TEXT_WIDTH - 12)
             exampleText:SetJustifyH("LEFT")
-            exampleText:SetSpacing(3)
+            if exampleText.SetSpacing then exampleText:SetSpacing(3) end
             y = y - 34
         end
     end
@@ -101,5 +106,5 @@ function addonTable.CreateHelpUI(parentCategory)
             or "")
     end)
 
-    Settings.RegisterCanvasLayoutSubcategory(parentCategory, panel, panel.name)
+    addonTable.RegisterSubcategory(parentCategory, panel)
 end

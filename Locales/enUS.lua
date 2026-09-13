@@ -1,4 +1,5 @@
 local ADDON_NAME, addonTable = ...
+addonTable = addonTable or WoWTranslatorNS -- clientes < 3.0 no pasan argumentos
 
 -- ==========================================
 -- IDIOMA POR DEFECTO (enUS / enGB)

@@ -21,6 +21,29 @@ local next, Minimap, CreateFrame, AddonCompartmentFrame = next, Minimap, CreateF
 lib.tooltip = lib.tooltip or CreateFrame("GameTooltip", "LibDBIconTooltip", UIParent, "GameTooltipTemplate")
 local isDraggingButton = false
 
+-- WoWTranslator: las animaciones llegan en 3.0 y SetToFinalAlpha despues.
+-- En un cliente que no las tenga, fadeOut es un muneco que no hace nada, y
+-- asi los ocho :Play()/:Stop() repartidos por la libreria siguen valiendo.
+local function createFadeOut(button)
+	if not button.CreateAnimationGroup then
+		return { Play = function() end, Stop = function() end }
+	end
+	local fadeOut = button:CreateAnimationGroup()
+	local animOut = fadeOut:CreateAnimation("Alpha")
+	animOut:SetOrder(1)
+	animOut:SetDuration(0.2)
+	-- Antes de 7.x el Alpha solo sabia de incrementos (SetChange).
+	if animOut.SetFromAlpha then
+		animOut:SetFromAlpha(1)
+		animOut:SetToAlpha(0)
+	else
+		animOut:SetChange(-1)
+	end
+	animOut:SetStartDelay(1)
+	if fadeOut.SetToFinalAlpha then fadeOut:SetToFinalAlpha(true) end
+	return fadeOut
+end
+
 function lib:IconCallback(event, name, key, value)
 	if lib.objects[name] then
 		if key == "icon" then
@@ -255,10 +278,13 @@ local function createButton(name, object, db, customCompartmentIcon)
 	lib.objects[name] = button
 
 	button:SetFrameStrata("MEDIUM")
-	button:SetFixedFrameStrata(true)
 	button:SetFrameLevel(8)
-	button:SetFixedFrameLevel(true)
-	button:RegisterForClicks("anyUp")
+	-- WoWTranslator: SetFixedFrame* llega en 9.0 y aqui se llamaba a pelo.
+	if button.SetFixedFrameStrata then
+		button:SetFixedFrameStrata(true)
+		button:SetFixedFrameLevel(true)
+	end
+	button:RegisterForClicks("AnyUp") -- WoWTranslator: grafia de 2.4.3, valida en todas
 	button:RegisterForDrag("LeftButton")
 	lib:ResetButtonHighlightTexture(name)
 	lib:ResetButtonSize(name)
@@ -291,14 +317,7 @@ local function createButton(name, object, db, customCompartmentIcon)
 	button:SetScript("OnMouseDown", onMouseDown)
 	button:SetScript("OnMouseUp", onMouseUp)
 
-	button.fadeOut = button:CreateAnimationGroup()
-	local animOut = button.fadeOut:CreateAnimation("Alpha")
-	animOut:SetOrder(1)
-	animOut:SetDuration(0.2)
-	animOut:SetFromAlpha(1)
-	animOut:SetToAlpha(0)
-	animOut:SetStartDelay(1)
-	button.fadeOut:SetToFinalAlpha(true)
+	button.fadeOut = createFadeOut(button)
 
 	if lib.loggedIn then
 		updatePosition(button, db and db.minimapPos)
@@ -473,14 +492,16 @@ end
 function lib:SetButtonSize(name, size)
 	local button = lib:GetMinimapButton(name)
 	if button and type(size) == "number" then
-		button:SetSize(size, size)
+		button:SetWidth(size)
+		button:SetHeight(size)
 	end
 end
 
 function lib:ResetButtonSize(name)
 	local button = lib:GetMinimapButton(name)
 	if button then
-		button:SetSize(31, 31)
+		button:SetWidth(31)
+		button:SetHeight(31)
 	end
 end
 
@@ -494,7 +515,7 @@ end
 function lib:ResetButtonHighlightTexture(name)
 	local button = lib:GetMinimapButton(name)
 	if button then
-		button:SetHighlightTexture(136477) --"Interface\\Minimap\\UI-Minimap-ZoomButton-Highlight"
+		button:SetHighlightTexture("Interface\\Minimap\\UI-Minimap-ZoomButton-Highlight") -- WoWTranslator: ruta, no fileID
 	end
 end
 
@@ -514,7 +535,8 @@ function lib:SetButtonBorder(name, borderTexture, size, framePoint, offsetX, off
 			button.border:SetTexture(borderTexture)
 		end
 		if type(size) == "number" then
-			button.border:SetSize(size, size)
+			button.border:SetWidth(size)
+			button.border:SetHeight(size)
 		end
 		if type(framePoint) == "string" then
 			button.border:ClearAllPoints()
@@ -529,11 +551,13 @@ function lib:ResetButtonBorder(name)
 		button.border:Show()
 		button.border:ClearAllPoints()
 		button.border:SetPoint("TOPLEFT", 0, 0)
-		button.border:SetTexture(136430) --"Interface\\Minimap\\MiniMap-TrackingBorder"
+		button.border:SetTexture("Interface\\Minimap\\MiniMap-TrackingBorder") -- WoWTranslator: ruta, no fileID
 		if WOW_PROJECT_ID == WOW_PROJECT_MAINLINE then
-			button.border:SetSize(50, 50)
+			button.border:SetWidth(50)
+			button.border:SetHeight(50)
 		else
-			button.border:SetSize(53, 53)
+			button.border:SetWidth(53)
+			button.border:SetHeight(53)
 		end
 	end
 end
@@ -554,7 +578,8 @@ function lib:SetButtonBackground(name, backgroundTexture, size, framePoint, offs
 			button.background:SetTexture(backgroundTexture)
 		end
 		if type(size) == "number" then
-			button.background:SetSize(size, size)
+			button.background:SetWidth(size)
+			button.background:SetHeight(size)
 		end
 		if type(framePoint) == "string" then
 			button.background:ClearAllPoints()
@@ -568,12 +593,14 @@ function lib:ResetButtonBackground(name)
 	if button.background then
 		button.background:Show()
 		button.background:ClearAllPoints()
-		button.background:SetTexture(136467) --"Interface\\Minimap\\UI-Minimap-Background"
+		button.background:SetTexture("Interface\\Minimap\\UI-Minimap-Background") -- WoWTranslator: ruta, no fileID
 		if WOW_PROJECT_ID == WOW_PROJECT_MAINLINE then
-			button.background:SetSize(24, 24)
+			button.background:SetWidth(24)
+			button.background:SetHeight(24)
 			button.background:SetPoint("CENTER", 0, 0)
 		else
-			button.background:SetSize(20, 20)
+			button.background:SetWidth(20)
+			button.background:SetHeight(20)
 			button.background:SetPoint("TOPLEFT", 7, -5)
 		end
 	end
@@ -588,7 +615,8 @@ function lib:SetButtonIcon(name, iconTexture, size, framePoint, offsetX, offsetY
 			button.icon:SetTexture(iconTexture)
 		end
 		if type(size) == "number" then
-			button.icon:SetSize(size, size)
+			button.icon:SetWidth(size)
+			button.icon:SetHeight(size)
 		end
 		if type(framePoint) == "string" then
 			button.icon:ClearAllPoints()
@@ -605,11 +633,13 @@ function lib:ResetButtonIcon(name)
 		local r, g, b = button.icon:GetVertexColor()
 		button.icon:SetVertexColor(button.dataObject.iconR or r, button.dataObject.iconG or g, button.dataObject.iconB or b)
 		if WOW_PROJECT_ID == WOW_PROJECT_MAINLINE then
-			button.icon:SetSize(18, 18)
+			button.icon:SetWidth(18)
+			button.icon:SetHeight(18)
 			button.icon:ClearAllPoints()
 			button.icon:SetPoint("CENTER")
 		else
-			button.icon:SetSize(17, 17)
+			button.icon:SetWidth(17)
+			button.icon:SetHeight(17)
 			button.icon:ClearAllPoints()
 			button.icon:SetPoint("TOPLEFT", 7, -6)
 		end
@@ -694,14 +724,7 @@ for name, button in next, lib.objects do
 	button:SetScript("OnMouseUp", onMouseUp)
 
 	if not button.fadeOut then -- Upgrade to 39
-		button.fadeOut = button:CreateAnimationGroup()
-		local animOut = button.fadeOut:CreateAnimation("Alpha")
-		animOut:SetOrder(1)
-		animOut:SetDuration(0.2)
-		animOut:SetFromAlpha(1)
-		animOut:SetToAlpha(0)
-		animOut:SetStartDelay(1)
-		button.fadeOut:SetToFinalAlpha(true)
+		button.fadeOut = createFadeOut(button)
 	end
 end
 lib:SetButtonRadius(lib.radius) -- Upgrade to 40

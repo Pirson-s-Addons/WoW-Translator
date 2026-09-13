@@ -1,8 +1,7 @@
-## Interface: 120001, 120005, 120007, 120100, 120105
+## Interface: 40300, 40400, 40401, 40402
 ## Author: Pirson
 ## Version: 2.01
-## IconTexture: Interface\AddOns\WoWTranslator\img\logo_wt
-## Title: |cffd597ffWoW Translator|r
+## Title: |TInterface\AddOns\WoWTranslator\img\logo_wt:16:16|t |cffd597ffWoW Translator|r
 
 # https://warcraft.wiki.gg/wiki/Addon_Categories
 ## Category: Chat

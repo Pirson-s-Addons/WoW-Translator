@@ -1,4 +1,5 @@
 local ADDON_NAME, addonTable = ...
+addonTable = addonTable or WoWTranslatorNS -- clientes < 3.0 no pasan argumentos
 addonTable.EstadisticasDict = {
     ["ap"] = {
         esES = "Poder de ataque",

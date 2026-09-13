@@ -1,4 +1,5 @@
 local ADDON_NAME, addonTable = ...
+addonTable = addonTable or WoWTranslatorNS -- clientes < 3.0 no pasan argumentos
 local L = addonTable.L
 
 -- ==========================================
@@ -55,12 +56,26 @@ local function Compose(term)
 
     -- Se deja ESCRITO en la caja de chat, no se envía: el jugador revisa y pulsa
     -- Intro. El addon nunca habla por él.
-    local edit = ChatEdit_GetActiveWindow and ChatEdit_GetActiveWindow()
+    -- En retail 12.x y en los Classic modernos estas funciones viven en
+    -- ChatFrameUtil; los ChatEdit_* y ChatFrame_OpenChat de siempre quedan como
+    -- alias que Blizzard anuncia que quitara. Se prefiere la nueva.
+    local util = ChatFrameUtil or {}
+    local getActiveWindow = util.GetActiveWindow or ChatEdit_GetActiveWindow
+    local activateChat = util.ActivateChat or ChatEdit_ActivateChat
+    local openChat = util.OpenChat or ChatFrame_OpenChat
+
+    local edit = getActiveWindow and getActiveWindow()
     if not edit then
         edit = ChatFrame1EditBox
-        if edit and ChatEdit_ActivateChat then ChatEdit_ActivateChat(edit) end
+        if edit and activateChat then activateChat(edit) end
     end
-    if edit then edit:SetText(out) end
+    if edit then
+        edit:SetText(out)
+    elseif openChat then
+        -- Sin caja por ventana (2.4.3 tenia una sola, ChatFrameEditBox). OpenChat
+        -- existe en todas las versiones y abre la caja con el texto dentro.
+        openChat(out)
+    end
 end
 
 local function ShowHelp()
@@ -86,7 +101,7 @@ function addonTable.RegisterSlashCommands()
         command = command:lower()
 
         if command == "config" then
-            Settings.OpenToCategory(addonTable.categoryID)
+            addonTable.OpenConfig()
         elseif command == "on" then
             SetEnabled(true)
         elseif command == "off" then

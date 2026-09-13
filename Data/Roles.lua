@@ -1,4 +1,5 @@
 local ADDON_NAME, addonTable = ...
+addonTable = addonTable or WoWTranslatorNS -- clientes < 3.0 no pasan argumentos
 addonTable.RolesDict = {
     ["tank"] = {
         esES = "Tanque", esMX = "Tanque", enUS = "Tank", deDE = "Tank", frFR = "Tank", itIT = "Difensore", koKR = "방어", ptBR = "Tanque", ruRU = "Танк", zhCN = "坦克", zhTW = "坦克", plPL = "Tank", svSE = "Tank", noNO = "Tank", trTR = "Tank", jaJP = "タンク", arSA = "دبابة", hiIN = "टैंक", thTH = "แทงค์", viVN = "Tank", csCZ = "Tank",

@@ -1,4 +1,5 @@
 local ADDON_NAME, addonTable = ...
+addonTable = addonTable or WoWTranslatorNS -- clientes < 3.0 no pasan argumentos
 
 -- ==========================================
 -- FILTRO DE CHAT
@@ -21,6 +22,13 @@ addonTable.ChatEvents = {
 }
 
 local function Filter(self, event, text, author, ...)
+    -- 2.4.3 llama al filtro solo con el mensaje, filter(msg), deja el evento en
+    -- el global `event` y espera (descartar, mensajeNuevo). Desde 3.1 la firma
+    -- es (chatFrame, event, msg, author, ...). Devolver de mas no le molesta.
+    if type(self) == "string" then
+        self, event, text = nil, _G.event, self
+    end
+
     if not WoWTranslatorDB or not WoWTranslatorDB.enabled then return end
 
     local channels = WoWTranslatorDB.settings.channels
@@ -32,7 +40,12 @@ local function Filter(self, event, text, author, ...)
 end
 
 function addonTable.InstallChatFilter()
+    -- En retail 12.x y en los Classic modernos la API real es ChatFrameUtil;
+    -- ChatFrame_AddMessageEventFilter queda solo como alias en
+    -- Blizzard_DeprecatedChatInfo, que Blizzard anuncia que quitara en la
+    -- proxima expansion. Misma firma en las dos: (chatFrame, event, ...).
+    local addFilter = (ChatFrameUtil and ChatFrameUtil.AddMessageEventFilter) or ChatFrame_AddMessageEventFilter
     for _, event in ipairs(addonTable.ChatEvents) do
-        ChatFrame_AddMessageEventFilter(event, Filter)
+        addFilter(event, Filter)
     end
 end

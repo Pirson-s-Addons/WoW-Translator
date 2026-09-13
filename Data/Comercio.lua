@@ -1,4 +1,5 @@
 local ADDON_NAME, addonTable = ...
+addonTable = addonTable or WoWTranslatorNS -- clientes < 3.0 no pasan argumentos
 addonTable.ComercioDict = {
     ["wtb"] = {
         esES = "Compro", esMX = "Compro", enUS = "Want to buy", deDE = "Kaufe", frFR = "Achète", itIT = "Compro", koKR = "구매함", ptBR = "Compro", ruRU = "Куплю", zhCN = "求购", zhTW = "求購", plPL = "Kupię (WTB)", svSE = "Vill köpa", noNO = "Ønsker å kjøpe", trTR = "Satın almak istiyorum", jaJP = "買いたい", arSA = "أريد الشراء", hiIN = "खरीदना चाहता हूँ", thTH = "ต้องการซื้อ", viVN = "Muốn mua", csCZ = "Koupím",
