@@ -107,8 +107,9 @@ end
 -- RETAIL Y CLASSIC DE CURSEFORGE (interfaz moderna)
 -- ------------------------------------------
 -- Versiones sacadas de las etiquetas del repo: todas usan Settings, separador
--- (level) y marco delante, aunque su version mayor sea baja.
-for _, version in ipairs({ "12.1.5", "1.15.9", "2.5.6", "3.4.3", "3.80.2", "4.4.2", "5.5.4" }) do
+-- (level) y marco delante, aunque su version mayor sea baja. El caso extremo es
+-- Forever (1.60.1, interfaz 16001): version mayor 1 con la API de 12.x.
+for _, version in ipairs({ "12.1.5", "1.60.1", "1.15.9", "2.5.6", "3.4.3", "3.80.2", "4.4.2", "5.5.4" }) do
     local log = {}
     local env = Environment(version, ModernFields(log))
     local addonTable = Load(env)
@@ -262,4 +263,4 @@ do
     assert(chat[1] == "hola 42", "print escribe en DEFAULT_CHAT_FRAME")
 end
 
-print("Core/Compat.lua OK: retail, Classic x6, 9.2.5, 8.3.7, 7.3.5, 3.3.5a y 2.4.3")
+print("Core/Compat.lua OK: retail, Forever, Classic x6, 9.2.5, 8.3.7, 7.3.5, 3.3.5a y 2.4.3")

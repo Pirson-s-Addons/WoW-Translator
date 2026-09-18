@@ -1,4 +1,4 @@
-## Interface: 120001, 120005, 120007, 120100, 120105
+## Interface: 16001
 ## Author: Pirson
 ## Version: 2.03
 ## IconTexture: Interface\AddOns\WoWTranslator\img\logo_wt
