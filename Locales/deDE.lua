@@ -95,9 +95,6 @@ L["QT_MINIMAP_TT"] =
 "|cffd597ffWoW Translator|r\n|cffffffffKlick:|r Einstellungen öffnen"
 
 -- Buscador de grupos / Palabras ignoradas
-L["CAT_LFG"] = "Gruppensuche"
-L["TT_CAT_LFG"] = "Fügt dem Tooltip in der Gruppensuche die Übersetzung von Titel und Kommentar der Gruppe hinzu."
-L["LFG_TT_HEADER"] = "Übersetzung:"
 L["HELP_OUT_MSG"] = "Eine Nachricht auf Englisch verfassen."
 L["OUT_USAGE"] = "Verwendung: /wt en <Text>"
 L["IGN_TITLE"] = "Ignorierte Wörter"

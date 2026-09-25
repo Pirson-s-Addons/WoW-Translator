@@ -95,9 +95,6 @@ L["TT_CH_GENERIC"] = "この特定のチャットチャンネルの翻訳を有�
 L["QT_MINIMAP_TT"] = "|cffd597ffWoW Translator|r\n|cffffffffクリック:|r 設定を開く"
 
 -- Buscador de grupos / Palabras ignoradas
-L["CAT_LFG"] = "パーティー検索"
-L["TT_CAT_LFG"] = "パーティー検索のツールチップにグループ名とコメントの翻訳を追加します。"
-L["LFG_TT_HEADER"] = "翻訳:"
 L["HELP_OUT_MSG"] = "英語でメッセージを作成します。"
 L["OUT_USAGE"] = "使い方: /wt en <文章>"
 L["IGN_TITLE"] = "無視する単語"

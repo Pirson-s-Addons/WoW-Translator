@@ -1,7 +1,8 @@
 ## Interface: 50400, 50500, 50501, 50502, 50503, 50504, 50505
 ## Author: Pirson
-## Version: 2.03
-## Title: |TInterface\AddOns\WoWTranslator\img\logo_wt:16:16|t |cffd597ffWoW Translator|r
+## Version: 2.04
+## IconTexture: Interface\AddOns\WoWTranslator\img\logo_wt
+## Title: |cffd597ffWoW Translator|r
 
 # https://warcraft.wiki.gg/wiki/Addon_Categories
 ## Category: Chat
@@ -167,7 +168,6 @@ Core\Outgoing.lua
 
 # Modulos
 Modules\ChatFilter.lua
-Modules\GroupFinder.lua
 Modules\MinimapButton.lua
 Modules\SlashCommands.lua
 

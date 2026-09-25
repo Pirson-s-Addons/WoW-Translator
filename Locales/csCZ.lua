@@ -97,9 +97,6 @@ L["QT_MINIMAP_TT"] = "|cffd597ffWoW Translator|r\n|cffffffffKliknutí:|r Otevř�
 
 
 -- Buscador de grupos / Palabras ignoradas
-L["CAT_LFG"] = "Hledání skupiny"
-L["TT_CAT_LFG"] = "Přidá do popisku v hledání skupiny překlad názvu a komentáře skupiny."
-L["LFG_TT_HEADER"] = "Překlad:"
 L["HELP_OUT_MSG"] = "Napiš zprávu anglicky."
 L["OUT_USAGE"] = "Použití: /wt en <text>"
 L["IGN_TITLE"] = "Ignorovaná slova"

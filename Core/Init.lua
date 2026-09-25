@@ -34,7 +34,6 @@ local DEFAULT_SETTINGS = {
     showZones = true,
     showSets = true,
     showRaces = true,
-    showLFG = true,
 }
 
 -- Idioma al que se traduce en una instalación limpia. Antes era siempre esES, lo
@@ -92,7 +91,6 @@ loader:SetScript("OnEvent", function()
     -- Lo esencial primero: si un cliente antiguo de servidor privado rechaza
     -- algo de la interfaz, el chat se sigue traduciendo y /wt sigue funcionando.
     addonTable.InstallChatFilter()
-    addonTable.InstallGroupFinderHook()
     addonTable.RegisterSlashCommands()
     addonTable.CreateMinimapButton()
     addonTable.CreateConfigUI()

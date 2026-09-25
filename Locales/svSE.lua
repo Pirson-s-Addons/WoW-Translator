@@ -93,9 +93,6 @@ L["QT_MINIMAP_TT"] = "|cffd597ffWoW Translator|r\n|cffffffffKlicka:|r Öppna ins
 
 
 -- Buscador de grupos / Palabras ignoradas
-L["CAT_LFG"] = "Gruppsökaren"
-L["TT_CAT_LFG"] = "Lägger till översättningen av gruppens titel och kommentar i gruppsökarens tooltip."
-L["LFG_TT_HEADER"] = "Översättning:"
 L["HELP_OUT_MSG"] = "Skriv ett meddelande på engelska."
 L["OUT_USAGE"] = "Användning: /wt en <text>"
 L["IGN_TITLE"] = "Ignorerade ord"

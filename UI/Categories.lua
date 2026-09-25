@@ -28,7 +28,6 @@ function addonTable.CreateCategoriesUI(parentCategory)
         { text = L["CAT_ZONES"],   key = "showZones",       tt = L["TT_CAT_ZONES"] },
         { text = L["CAT_SETS"],    key = "showSets",        tt = L["TT_CAT_SETS"] },
         { text = L["CAT_RACES"],   key = "showRaces",       tt = L["TT_CAT_RACES"] },
-        { text = L["CAT_LFG"],     key = "showLFG",         tt = L["TT_CAT_LFG"] },
     }, y, "WT_CB_")
 
     addonTable.RegisterSubcategory(parentCategory, panel)

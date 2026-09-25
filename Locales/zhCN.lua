@@ -95,9 +95,6 @@ L["QT_MINIMAP_TT"] = "|cffd597ffWoW Translator|r\n|cffffffff点击:|r 打开设�
 
 
 -- Buscador de grupos / Palabras ignoradas
-L["CAT_LFG"] = "队伍搜索器"
-L["TT_CAT_LFG"] = "在队伍搜索器的提示框中加入队伍标题和备注的翻译。"
-L["LFG_TT_HEADER"] = "翻译："
 L["HELP_OUT_MSG"] = "用英文撰写消息。"
 L["OUT_USAGE"] = "用法：/wt en <文本>"
 L["IGN_TITLE"] = "忽略的词语"

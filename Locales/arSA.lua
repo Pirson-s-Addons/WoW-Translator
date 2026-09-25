@@ -96,9 +96,6 @@ L["QT_MINIMAP_TT"] = "|cffd597ffمترجم WoW|r\n|cffffffffانقر:|r فتح �
 
 
 -- Buscador de grupos / Palabras ignoradas
-L["CAT_LFG"] = "باحث المجموعات"
-L["TT_CAT_LFG"] = "يضيف ترجمة عنوان المجموعة وتعليقها إلى تلميح باحث المجموعات."
-L["LFG_TT_HEADER"] = "الترجمة:"
 L["HELP_OUT_MSG"] = "اكتب رسالة بالإنجليزية."
 L["OUT_USAGE"] = "الاستخدام: /wt en <نص>"
 L["IGN_TITLE"] = "الكلمات المتجاهلة"

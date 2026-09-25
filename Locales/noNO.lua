@@ -92,9 +92,6 @@ L["TT_CAT_STATUS"] = "Oversett statuser (AFK, OOM, etc)."
 L["QT_MINIMAP_TT"] = "|cffd597ffWoW Translator|r\n|cffffffffKlikk:|r Åpne innstillinger"
 
 -- Buscador de grupos / Palabras ignoradas
-L["CAT_LFG"] = "Gruppesøk"
-L["TT_CAT_LFG"] = "Legger til oversettelsen av gruppens tittel og kommentar i verktøytipset i gruppesøket."
-L["LFG_TT_HEADER"] = "Oversettelse:"
 L["HELP_OUT_MSG"] = "Skriv en melding på engelsk."
 L["OUT_USAGE"] = "Bruk: /wt en <tekst>"
 L["IGN_TITLE"] = "Ignorerte ord"

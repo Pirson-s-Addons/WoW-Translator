@@ -95,9 +95,6 @@ L["QT_MINIMAP_TT"] = "|cffd597ffWoW Translator|r\n|cffffffff좌클릭:|r 설정 
 
 
 -- Buscador de grupos / Palabras ignoradas
-L["CAT_LFG"] = "파티 찾기"
-L["TT_CAT_LFG"] = "파티 찾기 툴팁에 파티 제목과 설명의 번역을 추가합니다."
-L["LFG_TT_HEADER"] = "번역:"
 L["HELP_OUT_MSG"] = "영어로 메시지를 작성합니다."
 L["OUT_USAGE"] = "사용법: /wt en <문장>"
 L["IGN_TITLE"] = "무시할 단어"

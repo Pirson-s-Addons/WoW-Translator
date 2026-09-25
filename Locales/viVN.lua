@@ -96,9 +96,6 @@ L["QT_MINIMAP_TT"] = "|cffd597ffWoW Translator|r\n|cffffffffClick:|r Mở Cài �
 
 
 -- Buscador de grupos / Palabras ignoradas
-L["CAT_LFG"] = "Tìm nhóm"
-L["TT_CAT_LFG"] = "Thêm bản dịch tiêu đề và ghi chú của nhóm vào chú giải trong phần Tìm nhóm."
-L["LFG_TT_HEADER"] = "Bản dịch:"
 L["HELP_OUT_MSG"] = "Soạn tin nhắn bằng tiếng Anh."
 L["OUT_USAGE"] = "Cách dùng: /wt en <văn bản>"
 L["IGN_TITLE"] = "Từ bị bỏ qua"

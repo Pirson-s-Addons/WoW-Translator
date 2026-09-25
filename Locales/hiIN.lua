@@ -96,9 +96,6 @@ L["QT_MINIMAP_TT"] = "|cffd597ffWoW Translator|r\n|cffffffffक्लिक क�
 
 
 -- Buscador de grupos / Palabras ignoradas
-L["CAT_LFG"] = "ग्रुप फ़ाइंडर"
-L["TT_CAT_LFG"] = "ग्रुप फ़ाइंडर के टूलटिप में ग्रुप के शीर्षक और टिप्पणी का अनुवाद जोड़ता है।"
-L["LFG_TT_HEADER"] = "अनुवाद:"
 L["HELP_OUT_MSG"] = "अंग्रेज़ी में संदेश लिखें।"
 L["OUT_USAGE"] = "उपयोग: /wt en <पाठ>"
 L["IGN_TITLE"] = "अनदेखे शब्द"

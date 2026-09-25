@@ -141,32 +141,28 @@ do
 end
 
 -- ------------------------------------------
--- 9.2.5 y 8.3.7 (InterfaceOptions, separador (level), LFG en tabla)
+-- 9.2.5 y 8.3.7 (InterfaceOptions, separador (level))
 -- ------------------------------------------
 for _, version in ipairs({ "9.2.5", "8.3.7" }) do
     local opened = {}
     local env = Environment(version, {
         InterfaceOptions_AddCategory = function() end,
         InterfaceOptionsFrame_OpenToCategory = function(name) opened[#opened + 1] = name end,
-        C_LFGList = { GetSearchResultInfo = function() return { name = "n", comment = "c" } end },
     })
     local addonTable = Load(env)
     addonTable.RegisterCategory(Frame("WoW Translator"), "WoW Translator")
     addonTable.OpenConfig()
     assert(opened[1] == "WoW Translator" and opened[2] == "WoW Translator", version .. ": doble llamada")
-    assert(addonTable.GetSearchResultInfo(1).comment == "c")
     CheckDropDown(version, addonTable, env, false, false)
 end
 
 -- ------------------------------------------
--- 7.3.5 LEGION (separador (info, level), LFG en campos sueltos)
+-- 7.3.5 LEGION (separador (info, level))
 -- ------------------------------------------
 do
     local env = Environment("7.3.5", {
         InterfaceOptions_AddCategory = function() end,
         InterfaceOptionsFrame_OpenToCategory = function() end,
-        -- id, activityID, name, comment, ... (LFGList.lua de 7.3.5)
-        C_LFGList = { GetSearchResultInfo = function() return 1, 2, "LFM ICC", "need tank" end },
     })
     local legion = Load(env)
 
@@ -185,14 +181,11 @@ do
     env.ColorPickerFrame.cancelFunc()
     assert(color[1] == 1, "cancelar devuelve el color de partida")
 
-    local info = legion.GetSearchResultInfo(7)
-    assert(info.name == "LFM ICC" and info.comment == "need tank")
-
     CheckDropDown("7.3.5", legion, env, true, false)
 end
 
 -- ------------------------------------------
--- 3.3.5a WOTLK (sin SetColorTexture, sin SetShown, sin separador, sin LFG)
+-- 3.3.5a WOTLK (sin SetColorTexture, sin SetShown, sin separador)
 -- ------------------------------------------
 do
     local env = Environment("3.3.5", {
@@ -212,8 +205,6 @@ do
     assert(label.shown)
     wotlk.SetShown(label, false)
     assert(not label.shown)
-
-    assert(wotlk.GetSearchResultInfo(1) == nil, "sin C_LFGList no hay nada que traducir")
 
     local set = Spy()
     wotlk.DropDown(set.fn, "marco", 200)

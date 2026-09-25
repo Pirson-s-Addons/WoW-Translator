@@ -95,9 +95,6 @@ L["QT_MINIMAP_TT"] = "|cffd597ffWoW Translator|r\n|cffffffff點擊:|r 打開設�
 
 
 -- Buscador de grupos / Palabras ignoradas
-L["CAT_LFG"] = "隊伍搜尋器"
-L["TT_CAT_LFG"] = "在隊伍搜尋器的提示框中加入隊伍標題與備註的翻譯。"
-L["LFG_TT_HEADER"] = "翻譯："
 L["HELP_OUT_MSG"] = "用英文撰寫訊息。"
 L["OUT_USAGE"] = "用法：/wt en <文字>"
 L["IGN_TITLE"] = "忽略的詞語"

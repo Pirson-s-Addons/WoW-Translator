@@ -96,9 +96,6 @@ L["QT_MINIMAP_TT"] = "|cffd597ffWoW Translator|r\n|cffffffffคลิก:|r เ�
 
 
 -- Buscador de grupos / Palabras ignoradas
-L["CAT_LFG"] = "ตัวค้นหากลุ่ม"
-L["TT_CAT_LFG"] = "เพิ่มคำแปลของชื่อกลุ่มและคำอธิบายลงในทูลทิปของตัวค้นหากลุ่ม"
-L["LFG_TT_HEADER"] = "คำแปล:"
 L["HELP_OUT_MSG"] = "เขียนข้อความเป็นภาษาอังกฤษ"
 L["OUT_USAGE"] = "วิธีใช้: /wt en <ข้อความ>"
 L["IGN_TITLE"] = "คำที่ไม่แปล"

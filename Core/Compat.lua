@@ -205,18 +205,3 @@ function addonTable.DropDown(func, frame, value)
     if MAJOR == 2 and MINOR < 5 then return func(value, frame) end
     return func(frame, value)
 end
-
--- ------------------------------------------
--- BUSCADOR DE GRUPOS
--- ------------------------------------------
--- LFGListUtil_SetSearchEntryTooltip llega en 7.x: por debajo de ahi no hay
--- nada que traducir y Modules/GroupFinder.lua se queda quieto solo. En 7.3.5
--- GetSearchResultInfo devuelve los campos sueltos (id, activityID, name,
--- comment, ...); desde 8.3, una tabla.
-function addonTable.GetSearchResultInfo(resultID)
-    if not (C_LFGList and C_LFGList.GetSearchResultInfo) then return nil end
-
-    local first, _, name, comment = C_LFGList.GetSearchResultInfo(resultID)
-    if type(first) == "table" then return first end
-    return { name = name, comment = comment }
-end

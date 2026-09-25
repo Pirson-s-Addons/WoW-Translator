@@ -1,6 +1,6 @@
 ## Interface: 16001
 ## Author: Pirson
-## Version: 2.03
+## Version: 2.04
 ## IconTexture: Interface\AddOns\WoWTranslator\img\logo_wt
 ## Title: |cffd597ffWoW Translator|r
 
@@ -168,7 +168,6 @@ Core\Outgoing.lua
 
 # Modulos
 Modules\ChatFilter.lua
-Modules\GroupFinder.lua
 Modules\MinimapButton.lua
 Modules\SlashCommands.lua
 

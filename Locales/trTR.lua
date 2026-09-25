@@ -96,9 +96,6 @@ L["QT_MINIMAP_TT"] = "|cffd597ffWoW Translator|r\n|cffffffffTıkla:|r Ayarları 
 
 
 -- Buscador de grupos / Palabras ignoradas
-L["CAT_LFG"] = "Grup Bulucu"
-L["TT_CAT_LFG"] = "Grup Bulucu'daki ipucu kutusuna grubun başlığının ve yorumunun çevirisini ekler."
-L["LFG_TT_HEADER"] = "Çeviri:"
 L["HELP_OUT_MSG"] = "İngilizce bir mesaj yaz."
 L["OUT_USAGE"] = "Kullanım: /wt en <metin>"
 L["IGN_TITLE"] = "Yok Sayılan Kelimeler"
