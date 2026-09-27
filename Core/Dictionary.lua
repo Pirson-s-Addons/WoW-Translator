@@ -16,11 +16,21 @@ local MasterDict = {}         -- palabra suelta  -> traducción
 local MultiWordPatterns = {}  -- frase           -> traducción
 local MultiWordByFirst = {}   -- primera palabra -> { frases, la más larga primero }
 local EntryColor = {}         -- clave -> color propio de la fuente (solo Babble)
+local NativeByFirst = {}      -- primer carácter -> { {término, traducción}, el más largo primero }
 
 addonTable.MasterDict = MasterDict
 addonTable.MultiWordPatterns = MultiWordPatterns
 addonTable.MultiWordByFirst = MultiWordByFirst
 addonTable.EntryColor = EntryColor
+addonTable.NativeByFirst = NativeByFirst
+
+-- Jerga escrita en otros idiomas (Data/Origen/). Cada uno se activa con su
+-- casilla en la vista General y apunta a las claves inglesas de Data/.
+-- `test` es la frase de /wt test para ese idioma.
+addonTable.SOURCE_LANGS = {
+    { key = "srcKoKR", locale = "koKR", dict = "OrigenKoKR", test = "낙스 막자리 탱 구함, 힐러 템렙 확인" },
+    { key = "srcZhCN", locale = "zhCN", dict = "OrigenZhCN", test = "金团 熔火之心 招人 缺坦克和奶妈 装等要求" },
+}
 
 -- Sube en cada reconstrucción. Core/Outgoing.lua lo compara con el suyo para
 -- saber si su índice inverso se quedó obsoleto, sin depender del orden de carga.
@@ -28,8 +38,9 @@ addonTable.dictVersion = 0
 
 local BZ, BI, BR -- tablas de consulta de Babble (Zonas, Sets, Razas)
 
-local ipairs, pairs, wipe = ipairs, pairs, wipe
-local string_find, string_lower, string_match = string.find, string.lower, string.match
+local ipairs, next, pairs, wipe = ipairs, next, pairs, wipe
+local string_find, string_gsub, string_lower, string_match =
+    string.find, string.gsub, string.lower, string.match
 local table_sort = table.sort
 
 -- Babble traduce inglés -> GetLocale(), así que hay que cargarlo después de que
@@ -76,12 +87,16 @@ function addonTable.RebuildMasterDict()
     wipe(MultiWordPatterns)
     wipe(MultiWordByFirst)
     wipe(EntryColor)
+    wipe(NativeByFirst)
 
     local settings = WoWTranslatorDB.settings
     local target = WoWTranslatorDB.targetLocale or "esES"
     -- Lista negra del jugador (UI/IgnoreList.lua): se filtra aquí, al construir,
     -- y no en cada mensaje — el motor ni se entera de que esas palabras existen.
     local ignored = WoWTranslatorDB.ignored or {}
+    -- Toda entrada activa con su traducción, también las que se traducen a sí
+    -- mismas: la jerga de otros idiomas sí las necesita ("탱" -> "Tank" en inglés).
+    local resolved = {}
 
     -- 1. DICCIONARIOS PROPIOS (Data/)
     for _, entry in ipairs(CATEGORY_DICTS) do
@@ -91,6 +106,7 @@ function addonTable.RebuildMasterDict()
                 local key = string_lower(term)
                 if not ignored[key] then
                     local translation = translations[target] or translations["esES"] or term
+                    resolved[key] = translation
                     -- Una entrada que se traduce a sí misma no aporta nada y solo
                     -- ensucia el chat con "need(Need)". Pasa sobre todo con el
                     -- inglés como destino, donde el diccionario sigue siendo útil
@@ -160,6 +176,35 @@ function addonTable.RebuildMasterDict()
     for _, bucket in pairs(MultiWordByFirst) do
         table_sort(bucket, function(a, b) return #a > #b end)
     end
+
+    -- 4. JERGA EN OTROS IDIOMAS
+    -- Sin espacios fiables (el chino no los usa), así que Core/Translator.lua la
+    -- busca carácter a carácter: se indexa por el primero, la más larga primero.
+    -- Se salta el idioma que ya es el destino: traducir coreano a coreano sobra.
+    for _, src in ipairs(addonTable.SOURCE_LANGS) do
+        local terms = addonTable[src.dict]
+        if terms and settings[src.key] and src.locale ~= target then
+            for term, english in pairs(terms) do
+                local translation = resolved[english]
+                if translation and translation ~= term then
+                    local first = string_match(term, "^[\192-\255][\128-\191]*")
+                    local bucket = NativeByFirst[first]
+                    if not bucket then
+                        bucket = {}
+                        NativeByFirst[first] = bucket
+                    end
+                    -- Un solo carácter ("탱", "坦") solo cuenta como palabra
+                    -- suelta: dentro de otra sería un falso positivo casi seguro.
+                    local _, chars = string_gsub(term, "[^\128-\191]", "")
+                    bucket[#bucket + 1] = { term = term, translation = translation, single = chars == 1 }
+                end
+            end
+        end
+    end
+    for _, bucket in pairs(NativeByFirst) do
+        table_sort(bucket, function(a, b) return #a.term > #b.term end)
+    end
+    addonTable.hasNative = next(NativeByFirst) ~= nil
 
     addonTable.dictVersion = addonTable.dictVersion + 1
 end

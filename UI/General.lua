@@ -7,8 +7,8 @@ local MARGIN_X = addonTable.MARGIN_X
 -- ==========================================
 -- VISTA: GENERAL
 -- ==========================================
--- Los cuatro ajustes que un jugador toca de verdad: activar, color, idioma
--- destino y el botón de prueba.
+-- Los ajustes que un jugador toca de verdad: activar, color, idioma
+-- destino, jerga en otros idiomas y el botón de prueba.
 
 -- código = { nombre en inglés, nombre nativo }
 local LANGUAGES = {
@@ -191,7 +191,7 @@ end
 -- ------------------------------------------
 -- VALORES POR DEFECTO
 -- ------------------------------------------
--- Es destructivo y toca 48 casillas repartidas por cinco vistas, así que pide
+-- Es destructivo y toca 50 casillas repartidas por cinco vistas, así que pide
 -- confirmación. Después recarga la interfaz en vez de refrescar cada widget a
 -- mano: los paneles se construyen una sola vez al entrar, y repintarlos todos
 -- sería mucho andamiaje para dejar alguno desincronizado de todas formas.
@@ -237,6 +237,12 @@ function addonTable.CreateGeneralUI(parentCategory)
 
     y = addonTable.SectionHeader(panel, y, L["UI_LANG_LABEL"])
     y = BuildLanguageSection(panel, y)
+
+    y = addonTable.SectionHeader(panel, y, L["UI_SRC_LABEL"])
+    y = addonTable.SettingsCheckboxGrid(panel, {
+        { text = L["SRC_KOKR"], key = "srcKoKR", tt = L["TT_SRC"] },
+        { text = L["SRC_ZHCN"], key = "srcZhCN", tt = L["TT_SRC"] },
+    }, y, "WT_SrcCB_")
 
     local test = CreateFrame("Button", "WT_TestBtn", panel, "UIPanelButtonTemplate")
     test:SetPoint("TOPLEFT", MARGIN_X + 4, y - 10)

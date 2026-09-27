@@ -34,6 +34,9 @@ local DEFAULT_SETTINGS = {
     showZones = true,
     showSets = true,
     showRaces = true,
+    -- Jerga en otros idiomas (Data/Origen/): apagada hasta que el jugador la pida.
+    srcKoKR = false,
+    srcZhCN = false,
 }
 
 -- Idioma al que se traduce en una instalación limpia. Antes era siempre esES, lo

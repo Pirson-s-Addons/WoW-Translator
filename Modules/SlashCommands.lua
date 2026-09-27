@@ -9,9 +9,7 @@ local L = addonTable.L
 local PREFIX = addonTable.PREFIX
 local GOLD, WHITE, RED = addonTable.COLOR.gold, addonTable.COLOR.white, addonTable.COLOR.red
 
--- Lo usan tanto /wt test como el botón de prueba del panel de opciones.
-function addonTable.RunTest()
-    local testMsg = "LFM ICC HC 25m Need Tank and Healer"
+local function TestMessage(testMsg)
     local translated, changed = _G.TranslateChat(testMsg)
 
     print(PREFIX .. GOLD .. L["SLASH_TEST_ORIGINAL"] .. WHITE .. testMsg .. "|r")
@@ -20,6 +18,18 @@ function addonTable.RunTest()
     else
         local reason = not WoWTranslatorDB.enabled and L["SLASH_TEST_ERROR"] or L["TEST_NO_MATCH"]
         print(PREFIX .. RED .. reason .. "|r")
+    end
+end
+
+-- Lo usan tanto /wt test como el botón de prueba del panel de opciones. Además
+-- del inglés, prueba cada idioma de origen activado (y que no sea el destino,
+-- que el motor se salta).
+function addonTable.RunTest()
+    TestMessage("LFM ICC HC 25m Need Tank and Healer")
+    for _, src in ipairs(addonTable.SOURCE_LANGS) do
+        if WoWTranslatorDB.settings[src.key] and src.locale ~= WoWTranslatorDB.targetLocale then
+            TestMessage(src.test)
+        end
     end
 end
 

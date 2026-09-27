@@ -1,6 +1,6 @@
 ## Interface: 60200
 ## Author: Pirson
-## Version: 2.04
+## Version: 2.05
 ## Title: |TInterface\AddOns\WoWTranslator\img\logo_wt:16:16|t |cffd597ffWoW Translator|r
 
 # https://warcraft.wiki.gg/wiki/Addon_Categories
@@ -159,6 +159,8 @@ Data\Instancias\Midnight.lua
 Data\Profesiones.lua
 Data\Roles.lua
 Data\Social.lua
+Data\Origen\koKR.lua
+Data\Origen\zhCN.lua
 
 # Motor
 Core\Dictionary.lua
