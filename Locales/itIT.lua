@@ -99,7 +99,7 @@ L["TT_CAT_STATUS"] = "Traduci gli stati (AFK, OOM, ecc.)."
 L["QT_MINIMAP_TT"] =
 "|cffd597ffWoW Translator|r\n|cffffffffClick:|r Apri Impostazioni"
 
--- Buscador de grupos / Palabras ignoradas
+-- Mensaje en ingles (/wt en) / Palabras ignoradas
 L["HELP_OUT_MSG"] = "Componi un messaggio in inglese."
 L["OUT_USAGE"] = "Uso: /wt en <testo>"
 L["IGN_TITLE"] = "Parole ignorate"
@@ -127,12 +127,12 @@ L["OPT_LINKS"] = "Collegamenti"
 L["OPT_COMMANDS"] = "Comandi"
 L["OPT_AUTHOR"] = "Autore:"
 L["OPT_VERSION"] = "Versione:"
-L["OPT_ABOUT_DESC"] = "Traduce al volo termini, acronimi e gergo di World of Warcraft nella chat e nella ricerca gruppo. Scegli cosa tradurre nelle sezioni qui sotto."
+L["OPT_ABOUT_DESC"] = "Traduce al volo termini, acronimi e gergo di World of Warcraft nella chat. Scegli cosa tradurre nelle sezioni qui sotto."
 L["OUT_HELP"] = "Scrivi la frase nella tua lingua e l'addon la lascia in inglese nella casella della chat, pronta da inviare. Non la invia mai al posto tuo. Copre solo il gergo di WoW, non l'intera lingua."
 
 -- Vista de ayuda
 L["OPT_HELP"] = "Aiuto"
-L["HELP_INTRO"] = "WoW Translator legge la chat e, ogni volta che riconosce un termine, un acronimo o un modo di dire di World of Warcraft, ne aggiunge il significato accanto, nel colore che scegli. Non riscrive mai il messaggio: il testo originale resta sempre. Funziona anche nella ricerca gruppo, dove aggiunge al tooltip la traduzione del titolo e del commento."
+L["HELP_INTRO"] = "WoW Translator legge la chat e, ogni volta che riconosce un termine, un acronimo o un modo di dire di World of Warcraft, ne aggiunge il significato accanto, nel colore che scegli. Non riscrive mai il messaggio: il testo originale resta sempre."
 L["HELP_FAQ"] = "Domande frequenti"
 L["HELP_Q_SCOPE"] = "Traduce tutta la chat?"
 L["HELP_A_SCOPE"] = "No. Conosce solo termini, acronimi e gergo del gioco, non l'intera lingua. Un messaggio in francese resta in francese; quello che viene spiegato è 'LFM', 'ICC', 'wipe' e simili."

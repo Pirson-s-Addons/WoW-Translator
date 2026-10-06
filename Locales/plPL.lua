@@ -98,7 +98,7 @@ L["TT_CAT_STATUS"] = "Tłumacz statusy (AFK, OOM itp.)."
 L["QT_MINIMAP_TT"] = "|cffd597ffWoW Translator|r\n|cffffffffKliknij:|r Otwórz ustawienia"
 
 
--- Buscador de grupos / Palabras ignoradas
+-- Mensaje en ingles (/wt en) / Palabras ignoradas
 L["HELP_OUT_MSG"] = "Napisz wiadomość po angielsku."
 L["OUT_USAGE"] = "Użycie: /wt en <tekst>"
 L["IGN_TITLE"] = "Ignorowane słowa"
@@ -125,12 +125,12 @@ L["OPT_LINKS"] = "Odnośniki"
 L["OPT_COMMANDS"] = "Polecenia"
 L["OPT_AUTHOR"] = "Autor:"
 L["OPT_VERSION"] = "Wersja:"
-L["OPT_ABOUT_DESC"] = "Tłumaczy w locie terminy, skróty i slang World of Warcraft na czacie i w wyszukiwarce grup. Wybierz poniżej, co ma być tłumaczone."
+L["OPT_ABOUT_DESC"] = "Tłumaczy w locie terminy, skróty i slang World of Warcraft na czacie. Wybierz poniżej, co ma być tłumaczone."
 L["OUT_HELP"] = "Napisz zdanie w swoim języku, a dodatek zostawi je po angielsku w oknie czatu, gotowe do wysłania. Nigdy nie wysyła go za ciebie. Obejmuje tylko slang WoW, nie cały język."
 
 -- Vista de ayuda
 L["OPT_HELP"] = "Pomoc"
-L["HELP_INTRO"] = "WoW Translator czyta czat i za każdym razem, gdy rozpozna termin, skrót lub slang z World of Warcraft, dopisuje obok jego znaczenie w wybranym przez ciebie kolorze. Nigdy nie przepisuje wiadomości: oryginalny tekst zawsze zostaje. Działa też w wyszukiwarce grup, gdzie dodaje do dymka tłumaczenie tytułu i komentarza."
+L["HELP_INTRO"] = "WoW Translator czyta czat i za każdym razem, gdy rozpozna termin, skrót lub slang z World of Warcraft, dopisuje obok jego znaczenie w wybranym przez ciebie kolorze. Nigdy nie przepisuje wiadomości: oryginalny tekst zawsze zostaje."
 L["HELP_FAQ"] = "Częste pytania"
 L["HELP_Q_SCOPE"] = "Czy tłumaczy cały czat?"
 L["HELP_A_SCOPE"] = "Nie. Zna tylko terminy, skróty i slang z gry, a nie cały język. Wiadomość po francusku zostanie francuska; wyjaśniane są 'LFM', 'ICC', 'wipe' i podobne."

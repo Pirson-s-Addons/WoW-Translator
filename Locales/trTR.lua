@@ -99,7 +99,7 @@ L["TT_CH_GENERIC"] = "Bu özel sohbet kanalı için çeviriyi etkinleştirin."
 L["QT_MINIMAP_TT"] = "|cffd597ffWoW Translator|r\n|cffffffffTıkla:|r Ayarları Aç"
 
 
--- Buscador de grupos / Palabras ignoradas
+-- Mensaje en ingles (/wt en) / Palabras ignoradas
 L["HELP_OUT_MSG"] = "İngilizce bir mesaj yaz."
 L["OUT_USAGE"] = "Kullanım: /wt en <metin>"
 L["IGN_TITLE"] = "Yok Sayılan Kelimeler"
@@ -126,12 +126,12 @@ L["OPT_LINKS"] = "Bağlantılar"
 L["OPT_COMMANDS"] = "Komutlar"
 L["OPT_AUTHOR"] = "Yazar:"
 L["OPT_VERSION"] = "Sürüm:"
-L["OPT_ABOUT_DESC"] = "World of Warcraft terimlerini, kısaltmalarını ve argosunu sohbette ve Grup Bulucu'da anında çevirir. Aşağıdaki bölümlerden neyin çevrileceğini seç."
+L["OPT_ABOUT_DESC"] = "World of Warcraft terimlerini, kısaltmalarını ve argosunu sohbette anında çevirir. Aşağıdaki bölümlerden neyin çevrileceğini seç."
 L["OUT_HELP"] = "Cümleyi kendi dilinde yaz; eklenti onu İngilizce olarak sohbet kutusuna bırakır, göndermeye hazır. Senin yerine asla göndermez. Yalnızca WoW argosunu kapsar, dilin tamamını değil."
 
 -- Vista de ayuda
 L["OPT_HELP"] = "Yardım"
-L["HELP_INTRO"] = "WoW Translator sohbeti okur ve tanıdığı her World of Warcraft terimi, kısaltması ya da argo sözü için anlamını hemen yanına, seçtiğin renkte ekler. Mesajı asla yeniden yazmaz: özgün metin her zaman kalır. Grup Bulucu'da da çalışır ve grubun başlığı ile yorumunun çevirisini ipucu kutusuna ekler."
+L["HELP_INTRO"] = "WoW Translator sohbeti okur ve tanıdığı her World of Warcraft terimi, kısaltması ya da argo sözü için anlamını hemen yanına, seçtiğin renkte ekler. Mesajı asla yeniden yazmaz: özgün metin her zaman kalır."
 L["HELP_FAQ"] = "Sık sorulan sorular"
 L["HELP_Q_SCOPE"] = "Sohbetin tamamını çevirir mi?"
 L["HELP_A_SCOPE"] = "Hayır. Yalnızca oyun terimlerini, kısaltmaları ve argoyu bilir, dilin tamamını değil. Fransızca bir mesaj Fransızca kalır; açıklanan şey 'LFM', 'ICC', 'wipe' ve benzerleridir."

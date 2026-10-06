@@ -1,6 +1,6 @@
 ## Interface: 60200
 ## Author: Pirson
-## Version: 2.05
+## Version: 2.06
 ## Title: |TInterface\AddOns\WoWTranslator\img\logo_wt:16:16|t |cffd597ffWoW Translator|r
 
 # https://warcraft.wiki.gg/wiki/Addon_Categories

@@ -98,7 +98,7 @@ L["TT_CAT_STATUS"] = "Traduz status e estados (AFK, OOM, etc)."
 L["QT_MINIMAP_TT"] = "|cffd597ffWoW Translator|r\n|cffffffffClique:|r Abrir Configuração"
 
 
--- Buscador de grupos / Palabras ignoradas
+-- Mensaje en ingles (/wt en) / Palabras ignoradas
 L["HELP_OUT_MSG"] = "Escreva uma mensagem em inglês."
 L["OUT_USAGE"] = "Uso: /wt en <texto>"
 L["IGN_TITLE"] = "Palavras ignoradas"
@@ -126,12 +126,12 @@ L["OPT_LINKS"] = "Links"
 L["OPT_COMMANDS"] = "Comandos"
 L["OPT_AUTHOR"] = "Autor:"
 L["OPT_VERSION"] = "Versão:"
-L["OPT_ABOUT_DESC"] = "Traduz na hora termos, acrônimos e gírias do World of Warcraft no bate-papo e na busca de grupo. Escolha o que traduzir nas seções abaixo."
+L["OPT_ABOUT_DESC"] = "Traduz na hora termos, acrônimos e gírias do World of Warcraft no bate-papo. Escolha o que traduzir nas seções abaixo."
 L["OUT_HELP"] = "Escreva a frase no seu idioma e o addon a deixa em inglês na caixa de bate-papo, pronta para enviar. Ele nunca envia por você. Cobre apenas as gírias do WoW, não o idioma inteiro."
 
 -- Vista de ayuda
 L["OPT_HELP"] = "Ajuda"
-L["HELP_INTRO"] = "O WoW Translator lê o bate-papo e, sempre que reconhece um termo, sigla ou gíria do World of Warcraft, acrescenta o significado ao lado, na cor que você escolher. Nunca reescreve a mensagem: o texto original sempre permanece. Também funciona na busca de grupo, onde adiciona ao tooltip a tradução do título e do comentário."
+L["HELP_INTRO"] = "O WoW Translator lê o bate-papo e, sempre que reconhece um termo, sigla ou gíria do World of Warcraft, acrescenta o significado ao lado, na cor que você escolher. Nunca reescreve a mensagem: o texto original sempre permanece."
 L["HELP_FAQ"] = "Perguntas frequentes"
 L["HELP_Q_SCOPE"] = "Ele traduz o bate-papo inteiro?"
 L["HELP_A_SCOPE"] = "Não. Ele só conhece termos, siglas e gírias do jogo, não o idioma inteiro. Uma mensagem em francês continua em francês; o que é explicado é 'LFM', 'ICC', 'wipe' e afins."

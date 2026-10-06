@@ -98,7 +98,7 @@ L["TT_CH_GENERIC"] = "この特定のチャットチャンネルの翻訳を有�
 -- Minimapa
 L["QT_MINIMAP_TT"] = "|cffd597ffWoW Translator|r\n|cffffffffクリック:|r 設定を開く"
 
--- Buscador de grupos / Palabras ignoradas
+-- Mensaje en ingles (/wt en) / Palabras ignoradas
 L["HELP_OUT_MSG"] = "英語でメッセージを作成します。"
 L["OUT_USAGE"] = "使い方: /wt en <文章>"
 L["IGN_TITLE"] = "無視する単語"
@@ -125,12 +125,12 @@ L["OPT_LINKS"] = "リンク"
 L["OPT_COMMANDS"] = "コマンド"
 L["OPT_AUTHOR"] = "作者:"
 L["OPT_VERSION"] = "バージョン:"
-L["OPT_ABOUT_DESC"] = "チャットとパーティー検索で、World of Warcraft の用語・略語・スラングをその場で翻訳します。翻訳する対象は下の各項目で選べます。"
+L["OPT_ABOUT_DESC"] = "チャットで、World of Warcraft の用語・略語・スラングをその場で翻訳します。翻訳する対象は下の各項目で選べます。"
 L["OUT_HELP"] = "自分の言語で文を書くと、アドオンが英語にしてチャット入力欄に置きます。代わりに送信することはありません。World of Warcraft の用語だけを扱い、言語全体を翻訳するわけではありません。"
 
 -- Vista de ayuda
 L["OPT_HELP"] = "ヘルプ"
-L["HELP_INTRO"] = "WoW Translator はチャットを読み、World of Warcraft の用語・略語・スラングを見つけるたびに、その意味を選んだ色で隣に書き足します。メッセージを書き換えることはなく、元の文はいつでも残ります。パーティー検索でも動作し、グループ名とコメントの翻訳をツールチップに追加します。"
+L["HELP_INTRO"] = "WoW Translator はチャットを読み、World of Warcraft の用語・略語・スラングを見つけるたびに、その意味を選んだ色で隣に書き足します。メッセージを書き換えることはなく、元の文はいつでも残ります。"
 L["HELP_FAQ"] = "よくある質問"
 L["HELP_Q_SCOPE"] = "チャット全体を翻訳しますか？"
 L["HELP_A_SCOPE"] = "いいえ。ゲームの用語・略語・スラングだけを知っており、言語全体は翻訳しません。フランス語のメッセージはフランス語のままで、説明されるのは 'LFM'、'ICC'、'wipe' などです。"

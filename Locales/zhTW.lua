@@ -98,7 +98,7 @@ L["TT_CAT_STATUS"] = "翻譯狀態（暫離、沒藍等）。"
 L["QT_MINIMAP_TT"] = "|cffd597ffWoW Translator|r\n|cffffffff點擊:|r 打開設置"
 
 
--- Buscador de grupos / Palabras ignoradas
+-- Mensaje en ingles (/wt en) / Palabras ignoradas
 L["HELP_OUT_MSG"] = "用英文撰寫訊息。"
 L["OUT_USAGE"] = "用法：/wt en <文字>"
 L["IGN_TITLE"] = "忽略的詞語"
@@ -125,12 +125,12 @@ L["OPT_LINKS"] = "連結"
 L["OPT_COMMANDS"] = "指令"
 L["OPT_AUTHOR"] = "作者："
 L["OPT_VERSION"] = "版本："
-L["OPT_ABOUT_DESC"] = "在聊天與隊伍搜尋器中即時翻譯魔獸世界的術語、縮略語與俚語。在下面的分區中選擇要翻譯的內容。"
+L["OPT_ABOUT_DESC"] = "在聊天中即時翻譯魔獸世界的術語、縮略語與俚語。在下面的分區中選擇要翻譯的內容。"
 L["OUT_HELP"] = "用你的語言寫下句子，插件會把它譯成英文放進聊天輸入框，等你自己發送。它絕不會替你發送。只涵蓋魔獸世界的行話，而非整門語言。"
 
 -- Vista de ayuda
 L["OPT_HELP"] = "說明"
-L["HELP_INTRO"] = "WoW Translator 會讀取聊天內容，一旦認出魔獸世界的術語、縮略語或俚語，就用你選擇的顏色把意思補在旁邊。它從不改寫訊息，原文始終保留。在隊伍搜尋器中同樣有效，會把隊伍標題與備註的翻譯加進提示框。"
+L["HELP_INTRO"] = "WoW Translator 會讀取聊天內容，一旦認出魔獸世界的術語、縮略語或俚語，就用你選擇的顏色把意思補在旁邊。它從不改寫訊息，原文始終保留。"
 L["HELP_FAQ"] = "常見問題"
 L["HELP_Q_SCOPE"] = "它會翻譯整段聊天嗎？"
 L["HELP_A_SCOPE"] = "不會。它只認識遊戲術語、縮略語與俚語，而非整門語言。一則法語訊息仍然是法語；被解釋的是 'LFM'、'ICC'、'wipe' 之類的說法。"

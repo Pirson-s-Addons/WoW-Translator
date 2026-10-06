@@ -98,7 +98,7 @@ L["TT_CAT_STATUS"] = "Übersetzt Stati und Zustände (AFK, OOM, etc)."
 L["QT_MINIMAP_TT"] =
 "|cffd597ffWoW Translator|r\n|cffffffffKlick:|r Einstellungen öffnen"
 
--- Buscador de grupos / Palabras ignoradas
+-- Mensaje en ingles (/wt en) / Palabras ignoradas
 L["HELP_OUT_MSG"] = "Eine Nachricht auf Englisch verfassen."
 L["OUT_USAGE"] = "Verwendung: /wt en <Text>"
 L["IGN_TITLE"] = "Ignorierte Wörter"
@@ -126,12 +126,12 @@ L["OPT_LINKS"] = "Links"
 L["OPT_COMMANDS"] = "Befehle"
 L["OPT_AUTHOR"] = "Autor:"
 L["OPT_VERSION"] = "Version:"
-L["OPT_ABOUT_DESC"] = "Übersetzt Begriffe, Akronyme und Slang aus World of Warcraft direkt im Chat und in der Gruppensuche. Wähle unten aus, was übersetzt werden soll."
+L["OPT_ABOUT_DESC"] = "Übersetzt Begriffe, Akronyme und Slang aus World of Warcraft direkt im Chat. Wähle unten aus, was übersetzt werden soll."
 L["OUT_HELP"] = "Schreib den Satz in deiner Sprache und das AddOn legt ihn auf Englisch ins Chatfeld, bereit zum Senden. Es sendet ihn nie für dich. Es deckt nur WoW-Jargon ab, nicht die ganze Sprache."
 
 -- Vista de ayuda
 L["OPT_HELP"] = "Hilfe"
-L["HELP_INTRO"] = "WoW Translator liest den Chat und ergänzt bei jedem erkannten Begriff, Akronym oder Slangwort aus World of Warcraft dessen Bedeutung direkt daneben, in der Farbe deiner Wahl. Die Nachricht wird nie umgeschrieben: der Originaltext bleibt immer stehen. Es funktioniert auch in der Gruppensuche, wo die Übersetzung von Titel und Kommentar im Tooltip erscheint."
+L["HELP_INTRO"] = "WoW Translator liest den Chat und ergänzt bei jedem erkannten Begriff, Akronym oder Slangwort aus World of Warcraft dessen Bedeutung direkt daneben, in der Farbe deiner Wahl. Die Nachricht wird nie umgeschrieben: der Originaltext bleibt immer stehen."
 L["HELP_FAQ"] = "Häufige Fragen"
 L["HELP_Q_SCOPE"] = "Übersetzt es den ganzen Chat?"
 L["HELP_A_SCOPE"] = "Nein. Es kennt nur Spielbegriffe, Akronyme und Slang, nicht die ganze Sprache. Eine Nachricht auf Französisch bleibt französisch; erklärt werden 'LFM', 'ICC', 'wipe' und Ähnliches."

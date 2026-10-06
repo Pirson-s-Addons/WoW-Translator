@@ -99,7 +99,7 @@ L["TT_CH_GENERIC"] = "Bật dịch thuật cho kênh chat cụ thể này."
 L["QT_MINIMAP_TT"] = "|cffd597ffWoW Translator|r\n|cffffffffClick:|r Mở Cài đặt"
 
 
--- Buscador de grupos / Palabras ignoradas
+-- Mensaje en ingles (/wt en) / Palabras ignoradas
 L["HELP_OUT_MSG"] = "Soạn tin nhắn bằng tiếng Anh."
 L["OUT_USAGE"] = "Cách dùng: /wt en <văn bản>"
 L["IGN_TITLE"] = "Từ bị bỏ qua"
@@ -126,12 +126,12 @@ L["OPT_LINKS"] = "Liên kết"
 L["OPT_COMMANDS"] = "Lệnh"
 L["OPT_AUTHOR"] = "Tác giả:"
 L["OPT_VERSION"] = "Phiên bản:"
-L["OPT_ABOUT_DESC"] = "Dịch tức thì các thuật ngữ, từ viết tắt và tiếng lóng của World of Warcraft trong khung chat và trong phần Tìm nhóm. Chọn nội dung cần dịch ở các mục bên dưới."
+L["OPT_ABOUT_DESC"] = "Dịch tức thì các thuật ngữ, từ viết tắt và tiếng lóng của World of Warcraft trong khung chat. Chọn nội dung cần dịch ở các mục bên dưới."
 L["OUT_HELP"] = "Viết câu bằng ngôn ngữ của bạn và addon sẽ để nó bằng tiếng Anh trong khung chat, sẵn sàng để gửi. Nó không bao giờ gửi thay bạn. Nó chỉ bao gồm tiếng lóng của WoW, không phải toàn bộ ngôn ngữ."
 
 -- Vista de ayuda
 L["OPT_HELP"] = "Trợ giúp"
-L["HELP_INTRO"] = "WoW Translator đọc khung chat và mỗi khi nhận ra một thuật ngữ, từ viết tắt hay tiếng lóng của World of Warcraft, nó thêm nghĩa ngay bên cạnh bằng màu bạn chọn. Nó không bao giờ viết lại tin nhắn: văn bản gốc luôn còn nguyên. Nó cũng hoạt động trong phần Tìm nhóm, thêm bản dịch tiêu đề và ghi chú vào chú giải."
+L["HELP_INTRO"] = "WoW Translator đọc khung chat và mỗi khi nhận ra một thuật ngữ, từ viết tắt hay tiếng lóng của World of Warcraft, nó thêm nghĩa ngay bên cạnh bằng màu bạn chọn. Nó không bao giờ viết lại tin nhắn: văn bản gốc luôn còn nguyên."
 L["HELP_FAQ"] = "Câu hỏi thường gặp"
 L["HELP_Q_SCOPE"] = "Nó có dịch toàn bộ khung chat không?"
 L["HELP_A_SCOPE"] = "Không. Nó chỉ biết thuật ngữ, từ viết tắt và tiếng lóng của game, không phải cả ngôn ngữ. Một tin nhắn tiếng Pháp vẫn là tiếng Pháp; thứ được giải thích là 'LFM', 'ICC', 'wipe' và tương tự."

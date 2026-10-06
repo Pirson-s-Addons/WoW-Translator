@@ -99,7 +99,7 @@ L["TT_CAT_STATUS"] = "Traduire les statuts et états (AFK, OOM, etc)."
 L["QT_MINIMAP_TT"] =
 "|cffd597ffWoW Translator|r\n|cffffffffClic :|r Ouvrir les paramètres"
 
--- Buscador de grupos / Palabras ignoradas
+-- Mensaje en ingles (/wt en) / Palabras ignoradas
 L["HELP_OUT_MSG"] = "Rédiger un message en anglais."
 L["OUT_USAGE"] = "Utilisation : /wt en <texte>"
 L["IGN_TITLE"] = "Mots ignorés"
@@ -127,12 +127,12 @@ L["OPT_LINKS"] = "Liens"
 L["OPT_COMMANDS"] = "Commandes"
 L["OPT_AUTHOR"] = "Auteur :"
 L["OPT_VERSION"] = "Version :"
-L["OPT_ABOUT_DESC"] = "Traduit à la volée les termes, acronymes et l'argot de World of Warcraft dans la discussion et la recherche de groupe. Choisissez quoi traduire dans les sections ci-dessous."
+L["OPT_ABOUT_DESC"] = "Traduit à la volée les termes, acronymes et l'argot de World of Warcraft dans la discussion. Choisissez quoi traduire dans les sections ci-dessous."
 L["OUT_HELP"] = "Écrivez la phrase dans votre langue et l'addon la dépose en anglais dans la zone de discussion, prête à être envoyée. Il ne l'envoie jamais à votre place. Il ne couvre que l'argot de WoW, pas toute la langue."
 
 -- Vista de ayuda
 L["OPT_HELP"] = "Aide"
-L["HELP_INTRO"] = "WoW Translator lit la discussion et, chaque fois qu'il reconnaît un terme, un acronyme ou de l'argot de World of Warcraft, ajoute sa signification juste à côté, dans la couleur de votre choix. Il ne réécrit jamais le message : le texte d'origine reste toujours. Il fonctionne aussi dans la recherche de groupe, où il ajoute à l'infobulle la traduction du titre et du commentaire."
+L["HELP_INTRO"] = "WoW Translator lit la discussion et, chaque fois qu'il reconnaît un terme, un acronyme ou de l'argot de World of Warcraft, ajoute sa signification juste à côté, dans la couleur de votre choix. Il ne réécrit jamais le message : le texte d'origine reste toujours."
 L["HELP_FAQ"] = "Questions fréquentes"
 L["HELP_Q_SCOPE"] = "Traduit-il toute la discussion ?"
 L["HELP_A_SCOPE"] = "Non. Il ne connaît que les termes, acronymes et l'argot du jeu, pas la langue entière. Un message en allemand reste en allemand ; ce qui est expliqué, c'est 'LFM', 'ICC', 'wipe' et compagnie."

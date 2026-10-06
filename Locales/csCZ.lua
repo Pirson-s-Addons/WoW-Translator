@@ -100,7 +100,7 @@ L["TT_CH_GENERIC"] = "Zapne překlad pro tento konkrétní chatovací kanál."
 L["QT_MINIMAP_TT"] = "|cffd597ffWoW Translator|r\n|cffffffffKliknutí:|r Otevřít nastavení"
 
 
--- Buscador de grupos / Palabras ignoradas
+-- Mensaje en ingles (/wt en) / Palabras ignoradas
 L["HELP_OUT_MSG"] = "Napiš zprávu anglicky."
 L["OUT_USAGE"] = "Použití: /wt en <text>"
 L["IGN_TITLE"] = "Ignorovaná slova"
@@ -125,12 +125,12 @@ L["OPT_LINKS"] = "Odkazy"
 L["OPT_COMMANDS"] = "Příkazy"
 L["OPT_AUTHOR"] = "Autor:"
 L["OPT_VERSION"] = "Verze:"
-L["OPT_ABOUT_DESC"] = "Překládá za běhu termíny, zkratky a slang World of Warcraft v chatu a v hledání skupiny. V sekcích níže vyber, co se má překládat."
+L["OPT_ABOUT_DESC"] = "Překládá za běhu termíny, zkratky a slang World of Warcraft v chatu. V sekcích níže vyber, co se má překládat."
 L["OUT_HELP"] = "Napiš větu ve svém jazyce a doplněk ji nechá anglicky v okně chatu, připravenou k odeslání. Nikdy ji za tebe neodešle. Pokrývá jen žargon WoW, ne celý jazyk."
 
 -- Vista de ayuda
 L["OPT_HELP"] = "Nápověda"
-L["HELP_INTRO"] = "WoW Translator čte chat a kdykoli rozpozná termín, zkratku nebo slang z World of Warcraft, doplní vedle něj význam v barvě, kterou si zvolíš. Zprávu nikdy nepřepisuje: původní text vždy zůstává. Funguje i v hledání skupiny, kde přidá překlad názvu a komentáře do popisku."
+L["HELP_INTRO"] = "WoW Translator čte chat a kdykoli rozpozná termín, zkratku nebo slang z World of Warcraft, doplní vedle něj význam v barvě, kterou si zvolíš. Zprávu nikdy nepřepisuje: původní text vždy zůstává."
 L["HELP_FAQ"] = "Časté dotazy"
 L["HELP_Q_SCOPE"] = "Překládá celý chat?"
 L["HELP_A_SCOPE"] = "Ne. Zná jen herní termíny, zkratky a slang, ne celý jazyk. Zpráva ve francouzštině zůstane francouzsky; vysvětluje se 'LFM', 'ICC', 'wipe' a podobné."

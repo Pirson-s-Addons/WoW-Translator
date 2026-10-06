@@ -98,7 +98,7 @@ L["TT_CAT_STATUS"] = "상태(AFK, OOM 등)를 번역합니다."
 L["QT_MINIMAP_TT"] = "|cffd597ffWoW Translator|r\n|cffffffff좌클릭:|r 설정 열기"
 
 
--- Buscador de grupos / Palabras ignoradas
+-- Mensaje en ingles (/wt en) / Palabras ignoradas
 L["HELP_OUT_MSG"] = "영어로 메시지를 작성합니다."
 L["OUT_USAGE"] = "사용법: /wt en <문장>"
 L["IGN_TITLE"] = "무시할 단어"
@@ -126,12 +126,12 @@ L["OPT_LINKS"] = "링크"
 L["OPT_COMMANDS"] = "명령어"
 L["OPT_AUTHOR"] = "제작자:"
 L["OPT_VERSION"] = "버전:"
-L["OPT_ABOUT_DESC"] = "대화와 파티 찾기에서 월드 오브 워크래프트의 용어, 약어, 속어를 실시간으로 번역합니다. 아래 항목에서 번역할 내용을 고르세요."
+L["OPT_ABOUT_DESC"] = "대화에서 월드 오브 워크래프트의 용어, 약어, 속어를 실시간으로 번역합니다. 아래 항목에서 번역할 내용을 고르세요."
 L["OUT_HELP"] = "원하는 문장을 사용 중인 언어로 쓰면 애드온이 영어로 바꿔 대화 입력창에 넣어 둡니다. 대신 보내지는 않습니다. 월드 오브 워크래프트 용어만 다루며, 언어 전체를 번역하지는 않습니다."
 
 -- Vista de ayuda
 L["OPT_HELP"] = "도움말"
-L["HELP_INTRO"] = "WoW Translator는 대화를 읽다가 월드 오브 워크래프트의 용어, 약어, 속어를 발견하면 그 뜻을 바로 옆에 원하는 색으로 덧붙입니다. 메시지를 다시 쓰지는 않으며 원문은 항상 그대로 남습니다. 파티 찾기에서도 동작해 파티 제목과 설명의 번역을 툴팁에 추가합니다."
+L["HELP_INTRO"] = "WoW Translator는 대화를 읽다가 월드 오브 워크래프트의 용어, 약어, 속어를 발견하면 그 뜻을 바로 옆에 원하는 색으로 덧붙입니다. 메시지를 다시 쓰지는 않으며 원문은 항상 그대로 남습니다."
 L["HELP_FAQ"] = "자주 묻는 질문"
 L["HELP_Q_SCOPE"] = "대화 전체를 번역하나요?"
 L["HELP_A_SCOPE"] = "아니요. 게임 용어와 약어, 속어만 알고 있으며 언어 전체를 번역하지는 않습니다. 프랑스어 메시지는 프랑스어로 남고, 설명되는 것은 'LFM', 'ICC', 'wipe' 같은 표현입니다."
