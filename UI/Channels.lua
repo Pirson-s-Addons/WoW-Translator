@@ -69,7 +69,8 @@ function addonTable.CreateChannelsUI(parentCategory)
     local panel = addonTable.CreateOptionsPanel("WoWTranslatorChannelsPanel", L["OPT_CHANNELS"])
     local y = addonTable.PanelHeading(panel, L["OPT_CHANNELS"])
 
-    local created = 0
+    local created, checkboxes = 0, {}
+    addonTable.BulkButtons(panel, y, checkboxes)
     for _, group in ipairs(ChannelGroups()) do
         local header = panel:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
         header:SetPoint("TOPLEFT", MARGIN_X, y)
@@ -88,6 +89,15 @@ function addonTable.CreateChannelsUI(parentCategory)
             local label = _G[cb:GetName() .. "Text"]
             label:SetText(info.name)
             label:SetFontObject(GameFontHighlightSmall)
+            -- Cada canal con el color que tiene en el chat del jugador.
+            local color = ChatTypeInfo and ChatTypeInfo[info.ev:sub(10)]
+            if color and color.r then label:SetTextColor(color.r, color.g, color.b) end
+
+            cb.Apply = function(value)
+                cb:SetChecked(value)
+                WoWTranslatorDB.settings.channels[info.ev] = value and true or false
+            end
+            checkboxes[#checkboxes + 1] = cb
 
             -- nil cuenta como activo: un canal nuevo se traduce por defecto.
             cb:SetChecked(WoWTranslatorDB.settings.channels[info.ev] ~= false)

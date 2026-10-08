@@ -101,12 +101,19 @@ local function SplitLanguages()
     return preferred, rest
 end
 
+-- Se rellena en BuildPreviewSection; la llaman todos los controles que cambian
+-- lo que se ve en la vista previa.
+local RefreshPreview = function() end
+
 local function BuildTranslationSection(panel, y)
     local enable = CreateFrame("CheckButton", "WT_MainEnableCB", panel, "InterfaceOptionsCheckButtonTemplate")
     enable:SetPoint("TOPLEFT", MARGIN_X, y)
     _G[enable:GetName() .. "Text"]:SetText(L["UI_ENABLE_TEXT"])
     enable:SetChecked(WoWTranslatorDB.enabled)
-    enable:SetScript("OnClick", function(self) WoWTranslatorDB.enabled = self:GetChecked() end)
+    enable:SetScript("OnClick", function(self)
+        WoWTranslatorDB.enabled = self:GetChecked() and true or false
+        RefreshPreview()
+    end)
     AddTooltip(enable, L["TT_ENABLE"])
 
     return y - 40
@@ -132,7 +139,10 @@ local function BuildColorSection(panel, y)
             tonumber(hex:sub(5, 6), 16) / 255
     end
 
-    local function UpdatePreview() addonTable.SetSolidColor(preview, CurrentRGB()) end
+    local function UpdatePreview()
+        addonTable.SetSolidColor(preview, CurrentRGB())
+        RefreshPreview()
+    end
 
     button:SetScript("OnClick", function()
         local r, g, b = CurrentRGB()
@@ -168,6 +178,7 @@ local function BuildLanguageSection(panel, y)
                 UIDropDownMenu_SetSelectedValue(dropdown, code)
                 addonTable.DropDown(UIDropDownMenu_SetText, dropdown, LanguageName(code))
                 addonTable.RebuildMasterDict()
+                RefreshPreview()
             end
             info.checked = (WoWTranslatorDB.targetLocale == code)
             UIDropDownMenu_AddButton(info, 1)
@@ -186,6 +197,136 @@ local function BuildLanguageSection(panel, y)
     addonTable.DropDown(UIDropDownMenu_SetText, dropdown, LanguageName(WoWTranslatorDB.targetLocale) or "Spanish (ES)")
 
     return y - 44
+end
+
+-- ------------------------------------------
+-- VISTA PREVIA
+-- ------------------------------------------
+-- La misma frase de /wt test pasada por el motor real: enseña el color y el
+-- idioma elegidos sin tener que ir al chat. Debajo, cuántos términos hay activos.
+local PREVIEW_SAMPLE = "LFM ICC HC 25m Need Tank and Healer"
+
+local function CountKeys(t)
+    local n = 0
+    for _ in pairs(t) do n = n + 1 end
+    return n
+end
+
+-- Términos que aporta el inglés: todo el diccionario activo (propio y Babble).
+local function EnglishTermCount()
+    return CountKeys(addonTable.MasterDict) + CountKeys(addonTable.MultiWordPatterns)
+end
+
+-- Se rellena en BuildSourcesSection: los contadores de cada idioma de jerga
+-- cambian con las categorías activas, así que se repintan con la vista previa.
+local RefreshSourceCounts = function() end
+
+local function BuildPreviewSection(panel, y)
+    local text = panel:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall")
+    text:SetPoint("TOPLEFT", MARGIN_X + 8, y - 4)
+    text:SetWidth(424)
+    text:SetJustifyH("LEFT")
+
+    -- El fondo se estira hasta el final del texto: la frase ocupa 2 o 3 líneas
+    -- según el idioma, y con un alto fijo se salía por abajo.
+    local bg = panel:CreateTexture(nil, "BACKGROUND")
+    bg:SetPoint("TOPLEFT", MARGIN_X, y + 4)
+    bg:SetPoint("BOTTOMLEFT", text, "BOTTOMLEFT", -8, -8)
+    bg:SetWidth(440)
+    addonTable.SetSolidColor(bg, 0, 0, 0, 0.35)
+
+    RefreshPreview = function()
+        local enabled = WoWTranslatorDB.enabled
+        text:SetText(enabled and TranslateChat(PREVIEW_SAMPLE) or PREVIEW_SAMPLE)
+        text:SetAlpha(enabled and 1 or 0.5)
+        RefreshSourceCounts()
+    end
+    -- Las casillas de Categorías y Expansiones también cambian el resultado.
+    panel:SetScript("OnShow", function() RefreshPreview() end)
+    RefreshPreview()
+
+    return y - 70
+end
+
+-- ------------------------------------------
+-- IDIOMAS DE LA JERGA
+-- ------------------------------------------
+-- Una fila por idioma: casilla, etiqueta con el código, nombre, BETA si la
+-- lista de palabras aún se revisa y, a la derecha, cuántos términos aporta.
+local SOURCE_ROWS = {
+    { key = "srcEnUS", code = "EN", name = "SRC_ENUS", tt = "TT_SRC_ENUS", color = { 0.20, 0.42, 0.78 } },
+    { key = "srcKoKR", code = "KO", name = "SRC_KOKR", tt = "TT_SRC", color = { 0.72, 0.20, 0.30 },
+        beta = true, dict = "OrigenKoKR" },
+    { key = "srcZhCN", code = "ZH", name = "SRC_ZHCN", tt = "TT_SRC", color = { 0.80, 0.52, 0.10 },
+        beta = true, dict = "OrigenZhCN" },
+}
+local ROW_HEIGHT, ROW_WIDTH = 28, 440
+
+local function BuildSourceRow(panel, y, index, row)
+    local bg = panel:CreateTexture(nil, "BACKGROUND")
+    bg:SetPoint("TOPLEFT", MARGIN_X, y)
+    bg:SetWidth(ROW_WIDTH)
+    bg:SetHeight(ROW_HEIGHT - 2)
+    addonTable.SetSolidColor(bg, 0, 0, 0, index % 2 == 1 and 0.35 or 0.2)
+
+    local cb = CreateFrame("CheckButton", "WT_SrcCB_" .. row.key, panel, "InterfaceOptionsCheckButtonTemplate")
+    cb:SetPoint("TOPLEFT", MARGIN_X + 2, y)
+    _G[cb:GetName() .. "Text"]:SetText("")
+    cb:SetChecked(WoWTranslatorDB.settings[row.key])
+    cb:SetScript("OnClick", function(self)
+        WoWTranslatorDB.settings[row.key] = self:GetChecked() and true or false
+        addonTable.RebuildMasterDict()
+        RefreshPreview()
+    end)
+    AddTooltip(cb, L[row.tt])
+
+    local badge = panel:CreateTexture(nil, "ARTWORK")
+    badge:SetPoint("TOPLEFT", MARGIN_X + 34, y - 6)
+    badge:SetWidth(24)
+    badge:SetHeight(14)
+    addonTable.SetSolidColor(badge, row.color[1], row.color[2], row.color[3], 0.9)
+
+    local code = panel:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+    code:SetPoint("CENTER", badge, "CENTER", 0, 0)
+    code:SetText(row.code)
+
+    local name = panel:CreateFontString(nil, "ARTWORK", "GameFontHighlight")
+    name:SetPoint("LEFT", badge, "RIGHT", 8, 0)
+    name:SetText(L[row.name])
+
+    if row.beta then
+        local beta = panel:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
+        beta:SetPoint("LEFT", name, "RIGHT", 8, 0)
+        beta:SetText("|cffff9933" .. L["UI_BETA"] .. "|r")
+    end
+
+    local count = panel:CreateFontString(nil, "ARTWORK", "GameFontDisableSmall")
+    count:SetPoint("RIGHT", bg, "RIGHT", -10, 0)
+    return count
+end
+
+local function BuildSourcesSection(panel, y)
+    local desc = panel:CreateFontString(nil, "ARTWORK", "GameFontDisableSmall")
+    desc:SetPoint("TOPLEFT", MARGIN_X, y)
+    desc:SetWidth(ROW_WIDTH)
+    desc:SetJustifyH("LEFT")
+    desc:SetText(L["UI_SRC_DESC"])
+    y = y - 20
+
+    local counters = {}
+    for i, row in ipairs(SOURCE_ROWS) do
+        counters[i] = BuildSourceRow(panel, y - (i - 1) * ROW_HEIGHT, i, row)
+    end
+
+    RefreshSourceCounts = function()
+        for i, row in ipairs(SOURCE_ROWS) do
+            local n = row.dict and CountKeys(addonTable[row.dict] or {}) or EnglishTermCount()
+            counters[i]:SetText(string.format(L["UI_N_TERMS"], n))
+        end
+    end
+    RefreshSourceCounts()
+
+    return y - #SOURCE_ROWS * ROW_HEIGHT - 12
 end
 
 -- ------------------------------------------
@@ -211,9 +352,10 @@ StaticPopupDialogs["WOWTRANSLATOR_RESET"] = {
     showAlert = true,  -- icono de advertencia
 }
 
-local function BuildResetSection(panel, y)
+-- Al lado del botón de prueba, en la misma fila.
+local function BuildResetSection(panel, neighbour)
     local reset = CreateFrame("Button", "WT_ResetBtn", panel, "UIPanelButtonTemplate")
-    reset:SetPoint("TOPLEFT", MARGIN_X + 4, y)
+    reset:SetPoint("LEFT", neighbour, "RIGHT", 10, 0)
     reset:SetWidth(180)
     reset:SetHeight(24)
     reset:SetText(L["UI_RESET"])
@@ -221,13 +363,11 @@ local function BuildResetSection(panel, y)
         StaticPopup_Show("WOWTRANSLATOR_RESET")
     end)
     AddTooltip(reset, L["TT_RESET"])
-
-    return y - 34
 end
 
 function addonTable.CreateGeneralUI(parentCategory)
     local panel = addonTable.CreateOptionsPanel("WoWTranslatorGeneralPanel", L["OPT_GENERAL"])
-    local y = addonTable.PanelHeading(panel, L["OPT_GENERAL"])
+    local y = addonTable.PanelHeading(panel, L["OPT_GENERAL"], true)
 
     y = addonTable.SectionHeader(panel, y, L["GEN_HEADER"])
     y = BuildTranslationSection(panel, y)
@@ -238,22 +378,21 @@ function addonTable.CreateGeneralUI(parentCategory)
     y = addonTable.SectionHeader(panel, y, L["UI_LANG_LABEL"])
     y = BuildLanguageSection(panel, y)
 
+    y = addonTable.SectionHeader(panel, y, L["UI_PREVIEW"])
+    y = BuildPreviewSection(panel, y)
+
     y = addonTable.SectionHeader(panel, y, L["UI_SRC_LABEL"])
-    y = addonTable.SettingsCheckboxGrid(panel, {
-        { text = L["SRC_KOKR"], key = "srcKoKR", tt = L["TT_SRC"] },
-        { text = L["SRC_ZHCN"], key = "srcZhCN", tt = L["TT_SRC"] },
-    }, y, "WT_SrcCB_")
+    y = BuildSourcesSection(panel, y)
 
     local test = CreateFrame("Button", "WT_TestBtn", panel, "UIPanelButtonTemplate")
-    test:SetPoint("TOPLEFT", MARGIN_X + 4, y - 10)
+    test:SetPoint("TOPLEFT", MARGIN_X + 4, y - 4)
     test:SetWidth(180)
     test:SetHeight(24)
     test:SetText(L["UI_TEST_BTN"])
     test:SetScript("OnClick", function() addonTable.RunTest() end)
     AddTooltip(test, L["TT_TEST_BTN"])
-    y = y - 44
 
-    BuildResetSection(panel, y)
+    BuildResetSection(panel, test)
 
     addonTable.RegisterSubcategory(parentCategory, panel)
 end

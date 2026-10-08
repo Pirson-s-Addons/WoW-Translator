@@ -21,6 +21,7 @@ local DEFAULT_SETTINGS = {
     showInstDragonflight = true,
     showInstTheWarWithin = true,
     showInstMidnight = true,
+    showInstForever = true,
     showSocial = true,
     showClases = true,
     showCombate = true,
@@ -35,6 +36,7 @@ local DEFAULT_SETTINGS = {
     showSets = true,
     showRaces = true,
     -- Jerga en otros idiomas (Data/Origen/): apagada hasta que el jugador la pida.
+    srcEnUS = true, -- el diccionario principal: la jerga en inglés
     srcKoKR = false,
     srcZhCN = false,
 }

@@ -9,16 +9,10 @@ local L = addonTable.L
 -- y deja los ajustes en las subcategorías, que es donde el jugador los busca.
 
 local MARGIN_X = addonTable.MARGIN_X
-local GITHUB_URL = "https://github.com/SrPirson/WoW-Translator"
+local GITHUB_URL = "https://github.com/Pirson-s-Addons/WoW-Translator"
 local CURSEFORGE_URL = "https://www.curseforge.com/wow/addons/wow-translator"
 
-local function Meta(field, fallback)
-    -- GetAddOnMetadata se muda a C_AddOns en 11.0; antes de eso es global.
-    local name = addonTable.NAME
-    return (C_AddOns and C_AddOns.GetAddOnMetadata and C_AddOns.GetAddOnMetadata(name, field))
-        or (GetAddOnMetadata and GetAddOnMetadata(name, field))
-        or fallback
-end
+local Meta = addonTable.GetMeta
 
 function addonTable.CreateAboutUI(panelTitle)
     local panel = addonTable.CreateOptionsPanel("WoWTranslatorPanel", panelTitle)

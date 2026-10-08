@@ -157,6 +157,7 @@ Data\Instancias\Shadowlands.lua
 Data\Instancias\Dragonflight.lua
 Data\Instancias\TheWarWithin.lua
 Data\Instancias\Midnight.lua
+Data\Instancias\Forever.lua
 Data\Profesiones.lua
 Data\Roles.lua
 Data\Social.lua

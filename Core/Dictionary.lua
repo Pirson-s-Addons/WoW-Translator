@@ -70,6 +70,7 @@ local CATEGORY_DICTS = {
     { key = "showInstDragonflight", dict = "DragonflightDict" },
     { key = "showInstTheWarWithin", dict = "TheWarWithinDict" },
     { key = "showInstMidnight",     dict = "MidnightDict" },
+    { key = "showInstForever",      dict = "ForeverDict" },
     { key = "showSocial",           dict = "SocialDict" },
     { key = "showClases",           dict = "ClasesDict" },
     { key = "showCombate",          dict = "CombateDict" },

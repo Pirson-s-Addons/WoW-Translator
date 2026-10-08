@@ -86,6 +86,9 @@ _G.TranslateChat = function(text)
     local userColor = WoWTranslatorDB.chatColor or "00ff00"
     local textLower = string_lower(text)
 
+    -- Casilla "Inglés" de la vista General: sin ella solo queda la jerga de
+    -- Data/Origen/. MasterDict sigue lleno porque /wt en y Origen lo necesitan.
+    if WoWTranslatorDB.settings.srcEnUS then
     -- 1. FRASES MULTI-PALABRA
     -- Se recorren las palabras del mensaje y solo se prueban las frases cuya
     -- primera palabra aparece en él. gmatch fija la cadena original al empezar,
@@ -118,6 +121,7 @@ _G.TranslateChat = function(text)
         changed = true
         return word .. "(|cff" .. (EntryColor[string_lower(word)] or userColor) .. translation .. "|r)"
     end)
+    end
 
     -- 3. JERGA EN OTROS IDIOMAS: solo si hay alguno activado y el mensaje trae
     -- algo que no sea ASCII, para que el chat en inglés no pague nada.
