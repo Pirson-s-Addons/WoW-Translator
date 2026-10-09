@@ -16,7 +16,7 @@ addonTable.OrigenKoKR = {
 
     -- Grupos
     ["구함"] = "need", ["구해요"] = "need", ["구합니다"] = "need",
-    ["모집"] = "lfm", ["한자리"] = "last spot", ["막자리"] = "last spot",
+    ["모집"] = "lfm", ["모십니다"] = "lfm", ["모셔요"] = "lfm", ["한자리"] = "last spot", ["막자리"] = "last spot",
     ["영웅"] = "hc", ["일반"] = "nm", ["공격대 찾기"] = "lfr",
     ["템렙"] = "ilvl", ["레벨"] = "lvl", ["업적"] = "achiev", ["경험치"] = "exp",
     ["장비"] = "gear", ["초대"] = "inv", ["파장"] = "leader", ["전멸"] = "wipe",

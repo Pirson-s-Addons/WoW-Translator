@@ -1,6 +1,6 @@
 ## Interface: 16001
 ## Author: Pirson
-## Version: 2.06
+## Version: 2.07
 ## IconTexture: Interface\AddOns\WoWTranslator\img\logo_wt
 ## Title: |cffd597ffWoW Translator|r
 

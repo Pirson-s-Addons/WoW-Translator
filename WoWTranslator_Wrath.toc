@@ -1,6 +1,6 @@
 ## Interface: 30300, 30400, 30401, 30402, 30403, 30404, 30405, 38000, 38001, 38002
 ## Author: Pirson
-## Version: 2.06
+## Version: 2.07
 ## IconTexture: Interface\AddOns\WoWTranslator\img\logo_wt
 ## Title: |cffd597ffWoW Translator|r
 

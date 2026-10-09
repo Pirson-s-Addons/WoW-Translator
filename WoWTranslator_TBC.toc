@@ -1,6 +1,6 @@
 ## Interface: 20400, 20501, 20502, 20503, 20504, 20505, 20506
 ## Author: Pirson
-## Version: 2.06
+## Version: 2.07
 ## IconTexture: Interface\AddOns\WoWTranslator\img\logo_wt
 ## Title: |cffd597ffWoW Translator|r
 
