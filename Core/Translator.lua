@@ -115,7 +115,10 @@ _G.TranslateChat = function(text)
     end
 
     -- 2. PALABRAS SUELTAS
-    text = string_gsub(text, "([%a%d']+)", function(word)
+    -- Una palabra pegada a un punto por los dos lados del punto es parte de una
+    -- dirección (discord.gg, gg.com): ahí "gg" no es "bien jugado".
+    text = string_gsub(text, "()([%a%d']+)()", function(s, word, e)
+        if (s > 2 and string_find(text, "^%w%.", s - 2)) or string_find(text, "^%.%w", e) then return word end
         local translation = MasterDict[string_lower(word)]
         if not translation then return word end
         changed = true
