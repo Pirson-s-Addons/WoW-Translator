@@ -41,6 +41,7 @@ WoW Translator reads incoming chat messages and adds the meaning of WoW jargon n
 ## Features
 - Translates dungeon and raid acronyms, slang, classes, roles, stats, professions, combat, trade, group, guild and status terms.
 - 44 target languages; defaults to your game client's language.
+- Whole sentences: typical messages (looking for group, recruiting, trade, crafters, portals, guild recruiting) also get the full sentence on a line below, in the speaker's voice, in 20 languages.
 - Zone, item set and race names from LibBabble, in your client's language, each with its own colour.
 - Turn each category and the instance names of each expansion (Classic to Midnight) on or off.
 - Pick which chat channels are translated: say, yell, emote, global channels, whispers, Battle.net, guild, party, raid, instance, battleground and communities.

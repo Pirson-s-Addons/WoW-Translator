@@ -1,6 +1,6 @@
 ## Interface: 50400, 50500, 50501, 50502, 50503, 50504, 50505
 ## Author: Pirson
-## Version: 2.09
+## Version: 2.10
 ## IconTexture: Interface\AddOns\WoWTranslator\img\logo_wt
 ## Title: |cffd597ffWoW Translator|r
 
@@ -163,9 +163,31 @@ Data\Roles.lua
 Data\Social.lua
 Data\Origen\koKR.lua
 Data\Origen\zhCN.lua
+Data\Plantillas\Lexico.lua
+Data\Plantillas\enUS.lua
+Data\Plantillas\esES.lua
+Data\Plantillas\deDE.lua
+Data\Plantillas\frFR.lua
+Data\Plantillas\itIT.lua
+Data\Plantillas\ptBR.lua
+Data\Plantillas\ruRU.lua
+Data\Plantillas\koKR.lua
+Data\Plantillas\zhCN.lua
+Data\Plantillas\zhTW.lua
+Data\Plantillas\plPL.lua
+Data\Plantillas\svSE.lua
+Data\Plantillas\noNO.lua
+Data\Plantillas\trTR.lua
+Data\Plantillas\jaJP.lua
+Data\Plantillas\arSA.lua
+Data\Plantillas\hiIN.lua
+Data\Plantillas\thTH.lua
+Data\Plantillas\viVN.lua
+Data\Plantillas\csCZ.lua
 
 # Motor
 Core\Dictionary.lua
+Core\Templates.lua
 Core\Translator.lua
 Core\Outgoing.lua
 

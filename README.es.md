@@ -41,6 +41,7 @@ WoW Translator lee los mensajes que llegan al chat y añade junto a cada términ
 ## Funciones
 - Traduce acrónimos de mazmorras y bandas, jerga, clases, roles, estadísticas, profesiones y términos de combate, comercio, grupos, hermandad y estados.
 - 44 idiomas de destino; por defecto, el idioma de tu cliente.
+- Frases completas: los mensajes típicos (buscar grupo, reclutar, comercio, artesanos, portales, reclutamiento de hermandad) muestran además la frase entera en una línea debajo, en la voz del que escribe, en 20 idiomas.
 - Nombres de zonas, conjuntos de objetos y razas de LibBabble, en el idioma de tu cliente y cada uno con su propio color.
 - Activa o desactiva cada categoría y los nombres de instancia de cada expansión (de Classic a Midnight).
 - Elige qué canales de chat se traducen: decir, gritar, emociones, canales globales, susurros, Battle.net, hermandad, grupo, banda, instancia, campo de batalla y comunidades.

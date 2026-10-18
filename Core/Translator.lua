@@ -18,7 +18,8 @@ local NativeByFirst = addonTable.NativeByFirst
 
 local ipairs = ipairs
 local string_byte, string_find, string_format, string_gmatch = string.byte, string.find, string.format, string.gmatch
-local string_gsub, string_lower, string_match, string_sub = string.gsub, string.lower, string.match, string.sub
+local string_gsub, string_lower, string_match, string_rep, string_sub =
+    string.gsub, string.lower, string.match, string.rep, string.sub
 local table_concat = table.concat
 
 -- "icc hc" -> "[Ii][Cc][Cc] [Hh][Cc]", para casar sin importar mayúsculas sin
@@ -81,19 +82,29 @@ end
 
 _G.TranslateChat = function(text)
     if not text or not WoWTranslatorDB or not WoWTranslatorDB.enabled then return text, false end
+    -- En retail 12 y Forever el chat llega secreto dentro de instancias: no se
+    -- puede leer, así que se deja pasar tal cual.
+    if issecretvalue and issecretvalue(text) then return text, false end
 
     local changed = false
     local userColor = WoWTranslatorDB.chatColor or "00ff00"
     local textLower = string_lower(text)
+    -- Frase completa (Core/Templates.lua): se calcula sobre el original, antes
+    -- de anotar, y va debajo del mensaje.
+    local settings = WoWTranslatorDB.settings
+    local sentence = settings.templates and settings.srcEnUS and addonTable.TemplateSentence(text)
 
     -- Casilla "Inglés" de la vista General: sin ella solo queda la jerga de
     -- Data/Origen/. MasterDict sigue lleno porque /wt en y Origen lo necesitan.
-    if WoWTranslatorDB.settings.srcEnUS then
+    if settings.srcEnUS then
     -- 1. FRASES MULTI-PALABRA
     -- Se recorren las palabras del mensaje y solo se prueban las frases cuya
     -- primera palabra aparece en él. gmatch fija la cadena original al empezar,
     -- así que reasignar textLower dentro del bucle no altera la iteración.
-    local seen = {}
+    -- Cada frase traducida se aparta tras una marca sin letras ("\1\2\2\1") y
+    -- vuelve al final: así ni otra frase ni el paso de palabras sueltas la
+    -- anotan otra vez ("Ruins" dentro de "Ruins of Lordaeron").
+    local seen, done = {}, {}
     for word in string_gmatch(textLower, "[%w']+") do
         local bucket = MultiWordByFirst[word]
         if bucket and not seen[word] then
@@ -103,7 +114,8 @@ _G.TranslateChat = function(text)
                     local prefix = "(|cff" .. (EntryColor[phrase] or userColor)
                     local replaced
                     text, replaced = string_gsub(text, CaseInsensitivePattern(phrase), function(found)
-                        return found .. prefix .. MultiWordPatterns[phrase] .. "|r)"
+                        done[#done + 1] = found .. prefix .. MultiWordPatterns[phrase] .. "|r)"
+                        return "\1" .. string_rep("\2", #done) .. "\1"
                     end)
                     if replaced > 0 then
                         changed = true
@@ -124,6 +136,9 @@ _G.TranslateChat = function(text)
         changed = true
         return word .. "(|cff" .. (EntryColor[string_lower(word)] or userColor) .. translation .. "|r)"
     end)
+    if done[1] then
+        text = string_gsub(text, "\1(\2+)\1", function(marks) return done[#marks] end)
+    end
     end
 
     -- 3. JERGA EN OTROS IDIOMAS: solo si hay alguno activado y el mensaje trae
@@ -132,6 +147,11 @@ _G.TranslateChat = function(text)
         local nativeChanged
         text, nativeChanged = TranslateNative(text, userColor)
         changed = changed or nativeChanged
+    end
+
+    if sentence then
+        text = text .. "\n|cff" .. userColor .. "» " .. sentence .. "|r"
+        changed = true
     end
 
     return text, changed

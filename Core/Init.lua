@@ -37,6 +37,7 @@ local DEFAULT_SETTINGS = {
     showRaces = true,
     -- Jerga en otros idiomas (Data/Origen/): apagada hasta que el jugador la pida.
     srcEnUS = true, -- el diccionario principal: la jerga en inglés
+    templates = true, -- frase completa debajo del mensaje (Core/Templates.lua)
     srcKoKR = false,
     srcZhCN = false,
 }

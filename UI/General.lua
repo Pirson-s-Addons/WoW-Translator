@@ -110,13 +110,32 @@ local function BuildTranslationSection(panel, y)
     enable:SetPoint("TOPLEFT", MARGIN_X, y)
     _G[enable:GetName() .. "Text"]:SetText(L["UI_ENABLE_TEXT"])
     enable:SetChecked(WoWTranslatorDB.enabled)
-    enable:SetScript("OnClick", function(self)
-        WoWTranslatorDB.enabled = self:GetChecked() and true or false
-        RefreshPreview()
-    end)
     AddTooltip(enable, L["TT_ENABLE"])
 
-    return y - 40
+    -- Frase completa (Core/Templates.lua): depende del interruptor principal.
+    local templates = CreateFrame("CheckButton", "WT_TemplatesCB", panel, "InterfaceOptionsCheckButtonTemplate")
+    templates:SetPoint("TOPLEFT", MARGIN_X + 20, y - 30)
+    _G[templates:GetName() .. "Text"]:SetText(L["UI_TEMPLATES"])
+    templates:SetChecked(WoWTranslatorDB.settings.templates)
+    templates:SetScript("OnClick", function(self)
+        WoWTranslatorDB.settings.templates = self:GetChecked() and true or false
+        RefreshPreview()
+    end)
+    AddTooltip(templates, L["TT_TEMPLATES"])
+
+    local function RefreshDependent()
+        local on = WoWTranslatorDB.enabled
+        if on then templates:Enable() else templates:Disable() end -- SetEnabled no existe en 2.4.3
+        templates:SetAlpha(on and 1 or 0.5)
+    end
+    enable:SetScript("OnClick", function(self)
+        WoWTranslatorDB.enabled = self:GetChecked() and true or false
+        RefreshDependent()
+        RefreshPreview()
+    end)
+    RefreshDependent()
+
+    return y - 70
 end
 
 local function BuildColorSection(panel, y)
