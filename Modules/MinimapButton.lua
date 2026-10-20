@@ -9,6 +9,8 @@ local L = addonTable.L
 -- botón y el addon sigue funcionando con /wt.
 
 function addonTable.CreateMinimapButton()
+    WoWTranslatorDB.minimap = WoWTranslatorDB.minimap or {} -- también la lee el panel General
+
     local LDB = LibStub("LibDataBroker-1.1", true)
     local LDBIcon = LibStub("LibDBIcon-1.0", true)
     if not LDB or not LDBIcon then return end
@@ -25,8 +27,6 @@ function addonTable.CreateMinimapButton()
             tooltip:AddLine(L["QT_MINIMAP_TT"] or "Click: Open Settings")
         end,
     })
-
-    WoWTranslatorDB.minimap = WoWTranslatorDB.minimap or {}
 
     if not LDBIcon:IsRegistered("WoWTranslator") then
         LDBIcon:Register("WoWTranslator", dataObject, WoWTranslatorDB.minimap)

@@ -135,7 +135,21 @@ local function BuildTranslationSection(panel, y)
     end)
     RefreshDependent()
 
-    return y - 70
+    -- Botón del minimapa: LibDBIcon guarda "hide" en su propia tabla. Quien lo
+    -- tenga en una barra LDB (Bazooka, Titan Panel...) no necesita los dos.
+    local minimap = CreateFrame("CheckButton", "WT_MinimapCB", panel, "InterfaceOptionsCheckButtonTemplate")
+    minimap:SetPoint("TOPLEFT", MARGIN_X, y - 60)
+    _G[minimap:GetName() .. "Text"]:SetText(L["UI_MINIMAP"])
+    minimap:SetChecked(not WoWTranslatorDB.minimap.hide)
+    minimap:SetScript("OnClick", function(self)
+        WoWTranslatorDB.minimap.hide = not self:GetChecked()
+        local LDBIcon = LibStub("LibDBIcon-1.0", true)
+        if not LDBIcon then return end
+        if WoWTranslatorDB.minimap.hide then LDBIcon:Hide("WoWTranslator") else LDBIcon:Show("WoWTranslator") end
+    end)
+    AddTooltip(minimap, L["TT_MINIMAP"])
+
+    return y - 100
 end
 
 local function BuildColorSection(panel, y)
