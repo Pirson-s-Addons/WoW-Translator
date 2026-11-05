@@ -77,6 +77,9 @@ function addonTable.TranslateOutgoing(text)
     if builtVersion ~= addonTable.dictVersion then Build() end
 
     local changed = false
+    -- Un enlace con el nombre cambiado no se puede enviar.
+    local links = {}
+    text = addonTable.HideLinks(text, links)
     local textLower = string_lower(text)
     local seen = {}
 
@@ -106,5 +109,5 @@ function addonTable.TranslateOutgoing(text)
         return source
     end)
 
-    return text, changed
+    return addonTable.RestoreLinks(text, links), changed
 end

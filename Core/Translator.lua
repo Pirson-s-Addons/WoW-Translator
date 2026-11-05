@@ -30,6 +30,25 @@ local function CaseInsensitivePattern(phrase)
     return "%f[%w]" .. body .. "%f[%W]"
 end
 
+-- Aparta un trozo tras una marca sin letras ("\1\2\2\1") para que ningún paso lo
+-- traduzca; Restore lo devuelve a su sitio.
+local function Stash(saved, piece)
+    saved[#saved + 1] = piece
+    return "\1" .. string_rep("\2", #saved) .. "\1"
+end
+
+local function Restore(text, saved)
+    return (string_gsub(text, "\1(\2+)\1", function(marks) return saved[#marks] end))
+end
+
+-- Enlaces de objeto, misión, etc., con su color si lo llevan: "|cffRRGGBB" o el
+-- de calidad de retail y Forever, "|cnIQ1:".
+local function HideLinks(text, saved)
+    local function hide(link) return Stash(saved, link) end
+    text = string_gsub(text, "|c[^|]*|H.-|h.-|h|r", hide)
+    return (string_gsub(text, "|H.-|h.-|h", hide))
+end
+
 -- Byte que no es parte de un carácter no ASCII (o fuera del texto).
 local function IsBoundary(text, pos)
     local b = string_byte(text, pos)
@@ -88,7 +107,6 @@ _G.TranslateChat = function(text)
 
     local changed = false
     local userColor = WoWTranslatorDB.chatColor or "00ff00"
-    local textLower = string_lower(text)
     -- Frase completa (Core/Templates.lua): se calcula sobre el original, antes
     -- de anotar, y va debajo del mensaje.
     local settings = WoWTranslatorDB.settings
@@ -101,10 +119,13 @@ _G.TranslateChat = function(text)
     -- Se recorren las palabras del mensaje y solo se prueban las frases cuya
     -- primera palabra aparece en él. gmatch fija la cadena original al empezar,
     -- así que reasignar textLower dentro del bucle no altera la iteración.
-    -- Cada frase traducida se aparta tras una marca sin letras ("\1\2\2\1") y
-    -- vuelve al final: así ni otra frase ni el paso de palabras sueltas la
-    -- anotan otra vez ("Ruins" dentro de "Ruins of Lordaeron").
+    -- Cada frase traducida se aparta y vuelve al final: así ni otra frase ni el
+    -- paso de palabras sueltas la anotan otra vez ("Ruins" dentro de "Ruins of
+    -- Lordaeron"). Los enlaces se apartan desde el principio: su nombre no es
+    -- chat ("los" en "Gran hacha de los Renegados").
     local seen, done = {}, {}
+    text = HideLinks(text, done)
+    local textLower = string_lower(text)
     for word in string_gmatch(textLower, "[%w']+") do
         local bucket = MultiWordByFirst[word]
         if bucket and not seen[word] then
@@ -114,8 +135,7 @@ _G.TranslateChat = function(text)
                     local prefix = "(|cff" .. (EntryColor[phrase] or userColor)
                     local replaced
                     text, replaced = string_gsub(text, CaseInsensitivePattern(phrase), function(found)
-                        done[#done + 1] = found .. prefix .. MultiWordPatterns[phrase] .. "|r)"
-                        return "\1" .. string_rep("\2", #done) .. "\1"
+                        return Stash(done, found .. prefix .. MultiWordPatterns[phrase] .. "|r)")
                     end)
                     if replaced > 0 then
                         changed = true
@@ -136,9 +156,7 @@ _G.TranslateChat = function(text)
         changed = true
         return word .. "(|cff" .. (EntryColor[string_lower(word)] or userColor) .. translation .. "|r)"
     end)
-    if done[1] then
-        text = string_gsub(text, "\1(\2+)\1", function(marks) return done[#marks] end)
-    end
+    text = Restore(text, done)
     end
 
     -- 3. JERGA EN OTROS IDIOMAS: solo si hay alguno activado y el mensaje trae
@@ -159,3 +177,5 @@ end
 
 -- La usa también Core/Outgoing.lua para el sentido contrario.
 addonTable.CaseInsensitivePattern = CaseInsensitivePattern
+addonTable.HideLinks = HideLinks
+addonTable.RestoreLinks = Restore
