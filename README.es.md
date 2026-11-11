@@ -70,6 +70,21 @@ WoW Translator lee los mensajes que llegan al chat y añade junto a cada términ
 
 El panel de opciones tiene General (activar, color, idioma de destino, jerga en otros idiomas, botones de prueba y de valores por defecto), Categorías, Expansiones, Canales de chat, Palabras ignoradas y Ayuda.
 
+## API para autores de addons
+
+De solo lectura y con versión. Lee el diccionario entero, no solo las categorías que el jugador tiene activadas. Añade `## OptionalDeps: WoWTranslator` a tu TOC.
+
+```lua
+local api = WoWTranslatorAPI
+if api and api.version == 1 then
+    api.Lookup("lfm")            -- traducción en el idioma del cliente, categoría ("GruposDict"...)
+    api.Lookup("ty", "deDE")     -- "Danke"
+    api.GetTranslations("ty")    -- { esES = "Gracias", enUS = "Thank you", ... } (copia)
+    api.GetTerms()               -- { { term, category, multiword }, ... } para detectar jerga en un texto
+    api.GetCategories()          -- { "SocialDict", "GruposDict", ... }
+end
+```
+
 ## Notas
 - Además de los clientes actuales, incluye TOC para clientes antiguos (2.4.3, 3.3.5, 4.3, 5.4, WoD 6.2, Legion 7.3, BfA 8.3 y Shadowlands 9.2), como los que se usan en servidores privados.
 - Los ajustes se guardan para toda la cuenta en `WoWTranslatorDB`.

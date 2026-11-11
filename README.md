@@ -70,6 +70,21 @@ WoW Translator reads incoming chat messages and adds the meaning of WoW jargon n
 
 The options panel has General (enable, colour, target language, slang in other languages, test and reset buttons), Categories, Expansions, Chat Channels, Ignored Words and Help.
 
+## API for addon authors
+
+Read-only and versioned. It reads the whole dictionary, not just the categories the player turned on. Add `## OptionalDeps: WoWTranslator` to your TOC.
+
+```lua
+local api = WoWTranslatorAPI
+if api and api.version == 1 then
+    api.Lookup("lfm")            -- translation in the client's language, category ("GruposDict"...)
+    api.Lookup("ty", "deDE")     -- "Danke"
+    api.GetTranslations("ty")    -- { esES = "Gracias", enUS = "Thank you", ... } (copy)
+    api.GetTerms()               -- { { term, category, multiword }, ... } to spot slang in a text
+    api.GetCategories()          -- { "SocialDict", "GruposDict", ... }
+end
+```
+
 ## Notes
 - Besides current clients, it ships TOC files for older clients (2.4.3, 3.3.5, 4.3, 5.4, WoD 6.2, Legion 7.3, BfA 8.3 and Shadowlands 9.2), such as those used on private servers.
 - Settings are saved account-wide in `WoWTranslatorDB`.

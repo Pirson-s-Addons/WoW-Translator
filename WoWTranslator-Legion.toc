@@ -1,6 +1,6 @@
 ## Interface: 70300
 ## Author: Pirson
-## Version: 2.13
+## Version: 2.14
 ## Title: |TInterface\AddOns\WoWTranslator\img\logo_wt:16:16|t |cffd597ffWoW Translator|r
 
 # https://warcraft.wiki.gg/wiki/Addon_Categories
@@ -206,4 +206,5 @@ UI\Help.lua
 UI\Config.lua
 
 # Arranque (debe ir el ultimo)
+Core\API.lua
 Core\Init.lua

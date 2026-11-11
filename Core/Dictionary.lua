@@ -82,6 +82,7 @@ local CATEGORY_DICTS = {
     { key = "showRoles",            dict = "RolesDict" },
     { key = "showEstado",           dict = "EstadoDict" },
 }
+addonTable.CATEGORY_DICTS = CATEGORY_DICTS -- tambien para Core/API.lua
 
 function addonTable.RebuildMasterDict()
     wipe(MasterDict)
