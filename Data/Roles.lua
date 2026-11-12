@@ -28,5 +28,14 @@ addonTable.RolesDict = {
     ["dps"] = {
         esES = "Daño", esMX = "Daño", enUS = "DPS", deDE = "DPS", frFR = "DPS", itIT = "Assaltatore", koKR = "공격", ptBR = "Dano", ruRU = "ДД", zhCN = "输出", zhTW = "輸出", plPL = "DPS", svSE = "DPS", noNO = "DPS", trTR = "Hasar", jaJP = "アタッカー", arSA = "ضرر", hiIN = "डीपीएस", thTH = "ดีพีเอส", viVN = "DPS", csCZ = "Poškození za sekundu",
         nlNL = "DPS", roRO = "DPS", huHU = "DPS", elGR = "DPS", ukUA = "ДД", daDK = "DPS", fiFI = "DPS", skSK = "DPS", bgBG = "ДПС", hrHR = "DPS", srRS = "ДПС", slSI = "DPS", ltLT = "DPS", lvLV = "DPS", etEE = "DPS", idID = "DPS", msMY = "DPS", faIR = "دی پی اس", heIL = "נזק לשנייה", bnBD = "ডিপিএস", urPK = "ڈی پی ایس", taIN = "டிபிஎஸ்", teIN = "DPS"
-    }
+    },
+    -- Del glosario de BabelChat (Andrey Yumashev, MIT)
+    ["mdps"] = {
+        esES = "DPS cuerpo a cuerpo", esMX = "DPS cuerpo a cuerpo", enUS = "Melee DPS", deDE = "Nahkampf-DPS", frFR = "DPS mêlée", itIT = "DPS corpo a corpo", koKR = "근딜", ptBR = "DPS corpo a corpo", ruRU = "Мили ДД", zhCN = "近战输出", zhTW = "近戰輸出", plPL = "DPS w zwarciu", svSE = "Närstrids-DPS", noNO = "Nærkamp-DPS", trTR = "Yakın dövüş DPS", jaJP = "近接DPS", arSA = "ضرر قريب المدى", hiIN = "हाथापाई DPS", thTH = "ดีพีเอสระยะประชิด", viVN = "DPS cận chiến", csCZ = "DPS na blízko",
+        nlNL = "Melee DPS", roRO = "Melee DPS", huHU = "Melee DPS", elGR = "Melee DPS", ukUA = "Melee DPS", daDK = "Melee DPS", fiFI = "Melee DPS", skSK = "Melee DPS", bgBG = "Melee DPS", hrHR = "Melee DPS", srRS = "Melee DPS", slSI = "Melee DPS", ltLT = "Melee DPS", lvLV = "Melee DPS", etEE = "Melee DPS", idID = "Melee DPS", msMY = "Melee DPS", faIR = "Melee DPS", heIL = "Melee DPS", bnBD = "Melee DPS", urPK = "Melee DPS", taIN = "Melee DPS", teIN = "Melee DPS"
+    },
+    ["rdps"] = {
+        esES = "DPS a distancia", esMX = "DPS a distancia", enUS = "Ranged DPS", deDE = "Fernkampf-DPS", frFR = "DPS distance", itIT = "DPS a distanza", koKR = "원딜", ptBR = "DPS à distância", ruRU = "Рейндж ДД", zhCN = "远程输出", zhTW = "遠程輸出", plPL = "DPS dystansowy", svSE = "Distans-DPS", noNO = "Avstands-DPS", trTR = "Menzilli DPS", jaJP = "遠隔DPS", arSA = "ضرر بعيد المدى", hiIN = "दूरी DPS", thTH = "ดีพีเอสระยะไกล", viVN = "DPS tầm xa", csCZ = "DPS na dálku",
+        nlNL = "Ranged DPS", roRO = "Ranged DPS", huHU = "Ranged DPS", elGR = "Ranged DPS", ukUA = "Ranged DPS", daDK = "Ranged DPS", fiFI = "Ranged DPS", skSK = "Ranged DPS", bgBG = "Ranged DPS", hrHR = "Ranged DPS", srRS = "Ranged DPS", slSI = "Ranged DPS", ltLT = "Ranged DPS", lvLV = "Ranged DPS", etEE = "Ranged DPS", idID = "Ranged DPS", msMY = "Ranged DPS", faIR = "Ranged DPS", heIL = "Ranged DPS", bnBD = "Ranged DPS", urPK = "Ranged DPS", taIN = "Ranged DPS", teIN = "Ranged DPS"
+    },
 }

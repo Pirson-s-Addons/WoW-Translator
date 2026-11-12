@@ -253,5 +253,14 @@ addonTable.EstadoDict = {
         thTH = "ปล่อยวิญญาณ",
         viVN = "Giải phóng linh hồn",
         csCZ = "Oživení", nlNL = "Release spirit", roRO = "Release spirit", huHU = "Release spirit", elGR = "Release spirit", ukUA = "Release spirit", daDK = "Release spirit", fiFI = "Release spirit", skSK = "Release spirit", bgBG = "Release spirit", hrHR = "Release spirit", srRS = "Release spirit", slSI = "Release spirit", ltLT = "Release spirit", lvLV = "Release spirit", etEE = "Release spirit", idID = "Release spirit", msMY = "Release spirit", faIR = "Release spirit", heIL = "Release spirit", bnBD = "Release spirit", urPK = "Release spirit", taIN = "Release spirit", teIN = "Release spirit"
-    }
+    },
+    -- Del glosario de BabelChat (Andrey Yumashev, MIT)
+    ["ooc"] = {
+        esES = "Fuera de combate", esMX = "Fuera de combate", enUS = "Out of combat", deDE = "Außerhalb des Kampfes", frFR = "Hors combat", itIT = "Fuori combattimento", koKR = "비전투", ptBR = "Fora de combate", ruRU = "Вне боя", zhCN = "脱战", zhTW = "脫戰", plPL = "Poza walką", svSE = "Utanför strid", noNO = "Utenfor kamp", trTR = "Savaş dışı", jaJP = "戦闘外", arSA = "خارج القتال", hiIN = "युद्ध से बाहर", thTH = "นอกการต่อสู้", viVN = "Ngoài trận", csCZ = "Mimo boj",
+        nlNL = "Out of combat", roRO = "Out of combat", huHU = "Out of combat", elGR = "Out of combat", ukUA = "Out of combat", daDK = "Out of combat", fiFI = "Out of combat", skSK = "Out of combat", bgBG = "Out of combat", hrHR = "Out of combat", srRS = "Out of combat", slSI = "Out of combat", ltLT = "Out of combat", lvLV = "Out of combat", etEE = "Out of combat", idID = "Out of combat", msMY = "Out of combat", faIR = "Out of combat", heIL = "Out of combat", bnBD = "Out of combat", urPK = "Out of combat", taIN = "Out of combat", teIN = "Out of combat"
+    },
+    ["bio"] = {
+        esES = "Pausa para el baño", esMX = "Pausa para el baño", enUS = "Bio break", deDE = "Kurze Pause", frFR = "Pause pipi", itIT = "Pausa bagno", koKR = "화장실", ptBR = "Pausa pro banheiro", ruRU = "Отошёл в туалет", zhCN = "上厕所", zhTW = "上廁所", plPL = "Przerwa na toaletę", svSE = "Toapaus", noNO = "Dopause", trTR = "Tuvalet molası", jaJP = "トイレ休憩", arSA = "استراحة حمام", hiIN = "बाथरूम ब्रेक", thTH = "เข้าห้องน้ำ", viVN = "Đi vệ sinh", csCZ = "Pauza na WC",
+        nlNL = "Bio break", roRO = "Bio break", huHU = "Bio break", elGR = "Bio break", ukUA = "Bio break", daDK = "Bio break", fiFI = "Bio break", skSK = "Bio break", bgBG = "Bio break", hrHR = "Bio break", srRS = "Bio break", slSI = "Bio break", ltLT = "Bio break", lvLV = "Bio break", etEE = "Bio break", idID = "Bio break", msMY = "Bio break", faIR = "Bio break", heIL = "Bio break", bnBD = "Bio break", urPK = "Bio break", taIN = "Bio break", teIN = "Bio break"
+    },
 }

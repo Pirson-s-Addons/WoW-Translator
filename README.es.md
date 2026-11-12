@@ -88,6 +88,7 @@ end
 ## Notas
 - Además de los clientes actuales, incluye TOC para clientes antiguos (2.4.3, 3.3.5, 4.3, 5.4, WoD 6.2, Legion 7.3, BfA 8.3 y Shadowlands 9.2), como los que se usan en servidores privados.
 - Los ajustes se guardan para toda la cuenta en `WoWTranslatorDB`.
+- Parte de la jerga (sry, ez, o7, w2w, brez, m+, ksm, touch grass...) viene de [BabelChat](https://github.com/Yumash/BabelChat), de Andrey Yumashev, con su permiso (MIT).
 
 ---
 

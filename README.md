@@ -88,6 +88,7 @@ end
 ## Notes
 - Besides current clients, it ships TOC files for older clients (2.4.3, 3.3.5, 4.3, 5.4, WoD 6.2, Legion 7.3, BfA 8.3 and Shadowlands 9.2), such as those used on private servers.
 - Settings are saved account-wide in `WoWTranslatorDB`.
+- Part of the slang (sry, ez, o7, w2w, brez, m+, ksm, touch grass...) comes from [BabelChat](https://github.com/Yumash/BabelChat) by Andrey Yumashev, used with his permission (MIT).
 
 ---
 

@@ -23,11 +23,14 @@ local string_gsub, string_lower, string_match, string_rep, string_sub =
 local table_concat = table.concat
 
 -- "icc hc" -> "[Ii][Cc][Cc] [Hh][Cc]", para casar sin importar mayúsculas sin
--- tener que minusculizar el texto que se va a devolver.
+-- tener que minusculizar el texto que se va a devolver. Los signos van escapados
+-- ("m+"), y si la frase acaba en signo no se exige frontera al final: tras el "+"
+-- de "m+" ya no hay letra que separar.
 local function CaseInsensitivePattern(phrase)
-    local body = string_gsub(phrase, "%a",
+    local body = string_gsub(phrase, "%p", "%%%0")
+    body = string_gsub(body, "%a",
         function(c) return string_format("[%s%s]", string_lower(c), c:upper()) end)
-    return "%f[%w]" .. body .. "%f[%W]"
+    return "%f[%w]" .. body .. (string_find(phrase, "%w$") and "%f[%W]" or "")
 end
 
 -- Aparta un trozo tras una marca sin letras ("\1\2\2\1") para que ningún paso lo

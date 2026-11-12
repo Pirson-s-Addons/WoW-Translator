@@ -115,7 +115,10 @@ function addonTable.RebuildMasterDict()
                     -- para expandir acrónimos ("icc" -> "Icecrown Citadel") pero
                     -- 81 términos ya están escritos en inglés.
                     if string_lower(translation) ~= key then
-                        if string_find(term, " ", 1, true) then
+                        -- Lo que no es una sola palabra va por el paso de frases:
+                        -- las de varias palabras y las que llevan signos ("m+"),
+                        -- que el paso de palabras sueltas nunca vería enteras.
+                        if string_find(term, "[^%w']") then
                             if not MultiWordPatterns[key] then MultiWordPatterns[key] = translation end
                         else
                             MasterDict[key] = translation
