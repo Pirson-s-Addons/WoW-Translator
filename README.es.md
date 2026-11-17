@@ -1,26 +1,13 @@
-<h1 align="center">WoW Translator</h1>
+<p align="center"><a href="https://www.curseforge.com/wow/addons/wow-translator"><img src="https://raw.githubusercontent.com/Pirson-s-Addons/.github/main/profile/assets/readme-wt-es.svg" width="100%" alt="WoW Translator"/></a></p>
+
+<p align="center"><a href="README.md">English</a> · <b>Español</b></p>
 
 <p align="center">
-  <b>Traduce términos, acrónimos y jerga de World of Warcraft directamente en el chat</b>
+<a href="https://www.curseforge.com/wow/addons/wow-translator"><b>CurseForge</b></a> ·
+<a href="https://github.com/Pirson-s-Addons/WoW-Translator/releases/latest"><b>Descargar</b></a>
 </p>
 
-<p align="center">
-<a href="https://github.com/Pirson-s-Addons/WoW-Translator/releases/latest">
-<img src="https://img.shields.io/github/v/release/Pirson-s-Addons/WoW-Translator?style=for-the-badge&color=A78BFA">
-</a>
-<img src="https://img.shields.io/badge/WoW-Retail_·_Classic_·_Legacy-C4B5FD?style=for-the-badge">
-<a href="LICENSE">
-<img src="https://img.shields.io/badge/License-MIT-E9D5FF?style=for-the-badge">
-</a>
-</p>
-
-<p align="center">
-<a href="README.md">🇬🇧 English</a>
-</p>
-
----
-
-## 📸 Capturas
+## Capturas
 
 <p align="center">
 <a href="https://www.youtube.com/watch?v=DmyrbF9iDdQ"><img src="https://img.youtube.com/vi/DmyrbF9iDdQ/maxresdefault.jpg" width="640" alt="Cómo se usa WoW Translator v2.00"></a><br>
@@ -33,12 +20,12 @@
 </tr>
 </table>
 
----
-
 ## Qué hace
+
 WoW Translator lee los mensajes que llegan al chat y añade junto a cada término de la jerga de WoW su significado, en el color que elijas. Un mensaje como `LFM ICC HC 25m Need Tank and Healer` conserva el texto original, con la traducción de cada acrónimo o palabra reconocida entre paréntesis. No envía nada por ti: solo anota lo que recibes.
 
 ## Funciones
+
 - Traduce acrónimos de mazmorras y bandas, jerga, clases, roles, estadísticas, profesiones y términos de combate, comercio, grupos, hermandad y estados.
 - 44 idiomas de destino; por defecto, el idioma de tu cliente.
 - Frases completas: los mensajes típicos (buscar grupo, reclutar, comercio, artesanos, portales, reclutamiento de hermandad) muestran además la frase entera en una línea debajo, en la voz del que escribe, en 20 idiomas.
@@ -50,17 +37,8 @@ WoW Translator lee los mensajes que llegan al chat y añade junto a cada términ
 - Beta: también reconoce jerga de WoW escrita en coreano y chino simplificado (desactivado por defecto).
 - Botón en el minimapa y panel de opciones traducido a 20 idiomas.
 
-## Instalación
-1. Descarga el zip de la [última release](https://github.com/Pirson-s-Addons/WoW-Translator/releases/latest) o de [CurseForge](https://www.curseforge.com/wow/addons/wow-translator).
-2. Extrae la carpeta `WoWTranslator` en la carpeta `Interface/AddOns/` de tu versión del juego:
-   - Retail: `World of Warcraft/_retail_/Interface/AddOns/`
-   - Mists of Pandaria Classic: `World of Warcraft/_classic_/Interface/AddOns/`
-   - Classic Era: `World of Warcraft/_classic_era_/Interface/AddOns/`
-   - Anniversary: `World of Warcraft/_anniversary_/Interface/AddOns/`
-   - WoW Forever: `World of Warcraft/_classic_beta_/Interface/AddOns/`
-3. Reinicia WoW y activa el addon.
-
 ## Uso
+
 - `/wt config` — abre el panel de opciones (también desde el botón del minimapa).
 - `/wt on` / `/wt off` — activa o desactiva las traducciones.
 - `/wt test` — hace una prueba de traducción en el chat.
@@ -70,7 +48,29 @@ WoW Translator lee los mensajes que llegan al chat y añade junto a cada términ
 
 El panel de opciones tiene General (activar, color, idioma de destino, jerga en otros idiomas, botones de prueba y de valores por defecto), Categorías, Expansiones, Canales de chat, Palabras ignoradas y Ayuda.
 
-## API para autores de addons
+## Instalación
+
+1. Descarga el zip de la [última release](https://github.com/Pirson-s-Addons/WoW-Translator/releases/latest) o de [CurseForge](https://www.curseforge.com/wow/addons/wow-translator).
+2. Extrae la carpeta `WoWTranslator` en la carpeta `Interface/AddOns/` de tu versión del juego:
+   - Retail: `World of Warcraft/_retail_/Interface/AddOns/`
+   - Mists of Pandaria Classic: `World of Warcraft/_classic_/Interface/AddOns/`
+   - Classic Era: `World of Warcraft/_classic_era_/Interface/AddOns/`
+   - Anniversary: `World of Warcraft/_anniversary_/Interface/AddOns/`
+   - WoW Forever: `World of Warcraft/_classic_beta_/Interface/AddOns/`
+3. Reinicia WoW y activa el addon.
+
+## Notas
+
+- Además de los clientes actuales, incluye TOC para clientes antiguos (2.4.3, 3.3.5, 4.3, 5.4, WoD 6.2, Legion 7.3, BfA 8.3 y Shadowlands 9.2), como los que se usan en servidores privados.
+- Los ajustes se guardan para toda la cuenta en `WoWTranslatorDB`.
+- Parte de la jerga (sry, ez, o7, w2w, brez, m+, ksm, touch grass...) viene de [BabelChat](https://github.com/Yumash/BabelChat), de Andrey Yumashev, con su permiso (MIT).
+
+**Autor**: Pirson · [GitHub](https://github.com/Pirson-s-Addons) · [CurseForge](https://www.curseforge.com/members/pirson/projects) · Licencia MIT
+
+## Para autores de addons
+
+<details>
+<summary><b>API pública</b></summary>
 
 De solo lectura y con versión. Lee el diccionario entero, no solo las categorías que el jugador tiene activadas. Añade `## OptionalDeps: WoWTranslator` a tu TOC.
 
@@ -84,12 +84,8 @@ if api and api.version == 1 then
     api.GetCategories()          -- { "SocialDict", "GruposDict", ... }
 end
 ```
+</details>
 
-## Notas
-- Además de los clientes actuales, incluye TOC para clientes antiguos (2.4.3, 3.3.5, 4.3, 5.4, WoD 6.2, Legion 7.3, BfA 8.3 y Shadowlands 9.2), como los que se usan en servidores privados.
-- Los ajustes se guardan para toda la cuenta en `WoWTranslatorDB`.
-- Parte de la jerga (sry, ez, o7, w2w, brez, m+, ksm, touch grass...) viene de [BabelChat](https://github.com/Yumash/BabelChat), de Andrey Yumashev, con su permiso (MIT).
+<br/>
 
----
-
-**Autor**: Pirson · [GitHub](https://github.com/Pirson-s-Addons) · [CurseForge](https://www.curseforge.com/members/pirson/projects) · Licencia MIT
+<p align="center"><a href="https://github.com/Pirson-s-Addons"><img src="https://raw.githubusercontent.com/Pirson-s-Addons/.github/main/profile/assets/readme-footer-es.svg" width="100%" alt="Parte de Pirson's Addons. Ver todos los addons."/></a></p>
