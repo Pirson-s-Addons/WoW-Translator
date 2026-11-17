@@ -127,3 +127,9 @@ function addonTable.RegisterSlashCommands()
         end
     end
 end
+
+-- Menu de addons del minimapa (## AddonCompartmentFunc del .toc): lo mismo que el comando
+function WoWTranslator_OnAddonCompartmentClick()
+    local open = SlashCmdList and SlashCmdList.WOWTRANSLATOR
+    if open then open("") end
+end
