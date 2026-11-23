@@ -84,6 +84,7 @@
 ## Notes-teIN: |cFF33CCFFWorld of Warcraft పదాలు, సంక్షిప్త పదాలు మరియు స్లాంగ్ అనువాదం.|r
 
 ## X-Curse-Project-ID: 1431567
+## X-Wago-ID: aN0aAa6j
 ## X-License: MIT
 ## X-Copyright: Copyright (c) 2026 Pirson
 ## X-Website: https://github.com/Pirson-s-Addons/WoW-Translator
