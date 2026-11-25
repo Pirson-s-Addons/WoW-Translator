@@ -45,6 +45,7 @@ WoW Translator reads incoming chat messages and adds the meaning of WoW jargon n
 - `/wt search <word>` — look up a translation directly.
 - `/wt en <text>` — compose a message in English.
 - `/wt` — list the commands.
+- `/wtr` and `/wowtranslator` work exactly like `/wt` (handy if another addon also uses `/wt`).
 
 The options panel has General (enable, colour, target language, slang in other languages, test and reset buttons), Categories, Expansions, Chat Channels, Ignored Words and Help.
 

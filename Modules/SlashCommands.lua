@@ -106,6 +106,8 @@ end
 
 function addonTable.RegisterSlashCommands()
     SLASH_WOWTRANSLATOR1 = "/wt"
+    SLASH_WOWTRANSLATOR2 = "/wtr" -- /wt choca con What's Training
+    SLASH_WOWTRANSLATOR3 = "/wowtranslator"
     SlashCmdList["WOWTRANSLATOR"] = function(msg)
         local command, rest = msg:match("^(%S*)%s*(.-)$")
         command = command:lower()

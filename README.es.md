@@ -45,6 +45,7 @@ WoW Translator lee los mensajes que llegan al chat y añade junto a cada términ
 - `/wt search <palabra>` — busca una traducción directamente.
 - `/wt en <texto>` — redacta un mensaje en inglés.
 - `/wt` — muestra la lista de comandos.
+- `/wtr` y `/wowtranslator` funcionan igual que `/wt` (útil si otro addon también usa `/wt`).
 
 El panel de opciones tiene General (activar, color, idioma de destino, jerga en otros idiomas, botones de prueba y de valores por defecto), Categorías, Expansiones, Canales de chat, Palabras ignoradas y Ayuda.
 
